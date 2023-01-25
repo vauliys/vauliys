@@ -1,0 +1,30 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* TODO - increase tracking for font */
+}
+
+nav {
+    float: right; /*pushes entire unordered list to the right side of the screen */
+    margin-top: 1.5%; /* Set top margin to 3% */
+    margin-bottom: 1.5%; 
+    padding-right: 2em; 
+}
+
+
+nav a {
+    padding-left: 1.2em; /* padding of individual link */
+    padding-right: 1.2em; 
+    font-size: 0.8em;
+}
+
+a:link, a:visited {
+    color: #4e4e4e;
+}
+
+a:active, a:hover {
+    color: #a1c9b8;
+}
+
+a {
+    text-decoration: none;
+}
