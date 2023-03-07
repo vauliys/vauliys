@@ -290,13 +290,15 @@ nav a {
 /* Page: Gallery */
 .gallery{
     margin-bottom: 5em;
+    padding: 0 5%;
     animation: fadeIn 1s;
 }
 .page-location-gallery {
     font-weight: 600;
     font-size: 0.8em;
-    margin: 1em 5%;
+    margin: 1em auto;
     color: #f04f23;
+    max-width: 130rem;
 }
 
 .gallery-grid{
@@ -304,7 +306,8 @@ nav a {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, 12.5rem);
     gap: .5rem;
-    margin: 1em 5%;
+    margin: 1em auto;
+    max-width: 130rem;
 }
 
 .galley-img-shoiab {
