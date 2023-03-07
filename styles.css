@@ -1,51 +1,17 @@
-@font-face {
-    font-family: "VLS_Icon";
-    src: url("assets/Fonts/VLS_Icon.ttf");
+/* --------------------------------------------------------------- */
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-
-
-/* Fonts and Text Styles*/
-* {
-    font-family:'Raleway','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: 0em;
-    color:#000000;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 1.6em;
-    margin: 0em 0em 1em 0em;
-}
-
-p {
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.3em;
-}
-
-
-
-/* Link Styles */
-a:active, a:hover {
-    color: #8ab6a9;
-}
-
-a {
-    text-decoration: none; 
-}
-
-#activepage {
-    font-weight: 900;
-}
-
-
-#fixedheader {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
+/* --------------------------------------------------------------- */
 
 /* Annoucement Banner */
 .banner {
@@ -53,62 +19,204 @@ a {
     justify-content: center;
     background-color: #8ab6a9;
     margin: 0;
-    padding: 20;
 }
 
 .banner p {
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.8em;
 }
 
+/* --------------------------------------------------------------- */
+
+/* BODY */
+
 body {
     margin: 0;
-    margin-top: 10em;
+    margin-top: 11em;
 }
 
+/* --------------------------------------------------------------- */
+
+/* Buttons */
+button {
+    background-color: #f04f23;
+    border: none;
+    color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 3em;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* Footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    display: fixed;
+    margin-bottom: 0;
+    background: #ece5d9;
+}
+
+.footer-content {
+    margin: 0em 6em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 0.1fr 1fr 1fr 8fr;
+    gap: 0.5rem;  
+ }
+
+ footer a {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+  
+footer p {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #f04f23;
+}
+
+.vertical-line {
+    width: 1px; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%;
+    margin: 0em 5em;
+    opacity: 0.2;
+}
+
+.footer-logo {
+    text-align: right;
 
 
-/* Header and Navigation Menu */
+}
 
+/* --------------------------------------------------------------- */
+
+/* Fonts and Text Styles
+
+Font Weights Guide
+    700 = bold (Headings)
+    600 = Semi bold (Banner, Buttons, Page Location,, Active Page Nav)
+    500 = Medium (Buttons)
+    400 = Regular (Pargraph Text)
+*/
+@font-face {
+    font-family: "VLS_Icon";
+    src: url("assets/Fonts/VLS_Icon.ttf");
+}
+
+* {
+    font-family:'Raleway','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0em;
+    color:#000000;
+}
+
+h1 {
+    font-weight: 700; 
+    font-size: 1.6em;
+    margin: 0em 0em 1em 0em;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* Header */
 .header {
-    margin-bottom: 2em;
     background-color: #ffffff;
+
 }
 
-.headercontent {
+.header-content {
     display: flex; 
     justify-content: space-between; 
     padding: 1.5em 6em;
     margin: 0 auto;
     flex-wrap: wrap;
-  
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-#logo {
-    max-width: 50px;
-    max-height: 30px;
+#fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.iconcontent {
-    margin: 0.5em 0;
-    float: right;
+/* --------------------------------------------------------------- */
+
+/* html */
+html {
+    scroll-behavior: smooth;
 }
 
-.iconcontent a {
+/* --------------------------------------------------------------- */
+
+/* Icons */
+#icons a {
     font-family: "VLS_Icon";
+    font-weight: 500;
     font-size: 1em;
-    color: #8d8d8d;
+    padding-bottom: 1em;
+    margin-right: 0.5em;
+
 }
 
-.iconcontent a:hover {
-    color: #8ab6a9;
+/* --------------------------------------------------------------- */
+
+/* Links */
+a:active, a:hover {
+    color: #f04f23;
+    letter-spacing: 0.3px;
 }
 
-#icon {
-    min-width: 16px;
-    margin: 1em;
+a {
+    text-decoration: none; 
+    letter-spacing: 0.3px;
+    font-weight: 600;
 }
+
+#active-page {
+    font-weight: 600;
+    color: #f04f23;
+    letter-spacing: 0.3px;
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* Logo */
+#primary-logo {
+    max-width: 80px;
+    max-height: 50px;
+}
+
+#logomark {
+max-height: 4em;
+
+}
+
+/* --------------------------------------------------------------- */
+
+/* Navigation Menu */
 
 nav {
     margin: auto 0;
@@ -117,65 +225,81 @@ nav {
 nav a {
     margin: 0.5em;
     font-size: 0.8em;
+    font-weight: 500;
 }
 
-#commissionlink {
+#commission-link {
     color: #8ab6a9;
     font-weight: 600;
 }
 
 
+/* Nav: icons */
+
+.nav-icons {
+    margin-left: 2em;
+    float: right;
+}
+
+.nav-icons a {
+    color: #000000;
+}
+
+.nav-icons a:hover {
+    color: #f04f23;
+}
+
+/* --------------------------------------------------------------- */
 
 /* Page: About */
 .about {
     display: flex; 
-    justify-content: space-between; 
-    margin: 6em 29%;
-    max-width: 60%;
+    justify-content:center;
+    margin: 2em 20%;
+    max-width: 80%;
     padding-top: 5em;
+    padding-bottom:10em;
+    animation: fadeIn 1s;
 }
 
+.page-location-about {
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    color: #f04f23;
+}
 
 .about img {
-    width: 45%; 
+    width: 30%; 
     object-fit: contain; 
     margin-top: 0; 
     margin-bottom: auto;
 }
 
-.abouttext p {
+.about-text p {
     margin-top: 0;
 }
 
-.abouttext{
-    width:45%;
-}
-.pagelocation {
-    font-weight: 500;
-    font-size: 0.8em;
-    margin-bottom: 0.5em;
+.about-text{
+    width:40%;
+    margin-left: 3em;
 }
 
-button {
-    background-color: #000000;
-    border: none;
-    color: #ffffff;
-    padding: 1em 2em;
-    border-radius: 3em;
-    margin-top: 1em;
-}
-
-button:hover {
-    color: #000000;
-    background-color: #8ab6a9;
-    cursor: pointer;
-    font-weight: 900;
-}
-
-
+/* --------------------------------------------------------------- */
 
 /* Page: Gallery */
 .gallery{
+    margin-bottom: 5em;
+    animation: fadeIn 1s;
+}
+.page-location-gallery {
+    font-weight: 600;
+    font-size: 0.8em;
+    margin: 1em 5%;
+    color: #f04f23;
+}
+
+.gallery-grid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, 12.5rem);
@@ -280,12 +404,22 @@ button:hover {
     object-fit: cover;
 }
 
+/* --------------------------------------------------------------- */
 
+/* Scripts: Scroll to top */
+#scrollToTopBtn {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+  }
 
+/* --------------------------------------------------------------- */
 
-
-/* Hide scrollbar */
-
+/* Scrollbar (Hide)*/
 /* Chrome, Safari, Opera */
 html::-webkit-scrollbar {
     display: none;
@@ -297,12 +431,4 @@ html {
     scrollbar-width: none; /* Firefox */
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    margin: 2em;
-}
-
-footer p {
-    color: #8d8d8d;
-}
+/* --------------------------------------------------------------- */
