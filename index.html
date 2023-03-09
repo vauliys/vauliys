@@ -1,13 +1,9 @@
-<!--TO DO 
-Header: 
-Icons: Fix mail icon and change to solid instead of outlines
-Footer: Align logo to right
-        Remove white space on bottom when zoomed out
-Create a scroll up and down icon
+<!--
+    TO DO
+    Create a scroll up and down icon
 
-Pages:
-Gallery - add dark hover over images + zoom in version
-About - add dark hover over images + zoom in version
+    Pages:
+    Gallery - add light box to images
 -->
 
 
@@ -17,152 +13,156 @@ About - add dark hover over images + zoom in version
         <meta charset="utf-8">
         <title>Vauliys</title>
         <link rel="stylesheet" href="styles.css">
-        <!--Fonts-->
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/Fonts/vauliys/vauliys.css">
     </head>
 
     <body>
         <div id="fixed-header">
-            <div class="banner">
+            <div id="banner">
                 <p>INSERT BANNER INFORMATION HERE</p>
             </div>
-                <div class="header">
-                    <div class="header-content">
-                        <img id="primary-logo" src="assets/Logos/Vauliys_Orange-Sublogo.svg">
-                            <nav>
-                                <a href="about.html">About</a>
-                                <a href="">Animation</a>
-                                <a id="active-page" href="index.html">Gallery</a>
-                                <a href="">Design</a>
-                                <a href="">Projects</a>
-                                <a id="commission-link" href="">Commissions +</a>
-                                
-                                <div id="icons" class="nav-icons">
-                                    <a href="https://store.vauliys.com/">A</a>
-                                    <a href="https:instagram.com/vauliys">B</a>
-                                    <a href="mailto:hello@vauliys.com">C</a>
-                                    
-                                </div>
-                            </nav>        
-                        
+            <div id="header">
+                <a href="#"><img id="primary-logo" src="assets/Logos/Vauliys_Orange-Sublogo.svg"></a>
+                <nav>
+                    <a href="about.html">About</a>
+                    <a href="">Animation</a>
+                    <a id="active-page" href="index.html">Gallery</a>
+                    <a href="">Design</a>
+                    <a href="">Projects</a>
+                    <a id="commission-link" href="">Commissions +</a>
+
+                    <div class="nav-icons">
+                        <a href="https://store.vauliys.com" target="_blank"><i class="icon icon-store"></i></a>
+                        <a href="https://instagram.com/vauliys" target="_blank"><i class="icon icon-instagram"></i></a>
+                        <a href="mailto:hello@vauliys.com"><i class="icon icon-email"></i></a>
                     </div>
-                </div>
+                </nav>
+            </div>
         </div>
 
+        <div class="gallery">
+            <p class="page-location-gallery">Vauliys / About</p>
+            <div class="gallery-grid">
+                <div class="gallery-item galley-img-lindsay">
+                    <img src="assets/Gallery/VLS06_Lindsay 01Final.jpg"
+                        alt="Person with green / blue dyed hair tied into a ponytail wearing an Alien print tee."
+                        class="gallery-image">
+                </div>
 
-        <div>
-                    
-            <div class="gallery">
-                <p class="page-location-gallery">Vauliys / About</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item galley-img-lindsay">
-                        <img src="assets/Gallery/VLS06_Lindsay 01Final.jpg" alt="Person with green / blue dyed hair tied into a ponytail wearing an Alien print tee." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-grass">
+                    <img src="assets/Gallery/VLS44_Grass Field_01FA.jpg"
+                        alt="Grassy floral hills with birds flying in an almost cloudless sky." class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-grass">
-                        <img src="assets/Gallery/VLS44_Grass Field_01FA.jpg" alt="Grassy floral hills with birds flying in an almost cloudless sky." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-cloud">
+                    <img src="assets/Gallery/VLS07_Cloud 01Final.jpg" alt="A single cloud in the sky."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-cloud">
-                        <img src="assets/Gallery/VLS07_Cloud 01Final.jpg" alt="A single cloud in the sky." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-shoiab">
+                    <img src="assets/Gallery/VLS16_Shoiab 01Final.jpg"
+                        alt="Male leaning on a table staring to the right, illuminated by a yellow neon sign."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-shoiab">
-                        <img src="assets/Gallery/VLS16_Shoiab 01Final.jpg" alt="Male leaning on a table staring to the right, illuminated by a yellow neon sign."class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-frankie">
+                    <img src="assets/Gallery/VLS05_Frankie 01Final.jpg"
+                        alt="Portrait of a female with bust length dark blonde wavy hair." class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-frankie">
-                        <img src="assets/Gallery/VLS05_Frankie 01Final.jpg" alt="Portrait of a female with bust length dark blonde wavy hair."class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-frog">
+                    <img src="assets/Gallery/2019_VLS06_Frog 01FA.jpg" alt="A vivid green frog." class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-frog">
-                        <img src="assets/Gallery/2019_VLS06_Frog 01FA.jpg" alt="A vivid green frog."class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-fish">
+                    <img src="assets/Gallery/2019_VLS06_Fish 01FA.jpg"
+                        alt="A vivid bright orange and red rish with white fins." class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-fish">
-                        <img src="assets/Gallery/2019_VLS06_Fish 01FA.jpg" alt="A vivid bright orange and red rish with white fins." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-keycap">
+                    <img src="assets/Gallery/VLS23_Keycap Isometric 01Final V1.jpg"
+                        alt="An isometric view of the parts inside a switch for a keyboard cap." class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-keycap">
-                        <img src="assets/Gallery/VLS23_Keycap Isometric 01Final V1.jpg" alt="An isometric view of the parts inside a switch for a keyboard cap." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-nina">
+                    <img src="assets/Gallery/2022_VLS00_Nina Dobrev 01FA.jpg"
+                        alt="Nina Dobrev in an elegant single long sleeve blood red dress." class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-nina">
-                        <img src="assets/Gallery/2022_VLS00_Nina Dobrev 01FA.jpg" alt="Nina Dobrev in an elegant single long sleeve blood red dress." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-ocean">
+                    <img src="assets/Gallery/VLS43_Ocean_01FA.jpg"
+                        alt="View of the ocean at Dusk with Mountains in the distance and birds flying in a cloud filled sky."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-ocean">
-                        <img src="assets/Gallery/VLS43_Ocean_01FA.jpg" alt="View of the ocean at Dusk with Mountains in the distance and birds flying in a cloud filled sky." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-potion">
+                    <img src="assets/Gallery/VLS08_Potion 01Final.jpg"
+                        alt="A round bottle closed with a cork containing a bubbling teal liquid."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-potion">
-                        <img src="assets/Gallery/VLS08_Potion 01Final.jpg" alt="A round bottle closed with a cork containing a bubbling teal liquid." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-night">
+                    <img src="assets/Gallery/VLS45_Grass Field Night_01FA.jpg"
+                        alt="A young girl with dark skin and curly hair staring up at the purple night sky, following a dragonfly."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-night">
-                        <img src="assets/Gallery/VLS45_Grass Field Night_01FA.jpg" alt="A young girl with dark skin and curly hair staring up at the purple night sky, following a dragonfly." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-avatar">
+                    <img src="assets/Gallery/VLS41_Avatar_01FA_V2.jpg"
+                        alt="Tsireya from Avatar waist deep in the water with Forest Waterfalls behind."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-avatar">
-                        <img src="assets/Gallery/VLS41_Avatar_01FA_V2.jpg" alt="Tsireya from Avatar waist deep in the water with Forest Waterfalls behind."class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-turtle">
+                    <img src="assets/Gallery/VLS01_Turtle_01FA.jpg"
+                        alt="A turtle swimming in a bright turquoise ocean."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-turtle">
-                        <img src="assets/Gallery/VLS01_Turtle_01FA.jpg" alt="A turtle swimming in a bright turquoise ocean." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-naomi">
+                    <img src="assets/Gallery/2022_VLS01_OC Naomi Volleyball 01Final.jpg"
+                        alt="Girl of asian descent with Korean heritage in red and white volleyball gear."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-naomi">
-                        <img src="assets/Gallery/2022_VLS01_OC Naomi Volleyball 01Final.jpg" alt="Girl of asian descent with Korean heritage in red and white volleyball gear." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-alex">
+                    <img src="assets/Gallery/_2020_VLS01_OC Alex_Expressions_Tired 01FA.PNG"
+                        alt="A peach haired coloured fae with bags under her eyes."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-alex">
-                        <img src="assets/Gallery/_2020_VLS01_OC Alex_Expressions_Tired 01FA.PNG" alt="A peach haired coloured fae with bags under her eyes." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-naomi2">
+                    <img src="assets/Gallery/_VLS01_OC Naomi_Outfit Design_01FA.jpg"
+                        alt="Front facing illustration of a girl of asian descent wearing items of clothing inspired from Korean heritage."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-naomi2">
-                        <img src="assets/Gallery/_VLS01_OC Naomi_Outfit Design_01FA.jpg" alt="Front facing illustration of a girl of asian descent wearing items of clothing inspired from Korean heritage." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-procreate">
+                    <img src="assets/Gallery/2022_2022_VLS03_Procreate Brush 01FA.JPG"
+                        alt="Side profile of a girl with brown hair pinned back looking out to a lilac filled sky and steam."
+                        class="gallery-image">
+                </div>
 
-                    <div class="gallery_item galley-img-procreate">
-                        <img src="assets/Gallery/2022_2022_VLS03_Procreate Brush 01FA.JPG" alt="Side profile of a girl with brown hair pinned back looking out to a lilac filled sky and steam." class="gallery-image">
-                    </div>
-
-                    <div class="gallery_item galley-img-thf">
-                        <img src="assets/Gallery/THF01_Background_01FA.jpg" alt="A rolling hill on the edge of a cliff, with a small country inspired castle at the top surrounded by the sea and gardens." class="gallery-image">
-                    </div>
+                <div class="gallery_item galley-img-thf">
+                    <img src="assets/Gallery/THF01_Background_01FA.jpg"
+                        alt="A rolling hill on the edge of a cliff, with a small country inspired castle at the top surrounded by the sea and gardens."
+                        class="gallery-image">
                 </div>
             </div>
         </div>
 
         <footer>
-            <div class="footer-content">
-                <div id="icons">
-                            <a href="https://store.vauliys.com/">A</a>
-                            <a href="https:instagram.com/vauliys">B</a>
-                            <a href="mailto:hello@vauliys.com">C</a>
-                            <p>© Vauliys 2023 <br>
-                                Website designed and built by Vauliys</p> 
-                </div>  
-                    <div class="vertical-line"></div>      
-                        <div>     
-                            <a href="index.html">Home</a><br>                       
-                                <a href="about.html">About</a><br>
-                                <a href="">Animation</a> <br>
-                                <a href="index.html">Gallery</a><br> 
-                        </div>
-                            <div>    
-                                <a href="">Design</a><br>                        
-                                <a href="">Projects</a><br>
-                                <a href="">Commissions +</a><br>
-                                <a href="https://store.vauliys.com/" target="_blank">Digital Store</a><br>
-                                
-                            </div>
-                        <div class="footer-logo">
-                            <a href="#"><img id="logomark" src="assets/Logos/Vauliys_Orange-Logomark1.svg"></a>
-                        </div>
-            </div>  
+            <a href="#"><img id="logomark" src="assets/Logos/Vauliys_Orange-Logomark1.svg"></a>
+            <p>
+                © Vauliys 2023 <br>
+                Website designed and built by Vauliys
+            </p>
+            <a href="https://store.vauliys.com" target="_blank"><i class="icon icon-store"></i></a>
+            <a href="https://instagram.com/vauliys" target="_blank"><i class="icon icon-instagram"></i></a>
+            <a href="mailto:hello@vauliys.com"><i class="icon icon-email"></i></a>
         </footer>
         <script src="scripts.js"></script>
     </body>

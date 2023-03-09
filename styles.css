@@ -14,14 +14,14 @@
 /* --------------------------------------------------------------- */
 
 /* Annoucement Banner */
-.banner {
+#banner {
     display: flex;
     justify-content: center;
     background-color: #8ab6a9;
     margin: 0;
 }
 
-.banner p {
+#banner p {
     color: #ffffff;
     font-weight: 600;
     font-size: 0.8em;
@@ -32,8 +32,12 @@
 /* BODY */
 
 body {
+    height: 100%;
     margin: 0;
-    margin-top: 11em;
+    margin-top: 9em;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* --------------------------------------------------------------- */
@@ -62,47 +66,24 @@ button:hover {
 
 /* Footer */
 footer {
-    bottom: 0;
-    width: 100%;
-    display: fixed;
-    margin-bottom: 0;
     background: #ece5d9;
+    padding: 40px;
+    height: 140px;
+    margin: 0;
+    margin-top: auto;
+    text-align: center;
 }
 
-.footer-content {
-    margin: 0em 6em;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 2fr 0.1fr 1fr 1fr 8fr;
-    gap: 0.5rem;  
- }
-
- footer a {
-    font-size: 0.8em;
-    font-weight: 500;
+footer i {
+    font-size: 1.2em;
 }
-  
+
 footer p {
     font-size: 0.8em;
     font-weight: 500;
     color: #f04f23;
 }
 
-.vertical-line {
-    width: 1px; /* Line width */
-    background-color: black; /* Line color */
-    height: 100%;
-    margin: 0em 5em;
-    opacity: 0.2;
-}
-
-.footer-logo {
-    text-align: right;
-
-
-}
 
 /* --------------------------------------------------------------- */
 
@@ -114,11 +95,6 @@ Font Weights Guide
     500 = Medium (Buttons)
     400 = Regular (Pargraph Text)
 */
-@font-face {
-    font-family: "VLS_Icon";
-    src: url("assets/Fonts/VLS_Icon.ttf");
-}
-
 * {
     font-family:'Raleway','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 0em;
@@ -126,7 +102,7 @@ Font Weights Guide
 }
 
 h1 {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 1.6em;
     margin: 0em 0em 1em 0em;
 }
@@ -141,24 +117,22 @@ p {
 /* --------------------------------------------------------------- */
 
 /* Header */
-.header {
+#header {
     background-color: #ffffff;
-
-}
-
-.header-content {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     padding: 1.5em 6em;
     margin: 0 auto;
     flex-wrap: wrap;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 #fixed-header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 /* --------------------------------------------------------------- */
@@ -166,19 +140,37 @@ p {
 /* html */
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 /* --------------------------------------------------------------- */
 
 /* Icons */
-#icons a {
-    font-family: "VLS_Icon";
-    font-weight: 500;
-    font-size: 1em;
-    padding-bottom: 1em;
-    margin-right: 0.5em;
 
+.icon {
+    font-size: 1.5em;
+    padding: 0 0.2em;
 }
+
+.icon:hover {
+    color: #f04f23;
+}
+
+
+
+/* --------------------------------------------------------------- */
+
+/* Image */
+
+img {
+    filter: brightness(1);
+    transition: filter (0.4s);
+}
+
+img:hover {
+    filter: brightness(0.8);
+}
+
 
 /* --------------------------------------------------------------- */
 
@@ -189,7 +181,7 @@ a:active, a:hover {
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
     letter-spacing: 0.3px;
     font-weight: 600;
 }
@@ -202,16 +194,15 @@ a {
 
 /* --------------------------------------------------------------- */
 
-
 /* Logo */
 #primary-logo {
     max-width: 80px;
     max-height: 50px;
+    position: fixed;
 }
 
 #logomark {
-max-height: 4em;
-
+    max-height: 3em;
 }
 
 /* --------------------------------------------------------------- */
@@ -243,18 +234,20 @@ nav a {
 
 .nav-icons a {
     color: #000000;
+    margin-right: -0.1em;
 }
 
 .nav-icons a:hover {
     color: #f04f23;
 }
 
+
 /* --------------------------------------------------------------- */
 
 /* Page: About */
 .about {
-    display: flex; 
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     margin: 2em 20%;
     max-width: 80%;
     padding-top: 5em;
@@ -270,10 +263,15 @@ nav a {
 }
 
 .about img {
-    width: 30%; 
-    object-fit: contain; 
-    margin-top: 0; 
+    object-fit: contain;
+    width: 100%;
+}
+
+.about a {
+    width: 30%;
+    margin-top: 0;
     margin-bottom: auto;
+
 }
 
 .about-text p {
@@ -289,7 +287,7 @@ nav a {
 
 /* Page: Gallery */
 .gallery{
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     padding: 0 5%;
     animation: fadeIn 1s;
 }
