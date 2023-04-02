@@ -11,6 +11,7 @@
     }
 }
 
+
 /* --------------------------------------------------------------- */
 
 /* Annoucement Banner */
@@ -46,7 +47,7 @@ button {
     background-color: #8ab6a9;
     border: none;
     color: #ffffff;
-    padding: 0.8em 1em;
+    padding: 0.8em 2em;
     border-radius: 3em;
     margin: 0;
     font-weight: 600;
@@ -288,7 +289,7 @@ nav ul li:hover ul {
 .about img {
     object-fit: contain;
     width: 100%;
-    border-radius: 0.5em;
+    border-radius: 20em;
 }
 
 .about a {
@@ -572,4 +573,26 @@ font-size: 0.8em;
     margin: 2em 0;
     background-color: rgba(0, 0, 0, 0.1);
     height: 1px; border: 0;
+}
+
+
+.github a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+    padding: 0 1em;
+    font-size: 0.8em;
+    width: 5em;
+    height: 1.8em;
+    background-color: rgba(0, 0, 0, 0.05);
+    color:#7b7b7b;
+    border-radius: 60px;
+    font-weight: 400;
+}
+
+.github a:hover{
+    background-color: #222;
+    color:#ffffff;
+    border-radius: 60px;
 }
