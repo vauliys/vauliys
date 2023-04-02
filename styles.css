@@ -160,14 +160,7 @@ html {
 
 /* Image */
 
-img {
-    filter: brightness(1);
-    transition: filter (0.4s);
-}
 
-img:hover {
-    filter: brightness(0.8);
-}
 
 
 /* --------------------------------------------------------------- */
@@ -194,13 +187,11 @@ a {
 
 /* Logo */
 #primary-logo {
-    max-width: 80px;
-    max-height: 50px;
-    position: fixed;
+    max-height: 1.5em;
 }
 
-#logomark {
-    max-height: 3em;
+#logo-mark {
+    max-height: 2.5em;
 }
 
 /* --------------------------------------------------------------- */
@@ -273,7 +264,6 @@ nav ul li:hover ul {
 
 /* Page: About */
 .about {
-
     display: flex;
     justify-content: center;
     margin: 2em 20%;
@@ -312,9 +302,22 @@ nav ul li:hover ul {
     margin-left: 3em;
 }
 
+
 /* --------------------------------------------------------------- */
 
 /* Page: Gallery */
+
+.gallery img {
+    filter: brightness(1);
+    transition: filter (0.4s);
+}
+
+.gallery img:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+
 .gallery{
     margin-bottom: 2em;
     margin-top: 9em;
@@ -471,6 +474,7 @@ html {
 
 .homepage-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
 }
@@ -491,9 +495,25 @@ html {
     outline: none;
 }
 
-.scroll-to-top {
-    display: flex;
-    float: right;
-    padding: 5em;
-    background: red;
+#scroll i {
+margin-top: 9em;
+z-index: 1;
+position: fixed;
+right: 2%;
+bottom: 2%;
+width: 30px;
+height: 35px;
+border-radius: 60px;
+background: #222;
+display: flex;
+align-items: center;
+color: #ffffff;
+justify-content: center;
+font-size: 0.8em;
 }
+
+#scroll i:hover {
+    background-color:#f04f23
+
+}
+
