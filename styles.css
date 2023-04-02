@@ -103,6 +103,12 @@ h1 {
     margin: 0em 0em 1em 0em;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0em 0em 1em 0em;
+}
+
 p {
     font-weight: 400;
     font-size: 0.8em;
@@ -118,7 +124,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 6em;
+    padding: 0em 6em;
     margin: 0 auto;
     flex-wrap: wrap;
     max-width: 130rem;
@@ -268,8 +274,7 @@ nav ul li:hover ul {
     justify-content: center;
     margin: 2em 20%;
     max-width: 80%;
-    padding-top: 10em;
-    padding-bottom:10em;
+    padding-top: 6em;
     animation: fadeIn 2s;
 }
 
@@ -320,7 +325,7 @@ nav ul li:hover ul {
 
 .gallery{
     margin-bottom: 2em;
-    margin-top: 9em;
+    margin-top: 6em;
     padding: 0 5%;
     animation: fadeIn 2s;
 }
@@ -469,13 +474,13 @@ html {
 
 .homepage{
     animation: fadeIn 2s;
+    margin-top: 4em;
 }
 
 .homepage-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .search {
@@ -520,7 +525,7 @@ font-size: 0.8em;
     display: flex;
     flex-direction: column;
     max-width: 80%;
-    padding-top: 5em;
+    padding-top: 4em;
     animation: fadeIn 2s;
 }
 
@@ -549,7 +554,7 @@ font-size: 0.8em;
 
 .designs-individual-text {
     position: fixed;
-    padding-top: 5em;
+    padding-top: 4em;
     width:20%;
     right: 5em;
 }
@@ -561,4 +566,10 @@ font-size: 0.8em;
 
 .designs img {
     width: 34%;
+}
+
+.line-solid {
+    margin: 2em 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 1px; border: 0;
 }
