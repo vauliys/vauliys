@@ -1,0 +1,188 @@
+<!--
+    TO DO
+smaller screens has text overlapping imagery.
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vauliys</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="assets/Fonts/vauliys/vauliys.css">
+    </head>
+
+    <body>
+        <span id="overlay-container"></span>
+        <div id="fixed-header">
+            <div id="header">
+                <a id="text-logo" href="index.html">Vauliys</a>
+                <nav>
+                    <div class="github">
+                        <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">Github</a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a>
+                            <ul>
+                                <li><a href="https://www.imdb.com/name/nm14674760/?ref_=nv_sr_srsg_0"
+                                        target="_blank">IMDB</a></li>
+                                <li><a href="https://www.toonboom.com/ambassador/victoria-pritchard"
+                                        target="_blank">Toon Boom</a></li>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a id="active-page" href="">Work</a>
+                        <ul>
+                            <li><a href="animations.html">Animations</a></li>
+                            <li><a href="designs.html">Designs</a></li>
+                            <li><a href="illustrations.html">Illustrations</a></li>
+                            <li><a href="commissions.html">Commissions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="mailto:hello@vauliys.com">Contact</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <a href="https://store.vauliys.com" target="_blank"><i class="icon icon-store"></i></a>
+                        <a href="https://instagram.com/vauliys" target="_blank"><i class="icon icon-instagram"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="dual-column">
+            <div class="modal-box-container">
+            <div id="modal-box" class="modal-box">
+                <div class="form-header">
+                    <ul>
+                        <li><a class="page-location-dual-column" href="commissions.html">Vauliys / Commissions</a></li>
+                        <li id="modal-box-close" onclick="fade()">Close</a>
+                            <ul>
+                </div>
+                <h1>Commmission Enquiry</h1>
+
+                <p id="form-title">Contact Information</p>
+                <form action="/action_page.php">
+                    <input type="text" id="form-name" placeholder="Full Name" required>
+                    <input type="email" id="form-email" placeholder="Email" required><br>
+
+
+                    <label for="form-preferred">Preferred Contact Method</label>
+                    <select name="form-preferred" required>
+                        <option value="instagram">Instagram</option>
+                        <option value="email">Email</option>
+                    </select>
+
+                    <input type="text" id="form-instagram" placeholder="@Instagram Handle">
+
+                    <hr id="form-line">
+
+                    <p id="form-title">Commission Information</p>
+                    <label for="form-style">Style</label>
+                    <select name="form-style" required>
+                        <option value="sketch">Sketch</option>
+                        <option value="flatcolour">Flat Colour</option>
+                        <option value="fullrender">Full Render</option>
+                    </select>
+
+                    <label for="form-selection">Selection</label>
+                    <select name="form-selection" required>
+                        <option value="bust">Bust</option>
+                        <option value="halfbody">Half Body</option>
+                        <option value="fullbody">Full Body</option>
+                    </select>
+
+                    <label for="form-background">Background</label>
+                    <select name="form-background" required>
+                        <option value="flatcolour">Flat Colour</option>
+                        <option value="illustration">llustration</option>
+                    </select> <br>
+
+
+                    <textarea id="form-description" rows="5" cols="10" name="form-description" wrap="soft"
+                        placeholder="Description" required></textarea>
+
+                    <label>Photo References </label>
+                    <input type="file" id="form-file" name="file" multiple='mulitple' accept="image/*"><br>
+
+                    <label id="form-deadline">Do you have a deadline?</label>
+                    <input type="radio" name="deadline" value="no" required>
+                    <label for="deadline-no">No</label>
+
+                    <input type="radio" id="form-deadline" name="deadline" value="yes">
+                    <label for="deadline-yes">Yes</label>
+
+                    <input type="date" id="form-date" name="form-date" value="2023-01-23" min="2023-01-01"
+                        max="2024-12-31"><br><br>
+
+                    <input type="submit" id="form-submit" name="file" accpet=".png .jpg">
+                </form>
+            </div>
+        </div>
+
+            <div class="dual-column-page-fade">
+                <a id="scroll" href="#"><i class="icon icon-arrowup"></i></a>
+                <div class="dual-column-images">
+                    <img src="assets/Pages/Work/Designs/Lashes by Rhi\LBR_SelfTan.png">
+                    <img src="assets/Pages/Work/Designs/Lashes by Rhi\LBR_Lash Cleanser.png">
+                    <img src="assets/Pages/Work/Designs/Lashes by Rhi\LBR_Flyer.png">
+                </div>
+                <div class="dual-column-text">
+                    <a class="page-location-dual-column" href="commissions.html">Vauliys / Commissions</a>
+                    <h1>Vauliys Commmissions</h1>
+                    <p>
+                        <strong>Status: Open</strong><br><br>
+                        Welcome to the Vauliys Commissions. Whether you’re after a gift for a loved one or bringing your
+                        written DND and ficitional charaters to life, Vauliys is here to bring your dream to life.
+                    </p>
+
+                    <hr class="line-solid">
+                    <p>
+                        <strong>Sketch (ad. char +90% of base price)</strong><br>
+                        Bust $25 / Half Body $30 / Full Body $45
+                    </p>
+                    <p>
+                        <strong>Flat Colour (ad. char +90% of base price)</strong><br>
+                        Bust $60 / Half Body $75 / Full Body $90
+                    </p>
+                    <p>
+                        <strong>Full Render (ad. char +90% of base price)</strong><br>
+                        Bust $120 / Half Body $140 / Full Body $160
+                    </p>
+
+                    <p>
+                        <strong>Backgrounds</strong><br>
+                        Flat Colour $0 / Illustration $150+
+                    </p>
+
+                    <p>
+                        Please fill out the form below to submit your enquiry and you will recieve a response within 2
+                        business days.
+                    </p>
+                    <p>
+                        For any business enquiries please email via <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
+                    </p><br>
+
+
+
+                    <button id="BtnForm" onclick="fade()" onclick="overlay()">Submit Enquiry</button>
+                </div>
+            </div>
+    </div>
+        </div>
+
+        <footer>
+            <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
+            <p>
+                © Vauliys 2023 <br>
+                Website designed and built by Vauliys
+            </p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>
