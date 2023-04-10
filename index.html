@@ -1,69 +1,151 @@
-<!--
-    TO DO
-    Create a scroll up and down icon
-
-    Pages:
-    Gallery - add light box to images
--->
-
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Vauliys</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles2.0.css">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="assets/Fonts/vauliys/vauliys.css">
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+
     </head>
-
     <body>
-        <div id="fixed-header">
-            <div id="header">
-                <p>Vauliys</p>
-                <nav>
-                    <div class="github">
-                        <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">Github</a>
-                    </div>
-                    <!-- Search bar - figure out script
-                   <form action="/search" class="search">
-                        <input type="text" placeholder="search anything" name="about.html">
-                   </form>
-                   -->
+        <header class="header">
+            <nav class="nav-container">
+                <div class="nav-bar">
+                    <a href="index.html" class="nav-logo">Vauliys</a>
 
-                    <ul>
-                        <li><a id="active-page" href="">Home</a></li>
-                        <li><a href="about.html">About</a>
-                            <ul>
-                                <li><a href="https://www.imdb.com/name/nm14674760/?ref_=nv_sr_srsg_0"  target="_blank">IMDB</a></li>
-                                <li><a href="https://www.toonboom.com/ambassador/victoria-pritchard"  target="_blank">Toon Boom</a></li>
-                                </li>
-                            </ul>
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav-toggle-menu"></i>
+                        <i class="ri-close-line nav-toggle-close"></i>
+                    </div>
+                </div>
+                <!--========== NAV MENU ==========-->
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#" class="nav-link">Home</a>
                         </li>
-                        <li><a href="illustrations.html">Work</a>
-                            <ul>
-                                <li><a href="animations.html">Animations</a></li>
-                                <li><a href="designs.html">Designs</a></li>
-                                <li><a href="illustrations.html">Illustrations</a></li>
-                                <li><a href="commissions.html">Commissions</a>
-                                </li>
-                            </ul>
+
+                        <!--========== DROP DOWN 1 ==========-->
+                        <li class="dropdown-item">
+                            <div class="nav-link dropdown-button">Discover
+                                <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                            </div>
+
+                            <div class="dropdown-container">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-user-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Learn more about Vauliys</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="" class="dropdown-link">Bio</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.imdb.com/name/nm14674760/" target="_blank"
+                                                    class="dropdown-link">IMDB</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.toonboom.com/ambassador/victoria-pritchard"
+                                                    target="_blank" class="dropdown-link">Toon Boom</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
                         </li>
-                        <li><a href="mailto:hello@vauliys.com">Contact</a></li>
+
+                        <!--========== DROP DOWN 2 ==========-->
+                        <li class="dropdown-item">
+                            <div class="nav-link dropdown-button">Work
+                                <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                            </div>
+
+                            <div class="dropdown-container">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-film-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Animation</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="" class="dropdown-link">Showreel</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">Solar Opposites</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">The Harvest Fesitval</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-crop-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Design</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="" class="dropdown-link">The Chocolate Box</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">LashesbyRhi</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">Till Payments</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-brush-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Gallery</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="" class="dropdown-link">Illustrations</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="mailto:hello@vauliys.com" class="nav-link">Contact</a>
+                        </li>
+
+                        <li class="dropdown-social-icons">
+                            <a href="https://www.instagram.com/vauliys/" target="_blank"
+                                class="dropdown-social-icons"><i class="ri-instagram-line"></i></a>
+                            <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank"
+                                class="dropdown-social-icons"><i class="ri-github-line"></i></a>
+                            <a href="https://store.vauliys.com/" target="_blank" class="dropdown-social-icons"><i
+                                    class="ri-shopping-bag-2-line"></i></a>
+                        </li>
                     </ul>
-                    <div class="nav-icons">
-                        <a href="https://store.vauliys.com" target="_blank"><i class="icon icon-store"></i></a>
-                        <a href="https://instagram.com/vauliys" target="_blank"><i class="icon icon-instagram"></i></a>
-                    </div>
-                </nav>
-            </div>
-        </div>
 
-        <div class="homepage">
-            <div class="homepage-content">
-                <a id="scroll" href="#"><i class="icon icon-arrowup"></i></a>
+                </div>
+            </nav>
+        </header>
+        <div class="body-content">
+            <div class="homepage-scroll">
+                    <a id="scroll"><i class="ri-arrow-drop-up-line"></i></a>
+
                 <video autoplay muted loop
                 src="assets/Pages/Home/VLS_HomeVideo.mp4">
                 Your browser does not support the video tag.
@@ -72,8 +154,7 @@
                 <img src="assets/Pages/Home/CB-Gift Bag.png">
             </div>
 
-         </div>
-
+        </div>
         <footer>
             <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
             <p>
@@ -81,6 +162,6 @@
                 Website designed and built by Vauliys
             </p>
         </footer>
-        <script src="scripts.js"></script>
+        <script src="scripts2.0.js"></script>
     </body>
 </html>

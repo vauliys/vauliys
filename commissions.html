@@ -55,77 +55,78 @@ smaller screens has text overlapping imagery.
             </div>
         </div>
 
-        <div class="dual-column">
+        <div class="page-content commissions">
             <div class="modal-box-container">
-            <div id="modal-box" class="modal-box">
-                <div class="form-header">
-                    <ul>
-                        <li><a class="page-location-dual-column" href="commissions.html">Vauliys / Commissions</a></li>
-                        <li id="modal-box-close" onclick="fade()">Close</a>
-                            <ul>
+                <div id="modal-box" class="modal-box">
+                    <div class="form-header">
+                        <ul>
+                            <li><a class="page-location-dual-column" href="commissions.html">Vauliys / Commissions</a>
+                            </li>
+                            <li id="modal-box-close" onclick="fade()">Close</a>
+                                <ul>
+                    </div>
+                    <h1>Commmission Enquiry</h1>
+
+                    <p id="form-title">Contact Information</p>
+                    <form action="/action_page.php">
+                        <input type="text" id="form-name" placeholder="Full Name" required>
+                        <input type="email" id="form-email" placeholder="Email" required><br>
+
+
+                        <label for="form-preferred">Preferred Contact Method</label>
+                        <select name="form-preferred" required>
+                            <option value="instagram">Instagram</option>
+                            <option value="email">Email</option>
+                        </select>
+
+                        <input type="text" id="form-instagram" placeholder="@Instagram Handle">
+
+                        <hr id="form-line">
+
+                        <p id="form-title">Commission Information</p>
+                        <label for="form-style">Style</label>
+                        <select name="form-style" required>
+                            <option value="sketch">Sketch</option>
+                            <option value="flatcolour">Flat Colour</option>
+                            <option value="fullrender">Full Render</option>
+                        </select>
+
+                        <label for="form-selection">Selection</label>
+                        <select name="form-selection" required>
+                            <option value="bust">Bust</option>
+                            <option value="halfbody">Half Body</option>
+                            <option value="fullbody">Full Body</option>
+                        </select>
+
+                        <label for="form-background">Background</label>
+                        <select name="form-background" required>
+                            <option value="flatcolour">Flat Colour</option>
+                            <option value="illustration">llustration</option>
+                        </select> <br>
+
+
+                        <textarea id="form-description" rows="5" cols="10" name="form-description" wrap="soft"
+                            placeholder="Description" required></textarea>
+
+                        <label>Photo References </label>
+                        <input type="file" id="form-file" name="file" multiple='mulitple' accept="image/*"><br>
+
+                        <label id="form-deadline">Do you have a deadline?</label>
+                        <input type="radio" name="deadline" value="no" required>
+                        <label for="deadline-no">No</label>
+
+                        <input type="radio" id="form-deadline" name="deadline" value="yes">
+                        <label for="deadline-yes">Yes</label>
+
+                        <input type="date" id="form-date" name="form-date" value="2023-01-23" min="2023-01-01"
+                            max="2024-12-31"><br><br>
+
+                        <input type="submit" id="form-submit" name="file" accpet=".png .jpg">
+                    </form>
                 </div>
-                <h1>Commmission Enquiry</h1>
-
-                <p id="form-title">Contact Information</p>
-                <form action="/action_page.php">
-                    <input type="text" id="form-name" placeholder="Full Name" required>
-                    <input type="email" id="form-email" placeholder="Email" required><br>
-
-
-                    <label for="form-preferred">Preferred Contact Method</label>
-                    <select name="form-preferred" required>
-                        <option value="instagram">Instagram</option>
-                        <option value="email">Email</option>
-                    </select>
-
-                    <input type="text" id="form-instagram" placeholder="@Instagram Handle">
-
-                    <hr id="form-line">
-
-                    <p id="form-title">Commission Information</p>
-                    <label for="form-style">Style</label>
-                    <select name="form-style" required>
-                        <option value="sketch">Sketch</option>
-                        <option value="flatcolour">Flat Colour</option>
-                        <option value="fullrender">Full Render</option>
-                    </select>
-
-                    <label for="form-selection">Selection</label>
-                    <select name="form-selection" required>
-                        <option value="bust">Bust</option>
-                        <option value="halfbody">Half Body</option>
-                        <option value="fullbody">Full Body</option>
-                    </select>
-
-                    <label for="form-background">Background</label>
-                    <select name="form-background" required>
-                        <option value="flatcolour">Flat Colour</option>
-                        <option value="illustration">llustration</option>
-                    </select> <br>
-
-
-                    <textarea id="form-description" rows="5" cols="10" name="form-description" wrap="soft"
-                        placeholder="Description" required></textarea>
-
-                    <label>Photo References </label>
-                    <input type="file" id="form-file" name="file" multiple='mulitple' accept="image/*"><br>
-
-                    <label id="form-deadline">Do you have a deadline?</label>
-                    <input type="radio" name="deadline" value="no" required>
-                    <label for="deadline-no">No</label>
-
-                    <input type="radio" id="form-deadline" name="deadline" value="yes">
-                    <label for="deadline-yes">Yes</label>
-
-                    <input type="date" id="form-date" name="form-date" value="2023-01-23" min="2023-01-01"
-                        max="2024-12-31"><br><br>
-
-                    <input type="submit" id="form-submit" name="file" accpet=".png .jpg">
-                </form>
             </div>
-        </div>
 
-            <div class="dual-column-page-fade">
+            <div class="commissions-fade">
                 <a id="scroll" href="#"><i class="icon icon-arrowup"></i></a>
                 <div class="dual-column-images">
                     <img src="assets/Pages/Work/Designs/Lashes by Rhi\LBR_SelfTan.png">
@@ -165,7 +166,8 @@ smaller screens has text overlapping imagery.
                         business days.
                     </p>
                     <p>
-                        For any business enquiries please email via <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
+                        For any business enquiries please email via <a
+                            href="mailto:hello@vauliys.com">hello@vauliys.com</a>
                     </p><br>
 
 
@@ -173,7 +175,6 @@ smaller screens has text overlapping imagery.
                     <button id="BtnForm" onclick="fade()" onclick="overlay()">Submit Enquiry</button>
                 </div>
             </div>
-    </div>
         </div>
 
         <footer>
