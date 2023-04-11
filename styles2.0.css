@@ -25,7 +25,8 @@ html {
     --blue-darken: #0078c2;
 
 
-    --header-height: 3.5rem;
+    --mobile-header-height: 5rem;
+    --desktop-header-height: 5em;
 
 
     /* Font*/
@@ -61,7 +62,7 @@ body {
     font-size: var(--body-text);
     background-color: var(--bg-color);
     color: var(--text-color);
-    min-height: 100vh;
+    min-height: calc(100vh - var(--desktop-header-height));
 }
 
 ul {
@@ -124,7 +125,7 @@ button:hover {
 }
 
 nav {
-    height: var(--header-height);
+    height: var(--mobile-header-height);
 }
 
 .nav-bar {
@@ -333,7 +334,7 @@ nav {
     }
 
     .nav-container {
-        height: calc(var(--header-height) +2rem);
+        height: calc(var(--mobile-header-height) +2rem);
         display: flex;
         justify-content: space-between;
     }
@@ -459,30 +460,24 @@ nav {
 
 /* ----------------------- Navigation for Mobile / Desktop: Footer ----------------------- */
 footer {
+    position: sticky;
+    top: 100%;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
-    width: 100vw;
-    background-color: var(--text-color);
-    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #222;
 }
-
-#footer {
-    bottom: 0;
-    margin-top: 0;
-}
-
 
 footer p {
     font-size: var(--tiny-text-size);
-    color: var(--bg-colour-light);
-    line-height: 2em;
+    color: var(--bg-color);
 }
 
 #logo-mark {
     max-height: 40px;
-    margin: 20px;
+    margin-bottom: 20px;
 }
-
 /* ----------------------- Homepage for Mobile / Desktop: Homepage_Content ----------------------- */
 
 .homepage-content {
@@ -500,14 +495,12 @@ footer p {
 /* ----------------------- About for Mobile ----------------------- */
 
 .about-content {
-    margin-top: var(--header-height);
+    margin-top: var(--mobile-header-height);
     padding: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     animation: fade-in 2s;
 }
-
 .about-content img{
     object-fit: cover;
     width: 100px;
@@ -516,9 +509,6 @@ footer p {
     border-radius: 10px;
 }
 
-.bio {
-    margin: 20px 0;
-}
 .bio-main {
     display: flex;
     margin-bottom: 20px;
@@ -580,10 +570,7 @@ footer p {
 
 /* ------ About_Buttons (Contact, keywords) ------ */
 
-.bio-description{
-    margin-top: 1em;
-    max-width: 90vw;
-}
+
 .bio-button-group {
     margin-top: 1em;
     max-width: 80vw;
@@ -608,22 +595,25 @@ footer p {
 /* ------ About_Text (Body Text) ------ */
 
 .about-text-header{
-    margin-top: 10px;
     font-size: var(--medium-text-size);
 }
 
+.about-text-header p {
+    margin-bottom: 1em;
+    padding: 0;
+}
+
 .about-text{
-    margin-top: 10px;
     font-size: var(--small-text-size);
 }
 
-.about-text p{
-    margin: 10px 0;
+.about-text-description p{
+    padding: 0.5em 0;
     line-height: 1.5em;
 }
 
 hr {
-    margin: 2em 0;
+    margin: 1em 0;
     opacity: 0.2;
 }
 
