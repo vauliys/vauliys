@@ -17,7 +17,8 @@ html {
 
 :root {
     --bg-color: #fafafa;
-    --bg-colour-light: #f1f1f1;
+    --bg-colour-dark: #f1f1f1;
+    --bg-colour-darker: #cccccc;
     --accent-color: #f04f23;
     --accent-light: #faf1e7;
     --text-color: #222;
@@ -25,7 +26,8 @@ html {
     --blue-darken: #0078c2;
 
 
-    --header-height: 3.5rem;
+    --mobile-header-height: 10rem;
+    --desktop-header-height: 5em;
 
 
     /* Font*/
@@ -37,6 +39,9 @@ html {
     --regular-text-size: 1em;
     --medium-text-size: 1.2em;
     --large-text-size: 1.5em;
+    --extra-large-text-size: 2em;
+    --XX-large-text-size: 2.5em;
+
 
     /* Weight */
     --regular: 400;
@@ -53,7 +58,7 @@ html {
 }
 html {
     scroll-behavior: smooth;
-    height: 100%;
+    /* height: 100%; */
 }
 
 body {
@@ -61,7 +66,7 @@ body {
     font-size: var(--body-text);
     background-color: var(--bg-color);
     color: var(--text-color);
-    min-height: 100vh;
+    min-height: calc(100vh - var(--desktop-header-height));
 }
 
 ul {
@@ -124,7 +129,7 @@ button:hover {
 }
 
 nav {
-    height: var(--header-height);
+    height: var(--mobile-header-height);
 }
 
 .nav-bar {
@@ -140,7 +145,7 @@ nav {
     column-gap: .25rem;
     color: var(--text-color);
     font-weight: var(--medium);
-    font-size: var(--small-text-size);
+    font-size: var(--XX-large-text-size);
     transition: color 0.3s;
 }
 
@@ -151,14 +156,14 @@ nav {
 /* ----------------------- Toggle Hamburger Menu ----------------------- */
 .nav-toggle {
     position: relative;
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
 
 }
 
 .nav-toggle-menu,
 .nav-toggle-close {
-    font-size: 1.25rem;
+    font-size: 3rem;
     color: var(--text-color);
     position: absolute;
     display: grid;
@@ -173,7 +178,7 @@ nav {
 }
 
 /* ----------------------- Navigation for Mobile ----------------------- */
-@media screen and (max-width: 1118px) {
+@media screen and (max-width: 1000px) {
     .nav-menu {
         background-color: var(--bg-color);
         position: absolute;
@@ -181,7 +186,7 @@ nav {
         top: 2.5rem;
         width: 100%;
         height: calc(100vh -3.5rem);
-        /* padding-block: 1.5rem 1rem; */
+        padding-block: 1.5rem 1rem;
         pointer-events: none;
         opacity: 0;
         transition: top 0.4s, opacity 0.3s;
@@ -191,8 +196,8 @@ nav {
 .nav-link {
     color: var(--body-text-color);
     font-weight: var(--medium);
-    font-size: var(--small-text-size);
-    padding: 1.25rem 5%;
+    font-size: var(--XX-large-text-size);
+    padding: 3.25rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,13 +205,13 @@ nav {
 }
 
 .nav-link:hover {
-    background-color: var(--bg-colour-light);
+    background-color: var(--bg-colour-dark);
     color: var(--accent);
 }
 
 .show-menu {
     opacity: 1;
-    top: 3.5rem;
+    top: var(--mobile-header-height);
     pointer-events: initial;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 }
@@ -230,13 +235,13 @@ nav {
 /* ----------------------- Navigation for Mobile: Dropdown ----------------------- */
 
 .dropdown-arrow {
-    font-size: 1rem;
+    font-size: 3rem;
     font-weight: initial;
     transition: transform 0.4s;
 }
 
 .dropdown-container {
-    background-color: var(--bg-colour-light);
+    background-color: var(--bg-colour-dark);
     height: 0;
     overflow: hidden;
     transition: height 0.4s;
@@ -249,32 +254,32 @@ nav {
 }
 
 .dropdown-content {
-    row-gap: 1.75rem;
+    row-gap: 2rem;
 }
 
 .dropdown-group {
     padding-left: 2.5rem;
-    row-gap: 0.5rem;
+    row-gap: 1rem;
 }
 
 .dropdown-group:first-child {
-    margin-top: 1.25rem;
+    margin-top: 2rem;
 }
 
 .dropdown-group:last-child {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 /* ----------------------- Navigation for Mobile: Dropdown_ Icon, Title, ----------------------- */
 .dropdown-title {
-    font-size: var(--small-text-size);
+    font-size: var(--XX-large-text-size);
     font-weight: var(--semi-bold);
     color: var(--text-color);
     transition: color 0.3s;
 }
 
 .dropdown-icon {
-    font-size: 1.25rem;
+    font-size: 3rem;
     color: var(--accent-color);
 }
 
@@ -284,11 +289,12 @@ nav {
 }
 
 .dropdown-list {
-    row-gap: 0.25rem;
+    row-gap: 1rem;
 }
 
 .dropdown-link {
-    font-size: var(--small-text-size);
+    font-size: var(--extra-large-text-size);
+    font-weight: var(--regular);
     transition: color 0.3s;
     cursor: pointer;
 }
@@ -305,7 +311,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     transition: all 0.3s;
-    font-weight: var(--medium);
+    font-size: var(--extra-large-text-size);
+    font-weight: var(--regular);
 }
 
 /* Breakpoints */
@@ -316,8 +323,32 @@ nav {
     }
 }
 
+
+/* ----------------------- Navigation for Mobile : Footer ----------------------- */
+
+footer {
+    position: sticky;
+    top: 100%;
+    text-align: center;
+    width: 100%;
+    padding: 60px;
+    background: #222;
+}
+
+footer p {
+    font-size: var(--large-text-size);
+    color: var(--bg-colour-dark);
+    line-height: 1.5em;
+}
+
+#logo-mark {
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
 /* ----------------------- Navigation for Desktop: Dropdown ----------------------- */
-@media screen and (min-width: 1118px) {
+@media screen and (min-width: 1000px) {
+
 
     .nav-toggle {
         display: none;
@@ -328,18 +359,16 @@ nav {
         color: var(--accent-color);
     }
 
+
     .nav-container {
+        height: 5em;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
-    .nav-container {
-        height: calc(var(--header-height) +2rem);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav_toggle {
-        display: none;
+    .nav-logo {
+        font-size: var(--regular);
     }
 
     .nav-list {
@@ -348,16 +377,28 @@ nav {
         align-items: center;
     }
 
+    .nav-link {
+        font-size: var(--regular);
+    }
+
     .nav li {
         display: flex;
     }
 
-    .nav_link {
+    .nav-link {
         padding: 0;
+    }
+    .dropdown-social-icons {
+        font-size: var(--regular-text-size);
     }
 
 /* ----------------------- Navigation for Desktop: Dropdown ----------------------- */
+   .dropdown-arrow {
+    font-size: var(--regular);
+   }
+
     .dropdown-button {
+        height: var(--desktop-header-height);
         column-gap: 0.25rem;
         pointer-events: none;
     }
@@ -368,7 +409,8 @@ nav {
     }
 
     .dropdown-container {
-        height: 14em;
+        top: 5em;
+        height: 16em;
         position: absolute;
         left: 0;
         right: 0;
@@ -404,7 +446,7 @@ nav {
     .dropdown-icon {
         width: 30px;
         height: 30px;
-        background-color: var(--bg-colour-light);
+        background-color: var(--bg-colour-dark);
         border-radius: 50%;
         display: grid;
         place-items: center;
@@ -450,84 +492,96 @@ nav {
     }
 }
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1000px) {
     .container {
         margin-inline: auto;
     }
-}
 
+    /* ----------------------- Navigation for Desktop : Footer ----------------------- */
 
-/* ----------------------- Navigation for Mobile / Desktop: Footer ----------------------- */
 footer {
+    position: sticky;
+    top: 100%;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
-    width: 100vw;
-    background-color: var(--text-color);
-    bottom: 0;
+    width: 100%;
 }
-
-#footer {
-    bottom: 0;
-    margin-top: 0;
-}
-
 
 footer p {
     font-size: var(--tiny-text-size);
-    color: var(--bg-colour-light);
-    line-height: 2em;
 }
 
 #logo-mark {
     max-height: 40px;
-    margin: 20px;
+    margin-bottom: 20px;
 }
+
+}
+
+
 
 /* ----------------------- Homepage for Mobile / Desktop: Homepage_Content ----------------------- */
 
-.homepage-content {
-    padding-top: var(--header-height);
-    display:flex;
-    flex-direction: column;
-    align-items: start;
-    animation: fade-in 2s;
+@media screen and (min-width: 1000px) {
+    .homepage-content {
+        padding-top: var(--desktop-header-height-5em);
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        animation: fade-in 2s;
+    }
+
+    .homepage-content img, video {
+        width: 100vw;
+    }
+
 }
 
-.homepage-content img, video {
-    width: 100vw;
-}
 
+@media screen and (max-width: 1000px) {
+    .homepage-content {
+        padding-top: 10em;
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        animation: fade-in 2s;
+    }
+
+    .homepage-content img, video {
+        width: 100vw;
+    }
+}
 /* ----------------------- About for Mobile ----------------------- */
-
 .about-content {
-    margin-top: var(--header-height);
+    margin-top: var(--mobile-header-height);
     padding: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     animation: fade-in 2s;
 }
 
 .about-content img{
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     object-position: 20% 15%;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 .bio {
     margin: 20px 0;
+
 }
 .bio-main {
     display: flex;
     margin-bottom: 20px;
 }
 
-/* ------ About_Bio (Text header and category ------ */
+
+/* ------ About Mobile_Bio (Text header and category ------ */
 
 .bio-text {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .bio-header {
@@ -537,29 +591,30 @@ footer p {
 
 .bio-header-text {
     font-weight: var(--bold);
-    font-size: var(--large-text-size);
+    font-size: var(--XX-large-text-size);
 }
 
 #bio-verified {
-    margin: 0px 10px;
-    color: var(--blue)
+    margin: 0px 20px;
+    color: var(--blue);
+    font-size: var(--extra-large-text-size);
 }
 
 
 .bio-category {
-    font-size: var(--tiny-text-size);
-    padding: 5px 10px;
+    font-size: var(--large-text-size);
+    padding: 5px 20px;
     border-radius: 2em;
-    background-color: var(--bg-colour-light);
+    background-color: var(--bg-colour-dark);
     margin-right: 20px;
 }
 
-/* ------ About_Bio (Subtext, Name and Pronouns) ------ */
+/* ------ About Mobile_Bio (Subtext, Name and Pronouns) ------ */
 
 .bio-text-info {
     display: flex;
-    margin: 0.3em 0;
-    font-size: var(--regular-text-size);
+    margin: 1em 0;
+    font-size: var(--extra-large-text-size);
     line-height: 1.5em;
 }
 
@@ -572,20 +627,28 @@ footer p {
     font-size: var(--small-text-size);
 }
 
-/* ------ About_Bio (Socials, website and amount of followers) ------ */
+/* ------ About Mobile_Bio (Socials, website and amount of followers) ------ */
 .bio-socials {
-    font-size: var(--small-text-size);
+    margin-top: 1em;
+    font-size: var(--extra-large-text-size);
     line-height: 1.5em;
 }
 
-/* ------ About_Buttons (Contact, keywords) ------ */
+/* ------ About Mobile_Buttons (Contact, keywords) ------ */
 
 .bio-description{
-    margin-top: 1em;
+    margin-top: 3em;
     max-width: 90vw;
+    display: flex;
+    align-items: center;
 }
+
+.description-text {
+    font-size: var(--XX-large-text-size);
+}
+
 .bio-button-group {
-    margin-top: 1em;
+    margin-top: 3em;
     max-width: 80vw;
     display: flex;
     justify-content: flex-start;
@@ -593,39 +656,161 @@ footer p {
 }
 
 .bio-button {
-
-    font-size: var(--tiny-text-size);
-    padding: 5px 10px;
+    font-size: var(--large-text-size);
+    padding: 5px 25px;
     border-radius: 2em;
-    background-color: var(--bg-colour-light);
+    background-color: var(--bg-colour-dark);
     margin-right: 10px;
 }
 
-#bio-contact-button {
-    margin-right: 10px
+.bio-button:hover {
+    background-color: var(--bg-colour-darker);
+    color: var(--text-color);
 }
 
-/* ------ About_Text (Body Text) ------ */
+#bio-contact-button {
+    padding: 10px 60px;
+    margin-right: 30px;
+    font-size: var(--extra-large-text-size)
+}
+
+/* ------ About Mobile_Text (Body Text) ------ */
 
 .about-text-header{
-    margin-top: 10px;
     font-size: var(--medium-text-size);
+    margin: 0;
 }
 
 .about-text{
-    margin-top: 10px;
+    margin: 0;
+    font-weight: var(--medium);
     font-size: var(--small-text-size);
 }
 
 .about-text p{
-    margin: 10px 0;
-    line-height: 1.5em;
+    margin-bottom: 50px;
+    line-height: 5em;
 }
 
 hr {
-    margin: 2em 0;
-    opacity: 0.2;
+    margin: 4em 0;
+    opacity: 0.5;
 }
+
+/* ----------------------- About for Desktop ----------------------- */
+
+@media screen and (min-width: 1000px) {
+    body {
+        margin-top: var(--desktop-header-height);
+    }
+
+    .about-content {
+        margin-top: calc(2 * var(--desktop-header-height));
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+.about-content img{
+    width: 140px;
+    height: 140px;
+    object-position: 20% 15%;
+    border-radius: 20px;
+}
+
+/* ------ About Desktop_Bio (Text header and category ------ */
+
+.bio {
+    margin-right: 2%;
+    margin-bottom: 0;
+}
+.bio-header-text {
+    font-size: var(--large-text-size);
+}
+
+#bio-verified {
+    font-size: var(--large-text-size);
+    margin: 0px 10px;
+}
+
+
+.bio-category {
+    font-size: var(--tiny-text-size);
+}
+
+/* ------ About Desktop_Bio (Subtext, Name and Pronouns) ------ */
+
+.bio-text-info {
+    font-size: var(--regular-text-size);
+}
+
+/* ------ About Desktop_Bio (Socials, website and amount of followers) ------ */
+.bio-socials {
+    font-size: var(--regular-text-size);
+    line-height: 1.5em;
+}
+
+/* ------ About Desktop_Buttons (Contact, keywords) ------ */
+
+.bio-description {
+    margin-top: 1em;
+}
+.description-text {
+    font-size: var(--large-text-size);
+}
+
+.bio-button-group {
+    margin-top: 1em;
+}
+
+.bio-button {
+    font-size: var(--tiny-text-size);
+    padding: 5px 15px;
+    border-radius: 2em;
+    background-color: var(--bg-colour-dark);
+    margin-right: 10px;
+}
+
+.bio-button:hover {
+    background-color: var(--bg-colour-darker);
+    color: var(--text-color);
+
+}
+
+#bio-contact-button {
+    padding: 5px 30px;
+    margin-right: 20px;
+    font-size: var(--small-large-text-size)
+}
+
+/* ------ About Desktop_Text (Body Text) ------ */
+
+.about-text-header{
+    margin-bottom: 30px;
+    font-size: var(--large-text-size);
+}
+
+.about-text{
+    max-width: 28%;
+    margin: 0px;
+    font-weight: var(--medium);
+    font-size: var(--small-text-size);
+}
+
+.about-text p{
+    margin: 20px 0;
+    line-height: 2em;
+}
+
+hr {
+display: none;
+}
+
+}
+
+
+
 
 /* ----------------------- Homepage for Desktop: Scroll to Top Button ----------------------- */
 
@@ -644,7 +829,7 @@ hr {
     opacity: 0.3;
     display: flex;
     align-items: center;
-    color: var(--bg-colour-light);
+    color: var(--bg-colour-dark);
     justify-content: center;
     transition: 0.3s;
     cursor: pointer;
@@ -659,11 +844,11 @@ hr {
 }
 
 
-@media screen and (max-width: 1118px) {
+@media screen and (max-width: 1000px) {
     #scroll i {
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
+        width: 100px;
+        height: 100px;
+        font-size: 5rem;
         right: 3%;
         bottom: 2%;
     }
