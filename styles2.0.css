@@ -695,6 +695,14 @@ hr {
     opacity: 0.5;
 }
 
+
+@media screen and (max-width: 800px) {
+    .bio-category {
+        font-size: var(--regular-text-size);
+        padding: 5px 3%;
+    }
+}
+
 /* ----------------------- About for Desktop ----------------------- */
 
 @media screen and (min-width: 1000px) {
