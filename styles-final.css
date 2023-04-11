@@ -646,6 +646,7 @@ hr {
 
 .showscroll {
     display: flex !important;
+            z-index: 1;
 }
 
 
@@ -656,6 +657,7 @@ hr {
         font-size: 2rem;
         right: 3%;
         bottom: 2%;
+        z-index: 1;
     }
 
 }
