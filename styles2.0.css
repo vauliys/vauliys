@@ -595,7 +595,7 @@ footer p {
 }
 
 #bio-verified {
-    margin: 0px 20px;
+    margin: 0px 3%;
     color: var(--blue);
     font-size: var(--extra-large-text-size);
 }
@@ -603,11 +603,9 @@ footer p {
 
 .bio-category {
     font-size: var(--large-text-size);
-    padding: 5px 20px;
+    padding: 5px 3%;
     border-radius: 2em;
-    background-color: var(--bg-colour-dark);
-    margin-right: 20px;
-}
+    background-color: var(--bg-colour-dark);}
 
 /* ------ About Mobile_Bio (Subtext, Name and Pronouns) ------ */
 
@@ -619,7 +617,7 @@ footer p {
 }
 
 .bio-text-info p{
-    margin-right: 0.5em;
+    margin-right: 3%;
 }
 
 .bio-pronouns {
@@ -683,7 +681,7 @@ footer p {
 
 .about-text{
     margin: 0;
-    font-weight: var(--medium);
+    font-weight: var(--regular);
     font-size: var(--small-text-size);
 }
 
