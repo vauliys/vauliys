@@ -99,13 +99,18 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    background-color: var(--body-colour);
 }
 
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
+    background-color: var(--body-colour);
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 h1,
@@ -176,6 +181,8 @@ hr {
     background-color: var(--body-colour);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 }
+.webpage-content{
+margin-top: var(--header-height)}
 
 /*==================== NAV ====================*/
 
@@ -387,9 +394,13 @@ nav {
     gap: 1rem;
 }
 
+
 .home-content {
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
 
 
 /* Portfolio Slide */
@@ -466,16 +477,12 @@ nav {
 
 /*==================== ABOUT ====================*/
 .about {
+    padding-top: 5%;
     max-width: 768px;
     margin: 0 auto;
-    padding-top: var(--header-height);
     overflow: initial;
 }
 
-
-.about-container {
-    padding: 0% 0 1.5rem;
-}
 
 .about-content {
     display: inline-flex;
@@ -581,11 +588,12 @@ nav {
 
 /*==================== FOOTER ====================*/
 .footer {
-    padding-top: 2rem;
     position: sticky;
     top: 100%;
     width: 100%;
+    bottom: 0;
     text-align: center;
+    margin-top: auto;
 }
 
 .footer-bg {
