@@ -1,105 +1,77 @@
-/* --------------------------------------------------------------- */
-/*Website 2.0 */
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/* Scrollbar (Hide)*/
-/* Chrome, Safari, Opera */
-html::-webkit-scrollbar {
-    display: none;
-}
-
-/* Firefox, IE, Edge */
-html {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
+/*==================== VARIABLES CSS ====================*/
 :root {
-    --bg-color: #fafafa;
-    --bg-colour-light: #f1f1f1;
-    --accent-color: #f04f23;
-    --accent-light: #faf1e7;
-    --text-color: #222;
-    --blue: #0088dd;
-    --blue-darken: #0078c2;
+    --header-height: 4rem;
+
+    /*========== Colors ==========*/
+    /* Change favorite colour */
+    --hue-colour: #f04f23;
+    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+    /* HSL colour mode */
+    --first-colour: #f04f23;
+    --first-colour-alt: #ed380a;
+    --first-colour-second: #262626;
+    --title-colour: #262626;
+    --text-colour: #262626;
+    --text-colour-light: #eeeeee;
+    /* --input-colour: hsl(var(--hue-colour), 70%, 96%); */
+    --body-colour: #fafafa;
+    --body-colour-darker: #d1d1d1;
+    --container-colour: #fafafa;
+    /* --scroll-bar-colour: hsl(var(--hue-colour), 12%, 90%);
+    --scroll-thumb-colour: hsl(var(--hue-colour), 12%, 80%); */
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 
-    --header-height: 5rem;
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
 
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
 
-    /* Font*/
-    --family-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*========== Margin Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
-    /* Size */
-    --tiny-text-size: 0.7em;
-    --small-text-size: 0.8em;
-    --regular-text-size: 1em;
-    --medium-text-size: 1.2em;
-    --large-text-size: 1.5em;
-
-    /* Weight */
-    --regular: 400;
-    --medium: 500;
-    --semi-bold: 600;
-    --bold: 700;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
 }
 
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-html {
-    scroll-behavior: smooth;
-    height: 100%;
-}
-
-body {
-    font-family: var(--family-font);
-    font-size: var(--body-text);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    min-height: calc(100vh - var(--header-height));
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--text-color);
-    transition: color 0.3s;
-    font-weight: var(--semi-bold);
-}
-
-a:hover {
-    color: var(--accent-color);
-}
-
-.container {
-    max-width: 1002px;
-    margin-inline: 1.5rem;
-}
-
-button {
-    padding: 0.5em 5em;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    background-color: var(--blue);
-    font-weight: var(--medium);
-    color: var(--bg-color);
-    font-family: var(--family-font);
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--blue-darken);
-    transition: 0.3s;
-}
+/*========== Animation ==========*/
 
 @keyframes fade-in {
     from {
@@ -111,17 +83,104 @@ button:hover {
     }
 }
 
-/* ----------------------- Fixed Header for Mobile ----------------------- */
+/*========== Variables Dark theme ==========*/
+
+
+/*========== Button Dark/Light ==========*/
+
+
+/*==================== BASE ====================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    margin: 1em 0;
+    opacity: 0.3;
+}
+
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+    padding: 2rem 0 1rem;
+}
+
+.section-title {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
+
+.section-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+    margin-left: var(--mb-1-5) !important;
+    margin-right: var(--mb-1-5) !important;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 0 5%;
-    background-color: var(--bg-color);
+    position: fixed;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-colour);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-    z-index: 5;
 }
+
+/*==================== NAV ====================*/
+
+
+/* Navbar base */
 
 nav {
     height: var(--header-height);
@@ -138,17 +197,19 @@ nav {
     display: inline-flex;
     align-items: center;
     column-gap: .25rem;
-    color: var(--text-color);
-    font-weight: var(--medium);
-    font-size: var(--small-text-size);
+    color: var(--text-colour);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
     transition: color 0.3s;
 }
 
 .nav-logo:hover {
-    color: var(--accent-color);
+    color: var(--hue-colour);
 }
 
-/* ----------------------- Toggle Hamburger Menu ----------------------- */
+
+
+/* Toggle Hamburger Menu */
 .nav-toggle {
     position: relative;
     width: 32px;
@@ -159,7 +220,7 @@ nav {
 .nav-toggle-menu,
 .nav-toggle-close {
     font-size: 1.25rem;
-    color: var(--text-color);
+    color: var(--text-colour);
     position: absolute;
     display: grid;
     place-items: center;
@@ -170,45 +231,7 @@ nav {
 
 .nav-toggle-close {
     opacity: 0;
-}
-
-/* ----------------------- Navigation for Mobile ----------------------- */
-@media screen and (max-width: 700px) {
-    .nav-menu {
-        background-color: var(--bg-color);
-        position: absolute;
-        left: 0;
-        top: 2.5rem;
-        width: 100%;
-        height: calc(100vh -3.5rem);
-        padding-block: 1.5rem 1rem;
-        pointer-events: none;
-        opacity: 0;
-        transition: top 0.4s, opacity 0.3s;
-    }
-}
-
-.nav-link {
-    color: var(--body-text-color);
-    font-weight: var(--medium);
-    font-size: var(--small-text-size);
-    padding: 1.25rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3s;
-}
-
-.nav-link:hover {
-    background-color: var(--bg-colour-light);
-    color: var(--accent);
-}
-
-.show-menu {
-    opacity: 1;
-    top: 3.5rem;
-    pointer-events: initial;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+    color: var(--hue-colour);
 }
 
 .show-icon .nav-toggle-menu {
@@ -221,13 +244,40 @@ nav {
     transition: 0.3s;
 }
 
-.dropdown-button {
-    cursor: pointer;
+/* Navbar - Main Links (Home, Discover, Work, Contact, Social Links) + DropDown Arrow*/
+.nav-menu {
+    background-color: var(--body-colour);
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh -3.5rem);
+    padding-block: 1.5rem 1rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
 }
 
 
+.nav-link {
+    color: var(--text-colour);
+    font-weight: var(--medium);
+    font-size: var(--small-font-size);
+    padding: 1.25rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
 
-/* ----------------------- Navigation for Mobile: Dropdown ----------------------- */
+.nav-link:hover {
+    background-color: var(--body-colour-darker);
+    color: var(--hue-colour);
+}
+
+.dropdown-button {
+    cursor: pointer;
+}
 
 .dropdown-arrow {
     font-size: 1rem;
@@ -235,8 +285,28 @@ nav {
     transition: transform 0.4s;
 }
 
+/* Rotate dropdown arrow */
+.show-dropdown .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Navigation-Social icons */
+.dropdown-social-icons {
+    display: inline-flex;
+    margin: 1em 0;
+    margin-right: 0.7rem;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    font-weight: var(--font-medium);
+    color: var(--hue-colour);
+}
+
+/* Navbar - Dropdown Container (Bio, IMDB, Designs etc)*/
+
 .dropdown-container {
-    background-color: var(--bg-colour-light);
+    background-color: var(--body-colour-darker);
     height: 0;
     overflow: hidden;
     transition: height 0.4s;
@@ -265,271 +335,317 @@ nav {
     margin-bottom: 1.25rem;
 }
 
-/* ----------------------- Navigation for Mobile: Dropdown_ Icon, Title, ----------------------- */
+/* Navbar - Dropdown Links (Title + links)*/
 .dropdown-title {
-    font-size: var(--small-text-size);
-    font-weight: var(--semi-bold);
-    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-colour);
     transition: color 0.3s;
 }
 
 .dropdown-icon {
     font-size: 1.25rem;
-    color: var(--accent-color);
+    color: var(--hue-colour);
 }
 
-/* ----------------------- Navigation for Mobile: Dropdown_Rotate Dropdown Arrow ----------------------- */
-.show-dropdown .dropdown-arrow {
-    transform: rotate(180deg);
-}
+/*  Navigation*/
 
 .dropdown-list {
     row-gap: 0.25rem;
 }
 
 .dropdown-link {
-    font-size: var(--small-text-size);
+    font-size: var(--normal-font-size);
     transition: color 0.3s;
     cursor: pointer;
 }
 
 .dropdown-link:hover {
-    color: var(--accent-color);
+    color: var(--hue-colour);
 }
 
 
-/* ----------------------- Navigation for Mobile: Dropdown_social icons ----------------------- */
-.dropdown-social-icons {
-    display: inline-flex;
-    margin: 5% 0;
-    padding: 0 1em;
-    justify-content: space-between;
+/* show menu */
+.show-menu {
+    opacity: 1;
+    top: 3.5rem;
+    pointer-events: initial;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/*==================== HOME ====================*/
+.home {
+    display: flex;
     align-items: center;
-    transition: all 0.3s;
-    font-weight: var(--medium);
+    justify-content: center;
+    padding-top: var(--header-height);
 }
 
-/* Breakpoints */
-/* ----------------------- Navigation for Mobile: Dropdown ----------------------- */
-@media screen and (max-width: 300px) {
-    .dropdown-group {
-        padding-left: 1.5rem;
-    }
+.home-containter {
+    gap: 1rem;
 }
 
-/* ----------------------- Navigation for Desktop: Dropdown ----------------------- */
-@media screen and (min-width: 701px) {
-
-    .nav-toggle {
-        display: none;
-    }
-
-    .nav-link:hover {
-        background-color: var(--bg-color);
-        color: var(--accent-color);
-    }
-
-    .nav-container {
-        height: calc(var(--header-height) +2rem);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav_toggle {
-        display: none;
-    }
-
-    .nav-list {
-        display: flex;
-        column-gap: 2rem;
-        align-items: center;
-    }
-
-    .nav li {
-        display: flex;
-    }
-
-    .nav_link {
-        padding: 0;
-    }
-
-/* ----------------------- Navigation for Desktop: Dropdown ----------------------- */
-    .dropdown-button {
-        column-gap: 0.25rem;
-        pointer-events: none;
-    }
-
-
-    .dropdown-item:hover {
-        color: var(--accent-color);
-    }
-
-    .dropdown-container {
-        height: 14em;
-        position: absolute;
-        left: 0;
-        right: 0;
-        padding: 0 5%;
-        background-color: var(--bg-color);
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-        pointer-events: none;
-        opacity: 0;
-        transition: top .4s, opacity 0.3s;
-    }
-
-    .dropdown-content {
-        grid-template-columns: repeat(4, max-content);
-        column-gap: 6rem;
-        max-width: 1120px;
-    }
-
-    .dropdown-group {
-        padding: 1em 0;
-        align-content: baseline;
-        row-gap: 1.25rem;
-    }
-
-    .dropdown-group:first-child,
-    .dropdown-group:last-child {
-        margin-top: 0;
-    }
-
-    .dropdown-list {
-        row-gap: 0.75;
-    }
-
-    .dropdown-icon {
-        width: 30px;
-        height: 30px;
-        background-color: var(--bg-colour-light);
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        margin-bottom: 0.5rem;
-    }
-
-    .dropdown-icon i {
-        font-size: 1rem;
-    }
-
-    .dropdown-title {
-        font-size: 0.9em;
-    }
-
-    .dropdown-link {
-        font-size: var(--small-text-size);
-    }
-
-    .dropdown-link:hover {
-        color: var(--accent-color);
-    }
-
-    .dropdown-item {
-        cursor: pointer;
-    }
-
- /* ----------------------- Navigation for Desktop: Dropdown_Rotate Arrow ----------------------- */
-    .dropdown-item:hover .dropdown-arrow {
-        transform: rotate(180deg);
-    }
-
- /* ----------------------- Navigation for Desktop: Dropdown_Show Dropdown on Hover ----------------------- */
-    .dropdown-item:hover .dropdown-container {
-        opacity: 1;
-        pointer-events: initial;
-        cursor: initial;
-    }
-
-    .dropdown-container:hover {
-        opacity: 1;
-        pointer-events: initial;
-        cursor: initial;
-    }
-}
-
-@media screen and (min-width: 1040px) {
-    .container {
-        margin-inline: auto;
-    }
+.home-content {
+    align-items: center;
 }
 
 
-/* ----------------------- Navigation for Mobile / Desktop: Footer ----------------------- */
-footer {
+/* Portfolio Slide */
+
+.portfolio {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.portfolio-container {
+
+    overflow: initial;
+}
+
+.portfolio-content {
+    padding: 0% 0 1.5rem;
+}
+
+.portfolio-img {
+    border-radius: .5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.portfolio-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio-description {
+    margin-bottom: var(--mb-0-75);
+    line-height: var(--h2-font-size);
+}
+
+.portfolio-button:hover .button-icon {
+    transform: translateX(.25rem);
+}
+
+
+
+
+/*==================== BUTTONS ====================*/
+
+.button {
+    display: inline-block;
+    background-color: var(--hue-colour);
+    color: var(--body-colour);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover {
+    background-color: var(--first-colour-alt);
+}
+
+.button-icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.button {
+    padding: 0.5rem 1em;
+    font-size: var(--small-font-size);
+}
+
+
+/*==================== ABOUT ====================*/
+.about {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: var(--header-height);
+    overflow: initial;
+}
+
+
+.about-container {
+    padding: 0% 0 1.5rem;
+}
+
+.about-content {
+    display: inline-flex;
+    margin-bottom: var(--mb-1);
+}
+
+.about-img {
+    display: inline-flex;
+}
+
+.about-img img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    object-position: 20% 15%;
+}
+
+.about-user {
+    margin: 0 var(--mb-0-75)
+}
+
+.about-username {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-0-25);
+}
+
+#about-header-text {
+    font-weight: var(--font-semi-bold);
+    font-size: 1.25rem;
+}
+
+#about-icon {
+    padding: 0 var(--mb-0-5);
+    color: rgb(12, 143, 230);
+}
+
+.about-subtitle {
+    color: var(--text-colour);
+}
+
+.about-followers {
+    margin-top: var(--mb-1);
+}
+
+
+
+.contact-button {
+    background-color: rgb(12, 143, 230);
+    margin-right: var(--mb-0-25);
+}
+
+.contact-button:hover {
+    background-color: rgb(1, 83, 199)
+}
+
+.contact-button:hover .button-icon {
+    transform: translateX(.25rem);
+}
+
+.about-button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: var(--text-colour-light);
+    font-size: var(--smaller-font-size);
+    color: var(--text-colour);
+    border-radius: 1rem;
+}
+
+.about-text {
+    line-height: 1.25rem;
+}
+
+.about-text-header {
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-1);
+}
+
+.about-paragraph {
+    margin-bottom: 1rem;
+}
+
+/*==================== SKILLS ====================*/
+
+
+/*==================== QUALIFICATION ====================*/
+
+
+/*==================== SERVICES ====================*/
+
+
+
+
+/*==================== PROJECT IN MIND ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== CONTACT ME ====================*/
+
+
+/*==================== FOOTER ====================*/
+.footer {
+    padding-top: 2rem;
     position: sticky;
     top: 100%;
-    padding: 30px;
-    text-align: center;
     width: 100%;
     text-align: center;
-    background: #222;
 }
 
-footer p {
-    font-size: var(--tiny-text-size);
-    color: var(--bg-color);
+.footer-bg {
+    background-color: var(--first-colour-second);
+    padding: 2rem 0 3rem;
+}
+
+.footer-title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footer-icons i {
+    margin-right: 1em;
+}
+
+.footer-copy {
+    font-size: var(--smaller-font-size);
+    margin-top: 1.5em
+}
+
+.footer-title,
+.footer-subtitle,
+.footer-icons,
+.footer-copy {
+    color: var(--body-colour-darker);
 }
 
 #logo-mark {
     max-height: 40px;
     margin-bottom: 20px;
 }
-/* ----------------------- Homepage for Mobile / Desktop: Homepage_Content ----------------------- */
 
-.homepage-content {
-    padding-top: var(--header-height);
-    display:flex;
-    flex-direction: column;
-    align-items: start;
-    animation: fade-in 2s;
-}
+/*========== SCROLL UP ==========*/
 
-.homepage-content img, video {
-    width: 100vw;
-}
 
-/* ----------------------- Scroll to Top Button ----------------------- */
+/* Show scroll */
 
-#scroll {
+
+/*========== SCROLL BAR ==========*/
+/* Scrollbar (Hide)*/
+/* Chrome, Safari, Opera */
+html::-webkit-scrollbar {
     display: none;
 }
 
-#scroll i {
-    position: fixed;
-    right: 3%;
-    bottom: 3%;
-    width: 30px;
-    height: 30px;
-    border-radius: 60px;
-    background: var(--text-color);
-    opacity: 0.3;
-    display: flex;
-    align-items: center;
-    color: var(--bg-colour-light);
-    justify-content: center;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#scroll i:hover {
-    opacity: 0.6;
- }
-
-.showscroll {
-    display: flex !important;
-            z-index: 1;
+/* Firefox, IE, Edge */
+html {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 
-@media screen and (max-width: 700px) {
-    #scroll i {
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
-        right: 3%;
-        bottom: 2%;
-        z-index: 1;
-    }
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
 
-}
+
+/* For medium devices */
+
+
+/* For large devices */

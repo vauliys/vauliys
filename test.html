@@ -1,21 +1,16 @@
-<!--
-To Do:
-stick footer to bottom
-@media screen and (min-width: 1118px) {
--->
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Vauliys</title>
-        <link rel="stylesheet" href="styles-final.css">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- Icons -->
+        <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles-test.css">
+
+        <!--==================== ICONS ====================-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
+        <title>Vauliys</title>
 
     </head>
     <body>
@@ -149,13 +144,129 @@ stick footer to bottom
             </nav>
         </header>
 
-        <footer>
-            <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
-            <p>
-                © Vauliys 2023 <br>
-                Website designed and built by Vauliys
-            </p>
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home-container">
+                <div class="home-content">
+                    <img class="home-feature" id="home-feature" src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="#portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Most recent work</span>
+
+            <div class="portfolio-container container">
+                <!--==================== PORTFOLIO 1 ====================-->
+                <div class="portfolio-content grid">
+                    <img src="assets/Pages/Work/Designs/The-Chocolate-Box/CB-Gift Bag.png" alt="" class="portfolio-img">
+                    <div class="portfolio-data">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque et neque congue, sodales lectus ac, dapibus odio.
+                            Integer aliquet eleifend urna. </p>
+                        <a href="" class="button button-flex button-small portfolio-button">
+                            Demo
+                            <i class="ri-arrow-right-s-line button-icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about-container container">
+
+                <div class="about-content ">
+                    <div class="about-img">
+                        <div class="about-img">
+                            <img src="assets/Pages/About/NataliaNaaPhotography_Victoria-13.jpg">
+                        </div>
+                    </div>
+                    <div class="about-user">
+                        <div class="about-username">
+                            <p id="about-header-text">Vauliys</p>
+                            <i class="ri-checkbox-circle-fill" id="about-icon"></i>
+                        </div>
+                        <div class="about-subtitle">
+                            <p class=" about-subtitle">Digital Designer</p>
+                            <p class=" about-followers"><strong>10K</strong> followers on Instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-buttons">
+                    <a href="" class="button button-flex button-small contact-button">Contact
+                        <i class="ri-arrow-right-s-line button-icon"></i></a>
+
+
+                    <a href="" class="button button-flex button-small about-button">Animation</a>
+                    <a href="" class="button button-flex button-small about-button">Design</a>
+                    <a href="" class="button button-flex button-small about-button">Art</a>
+                </div>
+
+                <hr>
+
+                <div class="about-text">
+                    <div class="about-text-header">
+                        Victoria Pritchard (vauliys) is a Melbourne-based Digital Designer, specialising in Digital
+                        Illustrations, 2D
+                        Motion Graphics, Print and Digital Medias.
+
+                    </div>
+                    <div class="about-paragraph">
+                        <p>
+                            With 6 years of study under her belt, she has attained a Bachelor's Degree in Design
+                            (Animation
+                            and Interactive Media)
+                            from RMIT University and a Certificate III (Screen and Media) from Kangin Institue.
+                            Victoria has Interned with the Melbourne Museum under the Creative Programs, granted to her
+                            following the participation
+                            in the 2018 Top Designs Exhibition showcasing her original Animated Short "Daisy and Poh".
+                        </p>
+                    </div>
+                    <div class="about-paragraph">
+                        <p>
+                            She currently works in the Fintech Industry, under the employement of <a href="">Till
+                                Payments</a> enforcing brand identity across print and
+                            video, while bringing new life and movement to virtual design.
+                        </p>
+                    </div>
+                    <div class="about-paragraph">
+                        <p>
+                            You can learn more about Victoria on her <a href="">Linkedin</a>, <a href="">IMDB</a> or <a
+                                href="">Toon Boom Ambassador Profile</a>.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer-bg">
+                <div>
+                    <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
+
+                    <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank">
+                        <i class="ri-github-line"></i></a>
+
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-shopping-bag-2-line"></i></a>
+                </div>
+                <p class="footer-copy">&#169 Vauliys. All rights reserved</p>
+            </div>
         </footer>
-        <script src="scripts2.0.js"></script>
+
+
+
+        <!--==================== MAIN JS ====================-->
+        <script src="scripts2.0.js" defer></script>
     </body>
 </html>

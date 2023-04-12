@@ -1,4 +1,4 @@
-/*================ Show Menu ================*/
+/*================ NAVBAR SHOW MENU ================*/
 const showMenu = () =>{
     const toggle = document.getElementById('nav-toggle');
     nav = document.getElementById('nav-menu')
@@ -12,7 +12,7 @@ const showMenu = () =>{
 
 showMenu('nav-toggle', 'nav-menu')
 
-/*================ Show DropDown Menu ================*/
+/*================ NAVBAR SHOW DROPDOWN  ================*/
 const dropdownItems = document.querySelectorAll('.dropdown-item')
 
 // 1. Select each dropdown item
@@ -54,7 +54,7 @@ const showDropdown = document.querySelector('.show-dropdown')
 }
 
 
-/*================ Scroll To Top Appears ================*/
+/*================ SCROLL TO TOP BUTTON APPEARS ================*/
 const scrolltotop = document.getElementById('scroll');
 
 scrolltotop.addEventListener("click", e => {
@@ -72,3 +72,4 @@ window.addEventListener('scroll', e => {
         scrolltotop.classList.remove('showscroll');
     }
 });
+

@@ -1,21 +1,16 @@
-<!--
-To Do:
-stick footer to bottom
-@media screen and (min-width: 1118px) {
--->
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Vauliys</title>
-        <link rel="stylesheet" href="styles-final.css">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- Icons -->
+        <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles-test.css">
+
+        <!--==================== ICONS ====================-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
+        <title>Vauliys</title>
 
     </head>
     <body>
@@ -148,24 +143,61 @@ stick footer to bottom
                 </div>
             </nav>
         </header>
-        <div class="homepage-content">
 
-                <a id="scroll"><i class="ri-arrow-drop-up-line"></i></a>
-
-                <video autoplay muted loop src="assets/Pages/Home/VLS_HomeVideo.mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
-                <img src="assets/Pages/Home/CB-Gift Bag.png">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home-container">
+                <div class="home-content">
+                    <img class="home-feature" id="home-feature" src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+                </div>
             </div>
-        </div>
-        <footer>
-            <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
-            <p>
-                © Vauliys 2023 <br>
-                Website designed and built by Vauliys
-            </p>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="#portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Most recent work</span>
+
+            <div class="portfolio-container container">
+                <!--==================== PORTFOLIO 1 ====================-->
+                <div class="portfolio-content grid">
+                    <img src="assets/Pages/Work/Designs/The-Chocolate-Box/CB-Gift Bag.png" alt="" class="portfolio-img">
+                    <div class="portfolio-data">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque et neque congue, sodales lectus ac, dapibus odio.
+                            Integer aliquet eleifend urna. </p>
+                        <a href="" class="button button-flex button-small portfolio-button">
+                            Demo
+                            <i class="ri-arrow-right-s-line button-icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer-bg">
+                <div>
+                    <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
+
+                    <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank">
+                        <i class="ri-github-line"></i></a>
+
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-shopping-bag-2-line"></i></a>
+                </div>
+                <p class="footer-copy">&#169 Vauliys. All rights reserved</p>
+            </div>
         </footer>
-        <script src="scripts2.0.js"></script>
+
+
+
+        <!--==================== MAIN JS ====================-->
+        <script src="scripts2.0.js" defer></script>
     </body>
 </html>
