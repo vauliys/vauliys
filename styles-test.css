@@ -495,44 +495,15 @@ nav {
     margin: 1rem auto;
 }
 
+/*==================== ILLUSTRATIONS ====================*/
 
 
-/* Portfolio Slide
-
-.portfolio {
-    max-width: 768px;
-    margin: 0 auto;
+.illustration {
+    padding-top: var(--header-height);
+    margin: 0 var(--mb-0-25);
+    display: flex;
+    flex-direction: column;
 }
-
-.portfolio-container {
-
-    overflow: initial;
-}
-
-.portfolio-content {
-    padding: 0% 0 1.5rem;
-}
-
-.portfolio-img {
-    border-radius: .5rem;
-    justify-content: center;
-    width: 100%;
-}
-
-.portfolio-title {
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
-}
-
-.portfolio-description {
-    margin-bottom: var(--mb-0-75);
-    line-height: var(--h2-font-size);
-}
-
-.portfolio-button:hover .button-icon {
-    transform: translateX(.25rem);
-}
- */
 
 /*==================== BUTTONS ====================*/
 
@@ -815,5 +786,49 @@ html {
     margin: 1rem auto;
 }
 
+/* Illustration */
 
+.illustration {
+    padding-top: var(--header-height);
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+.illus-grid {
+    margin: 0 5px;
+    columns: 4;
+    column-gap: 5px;
+}
+
+.illus-item img{
+    margin-bottom: 10px
+}
+
+.ocean {
+    width: 100%;
+    height: 18.3%;
+    object-fit: cover;
+}
+
+.keycap {
+    width: 100%;
+    height: 9.92%;
+    object-fit: cover;
+    object-position: 10% 43%;
+}
+
+.portrait {
+    width: 100%;
+    height: 14.85%;
+    object-position: 10% 43%;
+    object-fit: cover;
+}
+
+.grass {
+    width: 100%;
+    height: 24.3%;
+    object-position: 10% 43%;
+    object-fit: cover;
+}
 }

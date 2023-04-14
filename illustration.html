@@ -1,0 +1,239 @@
+<!--LIST TO DO
+
+Navbar: for medium and large displays use macro dropdown
+
+Hompage: for phone screens, hide feature image and replace with 1920x1080
+@media screen and (max-width:800px){
+    .home-feature {
+        display: none;
+    }
+
+    .home-feature-mobile {
+        display: block;
+    }
+}
+
+==================== COMPLETED ====================
+
+Footer
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles-test.css">
+
+        <!--==================== ICONS ====================-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+        <title>Vauliys</title>
+
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav-container">
+                <div class="nav-bar">
+                    <a href="index.html" class="nav-logo">Vauliys</a>
+
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav-toggle-menu"></i>
+                        <i class="ri-close-line nav-toggle-close"></i>
+                    </div>
+                </div>
+                <!--========== NAV MENU ==========-->
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <!--========== DROP DOWN 1 ==========-->
+                        <li class="dropdown-item">
+                            <div class="nav-link dropdown-button">Discover
+                                <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                            </div>
+
+                            <div class="dropdown-container">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-user-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Discover more about Vauliys</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="about.html" class="dropdown-link">About Vauliys</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.imdb.com/name/nm14674760/" target="_blank"
+                                                    class="dropdown-link">IMDB</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.toonboom.com/ambassador/victoria-pritchard"
+                                                    target="_blank" class="dropdown-link">Toon Boom</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <!--========== DROP DOWN 2 ==========-->
+                        <li class="dropdown-item">
+                            <div class="nav-link dropdown-button">Work
+                                <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                            </div>
+
+                            <div class="dropdown-container">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-film-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Animation</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="animation" class="dropdown-link">All Animations</a>
+                                            </li>
+                                            <li>
+                                                <a href="showreel.html" class="dropdown-link">Showreel</a>
+                                            </li>
+                                            <li>
+                                                <a href="solaropposites.html" class="dropdown-link">Solar Opposites</a>
+                                            </li>
+                                            <li>
+                                                <a href="harvestfestival.html" class="dropdown-link">The Harvest
+                                                    Fesitval</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-crop-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Design</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="design.html" class="dropdown-link">All Designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="chocolate.html" class="dropdown-link">The Chocolate Box</a>
+                                            </li>
+                                            <li>
+                                                <a href="lashesbyrhi.html" class="dropdown-link">LashesbyRhi</a>
+                                            </li>
+                                            <li>
+                                                <a href="tillpayments.html" class="dropdown-link">Till Payments</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-brush-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Other</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="illustration.html" class="dropdown-link">Illustrations</a>
+                                            </li>
+                                            <li>
+                                                <a href="illustration.html" class="dropdown-link">Commissions</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="mailto:hello@vauliys.com" class="nav-link">Contact</a>
+                        </li>
+
+                        <li class="dropdown-social-icons">
+                            <a href="https://www.instagram.com/vauliys/" target="_blank"
+                                class="dropdown-social-icons"><i class="ri-instagram-line"></i></a>
+                            <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank"
+                                class="dropdown-social-icons"><i class="ri-github-line"></i></a>
+                            <a href="https://store.vauliys.com/" target="_blank" class="dropdown-social-icons"><i
+                                    class="ri-shopping-bag-2-line"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== HOME ====================-->
+        <!-- <div class="webpage-content">
+
+
+            </div>-->
+        <div class="illustration">
+
+            <section class="illus-grid">
+                <img src="assets/Pages/Illustration/2023_VLS00_Barbie_01FA.png" class="illus-item">
+                <img src="assets/Pages/Illustration/_2022_VLS05_Keycap Isometric 01FA 01.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS00_Shoiab 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/_VLS01_OC Naomi_Outfit Design_01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS00_Nina Dobrev 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS02_Ocean 01FA.jpg" class="illus-item ocean">
+                <img src="assets/Pages/Illustration/2022_VLS05_Cloud 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS00_Lindsay 02Flat 03.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2021_VLS00_Doja Cat 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS01_Desert Painting 02Flat.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2019_VLS06_Fish 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2019_VLS06_Frog 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2021_VLS00_Asian Portrait 01FA.JPG" class="illus-item portrait">
+                <img src="assets/Pages/Illustration/2023_VLS02_Grass Field Day 01FA.jpg" class="illus-item grass">
+                <img src="assets/Pages/Illustration/2022_VLS00_Frankie 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS01_OC Naomi Volleyball 01Final.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2023_VLS01_OC Leon Portrait 01FA_v3.png" class="illus-item">
+                <img src="assets/Pages/Illustration/2021_VLS03_22 Birthday 01FA.JPG" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS01_OC Pippi DND 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS00_Pink Horns 02Flat.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS05_Keycap Isometric 01FA 02.jpg" class="illus-item keycap">
+                <img src="assets/Pages/Illustration/2022_VLS05_Potion 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS00_Lindsay 01FA.jpg" class="illus-item">
+                <img src="assets/Pages/Illustration/2022_VLS00_Avatar 01FA 01.jpg" class="illus-item">
+
+            </section>
+        </div>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer-bg">
+                <div>
+                    <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
+
+                    <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank">
+                        <i class="ri-github-line"></i></a>
+
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-shopping-bag-2-line"></i></a>
+                </div>
+                <p class="footer-copy">&#169 Vauliys. All rights reserved</p>
+            </div>
+        </footer>
+
+
+
+        <!--==================== MAIN JS ====================-->
+        <script src="scripts2.0.js" defer></script>
+    </body>
+</html>
