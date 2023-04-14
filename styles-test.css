@@ -13,7 +13,7 @@
     --first-colour-second: #262626;
     --title-colour: #262626;
     --text-colour: #262626;
-    --text-colour-light: #eeeeee;
+    --body-colour-dark: #eeeeee;
     /* --input-colour: hsl(var(--hue-colour), 70%, 96%); */
     --body-colour: #fafafa;
     --body-colour-darker: #d1d1d1;
@@ -217,10 +217,10 @@ nav {
 /* Toggle Hamburger Menu */
 .nav-toggle {
     position: relative;
-    width: 32px;
-    height: 32px;
-
+    width: 20px;
+    height: 20px;
 }
+
 
 .nav-toggle-menu,
 .nav-toggle-close {
@@ -251,7 +251,7 @@ nav {
 
 /* Navbar - Main Links (Home, Discover, Work, Contact, Social Links) + DropDown Arrow*/
 .nav-menu {
-    background-color: var(--body-colour);
+    background-color: rgb(250, 250, 250, 0.9);
     position: absolute;
     left: 0;
     top: 2.5rem;
@@ -276,7 +276,7 @@ nav {
 }
 
 .nav-link:hover {
-    background-color: var(--body-colour-darker);
+    background-color: var(--body-colour-light);
     color: var(--hue-colour);
 }
 
@@ -311,7 +311,7 @@ nav {
 /* Navbar - Dropdown Container (Bio, IMDB, Designs etc)*/
 
 .dropdown-container {
-    background-color: var(--body-colour-darker);
+    background-color: rgb(238, 238, 238, 0.8);
     height: 0;
     overflow: hidden;
     transition: height 0.4s;
@@ -343,7 +343,7 @@ nav {
 /* Navbar - Dropdown Links (Title + links)*/
 .dropdown-title {
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     color: var(--text-colour);
     transition: color 0.3s;
 }
@@ -379,23 +379,131 @@ nav {
 }
 
 /*==================== HOME ====================*/
+
 .home {
-    display: flex;
-    align-items: center;
+    margin-top: var(--header-height);
+}
+
+#home-feature {
+    width: 100vw;
+    object-fit: cover;
+    border-radius: 1rem;
+    object-position: 50% 20%;
+    margin-bottom: 2rem;
+    padding-top: var(--header-height);
+}
+
+.home-about {
+    max-width: 90%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.home-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.home-description {
+    margin-bottom: var(--mb-0-75);
+    line-height: var(--h2-font-size);
+}
+
+.home-grid {
     justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0rem;
+    grid-column-gap: 0.25rem;
+    max-width: 95%;
+    margin: 1rem auto;
 }
 
-.home-containter {
-    gap: 1rem;
+/*==================== DESIGNS ====================*/
+
+.design {
+    margin-top: var(--header-height);
 }
 
-.home-content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+#design-feature {
+    width: 100vw;
+    object-fit: cover;
+    border-radius: 1rem;
+    object-position: 50% 20%;
+    margin-bottom: 2rem;
+    padding-top: var(--header-height);
 }
 
-/* Portfolio Slide */
+.design-about {
+    max-width: 90%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.design-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.design-description {
+    margin-bottom: var(--mb-0-75);
+    line-height: var(--h2-font-size);
+}
+
+.design-grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0rem;
+    grid-column-gap: 0.25rem;
+    max-width: 95%;
+    margin: 1rem auto;
+}
+
+/*==================== DESIGN FOCUS PAGES ====================*/
+
+.design-focus {
+    margin-top: var(--header-height);
+}
+
+#design-focus-feature {
+    width: 100vw;
+    object-fit: cover;
+    border-radius: 1rem;
+    object-position: 50% 20%;
+    margin-bottom: 2rem;
+    padding-top: var(--header-height);
+}
+
+.design-focus-about {
+    max-width: 90%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.design-focus-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.design-focus-description {
+    margin: 2em 0;
+    line-height: var(--h2-font-size);
+}
+
+
+
+.design-focus-grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0rem;
+    margin: 1rem auto;
+}
+
+
+
+/* Portfolio Slide
 
 .portfolio {
     max-width: 768px;
@@ -430,7 +538,7 @@ nav {
 .portfolio-button:hover .button-icon {
     transform: translateX(.25rem);
 }
-
+ */
 
 /*==================== BUTTONS ====================*/
 
@@ -537,7 +645,7 @@ nav {
 .about-button {
     display: inline-flex;
     flex-wrap: wrap;
-    background-color: var(--text-colour-light);
+    background-color: var(--body-colour-dark);
     font-size: var(--smaller-font-size);
     color: var(--text-colour);
     border-radius: 1rem;
@@ -588,7 +696,7 @@ nav {
 
 .footer-bg {
     background-color: var(--first-colour-second);
-    padding: 2rem 0 3rem;
+    padding: 2rem 0 2rem;
 }
 
 .footer-title {
@@ -602,7 +710,7 @@ nav {
 
 .footer-copy {
     font-size: var(--smaller-font-size);
-    margin-top: 1.5em
+    margin-top: 1em
 }
 
 .footer-title,
@@ -614,7 +722,7 @@ nav {
 
 #logo-mark {
     max-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 /*========== SCROLL UP ==========*/
@@ -640,10 +748,78 @@ html {
 
 
 /*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+
+/*============ SMALL DEVICES ============*/
+@media  screen and (max-width: 350px) {
 
 
-/* For medium devices */
+/* Nav */
+
+.nav-link {
+    padding: 5%;
+}
+.dropdown-group {
+    padding-left: 1.25rem;
+}
+
+.dropdown-title,
+.dropdown-link {
+    font-size: var(--small-font-size);
+}
+
+}
+
+/*============ MEDIUM DEVICES ============*/
+@media screen and (max-width: 768px) {
 
 
-/* For large devices */
+/* Nav */
+
+}
+
+/*============ LARGE DEVICES ============*/
+
+/* Nav */
+
+
+
+
+/* Home */
+@media screen and (min-width: 1024px) {
+    .home-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 0rem;
+        grid-column-gap: 0.25rem;
+        max-width: 95%;
+        margin: 3rem auto;
+    }
+
+
+/* Design-focus */
+.design-focus-about {
+    max-width: 70%;
+    text-align: center;
+}
+
+.design-focus-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.design-focus-description {
+    margin-bottom: var(--mb-0-75);
+    line-height: var(--h2-font-size);
+}
+
+.design-focus-grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    max-width: 60%;
+    margin: 1rem auto;
+}
+
+
+}

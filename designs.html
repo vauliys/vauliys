@@ -1,72 +1,242 @@
+<!--LIST TO DO
+
+Navbar: for medium and large displays use macro dropdown
+
+Hompage: for phone screens, hide feature image and replace with 1920x1080
+@media screen and (max-width:800px){
+    .home-feature {
+        display: none;
+    }
+
+    .home-feature-mobile {
+        display: block;
+    }
+}
+
+==================== COMPLETED ====================
+
+Footer
+
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Vauliys</title>
-        <link rel="stylesheet" href="styles.css">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="assets/Fonts/vauliys/vauliys.css">
-    </head>
+        <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
 
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles-test.css">
+
+        <!--==================== ICONS ====================-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+        <title>Vauliys</title>
+
+    </head>
     <body>
-        <div id="fixed-header">
-            <div id="header">
-                <p>Vauliys</p>
-                <nav>
-                    <div class="github">
-                        <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">Github</a>
+        <header class="header">
+            <nav class="nav-container">
+                <div class="nav-bar">
+                    <a href="index.html" class="nav-logo">Vauliys</a>
+
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav-toggle-menu"></i>
+                        <i class="ri-close-line nav-toggle-close"></i>
                     </div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a>
-                            <ul>
-                                <li><a href="https://www.imdb.com/name/nm14674760/?ref_=nv_sr_srsg_0"
-                                        target="_blank">IMDB</a></li>
-                                <li><a href="https://www.toonboom.com/ambassador/victoria-pritchard"
-                                        target="_blank">Toon Boom</a></li>
+                </div>
+                <!--========== NAV MENU ==========-->
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <!--========== DROP DOWN 1 ==========-->
+                        <li class="dropdown-item">
+                            <div class="nav-link dropdown-button">Discover
+                                <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                            </div>
+
+                            <div class="dropdown-container">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-user-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Discover more about Vauliys</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="about.html" class="dropdown-link">About Vauliys</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.imdb.com/name/nm14674760/" target="_blank"
+                                                    class="dropdown-link">IMDB</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.toonboom.com/ambassador/victoria-pritchard"
+                                                    target="_blank" class="dropdown-link">Toon Boom</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <!--========== DROP DOWN 2 ==========-->
+                        <li class="dropdown-item">
+                            <div class="nav-link dropdown-button">Work
+                                <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                            </div>
+
+                            <div class="dropdown-container">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-film-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Animation</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="" class="dropdown-link">Showreel</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">Solar Opposites</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">The Harvest Fesitval</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-crop-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Design</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="" class="dropdown-link">All Designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">The Chocolate Box</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">LashesbyRhi</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="dropdown-link">Till Payments</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown-group">
+                                        <div class="dropdown-icon">
+                                            <i class="ri-brush-line"></i>
+                                        </div>
+                                        <span class="dropdown-title">Gallery</span>
+
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="" class="dropdown-link">Illustrations</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="mailto:hello@vauliys.com" class="nav-link">Contact</a>
+                        </li>
+
+                        <li class="dropdown-social-icons">
+                            <a href="https://www.instagram.com/vauliys/" target="_blank"
+                                class="dropdown-social-icons"><i class="ri-instagram-line"></i></a>
+                            <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank"
+                                class="dropdown-social-icons"><i class="ri-github-line"></i></a>
+                            <a href="https://store.vauliys.com/" target="_blank" class="dropdown-social-icons"><i
+                                    class="ri-shopping-bag-2-line"></i></a>
                         </li>
                     </ul>
-                    </li>
-                    <li><a id="active-page" href="">Work</a>
-                        <ul>
-                            <li><a href="animations.html">Animations</a></li>
-                            <li><a href="designs.html">Designs</a></li>
-                            <li><a href="illustrations.html">Illustrations</a></li>
-                            <li><a href="commissions.html">Commissions</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="mailto:hello@vauliys.com">Contact</a></li>
-                    </ul>
-                    <div class="nav-icons">
-                        <a href="https://store.vauliys.com" target="_blank"><i class="icon icon-store"></i></a>
-                        <a href="https://instagram.com/vauliys" target="_blank"><i class="icon icon-instagram"></i></a>
 
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== HOME ====================-->
+        <!-- <div class="webpage-content">
+
+
+            </div>-->
+        <div class="design">
+            <div class="design-feature">
+                <img #="design-feature" src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+            </div>
+
+            <!--==================== ABOUT WEBSITE ====================-->
+            <section class="design-about section" id="#design">
+                <div class="design-about">
+                    <h3 class="design-title">Vauliys</h3>
+                    <p class="design-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ipsam
+                        provident consectetur totam temporibus minima, nostrum saepe necessitatibus voluptas quaerat,
+                        culpa nemo quod mollitia et minus accusantium impedit veritatis doloremque!</p>
+                </div>
+            </section>
+            <section class="home-feature">
+                <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+            </section>
+
+            <section class="home-grid grid">
+                    <div class="grid-item grid-item-1">
+                        <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
                     </div>
-                </nav>
-            </div>
+                    <div class="grid-item grid-item-1">
+                        <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+                    </div>
+                    <div class="grid-item grid-item-1">
+                        <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+                    </div>
+                    <div class="grid-item grid-item-1">
+                        <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+                    </div>
+                    <div class="grid-item grid-item-1">
+                        <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+                    </div>
+                    <div class="grid-item grid-item-1">
+                        <img src="assets/Pages/Home/VLS_Till_PlayHQ PitchDeck.png">
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <div class="page-content designs">
-            <div class="designs-content">
-                <a href="designs-lashesbyrhi.html">
-                    <img src="assets/Pages/Work/Designs/Lashes by Rhi/LBR_SelfTan.png"></a>
-                <a href="designs-till.html">
-                    <img src="assets/Pages/Work/Designs/Till Payments/VLS_Till_PAX01.png"></a>
-                <a href="">
-                    <img src="assets/Pages/Work/Designs/The-Chocolate-Box/CB-Gift Bag.png"></a>
-            </div>
-        </div>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer-bg">
+                <div>
+                    <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
 
-        <footer>
-            <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
-            <p>
-                © Vauliys 2023 <br>
-                Website designed and built by Vauliys
-            </p>
+                    <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank">
+                        <i class="ri-github-line"></i></a>
+
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-shopping-bag-2-line"></i></a>
+                </div>
+                <p class="footer-copy">&#169 Vauliys. All rights reserved</p>
+            </div>
         </footer>
-        <script src="scripts.js"></script>
+
+
+
+        <!--==================== MAIN JS ====================-->
+        <script src="scripts2.0.js" defer></script>
     </body>
 </html>
