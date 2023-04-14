@@ -13,7 +13,7 @@
     --first-colour-second: #262626;
     --title-colour: #262626;
     --text-colour: #262626;
-    --body-colour-dark: #eeeeee;
+    --body-colour-dark: rgb(238, 238, 238);
     /* --input-colour: hsl(var(--hue-colour), 70%, 96%); */
     --body-colour: #fafafa;
     --body-colour-darker: #d1d1d1;
@@ -174,7 +174,7 @@ hr {
     position: fixed;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-colour);
+    background-color: rgb(238, 238, 238, 0.9);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 }
 .webpage-content{
@@ -254,9 +254,8 @@ nav {
     background-color: rgb(250, 250, 250, 0.9);
     position: absolute;
     left: 0;
-    top: 2.5rem;
+    top: var(--header-height);
     width: 100%;
-    height: calc(100vh -3.5rem);
     padding-block: 1.5rem 1rem;
     pointer-events: none;
     opacity: 0;
@@ -373,7 +372,6 @@ nav {
 /* show menu */
 .show-menu {
     opacity: 1;
-    top: 3.5rem;
     pointer-events: initial;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 }
@@ -382,15 +380,16 @@ nav {
 
 .home {
     margin-top: var(--header-height);
+    display: flex;
+    flex-direction: column;
 }
 
-#home-feature {
+.page-feature img{
     width: 100vw;
+    height: 100vh;
     object-fit: cover;
-    border-radius: 1rem;
     object-position: 50% 20%;
     margin-bottom: 2rem;
-    padding-top: var(--header-height);
 }
 
 .home-about {
@@ -423,6 +422,8 @@ nav {
 
 .design {
     margin-top: var(--header-height);
+    display: flex;
+    flex-direction: column;
 }
 
 #design-feature {
@@ -464,15 +465,8 @@ nav {
 
 .design-focus {
     margin-top: var(--header-height);
-}
-
-#design-focus-feature {
-    width: 100vw;
-    object-fit: cover;
-    border-radius: 1rem;
-    object-position: 50% 20%;
-    margin-bottom: 2rem;
-    padding-top: var(--header-height);
+    display: flex;
+    flex-direction: column;
 }
 
 .design-focus-about {
