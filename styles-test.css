@@ -138,7 +138,7 @@ hr {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    padding: 2rem 0 1rem;
+    padding: 2rem 0 2rem;
 }
 
 .section-title {
@@ -187,7 +187,7 @@ hr {
 
 /* Navbar base */
 
-nav {
+/* nav {
     height: var(--header-height);
 }
 
@@ -210,12 +210,12 @@ nav {
 
 .nav-logo:hover {
     color: var(--hue-colour);
-}
+} */
 
 
 
 /* Toggle Hamburger Menu */
-.nav-toggle {
+/* .nav-toggle {
     position: relative;
     width: 20px;
     height: 20px;
@@ -247,17 +247,17 @@ nav {
 .show-icon .nav-toggle-close {
     opacity: 1;
     transition: 0.3s;
-}
+} */
 
 /* Navbar - Main Links (Home, Discover, Work, Contact, Social Links) + DropDown Arrow*/
-.nav-menu {
+/* .nav-menu {
     background-color: rgb(250, 250, 250, 0.9);
     position: absolute;
     left: 0;
     top: var(--header-height);
     width: 100%;
     padding-block: 1.5rem 1rem;
-    pointer-events: none;
+    /* pointer-events: none;
     opacity: 0;
     transition: top 0.4s, opacity 0.3s;
 }
@@ -289,12 +289,12 @@ nav {
     transition: transform 0.4s;
 }
 
-/* Rotate dropdown arrow */
+Rotate dropdown arrow
 .show-dropdown .dropdown-arrow {
     transform: rotate(180deg);
 }
 
-/* Navigation-Social icons */
+Navigation-Social icons
 .dropdown-social-icons {
     display: inline-flex;
     margin: 1em 0;
@@ -307,10 +307,10 @@ nav {
     color: var(--hue-colour);
 }
 
-/* Navbar - Dropdown Container (Bio, IMDB, Designs etc)*/
+Navbar - Dropdown Container (Bio, IMDB, Designs etc)
 
 .dropdown-container {
-    background-color: rgb(238, 238, 238, 0.8);
+    background-color: rgb(250, 250, 250);
     height: 0;
     overflow: hidden;
     transition: height 0.4s;
@@ -327,7 +327,7 @@ nav {
 }
 
 .dropdown-group {
-    padding-left: 2.5rem;
+    padding-left: 5%;
     row-gap: 0.5rem;
 }
 
@@ -339,7 +339,7 @@ nav {
     margin-bottom: 1.25rem;
 }
 
-/* Navbar - Dropdown Links (Title + links)*/
+Navbar - Dropdown Links (Title + links)
 .dropdown-title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi-bold);
@@ -352,10 +352,10 @@ nav {
     color: var(--hue-colour);
 }
 
-/*  Navigation*/
+Navigation
 
 .dropdown-list {
-    row-gap: 0.25rem;
+    row-gap: 0.5rem;
 }
 
 .dropdown-link {
@@ -368,13 +368,12 @@ nav {
     color: var(--hue-colour);
 }
 
-
-/* show menu */
+show menu
 .show-menu {
     opacity: 1;
     pointer-events: initial;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-}
+} */
 
 /*==================== HOME ====================*/
 
@@ -389,18 +388,28 @@ nav {
     height: 100vh;
     object-fit: cover;
     object-position: 50% 20%;
-    margin-bottom: 2rem;
 }
 
+.page-feature-banner img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+
 .home-about {
-    max-width: 90%;
-    margin: 2em auto;
+    margin: 5rem auto;
+}
+.home-about-text {
+    max-width: 80%;
+    margin: auto;
     text-align: center;
 }
 
 .home-title {
     font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: var(--mb-1-5);
 }
 
 .home-description {
@@ -411,11 +420,17 @@ nav {
 .home-grid {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 0rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 0.25rem;
     grid-column-gap: 0.25rem;
-    max-width: 95%;
-    margin: 1rem auto;
+    max-width: 97%;
+    margin: 0.25rem auto;
+}
+
+.grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /*==================== DESIGNS ====================*/
@@ -481,18 +496,17 @@ nav {
 }
 
 .design-focus-description {
-    margin: 2em 0;
+    margin-top: 2em;
     line-height: var(--h2-font-size);
 }
-
 
 
 .design-focus-grid {
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 0rem;
-    margin: 1rem auto;
+    grid-row-gap: 0.25rem;
+    margin: 0 0.25rem 0.25rem 0.25rem;
 }
 
 /*==================== ILLUSTRATIONS ====================*/
@@ -728,7 +742,7 @@ html {
     padding: 5%;
 }
 .dropdown-group {
-    padding-left: 1.25rem;
+    padding-left: 5%;
 }
 
 .dropdown-title,
@@ -748,27 +762,37 @@ html {
 
 /*============ LARGE DEVICES ============*/
 
+@media screen and (min-width: 1024px) {
+
 /* Nav */
 
-
-
-
 /* Home */
-@media screen and (min-width: 1024px) {
-    .home-grid {
 
+    .page-feature-banner img{
+        margin-bottom: 3rem;
+    }
+
+    .home-grid {
         grid-template-columns: repeat(3, 1fr);
-        grid-row-gap: 0rem;
+        grid-row-gap: 0.25rem;
         grid-column-gap: 0.25rem;
         max-width: 95%;
-        margin: 3rem auto;
+        margin-bottom: 3rem;
     }
+
+    .home-about {
+        max-width: 50%;
+        margin: 5rem auto;
+    }
+
+
 
 
 /* Design-focus */
 .design-focus-about {
     max-width: 70%;
     text-align: center;
+    margin-top:2rem;
 }
 
 .design-focus-title {
@@ -785,9 +809,10 @@ html {
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 2rem;
+    grid-row-gap: 0.25rem;
     max-width: 60%;
     margin: 1rem auto;
+    padding-bottom: 3rem;
 }
 
 /* Illustration */
