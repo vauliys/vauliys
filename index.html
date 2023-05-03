@@ -38,57 +38,122 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
     <body>
         <header class="header">
 
-                <!--========== NAV MENU ==========-->
-
+            <!--========== NAV MENU ==========-->
+            <p>vauliys</p>
         </header>
 
-        <!--==================== HOME ====================-->
-        <!-- <div class="webpage-content">
-
-
-            </div>-->
+        <!--==================== WEBSITE CONTENT ====================-->
         <div class="home">
-            <div class="page-feature">
-                <img id="page-banner" src="assets/Content/Work/Designs/Till Payments/VLS_Till_PlayHQ PitchDeck.png">
-            </div>
+            <section class="welcome">
+                <div class="page-feature">
+                    <video autoplay muted loop playsinline src="assets/Content/Home/VLS_TillPortable_Loop.mp4"
+                        width="100%">
+                    </video>
+                </div>
 
-            <!--==================== ABOUT WEBSITE ====================-->
-            <section class="home-about" id="#home">
-                <div class="home-about-text">
-                    <h3 class="home-title">Vauliys</h3>
-                    <p class="home-description">
-                        A representation of youthfulness, energy and vividness. Vauliys approaches the creative world with a playful and imaginative perspective, embodying a sense of youthful creativity and boundless imagination, evoking a sense of wonder and curiosity for those who encounter.
-                        Vauliys represents energy and life, featuring a range of contrasting hues and tones that grab the eye and evoke a sense of vibrancy and vitality.  </p>
+                <!--==================== HOME TEXT ====================-->
+                <section class="home-about" id="#home">
+                    <p class="home-about-header">
+                        Hiya! I'm <span style="color: #cbddb1">Victoria</span>,<br>a digital designer with expertise in
+                        print
+                        and motion graphics.
+                    </p>
+
+                    <p class="home-about-subtext">Currently a digital designer at <a href="tillpayments.com">Till
+                            Payments</a>.</p>
+                    <hr>
+                    <div class="icons welcome-footer">
+                        <a href="https://www.instagram.com/vauliys/" target="_blank">
+                            <i class="ri-instagram-line"></i></a>
+
+                        <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank">
+                            <i class="ri-github-line"></i></a>
+
+                        <a href="https://store.vauliys.com/" target="_blank">
+                            <i class="ri-shopping-bag-2-line"></i></a>
+
+                        <a href ="#about"><button class="btn-down" >
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button></a>
+                    </div>
+                </section>
+
+            </section>
+
+            <!--==================== ABOUT VAULIYS ====================-->
+            <section class="about" id="about">
+                <div class="about-text">
+                    <p class="about-header">
+                        Bringing Ideas to Life, one Frame at a Time.
+                    </p>
+
+                    <p class="about-subtext">
+                        A vision of youthfulness, energy and vividness. Vauliys approaches the creative world
+                        with a playful and imaginative perspective, embodying a sense of wonder and curiosity for those
+                        who encounter.
+                    </p>
+                </div>
+                <div class="about-img">
+                    <div class="about-img">
+                        <img src="assets/Content/About/NataliaNaaPhotography_Victoria-13.jpg">
+                    </div>
                 </div>
             </section>
-            <div class="page-feature-banner">
-                <img id="page-feature-banner" src="assets/Content/Work/Designs/Till Payments/VLS_Till_PlayHQ PitchDeck.png">
-            </div>
 
-            <section class="home-grid grid">
-                    <div class="grid-item grid-item-1">
-                        <img src="assets/Content/_Placeholder Content/VLS-TillPayments-TillPortable.jpg">
-                    </div>
-                    <div class="grid-item grid-item-1">
-                        <img src="assets/Content/Home/VLS_Till_PlayHQ PitchDeck.png">
-                    </div>
-                    <div class="grid-item grid-item-1">
-                        <img src="assets/Content/Home/VLS_Till_PlayHQ PitchDeck.png">
-                    </div>
+            <!--==================== ANIMATIONS ====================-->
+            <section class="animation">
+                <div class="animation-text">
+                    <p class="animation-header">
+                        Unleashing Your Imagination with the Art of Animation.
+                    </p>
 
-                    <div class="grid-item grid-item-1">
-                        <img src="assets/Content/Home/VLS_Till_PlayHQ PitchDeck.png">
-                    </div>
-                    <div class="grid-item grid-item-1">
-                        <img src="assets/Content/Home/VLS_Till_PlayHQ PitchDeck.png">
-                    </div>
-                    <div class="grid-item grid-item-1">
-                        <img src="assets/Content/_Placeholder Content/VLS-TillPayments-PaymentLinks.png">
-                    </div>
+                    <p class="about-subtext">
+                        A portfolio of animations crafted using a combination of Toon Boom Harmony and Adobe
+                        Creative Suite.
+                    </p>
                 </div>
+
             </section>
+
+            <section class="animation-grid">
+                <div class="grid-item grid-item-2">
+                    <img src="assets/Content/Home/VLS_SolarOpposites.png">
+                </div>
+                <div class="grid-item grid-item-harvest">
+                    <img src="assets/Content/Home//VLS_HarvestFestival.png">
+                </div>
+                <div class="grid-item grid-item-paylinks">
+                    <img src="assets/Content/Home/VLS_TillPayments_PaymentLinks.png">
+                </div>
+
+
+                <!--==================== LOAD MORE ANIMATIONS ====================-->
+                <section id="show">
+                    <div class="grid-item grid-item-2">
+                        <img src="assets/Content/Home/VLS_TillPayments_TillPortable.jpg">
+                    </div>
+                    <div class="grid-item grid-item-2">
+                        <img src="assets/Content/Home/VLS_TillPayments_TillPortable_Storyboard.png">
+                    </div>
+                </section>
+
+                <!--==================== LOAD MORE BUTTON ====================-->
+                <button type="button" onclick="show()" id="btn-load" class="animation-button">
+                    <p>
+                        <i class="ri-add-line"></i>
+                        Load More
+                    </p>
+                </button>
+
+                <button type="button" onclick="hide()" id="btn-hide" class="animation-button">
+                    <p>
+                        <i class="ri-subtract-line"></i>
+                        Collapse
+                    </p>
+                </button>
+            </section>
+
         </div>
-
         <!--==================== FOOTER ====================-->
         <footer class="footer">
             <div class="footer-bg">
@@ -112,6 +177,6 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
 
 
         <!--==================== MAIN JS ====================-->
-        <script src="scripts2.0.js" defer></script>
+        <script src="scripts.js" defer></script>
     </body>
 </html>

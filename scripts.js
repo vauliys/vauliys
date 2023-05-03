@@ -1,15 +1,42 @@
+/*================ ANIMATION LOAD MORE ================*/
+function show() {
+    document.getElementById('show')
+        .style.display = "block";
 
-/*document.getElementById("BtnForm").onclick = function() {myFunction()};
+        document.getElementById('btn-load')
+        .style.display = "none";
 
-function myFunction() {
-  document.getElementById("modal-box").classList.toggle("show");
-}*/
-
-function fade() {
-    const modalbox = document.getElementById('modal-box');
-    const overlay = document.getElementById('overlay-container');
-    console.log('here');
-    modalbox.classList.toggle('fade');
-    overlay.classList.toggle('overlay');
-
+        document.getElementById('btn-hide')
+        .style.display = "block";
 }
+
+function hide() {
+    document.getElementById('show')
+        .style.display = "none";
+
+        document.getElementById('btn-load')
+        .style.display = "block";
+
+        document.getElementById('btn-hide')
+        .style.display = "none";
+}
+
+/*================ SCROLL TO TOP BUTTON APPEARS ================*/
+const scrolltotop = document.getElementById('scroll');
+
+scrolltotop.addEventListener("click", e => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+});
+
+window.addEventListener('scroll', e => {
+    if (window.scrollY > 20 && !scrolltotop.classList.contains('showscroll')) {
+        scrolltotop.classList.add('showscroll');
+    } else if (window.scrollY <= 20 && scrolltotop.classList.contains('showscroll')) {
+        scrolltotop.classList.remove('showscroll');
+    }
+});
+
