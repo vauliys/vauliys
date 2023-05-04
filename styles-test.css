@@ -264,15 +264,23 @@ hr {
     justify-content: space-between;
 }
 
-.btn-down {
+#scroll {
+    display: flex;
+    position: fixed;
     border-radius: 2rem;
     padding: 0.7em 0.8em;
+    right: 10%;
+    transition: 0.3s;
+}
+#scroll:hover,
+.scroll-up:hover {
+    background-color: var(--colour-black-alt);
+    color: var(--first-colour);
 }
 
-.btn-down:hover {
+.scroll-up {
     transform: rotate(180deg);
     transition: 0.3s;
-    background-color: var(--colour-black-alt);
 }
 
 

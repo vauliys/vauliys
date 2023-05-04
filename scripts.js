@@ -25,18 +25,26 @@ function hide() {
 const scrolltotop = document.getElementById('scroll');
 
 scrolltotop.addEventListener("click", e => {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    });
+    if (window.scrollY > 20) {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    } else {
+        window.scrollTo({
+            top: 500,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
 });
 
 window.addEventListener('scroll', e => {
-    if (window.scrollY > 20 && !scrolltotop.classList.contains('showscroll')) {
-        scrolltotop.classList.add('showscroll');
-    } else if (window.scrollY <= 20 && scrolltotop.classList.contains('showscroll')) {
-        scrolltotop.classList.remove('showscroll');
+    if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
+        scrolltotop.classList.add('scroll-up');
+    } else if (window.scrollY <= 20 && scrolltotop.classList.contains('scroll-up')) {
+        scrolltotop.classList.remove('scroll-up');
     }
 });
 
