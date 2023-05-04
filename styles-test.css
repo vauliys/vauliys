@@ -265,7 +265,7 @@ hr {
     margin-bottom: 2em;
     display: flex;
     max-width: 40%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
@@ -497,7 +497,7 @@ button {
     position: fixed;
     border-radius: 2rem;
     padding: 0.7em 0.8em;
-    right: 10%;
+    right: 8%;
     bottom: 10%;
     align-items: center;
     z-index: 1;
