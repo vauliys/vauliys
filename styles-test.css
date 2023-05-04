@@ -496,9 +496,9 @@ button {
     display: flex;
     position: fixed;
     border-radius: 2rem;
-    padding: 0.7em 0.8em;
+    padding: 0.8em 0.8em;
     right: 8%;
-    bottom: 10%;
+    bottom: 2rem;
     align-items: center;
     z-index: 1;
 }
