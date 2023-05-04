@@ -136,7 +136,9 @@ hr {
 
 .icons i {
     font-size: var(--h3-font-size);
+    color: var(--colour-white-);
 }
+
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
@@ -191,6 +193,7 @@ hr {
 
 .welcome {
     align-items: center;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: var(--header-height);
@@ -261,28 +264,9 @@ hr {
 .welcome-footer {
     margin-bottom: 2em;
     display: flex;
-    justify-content: space-between;
+    max-width: 40%;
+    justify-content: space-evenly;
 }
-
-#scroll {
-    display: flex;
-    position: fixed;
-    border-radius: 2rem;
-    padding: 0.7em 0.8em;
-    right: 10%;
-    transition: 0.3s;
-}
-#scroll:hover,
-.scroll-up:hover {
-    background-color: var(--colour-black-alt);
-    color: var(--first-colour);
-}
-
-.scroll-up {
-    transform: rotate(180deg);
-    transition: 0.3s;
-}
-
 
 
 /*==================== ANIMATION ====================*/
@@ -507,10 +491,30 @@ button {
     margin-bottom: 1em;
 }
 
-/*========== SCROLL UP ==========*/
+/*========== SCROLL UP + DOWN ==========*/
+#scroll {
+    display: flex;
+    position: fixed;
+    border-radius: 2rem;
+    padding: 0.7em 0.8em;
+    right: 10%;
+    transition: 0.3s;
+}
 
+#scroll i {
+    color: var(--first-colour-alt);
+}
 
-/* Show scroll */
+.scroll-up {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+#scroll:hover,
+.scroll-up:hover {
+    background-color: var(--colour-black-alt);
+}
+
 
 
 /*========== SCROLL BAR ==========*/
