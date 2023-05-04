@@ -500,6 +500,7 @@ button {
     right: 10%;
     bottom: 10%;
     align-items: center;
+    z-index: 1;
 }
 
 #scroll i {
