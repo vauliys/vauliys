@@ -498,8 +498,8 @@ button {
     border-radius: 2rem;
     padding: 0.7em 0.8em;
     right: 10%;
+    align-items: center;
 }
-
 
 #scroll i {
     transition: 0.3s;
@@ -588,6 +588,7 @@ html {
     .home-about {
         max-width: 50%;
         margin: 5rem auto;
+        height: 100vh;
     }
 
 
