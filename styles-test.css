@@ -498,14 +498,15 @@ button {
     border-radius: 2rem;
     padding: 0.7em 0.8em;
     right: 10%;
-    transition: 0.3s;
 }
 
+
 #scroll i {
+    transition: 0.3s;
     color: var(--first-colour-alt);
 }
 
-.scroll-up {
+.scroll-up i {
     transform: rotate(180deg);
     transition: 0.3s;
 }

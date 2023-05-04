@@ -33,7 +33,7 @@ scrolltotop.addEventListener("click", e => {
         });
     } else {
         window.scrollTo({
-            top: 500,
+            top: 800,
             left: 0,
             behavior: "smooth"
         });
