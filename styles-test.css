@@ -193,11 +193,11 @@ hr {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     margin-top: var(--header-height);
 }
 
 .page-feature {
+    display: flex;
     height: 45%;
 }
 
