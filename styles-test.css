@@ -130,7 +130,7 @@ img {
 }
 
 hr {
-    margin: 1em 0;
+    margin: 1.5em 0;
     opacity: 0.3;
 }
 
@@ -198,6 +198,7 @@ hr {
 }
 
 .page-feature {
+    width: 90%;
     display: flex;
 }
 
@@ -205,7 +206,7 @@ hr {
     max-width: 80%;
     margin: 0 auto;
     text-align: left;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 .home-about-header {
@@ -214,6 +215,7 @@ hr {
 }
 
 .home-about-subtext {
+    margin-top: 0.5rem;
     font-size: var(--smaller-font-size);
 }
 
