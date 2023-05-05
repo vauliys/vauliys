@@ -194,7 +194,9 @@ section {
 .welcome {
     height: 100vh;
     background-image: url(assets/Content/Backgrounds/VLS_BG_Green-02.png);
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
 
 .home-about {
     max-width: 65%;
@@ -227,7 +229,6 @@ section {
 
 
 /*==================== HOME - SECTIONS ====================*/
-
 
 .home-section {
     height: 100vh;
@@ -268,14 +269,14 @@ section {
 }
 
 #wave-blue {
-    top: 157%;
+    top: 80rem;
     right: 0;
     position: absolute;
     width: 60%;
 }
 
 #wave-purple-blue {
-    top: 200%;
+    top: 100rem;
     position: absolute;
     width: 30%;
 }
