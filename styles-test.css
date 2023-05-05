@@ -245,7 +245,6 @@ section {
 .home-section-header {
     font-size: var(--h2-font-size);
     font-weight: 600;
-    padding-top: 5rem;
 }
 
 .home-section-subtext {
@@ -269,14 +268,14 @@ section {
 }
 
 #wave-blue {
-    top: 80rem;
+    top: 75rem;
     right: 0;
     position: absolute;
     width: 60%;
 }
 
 #wave-purple-blue {
-    top: 100rem;
+    top: 95rem;
     position: absolute;
     width: 30%;
 }
