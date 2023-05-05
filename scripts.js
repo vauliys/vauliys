@@ -48,3 +48,19 @@ window.addEventListener('scroll', e => {
     }
 });
 
+window.addEventListener('scroll', e => {
+    if (window.scrollY > 200 && !scrolltotop.classList.contains('scroll-up-blue')) {
+        scrolltotop.classList.add('scroll-up-blue');
+    } else if (window.scrollY <= 200 && scrolltotop.classList.contains('scroll-up-blue')) {
+        scrolltotop.classList.remove('scroll-up-blue');
+    }
+});
+
+window.addEventListener('scroll', e => {
+    if (window.scrollY > 1000 && !scrolltotop.classList.contains('scroll-up-purple')) {
+        scrolltotop.classList.add('scroll-up-purple');
+    } else if (window.scrollY <= 1000 && scrolltotop.classList.contains('scroll-up-purple')) {
+        scrolltotop.classList.remove('scroll-up-purple');
+    }
+});
+
