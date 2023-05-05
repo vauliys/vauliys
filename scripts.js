@@ -21,7 +21,7 @@ function hide() {
         .style.display = "none";
 }
 
-/*================ SCROLL TO TOP BUTTON APPEARS ================*/
+/*================ SCROLL TO TOP / SCROLL TO ABOUT ================*/
 const scrolltotop = document.getElementById('scroll');
 
 scrolltotop.addEventListener("click", e => {
@@ -39,6 +39,22 @@ scrolltotop.addEventListener("click", e => {
         });
     }
 });
+
+
+/*================ SCROLL DOWN - BTN EXPLORE ================*/
+
+function explore() {
+    window.scrollTo({
+        top: 800,
+        left: 0,
+        behavior: "smooth"
+    });
+
+
+}
+
+
+/*================ SCROLL COLOUR CHANGE ================*/
 
 window.addEventListener('scroll', e => {
     if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
