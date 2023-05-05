@@ -216,13 +216,6 @@ section {
     line-height: 1.5rem;
 }
 
-#btn_explore {
-    padding: 1rem 4rem;
-    border-radius: 2rem;
-    font-size: var(--smaller-font-size);
-    margin: 1.5rem 0rem;
-}
-
 .welcome-footer i{
     margin: 0rem 0.3rem;
 }
@@ -280,6 +273,8 @@ section {
     width: 30%;
 }
 
+/*==================== CLIENT GRID ====================*/
+
 .client-grid {
     margin: 3.5rem;
     display: grid;
@@ -301,31 +296,10 @@ section {
 .grid-span-2 {
     grid-column: span 2;
 }
-/*==================== ANIMATION ====================*/
-.animation {
-    background-color: var(--colour-black);
-    padding: 5rem 0 5rem 0;
-}
 
-.animation-text {
-    text-align: center;
-    max-width: 80%;
-    margin: auto;
-    color: var(--colour-white);
-}
+/*==================== HOME GRID ====================*/
 
-.animation-header {
-    font-size: var(--h2-font-size);
-    font-weight: 600;
-}
-
-.animation-subtext {
-    font-weight: var(--font-medium);
-    margin: 2.5rem auto;
-    line-height: 1.5rem;
-}
-
-.animation-grid {
+.home-grid {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
@@ -335,29 +309,46 @@ section {
     margin: 0 auto;
 }
 
-.grid-item img {
+.home-grid-item {
+    text-align: center;
     border-radius: 1rem;
+    background-color: var(--colour-white);
+    color: var(--colour-black);
+    filter: drop-shadow(5px 5px 5px #d1d1d1);
 }
 
-.animation-button {
-    max-width: 50%;
+.home-grid-item img {
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
 }
 
-#show {
-    display: none;
+.home-grid-text {
+    margin: 1rem;
 }
 
-#btn-load,
-#btn-hide {
-    background-color: var(--colour-black-alt);
-    color: var(--colour-white-alt);
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
+.home-grid-header {
+    font-size: var(--h2-font-size);
+    font-weight: 600;
 }
 
-#btn-hide {
-    display: none;
+.home-grid-subtext {
+    font-weight: var(--font-medium);
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*==================== DESIGNS ====================*/
 
@@ -452,15 +443,54 @@ section {
 /*==================== BUTTONS ====================*/
 
 button {
-    background-color: var(--colour-white);
-    color: var(--colour-green-alt);
-    font-weight: var(--font-semi-bold);
-    border-radius: 1rem;
     text-align: center;
     border: none;
     outline: none;
     cursor: pointer;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
 }
+
+#btn-explore {
+    margin: 1.5rem 0rem;
+    color: var(--colour-green-alt)
+}
+
+.btn-grid {
+    margin: 1rem 0rem;
+    color: var(--colour-white);
+}
+
+#btn-solar {
+    background-image: linear-gradient(to right, #e6b1f2 , #8271d8);
+}
+
+/* .animation-button {
+    max-width: 50%;
+} */
+
+
+
+
+
+/* #show {
+    display: none;
+}
+
+#btn-load,
+#btn-hide {
+    background-color: var(--colour-black-alt);
+    color: var(--colour-white-alt);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+#btn-hide {
+    display: none;
+} */
+
 
 /*==================== SKILLS ====================*/
 
@@ -543,18 +573,18 @@ button {
     font-weight: 900;
 }
 
+.scroll-up {
+    background-color: var(--colour-green)!important;
+    transition: 1s;
+}
+
 .scroll-up i {
     transform: rotate(180deg);
     transition: 0.3s;
     color: var(--colour-blue-alt)
 }
 
-.scroll-up {
-    background-color: var(--colour-green)!important;
-    transition: 1s;
-}
-
-
+/*COLOUR CHANGES*/
 .scroll-up-blue {
     background-color: var(--colour-blue)!important;
     transition: 1s;
