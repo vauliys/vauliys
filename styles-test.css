@@ -268,14 +268,14 @@ section {
 }
 
 #wave-blue {
-    top: 80rem;
+    top: 150%;
     right: 0;
     position: absolute;
     width: 60%;
 }
 
 #wave-purple-blue {
-    top: 100rem;
+    top: 190%;
     position: absolute;
     width: 30%;
 }
