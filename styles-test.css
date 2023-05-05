@@ -205,7 +205,7 @@ hr {
     align-items: center;
     height: 100vh;
     padding-top: var(--header-height);
-    background-image: url(assets/Content/Home/VLS_BG_Green-02.png);
+    background-image: url(assets/Content/Backgrounds/VLS_BG_Green-02.png);
     background-repeat: no-repeat;}
 
 .home-about {
@@ -240,31 +240,31 @@ hr {
 }
 
 
-/*==================== HOME - ABOUT ====================*/
+/*==================== HOME - SECTION ====================*/
 
-.about {
+.home-section {
     background-color: var(--colour-white);
     height: 100vh;
 
 }
 
-.about-text {
+.home-section-text {
     color: var(--colour-black);
     text-align: center;
     max-width: 75%;
     margin: 0 auto;
 }
 
-.about-header {
+.home-section-header {
     font-size: var(--h2-font-size);
     font-weight: 600;
     padding-top: 5rem;
 }
 
-.about-subtext {
+.home-section-subtext {
     font-weight: var(--font-medium);
     line-height: 1.5rem;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
 }
 
 .about-img {
@@ -275,10 +275,10 @@ hr {
 
 .about-img img {
     object-fit: cover;
-    object-position: 100% 30%;
-    height: 80%;
-    width: 80%;
-    border-radius: 1rem;
+    object-position: 100% 55%;
+    height: 55%;
+    width: 70%;
+    border-radius: 25rem;
 }
 
 /*==================== ANIMATION ====================*/
@@ -507,8 +507,8 @@ button {
 #scroll {
     display: flex;
     position: fixed;
-    border-radius: 2rem;
-    padding: 1em 1em;
+    border-radius: 6rem;
+    padding: 0.7rem;
     right: 8%;
     bottom: 2rem;
     align-items: center;
@@ -517,7 +517,7 @@ button {
 }
 
 #scroll i {
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: 0.3s;
     color: var(--colour-green-alt);
     font-weight: 900;
