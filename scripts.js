@@ -65,18 +65,36 @@ window.addEventListener('scroll', e => {
 });
 
 window.addEventListener('scroll', e => {
-    if (window.scrollY > 200 && !scrolltotop.classList.contains('scroll-up-blue')) {
+    if (window.scrollY > 100 && !scrolltotop.classList.contains('scroll-up-blue')) {
         scrolltotop.classList.add('scroll-up-blue');
-    } else if (window.scrollY <= 200 && scrolltotop.classList.contains('scroll-up-blue')) {
+    } else if (window.scrollY <= 100 && scrolltotop.classList.contains('scroll-up-blue')) {
         scrolltotop.classList.remove('scroll-up-blue');
     }
 });
 
+
 window.addEventListener('scroll', e => {
-    if (window.scrollY > 1000 && !scrolltotop.classList.contains('scroll-up-purple')) {
+    if (window.scrollY > 700 && !scrolltotop.classList.contains('scroll-up-blue-purple')) {
+        scrolltotop.classList.add('scroll-up-blue-purple');
+    } else if (window.scrollY <= 700 && scrolltotop.classList.contains('scroll-up-blue-purple')) {
+        scrolltotop.classList.remove('scroll-up-blue-purple');
+    }
+});
+
+window.addEventListener('scroll', e => {
+    if (window.scrollY > 1200 && !scrolltotop.classList.contains('scroll-up-purple')) {
         scrolltotop.classList.add('scroll-up-purple');
-    } else if (window.scrollY <= 1000 && scrolltotop.classList.contains('scroll-up-purple')) {
+    } else if (window.scrollY <= 1200 && scrolltotop.classList.contains('scroll-up-purple')) {
         scrolltotop.classList.remove('scroll-up-purple');
     }
 });
+
+window.addEventListener('scroll', e => {
+    if (window.scrollY > 2300 && !scrolltotop.classList.contains('scroll-up-pink')) {
+        scrolltotop.classList.add('scroll-up-pink');
+    } else if (window.scrollY <= 2300 && scrolltotop.classList.contains('scroll-up-pink')) {
+        scrolltotop.classList.remove('scroll-up-pink');
+    }
+});
+
 

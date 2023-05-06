@@ -27,7 +27,7 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
         <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
 
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="styles-test.css">
+        <link rel="stylesheet" href="styles.css">
 
         <!--==================== ICONS ====================-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
@@ -48,9 +48,8 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
         <!--==================== WEBSITE CONTENT ====================-->
         <div class="home">
 
+            <!--==================== HOME TEXT ====================-->
             <section class="welcome">
-
-                <!--==================== HOME TEXT ====================-->
                 <div class="home-about" id="#welcome">
                     <p class="home-about-header">
                         Hiya! <br>
@@ -84,7 +83,7 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
                     <p class="home-section-header">
                         Bringing Ideas to Life, one Frame at a Time.
                     </p>
-                    <hr style="background-color: #1b799e">
+                    <hr style="background-color: #87ccc0">
 
                     <p class="home-section-subtext">
                         Providing a fresh burst of energy and color to the creative scene, with a big dose
@@ -98,6 +97,7 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
                     </div>
                 </div>
             </section>
+
             <img id="wave-blue" src="assets/Content/Backgrounds/VLS_BG_Wave_Blue.png">
             <img id="wave-purple-blue" src="assets/Content/Backgrounds/VLS_BG_Wave_Blue-Purple.png">
 
@@ -107,12 +107,13 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
                     <p class="home-section-header">
                         Clients
                     </p>
-                    <hr style="background-color: #5959aa">
+                    <hr style="background-color: #6f84c3">
                 </div>
                 <div class="client-grid">
                     <div class="client-grid-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_StudioMoshi.png">
                     </div>
+
                     <div class="client-grid-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_XPPen.png">
                     </div>
@@ -120,18 +121,23 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
                     <div class="client-grid-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Huion.png">
                     </div>
+
                     <div class="client-grid-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Till.png">
                     </div>
+
                     <div class="client-grid-item grid-span-2">
                         <image src="assets/Content/Home/Client_Logos/Logo_FlyingArt.png">
                     </div>
+
                     <div class="client-grid-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Paperlike.png">
                     </div>
+
                     <div class="client-grid-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Logitech.png">
                     </div>
+
                     <div class="client-grid-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Hulu.png">
                     </div>
@@ -144,7 +150,7 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
                     <p class="home-section-header">
                         Latest Projects
                     </p>
-                    <hr style="background-color: #1b799e">
+                    <hr style="background-color: #8271d8">
 
                     <p class="home-section-subtext">
                         A mix of works I've created in the digital and print realms.
@@ -165,62 +171,109 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
                         </div>
                     </div>
 
+                    <div class="home-grid-item">
+                        <img src="assets/Content/Home/VLS_HarvestFestival.png">
+                        <div class="home-grid-text">
 
-                    <!--==================== LOAD MORE ANIMATIONS ====================-->
-                    <section id="show">
-                        <div class="grid-item grid-item-2">
-                            <img src="assets/Content/Home/VLS_TillPayments_TillPortable.jpg">
-                            <p class="home-section-header">
-                                Solar Opposites
+                            <p class="home-grid-header">
+                                The Harvest Fesitval
                             </p>
-                            <p class="home-section-subtext">
-                                Builds Artist, Rigger
+                            <p class="home-grid-subtext">
+                                Creator, Animator
                             </p>
+                            <button class="btn-grid" id="btn-harvest">VIEW PROJECT</button>
                         </div>
+                    </div>
 
-                    </section>
 
-                    <!--==================== LOAD MORE BUTTON ====================-->
+                    <!--==================== HIDDEN ANIMATIONS ====================-->
+                    <div id="show">
+                        <div class="home-grid-item">
+                            <img src="assets/Content/Home/VLS_TillPayments_TillPortable.jpg">
+                            <div class="home-grid-text">
+
+                                <p class="home-grid-header">
+                                    Till Portable
+                                </p>
+                                <p class="home-grid-subtext">
+                                    Designer, Animator
+                                </p>
+                                <button class="btn-grid" id="btn-till">VIEW PROJECT</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==================== LOAD MORE BUTTON ====================-->
                     <button type="button" onclick="show()" id="btn-load" class="animation-button">
                         <p>
                             <i class="ri-add-line"></i>
                             Load More
                         </p>
                     </button>
-
                     <button type="button" onclick="hide()" id="btn-hide" class="animation-button">
                         <p>
                             <i class="ri-subtract-line"></i>
                             Collapse
                         </p>
                     </button>
-
                 </div>
 
             </section>
 
+            <!-- ==================== EXPLORE MORE ====================-->
+            <section class="home-section" id="explore-more">
+                <div class="home-section-text">
+                    <p class="home-section-header">
+                        Explore More
+                    </p>
+                    <hr style="background-color: #e6b1f2">
 
+                    <p class="home-section-subtext">
+                        Check out the range of my artistic pieces, comprising of illustrations, animations, and print
+                        designs.
+                    </p>
+                </div>
+
+                <div class="home-grid-vert">
+                    <div class="home-grid-vert-item">
+                        <img src="assets/Content/Work/Illustration/VLS-LindsayPortrait.png">
+                        <div class="home-grid-vert-text">
+
+                            <p class="home-grid-header home-grid-vert-header">
+                                Gallery
+                                <button class="btn-grid" id="btn-gallery">EXPLORE</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home-grid-vert-item">
+                        <img id="home-paymentlinks" src="assets/Content/Home/VLS_TillPayments_PaymentLinks.png">
+                        <div class="home-grid-vert-text">
+
+                            <p class="home-grid-header home-grid-vert-header">
+                                Motion
+                                <button class="btn-grid" id="btn-motion">EXPLORE</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home-grid-vert-item">
+                        <img src="assets/Content/Work/Designs/Lashes by Rhi/LBR_SelfTan.png">
+                        <div class="home-grid-vert-text">
+
+                            <p class="home-grid-header home-grid-vert-header">
+                                Print
+                                <button class="btn-grid" id="btn-print">EXPLORE</button>
+                            </p>
+                        </div>
+                    </div>
+            </section>
 
 
         </div>
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            <div class="footer-bg">
-                <div>
-                    <a href="#"><img id="logo-mark" src="assets/Logos/Vauliys_White-Logomark1.svg"></a>
-                </div>
-                <div class="footer-icons">
-                    <a href="https://www.instagram.com/vauliys/" target="_blank">
-                        <i class="ri-instagram-line"></i></a>
-
-                    <a href="https://github.com/vauliys/vauliys.github.io" taget="_blank">
-                        <i class="ri-github-line"></i></a>
-
-                    <a href="https://store.vauliys.com/" target="_blank">
-                        <i class="ri-shopping-bag-2-line"></i></a>
-                </div>
-                <p class="footer-copy">&#169 Vauliys. All rights reserved</p>
-            </div>
+            <p class="footer-copy">Vauliys</p>
         </footer>
 
 

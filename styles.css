@@ -3,21 +3,23 @@
     --header-height: 2rem;
 
     /*========== Colors ==========*/
-    /* Change favorite colour */
-    --hue-colour: #f04f23;
-    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --colour-orange: #f2bc75;
+    --colour-orange-alt: #ff591f;
 
-    /* HSL colour mode */
     --colour-green: #b3d186;
     --colour-green-alt: #2f8c6f;
 
     --colour-blue: #87ccc0;
     --colour-blue-alt: #1b799e;
 
-    --colour-blue-purple: #5959aa;
+    --colour-blue-purple: #6f84c3;
+    --colour-blue-purple-alt: #b1ade0;
 
-    --colour-purple: #8271d8;
-    --colour-purple-alt: #e6b1f2;
+    --colour-purple: #d0b1f2;
+    --colour-purple-alt: #8271d8;
+
+    --colour-pink: #f3c2ed;
+    --colour-pink-alt: #b071d8;
 
     --colour-black: #342f31;
     --colour-black-alt: #292526;
@@ -223,10 +225,6 @@ section {
 
 /*==================== HOME - SECTIONS ====================*/
 
-.home-section {
-    height: 100vh;
-
-}
 
 .home-section-text {
     color: var(--colour-black);
@@ -339,14 +337,44 @@ section {
 
 
 
+/*==================== HOME GRID VERTICAL ====================*/
 
+.home-grid-vert {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 0.25rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
 
+.home-grid-vert-item {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--colour-white);
+    color: var(--colour-black);
+    filter: drop-shadow(5px 5px 5px #d1d1d1);
+}
 
+.home-grid-vert-item img {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    float: left;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+ }
 
+ .home-grid-vert-header {
+    padding: 1rem 1rem;
+ }
 
+ #home-paymentlinks {
+    object-position: 87%;
 
-
-
+ }
 
 
 
@@ -458,6 +486,9 @@ button {
     color: var(--colour-green-alt)
 }
 
+
+/*==== HOME GRID BUTTONS ====*/
+
 .btn-grid {
     margin: 1rem 0rem;
     color: var(--colour-white);
@@ -467,29 +498,47 @@ button {
     background-image: linear-gradient(to right, #e6b1f2 , #8271d8);
 }
 
-/* .animation-button {
-    max-width: 50%;
-} */
+#btn-harvest {
+    background-image: linear-gradient(to right, #b3d186 , #2f8c6f);
+}
+
+#btn-till {
+    background-image: linear-gradient(to right, #f2bc75 , #f04f23);
+}
+
+#btn-gallery {
+    background-image: linear-gradient(to right, #87ccc0 , #1b799e);
+    padding: 1em 2em;
+}
+
+#btn-motion {
+    background-image: linear-gradient(to right, #b3d186 , #2f8c6f);
+    padding: 1em 2em;
+}
+
+#btn-print {
+    background-image: linear-gradient(to right, #e6b1f2 , #8271d8);
+    padding: 1em 2em;
+}
 
 
 
 
+/*==== LOAD MORE BUTTON ====*/
 
-/* #show {
+
+#show {
     display: none;
 }
 
 #btn-load,
 #btn-hide {
-    background-color: var(--colour-black-alt);
-    color: var(--colour-white-alt);
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
+    color: var(--colour-black);
 }
 
 #btn-hide {
     display: none;
-} */
+}
 
 
 /*==================== SKILLS ====================*/
@@ -520,38 +569,15 @@ button {
     bottom: 0;
     text-align: center;
     margin-top: auto;
-}
-
-.footer-bg {
-    background-color: var(--colour-black-alt);
-    padding: 2rem 0 2rem;
-}
-
-.footer-title {
-    font-size: var(--h1-font-size);
-    margin-bottom: var(--mb-0-25);
-}
-
-.footer-icons i {
-    margin-right: 1em;
+    padding: 2rem;
 }
 
 .footer-copy {
-    font-size: var(--smaller-font-size);
-    margin-top: 1em
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--colour-purple-alt);
 }
 
-.footer-title,
-.footer-subtitle,
-.footer-icons,
-.footer-copy {
-    color: var(--colour-white-alt);
-}
-
-#logo-mark {
-    max-height: 40px;
-    margin-bottom: 1em;
-}
 
 /*========== SCROLL UP + DOWN ==========*/
 #scroll {
@@ -580,29 +606,55 @@ button {
 
 .scroll-up i {
     transform: rotate(180deg);
-    transition: 0.3s;
+    transition: 1s;
     color: var(--colour-blue-alt)
 }
 
 /*COLOUR CHANGES*/
 .scroll-up-blue {
     background-color: var(--colour-blue)!important;
-    transition: 1s;
+    transition: 2s;
 }
 
 .scroll-up-blue i {
     color: var(--colour-blue-alt)!important;
-    transition: 1s;
+    transition: 2s;
 }
+
+.scroll-up-blue-purple {
+    background-color: var(--colour-blue-purple-alt)!important;
+    transition: 2s;
+}
+
+.scroll-up-blue-purple i {
+    color: var(--colour-blue-purple)!important;
+    transition: 2s;
+}
+
+
 .scroll-up-purple {
     background-color: var(--colour-purple)!important;
-    transition: 1s;
+    transition: 2s;
 }
 
 .scroll-up-purple i {
     color: var(--colour-purple-alt) !important;
-    transition: 1s;
+    transition: 2s;
 }
+
+.scroll-up-pink {
+    background-color: var(--colour-pink)!important;
+    transition: 2s;
+}
+
+.scroll-up-pink i {
+    color: var(--colour-pink-alt) !important;
+    transition: 2s;
+}
+
+
+
+
 
 
 
