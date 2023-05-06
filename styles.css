@@ -264,7 +264,6 @@ section {
     top: 145vh;
     position: absolute;
     right: 0;
-    margin-bottom: 2rem;
     width: 60%;
 }
 
@@ -272,9 +271,23 @@ section {
     top: 185vh;
     position: absolute;
     left: 0;
-    margin-bottom: 2rem;
     width: 35%;
 }
+
+#wave-purple {
+    top: 240vh;
+    position: absolute;
+    right: 0;
+    width: 35%;
+}
+
+#wave-purple-pink {
+    top: 365vh;
+    position: absolute;
+    left: 0;
+    width: 35%;
+}
+
 
 
 /*==================== CLIENT GRID ====================*/
