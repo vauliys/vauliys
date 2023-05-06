@@ -224,7 +224,6 @@ section {
 
 /*==================== HOME - SECTIONS ====================*/
 
-
 .home-section-text {
     color: var(--colour-black);
     text-align: center;
@@ -256,55 +255,17 @@ section {
     height: 55%;
     width: 70%;
     border-radius: 25rem;
-
 }
 
-/* #wave-blue,
-#wave-purple-blue,
-#wave-purple,
-#wave-pink {
-    z-index: 1;
-} */
-
+.wave {
+    top: 150vh;
+}
 #wave-blue {
     position: absolute;
+    right: 0;
+    margin-bottom: 2rem;
     width: 60%;
-    right: 0;
-    bottom: -52rem;
 }
-
-#wave-purple-blue {
-    position: absolute;
-    width: 30%;
-    left: 0;
-    bottom: -62rem;
-}
-
-/* #wave-blue {
-    top: 20%;
-    right: 0;
-    position: fixed;
-    width: 60%;
-} */
-
-/* #wave-purple-blue {
-    top: 190%;
-    position: fixed;
-    width: 30%;
-}
-
-#wave-purple {
-    top: 240%;
-    position: fixed;
-    width: 30%;
-    right: 0;
-}
-
-#wave-pink {
-    top: 370%;
-    position: fixed;
-    width: 30%;
-} */
 
 
 /*==================== CLIENT GRID ====================*/
