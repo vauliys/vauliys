@@ -1,25 +1,3 @@
-<!--NOTES
-
-Navbar
-Page Feature: Insert animated and print showreel
-Feature Image: Insert BEST project
-Insert FAVOURITE project thumbnails to grid
-Scroll to top button
-
-Hompage: for phone screens, hide feature image and replace with 1920x1080
-@media screen and (max-width:800px){
-    .home-feature {
-        display: none;
-    }
-
-    .home-feature-mobile {
-        display: block;
-    }
-}
-
-
--->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,9 +24,9 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
         </button>
 
         <!--==================== WEBSITE CONTENT ====================-->
-        <div class="home">
+        <div class="web-content">
 
-            <!--==================== HOME TEXT ====================-->
+            <!--==================== PAGE FEATURE ====================-->
             <section class="welcome">
                 <div class="home-about" id="#welcome">
                     <p class="home-about-header">
@@ -78,15 +56,15 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
             </section>
 
             <!--==================== ABOUT VAULIYS ====================-->
-            <section class="home-section" id="about">
+            <section class="section" id="about">
 
-                <div class="home-section-text">
-                    <p class="home-section-header">
+                <div class="section-text">
+                    <p class="section-header">
                         Bringing Ideas to Life, one Frame at a Time.
                     </p>
                     <hr style="background-color: #87ccc0">
 
-                    <p class="home-section-subtext">
+                    <p class="section-subtext">
                         Providing a fresh burst of energy and color to the creative scene, with a big dose
                         of playful and imaginative vibes. My youthful and curious outlook sparks wonder
                         and inspiration for anyone who crosses my path.
@@ -106,45 +84,46 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
             <section id="clients">
 
                 <div class="wave">
-                    <img id="wave-blue-purple" class="wave" src="assets/Content/Backgrounds/VLS_BG_Wave_Blue-Purple.png">
+                    <img id="wave-blue-purple" class="wave"
+                        src="assets/Content/Backgrounds/VLS_BG_Wave_Blue-Purple.png">
                 </div>
 
-                <div class="home-section-text">
-                    <p class="home-section-header">
+                <div class="section-text">
+                    <p class="section-header">
                         Clients
                     </p>
                     <hr style="background-color: #6f84c3">
                 </div>
-                <div class="client-grid">
-                    <div class="client-grid-item">
+                <div class="grid-col">
+                    <div class="grid-col-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_StudioMoshi.png">
                     </div>
 
-                    <div class="client-grid-item">
+                    <div class="grid-col-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_XPPen.png">
                     </div>
 
-                    <div class="client-grid-item">
+                    <div class="grid-col-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Huion.png">
                     </div>
 
-                    <div class="client-grid-item">
+                    <div class="grid-col-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Till.png">
                     </div>
 
-                    <div class="client-grid-item grid-span-2">
+                    <div class="grid-col-item grid-span-2">
                         <image src="assets/Content/Home/Client_Logos/Logo_FlyingArt.png">
                     </div>
 
-                    <div class="client-grid-item">
+                    <div class="grid-col-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Paperlike.png">
                     </div>
 
-                    <div class="client-grid-item">
+                    <div class="grid-col-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Logitech.png">
                     </div>
 
-                    <div class="client-grid-item">
+                    <div class="grid-col-item">
                         <image src="assets/Content/Home/Client_Logos/Logo_Hulu.png">
                     </div>
                 </div>
@@ -155,40 +134,40 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
 
 
             <!--==================== LATEST PROJECTS ====================-->
-            <section class="home-section" id="projects">
-                <div class="home-section-text">
-                    <p class="home-section-header">
+            <section class="section" id="projects">
+                <div class="section-text">
+                    <p class="section-header">
                         Latest Projects
                     </p>
                     <hr style="background-color: #8271d8">
 
-                    <p class="home-section-subtext">
+                    <p class="section-subtext">
                         A mix of works I've created in the digital and print realms.
                     </p>
                 </div>
-                <div class="home-grid">
-                    <div class="home-grid-item">
+                <div class="grid-vert">
+                    <div class="grid-vert-item">
                         <img src="assets/Content/Home/VLS_SolarOpposites.png">
                         <div class="home-grid-text">
 
-                            <p class="home-grid-header">
+                            <p class="grid--header">
                                 Solar Opposites
                             </p>
-                            <p class="home-grid-subtext">
+                            <p class="grid-subtext">
                                 Builds Artist, Rigger
                             </p>
                             <button class="btn-grid" id="btn-solar">VIEW PROJECT</button>
                         </div>
                     </div>
 
-                    <div class="home-grid-item">
+                    <div class="grid-vert-item">
                         <img src="assets/Content/Home/VLS_HarvestFestival.png">
-                        <div class="home-grid-text">
+                        <div class="grid-vert-text">
 
-                            <p class="home-grid-header">
+                            <p class="grid-header">
                                 The Harvest Fesitval
                             </p>
-                            <p class="home-grid-subtext">
+                            <p class="grid-subtext">
                                 Creator, Animator
                             </p>
                             <button class="btn-grid" id="btn-harvest">VIEW PROJECT</button>
@@ -198,14 +177,14 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
 
                     <!--==================== HIDDEN ANIMATIONS ====================-->
                     <div id="show">
-                        <div class="home-grid-item">
+                        <div class="grid-vert-item">
                             <img src="assets/Content/Home/VLS_TillPayments_TillPortable.jpg">
                             <div class="home-grid-text">
 
-                                <p class="home-grid-header">
+                                <p class="grid-header">
                                     Till Portable
                                 </p>
-                                <p class="home-grid-subtext">
+                                <p class="grid-subtext">
                                     Designer, Animator
                                 </p>
                                 <button class="btn-grid" id="btn-till">VIEW PROJECT</button>
@@ -231,50 +210,52 @@ Hompage: for phone screens, hide feature image and replace with 1920x1080
             </section>
 
             <!-- ==================== EXPLORE MORE ====================-->
-            <section class="home-section" id="explore-more">
+            <section class="section" id="explore-more">
                 <div class="wave">
-                    <img id="wave-purple-pink" class="wave" src="assets/Content/Backgrounds/VLS_BG_Wave_Purple-Pink.png">
+                    <img id="wave-purple-pink" class="wave"
+                        src="assets/Content/Backgrounds/VLS_BG_Wave_Purple-Pink.png">
                 </div>
-                <div class="home-section-text">
-                    <p class="home-section-header">
+                <div class="section-text">
+                    <p class="section-header">
                         Explore More
                     </p>
                     <hr style="background-color: #e6b1f2">
 
-                    <p class="home-section-subtext">
+                    <p class="section-subtext">
                         Check out the range of my artistic pieces, comprising of illustrations, animations, and print
                         designs.
                     </p>
                 </div>
 
-                <div class="home-grid-vert">
-                    <div class="home-grid-vert-item">
+                <div class="grid-side">
+                    <div class="grid-side-item">
                         <img src="assets/Content/Work/Illustration/VLS-LindsayPortrait.png">
-                        <div class="home-grid-vert-text">
+                        <div class="grid-side-text">
 
-                            <p class="home-grid-header home-grid-vert-header">
+                            <p class="grid-header grid-side-header">
                                 Gallery
-                                <button class="btn-grid" id="btn-gallery">EXPLORE</button>
+                                <a href="illustration.html"><button class="btn-grid"
+                                        id="btn-gallery">EXPLORE</button></a>
                             </p>
                         </div>
                     </div>
 
-                    <div class="home-grid-vert-item">
-                        <img id="home-paymentlinks" src="assets/Content/Home/VLS_TillPayments_PaymentLinks.png">
-                        <div class="home-grid-vert-text">
+                    <div class="grid-side-item">
+                        <img id="grid-paymentlinks" src="assets/Content/Home/VLS_TillPayments_PaymentLinks.png">
+                        <div class="grid-side">
 
-                            <p class="home-grid-header home-grid-vert-header">
+                            <p class="grid-header grid-side-header">
                                 Motion
                                 <button class="btn-grid" id="btn-motion">EXPLORE</button>
                             </p>
                         </div>
                     </div>
 
-                    <div class="home-grid-vert-item">
+                    <div class="grid-side-item">
                         <img src="assets/Content/Work/Designs/Lashes by Rhi/LBR_SelfTan.png">
-                        <div class="home-grid-vert-text">
+                        <div class="grid-side-text">
 
-                            <p class="home-grid-header home-grid-vert-header">
+                            <p class="grid-header grid-side-header">
                                 Print
                                 <button class="btn-grid" id="btn-print">EXPLORE</button>
                             </p>

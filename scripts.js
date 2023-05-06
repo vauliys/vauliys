@@ -1,3 +1,4 @@
+
 /*================ ANIMATION LOAD MORE ================*/
 function show() {
     document.getElementById('show')
@@ -54,7 +55,7 @@ function explore() {
 }
 
 
-/*================ SCROLL COLOUR CHANGE ================*/
+/*================ HOME: SCROLL COLOUR CHANGE ================*/
 
 window.addEventListener('scroll', e => {
     if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
@@ -98,3 +99,4 @@ window.addEventListener('scroll', e => {
 });
 
 
+/*================ TILL: SCROLL UP CHANGE ================*/
