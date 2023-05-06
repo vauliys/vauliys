@@ -258,13 +258,22 @@ section {
 }
 
 .wave {
-    top: 150vh;
+    z-index: -1;
 }
+
 #wave-blue {
+    top: 150vh;
     position: absolute;
     right: 0;
-    margin-bottom: 2rem;
     width: 60%;
+}
+
+
+#wave-blue-purple {
+    top: 175vh;
+    position: absolute;
+    left: 0;
+    width: 35%;
 }
 
 
