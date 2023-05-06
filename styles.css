@@ -24,7 +24,7 @@
     --colour-black: #342f31;
     --colour-black-alt: #292526;
 
-    --colour-white: #f2f0ec;
+    --colour-white: #f3f1ed;
     --colour-white-alt: #d1d1d1;
 
 
@@ -107,7 +107,6 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
-    background-color: var(--colour-black);
 }
 
 body {
@@ -258,6 +257,13 @@ section {
     border-radius: 25rem;
 }
 
+#wave-blue,
+#wave-purple-blue,
+#wave-purple,
+#wave-pink {
+    z-index: -1;
+}
+
 #wave-blue {
     top: 150%;
     right: 0;
@@ -270,6 +276,20 @@ section {
     position: absolute;
     width: 30%;
 }
+
+#wave-purple {
+    top: 240%;
+    position: absolute;
+    width: 30%;
+    right: 0;
+}
+
+#wave-pink {
+    top: 370%;
+    position: absolute;
+    width: 30%;
+}
+
 
 /*==================== CLIENT GRID ====================*/
 
@@ -289,6 +309,7 @@ section {
     display: flex;
     align-items: center;
     filter: drop-shadow(5px 5px 5px #d1d1d1);
+    z-index: 1;
 }
 
 .grid-span-2 {
@@ -533,6 +554,7 @@ button {
 
 #btn-load,
 #btn-hide {
+    background-color: rgba(243, 241, 237, 0.0);
     color: var(--colour-black);
 }
 
