@@ -119,6 +119,9 @@ body {
     min-height: 100%;
 }
 
+.fade-in {
+    animation: fade-in 2s;
+}
 ul {
     list-style: none;
 }
