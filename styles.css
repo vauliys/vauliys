@@ -260,34 +260,22 @@ section {
 .wave {
     z-index: -1;
 }
-
 #wave-blue {
-    top: 150vh;
+    top: 145vh;
     position: absolute;
     right: 0;
+    margin-bottom: 2rem;
     width: 60%;
 }
 
 #wave-blue-purple {
-    top: 175vh;
+    top: 185vh;
     position: absolute;
     left: 0;
+    margin-bottom: 2rem;
     width: 35%;
 }
 
-#wave-purple {
-    top: 240vh;
-    position: absolute;
-    right: 0;
-    width: 30%;
-}
-
-#wave-purple-pink {
-    top: 370vh;
-    position: absolute;
-    left: 0;
-    width: 30%;
-}
 
 /*==================== CLIENT GRID ====================*/
 
@@ -391,7 +379,7 @@ section {
  }
 
  #home-paymentlinks {
-    object-position: 90%;
+    object-position: 87%;
 
  }
 
