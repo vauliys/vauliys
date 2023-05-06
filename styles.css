@@ -344,6 +344,10 @@ section {
     margin: 1rem;
 }
 
+.home-grid-text:last-child {
+    margin-bottom: 0rem;
+}
+
 .home-grid-header {
     font-size: var(--h2-font-size);
     font-weight: 600;
