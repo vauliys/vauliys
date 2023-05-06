@@ -230,6 +230,7 @@ section {
     text-align: center;
     max-width: 75%;
     margin: 0 auto;
+    position: relative;
 }
 
 .home-section-header {
@@ -255,40 +256,55 @@ section {
     height: 55%;
     width: 70%;
     border-radius: 25rem;
+
 }
 
-#wave-blue,
+/* #wave-blue,
 #wave-purple-blue,
 #wave-purple,
 #wave-pink {
-    z-index: -1;
-}
+    z-index: 1;
+} */
 
 #wave-blue {
-    top: 150%;
-    right: 0;
     position: absolute;
     width: 60%;
+    right: 0;
+    bottom: -52rem;
 }
 
 #wave-purple-blue {
-    top: 190%;
     position: absolute;
+    width: 30%;
+    left: 0;
+    bottom: -62rem;
+}
+
+/* #wave-blue {
+    top: 20%;
+    right: 0;
+    position: fixed;
+    width: 60%;
+} */
+
+/* #wave-purple-blue {
+    top: 190%;
+    position: fixed;
     width: 30%;
 }
 
 #wave-purple {
     top: 240%;
-    position: absolute;
+    position: fixed;
     width: 30%;
     right: 0;
 }
 
 #wave-pink {
     top: 370%;
-    position: absolute;
+    position: fixed;
     width: 30%;
-}
+} */
 
 
 /*==================== CLIENT GRID ====================*/
@@ -610,7 +626,7 @@ button {
     right: 8%;
     bottom: 2rem;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--colour-green);
 }
 
