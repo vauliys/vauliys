@@ -213,30 +213,27 @@ button {
     color: var(--colour-white);
 }
 
-#btn-solar {
+#btn-purple {
     background-image: linear-gradient(to right, #e6b1f2 , #8271d8);
 }
 
-#btn-harvest {
+#btn-green {
     background-image: linear-gradient(to right, #b3d186 , #2f8c6f);
 }
 
-#btn-till {
+#btn-orange {
     background-image: linear-gradient(to right, #f2bc75 , #f04f23);
 }
 
-#btn-gallery {
+#btn-blue {
     background-image: linear-gradient(to right, #87ccc0 , #1b799e);
-    padding: 1em 2em;
 }
 
-#btn-motion {
-    background-image: linear-gradient(to right, #b3d186 , #2f8c6f);
-    padding: 1em 2em;
+#btn-brown {
+    background-image: linear-gradient(to right, #bc9154 , #6c502a);
 }
 
-#btn-print {
-    background-image: linear-gradient(to right, #e6b1f2 , #8271d8);
+.btn-small {
     padding: 1em 2em;
 }
 
