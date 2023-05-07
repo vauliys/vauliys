@@ -336,8 +336,13 @@ section {
     font-weight: 600;
 }
 
-.section-subtext {
+.section-description {
     font-weight: var(--font-medium);
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-subtext {
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
