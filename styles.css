@@ -326,7 +326,7 @@ section {
 .section-text {
     color: var(--colour-black);
     text-align: center;
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
     position: relative;
 }
@@ -422,7 +422,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 1rem;
     grid-column-gap: 0.25rem;
-    max-width: 90%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -455,7 +455,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 1rem;
     grid-column-gap: 0.25rem;
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
