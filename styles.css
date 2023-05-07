@@ -348,6 +348,17 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.section-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.section-logos img {
+    width: 4rem;
+    padding: 0rem 0.5rem;
+}
+
 /*==================== HOME - ABOUT ====================*/
 
 .about-img {
