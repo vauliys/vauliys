@@ -163,25 +163,25 @@ hr {
     top: 145vh;
     position: absolute;
     right: 0;
-    width: 60%;
+    width: 50%;
 }
 
 #wave-blue-purple {
-    top: 185vh;
+    top: 190vh;
     position: absolute;
     left: 0;
     width: 40%;
 }
 
 #wave-purple {
-    top: 245vh;
+    top: 220vh;
     position: absolute;
     right: 0;
     width: 30%;
 }
 
 #wave-purple-pink {
-    top: 350vh;
+    top: 340vh;
     position: absolute;
     left: 0;
     width: 35%;
@@ -363,6 +363,7 @@ section {
 
 .about-img {
     display: flex;
+    padding-bottom: 2rem;
     justify-content: center;
 }
 
@@ -370,7 +371,7 @@ section {
 .about-img img {
     object-fit: cover;
     object-position: 100% 55%;
-    height: 55%;
+    height: 95%;
     width: 70%;
     border-radius: 25rem;
 }
