@@ -290,10 +290,11 @@ section {
 #about {
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     text-align: center;
+
+    /* flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;
+    align-content: center; */
 }
 
 .about-icons {
