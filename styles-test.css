@@ -21,13 +21,16 @@
     --colour-pink: #f3c2ed;
     --colour-pink-alt: #b071d8;
 
-    --colour-black: #212121;
-    --colour-black-alt: #292526;
 
-    --colour-white: #f4f2ed;
+    --colour-black-alt: #292526;
     --colour-white-alt: #d1d1d1;
 
+    /*NEW COLOURS*/
+
+    --colour-black: #212121;
+    --colour-white: #f4f2ed;
     --colour-yellow: #eaad3d;
+    --colour-brown: #7c6445;
 
 
     /* --scroll-bar-colour: hsl(var(--hue-colour), 12%, 90%);
@@ -114,14 +117,15 @@ button {
 
 #btn-explore i{
     color: var(--colour-white);
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-size: 1rem;
+    transition: 1s;
 }
 
 #btn-explore i:hover{
-    transform: translateX(10px);
+    transform: translateX(1rem);
     transition: 1s;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
 }
 
 
@@ -315,6 +319,67 @@ section {
     border-radius: 25rem;
 }
 
+/*==== PROJECT ====*/
+
+.project-container {
+    background-color: rgb(33, 33, 33, 0.05);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.project-icon {
+    outline-style: solid;
+    outline-width: 1px;
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    color: var(--colour-brown);
+}
+
+.project-category p {
+    font-size: var(--smaller-font-size);
+    font-weight: 700;
+}
+
+.project-image {
+    padding: 6rem;
+    border-radius: 1rem;
+    background-color: var(--colour-white);
+    margin-bottom: 1rem;
+}
+
+#btn-keyword {
+    border-radius: 5px;
+    font-size: 0.6rem;
+    color: var(--colour-white);
+    background-color: var(--colour-yellow);
+    margin-bottom: 1rem;
+}
+
+#btn-next {
+    position: absolute;
+    font-size: 1rem;
+    padding: 0.8rem 0.9rem;
+    margin: 1rem;
+    left: 15%;
+    background-color: var(--colour-green);
+    transition: 1s;
+}
+
+
+
+#btn-next:hover {
+    transition: 1s;
+    padding: 0.8rem 2rem;
+    display: flex;
+}
 
 /*==================== FOOTER ====================*/
 
