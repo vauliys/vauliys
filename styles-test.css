@@ -1,0 +1,355 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 2rem;
+
+    /*========== Colors ==========*/
+    --colour-orange: #f2bc75;
+    --colour-orange-alt: #ff591f;
+
+    --colour-green: #a6c7a8;
+    --colour-green-alt: #2f8c6f;
+
+    --colour-blue: #87ccc0;
+    --colour-blue-alt: #1b799e;
+
+    --colour-blue-purple: #6f84c3;
+    --colour-blue-purple-alt: #b1ade0;
+
+    --colour-purple: #d0b1f2;
+    --colour-purple-alt: #8271d8;
+
+    --colour-pink: #f3c2ed;
+    --colour-pink-alt: #b071d8;
+
+    --colour-black: #212121;
+    --colour-black-alt: #292526;
+
+    --colour-white: #f4f2ed;
+    --colour-white-alt: #d1d1d1;
+
+    --colour-yellow: #eaad3d;
+
+
+    /* --scroll-bar-colour: hsl(var(--hue-colour), 12%, 90%);
+    --scroll-thumb-colour: hsl(var(--hue-colour), 12%, 80%); */
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2.5rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margin Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*========== Animation ==========*/
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== Button Dark/Light ==========*/
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+
+    font-size: 0.7rem;
+    font-weight: var(--font-semi-bold);
+    background-color: var(--colour-black);
+    color: var(--colour-white);
+}
+
+#btn-explore i{
+    color: var(--colour-white);
+    padding-left: 2rem;
+    font-size: 1rem;
+}
+
+#btn-explore i:hover{
+    transform: translateX(10px);
+    transition: 1s;
+    padding-right: 0.5rem;
+}
+
+
+
+/*==================== BASE ====================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--colour-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.fade-in {
+    animation: fade-in 2s;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colour-green);
+    font-weight: var(--font-medium);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+hr {
+    max-width: 3rem;
+    margin: 1.5rem auto;
+    border: none;
+    height: 2px;
+}
+
+.icons i {
+    font-size: var(--h3-font-size);
+    padding: 0 0.3rem;
+}
+
+.logo {
+    width: 1rem;
+}
+
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+
+section {
+    margin: 2rem 0rem;
+}
+
+.section-header {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--colour-yellow);
+    margin-bottom: 2rem;
+}
+
+.section-description {
+    margin-bottom: 1rem;
+}
+
+
+/*==================== FIXED HEADER ====================*/
+
+
+.header {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    z-index: var(--z-fixed);
+    display: flex;
+    padding: 1.5rem 10%;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hamburger-menu {
+    background: var(--colour-black);
+    border-radius: 2rem;
+    height: 3px;
+    margin: 2.5px 0;
+}
+
+.hamburger-menu:nth-of-type(1){
+    width: 1.2rem;
+
+  }
+
+.hamburger-menu:nth-of-type(2){
+    width: 0.7rem;
+  }
+
+/*==================== HOME SCROLL ====================*/
+
+.home-scroll {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.home-welcome {
+    position: relative;
+}
+
+.home-video {
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin-bottom: 2rem;
+
+}
+
+.welcome-header {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 2.7rem;
+    color: #7c6445;
+    margin-bottom: 1rem;
+}
+
+/*==== CLIENTS ====*/
+
+.client {
+    margin: 3rem 0rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+
+}
+
+.client img {
+    width: 30px;
+}
+
+#studio-moshi,
+#logitech {
+    width: 60px ;
+}
+
+/*==== ABOUT ====*/
+
+#about {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.about-icons {
+    margin: 1rem 0rem;
+}
+
+.about-img {
+    display: flex;
+    margin: 2rem 0rem;
+    justify-content: center;
+}
+
+
+.about-img img {
+    object-fit: cover;
+    object-position: 100% 55%;
+    height: 95%;
+    width: 100%;
+    border-radius: 25rem;
+}
+
+
+/*==================== FOOTER ====================*/
+
+
+
+/*========== SCROLL BAR ==========*/
+/* Scrollbar (Hide)*/
+/* Chrome, Safari, Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox, IE, Edge */
+html {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/*==================== MEDIA QUERIES ====================*/
+
+/*============ SMALL DEVICES ============*/
+@media screen and (max-width: 350px) {
+
+}
+
+/*============ MEDIUM DEVICES ============*/
+@media screen and (max-width: 768px) {
+
+}
+
+/*============ LARGE DEVICES ============*/
+
+@media screen and (min-width: 1024px) {
+
+}
