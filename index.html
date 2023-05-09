@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
 
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-test.css">
 
         <!--==================== ICONS ====================-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
@@ -14,60 +14,55 @@
 
     </head>
     <body class="fade-in">
+        <!--==================== FIXED HEADER ====================-->
         <header class="header">
+            <image class="logo" src="assets/Content/Home/Client_Logos/Logo_Vauliys.png">
 
-            <!--========== NAV MENU ==========-->
-            <p>vauliys</p>
-        </header>
-        <button id="scroll">
-            <i class="ri-arrow-down-line"></i>
-        </button>
-
-        <!--==================== WEBSITE CONTENT ====================-->
-        <div class="web-content">
-
-            <!--==================== PAGE FEATURE ====================-->
-            <section class="welcome">
-                <div class="welcome-video">
-                    <video class="welcome-video" loop muted autoplay>
-                        <source src="assets/Content/Backgrounds/VLS_Portfolio_BG_GeoShapes_v3.mp4" type="video/mp4" />
-                    </video>
+                <div class="nav-menu">
+                    <div class="hamburger-menu"></div>
+                    <div class="hamburger-menu"></div>
                 </div>
-                <div class="home-about" id="#welcome">
-                    <!-- <p class="home-about-header">
-                        Hiya! <br>
-                        I'm Vauliys
+
+        </header>
+
+        <!--==================== PAGE FEATURE ====================-->
+        <video class="home-video" loop muted autoplay>
+            <source src="assets/Content/Backgrounds/VLS_Portfolio_BG_GeoShapes_v4.mp4" type="video/mp4" />
+        </video>
+        <div class="home-scroll">
+            <div class="home-welcome">
+                <p class="welcome-header">
+                    Creating and breathing life into ideas,
+                    one frame at a time.
+                </p>
+                <button type="button" onclick="explore()" id="btn-explore">
+                    <p>
+                        LET'S EXPLORE
                     </p>
+                    <i class="ri-arrow-right-line"></i></i>
+                </button>
+            </div>
 
-                    <p class="home-about-subtext">A digital designer specialising in print and digital media.</p>
 
-                    <button onclick="explore()" id="btn-explore">LET'S EXPLORE</button>
+            <!--==================== CLIENTS ====================-->
+            <section class="client">
+                <image id="studio-moshi" src="assets/Content/Home/Client_Logos/Logo_Studio Moshi.png">
+                    <image src="assets/Content/Home/Client_Logos/Logo_XPPen.png">
+                        <image src="assets/Content/Home/Client_Logos/Logo_Till.png">
+                            <image id="logitech" src="assets/Content/Home/Client_Logos/Logo_Logitech.png">
 
-                    <div class="icons welcome-footer">
-                        <a href="https://www.instagram.com/vauliys/" target="_blank">
-                            <i class="ri-instagram-line"></i></a>
-
-                        <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
-                            <i class="ri-github-line"></i></a>
-
-                        <a href="https://store.vauliys.com/" target="_blank">
-                            <i class="ri-shopping-bag-2-line"></i></a>
-
-                        <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                            <i class="ri-linkedin-fill"></i></a>
-                    </div>
-                </div> -->
-
+                                <!-- <image src="assets/Content/Home/Client_Logos/Logo_Huion.png">
+                    <image src="assets/Content/Home/Client_Logos/Logo_FlyingArt.png">
+                    <image src="assets/Content/Home/Client_Logos/Logo_Paperlike.png">
+                    <image src="assets/Content/Home/Client_Logos/Logo_Hulu.png"> -->
             </section>
 
-            <!--==================== ABOUT VAULIYS ====================-->
-            <section class="section" id="about">
-
-                <div class="section-text">
+            <!--==================== ABOUT ====================-->
+            <div id="about">
+                <div class="about-text">
                     <p class="section-header">
-                        Bringing Ideas to Life, one Frame at a Time.
+                        Hiya! I'm Vauliys
                     </p>
-                    <hr style="background-color: #87ccc0">
 
                     <p class="section-description">
                         Providing a fresh burst of energy and color to the creative scene, with a big dose
@@ -75,219 +70,81 @@
                         and inspiration for anyone who crosses my path.
                     </p>
                 </div>
+                <div class="icons about-icons">
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
+
+                    <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
+                        <i class="ri-github-line"></i></a>
+
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-shopping-bag-2-line"></i></a>
+
+                    <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                        <i class="ri-linkedin-fill"></i></a>
+                </div>
                 <div class="about-img">
-                    <div class="about-img">
-                        <img src="assets/Content/Home/VLS_About.jpg">
-                    </div>
-                </div>
-                <div class="wave">
-                    <img id="wave-blue" class="wave" src="assets/Content/Backgrounds/VLS_BG_Wave_Blue.png">
-                </div>
-            </section>
-
-            <!--==================== CLIENTS ====================-->
-            <section id="clients">
-
-                <div class="wave">
-                    <img id="wave-blue-purple" class="wave"
-                        src="assets/Content/Backgrounds/VLS_BG_Wave_Blue-Purple.png">
+                    <img src="assets/Content/Home/VLS_About.jpg">
                 </div>
 
-                <div class="section-text">
-                    <p class="section-header">
-                        Clients
-                    </p>
-                    <hr style="background-color: #6f84c3">
-                </div>
-                <div class="grid-col">
-                    <div class="grid-col-item">
-                        <image src="assets/Content/Home/Client_Logos/Logo_StudioMoshi.png">
-                    </div>
+            </div>
 
-                    <div class="grid-col-item">
-                        <image src="assets/Content/Home/Client_Logos/Logo_XPPen.png">
-                    </div>
-
-                    <div class="grid-col-item">
-                        <image src="assets/Content/Home/Client_Logos/Logo_Huion.png">
-                    </div>
-
-                    <div class="grid-col-item">
-                        <image src="assets/Content/Home/Client_Logos/Logo_Till.png">
-                    </div>
-
-                    <div class="grid-col-item grid-span-2">
-                        <image src="assets/Content/Home/Client_Logos/Logo_FlyingArt.png">
-                    </div>
-
-                    <div class="grid-col-item">
-                        <image src="assets/Content/Home/Client_Logos/Logo_Paperlike.png">
-                    </div>
-
-                    <div class="grid-col-item">
-                        <image src="assets/Content/Home/Client_Logos/Logo_Logitech.png">
-                    </div>
-
-                    <div class="grid-col-item">
-                        <image src="assets/Content/Home/Client_Logos/Logo_Hulu.png">
-                    </div>
-                </div>
-                <div class="wave">
-                    <img id="wave-purple" class="wave" src="assets/Content/Backgrounds/VLS_BG_Wave_Purple.png">
-                </div>
-            </section>
-
-
-            <!--==================== LATEST PROJECTS ====================-->
-            <section class="section" id="projects">
-                <div class="section-text">
-                    <p class="section-header">
-                        Latest Projects
-                    </p>
-                    <hr style="background-color: #8271d8">
-
-                    <p class="section-description">
-                        A mix of works I've created in the digital and print realms.
-                    </p>
-                </div>
-                <div class="grid-vert">
-                    <div class="grid-vert-item">
-                        <img src="assets/Content/Home/VLS_SolarOpposites.png">
-                        <div class="grid-vert-text">
-
-                            <p class="grid-header">
-                               Solar Opposites
-                            </p>
-                            <p class="grid-subtext">
-                                Builds Artist, Rigger
-                            </p>
-                            <a href="solar-opposites.html">
-                                <button class="btn-grid" id="btn-purple">VIEW PROJECT</button>
-                            </a>
+            <!--==================== PROJECTS ====================-->
+            <section class="projects">
+                <div class="project-container">
+                    <div class="project-header">
+                        <div class="project-category">
+                            <h1>01</h1>
+                            <p>Gallery</p>
+                        </div>
+                        <div class="project-icon">
+                            <i class="ri-pencil-line"></i>
                         </div>
                     </div>
 
-                    <div class="grid-vert-item">
-                        <img src="assets/Content/Home/VLS_HarvestFestival.png">
-                        <div class="grid-vert-text">
-
-                            <p class="grid-header">
-                                The Harvest Fesitval
-                            </p>
-                            <p class="grid-subtext">
-                                Creator, Animator
-                            </p>
-                            <a href="harvest-festival.html">
-                                <button class="btn-grid" id="btn-green">VIEW PROJECT</button>
-                            </a>
-                        </div>
+                    <div class="project-image">
                     </div>
-
-
-                    <!--==================== HIDDEN ANIMATIONS ====================-->
-                    <div id="show">
-                        <div class="grid-vert-item">
-                            <img src="assets/Content/Home/VLS_TillPayments_TillPortable.jpg">
-                            <div class="grid-vert-text">
-
-                                <p class="grid-header">
-                                    Till Portable
-                                </p>
-                                <p class="grid-subtext">
-                                    Designer, Animator
-                                </p>
-                                <a href="till-portable.html">
-                                    <button class="btn-grid" id="btn-orange">VIEW PROJECT</button>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="project-keywords">
+                        <button type="button" id="btn-keyword">
+                            <p>
+                                2D
+                            </p>
+                        </button>
+                        <button type="button" id="btn-keyword">
+                            <p>
+                                KeyFrame
+                            </p>
+                        </button>
+                        <button type="button" id="btn-keyword">
+                            <p>
+                                Toon Boom
+                            </p>
+                        </button>
                     </div>
+                    <!-- <button type="button" id="btn-next">
+                        <i class="ri-arrow-right-line"></i>
+                    </button> -->
+                </div>
 
-                    <!-- ==================== LOAD MORE BUTTON ====================-->
-                    <button type="button" onclick="show()" id="btn-load">
-                        <p>
-                            <i class="ri-add-line"></i>
-                            Load More
-                        </p>
-                    </button>
-                    <button type="button" onclick="hide()" id="btn-hide">
-                        <p>
-                            <i class="ri-subtract-line"></i>
-                            Collapse
-                        </p>
-                    </button>
+                <div class="carousel-nav">
+                    <button class="btn-carousel current-slide"></button>
+                    <button class="btn-carousel"></button>
+                    <button class="btn-carousel"></button>
                 </div>
 
             </section>
-
-            <!-- ==================== EXPLORE MORE ====================-->
-            <section class="section" id="explore-more">
-                <div class="wave">
-                    <img id="wave-purple-pink" class="wave"
-                        src="assets/Content/Backgrounds/VLS_BG_Wave_Purple-Pink.png">
-                </div>
-                <div class="section-text">
-                    <p class="section-header">
-                        Explore More
-                    </p>
-                    <hr style="background-color: #e6b1f2">
-
-                    <p class="section-description">
-                        Check out the range of my artistic pieces, comprising of illustrations, animations, and print
-                        designs.
-                    </p>
-                </div>
-
-                <div class="grid-side">
-                    <div class="grid-side-item">
-                        <img src="assets/Content/Work/Illustration/VLS-LindsayPortrait.png">
-                        <div class="grid-side-text">
-
-                            <p class="grid-header grid-side-header">
-                                Gallery
-                                <a href="gallery.html"><button class="btn-grid btn-small"
-                                        id="btn-blue">EXPLORE</button></a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="grid-side-item">
-                        <img id="grid-paymentlinks" src="assets/Content/Work/Motion/VLS_TillPayments_PaymentLinks.png">
-                        <div class="grid-side">
-
-                            <p class="grid-header grid-side-header">
-                                Motion
-                                <a href="motion.html">
-                                    <button class="btn-grid btn-small" id="btn-green">EXPLORE</button>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="grid-side-item">
-                        <img src="assets/Content/Work/Designs/VLS_LashesByRhi.png">
-                        <div class="grid-side-text">
-
-                            <p class="grid-header grid-side-header">
-                                Print
-                                <a href="print-design.html">
-                                    <button class="btn-grid btn-small" id="btn-purple">EXPLORE</button>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-            </section>
-
 
         </div>
+
+
         <!--==================== FOOTER ====================-->
         <footer class="footer">
             <p class="footer-copy">Vauliys</p>
         </footer>
 
 
-
         <!--==================== MAIN JS ====================-->
         <script src="scripts.js" defer></script>
+
     </body>
 </html>

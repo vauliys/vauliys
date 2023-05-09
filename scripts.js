@@ -46,7 +46,7 @@ scrolltotop.addEventListener("click", e => {
 
 function explore() {
     window.scrollTo({
-        top: 700,
+        top: 900,
         left: 0,
         behavior: "smooth"
     });

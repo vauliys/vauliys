@@ -272,7 +272,7 @@ section {
 /*==== CLIENTS ====*/
 
 .client {
-    margin: 3rem 0rem;
+    margin: 5rem 0rem;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -321,10 +321,15 @@ section {
 
 /*==== PROJECT ====*/
 
+.projects {
+    margin: 5rem 0;
+}
+
 .project-container {
     background-color: rgb(33, 33, 33, 0.05);
     padding: 2rem;
     border-radius: 1rem;
+    margin: 1rem 0rem;
 }
 
 .project-header {
@@ -381,8 +386,44 @@ section {
     display: flex;
 }
 
-/*==================== FOOTER ====================*/
+.carousel-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
 
+.btn-carousel {
+    padding: 0.3rem;
+    margin: 0 1rem;
+    background: rgb(33, 33, 33, 0.3);
+}
+
+.btn-carousel.current-slide {
+    background: rgb(33, 33, 33, 0.75);
+}
+
+
+/*==================== TEST ====================*/
+
+
+/*==================== FOOTER ====================*/
+.footer {
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-top: auto;
+    padding: 2rem;
+    background-color: var(--colour-brown);
+}
+
+.footer-copy {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--colour-white);
+}
 
 
 /*========== SCROLL BAR ==========*/
