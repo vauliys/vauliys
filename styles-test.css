@@ -288,13 +288,12 @@ section {
 /*==== ABOUT ====*/
 
 #about {
-    height: 100vh;
     display: flex;
     text-align: center;
 
-    /* flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center; */
+    align-content: center;
 }
 
 .about-icons {
