@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
-
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="styles-test.css">
-
-        <!--==================== ICONS ====================-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-
-        <title>Vauliys</title>
-
-    </head>
-    <body class="fade-in">
-
-
-        <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 179.6 185.74" style="enable-background:new 0 0 179.6 185.74;" xml:space="preserve">
@@ -25,7 +7,7 @@
 	.st1{fill:#1F1F1F;}
 </style>
 <g id="Layer_2" class="st0">
-
+	
 		<image style="display:inline;overflow:visible;" width="182" height="189" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAAC9CAYAAAAeN4fHAAAACXBIWXMAAAsSAAALEgHS3X78AAAK
 bUlEQVR4nO2di3HbOBCGN27AuQrOqMC+CuyrIL4KrFRwTgVROnAqiF3BKRWcXMHZFdDqIKogN5CW
 CCiRFB8AicX+34wnM3kZJH9+Xi4h4N3Pnz9pCMaYKyJ6z//0gr/qeCGiH/z7L0VR/Bj0DQHowclg
@@ -85,11 +67,3 @@ AAAASUVORK5CYII=" transform="matrix(1 0 0 1 266.9307 15.1482)">
 		c-0.79,12.38-5.33,24.04-11.95,34.43c-2.03,3.18-4.6,6.15-8,7.77C93.98,187.3,87.15,184.9,84.37,179.46z"/>
 </g>
 </svg>
-
-
-
-        <!--==================== MAIN JS ====================-->
-        <script src="scripts.js" defer></script>
-
-    </body>
-</html>

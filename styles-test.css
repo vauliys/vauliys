@@ -95,6 +95,16 @@
     }
 }
 
+@keyframes fade-out {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
 /*========== Variables Dark theme ==========*/
 
 
@@ -150,6 +160,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 .fade-in {
@@ -192,6 +203,10 @@ hr {
     width: 1rem;
 }
 
+.logo-invert{
+    filter: brightness(0) invert(1);
+    transition: 1s;
+}
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 
@@ -223,20 +238,35 @@ section {
     z-index: 2;
 }
 
+.nav-menu[data-visible='true']{
+    transform: translateX(0%);
+}
+
 .nav-menu {
-    display: none;
+    display: flex;
     position: fixed;
+    align-items: center;
+
+    z-index: 1;
+
     background-color: var(--colour-brown);
+
     width: 100vw;
     height: 100vh;
-    align-items: center;
-    z-index: 1;
+
+    transform: translateX(100%);
+    transition: 0.4s ease-out;
 }
 
 .nav-links {
-    padding-left: 5rem;
     display: flex;
+    position: relative;
     flex-direction: column;
+
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+
+    padding-left: 5rem;
 }
 
 .nav-link {
@@ -245,6 +275,21 @@ section {
     font-weight: 900;
 }
 
+.nav-icons {
+    margin: 2rem 0;
+}
+
+
+
+.nav-icons i {
+    font-size: 1rem;
+    padding-right: 1rem;
+    color: var(--colour-white-alt);
+}
+
+
+
+/*==== HAMBURGER MENU ====*/
 
 .hamburger {
     z-index: 5;
@@ -283,12 +328,6 @@ section {
     width: 1.2rem;
     background: var(--colour-white);
 }
-
-.nav-show {
-    display: flex;
-}
-
-
 
 /*==================== HOME SCROLL ====================*/
 
