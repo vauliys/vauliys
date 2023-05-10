@@ -33,6 +33,12 @@ navItems.forEach(item => { /*applying code to EACH item in List*/
 })
 
 
+
+
+
+const carousel = document.querySelectorAll('.project-container');
+const carouselNav = document.querySelectorAll('.project-nav')
+
 /*================ SCROLL DOWN - BTN EXPLORE ================*/
 
 function explore() {

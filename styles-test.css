@@ -29,7 +29,7 @@
     --colour-black: #212121;
     --colour-white: #f4f2ed;
     --colour-white-alt: #eae6df;
-    --colour-yellow: #eaad3d;
+    --colour-yellow: #daa037;
     --colour-brown: #7c6445;
 
 
@@ -137,13 +137,13 @@ button {
 .btn-explore {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 55%;
     transition: 1s;
 }
 
 .btn-explore:hover {
     justify-content: space-between;
-    width: 55%;
+    width: 60%;
     transition: 1s;
 }
 
@@ -314,7 +314,7 @@ section {
 .nav-link {
     font-size: 2rem;
     color: var(--colour-white);
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .nav-icons {
@@ -456,17 +456,19 @@ section {
 
 .projects {
     background-color: var(--colour-white-alt);
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .project-container {
-    background-color: rgb(33, 33, 33, 0.05);
+    background-color: var(--colour-white);
     padding: 2rem;
     border-radius: 1rem;
-    margin: 0rem 10%;
+    margin: 4rem 10%;
 }
 
 .project-header {
+    /* color:  var(--colour-brown); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -487,11 +489,10 @@ section {
     font-weight: 700;
 }
 
-.project-image {
-    padding: 6rem;
-    border-radius: 1rem;
-    background-color: var(--colour-white);
+.project-image img {
     margin-bottom: 1rem;
+    border-radius: 1rem;
+    object-fit: cover;
 }
 
 #btn-keyword {
@@ -507,7 +508,7 @@ section {
     padding: 0.8rem 0.9rem;
     margin: 1rem;
     left: 15%;
-    background-color: var(--colour-green);
+    background-color: var(--colour-black);
     transition: 1s;
 }
 
@@ -518,6 +519,19 @@ section {
     display: flex;
 }
 
+.project-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-project {
+    background-color: var(--colour-black);
+    margin: 0em 0.5em;
+    width: 10px;
+    height: 10px;
+    border-radius: 1rem;
+
+}
 
 /*==================== HOME SCROLL ====================*/
 
