@@ -41,10 +41,37 @@ function explore() {
         left: 0,
         behavior: "smooth"
     });
-
-
 }
 
+
+/*================ SCROLL TO TOP / SCROLL TO ABOUT ================*/
+const scrolltotop = document.getElementById('scroll');
+
+scrolltotop.addEventListener("click", e => {
+    if (window.scrollY > 20) {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    } else {
+        window.scrollTo({
+            top: 750,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+});
+
+/*================ SCROLL TO TOP / ARROW ROTATES ================*/
+
+window.addEventListener('scroll', e => {
+    if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
+        scrolltotop.classList.add('scroll-up');
+    } else if (window.scrollY <= 20 && scrolltotop.classList.contains('scroll-up')) {
+        scrolltotop.classList.remove('scroll-up');
+    }
+});
 
 
 
@@ -71,24 +98,6 @@ function explore() {
 //         .style.display = "none";
 // }
 
-// /*================ SCROLL TO TOP / SCROLL TO ABOUT ================*/
-// const scrolltotop = document.getElementById('scroll');
-
-// scrolltotop.addEventListener("click", e => {
-//     if (window.scrollY > 20) {
-//         window.scrollTo({
-//             top: 0,
-//             left: 0,
-//             behavior: "smooth"
-//         });
-//     } else {
-//         window.scrollTo({
-//             top: 600,
-//             left: 0,
-//             behavior: "smooth"
-//         });
-//     }
-// });
 
 
 

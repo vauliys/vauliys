@@ -108,7 +108,7 @@
 /*========== Variables Dark theme ==========*/
 
 
-/*========== Button Dark/Light ==========*/
+/*========== Buttons ==========*/
 
 button {
     border: none;
@@ -125,6 +125,8 @@ button {
     color: var(--colour-white);
 }
 
+/*========== Button: Let's Explore (Home) ==========*/
+
 #btn-explore i{
     color: var(--colour-white);
     padding-left: 1rem;
@@ -132,10 +134,50 @@ button {
     transition: 1s;
 }
 
-#btn-explore i:hover{
-    transform: translateX(1rem);
+.btn-explore {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
     transition: 1s;
-    padding-right: 1rem;
+}
+
+.btn-explore:hover {
+    justify-content: space-between;
+    width: 55%;
+    transition: 1s;
+}
+
+/*========== Button: Scroll to Top ==========*/
+
+#scroll {
+    display: flex;
+    position: fixed;
+    border-radius: 6rem;
+    padding: 0.7rem;
+    right: 8%;
+    bottom: 2rem;
+    align-items: center;
+    z-index: 2;
+    background-color: var(--colour-black);
+}
+
+#scroll i {
+    font-size: 1rem;
+    transition: 0.3s;
+    font-weight: 900;
+}
+
+.scroll-up {
+    transition: 1s;
+}
+
+.scroll-up i {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+#scroll:hover {
+    background-color: var(--colour-brown);
 }
 
 
