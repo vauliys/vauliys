@@ -250,6 +250,7 @@ section {
 
 .home-welcome {
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .home-video {
@@ -273,7 +274,6 @@ section {
 
 .client {
     background-color: var(--colour-white-alt);
-    margin: 5rem 0rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -295,6 +295,7 @@ section {
 #about {
     display: flex;
     text-align: center;
+    margin: 2rem 0;
 
     flex-wrap: wrap;
     justify-content: space-around;
@@ -418,8 +419,13 @@ section {
 .footer-icons {
     margin: 2rem auto;
 }
+
+.footer-pages a {
+    color: var(--colour-white-alt);
+}
 .footer-icons i {
     font-size: 1rem;
+    padding-right: 1rem;
     color: var(--colour-white-alt);
 }
 
