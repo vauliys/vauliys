@@ -172,15 +172,14 @@ img {
 
 
 hr {
-
     margin: 1.5rem auto;
     border: none;
-    height: 2px;
+    height: 0.5px;
+    opacity: 0.2;
     z-index: 1;
 }
 
 .icons i {
-    font-size: var(--h3-font-size);
     padding: 0 0.3rem;
 }
 
@@ -303,6 +302,7 @@ section {
 }
 
 .about-icons {
+    font-size: var(--h3-font-size);
     margin: 1rem 0rem;
 }
 
@@ -391,7 +391,6 @@ section {
 /*==================== HOME SCROLL ====================*/
 
 .services {
-
     width: 100%;
 }
 
@@ -402,18 +401,34 @@ section {
     top: 100%;
     width: 100%;
     bottom: 0;
-    text-align: center;
+    text-align: left;
     margin-top: auto;
     padding: 2rem;
     background-color: var(--colour-brown);
 }
 
-.footer-copy {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-semi-bold);
+.footer-pages {
+    margin: 1rem 0;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
     color: var(--colour-white);
+    line-height: 1.5rem;
 }
 
+.footer-icons {
+    margin: 2rem auto;
+}
+.footer-icons i {
+    font-size: 1rem;
+    color: var(--colour-white-alt);
+}
+
+.copyright {
+    font-weight: var(--font-medium);
+    color: var(--colour-white);
+    font-size: var(--smaller-font-size);
+    opacity: 0.5;
+}
 
 /*========== SCROLL BAR ==========*/
 /* Scrollbar (Hide)*/
