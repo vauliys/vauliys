@@ -292,7 +292,7 @@ section {
 
 /*==== ABOUT ====*/
 
-#about {
+.about {
     display: flex;
     text-align: center;
     margin: 2rem 0;
