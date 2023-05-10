@@ -408,32 +408,38 @@ section {
     background-color: var(--colour-brown);
 }
 
+.footer-content {
+    opacity: 0.5;
+}
+
 .footer-pages {
     margin: 1rem 0;
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     color: var(--colour-white);
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .footer-icons {
     margin: 2rem auto;
 }
 
-.footer-pages a {
-    color: var(--colour-white-alt);
-}
+
 .footer-icons i {
     font-size: 1rem;
     padding-right: 1rem;
     color: var(--colour-white-alt);
 }
 
+.footer-pages a {
+    color: var(--colour-white-alt);
+}
+
+
 .copyright {
     font-weight: var(--font-medium);
     color: var(--colour-white);
     font-size: var(--smaller-font-size);
-    opacity: 0.5;
 }
 
 /*========== SCROLL BAR ==========*/
