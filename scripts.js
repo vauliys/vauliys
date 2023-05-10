@@ -1,22 +1,49 @@
-const hamburger = document.querySelector('.hamburger')
-const navMenu = document.querySelector('.nav-menu')
-const navLogo = document.querySelector('.logo')
-const navItem = document.querySelectorAll(".nav-item");
+/*================ NAV ================*/
 
+/* searching for item in html and giving it a Java name*/
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const navLogo = document.querySelector('.logo');
+
+/* searching for multiple items in html*/
+const navItems = document.querySelectorAll(".nav-item");
+
+
+/* when hamburger (.humburger) is clicked perform code*/
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLogo.classList.toggle('logo-invert')
-    const visibility = navMenu.getAttribute('data-visible')
-    console.log(visibility)
+    hamburger.classList.toggle('active'); /*toggles class*/
+    navLogo.classList.toggle('logo-invert');
+    const visibility = navMenu.getAttribute('data-visible');/*retrieves attribute from HTML*/
+    console.log(visibility);
 
     if (visibility === 'false') {
-        navMenu.setAttribute('data-visible', true);
+        navMenu.setAttribute('data-visible', true); /*set attribute from class*/
 
     } else if (visibility === 'true') {
-        navMenu.setAttribute('data-visible', false)
+        navMenu.setAttribute('data-visible', false); /*set attribute from HTML*/
     }
+});
+
+navItems.forEach(item => { /*applying code to EACH item in List*/
+    item.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLogo.classList.remove('logo-invert');
+        navMenu.setAttribute('data-visible', false);
+    });
 })
 
+
+/*================ SCROLL DOWN - BTN EXPLORE ================*/
+
+function explore() {
+    window.scrollTo({
+        top: 750,
+        left: 0,
+        behavior: "smooth"
+    });
+
+
+}
 
 
 
@@ -63,18 +90,6 @@ hamburger.addEventListener('click', () => {
 //     }
 // });
 
-
-// /*================ SCROLL DOWN - BTN EXPLORE ================*/
-
-// function explore() {
-//     window.scrollTo({
-//         top: 750,
-//         left: 0,
-//         behavior: "smooth"
-//     });
-
-
-// }
 
 
 // /*================ HOME: SCROLL COLOUR CHANGE ================*/
