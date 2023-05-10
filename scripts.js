@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger')
 const navMenu = document.querySelector('.nav-menu')
 const navLogo = document.querySelector('.logo')
+const navItem = document.querySelectorAll(".nav-item");
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -15,6 +16,7 @@ hamburger.addEventListener('click', () => {
         navMenu.setAttribute('data-visible', false)
     }
 })
+
 
 
 
