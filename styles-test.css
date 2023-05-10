@@ -552,8 +552,16 @@ section {
     background-color: var(--colour-brown);
 }
 
-.footer-content {
+.footer-logo img {
     opacity: 0.5;
+}
+
+
+.footer-pages:hover,
+.footer-icons i:hover,
+.footer-pages a:hover,
+.footer-logo img:hover {
+    opacity: 1;
 }
 
 .footer-pages {
@@ -573,10 +581,12 @@ section {
     font-size: 1rem;
     padding-right: 1rem;
     color: var(--colour-white-alt);
+    opacity: 0.5;
 }
 
 .footer-pages a {
     color: var(--colour-white-alt);
+    opacity: 0.5;
 }
 
 
@@ -584,6 +594,7 @@ section {
     font-weight: var(--font-medium);
     color: var(--colour-white);
     font-size: var(--smaller-font-size);
+    opacity: 0.5;
 }
 
 /*========== SCROLL BAR ==========*/
