@@ -23,12 +23,12 @@
 
 
     --colour-black-alt: #292526;
-    --colour-white-alt: #d1d1d1;
 
     /*NEW COLOURS*/
 
     --colour-black: #212121;
     --colour-white: #f4f2ed;
+    --colour-white-alt: #eae6df;
     --colour-yellow: #eaad3d;
     --colour-brown: #7c6445;
 
@@ -172,10 +172,11 @@ img {
 
 
 hr {
-    max-width: 3rem;
+
     margin: 1.5rem auto;
     border: none;
     height: 2px;
+    z-index: 1;
 }
 
 .icons i {
@@ -257,11 +258,10 @@ section {
     width: 100%;
     height: 100%;
     z-index: -1;
-    margin-bottom: 2rem;
-
 }
 
 .welcome-header {
+    max-width: 85%;
     font-size: 2.2rem;
     font-weight: 800;
     line-height: 2.7rem;
@@ -272,11 +272,12 @@ section {
 /*==== CLIENTS ====*/
 
 .client {
+    background-color: var(--colour-white-alt);
     margin: 5rem 0rem;
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    padding: 2rem 1rem;
+    justify-content: space-between;
+    padding: 2rem 10%;
 
 }
 
@@ -322,14 +323,15 @@ section {
 /*==== PROJECT ====*/
 
 .projects {
-    margin: 5rem 0;
+    background-color: var(--colour-white-alt);
+    padding-bottom: 2rem;
 }
 
 .project-container {
     background-color: rgb(33, 33, 33, 0.05);
     padding: 2rem;
     border-radius: 1rem;
-    margin: 1rem 0rem;
+    margin: 0rem 10%;
 }
 
 .project-header {
@@ -365,7 +367,6 @@ section {
     font-size: 0.6rem;
     color: var(--colour-white);
     background-color: var(--colour-yellow);
-    margin-bottom: 1rem;
 }
 
 #btn-next {
@@ -379,32 +380,19 @@ section {
 }
 
 
-
 #btn-next:hover {
     transition: 1s;
     padding: 0.8rem 2rem;
     display: flex;
 }
 
-.carousel-nav {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    z-index: -1;
+
+/*==================== HOME SCROLL ====================*/
+
+.services {
+
+    width: 100%;
 }
-
-.btn-carousel {
-    padding: 0.3rem;
-    margin: 0 1rem;
-    background: rgb(33, 33, 33, 0.3);
-}
-
-.btn-carousel.current-slide {
-    background: rgb(33, 33, 33, 0.75);
-}
-
-
-/*==================== TEST ====================*/
 
 
 /*==================== FOOTER ====================*/
