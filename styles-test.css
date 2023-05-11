@@ -642,7 +642,7 @@ section {
 .terms {
     font-size: var(--smaller-font-size);
     margin-top: 1rem;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 /*==================== FOOTER ====================*/
