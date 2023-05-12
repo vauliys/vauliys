@@ -103,6 +103,7 @@ button {
     justify-content: space-between;
     width: 75%;
 
+    background-color: var(--colour-green);
     transition: 1s;
 }
 
@@ -127,9 +128,10 @@ button {
 
     right: 8%;
     bottom: 2rem;
-    z-index: 2;
+    z-index: 1;
 
     background-color: var(--colour-black);
+    transition: 0.5s;
 }
 
 #scroll i {
@@ -150,6 +152,7 @@ button {
 
 #scroll:hover {
     background-color: var(--colour-brown);
+    transition: 0.5s;
 }
 
 /*=== Button: Services (Pricing, FAQ) ====*/
@@ -185,7 +188,28 @@ button {
     font-size: var(--h3-font-size);
     font-weight: 900;
     color: var(--colour-yellow);
+
+    transition: 0.5s;
 }
+
+.btn-chevron-up:hover,
+#btn-bg i:hover,
+#btn-flat i:hover,
+#btn-render i:hover,
+#btn-faq-01 i:hover,
+#btn-faq-02 i:hover,
+#btn-faq-03 i:hover,
+#btn-faq-04 i:hover,
+#btn-faq-05 i:hover,
+#btn-faq-06 i:hover,
+#btn-faq-07 i:hover {
+color: var(--colour-brown);
+
+transition: 0.5s;
+}
+
+
+
 
 .btn-chevron-up {
     transform: rotate(180deg);
@@ -424,6 +448,14 @@ section {
     font-size: var(--big-font-size);
     color: var(--colour-white);
     font-weight: 800;
+
+    transition: 0.5s;
+}
+
+#nav-link:hover,
+#nav-icons a:hover {
+    color: var(--colour-yellow);
+    transition: 0.5s;
 }
 
 
@@ -542,6 +574,13 @@ section {
 
     font-size: var(--h2-font-size);
     color: var(--colour-green);
+
+    transition: 0.5s;
+}
+
+.about-icons i:hover {
+    color: var(--colour-brown);
+    transition: 0.5s;
 }
 
 .about-img {
@@ -714,8 +753,13 @@ section {
 
     font-size: var(--smaller-font-size);
 
+    transition: 0.5s;
 }
 
+.terms:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
 /*==================== FAQ ====================*/
 
 .dropdown {
@@ -798,6 +842,7 @@ section {
 .footer-pages a:hover,
 .footer-logo img:hover {
     opacity: 1;
+    transition: 0.5s;
 }
 
 .footer-pages {
@@ -820,19 +865,28 @@ section {
 }
 
 
+.footere-pages {
+    transition: 0.5s;
+}
+
 .footer-icons i {
     padding-right: 1rem;
     opacity: 0.5;
 
     font-size: var(--h3-font-size);
     color: var(--colour-white-alt);
+
+    transition: 0.5s;
 }
 
 .footer-pages a {
     color: var(--colour-white-alt);
     font-weight: var(--font-normal);
     opacity: 0.5;
+
+    transition: 0.5s;
 }
+
 
 .footer-page-category {
     color: var(--colour-white);

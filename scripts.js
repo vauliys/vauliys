@@ -43,6 +43,7 @@ const navItems = document.querySelectorAll(".nav-item");
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active'); /*toggles class*/
     navLogo.classList.toggle('logo-invert');
+
     const visibility = navMenu.getAttribute('data-visible');/*retrieves attribute from HTML*/
     console.log(visibility);
 
@@ -52,6 +53,7 @@ hamburger.addEventListener('click', () => {
     } else if (visibility === 'true') {
         navMenu.setAttribute('data-visible', false); /*set attribute from HTML*/
     }
+
 });
 
 navItems.forEach(item => { /*applying code to EACH item in List*/
