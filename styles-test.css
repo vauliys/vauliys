@@ -528,6 +528,7 @@ section {
     margin: 1rem 0rem;
 
     font-size: var(--h2-font-size);
+    color: var(--colour-green);
 }
 
 .about-img {
