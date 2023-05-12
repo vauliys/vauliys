@@ -91,20 +91,27 @@ const btnRender = document.querySelector("#btn-render");
 const btnChevronUp = document.querySelector(".btn-chevron-up");
 
 /*======*/
+if (btnFlat) {
+    btnFlat.addEventListener('click', () => {
+        priceFlat.classList.toggle('show'); /*toggles class*/
+        btnFlat.classList.toggle('btn-chevron-up'); /* toggles arrow rotation */
+    });
+}
+if (btnRender) {
+    btnRender.addEventListener('click', e => {
+        priceRender.classList.toggle('show'); /*toggles class*/
+        btnRender.classList.toggle('btn-chevron-up');
+    });
+}
+if (null) {
 
-btnFlat.addEventListener('click', () => {
-    priceFlat.classList.toggle('show'); /*toggles class*/
-    btnFlat.classList.toggle('btn-chevron-up'); /* toggles arrow rotation */
-});
-btnRender.addEventListener('click', e => {
-    priceRender.classList.toggle('show'); /*toggles class*/
-    btnRender.classList.toggle('btn-chevron-up');
-});
-
-btnBg.addEventListener('click', () => {
-    priceBg.classList.toggle('show');
-    btnBg.classList.toggle('btn-chevron-up');
-});
+}
+if (btnBg) {
+    btnBg.addEventListener('click', () => {
+        priceBg.classList.toggle('show');
+        btnBg.classList.toggle('btn-chevron-up');
+    });
+}
 
 /*================ Dropdown: Reveal Content ================*/
 
