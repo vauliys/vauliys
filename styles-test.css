@@ -116,12 +116,12 @@ button {
     outline: none;
     cursor: pointer;
     border-radius: 2rem;
-    padding: 0.5rem 1rem;
+
     display: inline-flex;
     align-items: center;
 
     font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-medium);
     background-color: var(--colour-black);
     color: var(--colour-white);
 }
@@ -136,15 +136,16 @@ button {
 }
 
 .btn-explore {
+    padding: 1rem 2rem;
     display: flex;
+    width: 70%;
     justify-content: space-between;
-    width: 55%;
     transition: 1s;
 }
 
 .btn-explore:hover {
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
     transition: 1s;
 }
 
@@ -163,7 +164,7 @@ button {
 }
 
 #scroll i {
-    font-size: var(--h3-font-size);
+    font-size: var(--small-font-size);
     transition: 0.3s;
     font-weight: 900;
 }
@@ -191,7 +192,8 @@ button {
     padding: 0.7rem;
     align-items: center;
     height: 0%;
-    background-color: var(--colour-black);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 #btn-sketch i,
@@ -199,11 +201,18 @@ button {
 #btn-render i {
     font-size: var(--h3-font-size);
     font-weight: 900;
-    transition: 1s;
+    color: var(--colour-yellow);
+    transform: rotate(0deg);
+}
+
+.btn-service-up {
+transform: rotate(180deg);
+transition: 0.2s;
 }
 
 #btn-commission {
     padding: 1rem 2rem;
+    background-color: var(--colour-green);
 }
 
 
@@ -534,9 +543,9 @@ section {
 
 }
 
-#keyword-sm,
-#keyword-md,
-#keyword-lg {
+.keyword-sm,
+.keyword-md,
+.keyword-lg {
     display: flex;
     margin-right: 0.5rem;
 
@@ -550,17 +559,29 @@ section {
     background-color: var(--colour-yellow);
 }
 
-#keyword-sm {
+.keyword-sm {
     width: 2.5rem;
+
 }
 
-#keyword-md {
+.keyword-md {
     width: 4rem;
 }
 
-#keyword-lg {
+.keyword-lg {
     width: 6rem;
 }
+
+#keyword-green {
+    background-color: var(--colour-green);
+}
+
+#keyword-brown {
+    background-color: var(--colour-brown);
+}
+
+
+
 
 /* #btn-next {
     position: absolute;
@@ -652,6 +673,10 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.price-type {
+    color: var(--colour-brown);
 }
 
 .price-rate {
@@ -756,22 +781,10 @@ html {
     }
 
     /*========== Buttons ==========*/
-    button {
-        padding: 0.5rem 0.6rem;
-    }
+
 
     /*=== Button: Let's Explore (Home) ===*/
-    #btn-explore {
-        width: 65%;
-    }
 
-    #btn-explore p {
-        margin-left: 0.5rem;
-    }
-
-    #btn-explore:hover {
-        width: 70%;
-    }
 
     /*==================== HOME SCROLL ====================*/
 

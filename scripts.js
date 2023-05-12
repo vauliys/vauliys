@@ -17,18 +17,6 @@ scrolltotop.addEventListener("click", e => {
     }
 });
 
-/*================ SCROLL TO TOP / ARROW ROTATES ================*/
-
-window.addEventListener('scroll', e => {
-    if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
-        scrolltotop.classList.add('scroll-up');
-    } else if (window.scrollY <= 20 && scrolltotop.classList.contains('scroll-up')) {
-        scrolltotop.classList.remove('scroll-up');
-    }
-});
-
-
-
 
 /*================ NAV ================*/
 
@@ -89,22 +77,37 @@ const priceRender = document.querySelector('.prices-render');
 const btnSketch = document.querySelector("#btn-sketch");
 const btnFlat = document.querySelector("#btn-flat");
 const btnRender = document.querySelector("#btn-render");
+const btnServiceUp = document.querySelector(".btn-service-up");
 
 
 
 btnSketch.addEventListener('click', () => {
     priceSketch.classList.toggle('show');
+    btnSketch.classList.toggle('btn-service-up');
 });
 
 btnFlat.addEventListener('click', () => {
     priceFlat.classList.toggle('show'); /*toggles class*/
+    btnFlat.classList.toggle('btn-service-up');
 });
 
-btnRender.addEventListener('click', () => {
+btnRender.addEventListener('click', e => {
     priceRender.classList.toggle('show'); /*toggles class*/
+    btnRender.classList.toggle('btn-service-up');
 });
 
-/*================ HOME: SERVICE LOAD PRICES ARROW ROTATES ================*/
+
+/*================ SCROLL TO TOP / ARROW ROTATES ================*/
+
+window.addEventListener('scroll', e => {
+    if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
+        scrolltotop.classList.add('scroll-up');
+    } else if (window.scrollY <= 20 && scrolltotop.classList.contains('scroll-up')) {
+        scrolltotop.classList.remove('scroll-up');
+    }
+});
+
+
 
 
 
