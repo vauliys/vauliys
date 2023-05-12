@@ -70,30 +70,45 @@ function explore() {
 
 /*================ HOME: SERVICE LOAD PRICES ================*/
 
-const priceSketch = document.querySelector('.prices-sketch');
+const priceBg = document.querySelector('.prices-bg');
 const priceFlat = document.querySelector('.prices-flat');
 const priceRender = document.querySelector('.prices-render');
 
-const btnSketch = document.querySelector("#btn-sketch");
+const btnBg = document.querySelector("#btn-bg");
 const btnFlat = document.querySelector("#btn-flat");
 const btnRender = document.querySelector("#btn-render");
-const btnServiceUp = document.querySelector(".btn-service-up");
 
-
-
-btnSketch.addEventListener('click', () => {
-    priceSketch.classList.toggle('show');
-    btnSketch.classList.toggle('btn-service-up');
-});
+const btnChevronUp = document.querySelector(".btn-chevron-up");
 
 btnFlat.addEventListener('click', () => {
     priceFlat.classList.toggle('show'); /*toggles class*/
-    btnFlat.classList.toggle('btn-service-up');
+    btnFlat.classList.toggle('btn-chevron-up'); /* toggles arrow rotation */
 });
 
 btnRender.addEventListener('click', e => {
     priceRender.classList.toggle('show'); /*toggles class*/
-    btnRender.classList.toggle('btn-service-up');
+    btnRender.classList.toggle('btn-chevron-up');
+});
+
+
+btnBg.addEventListener('click', () => {
+    priceBg.classList.toggle('show');
+    btnBg.classList.toggle('btn-chevron-up');
+});
+
+
+
+
+
+
+/*================ FAQ Question Load Answer ================*/
+
+const btnFaq = document.querySelector("#btn-faq");
+const faqAnswer = document.querySelector('.faq-answer');
+
+btnFaq.addEventListener('click', () => {
+    faqAnswer.classList.toggle('faq-display');
+    btnFaq.classList.toggle('btn-chevron-up');
 });
 
 

@@ -182,40 +182,39 @@ button {
     background-color: var(--colour-brown);
 }
 
-/*=== Button: Services (Pricing) ====*/
+/*=== Button: Services (Pricing, FAQ) ====*/
 
-#btn-sketch,
+#btn-bg,
 #btn-flat,
-#btn-render {
+#btn-render
+#btn-faq {
     display: flex;
-    border-radius: 6rem;
-    padding: 0.7rem;
     align-items: center;
-    height: 0%;
     cursor: pointer;
     transition: 0.2s;
 }
 
-#btn-sketch i,
+#btn-bg i,
 #btn-flat i,
-#btn-render i {
+#btn-render i,
+#btn-faq i {
     font-size: var(--h3-font-size);
     font-weight: 900;
     color: var(--colour-yellow);
     transform: rotate(0deg);
 }
 
-.btn-service-up {
+.btn-chevron-up {
 transform: rotate(180deg);
 transition: 0.2s;
 }
+
+/*=== Button: Services (Commission) ====*/
 
 #btn-commission {
     padding: 1rem 2rem;
     background-color: var(--colour-green);
 }
-
-
 
 
 /*==================== BASE ====================*/
@@ -270,7 +269,6 @@ hr {
     border: none;
     height: 0.5px;
     opacity: 0.2;
-    z-index: 1;
 }
 
 .icons i {
@@ -297,6 +295,10 @@ section {
     font-weight: 800;
     color: var(--colour-yellow);
     margin-bottom: 2rem;
+}
+
+#header-faq {
+    color: var(--colour-green);
 }
 
 .section-description {
@@ -639,6 +641,7 @@ section {
 .service-price-header {
     justify-content: space-between;
     display: flex;
+    align-items: center;
 }
 
 .service-no {
@@ -652,7 +655,7 @@ section {
 
 /*==== HIDDEN / SHOW PRICES ====*/
 .prices-flat,
-.prices-sketch,
+.prices-bg,
 .prices-render {
     display: none;
     transition: 1s;
@@ -695,6 +698,46 @@ section {
     margin-top: 1rem;
     opacity: 0.5;
 }
+
+/*==================== FAQ ====================*/
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-question-container {
+    width: 100%;
+    padding: 1.5rem;
+
+}
+
+
+.faq-question-contents {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.faq-question {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--colour-brown);
+}
+
+.faq-answer {
+    color: var(--colour-black);
+    display: none;
+    margin-top: 1rem;
+    transition: 1s;
+}
+
+.faq-display {
+    display: flex;
+}
+
+
 
 /*==================== FOOTER ====================*/
 .footer {
@@ -774,93 +817,11 @@ html {
 /*============ SMALL DEVICES ============*/
 @media screen and (max-width: 350px) {
 
-
-/*==================== REUSABLE CSS CLASSES ====================*/
-    .section-header {
-        font-size: var(--h1-font-size);
-    }
-
-    /*========== Buttons ==========*/
-
-
-    /*=== Button: Let's Explore (Home) ===*/
-
-
-    /*==================== HOME SCROLL ====================*/
-
-    .welcome-header {
-        max-width: 95%;
-    }
 }
 
 /*============ MEDIUM DEVICES ============*/
 @media screen and (min-width: 768px) {
 
-
-       /*========== Buttons ==========*/
-       button {
-        padding: 0.5rem 0.5rem;
-        }
-
-        /*=== Button: Let's Explore (Home) ===*/
-        #btn-explore {
-            width: 30%;
-        }
-
-        #btn-explore p {
-            margin-left: 0.5rem;
-        }
-
-        #btn-explore:hover {
-            width: 35%;
-        }
-
-        /*==================== HOME SCROLL ====================*/
-        .home-scroll {
-            max-width: 85%;
-        }
-        .home-video {
-            margin-top: -25rem;
-            margin-bottom: 2rem;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .welcome-header {
-            max-width: 65%;
-        }
-
-
-        /*==== ABOUT ====*/
-        .about {
-            display: flex;
-            flex-wrap:nowrap;
-            align-items: center;
-        }
-
-        .about-text {
-            text-align: left;
-        }
-
-        .about-img {
-            justify-content: flex-end;
-        }
-
-        .about-img img {
-            width: 80%;
-        }
-
-        /*==== PROJECT ====*/
-        .project-group {
-            display: flex;
-            margin: 0rem 5%;
-        }
-
-        .project-container {
-            margin: 4rem 0.5rem;
-            padding: 1.5rem;
-        }
 }
 
 /*============ LARGE DEVICES ============*/
