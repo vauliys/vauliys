@@ -196,10 +196,22 @@ button {
 
 #btn-commission {
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 2rem;
 
     background-color: var(--colour-green);
+    font-size: var(--smaller-font-size);
+}
+
+#btn-back {
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+    background-color: var(--colour-green);
+    font-size: var(--smaller-font-size);
 }
 
 /*==================== Keywords ====================*/
@@ -480,6 +492,7 @@ section {
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-color: none;
 }
 
 .welcome-header {
