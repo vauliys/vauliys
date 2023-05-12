@@ -40,13 +40,14 @@
     --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: 2.5rem;
+    --huge-font-size: 2.2rem;
+    --big-font-size: 2rem;
     --h1-font-size: 1.75rem;
     --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.8rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .7rem;
 
     /*========== Font weight ==========*/
     --font-normal: 400;
@@ -77,7 +78,7 @@
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
+        --normal-font-size: 1.8rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
@@ -119,7 +120,7 @@ button {
     display: inline-flex;
     align-items: center;
 
-    font-size: 0.7rem;
+    font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     background-color: var(--colour-black);
     color: var(--colour-white);
@@ -130,7 +131,7 @@ button {
 #btn-explore i{
     color: var(--colour-white);
     padding-left: 1rem;
-    font-size: 1rem;
+    font-size: var(--h3-font-size);
     transition: 1s;
 }
 
@@ -162,7 +163,7 @@ button {
 }
 
 #scroll i {
-    font-size: 1rem;
+    font-size: var(--h3-font-size);
     transition: 0.3s;
     font-weight: 900;
 }
@@ -178,15 +179,6 @@ button {
 
 #scroll:hover {
     background-color: var(--colour-brown);
-}
-
-/*=== Button: Project (Keywords) ====*/
-
-#btn-keyword {
-    border-radius: 5px;
-    font-size: 0.6rem;
-    color: var(--colour-white);
-    background-color: var(--colour-yellow);
 }
 
 /*=== Button: Services (Pricing) ====*/
@@ -205,7 +197,7 @@ button {
 #btn-sketch i,
 #btn-flat i,
 #btn-render i {
-    font-size: 1rem;
+    font-size: var(--h3-font-size);
     font-weight: 900;
     transition: 1s;
 }
@@ -292,7 +284,7 @@ section {
 }
 
 .section-header {
-    font-size: 2rem;
+    font-size: var(--big-font-size);
     font-weight: 800;
     color: var(--colour-yellow);
     margin-bottom: 2rem;
@@ -347,7 +339,7 @@ section {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: var(--big-font-size);
     color: var(--colour-white);
     font-weight: 800;
 }
@@ -359,7 +351,7 @@ section {
 
 
 .nav-icons i {
-    font-size: 1rem;
+    font-size: var(--h3-font-size);
     padding-right: 1rem;
     color: var(--colour-white-alt);
 }
@@ -428,7 +420,7 @@ section {
 
 .welcome-header {
     max-width: 85%;
-    font-size: 2.2rem;
+    font-size: var(--huge-font-size);
     font-weight: 800;
     line-height: 2.7rem;
     color: #7c6445;
@@ -468,7 +460,7 @@ section {
 }
 
 .about-icons {
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     margin: 1rem 0rem;
 }
 
@@ -515,7 +507,7 @@ section {
     outline-width: 1px;
     border-radius: 5px;
     padding: 0.3rem;
-    font-size: 1.2rem;
+    font-size: var(--h3-font-size);
     color: var(--colour-brown);
 }
 
@@ -536,9 +528,44 @@ section {
     object-fit: cover;
 }
 
+
+/*==== PROJECT: KEYWORDS ====*/
+.project-keywords {
+    display: flex;
+
+}
+
+#keyword-sm,
+#keyword-md,
+#keyword-lg {
+    display: flex;
+    margin-right: 0.5rem;
+
+    border-radius: 1rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    color: var(--colour-white);
+    background-color: var(--colour-yellow);
+}
+
+#keyword-sm {
+    width: 2.5rem;
+}
+
+#keyword-md {
+    width: 4rem;
+}
+
+#keyword-lg {
+    width: 6rem;
+}
+
 /* #btn-next {
     position: absolute;
-    font-size: 1rem;
+    font-size: var(--h3-font-size);
     padding: 0.8rem 0.9rem;
     margin: 2.5rem 0rem 0rem 1rem;
     left: 15%;
@@ -683,7 +710,7 @@ section {
 
 
 .footer-icons i {
-    font-size: 1rem;
+    font-size: var(--h3-font-size);
     padding-right: 1rem;
     color: var(--colour-white-alt);
     opacity: 0.5;
@@ -726,7 +753,7 @@ html {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
     .section-header {
-        font-size: 1.8rem;
+        font-size: var(--h1-font-size);
     }
 
     /*========== Buttons ==========*/
