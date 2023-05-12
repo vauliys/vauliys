@@ -304,13 +304,14 @@ img {
     height: auto;
 }
 
-
 hr {
-    margin: 1.5rem auto;
-    border: none;
+    display: flex;
+    margin: 0;
+    width: 100%;
     height: 0.5px;
     opacity: 0.2;
 }
+
 
 /*=== ICONS ===*/
 
@@ -710,9 +711,18 @@ section {
     align-items: center;
 }
 
-.dropdown-container {
+.dropdown-container-01,
+.dropdown-container-02,
+.dropdown-container-03,
+.dropdown-container-04,
+.dropdown-container-05,
+.dropdown-container-06,
+.dropdown-container-07 {
     width: 100%;
     padding: 1.5rem;
+}
+.dropdown-fill {
+        background-color: var(--colour-white-alt);
 }
 
 .dropdown-contents {
@@ -822,6 +832,7 @@ section {
     font-size: var(--smaller-font-size);
 
     opacity: 0.5;
+    margin: 1rem 0;
 }
 
 /*========== SCROLL BAR ==========*/
