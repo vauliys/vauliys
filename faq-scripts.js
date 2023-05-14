@@ -24,6 +24,9 @@ const btnFaq05 = document.querySelector("#btn-faq-05");
 const btnFaq06 = document.querySelector("#btn-faq-06");
 const btnFaq07 = document.querySelector("#btn-faq-07");
 
+const formDrop01 = document.querySelector("#form-contact-method");
+const formDropArrow01 = document.querySelector("#form-dropdown01");
+
 /*======*/
 
 btnFaq01.addEventListener('click', () => {
@@ -67,6 +70,10 @@ btnFaq07.addEventListener('click', () => {
     dropDowntext07.classList.toggle('dropdown-show');
     btnFaq07.classList.toggle('btn-chevron-up');
     dropDown07.classList.toggle('dropdown-fill');
+});
+
+formDrop01.addEventListener('click', () => {
+    formDropArrow01.classList.toggle('btn-chevron-up');
 });
 
 

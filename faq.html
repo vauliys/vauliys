@@ -271,80 +271,78 @@
                     </p>
                 </div>
 
-                <div class="form">
-
-                    <div class="form-section">
+                <section class="form">
+                    <section class="form-section">
                         <div class="form-header">
                             <p>
                                 Contact Information
                             </p>
                         </div>
-                        <div class="form-fields">
-                            <div class="form-input">
-                                <input type="text" name="name" placeholder="Name">
-                            </div>
-                            <div class="form-input">
-                                <input type="text" name="email" placeholder="Email">
-                            </div>
-                        </div>
-                    </div>
+                        <input type="text" name="name" placeholder="Name" id="form-name" required>
+                        <input type="text" name="email" placeholder="Email" id="form-email" required>
+                    </section>
 
+                    <hr style="background-color: #7c6445">
 
-                    <div class="form-section">
+                    <section class="form-section">
                         <div class="form-header">
                             <p>
                                 Preferred Contact Method
                             </p>
                         </div>
-                        <div class="form-fields" id="form-preferred-contact">
-                            <select class="custom-select" id="form-contact-method" name="contact-method">
-                                <option value="email">Email</option>
-                                <option value="instagram">Instagram</option>
-                            </select>
-                            <div class="select-icon">
-                                <i class="ri-arrow-down-s-line"></i>
+                        <div id="form-preferred-contact">
+                            <div class="custom-select">
+                                <select id="form-contact-method" name="contact-method" required>
+                                    <option value="email">Email</option>
+                                    <option value="instagram">Instagram</option>
+                                </select>
+                                <span class="form-dropdown-arrow01">
+                                    <i class="ri-arrow-drop-down-line" id="form-dropdown01"></i>
+                                </span>
                             </div>
 
                             <div class="form-input">
-                                <textarea name="social-handle" style="resize: none;" id="form-social-handle">@</textarea>
+                                <input type="text" name="social-handle" placeholder="@" id="form-social-handle">
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="form-section">
+                    <hr style="background-color: #7c6445">
+
+                    <section class="form-section">
                         <div class="form-header">
                             <p>
                                 Comission Details
                             </p>
                         </div>
-                        <div class="form-fields">
-                            <select class="custom-select" id="form-style" name="contact-method">
-                                <option value="email">Flat</option>
-                                <option value="instagram">Render</option>
-                                <option value="instagram">Bust</option>
-                            </select>
-                            <div class="select-icon">
-                                <i class="ri-arrow-down-s-line"></i>
+                        <div id="form-commission-style">
+                            <div class="custom-select form-style">
+                                <select id="form-style" name="contact-method" required>
+                                    <option value="style: flat">Flat</option>
+                                    <option value="style: render">Render</option>
+                                    <option value="style: background">Background</option>
+                                </select>
+                                <span class="form-dropdown-arrow02">
+                                    <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
+                                </span>
+                            </div>
+                            <div class="custom-select ">
+                                <select id="form-type" name="contact-method" required>
+                                    <option value="type: bust">Bust</option>
+                                    <option value="type: half body">Half Body</option>
+                                    <option value="type: full body">Full Body</option>
+                                </select>
+                                <span class="form-dropdown-arrow02">
+                                    <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
+                                </span>
                             </div>
 
-                            <select class="custom-select" id="form-type" name="contact-method">
-                                <option value="email">Bust</option>
-                                <option value="instagram">Half Body</option>
-                                <option value="instagram">Full Body</option>
-                            </select>
-
-                            <div class="select-icon">
-                                <i class="ri-arrow-down-s-line"></i>
-                            </div>
-                            <div class="form-input">
-                                <textarea name="description" style="resize: none;" id="form-description" placeholder="Describe your commission in detail"></textarea>
-                            </div>
                         </div>
-                    </div>
+                    </section>
 
 
 
-                </div>
+                </section>
 
             </section>
         </div>
