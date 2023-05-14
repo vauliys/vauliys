@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles-test.css">
+        <!--==================== ICONS ====================-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+        <title>Vauliys</title>
+    </head>
+
+    <body class="fade-in">
+        <!--==================== Fixed Header ====================-->
+        <header class="header">
+            <a href="#">
+                <image class="logo" src="assets/Content/Logos/Logo_Vauliys_Black.png">
+            </a>
+            <div class="hamburger-menu">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </div>
+        </header>
+
+        <!--=== Navigation Menu ===-->
+        <div class="nav-menu" data-visible="false">
+            <div class="nav-menu-links">
+                <li class="nav-item">
+                    <a href="index.html" id="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html #client" id="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html #projects" id="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html #service-illustration" id="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:hello@vauliys.com" id="nav-link">Contact</a>
+                </li>
+
+                <!--==== NAV ICONS ===-->
+                <div class="nav-icons">
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
+
+                    <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
+                        <i class="ri-github-line"></i></a>
+
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-shopping-bag-2-line"></i></a>
+
+                    <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                        <i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== Pages: Enquire Form ====================-->
+        <div class="home-scroll">
+            <section class="enquiry">
+                <div class="section-header" id="header-enquiry">
+                    <p>
+                        Enquiry
+                    </p>
+                </div>
+
+                <section class="form">
+                    <section class="form-section">
+                        <div class="form-header">
+                            <p>
+                                Contact Information
+                            </p>
+                        </div>
+                        <input type="text" name="name" placeholder="Name" id="form-name" required>
+                        <input type="text" name="email" placeholder="Email" id="form-email" required>
+                    </section>
+
+                    <hr style="background-color: #7c6445">
+
+                    <div class="form-section">
+                        <div class="form-header">
+                            <p>
+                                Preferred Contact Method
+                            </p>
+                        </div>
+                        <div id="form-preferred-contact">
+                            <div class="custom-select">
+                                <select id="form-contact-method" name="contact-method" required>
+                                    <option value="email">Email</option>
+                                    <option value="instagram">Instagram</option>
+                                </select>
+                                <span class="form-dropdown-arrow01">
+                                    <i class="ri-arrow-drop-down-line" id="form-dropdown01"></i>
+                                </span>
+                            </div>
+
+
+                            <input type="text" name="social-handle" placeholder="@" id="form-social-handle">
+
+                        </div>
+                    </div>
+
+                    <hr style="background-color: #7c6445">
+
+                    <div class="form-section">
+                        <div class="form-header">
+                            <p>
+                                Comission Details
+                            </p>
+                        </div>
+                        <div id="form-commission-style">
+                            <div class="custom-select form-style">
+                                <select id="form-style" name="contact-method" required>
+                                    <option value="style: flat">Flat</option>
+                                    <option value="style: render">Render</option>
+                                    <option value="style: background">Background</option>
+                                </select>
+                                <span class="form-dropdown-arrow02">
+                                    <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
+                                </span>
+                            </div>
+                            <div class="custom-select ">
+                                <select id="form-type" name="contact-method" required>
+                                    <option value="type: bust">Bust</option>
+                                    <option value="type: half body">Half Body</option>
+                                    <option value="type: full body">Full Body</option>
+                                </select>
+                                <span class="form-dropdown-arrow02">
+                                    <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
+                                </span>
+                            </div>
+                            <textarea name="form-description" placeholder="Describe your commission"
+                                id="form-description"></textarea>
+                        </div>
+                        <div class="form-upload">
+                            <div class="form-header">
+                                <p>
+                                    Upload any references
+                                </p>
+                            </div>
+                            <div id="form-upload">
+                                <input type="file" id='btn-upload-hidden' hidden>
+                                <label id='btn-upload' for="btn-upload-hidden">UPLOAD</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <input type="submit">
+
+                </section>
+            </section>
+        </div>
+
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+
+            <div class="footer-content">
+                <a class="footer-logo" href="#">
+                    <image class="logo footer-logo" src="assets/Content/Logos/Logo_Vauliys_White.png">
+                </a>
+                <div class="footer-pages">
+                    <div class="footer-column">
+                        <p class="footer-page-category">Home</p>
+                        <a href="index.html #client">
+                            <p class="footer-copy">About</p>
+                        </a>
+
+                        <a href="index.html #projects">
+                            <p class="footer-copy">Work</p>
+                        </a>
+
+                        <a href="index.html #service-illustration">
+                            <p class="footer-copy">Services</p>
+                        </a>
+
+                        <a href="mailto:hello@vauliys.com">
+                            <p class="footer-copy">Contact</p>
+                        </a>
+                    </div>
+                    <div class="footer-column">
+                        <p class="footer-page-category">Pages</p>
+                        <a href="faq.html">
+                            <p class="footer-copy">FAQ</p>
+                        </a>
+                        <a href="enquire.html">
+                            <p class="footer-copy">Enquire</p>
+                        </a>
+                    </div>
+                </div>
+
+                <hr style="background-color: #eae6df">
+
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
+
+                    <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
+                        <i class="ri-github-line"></i></a>
+
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-shopping-bag-2-line"></i></a>
+
+                    <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                        <i class="ri-linkedin-fill"></i></a>
+                </div>
+
+                <hr style="background-color: #eae6df">
+
+                <p class="copyright">© Vauliys. All Rights Reserved</p>
+            </div>
+        </footer>
+
+
+        <!--==================== MAIN JS ====================-->
+        <script src="scripts.js" defer></script>
+        <script src="faq-scripts.js" defer></script>
+
+    </body>
+</html>

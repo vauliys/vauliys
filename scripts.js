@@ -1,6 +1,7 @@
 /*================ Body: Sroll / To Top - To About ================*/
 const scrolltotop = document.getElementById('scroll');
 
+if(scrolltotop) {
 scrolltotop.addEventListener("click", e => {
     if (window.scrollY > 20) {
         window.scrollTo({
@@ -16,9 +17,11 @@ scrolltotop.addEventListener("click", e => {
         });
     }
 });
+}
 
 /*=== Scroll Arrow (Rotates) ====*/
 
+if(scrolltotop) {
 window.addEventListener('scroll', e => {
     if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
         scrolltotop.classList.add('scroll-up');
@@ -26,6 +29,7 @@ window.addEventListener('scroll', e => {
         scrolltotop.classList.remove('scroll-up');
     }
 });
+}
 
 
 /*================ Navigation Menu ================*/
