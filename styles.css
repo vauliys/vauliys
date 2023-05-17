@@ -679,7 +679,11 @@ section {
 
 /*==== Page: Services / Illustration (Dropbox Container) ====*/
 
-.dropbox-container {
+.dropbox-container01,
+.dropbox-container02,
+.dropbox-container03 {
+    cursor: pointer;
+
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     border-radius: 1rem;
@@ -739,7 +743,7 @@ section {
     font-weight: var(--font-semi-bold);
 }
 
-/*==== SERVICE: ENQUIRE ====*/
+/*==== Page: Service - Enquire (prices) ====*/
 .serivce-enquire {
     align-items: center;
     text-align: center;
@@ -769,6 +773,7 @@ section {
     align-items: center;
 }
 
+/*=== Dropdown Containers ===*/
 .dropdown-container-01,
 .dropdown-container-02,
 .dropdown-container-03,
@@ -793,8 +798,10 @@ section {
 }
 
 .dropdown-fill {
-        background-color: var(--colour-white-alt);
+    background-color: var(--colour-white-alt);
 }
+
+/*=== Dropdown Contents - Question and Answer ===*/
 
 .dropdown-contents {
     justify-content: space-between;
@@ -824,6 +831,8 @@ section {
 
     line-height: 1.2rem;
 }
+
+/*=== Show Dropdown on click ===*/
 
 .dropdown-show {
     display: flex;
