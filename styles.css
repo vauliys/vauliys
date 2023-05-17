@@ -212,6 +212,10 @@ transition: 0.5s;
     transition: 0.2s;
 }
 
+.btn-chevron-up i {
+    color: var(--colour-brown) !important;
+}
+
 /*=== Button: Services (Commission) ====*/
 
 #btn-commission {
@@ -772,9 +776,22 @@ section {
 .dropdown-container-05,
 .dropdown-container-06,
 .dropdown-container-07 {
+    cursor: pointer;
+
     width: 100%;
     padding: 1.5rem;
 }
+
+.dropdown-container-01:hover,
+.dropdown-container-02:hover,
+.dropdown-container-03:hover,
+.dropdown-container-04:hover,
+.dropdown-container-05:hover,
+.dropdown-container-06:hover,
+.dropdown-container-07:hover {
+    background-color: var(--colour-white-alt);
+}
+
 .dropdown-fill {
         background-color: var(--colour-white-alt);
 }
@@ -811,6 +828,7 @@ section {
 .dropdown-show {
     display: flex;
 }
+
 
 
 /*==================== Page: Enquiry (Form) ====================*/

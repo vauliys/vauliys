@@ -29,16 +29,16 @@ const formDropArrow01 = document.querySelector("#form-dropdown01");
 
 /*======*/
 
-if(btnFaq01) {
-btnFaq01.addEventListener('click', () => {
+if(dropDown01) {
+dropDown01.addEventListener('click', () => {
     dropDowntext01.classList.toggle('dropdown-show');
     btnFaq01.classList.toggle('btn-chevron-up');
     dropDown01.classList.toggle('dropdown-fill');
 });
 }
 
-if(btnFaq02) {
-btnFaq02.addEventListener('click', () => {
+if(dropDown02) {
+dropDown02.addEventListener('click', () => {
     dropDowntext02.classList.toggle('dropdown-show');
     btnFaq02.classList.toggle('btn-chevron-up');
     dropDown02.classList.toggle('dropdown-fill');
@@ -46,40 +46,40 @@ btnFaq02.addEventListener('click', () => {
 });
 }
 
-if(btnFaq03) {
-btnFaq03.addEventListener('click', () => {
+if(dropDown03) {
+dropDown03.addEventListener('click', () => {
     dropDowntext03.classList.toggle('dropdown-show');
     btnFaq03.classList.toggle('btn-chevron-up');
     dropDown03.classList.toggle('dropdown-fill');
 });
 }
 
-if(btnFaq04) {
-btnFaq04.addEventListener('click', () => {
+if(dropDown04) {
+dropDown04.addEventListener('click', () => {
     dropDowntext04.classList.toggle('dropdown-show');
     btnFaq04.classList.toggle('btn-chevron-up');
     dropDown04.classList.toggle('dropdown-fill');
 });
 }
 
-if(btnFaq05) {
-btnFaq05.addEventListener('click', () => {
+if(dropDown05) {
+dropDown05.addEventListener('click', () => {
     dropDowntext05.classList.toggle('dropdown-show');
     btnFaq05.classList.toggle('btn-chevron-up');
     dropDown05.classList.toggle('dropdown-fill');
 });
 }
 
-if(btnFaq06) {
-btnFaq06.addEventListener('click', () => {
+if(dropDown06) {
+dropDown06.addEventListener('click', () => {
     dropDowntext06.classList.toggle('dropdown-show');
     btnFaq06.classList.toggle('btn-chevron-up');
     dropDown06.classList.toggle('dropdown-fill');
 });
 }
 
-if(btnFaq07) {
-btnFaq07.addEventListener('click', () => {
+if(dropDown07) {
+dropDown07.addEventListener('click', () => {
     dropDowntext07.classList.toggle('dropdown-show');
     btnFaq07.classList.toggle('btn-chevron-up');
     dropDown07.classList.toggle('dropdown-fill');
