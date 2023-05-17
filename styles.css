@@ -1031,12 +1031,15 @@ input[type=file] {
     font-weight: var(--font-semi-bold);
     font-size: var(--small-font-size);
     color: var(--colour-brown);
+
+    transition: 0.5s;
 }
 
 #btn-upload:hover {
     background-color: var(--colour-yellow);
     color: var(--colour-white-alt);
 
+    transition: 0.5s;
 }
 
 /*==================== Pages: Links ====================*/
