@@ -27,9 +27,7 @@ if (dropBox02) {
         btnRender.classList.toggle('btn-chevron-up');
     });
 }
-if (null) {
 
-}
 if (dropBox03) {
     dropBox03.addEventListener('click', () => {
         priceBg.classList.toggle('show');

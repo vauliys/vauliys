@@ -131,6 +131,7 @@ button {
 
     background-color: var(--colour-black);
     transition: 0.5s;
+    z-index: 1;
 }
 
 #scroll i {
@@ -410,7 +411,7 @@ section {
     padding: 2rem 10%;
     width: 100vw;
 
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav-menu[data-visible='true'] {
@@ -422,7 +423,7 @@ section {
     position: fixed;
     align-items: center;
 
-    z-index: 1;
+    z-index: 2;
 
     background-color: var(--colour-brown);
 
@@ -1147,7 +1148,7 @@ input[type=file] {
     width: 100%;
     bottom: 0;
     padding: 2rem;
-    z-index: -1;
+    /* z-index: -1; */
 
     background-color: var(--colour-brown);
 }
