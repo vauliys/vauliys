@@ -371,6 +371,12 @@ i {
     margin: 2rem 0;
     font-size: var(--h3-font-size);
     color: var(--colour-white-alt);
+    transition: 0.5s;
+}
+
+.nav-icons i:hover {
+    color: var(--colour-yellow);
+    transition: 0.5s;
 }
 
 
