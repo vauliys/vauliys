@@ -130,12 +130,12 @@ button {
     bottom: 2rem;
 
     background-color: var(--colour-black);
-    transition: 0.5s;
+    transition: 1s;
     z-index: 1;
 }
 
 #scroll i {
-    transition: 0.3s;
+    transition: 0.5s;
 
     font-size: var(--small-font-size);
     font-weight: 900;
@@ -226,6 +226,13 @@ transition: 0.5s;
 
     background-color: var(--colour-green);
     font-size: var(--smaller-font-size);
+    transition: 0.5s;
+}
+
+#btn-commission:hover,
+#btn-back:hover {
+    background-color: var(--colour-black);
+    transition: 0.5s;
 }
 
 #btn-back {
@@ -369,6 +376,12 @@ i {
 
 .logo {
     width: 1rem;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 .logo-invert {
@@ -473,6 +486,11 @@ section {
     z-index: 5;
 }
 
+.hamburger-menu:hover .hamburger-bar {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
 .hamburger-bar {
     border-radius: 2rem;
     height: 3px;
@@ -570,7 +588,7 @@ section {
     margin: 2rem 0;
 }
 
-.about-icons {
+.about-icons i {
     margin: 1rem 0rem;
 
     font-size: var(--h2-font-size);
@@ -611,6 +629,8 @@ section {
 }
 
 .polaroid-container {
+    cursor: pointer;
+
     padding: 2rem;
     border-radius: 1rem;
     margin: 4rem 10%;
