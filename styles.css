@@ -424,7 +424,7 @@ section {
     margin-bottom: 1rem;
 
     font-size: var(--big-font-size);
-    font-weight: 700;
+    font-weight: var(--font-bold);
     color: var(--colour-black);
 }
 
@@ -488,7 +488,7 @@ section {
 #nav-link {
     font-size: var(--big-font-size);
     color: var(--colour-white);
-    font-weight: 800;
+    font-weight: var(--font-bold);
 
     transition: 0.5s;
 }
@@ -579,7 +579,7 @@ section {
 
     color: var(--colour-black);
     font-size: var(--big-font-size);
-    font-weight: 700;
+    font-weight: var(--font-bold);
     line-height: 2.7rem;
 }
 
@@ -739,7 +739,7 @@ section {
     margin-bottom: 0.2rem;
 
     font-size: var(--subtitle-font-size);
-    font-weight: 700;
+    font-weight: var(--font-semi-bold);
 }
 
 .polaroid-type {
@@ -1177,7 +1177,7 @@ input[type=file] {
 #verified i {
     padding: 0.5rem;
 
-    font-weight: 900;
+    font-weight: var(--font-bold);
     font-size: var(--small-font-size);
     color: var(--colour-white);
 }
@@ -1185,7 +1185,7 @@ input[type=file] {
 .links-header {
     color: #7c6445;
     font-size: var(--big-font-size);
-    font-weight: 800;
+    font-weight: var(--font-bold);
     margin-bottom: 0.5rem
 }
 
