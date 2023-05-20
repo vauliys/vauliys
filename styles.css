@@ -725,9 +725,9 @@ section {
 
     outline-width: 1px;
     border-radius: 5px;
-    padding: 0.3rem;
+    padding: 0.4rem 0.2rem;
 
-    font-size: var(--subtitle-font-size);
+    font-size: var(--standard-font-size);
     color: var(--colour-brown);
 }
 
