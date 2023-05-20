@@ -3,25 +3,28 @@
     --header-height: 5rem;
 
     /*========== Colors ==========*/
-    --colour-black: #212121;
+    --colour-black: #3f2e1c;
     --colour-white: #f4f2ed;
     --colour-white-alt: #eae6df;
     --colour-yellow: #daa037;
     --colour-green: #a6c7a8;
     --colour-brown: #7c6445;
+    --colour-brown-alt: #d7cfc5;
 
     /*========== Font and typography ==========*/
     --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --huge-font-size: 2.2rem;
-    --big-font-size: 2rem;
-    --h1-font-size: 1.75rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1rem;
+    --big-font-size: 2.2rem;
+    --header-font-size: 2rem;
+    --subtitle-font-size: 1.5rem;
     --normal-font-size: 0.9rem;
-    --small-font-size: .75rem;
-    --smaller-font-size: .7rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.7rem;
+
+    --standard-font-size: 1rem;
+    --icon-size: 1.25rem;
+
 
     /*========== Font weight ==========*/
     --font-normal: 400;
@@ -88,23 +91,29 @@ button {
     display: flex;
     justify-content: space-between;
 
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 2rem;
-    width: 70%;
+    width: 50%;
 
     transition: 1s;
 
-    background-color: var(--colour-black);
-    font-size: var(--small-font-size);
+    background-color: var(--colour-brown-alt);
+    font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    color: var(--colour-brown);
 }
 
 .btn-explore:hover {
     justify-content: space-between;
-    width: 75%;
+    width: 55%;
 
-    background-color: var(--colour-green);
+    background-color: var(--colour-black);
+    color: var(--colour-brown-alt);
     transition: 1s;
+}
+
+#btn-explore i:hover {
+    color: var(--colour-brown-alt);
 }
 
 #btn-explore i {
@@ -112,8 +121,9 @@ button {
 
     transition: 1s;
 
-    font-size: var(--h3-font-size);
-    color: var(--colour-white);
+    font-size: var(--standard-font-size);
+    color: var(--colour-brown);
+    font-weight: var(--font-semi-bold);
 }
 
 /*=== Button: Scroll to Top ====*/
@@ -129,7 +139,7 @@ button {
     right: 8%;
     bottom: 2rem;
 
-    background-color: var(--colour-black);
+    background-color: var(--colour-brown-alt);
     transition: 1s;
     z-index: 1;
 }
@@ -137,8 +147,9 @@ button {
 #scroll i {
     transition: 0.5s;
 
-    font-size: var(--small-font-size);
-    font-weight: 900;
+    font-size: var(--normal-font-size);
+    color: var(--colour-brown);
+    font-weight: var(--font-semi-bold);
 }
 
 .scroll-up {
@@ -150,9 +161,15 @@ button {
     transition: 1s;
 }
 
-#scroll:hover {
+
+
+#scroll:hover{
     background-color: var(--colour-brown);
     transition: 0.5s;
+}
+
+#scroll i:hover {
+color: var(--colour-brown-alt);
 }
 
 /*=== Button: Services (Pricing, FAQ) ====*/
@@ -185,7 +202,7 @@ button {
 #btn-faq-07 i {
     transform: rotate(0deg);
 
-    font-size: var(--h3-font-size);
+    font-size: var(--standard-font-size);
     font-weight: 900;
     color: var(--colour-yellow);
 
@@ -249,6 +266,7 @@ transition: 0.5s;
 /*==================== Keywords ====================*/
 .keyword-group {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .keyword-sm,
@@ -259,6 +277,7 @@ transition: 0.5s;
     justify-content: center;
 
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 
     border-radius: 1rem;
     height: 1.5rem;
@@ -314,7 +333,6 @@ transition: 0.5s;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: var(--text-color);
 }
 
 html {
@@ -330,6 +348,7 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--colour-white);
+    color: var(--colour-black);
 
     min-height: 100%;
 }
@@ -369,7 +388,7 @@ i {
 
 .nav-icons i {
     margin: 2rem 0;
-    font-size: var(--h3-font-size);
+    font-size: var(--standard-font-size);
     color: var(--colour-white-alt);
     transition: 0.5s;
 }
@@ -405,8 +424,8 @@ section {
     margin-bottom: 1rem;
 
     font-size: var(--big-font-size);
-    font-weight: 800;
-    color: var(--colour-yellow);
+    font-weight: 700;
+    color: var(--colour-black);
 }
 
 #header-faq {
@@ -416,6 +435,8 @@ section {
 
 .section-description {
     margin: 2rem 0rem;
+    line-height: 1.5rem;
+    color: var(--colour-black);
 }
 
 
@@ -556,9 +577,9 @@ section {
     max-width: 85%;
     margin-bottom: 1rem;
 
-    color: #7c6445;
-    font-size: var(--huge-font-size);
-    font-weight: 800;
+    color: var(--colour-black);
+    font-size: var(--big-font-size);
+    font-weight: 700;
     line-height: 2.7rem;
 }
 
@@ -597,7 +618,7 @@ section {
 .about-icons i {
     margin: 1rem 0rem;
 
-    font-size: var(--h2-font-size);
+    font-size: var(--icon-size);
     color: var(--colour-green);
 
     transition: 0.5s;
@@ -628,9 +649,58 @@ section {
 /*==== Page: Projects ====*/
 
 .polaroids {
-    padding-top: 2rem;
-
+    padding-top: 7rem;
     background-color: var(--colour-white-alt);
+}
+
+.polaroid-hide {
+    display: none;
+}
+
+
+.polaroid-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.category-slider {
+    outline: solid;
+    outline-width: 1px;
+    outline-color: var(--colour-brown-alt);
+
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.category-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: var(--smaller-font-size);
+}
+
+.slider-item {
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+
+    transition: 1s;
+}
+
+.slider-item-active {
+    background-color: var(--colour-brown-alt);
+    color: var(--colour-brown);
+    font-weight: var(--font-semi-bold);
+    background-color: var(--colour-brown-alt);
+
+    transition: 1s;
 }
 
 .polaroid-container {
@@ -638,7 +708,7 @@ section {
 
     padding: 2rem;
     border-radius: 1rem;
-    margin: 4rem 10%;
+    margin: 3rem 10%;
 
     background-color: var(--colour-white);
 }
@@ -649,6 +719,7 @@ section {
     justify-content: space-between;
 
     margin-bottom: 2.5rem;
+    color: var(--colour-black);
 }
 
 .polaroid-icon {
@@ -658,14 +729,18 @@ section {
     border-radius: 5px;
     padding: 0.3rem;
 
-    font-size: var(--h2-font-size);
+    font-size: var(--subtitle-font-size);
     color: var(--colour-brown);
+}
+
+.polaroid-text {
+    text-align: left;
 }
 
 .polaroid-no {
     margin-bottom: 0.2rem;
 
-    font-size: var(--h1-font-size);
+    font-size: var(--subtitle-font-size);
     font-weight: 700;
 }
 
@@ -727,7 +802,7 @@ section {
 }
 
 .dropbox-number {
-    font-size: var(--h2-font-size);
+    font-size: var(--subtitle-font-size);
     font-weight: var(--font-semi-bold);
 }
 
@@ -968,7 +1043,7 @@ select {
     top: 0;
     right: 0;
 
-    font-size: var(--h2-font-size);
+    font-size: var(--subtitle-font-size);
     color: var(--colour-brown);
 }
 
@@ -1111,7 +1186,7 @@ input[type=file] {
 
 .links-header {
     color: #7c6445;
-    font-size: var(--huge-font-size);
+    font-size: var(--big-font-size);
     font-weight: 800;
     margin-bottom: 0.5rem
 }
@@ -1124,7 +1199,7 @@ input[type=file] {
 
 .links-icons {
     color: var(--colour-brown);
-    font-size: var(--h3-font-size);
+    font-size: var(--standard-font-size);
 }
 
 .links-icons i:hover {
@@ -1225,7 +1300,7 @@ input[type=file] {
     padding-right: 1rem;
     opacity: 0.5;
 
-    font-size: var(--h3-font-size);
+    font-size: var(--standard-font-size);
     color: var(--colour-white-alt);
 
     transition: 0.5s;
