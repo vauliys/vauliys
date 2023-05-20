@@ -417,7 +417,7 @@ i {
 /*==================== REUSABLE CSS CLASSES ====================*/
 
 section {
-    margin: 2rem 0rem;
+    padding: 4rem 0rem;
 }
 
 .section-header {
@@ -612,7 +612,6 @@ section {
     justify-content: space-around;
 
     text-align: center;
-    margin: 2rem 0;
 }
 
 .about-icons i {
@@ -649,7 +648,6 @@ section {
 /*==== Page: Projects ====*/
 
 .polaroids {
-    padding-top: 7rem;
     background-color: var(--colour-white-alt);
 }
 
