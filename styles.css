@@ -93,7 +93,7 @@ button {
 
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-    width: 50%;
+    min-width: 50%;
 
     transition: 1s;
 
@@ -105,7 +105,7 @@ button {
 
 .btn-explore:hover {
     justify-content: space-between;
-    width: 55%;
+    min-width: 60%;
 
     background-color: var(--colour-black);
     color: var(--colour-brown-alt);
@@ -237,30 +237,10 @@ transition: 0.5s;
 /*=== Button: Services (Commission) ====*/
 
 #btn-commission {
-    cursor: pointer;
-    padding: 1rem 2.5rem;
-    border-radius: 2rem;
-
-    background-color: var(--colour-green);
     font-size: var(--smaller-font-size);
-    transition: 0.5s;
-}
-
-#btn-commission:hover,
-#btn-back:hover {
+    font-weight: var(--font-medium);
+    color: var(--colour-white);
     background-color: var(--colour-black);
-    transition: 0.5s;
-}
-
-#btn-back {
-    cursor: pointer;
-    padding: 1rem 2.5rem;
-    border-radius: 2rem;
-    margin: 2rem 0rem;
-
-
-    background-color: var(--colour-green);
-    font-size: var(--smaller-font-size);
 }
 
 /*==================== Keywords ====================*/
@@ -271,7 +251,8 @@ transition: 0.5s;
 
 .keyword-sm,
 .keyword-md,
-.keyword-lg {
+.keyword-lg,
+.keyword-xlg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,6 +279,10 @@ transition: 0.5s;
 }
 
 .keyword-lg {
+    width: 5rem;
+}
+
+.keyword-xlg {
     width: 6rem;
 }
 
@@ -307,6 +292,11 @@ transition: 0.5s;
 
 #keyword-brown {
     background-color: var(--colour-brown);
+}
+
+#keyword-brown-alt {
+    background-color: var(--colour-brown-alt);
+    color: var(--colour-brown);
 }
 
 /*==================== Previous Page ====================*/
@@ -417,7 +407,7 @@ i {
 /*==================== REUSABLE CSS CLASSES ====================*/
 
 section {
-    padding: 4rem 0rem;
+    padding: 6rem 0rem;
 }
 
 .section-header {
@@ -425,6 +415,12 @@ section {
 
     font-size: var(--big-font-size);
     font-weight: var(--font-bold);
+    color: var(--colour-black);
+}
+
+.section-subheader {
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--font-medium);
     color: var(--colour-black);
 }
 
@@ -439,7 +435,20 @@ section {
     color: var(--colour-black);
 }
 
+.section-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
 
+.section-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: var(--header-height);
+}
 /*==================== Body: Fixed Header ====================*/
 
 .header {
@@ -701,12 +710,17 @@ section {
     transition: 1s;
 }
 
+.polaroid-grids {
+    margin: 0rem 10%;
+}
+
 .polaroid-container {
     cursor: pointer;
 
+    margin: 2rem 0;
+
     padding: 2rem;
     border-radius: 1rem;
-    margin: 3rem 10%;
 
     background-color: var(--colour-white);
 }
@@ -753,8 +767,29 @@ section {
     border-radius: 1rem;
 }
 
+.project {
+    background-color: var(--colour-white-alt);
+}
+
+.image-grid-item {
+    margin: 0.25rem 0;
+    filter: brightness(1.5);
+    border-radius: 0.5rem;
+}
+
+.image-grid-item:last-child {
+    margin-bottom: 5rem;
+}
 /*==== Page: Services / Illustration ====*/
 
+#services {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 3rem;
+
+    justify-content: center;
+}
 
 .service-info {
     display: flex;
@@ -771,9 +806,23 @@ section {
     margin-bottom: 0.5rem;
 }
 
+#service-header {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 .service-img img {
     border-radius: 0.5rem;
     width: 50%;
+}
+
+.service-enquire {
+    display: flex;
+    align-items: baseline;
+}
+
+#faq-enquire {
+    margin-top: 1rem;
 }
 
 /*==== Page: Services / Illustration (Dropbox Container) ====*/
@@ -797,6 +846,8 @@ section {
     justify-content: space-between;
     display: flex;
     align-items: center;
+
+    line-height: 1.5rem;
 }
 
 .dropbox-number {
@@ -832,15 +883,11 @@ section {
 
     line-height: 1.5rem;
     width: 100%;
-}
 
-.dropbox-text-left {
-    color: var(--colour-brown);
-}
-
-.dropbox-text-right {
+    color: var(--colour-black);
     font-weight: var(--font-semi-bold);
 }
+
 
 /*==== Page: Service - Enquire (prices) ====*/
 .serivce-enquire {
@@ -851,10 +898,10 @@ section {
 }
 
 .terms {
-    margin-top: 1rem;
-    opacity: 0.5;
-
+    margin-left: 1rem;
     font-size: var(--smaller-font-size);
+    color: var(--colour-brown);
+    font-weight: var(--font-bold);
 
     transition: 0.5s;
 }
@@ -866,7 +913,6 @@ section {
 /*==================== Page: FAQ (Dropdown) ====================*/
 
 .dropdown {
-    margin-top: var(--header-height);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -883,22 +929,9 @@ section {
     cursor: pointer;
 
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.5rem 0rem;
 }
 
-.dropdown-container-01:hover,
-.dropdown-container-02:hover,
-.dropdown-container-03:hover,
-.dropdown-container-04:hover,
-.dropdown-container-05:hover,
-.dropdown-container-06:hover,
-.dropdown-container-07:hover {
-    background-color: var(--colour-white-alt);
-}
-
-.dropdown-fill {
-    background-color: var(--colour-white-alt);
-}
 
 /*=== Dropdown Contents - Question and Answer ===*/
 
