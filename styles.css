@@ -108,6 +108,20 @@ a {
     text-decoration: none;
 }
 
+.text-link {
+    font-weight: var(--font-medium);
+    color: var(--colour-brown);
+
+    transition: 0.5s;
+}
+
+.text-link:hover {
+    font-weight: var(--font-medium);
+    color: var(--colour-yellow);
+
+    transition: 0.5s;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -900,7 +914,8 @@ section {
 
 /*=== Show Dropdown on click ===*/
 .dropdown-show {
-    display: flex;
+    display: block;
+
 }
 
 /*==============================================================*/
