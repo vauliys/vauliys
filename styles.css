@@ -121,12 +121,27 @@ hr {
     opacity: 0.2;
 }
 
-/*=== ICONS ===*/
+/*========== SCROLL BAR ==========*/
+/* Scrollbar (Hide)*/
+/* Chrome, Safari, Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
 
+/* Firefox, IE, Edge */
+html {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/*==================== Icons ====================*/
 i {
     padding: 0 0.3rem;
 }
 
+/*=== Icons:  NavBar ===*/
 .nav-icons {
     margin: 2rem 0;
 }
@@ -143,8 +158,7 @@ i {
     transition: 0.5s;
 }
 
-/*=== LOGO Header ===*/
-
+/*=== Logo: Header ===*/
 .logo {
     width: 1rem;
     transition: 0.5s;
@@ -213,7 +227,6 @@ button {
 }
 
 /*=== Button: Scroll to Top ====*/
-
 #scroll {
     display: flex;
     position: fixed;
@@ -247,8 +260,6 @@ button {
     transition: 1s;
 }
 
-
-
 #scroll:hover {
     background-color: var(--colour-brown);
     transition: 0.5s;
@@ -258,8 +269,7 @@ button {
     color: var(--colour-brown-alt);
 }
 
-/*=== Button: Services (Pricing, FAQ) ====*/
-
+/*=== Button: Services (Pricing, FAQ Chevron) ====*/
 #btn-bg,
 #btn-flat,
 #btn-render,
@@ -322,9 +332,6 @@ button {
 
 /*=== Button: Services (Commission) ====*/
 
-#btn-commission {
-    background-color: var(--colour-black);
-}
 
 /*==================== Keywords ====================*/
 .keyword-group {
@@ -351,6 +358,8 @@ button {
     background-color: var(--colour-yellow);
 }
 
+/*=== Keyword: Size ====*/
+
 .keyword-sm {
     width: 2.5rem;
 }
@@ -367,6 +376,9 @@ button {
     width: 6rem;
 }
 
+/*=== Keyword: Colours ====*/
+
+
 #keyword-green {
     background-color: var(--colour-green);
 }
@@ -380,6 +392,7 @@ button {
     color: var(--colour-brown);
 }
 
+/*==============================================================*/
 /*==================== REUSABLE CSS CLASSES ====================*/
 section {
     padding: 6rem 0rem;
@@ -409,8 +422,8 @@ section {
     margin-top: var(--header-height);
 }
 
+/*==============================================================*/
 /*==================== Body: Fixed Header ====================*/
-
 .header {
     display: flex;
     position: fixed;
@@ -522,25 +535,15 @@ section {
 }
 
 
-
-
-/* Web Content Margin apples to ALL pages + Pages */
+/*=== Web Content Margin apples to ALL pages + Pages ===*/
 
 .web-content-margin {
     max-width: 80%;
     margin: 0 auto;
 }
 
-
-.about {
-    text-align: center;
-}
-
-
-/*==================== Page: Home Scroll ====================*/
-
-
-
+/*==============================================================*/
+/*==================== Page: Index.html ====================*/
 .home-welcome {
     margin-bottom: 3rem;
 }
@@ -557,11 +560,10 @@ section {
 
     font-size: var(--big-font-size);
     font-weight: var(--font-bold);
-
 }
 
-/*==== Client Banner ====*/
-
+/*==================== Section ====================*/
+/*==== Section: Client Banner ====*/
 .client {
     display: flex;
     align-items: center;
@@ -580,7 +582,11 @@ section {
     width: 60px;
 }
 
-/*==== Page: About ====*/
+/*==================== Section ====================*/
+/*==== Section: About ====*/
+.about {
+    text-align: center;
+}
 
 .about-icons i {
     font-size: var(--icon-size);
@@ -602,22 +608,19 @@ section {
     border-radius: 25rem;
 }
 
-/*==== Page: Projects ====*/
-
+/*==================== Section ====================*/
+/*==== Section: Projects ====*/
 .polaroids {
     background-color: var(--colour-white-alt);
 }
-
-.polaroid-hide {
-    display: none;
-}
-
 
 .polaroid-text {
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
 }
+
+/*==== Part: Category Slider ====*/
 
 .category-slider {
     outline: solid;
@@ -653,6 +656,12 @@ section {
     transition: 1s;
 }
 
+/*==== Automatically hides all polaroids ====*/
+.polaroid-hide {
+    display: none;
+}
+
+/*==== Polaroid grid items ====*/
 .polaroid-grids {
     margin: 0rem 10%;
 }
@@ -668,6 +677,7 @@ section {
     background-color: var(--colour-white);
 }
 
+/*==== Polaroid Header ====*/
 .polaroid-header {
     display: flex;
     align-items: center;
@@ -676,18 +686,6 @@ section {
     margin-bottom: 2.5rem;
     color: var(--colour-black);
 }
-
-.polaroid-icon {
-    outline-style: solid;
-
-    outline-width: 1px;
-    border-radius: 5px;
-    padding: 0.4rem 0.2rem;
-
-    font-size: var(--standard-font-size);
-    color: var(--colour-brown);
-}
-
 
 .polaroid-no {
     margin-bottom: 0.2rem;
@@ -701,15 +699,24 @@ section {
     font-weight: var(--font-semi-bold);
 }
 
+.polaroid-icon {
+    outline-style: solid;
+
+    outline-width: 1px;
+    border-radius: 5px;
+    padding: 0.4rem 0.2rem;
+
+    font-size: var(--standard-font-size);
+    color: var(--colour-brown);
+}
+
+/*==== Polaroid Image ====*/
 .polaroid-image img {
     margin-bottom: 1rem;
     border-radius: 1rem;
 }
 
-.project {
-    background-color: var(--colour-white-alt);
-    text-align: center;
-}
+/*==== Part: Category Slider (Gallery) ====*/
 
 .image-grid-item {
     margin: 0.25rem 0;
@@ -721,6 +728,7 @@ section {
     margin-bottom: 5rem;
 }
 
+/*==================== Section ====================*/
 /*==== Page: Services / Illustration ====*/
 
 #services {
@@ -729,38 +737,37 @@ section {
     padding-bottom: 3rem;
 }
 
-.service-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.service-img {
-    display: flex;
-    justify-content: center;
-
-    margin-top: 4rem;
-    margin-bottom: 0.5rem;
-}
-
 #service-header {
-    margin: 1rem 0;
+    margin-top: 1.5rem;
 }
 
-.service-img img {
-    border-radius: 0.5rem;
-    width: 50%;
-}
-
-.service-enquire {
+/*==== Part: Get Started + FAQ ====*/
+.service-buttons {
     display: flex;
     align-items: baseline;
 }
 
+.faq,
+.back {
+    margin-left: 1rem;
+    font-size: var(--smaller-font-size);
+    color: var(--colour-brown);
+    font-weight: var(--font-bold);
 
-/*==== Page: Services / Illustration (Dropbox Container) ====*/
+    transition: 0.5s;
+}
 
+.faq:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#faq-enquire {
+    margin-top: 1rem;
+}
+
+
+/*==== Part: Dropbox Container (01 Flat, 02 Render, 03 Backgrounds) ====*/
 .dropbox-container01,
 .dropbox-container02,
 .dropbox-container03 {
@@ -772,9 +779,6 @@ section {
 
     background-color: var(--colour-white-alt);
 }
-
-
-
 
 .dropbox-header {
     justify-content: space-between;
@@ -794,7 +798,7 @@ section {
     font-weight: var(--font-semi-bold);
 }
 
-/*==== Page: Services / Illustration (Hidden Dropbox Content) ====*/
+/*==== Part: Hidden Dropbox Content (Pricing for Flat, Render, Backgrounds) ====*/
 .dropbox-flat,
 .dropbox-bg,
 .dropbox-render {
@@ -823,31 +827,8 @@ section {
     font-weight: var(--font-semi-bold);
 }
 
-
-/*==== Page: Service - Enquire (prices) ====*/
-.serivce-enquire {
-    align-items: center;
-    text-align: center;
-
-    margin-top: 0.5rem;
-}
-
-.terms {
-    margin-left: 1rem;
-    font-size: var(--smaller-font-size);
-    color: var(--colour-brown);
-    font-weight: var(--font-bold);
-
-    transition: 0.5s;
-}
-
-.terms:hover {
-    opacity: 1;
-    transition: 0.5s;
-}
-
+/*==============================================================*/
 /*==================== Page: FAQ (Dropdown) ====================*/
-
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -870,9 +851,7 @@ section {
     padding: 1.5rem 0rem;
 }
 
-
-/*=== Dropdown Contents - Question and Answer ===*/
-
+/*=== Dropdown Contents - Question ===*/
 .dropdown-contents {
     justify-content: space-between;
     display: flex;
@@ -885,6 +864,7 @@ section {
     color: var(--colour-brown);
 }
 
+/*=== Dropdown Contents - Answer ===*/
 .dropdown-text-01,
 .dropdown-text-02,
 .dropdown-text-03,
@@ -903,17 +883,13 @@ section {
 }
 
 /*=== Show Dropdown on click ===*/
-
 .dropdown-show {
     display: flex;
 }
 
-
-
+/*==============================================================*/
 /*==================== Page: Enquiry (Form) ====================*/
-
 .enquiry {
-    margin-top: var(--header-height);
     text-align: center;
 }
 
@@ -921,6 +897,7 @@ section {
     margin-bottom: 3rem;
 }
 
+/*=== Part: Form ===*/
 .form {
     width: 100%;
     display: flex;
@@ -930,6 +907,7 @@ section {
 .form-section {
     margin: 1.5rem 0rem;
     width: 100%;
+    padding: 0;
 }
 
 .form-header {
@@ -1038,6 +1016,7 @@ select {
     margin-right: 0.5rem;
 }
 
+/*=== Form Fields: Commission Description ===*/
 textarea {
     display: flex;
     resize: none;
@@ -1055,6 +1034,7 @@ textarea {
     font-family: var(--body-font);
 }
 
+/*=== Form Fields: Upload References ===*/
 .form-upload {
     display: flex;
     margin-top: 1rem;
@@ -1086,11 +1066,15 @@ input[type=file] {
     transition: 0.5s;
 }
 
-/*==================== Pages: Motion ====================*/
+/*==============================================================*/
+/*==================== Pages: Individual Project (Applies to ALL project about pages ====================*/
+.project {
+    background-color: var(--colour-white-alt);
+    text-align: center;
+}
 
-
+/*==============================================================*/
 /*==================== Pages: Links ====================*/
-
 .links {
     margin-bottom: 3rem;
 }
@@ -1168,7 +1152,7 @@ input[type=file] {
     color: var(--colour-brown);
 }
 
-.links-icons {
+.links-icons i{
     color: var(--colour-brown);
     font-size: var(--standard-font-size);
 }
@@ -1215,7 +1199,7 @@ input[type=file] {
     margin: 2rem auto;
 }
 
-
+/*==============================================================*/
 /*==================== FOOTER ====================*/
 .footer {
     position: sticky;
@@ -1232,12 +1216,10 @@ input[type=file] {
 }
 
 
-/*=== LOGO Footer ===*/
-
+/*=== Footer: Logo ===*/
 .footer-logo img {
     opacity: 0.5;
 }
-
 
 .footer-pages:hover,
 .footer-icons i:hover,
@@ -1247,11 +1229,7 @@ input[type=file] {
     transition: 0.5s;
 }
 
-.footer-pages {
-    display: flex;
-    justify-content: flex-start;
-}
-
+/*=== Footer: Columns ===*/
 .footer-column {
     margin: 1rem 0;
     margin-right: 2rem;
@@ -1262,13 +1240,32 @@ input[type=file] {
     line-height: 2rem;
 }
 
-.footer-icons {
-    margin: 2rem auto;
+/*=== Footer: Column Header ===*/
+.footer-page-category {
+    color: var(--colour-white);
+    font-weight: var(--font-semi-bold);
+    opacity: 0.6;
 }
 
 
-.footere-pages {
+/*=== Footer: Page Links ===*/
+.footer-pages {
+    display: flex;
+    justify-content: flex-start;
     transition: 0.5s;
+}
+
+.footer-pages a {
+    color: var(--colour-white-alt);
+    font-weight: var(--font-normal);
+    opacity: 0.5;
+
+    transition: 0.5s;
+}
+
+/*=== Footer: Icons ===*/
+.footer-icons {
+    margin: 2rem auto;
 }
 
 .footer-icons i {
@@ -1281,22 +1278,7 @@ input[type=file] {
     transition: 0.5s;
 }
 
-.footer-pages a {
-    color: var(--colour-white-alt);
-    font-weight: var(--font-normal);
-    opacity: 0.5;
-
-    transition: 0.5s;
-}
-
-
-.footer-page-category {
-    color: var(--colour-white);
-    font-weight: var(--font-semi-bold);
-    opacity: 0.6;
-}
-
-
+/*=== Footer: Copyright ===*/
 .copyright {
     color: var(--colour-white);
     font-size: var(--smaller-font-size);
@@ -1305,22 +1287,7 @@ input[type=file] {
     margin: 1rem 0;
 }
 
-/*========== SCROLL BAR ==========*/
-/* Scrollbar (Hide)*/
-/* Chrome, Safari, Opera */
-html::-webkit-scrollbar {
-    display: none;
-}
-
-/* Firefox, IE, Edge */
-html {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-
+/*==============================================================*/
 /*==================== MEDIA QUERIES ====================*/
 
 /*============ SMALL DEVICES ============*/
