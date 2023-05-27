@@ -67,114 +67,121 @@
                         Enquiry
                     </p>
                 </div>
-
-                <div class="form">
-                    <section class="form-section">
-                        <div class="form-header">
-                            <p>
-                                Contact Information
-                            </p>
-                        </div>
-                        <input type="text" name="name" placeholder="Name" id="form-name" required>
-                        <input type="text" name="email" placeholder="Email" id="form-email" required>
-                    </section>
-
-                    <hr style="background-color: #7c6445">
-
-                    <div class="form-section">
-                        <div class="form-header">
-                            <p>
-                                Preferred Contact Method
-                            </p>
-                        </div>
-                        <div id="form-preferred-contact">
-                            <div class="custom-select">
-                                <select id="form-contact-method" name="contact-method" required>
-                                    <option value="email">Email</option>
-                                    <option value="instagram">Instagram</option>
-                                </select>
-                                <span class="form-dropdown-arrow01">
-                                    <i class="ri-arrow-drop-down-line" id="form-dropdown01"></i>
-                                </span>
-                            </div>
-
-
-                            <input type="text" name="social-handle" placeholder="@" id="form-social-handle">
-
-                        </div>
-                    </div>
-
-                    <hr style="background-color: #7c6445">
-
-                    <div class="form-section">
-                        <div class="form-header">
-                            <p>
-                                Comission Details
-                            </p>
-                        </div>
-                        <div id="form-commission-style">
-                            <div class="custom-select form-style">
-                                <select id="form-style" name="contact-method" required>
-                                    <option value="style: flat">Flat</option>
-                                    <option value="style: render">Render</option>
-                                    <option value="style: background">Background</option>
-                                </select>
-                                <span class="form-dropdown-arrow02">
-                                    <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
-                                </span>
-                            </div>
-                            <div class="custom-select ">
-                                <select id="form-type" name="contact-method" required>
-                                    <option value="type: bust">Bust</option>
-                                    <option value="type: half body">Half Body</option>
-                                    <option value="type: full body">Full Body</option>
-                                </select>
-                                <span class="form-dropdown-arrow02">
-                                    <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
-                                </span>
-                            </div>
-                            <textarea name="form-description" placeholder="Describe your commission"
-                                id="form-description" required></textarea>
-                        </div>
-                        <div class="form-upload">
+                <form>
+                    <div class="form">
+                        <section class="form-section">
                             <div class="form-header">
                                 <p>
-                                    Upload any references
+                                    Contact Information
                                 </p>
                             </div>
-                            <div id="form-upload">
-                                <input type="file" id='btn-upload-hidden' hidden>
-                                <label id='btn-upload' for="btn-upload-hidden">UPLOAD</label>
-                            </div>
+                            <input type="text" name="name" placeholder="Name" id="form-name" required>
+                            <input type="text" name="email" placeholder="Email" id="form-email"
+                            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+                            required>
 
-                        </div>
+                        </section>
 
-                        <div class="form-deadline">
+                        <hr style="background-color: #7c6445">
+
+                        <div class="form-section">
                             <div class="form-header">
                                 <p>
-                                    Do you have a deadline?
+                                    Preferred Contact Method
                                 </p>
                             </div>
-                            <div class="form-deadline-inputs" required>
-                                <div class="form-deadline-radio-01">
-                                    <input type="radio" name="deadline" id="form-deadline-01-hidden">
-                                    <div class="btn-radio"></div>
-                                    <label id='form-deadline-no' for="form-deadline-01-hidden">No</label>
+                            <div id="form-preferred-contact">
+                                <div class="custom-select">
+                                    <select id="form-contact-method" name="contact-method" required>
+                                        <option disabled selected value>Contact</option>
+                                        <option value="email">Email</option>
+                                        <option value="instagram">Instagram</option>
+                                    </select>
+                                    <span class="form-dropdown-arrow01">
+                                        <i class="ri-arrow-drop-down-line" id="form-dropdown01"></i>
+                                    </span>
                                 </div>
-                                <div class="form-deadline-radio-02">
-                                    <input type="radio" name="deadline" id="form-deadline-02-hidden">
-                                    <div class="btn-radio"></div>
-                                    <label id='form-deadline-yes' for="form-deadline-02-hidden">Yes</label>
-                                </div>
-                                <input type="date" id="form-date">
+
+
+                                <input type="text" name="social-handle" placeholder="@" id="form-social-handle">
+
                             </div>
                         </div>
+
+                        <hr style="background-color: #7c6445">
+
+                        <div class="form-section">
+                            <div class="form-header">
+                                <p>
+                                    Comission Details
+                                </p>
+                            </div>
+                            <div id="form-commission-style">
+                                <div class="custom-select form-style">
+                                    <select id="form-style" name="contact-method" required>
+                                        <option disabled selected value>Select Style</option>
+                                        <option value="style: flat">Flat</option>
+                                        <option value="style: render">Render</option>
+                                        <option value="style: background">Background</option>
+                                    </select>
+                                    <span class="form-dropdown-arrow02">
+                                        <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
+                                    </span>
+                                </div>
+                                <div class="custom-select ">
+                                    <select id="form-type" name="contact-method" required>
+                                        <option disabled selected value>Select Type</option>
+                                        <option value="type: bust">Bust</option>
+                                        <option value="type: half body">Half Body</option>
+                                        <option value="type: full body">Full Body</option>
+                                    </select>
+                                    <span class="form-dropdown-arrow02">
+                                        <i class="ri-arrow-drop-down-line" id="form-dropdown-arrow02"></i>
+                                    </span>
+                                </div>
+                                <textarea name="form-description" placeholder="Describe your commission"
+                                    id="form-description" required></textarea>
+                            </div>
+                            <div class="form-upload">
+                                <div class="form-header">
+                                    <p>
+                                        Upload any references
+                                    </p>
+                                </div>
+                                <div id="form-upload">
+                                    <input type="file" id='btn-upload-hidden' hidden>
+                                    <label id='btn-upload' for="btn-upload-hidden">UPLOAD</label>
+                                </div>
+
+                            </div>
+
+                            <div class="form-deadline">
+                                <div class="form-header">
+                                    <p>
+                                        Do you have a deadline?
+                                    </p>
+                                </div>
+                                <div class="form-deadline-inputs" required>
+                                    <div class="form-deadline-radio-01">
+                                        <input type="radio" name="deadline" id="form-deadline-01-hidden">
+                                        <div class="btn-radio"></div>
+                                        <label id='form-deadline-no' for="form-deadline-01-hidden">No</label>
+                                    </div>
+                                    <div class="form-deadline-radio-02">
+                                        <input type="radio" name="deadline" id="form-deadline-02-hidden">
+                                        <div class="btn-radio"></div>
+                                        <label id='form-deadline-yes' for="form-deadline-02-hidden">Yes</label>
+                                    </div>
+                                    <input type="date" id="form-date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="form-submit">
+                            <button id="btn-submit" value="submit" type="submit">Submit</button>
+                        </div>
                     </div>
-                    <div id="form-submit">
-                        <input type="submit" id='btn-submit-hidden' hidden>
-                        <label id='btn-submit' for="btn-submit-hidden">SUBMIT</label>
-                    </div>
-                </div>
+                </form>
 
 
         </div>
