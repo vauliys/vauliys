@@ -134,7 +134,7 @@
                                 </span>
                             </div>
                             <textarea name="form-description" placeholder="Describe your commission"
-                                id="form-description"></textarea>
+                                id="form-description" required></textarea>
                         </div>
                         <div class="form-upload">
                             <div class="form-header">
@@ -148,12 +148,37 @@
                             </div>
 
                         </div>
+
+                        <div class="form-deadline">
+                            <div class="form-header">
+                                <p>
+                                    Do you have a deadline?
+                                </p>
+                            </div>
+                            <div class="form-deadline-inputs" required>
+                                <div class="form-deadline-radio-01">
+                                    <input type="radio" name="deadline" id="form-deadline-01-hidden">
+                                    <div class="btn-radio"></div>
+                                    <label id='form-deadline-no' for="form-deadline-01-hidden">No</label>
+                                </div>
+                                <div class="form-deadline-radio-02">
+                                    <input type="radio" name="deadline" id="form-deadline-02-hidden">
+                                    <div class="btn-radio"></div>
+                                    <label id='form-deadline-yes' for="form-deadline-02-hidden">Yes</label>
+                                </div>
+                                <input type="date" id="form-date">
+                            </div>
+                        </div>
                     </div>
-
-                    <input type="submit">
-
+                    <div id="form-submit">
+                        <input type="submit" id='btn-submit-hidden' hidden>
+                        <label id='btn-submit' for="btn-submit-hidden">SUBMIT</label>
+                    </div>
                 </div>
-            </section>
+
+
+        </div>
+        </section>
         </div>
 
 
