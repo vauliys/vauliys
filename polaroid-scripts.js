@@ -1,6 +1,6 @@
 
 /*================ Section: Category Slider ================*/
-const catFeatured = document.querySelector('#category-viewall');
+const catFeatured = document.querySelector('#category-featured');
 const catMotion = document.querySelector('#category-motion');
 const catPrint = document.querySelector('#category-print');
 const catGallery = document.querySelector('#category-gallery');

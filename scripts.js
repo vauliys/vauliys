@@ -5,6 +5,7 @@ if(scrolltotop) {
 scrolltotop.addEventListener("click", e => {
     if (window.scrollY > 20) {
         window.scrollTo({
+
             top: 0,
             left: 0,
             behavior: "smooth"
