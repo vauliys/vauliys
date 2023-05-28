@@ -63,41 +63,53 @@
             <i class="ri-arrow-down-line"></i>
         </button>
         <!--==================== Page Feature (Video) ===================-->
-        <video class="home-video" id="home" loop muted autoplay>
-            <source src="assets/Content/Backgrounds/VLS_Portfolio_BG_GeoShapes.mp4" type="video/mp4" />
-        </video>
-        <div class="web-content-margin">
-            <div class="home-welcome">
-                <p class="welcome-header">
-                    Creating and breathing life into ideas,
-                    one frame at a time.
-                </p>
-                <button type="button" class="btn-explore" onclick="explore()" id="btn-explore">
-                    <p>
-                        Let's Explore
+        <div class="home-topsection">
+
+            <video class="home-mobile-video" id="home" loop muted autoplay>
+                <source src="assets/Content/Backgrounds/VLS_Portfolio_BG_GeoShapes.mp4" type="video/mp4" />
+            </video>
+
+            <video class="home-desktop-video" id="home" loop muted autoplay>
+                <source src="assets/Content/Backgrounds/VLS_Portfolio_BG_GeoShapes_1920x1080.mp4" type="video/mp4" />
+            </video>
+
+            <div class="web-content-margin">
+                <div class="home-welcome">
+                    <p class="welcome-header">
+                        Creating and breathing life into ideas,
+                        one frame at a time.
                     </p>
-                    <i class="ri-arrow-right-line"></i>
-                </button>
+                    <button type="button" class="btn-explore" onclick="explore()" id="btn-explore">
+                        <p>
+                            Let's Explore
+                        </p>
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
             </div>
         </div>
 
         <!--==================== Client Banner ====================-->
         <section class="client" id="client">
-            <image id="studio-moshi" src="assets/Content/Logos/Client Logos/Logo_Studio Moshi.png">
-                <image src="assets/Content/Logos/Client Logos/Logo_XPPen.png">
-                    <image src="assets/Content/Logos/Client Logos/Logo_Till.png">
-                        <image id="logitech" src="assets/Content/Logos/Client Logos/Logo_Logitech.png">
+            <image id="logo-big" class="desktop-hidden" src="assets/Content/Logos/Client Logos/Logo_Hulu.png">
+            <image id="logo-big" src="assets/Content/Logos/Client Logos/Logo_Studio Moshi.png">
+            <image src="assets/Content/Logos/Client Logos/Logo_XPPen.png">
+            <image src="assets/Content/Logos/Client Logos/Logo_Till.png">
+            <image id="logo-big" src="assets/Content/Logos/Client Logos/Logo_Logitech.png">
+            <image id="logo-wide" class="desktop-hidden" src="assets/Content/Logos/Client Logos/Logo_FlyingArt.png">
+            <image id="logo-small" class="desktop-hidden" src="assets/Content/Logos/Client Logos/Logo_Paperlike.png">
+            <image id="logo-wide" class="desktop-hidden" src="assets/Content/Logos/Client Logos/Logo_Huion.png">
         </section>
 
         <!--==================== Page: About  ====================-->
         <div class="web-content-margin" id="about">
             <section class="about">
-                <div>
+                <div class="about-text">
                     <p class="section-header">
                         Hiya I'm Vauliys!
                     </p>
 
-                    <p class="section-description">
+                    <p class="section-description about-description">
                         Also known as Victoria, providing a fresh burst of energy and colour to the creative scene, with
                         a big dose of playful and imaginative vibes. My youthful and curious outlook sparks wonder and
                         inspiration for anyone who crosses my path.

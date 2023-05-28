@@ -45,15 +45,17 @@
 }
 
 /* Font size for large devices */
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 768px) {
     :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1.8rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+    --big-font-size: 3rem;
+    --header-font-size: 2rem;
+    --subtitle-font-size: 1.5rem;
+    --normal-font-size: 0.9rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.7rem;
+
+    --standard-font-size: 1rem;
+    --icon-size: 1.25rem;
     }
 }
 
@@ -578,17 +580,27 @@ section {
     margin: 0 auto;
 }
 
+.desktop-hidden {
+    display: none;
+}
+
 /*==============================================================*/
 /*==================== Page: Index.html ====================*/
 .home-welcome {
     margin-bottom: 3rem;
 }
 
-.home-video {
+.home-mobile-video {
+    display: flex;
     margin-top: -5rem;
     margin-bottom: 2rem;
+    width: 100%;
 
     z-index: -1;
+}
+
+.home-desktop-video {
+    display: none;
 }
 
 .welcome-header {
@@ -613,9 +625,16 @@ section {
     width: 30px;
 }
 
-#studio-moshi,
-#logitech {
+#logo-big {
     width: 60px;
+}
+
+#logo-wide {
+    width: 120px;
+}
+
+#logo-small {
+    max-width: 20px;
 }
 
 /*==================== Section ====================*/
@@ -1494,8 +1513,124 @@ input[type="date"] {
 @media screen and (max-width: 350px) {}
 
 /*============ MEDIUM DEVICES ============*/
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+}
 
 /*============ LARGE DEVICES ============*/
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .web-content-margin {
+        margin: 0 10%;
+
+    }
+    .home-mobile-video {
+        display: none;
+    }
+
+    .home-desktop-video {
+        position: absolute;
+        display: flex;
+        margin-top: -5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+
+        z-index: -1;
+    }
+
+    .home-topsection {
+        display: flex;
+        align-items: center;
+        margin: var(--header-height) 0;
+    }
+
+    .home-welcome {
+        margin: 20rem 0;
+        width: 30%;
+    }
+
+    .btn-explore {
+        min-width: 40%;
+    }
+
+    .btn-explore:hover {
+        min-width: 45%;
+    }
+
+
+    /*======= Section: Client =======*/
+    .client {
+        display: flex;
+        padding: 2rem 25%;
+    }
+
+    .desktop-hidden {
+        display: flex;
+    }
+
+    .client img {
+
+        width: 40px;
+    }
+
+    #logo-big {
+        width: 50px;
+    }
+
+    #logo-wide {
+        width: 100px;
+    }
+
+    #logo-small {
+        max-width: 15px;
+    }
+
+    /*======= Section: About =======*/
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:center;
+        text-align: left;
+        height: 100vh;
+    }
+
+    .about-img img {
+        display: flex;
+        max-width: 260px;
+    }
+
+    .about-text {
+        margin-left: 3rem;
+        max-width: 400px;
+    }
+
+    /*======= Section: Projects =======*/
+    .category-slider {
+        width: 18rem;
+    }
+
+    .polaroid-grids {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .polaroid-featured,
+    .polaroid-print,
+    .polaroid-motion,
+    .gallery {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .polaroid-hide {
+        display: none;
+    }
+
+    .polaroid-container {
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+}
