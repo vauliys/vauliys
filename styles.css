@@ -50,12 +50,16 @@
     --big-font-size: 3rem;
     --header-font-size: 2rem;
     --subtitle-font-size: 1.5rem;
-    --normal-font-size: 0.9rem;
+    --normal-font-size: 0.8rem;
     --small-font-size: 0.75rem;
     --smaller-font-size: 0.7rem;
 
     --standard-font-size: 1rem;
     --icon-size: 1.25rem;
+    }
+
+    p {
+        line-height: 1rem;
     }
 }
 
@@ -135,6 +139,10 @@ hr {
     width: 100%;
     height: 0.5px;
     opacity: 0.2;
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 /*========== SCROLL BAR ==========*/
@@ -248,7 +256,7 @@ button {
     outline-color: var(--colour-brown-alt);
 
     border-radius: 1rem;
-    padding: 0.3rem;
+    padding: 0.2rem;
 
     transition: 0.5s;
 }
@@ -262,6 +270,17 @@ button {
 
     transition: 0.5s;
 }
+
+.btn-faq {
+    margin-bottom: 1rem;
+
+    font-size: var(--smaller-font-size);
+    color: var(--colour-black);
+    font-weight: var(--font-bold);
+
+    transition: 0.5s;
+}
+
 
 /*=== Button: Scroll to Top ====*/
 #scroll {
@@ -377,41 +396,21 @@ button {
     align-items: flex-start;
 }
 
-.keyword-sm,
-.keyword-md,
-.keyword-lg,
-.keyword-xlg {
+.keyword {
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-radius: 1rem;
     height: 1.5rem;
+    padding: 0.5rem;
     margin-right: 0.5rem;
 
     font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
     color: var(--colour-white);
-    background-color: var(--colour-yellow);
 }
 
-/*=== Keyword: Size ====*/
-
-.keyword-sm {
-    width: 2.5rem;
-}
-
-.keyword-md {
-    width: 4rem;
-}
-
-.keyword-lg {
-    width: 5rem;
-}
-
-.keyword-xlg {
-    width: 6rem;
-}
 
 /*=== Keyword: Colours ====*/
 
@@ -422,6 +421,10 @@ button {
 
 #keyword-brown {
     background-color: var(--colour-brown);
+}
+
+#keyword-yellow {
+    background-color: var(--colour-yellow);
 }
 
 #keyword-brown-alt {
@@ -438,17 +441,18 @@ section {
 .section-header {
     font-size: var(--big-font-size);
     font-weight: var(--font-bold);
+
+    margin: 3rem 0;
 }
 
 .section-subheader {
     font-size: var(--subtitle-font-size);
     font-weight: var(--font-medium);
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .section-description {
     margin: 2rem 0rem;
-    line-height: 1.5rem;
 }
 
 .section-details {
@@ -457,7 +461,11 @@ section {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 4rem;
+    margin-top: 2rem;
+}
+
+.hide {
+    display: none;
 }
 
 /*==============================================================*/
@@ -692,7 +700,7 @@ section {
 }
 
 .category-slider-project {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .category-links {
@@ -704,7 +712,7 @@ section {
 
 .slider-item {
     cursor: pointer;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.7rem;
     border-radius: 1rem;
 
     transition: 1s;
@@ -802,28 +810,25 @@ section {
     margin-top: 1.5rem;
 }
 
+.service-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 /*==== Part: Get Started + FAQ ====*/
+.faq-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .service-buttons {
     display: flex;
     align-items: baseline;
 }
 
-.btn-faq,
-.btn-back {
-    font-size: var(--smaller-font-size);
-    color: var(--colour-black);
-    font-weight: var(--font-bold);
-
-    transition: 0.5s;
-}
-
 .faq:hover {
     opacity: 1;
     transition: 0.5s;
-}
-
-#faq-enquire {
-    margin-top: 1rem;
 }
 
 
@@ -889,6 +894,7 @@ section {
 
 /*==============================================================*/
 /*==================== Page: FAQ (Dropdown) ====================*/
+
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -954,10 +960,6 @@ section {
 /*==================== Page: Enquiry (Form) ====================*/
 .enquiry {
     text-align: center;
-}
-
-#header-enquiry {
-    margin-bottom: 3rem;
 }
 
 /*=== Part: Form ===*/
@@ -1246,54 +1248,40 @@ input[type="date"] {
 /*==============================================================*/
 /*==================== Pages: Individual Project (Applies to ALL project about pages ====================*/
 .project {
-    background-color: var(--colour-white-alt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .project-information {
-    padding-top: 6rem;
     padding-bottom: 3rem;
-}
-
-.btn-back {
-    margin-bottom: 2rem;
-}
-
-.project-description {
-    margin-top: 2rem;
-    line-height: 1.5rem;
 }
 
 .project-video {
     width: 100%;
+    border-radius: 0.5rem;
 }
 
-.project-item {
-    margin-bottom: 2rem;
-}
-
-.project-item:first-child {
-    margin-top: 3rem;
-}
-
-.project-item:last-child {
+.project-content {
     margin-bottom: 3rem;
 }
 
+.project-item {
+    margin-bottom: 0.2rem;
+}
+
 .project-item img,
-.project-item video{
+.project-item video {
     border-radius: 0.5rem;
-    margin: 0.2rem 0rem;
+    width: 100%;
 }
 
-.project-content-text {
-    font-size: var(--smaller-font-size);
-    text-align: start;
+.dunkso-content {
+    display: flex;
+    flex-direction: column;
 }
 
-.project-main-video {
-    margin-bottom: 2rem;
-}
 /*==============================================================*/
 /*==================== Pages: links.html ====================*/
 .links {
@@ -1528,7 +1516,7 @@ input[type="date"] {
 
 @media screen and (min-width: 1024px) {
     .web-content-margin {
-        margin: 0 10%;
+        margin: 0 15%;
 
     }
     .home-mobile-video {
@@ -1653,6 +1641,7 @@ input[type="date"] {
         width: 40%;
     }
 
+
     .dropbox {
         width: 40%;
     }
@@ -1716,14 +1705,16 @@ input[type="date"] {
 
     /*======= Page: Project =======*/
 
-    .project-information {
-        margin: 0 20%;
+    .project {
+        margin: 0% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #category-slider-duo {
-        width: 10rem;
+    .project-description {
+        width: 60%;
     }
-
 
     /*======= Section: Footer =======*/
     .footer {
