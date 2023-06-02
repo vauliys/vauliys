@@ -61,6 +61,7 @@
     p {
         line-height: 1rem;
     }
+
 }
 
 /*========== Animation ==========*/
@@ -112,6 +113,12 @@ li {
 
 a {
     text-decoration: none;
+    font-weight: var(--font-bold);
+    color: var(--colour-brown);
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 .text-link {
@@ -139,10 +146,6 @@ hr {
     width: 100%;
     height: 0.5px;
     opacity: 0.2;
-}
-
-p {
-    line-height: 1.5rem;
 }
 
 /*========== SCROLL BAR ==========*/
@@ -441,8 +444,6 @@ section {
 .section-header {
     font-size: var(--big-font-size);
     font-weight: var(--font-bold);
-
-    margin: 3rem 0;
 }
 
 .section-subheader {
@@ -679,13 +680,13 @@ section {
 
 .polaroid-text {
     text-align: center;
-    max-width: 80%;
     margin: 0 auto;
 }
 
 /*==== Part: Category Slider ====*/
 
 .category-slider {
+    display: inline-block;
     outline: solid;
     outline-width: 1px;
     outline-color: var(--colour-brown-alt);
@@ -695,17 +696,14 @@ section {
     margin: 1.5rem auto;
 }
 
-#category-slider-duo {
-    width: 60%;
-}
 
 .category-slider-project {
     margin-top: 2rem;
 }
 
 .category-links {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    justify-content: space-evenly;
 
     font-size: var(--smaller-font-size);
 }
@@ -1254,6 +1252,10 @@ input[type="date"] {
     text-align: center;
 }
 
+
+.project-header {
+    margin: 2rem;
+}
 .project-information {
     padding-bottom: 3rem;
 }
