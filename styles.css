@@ -513,7 +513,7 @@ section {
     height: 100vh;
 
     transform: translateX(100%);
-    transition: 0.4s ease-out;
+    transition: 0.7s ease-out;
 }
 
 .nav-menu-links {
@@ -1546,6 +1546,27 @@ input[type="date"] {
     }
 
 
+
+    /*======= Section: About =======*/
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:center;
+        text-align: left;
+    }
+
+    .about-img img {
+        display: flex;
+        max-width: 260px;
+    }
+
+    .about-text {
+        margin-left: 3rem;
+        max-width: 400px;
+    }
+
+
     /*======= Page: Project =======*/
 
     .project-description {
@@ -1600,25 +1621,6 @@ input[type="date"] {
 
     #logo-small {
         max-width: 15px;
-    }
-
-    /*======= Section: About =======*/
-    .about {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content:center;
-        text-align: left;
-    }
-
-    .about-img img {
-        display: flex;
-        max-width: 260px;
-    }
-
-    .about-text {
-        margin-left: 3rem;
-        max-width: 400px;
     }
 
     /*======= Section: Projects =======*/
