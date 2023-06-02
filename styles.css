@@ -50,7 +50,7 @@
     --big-font-size: 3rem;
     --header-font-size: 2rem;
     --subtitle-font-size: 1.5rem;
-    --normal-font-size: 0.8rem;
+    --normal-font-size: 0.9rem;
     --small-font-size: 0.75rem;
     --smaller-font-size: 0.7rem;
 
@@ -287,6 +287,15 @@ button {
     transition: 0.5s;
 }
 
+.btn-faq:hover {
+    color: var(--colour-brown);
+}
+
+.btn-solid:hover {
+    background-color: var(--colour-black) !important;
+    transition: 0.5s;
+}
+
 
 /*=== Button: Scroll to Top ====*/
 #scroll {
@@ -470,6 +479,7 @@ section {
 
 .hide {
     display: none;
+
 }
 
 /*==============================================================*/
@@ -621,14 +631,16 @@ section {
 /*==== Section: Client Banner ====*/
 .client {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     background-color: var(--colour-white-alt);
     padding: 2rem 10%;
 }
 
 .client img {
+    margin: 0.5rem;
     width: 30px;
 }
 
@@ -742,6 +754,8 @@ section {
     border-radius: 1rem;
 
     background-color: var(--colour-white);
+
+
 }
 
 /*==== Polaroid Header ====*/
@@ -781,6 +795,7 @@ section {
 .polaroid-image img {
     margin-bottom: 1rem;
     border-radius: 1rem;
+    width: 100%;
 }
 
 /*==== Part: Category Slider (Gallery) ====*/
@@ -817,6 +832,12 @@ section {
     flex-direction: column;
     align-items: flex-start;
 }
+
+#faq-header {
+    margin: 1.5rem 0;
+    max-width: 80%;
+}
+
 .service-buttons {
     display: flex;
     align-items: baseline;
@@ -1259,6 +1280,10 @@ input[type="date"] {
     padding-bottom: 3rem;
 }
 
+.project-information-category {
+    padding-bottom: 0rem;
+}
+
 .project-video {
     width: 100%;
     border-radius: 0.5rem;
@@ -1382,8 +1407,7 @@ input[type="date"] {
     align-items: center;
     justify-content: center;
 
-    margin: 0.5rem auto;
-    width: 85%;
+    margin: 0.5rem 10%;
     padding: 1rem 0;
     border-radius: 4rem;
     line-height: 1rem;
@@ -1395,6 +1419,8 @@ input[type="date"] {
 .links-item:hover {
     background: var(--colour-brown);
     color: var(--colour-white);
+
+    transition: 0.5s;
 }
 
 .links-item-header {
@@ -1515,14 +1541,25 @@ input[type="date"] {
 /*============ MEDIUM DEVICES ============*/
 @media screen and (min-width: 768px) {
 
-    /*======= Page: Project =======*/
     body {
         transition: 1s;
     }
 
+
+    /*======= Page: Project =======*/
+
     .project-description {
-        width: 60%;
-    }
+        width: 60%;}
+
+  /*======= Section: Services =======*/
+
+
+  .dropbox-img img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: 50% 55%;
+  }
 
 }
 
@@ -1541,7 +1578,7 @@ input[type="date"] {
     /*======= Section: Client =======*/
     .client {
         display: flex;
-        padding: 2rem 25%;
+        padding: 2rem 10%;
     }
 
     .desktop-hidden {
@@ -1585,9 +1622,6 @@ input[type="date"] {
     }
 
     /*======= Section: Projects =======*/
-    #projects {
-        height: 100vh;
-    }
 
     .polaroid-grids {
         display: flex;
@@ -1596,11 +1630,13 @@ input[type="date"] {
     }
 
     .polaroid-featured,
-    .polaroid-print,
+    .polaroid-design,
     .polaroid-motion,
     .gallery {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .polaroid-hide {
@@ -1609,8 +1645,9 @@ input[type="date"] {
 
     .polaroid-container {
         width: 20rem;
-        margin-right: 1rem;
+        margin: 0.4rem;
     }
+
 
     /*======= Section: Services =======*/
     .service-illustration {
@@ -1619,9 +1656,8 @@ input[type="date"] {
     }
 
     #services {
-        width: 40%;
+        width: 50%;
     }
-
 
     .dropbox {
         width: 40%;
@@ -1648,7 +1684,7 @@ input[type="date"] {
     }
 
     #faq-header {
-        margin-top: 1.5rem;
+        margin: 1.5rem 0;
         width: 80%;
     }
 
