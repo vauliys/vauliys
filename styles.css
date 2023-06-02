@@ -17,7 +17,7 @@
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2.2rem;
     --header-font-size: 2rem;
-    --subtitle-font-size: 1.5rem;
+    --subtitle-font-size: 1.2rem;
     --normal-font-size: 0.9rem;
     --small-font-size: 0.75rem;
     --smaller-font-size: 0.7rem;
@@ -111,6 +111,9 @@ li {
     list-style: none;
 }
 
+i {
+    font-weight: var(--font-normal);
+}
 a {
     text-decoration: none;
     font-weight: var(--font-bold);
@@ -1249,7 +1252,8 @@ input[type="date"] {
 
 
 .project-header {
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 .project-information {
     padding-bottom: 3rem;
@@ -1502,18 +1506,33 @@ input[type="date"] {
 /*==================== MEDIA QUERIES ====================*/
 
 /*============ SMALL DEVICES ============*/
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+    body {
+        transition: 1s;
+    }
+}
 
 /*============ MEDIUM DEVICES ============*/
 @media screen and (min-width: 768px) {
 
+    /*======= Page: Project =======*/
+    body {
+        transition: 1s;
+    }
 
+    .project-description {
+        width: 60%;
+    }
 
 }
 
 /*============ LARGE DEVICES ============*/
 
 @media screen and (min-width: 1024px) {
+    body {
+        transition: 1s;
+    }
+
     .web-content-margin {
         margin: 0 15%;
 
@@ -1568,10 +1587,6 @@ input[type="date"] {
     /*======= Section: Projects =======*/
     #projects {
         height: 100vh;
-    }
-
-    .category-slider {
-        width: 18rem;
     }
 
     .polaroid-grids {
