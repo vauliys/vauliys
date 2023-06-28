@@ -3,9 +3,9 @@
     --header-height: 5rem;
 
     /*========== Colors ==========*/
-    --colour-black: #3f2e1c;
+    --colour-black: #000000;
     --colour-white: #f4f2ed;
-    --colour-white-alt: #eae6df;
+    --colour-white-alt: #d7d2cb;
     --colour-yellow: #daa037;
     --colour-green: #a6c7a8;
     --colour-brown: #7c6445;
@@ -47,6 +47,7 @@
 /* Font size for large devices */
 @media screen and (min-width: 768px) {
     :root {
+    --huge-font-size: 5rem;
     --big-font-size: 3rem;
     --header-font-size: 2rem;
     --subtitle-font-size: 1.5rem;
@@ -179,12 +180,13 @@ i {
 .nav-icons i {
     margin: 2rem 0;
     font-size: var(--standard-font-size);
-    color: var(--colour-white-alt);
+    color: var(--colour-black);
+    opacity: 0.5;
     transition: 0.5s;
 }
 
 .nav-icons i:hover {
-    color: var(--colour-yellow);
+    opacity: 0.2;
     transition: 0.5s;
 }
 
@@ -192,6 +194,7 @@ i {
 .logo {
     width: 1rem;
     transition: 0.5s;
+    filter: brightness(0) invert(0.85);
 }
 
 .logo:hover {
@@ -200,7 +203,7 @@ i {
 }
 
 .logo-invert {
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(0);
     transition: 1s;
 }
 
@@ -454,7 +457,7 @@ section {
 }
 
 .section-header {
-    font-size: var(--big-font-size);
+    font-size: var(--huge-font-size);
     font-weight: var(--font-bold);
 }
 
@@ -507,7 +510,7 @@ section {
 
     z-index: 2;
 
-    background-color: var(--colour-brown);
+    background-color: var(--colour-white);
 
     width: 100vw;
     height: 100vh;
@@ -529,7 +532,7 @@ section {
 
 #nav-link {
     font-size: var(--big-font-size);
-    color: var(--colour-white);
+    color: var(--colour-black);
     font-weight: var(--font-bold);
 
     transition: 0.5s;
@@ -537,7 +540,7 @@ section {
 
 #nav-link:hover,
 #nav-icons a:hover {
-    color: var(--colour-yellow);
+    color: var(--colour-white-alt);
     transition: 0.5s;
 }
 
@@ -565,7 +568,7 @@ section {
     height: 3px;
     margin: 2.5px 0;
 
-    background: var(--colour-black);
+    background: var(--colour-white-alt);
 }
 
 .hamburger-bar:nth-of-type(1) {
@@ -582,7 +585,7 @@ section {
     transform: rotate(-45deg);
     transition: 1s;
 
-    background: var(--colour-white);
+    background: var(--colour-black);
 }
 
 .hamburger-menu.active .hamburger-bar:nth-of-type(2) {
@@ -591,7 +594,7 @@ section {
 
     width: 1.2rem;
 
-    background: var(--colour-white);
+    background: var(--colour-black);
 }
 
 
@@ -609,24 +612,31 @@ section {
 /*==============================================================*/
 /*==================== Page: Index.html ====================*/
 .home-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     height: 100vh;
-}
-
-.home-welcome img {
-    width: 100%;
-    height: 100%;
-    object-position: 30% 100%;
-    object-fit: cover;
-
+    background-color: var(--colour-black);
+    background-image: url(assets/Content/Backgrounds/VLS_Placeholder.jpg);
 }
 
 .welcome-header {
-    margin-bottom: 1rem;
-
     font-size: var(--big-font-size);
-    font-weight: var(--font-bold);
 }
 
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    text-align: center;
+
+    max-width: 80%;
+}
 /*==================== Section ====================*/
 /*==== Section: Client Banner ====*/
 .client {
@@ -635,31 +645,47 @@ section {
     align-items: center;
     justify-content: space-evenly;
 
-    background-color: var(--colour-white-alt);
+    background-color: var(--colour-black);
     padding: 2rem 10%;
 }
 
 .client img {
-    margin: 0.3rem;
-    width: 30px;
+    margin: 0.5rem;
+    width: 20px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.client img:hover {
+    filter: brightness(0) invert(0.5);
+
+    transition: 0.5s;
+
 }
 
 #logo-big {
-    width: 60px;
+    width: 50px;
 }
 
 #logo-wide {
-    width: 120px;
+    width: 110px;
 }
 
 #logo-small {
-    max-width: 20px;
+    max-width: 10px;
 }
 
 /*==================== Section ====================*/
 /*==== Section: About ====*/
 .about {
     text-align: center;
+}
+
+.about-icons {
+    display: flex;
+    align-items: center;
 }
 
 .about-icons i {
@@ -1556,6 +1582,10 @@ input[type="date"] {
         text-align: left;
     }
 
+    .about-header {
+        width: 80%;
+    }
+
     .about-img img {
         display: flex;
         max-width: 260px;
@@ -1563,7 +1593,11 @@ input[type="date"] {
 
     .about-text {
         margin-left: 3rem;
-        max-width: 400px;
+        max-width: 600px;
+    }
+    .signature {
+        width: 10rem;
+        margin-right: 2rem;
     }
 
 
@@ -1596,10 +1630,19 @@ input[type="date"] {
 
     }
 
+    .home-welcome img {
+
+    }
+
+    .welcome-content{
+        max-width: 30%;
+
+    }
+
     /*======= Section: Client =======*/
     .client {
         display: flex;
-        padding: 2rem 10%;
+        padding: 2rem 25%;
     }
 
     .desktop-hidden {
