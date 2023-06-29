@@ -7,6 +7,7 @@
     --colour-black-alt: #afafaf;
     --colour-white: #f4f2ed;
     --colour-white-alt: #e0e0e0;
+    --colour-white-alt-dark: #d3d3d3;
     --colour-yellow: #daa037;
     --colour-green: #a6c7a8;
     --colour-brown: #7c6445;
@@ -216,7 +217,7 @@ button {
     outline-width: 1px;
     padding: 0.8rem 2.5rem;
     border-radius: 2rem;
-    background-color: black;
+    background-color: var(--colour-black);
     cursor: pointer;
 
     display: inline-flex;
@@ -232,44 +233,15 @@ button:hover {
     transition: 0.5s;
 }
 
-/*=== Button: Let's Explore (Home) ===*/
-.btn-explore {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    min-width: 50%;
-
-    transition: 1s;
-
-    background-color: var(--colour-brown-alt);
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    color: var(--colour-brown);
+.btn-alt:hover {
+    opacity: 0.5;
 }
 
-.btn-explore:hover {
-    justify-content: space-between;
-    min-width: 60%;
-
-    background-color: var(--colour-black);
-    color: var(--colour-brown-alt);
-    transition: 1s;
-}
-
-#btn-explore i:hover {
-    color: var(--colour-brown-alt);
-}
-
-#btn-explore i {
-    padding-left: 1rem;
-
-    transition: 1s;
-
-    font-size: var(--standard-font-size);
-    color: var(--colour-brown);
-    font-weight: var(--font-semi-bold);
+.btn-alt {
+    padding: 0.3rem 1rem;
+    background-color: var(--colour-white);
+    color: var(--colour-black);
+    opacity: 0.2;
 }
 
 #btn-back {
@@ -295,16 +267,17 @@ button:hover {
 
 .btn-faq {
     margin-bottom: 1rem;
+    margin-left: 1rem;
 
     font-size: var(--smaller-font-size);
-    color: var(--colour-black);
+    color: var(--colour-black-alt);
     font-weight: var(--font-bold);
 
     transition: 0.5s;
 }
 
 .btn-faq:hover {
-    color: var(--colour-brown);
+    color: var(--colour-black);
 }
 
 .btn-solid:hover {
@@ -387,7 +360,7 @@ button:hover {
 
     font-size: var(--standard-font-size);
     font-weight: 900;
-    color: var(--colour-yellow);
+    color: var(--colour-black-alt);
 
     transition: 0.5s;
 }
@@ -403,7 +376,7 @@ button:hover {
 #btn-faq-05 i:hover,
 #btn-faq-06 i:hover,
 #btn-faq-07 i:hover {
-    color: var(--colour-brown);
+    color: var(--colour-black);
 
     transition: 0.5s;
 }
@@ -414,7 +387,7 @@ button:hover {
 }
 
 .btn-chevron-up i {
-    color: var(--colour-brown) !important;
+    color: var(--colour-black) !important;
 }
 
 /*=== Button: Services (Commission) ====*/
@@ -439,7 +412,8 @@ button:hover {
 
     font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
-    color: var(--colour-white);
+    color: var(--colour-black-alt);
+    background-color: var(--colour-white-alt);
 }
 
 
@@ -472,6 +446,7 @@ section {
 .section-header {
     font-size: var(--huge-font-size);
     font-weight: var(--font-bold);
+    line-height: 100%;
 }
 
 .section-subheader {
@@ -761,7 +736,7 @@ section {
     display: inline-block;
     outline: solid;
     outline-width: 1px;
-    outline-color: var(--colour-brown-alt);
+    outline-color: var(--colour-white-alt-dark);
 
     border-radius: 1rem;
     padding: 0.3rem;
@@ -789,10 +764,9 @@ section {
 }
 
 .slider-item-active {
-    background-color: var(--colour-brown-alt);
-    color: var(--colour-brown);
+    background-color: var(--colour-white-alt-dark);
+    color: var(--colour-black);
     font-weight: var(--font-semi-bold);
-    background-color: var(--colour-brown-alt);
 
     transition: 1s;
 }
@@ -850,7 +824,7 @@ section {
     padding: 0.4rem 0.2rem;
 
     font-size: var(--standard-font-size);
-    color: var(--colour-brown);
+    color: var(--colour-black-alt);
 }
 
 /*==== Polaroid Image ====*/
