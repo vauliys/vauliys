@@ -14,7 +14,7 @@
     <body class="fade-in">
         <!--==================== Fixed Header ====================-->
         <header class="header">
-            <a href="">
+            <a href="#">
                 <image class="logo" src="assets/Content/Logos/Vauliys_Signature_White-alt.png">
             </a>
             <div class="hamburger-menu">
@@ -27,7 +27,7 @@
         <div class="nav-menu" data-visible="false">
             <div class="nav-menu-links">
                 <li class="nav-item">
-                    <a href="index.html" id="nav-link">Home</a>
+                    <a href="#" id="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="index.html#client" id="nav-link">About</a>
@@ -59,9 +59,9 @@
             </div>
         </div>
 
-        <!-- <button id="scroll">
+        <button id="scroll">
             <i class="ri-arrow-down-line"></i>
-        </button> -->
+        </button>
         <!--==================== Page Feature (Video) ===================-->
         <div class="home-welcome">
             <div class="welcome-content">
@@ -77,7 +77,7 @@
                         based in the Australia. Providing a fresh burst of energy and
                         colour to the creative scene, with a big dose of playful and imaginative vibes.
                     </p>
-                    <button>Let's Explore</button>
+                    <button id="btn-explore" class="btn-explore">Let's Explore</button>
                 </div>
 
 
@@ -95,21 +95,28 @@
                                             <image id="logo-wide" class="desktop-hidden"
                                                 src="assets/Content/Logos/Client Logos/Logo_Huion.png">
             </div>
-            <img src="assets/Content/Backgrounds/VLS_Placeholder-v2.jpg" alt="">
 
+
+            <!-- <div class="welcome-feature">
+                <img class="home-feature desktop-hidden" src="assets/Content/Backgrounds/VLS_Placeholder-v2.jpg" alt="">
+                <img class="home-feature-mobile" src="assets/Content/Backgrounds/VLS_Portfolio_BG_Laptop_180deg.jpg"
+                    alt="">
+            </div> -->
 
         </div>
 
         <!--==================== Page: About  ====================-->
         <div class="web-content-margin" id="about">
             <section class="about">
+
                 <div class="about-text">
                     <h1 class="section-header about-header">
                         NICE TO MEET YOU :)
                     </h1>
 
                     <p class="section-description about-description">
-                        Howdy hey, I'm Victoria, also known as Vauliys, a multi-talented artist, designer, and animator
+                        Howdy hey, I'm Victoria, also known as Vauliys, a multi-talented artist, designer, and
+                        animator
                         based in the Australia. My love for technology and art provides a fresh burst of energy and
                         colour to the creative scene, with a big dose of playful and imaginative vibes.
                     </p>
@@ -123,7 +130,8 @@
                     <p class="section-description about-description">
                         I enjoy
                         sharing my insights into my creative process and collaborating with other artists. I
-                        consistently inspire and provide tips for other aspiring artists who seek to advance and hone
+                        consistently inspire and provide tips for other aspiring artists who seek to advance and
+                        hone
                         their craft. My art has been featured in several publications, and my social media
                         presence continues to grow, with thousands of loyal fans following my journey. My works have
                         also been featured
@@ -150,11 +158,14 @@
                     </div>
                 </div>
 
-                <div class="about-img">
-                    <img src="assets/Content/Home/VLS_About.jpg">
-                </div>
+                <img class="about-img" src="assets/Content/Home/VLS_About.jpg">
+                <!-- <div class="about-img">
 
-            </section>
+                </div> -->
+        </div>
+        </section>
+
+        </section>
         </div>
 
         <!--==================== Page: Projects ====================-->
@@ -526,12 +537,17 @@
                             Work directly with me and discuss your vision, then watch as your one of a kind creation is
                             brought to life. Perfect for gifts or for display in your own home.
                         </p>
+                        <!--==== Hide if commission are open ====-->
+                        <p class="commission-closed"> Sorry, commission are currently closed :(</p>
+
                         <div class="service-buttons">
-                            <a href="enquire.html"><button type="button" class="btn-alt">
-                                    <p>
-                                        Get Started
-                                    </p>
-                                </button></a>
+                            <!--==== Hide if commission are closed ====-->
+                            <!-- <div class="btn-alt-text"  id="btn-getstarted">
+                                <a id="btn-alt-text" href="enquire.html">
+                                  Get Started
+                                </a>
+                            </div> -->
+
                             <a href="faq.html">
                                 <p class="btn-faq">
                                     Frequently Asked Questions
@@ -643,97 +659,103 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-about">
-                        <a class="footer-logo" href="#">
-                            <image class="logo footer-logo" src="assets/Content/Logos/Vauliys_Signature_White-alt.png">
-                        </a>
-                        <p class="footer-description">
-                            Also known as Victoria, providing a fresh burst of energy and colour to the creative scene,
-                            with
-                            a big dose of playful and imaginative vibes. For business enquiries <a
-                                href="mailto:hello@vauliys.com">hello@vauliys.com</a>
-                        </p>
-                        <div class="footer-icons">
-                            <a href="https://www.instagram.com/vauliys/" target="_blank">
-                                <i class="ri-instagram-line"></i></a>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div class="footer-about">
+                            <a class="footer-logo" href="#">
+                                <image class="logo footer-logo"
+                                    src="assets/Content/Logos/Vauliys_Signature_White-alt.png">
+                            </a>
+                            <p class="footer-description">
+                                Also known as Victoria, providing a fresh burst of energy and colour to the creative
+                                scene,
+                                with
+                                a big dose of playful and imaginative vibes. For business enquiries <a
+                                    href="mailto:hello@vauliys.com">hello@vauliys.com</a>
+                            </p>
+                            <div class="footer-icons">
+                                <a href="https://www.instagram.com/vauliys/" target="_blank">
+                                    <i class="ri-instagram-line"></i></a>
 
-                            <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
-                                <i class="ri-github-line"></i></a>
+                                <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
+                                    <i class="ri-github-line"></i></a>
 
-                            <a href="https://store.vauliys.com/" target="_blank">
-                                <i class="ri-shopping-bag-2-line"></i></a>
+                                <a href="https://store.vauliys.com/" target="_blank">
+                                    <i class="ri-shopping-bag-2-line"></i></a>
 
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                                <i class="ri-linkedin-fill"></i></a>
+                                <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                                    <i class="ri-linkedin-fill"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="footer-category">
+                        <div class="footer-column">
+                            <div class="footer-pages">
+                                <div class="footer-header">Home</div>
+                                <div class="footer-links">
+                                    <a href="#">Welcome</a>
+                                    <a href="index.html#about">About</a>
+                                    <a href="index.html#projects">Projects</a>
+                                    <a href="index.html#service-illustration">Services</a>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header">Home</div>
-                        <div class="footer-links">
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">Welcome</a>
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">About</a>
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">Projects</a>
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">Services</a>
+                        <div class="footer-column">
+                            <div class="footer-pages">
+                                <div class="footer-header">Information</div>
+                                <div class="footer-links">
+                                    <a href="faq.html" target="_blank">FAQ</a>
+                                    <a href="enquire.html" target="_blank">Enquire Form</a>
+                                    <a href="links.html" target="_blank">Social Links</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-column">
+                            <div class="footer-pages">
+                                <div class="footer-header"> Outsource</div>
+                                <div class="footer-links">
+                                    <a href="https://www.imdb.com/name/nm14674760/?ref_=fn_al_nm_3"
+                                        target="_blank">IMDB</a>
+                                    <a href="www.linkedin.com/in/vauliys" target="_blank">Linkedin</a>
+                                    <a href="https://www.toonboom.com/ambassador/victoria-pritchard"
+                                        target="_blank">Toon
+                                        Boom</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-column">
+                            <div class="footer-pages">
+                                <div class="footer-header">Projects</div>
+                                <div class="footer-links">
+                                    <a href="gallery.html" target="_blank">Art Gallery</a>
+                                    <a href="chocolatebox.html" target="_blank">Chocolate Box</a>
+                                    <a href="dunkso.html" target="_blank">DUNKSO</a>
+                                    <a href="harvest.html" target="_blank">Harvest</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-column">
+                            <div class="footer-pages">
+                                <div class="footer-header"></div>
+                                <div class="footer-links">
+                                    <a href="lashesbyrhi.html" target="_blank">LashesbyRhi</a>
+                                    <a href="solar.html" target="_blank">Solar Opposites</a>
+                                    <a href="tillpayments.html" target="_blank">Till Payments</a>
+                                    <a href="vfx.html" target="_blank">VFX</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header">Information</div>
-                        <div class="footer-links">
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">FAQ</a>
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">Enquire Form</a>
-                            <a href="https://links.vauliys.com/" target="_blank">Social Links</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header"> Outsource</div>
-                        <div class="footer-links">
-                            <a href="https://www.imdb.com/name/nm14674760/?ref_=fn_al_nm_3" target="_blank">IMDB</a>
-                            <a href="www.linkedin.com/in/vauliys" target="_blank">Linkedin</a>
-                            <a href="https://www.toonboom.com/ambassador/victoria-pritchard" target="_blank">Toon Boom</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header">Projects</div>
-                        <div class="footer-links">
-                            <a href="gallery.html" target="_blank">Art Gallery</a>
-                            <a href="chocolatebox.html" target="_blank">Chocolate Box</a>
-                            <a href="dunkso.html" target="_blank">DUNKSO</a>
-                            <a href="harvest.html" target="_blank">Harvest</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header"></div>
-                        <div class="footer-links">
-                            <a href="lashesbyrhi.html" target="_blank">LashesbyRhi</a>
-                            <a href="solar.html" target="_blank">Solar Opposites</a>
-                            <a href="tillpayments.html" target="_blank">Till Payments</a>
-                            <a href="vfx.html" target="_blank">VFX</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <hr style="background-color: #eae6df">
-            <p class="copyright">© Vauliys. All Rights Reserved</p>
+                <hr style="background-color: #eae6df">
+                <p class="copyright">© Vauliys. All Rights Reserved</p>
             </div>
         </footer>
 

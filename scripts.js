@@ -11,11 +11,7 @@ scrolltotop.addEventListener("click", e => {
             behavior: "smooth"
         });
     } else {
-        window.scrollTo({
-            top: 750,
-            left: 0,
-            behavior: "smooth"
-        });
+        document.getElementById("about").scrollIntoView()
     }
 });
 }
@@ -32,6 +28,14 @@ window.addEventListener('scroll', e => {
 });
 }
 
+
+/*================ Body: Sroll / To Top - To About ================*/
+const btnexplore = document.getElementById('btn-explore');
+if(btnexplore) {
+btnexplore.addEventListener("click", e => {
+    document.getElementById("about").scrollIntoView()
+});
+}
 
 /*================ Navigation Menu ================*/
 
@@ -75,11 +79,3 @@ navItems.forEach(item => { /*applying code to EACH item in List*/
 
 /*================ Body: Home Scroll ================*/
 /*================ Home: Button (Explore) ================*/
-
-function explore() {
-    window.scrollTo({
-        top: 750,
-        left: 0,
-        behavior: "smooth"
-    });
-}

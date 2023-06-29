@@ -4,14 +4,11 @@
 
     /*========== Colors ==========*/
     --colour-black: #000000;
-    --colour-black-alt: #afafaf;
+    --colour-black-alt: #c7c7c7;
+    --colour-black-alt-dark: #7f7f7f;
     --colour-white: #f4f4f4;
     --colour-white-alt: #eaeaea;
-    --colour-white-alt-dark: #d3d3d3;
-    --colour-yellow: #daa037;
-    --colour-green: #a6c7a8;
-    --colour-brown: #7c6445;
-    --colour-brown-alt: #d7cfc5;
+    --colour-white-alt-dark: #e0e0e0;
 
     /*========== Font and typography ==========*/
     --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -214,6 +211,7 @@ i {
 button {
     border: none;
     outline: solid;
+    outline-color: var(--colour-black-alt-dark);
     outline-width: 1px;
     padding: 0.8rem 2.5rem;
     border-radius: 2rem;
@@ -223,80 +221,66 @@ button {
     display: inline-flex;
     align-items: center;
 
-    color: var(--colour-white);
-    opacity: 0.5;
+    color: var(--colour-black-alt-dark);
     transition: 0.5s;
 }
 
 button:hover {
-    background-color: var(--colour-white-alt);
-    color: var(--colour-black);
+    background-color: var(--colour-black-alt-dark);
+    color: var(--colour-white-alt-dark);
     opacity: 1;
     transition: 0.5s;
 }
 
-.btn-alt {
+#btn-alt {
+    padding: 0.2rem;
+}
+
+#btn-alt-text {
+    padding: 0.2rem 1rem;
+}
+
+#btn-alt,
+#btn-alt-text {
     outline: solid;
     outline-width: 1px;
     outline-color: var(--colour-white-alt-dark);
-
-    padding: 0.3rem 1rem;
-    background-color: var(--colour-white);
-    color: var(--colour-black-alt);
-}
-
-.btn-alt:hover {
-    opacity: 0.5;
-    background-color: var(--colour-white-alt-dark);
-    color: var(--colour-black);
-}
-
-
-#btn-back {
-    outline: solid;
-    outline-width: 1px;
-    outline-color: var(--colour-white-alt-dark);
+    font-weight: var(--font-normal);
+    font-size: var(--normal-font-size);
 
     border-radius: 1rem;
-    padding: 0.2rem;
 
     transition: 0.5s;
 }
 
-#btn-back i {
-    color: var(--colour-black-alt)
+#btn-alt i {
+    color: var(--colour-black-alt-dark)
 }
 
-#btn-back:hover {
+#btn-alt:hover,
+#btn-alt-text:hover {
+    color: var(--colour-black-alt-dark);
     background-color: var(--colour-white-alt-dark);
 
     transition: 0.5s;
-}
 
-#btn-back i:hover {
-    color: var(--colour-black);
-    opacity: 0.5;
 }
 
 .btn-faq {
     margin-bottom: 1rem;
-    margin-left: 1rem;
 
     font-size: var(--smaller-font-size);
-    color: var(--colour-white-alt-dark);
+    color: var(--colour-black-alt);
     font-weight: var(--font-bold);
+    line-height: 1rem;
 
     transition: 0.5s;
 }
 
 .btn-faq:hover {
-    color: var(--colour-black);
+    color: var(--colour-black-alt-dark);
 }
 
-.btn-solid:hover {
-    background-color: var(--colour-black) !important;
-    transition: 0.5s;
-}
 
 
 /*=== Button: Scroll to Top ====*/
@@ -312,16 +296,17 @@ button:hover {
     right: 8%;
     bottom: 2rem;
 
-    background-color: var(--colour-white-alt-dark);
+    background-color: var(--colour-white-alt);
     transition: 1s;
     z-index: 1;
+    opacity: 0.5;
 }
 
 #scroll i {
     transition: 0.5s;
 
     font-size: var(--normal-font-size);
-    color: var(--colour-black);
+    color: var(--colour-black-alt-dark);
     font-weight: var(--font-semi-bold);
 }
 
@@ -335,15 +320,8 @@ button:hover {
 }
 
 #scroll:hover {
-    outline: none;
-
-    background-color: var(--colour-black-alt);
-    opacity: 0.5;
+    opacity: 1;
     transition: 0.5s;
-}
-
-#scroll i:hover {
-    color: var(--colour-black);
 }
 
 /*=== Button: Services (Pricing, FAQ Chevron) ====*/
@@ -430,30 +408,10 @@ button:hover {
 
     font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
-    color: var(--colour-black-alt);
+    color: var(--colour-black-alt-dark);
     background-color: var(--colour-white-alt);
 }
 
-
-/*=== Keyword: Colours ====*/
-
-
-#keyword-green {
-    background-color: var(--colour-green);
-}
-
-#keyword-brown {
-    background-color: var(--colour-brown);
-}
-
-#keyword-yellow {
-    background-color: var(--colour-yellow);
-}
-
-#keyword-brown-alt {
-    background-color: var(--colour-brown-alt);
-    color: var(--colour-brown);
-}
 
 /*==============================================================*/
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -499,7 +457,7 @@ section {
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 5%;
+    padding: 2rem 10%;
     width: 100vw;
 
     z-index: 3;
@@ -625,19 +583,18 @@ section {
     justify-content: center;
 
     height: 100vh;
-    background-color: var(--colour-black);
     background-image: url(assets/Content/Backgrounds/VLS_Placeholder.jpg);
 }
 
-.home-welcome img {
-    width: 300%;
-    max-width: none;
-}
 
 .welcome-header {
     font-size: var(--big-font-size);
     letter-spacing: .2rem;
     margin-bottom: 0.5rem;
+}
+
+.mobile-hidden {
+    display: none;
 }
 
 .welcome-subtitle {
@@ -656,6 +613,10 @@ section {
     text-align: center;
 
     max-width: 80%;
+}
+
+.home-feature-mobile {
+    display: flex;
 }
 
 /*==================== Section ====================*/
@@ -720,16 +681,14 @@ section {
 }
 
 .about-icons i:hover {
-    color: var(--colour-brown);
+    color: var(--colour-black);
     transition: 0.5s;
 }
 
 .about-img {
-    margin: 2rem 0rem;
-}
-
-.about-img img {
     border-radius: 1rem;
+    filter: saturate(0);
+    margin: 2rem 0rem;
 }
 
 .signature {
@@ -779,15 +738,15 @@ section {
     padding: 0.2rem 0.7rem;
     border-radius: 1rem;
 
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .slider-item-active {
     background-color: var(--colour-white-alt-dark);
-    color: var(--colour-black);
+    color: var(--colour-black-alt-dark);
     font-weight: var(--font-semi-bold);
 
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /*==== Automatically hides all polaroids ====*/
@@ -882,6 +841,7 @@ section {
     align-items: flex-start;
 }
 
+
 /*==== Part: Get Started + FAQ ====*/
 .faq-header {
     display: flex;
@@ -902,6 +862,10 @@ section {
 .faq:hover {
     opacity: 1;
     transition: 0.5s;
+}
+
+#btn-getstarted {
+    margin-right: 1rem;
 }
 
 
@@ -961,7 +925,7 @@ section {
     line-height: 1.5rem;
     width: 100%;
 
-    color: var(--colour-black);
+    color: var(--colour-black-alt-dark);
     font-weight: var(--font-semi-bold);
 }
 
@@ -1000,7 +964,7 @@ section {
 .dropdown-header {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    color: var(--colour-brown);
+    color: var(--colour-black-alt-dark);
 }
 
 /*=== Dropdown Contents - Answer ===*/
@@ -1021,6 +985,15 @@ section {
     font-size: var(--small-font-size);
 
     line-height: 1.2rem;
+}
+
+.dropdown-hide a {
+    font-weight: var(--font-bold);
+}
+
+.dropdown-hide a:hover {
+    font-weight: var(--font-bold);
+    color: var(--colour-black-alt-dark);
 }
 
 /*=== Show Dropdown on click ===*/
@@ -1050,7 +1023,7 @@ section {
 
 .form-header {
     font-weight: var(--font-semi-bold);
-    color: var(--colour-brown);
+    color: var(--colour-black);
 
     margin-bottom: 1rem;
     text-align: left;
@@ -1066,12 +1039,12 @@ input[type=text] {
 
     background-color: var(--colour-white-alt);
     padding: 1rem;
-    color: var(--colour-brown);
+    color: var(--colour-black);
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: var(--colour-brown);
+    color: var(--colour-black);
     opacity: 0.5;
 }
 
@@ -1104,7 +1077,7 @@ select {
 
 
     background-color: var(--colour-white-alt);
-    color: var(--colour-brown);
+    color: var(--colour-black);
 }
 
 /*=== Form Fields: Dropdown (Position) ===*/
@@ -1129,7 +1102,7 @@ select {
     right: 0;
 
     font-size: var(--subtitle-font-size);
-    color: var(--colour-brown);
+    color: var(--colour-black);
 }
 
 /*=== Form Fields: Dropdown Arrow (Rotate) ===*/
@@ -1168,7 +1141,7 @@ textarea {
 
     border-radius: 1rem;
     background-color: var(--colour-white-alt);
-    color: var(--colour-brown);
+    color: var(--colour-black);
     font-family: var(--body-font);
 }
 
@@ -1179,7 +1152,7 @@ textarea {
 }
 
 input[type=file] {
-    color: var(--colour-brown);
+    color: var(--colour-black);
 }
 
 #btn-upload {
@@ -1192,7 +1165,7 @@ input[type=file] {
     background-color: var(--colour-white-alt);
     font-weight: var(--font-semi-bold);
     font-size: var(--small-font-size);
-    color: var(--colour-brown);
+    color: var(--colour-black);
 
     transition: 0.5s;
 }
@@ -1239,7 +1212,7 @@ input[type=file] {
     position: absolute;
     outline: solid;
     outline-width: 1px;
-    outline-color: var(--colour-brown-alt);
+    outline-color: var(--colour-black-alt);
 
     border-radius: 1rem;
     width: 1rem;
@@ -1286,7 +1259,7 @@ input[type="date"] {
     background-color: var(--colour-white-alt);
     font-weight: var(--font-semi-bold);
     font-size: var(--small-font-size);
-    color: var(--colour-brown);
+    color: var(--colour-black);
 }
 
 
@@ -1297,25 +1270,7 @@ input[type="date"] {
 }
 
 #btn-submit {
-    padding: 0.5rem 1.5rem;
     cursor: pointer;
-
-    border-radius: 1rem;
-
-    font-family: var(--body-font);
-    background-color: var(--colour-white-alt);
-    font-weight: var(--font-semi-bold);
-    font-size: var(--small-font-size);
-    color: var(--colour-brown);
-
-    transition: 0.5s;
-}
-
-#btn-submit:hover {
-    background-color: var(--colour-brown);
-    color: var(--colour-white-alt);
-
-    transition: 0.5s;
 }
 
 /*==============================================================*/
@@ -1374,23 +1329,8 @@ input[type="date"] {
 .links-banner {
     text-align: center;
     margin-bottom: 3rem;
-    margin-top: 5rem;
 }
 
-.links-video-mobile {
-    display: flex;
-    position: absolute;
-    margin-top: -28rem;
-    margin-bottom: 2rem;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: none;
-}
-
-.links-video-desktop {
-    display: none;
-}
 
 .links-img {
     display: flex;
@@ -1414,7 +1354,7 @@ input[type="date"] {
     align-items: center;
     justify-content: center;
     outline: solid;
-    outline-color: var(--colour-white);
+    outline-color: var(--colour-black);
     outline-width: 1px;
 
     width: 1rem;
@@ -1424,7 +1364,7 @@ input[type="date"] {
     top: 0.5rem;
     right: -6.5rem;
 
-    background-color: var(--colour-yellow);
+    background-color: var(--colour-black);
     transition: 0.5s;
 }
 
@@ -1437,25 +1377,29 @@ input[type="date"] {
 }
 
 .links-header {
-    color: #7c6445;
+    color: var(--colour-black);
     font-size: var(--big-font-size);
     font-weight: var(--font-bold);
-    margin-bottom: 0.5rem
+    margin: 1.5rem
 }
 
 .links-description {
     margin: 0.8rem 0;
 
-    color: var(--colour-brown);
+    color: var(--colour-black);
+    opacity: 0.5;
 }
 
 .links-icons i {
-    color: var(--colour-brown);
+    color: var(--colour-black);
+    opacity: 0.5;
     font-size: var(--standard-font-size);
 }
 
 .links-icons i:hover {
-    color: var(--colour-green);
+    transition: 0.5;
+    opacity: 1;
+    color: var(--colour-black);
 }
 
 .links-item {
@@ -1470,11 +1414,11 @@ input[type="date"] {
     line-height: 1rem;
 
     background-color: var(--colour-white-alt);
-    color: var(--colour-brown);
+    color: var(--colour-black);
 }
 
 .links-item:hover {
-    background: var(--colour-brown);
+    background: var(--colour-black);
     color: var(--colour-white);
 
     transition: 0.5s;
@@ -1501,7 +1445,7 @@ input[type="date"] {
 /*==================== FOOTER ====================*/
 .footer {
     position: sticky;
-    text-align: left;
+    text-align: center;
     margin-top: auto;
 
     top: 100%;
@@ -1528,7 +1472,10 @@ input[type="date"] {
     color: var(--colour-black-alt);
 }
 
-
+.footer-container {
+    text-align: center;
+    align-items: center;
+}
 
 .footer-icons i {
     margin-right: 1rem;
@@ -1553,10 +1500,10 @@ input[type="date"] {
 
 .footer-links {
     width: 100%;
+
 }
 
 .footer-links a {
-    display: flex;
     font-weight: var(--font-normal);
 }
 
@@ -1589,89 +1536,11 @@ input[type="date"] {
 @media screen and (min-width: 768px) {
 
     body {
-        transition: 1s;
-    }
-
-
-
-    /*======= Section: About =======*/
-    .about {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .about-header {
-        width: 80%;
-    }
-
-    .about-img img {
-        display: flex;
-        max-width: 33.5rem;
-    }
-
-    .about-footer {
-        display: flex;
-    }
-
-    .about-text {
-        margin-left: 5rem;
-        max-width: 600px;
-    }
-
-    .about-description {
-        max-width: 500px;
-    }
-
-    .signature {
-        width: 10rem;
-        margin-right: 2rem;
-    }
-
-
-    /*======= Page: Project =======*/
-
-    .project-description {
-        width: 60%;
-    }
-
-    /*======= Section: Services =======*/
-
-
-    .dropbox-img img {
-        width: 100%;
-        height: 15rem;
-        object-fit: cover;
-        object-position: 50% 55%;
-    }
-
-}
-
-/*============ LARGE DEVICES ============*/
-
-@media screen and (min-width: 1024px) {
-    body {
-        transition: 1s;
-    }
-
-    .web-content-margin {
-        margin: 0 15%;
-    }
-
-
-    .nav-menu-links {
-        padding-left: 5%;
-    }
-
-    .home-welcome img {
-        height: 100%;
-        max-width: 100%;
+        transition: 0.5s;
     }
 
     .welcome-content {
-        max-width: 35%;
+        max-width: 50%;
     }
 
     /*======= Section: Client =======*/
@@ -1684,7 +1553,6 @@ input[type="date"] {
         bottom: 0;
         margin-bottom: 5rem;
     }
-
 
     .desktop-hidden {
         display: flex;
@@ -1706,33 +1574,127 @@ input[type="date"] {
         max-width: 15px;
     }
 
-    /*======= Section: Projects =======*/
 
-    .polaroid-grids {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    /*======= Section: Project =======*/
+    .polaroid-container {
+        margin: 1rem 10rem;
+    }
+    /*======= Page: Project =======*/
+
+    .project-description {
+        width: 60%;
     }
 
-    .polaroid-featured,
-    .polaroid-design,
-    .polaroid-motion,
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+    /*======= Section: Services =======*/
+
+
+    .dropbox-img img {
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        object-position: 50% 55%;
     }
 
-    .polaroid-hide {
+    /*======= Footer: =======*/
+    .footer-container {
+        margin: 0 5%;
+    }
+
+    .footer-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-description {
+        width: 80%;
+    }
+
+    .footer-category {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-links a {
+        display: flex;
+    }
+
+    .footer-header {
+        text-align: left;
+    }
+
+}
+
+/*============ LARGE DEVICES ============*/
+
+@media screen and (min-width: 1024px) {
+    body {
+        transition: 1s;
+    }
+
+    .web-content-margin {
+        margin: 0 15%;
+    }
+
+
+    .nav-menu-links {
+        padding-left: 10%;
+    }
+
+    .home-feature {
+        width: 200%;
+    }
+
+    .welcome-content {
+        max-width: 35%;
+    }
+
+
+    .home-feature-mobile {
         display: none;
     }
 
-    .polaroid-container {
-        width: 20rem;
-        margin: 0.4rem;
+
+    .home-feature {
+        display: flex;
     }
 
+    /*======= Section: About =======*/
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .about-text {
+        text-align: start;
+        width: 50%;
+        margin: 0;
+        padding-left: 5%;
+    }
+
+    .about-footer {
+        display: flex;
+    }
+
+    .about-icons {
+        margin-left: 2rem;
+    }
+
+    .about-img {
+        object-fit: cover;
+        width: 500px;
+        height: 650px;
+        max-width: 35%;
+    }
+
+    /*======= Section: Projects =======*/
+    .polaroid-container {
+        width: 25rem;
+        margin: 0.4rem;
+    }
 
     /*======= Section: Services =======*/
     .service-illustration {
@@ -1805,6 +1767,33 @@ input[type="date"] {
         width: 30%;
     }
 
+    /*======= Section: Projects =======*/
+
+    .polaroid-grids {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .polaroid-featured,
+    .polaroid-design,
+    .polaroid-motion,
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .polaroid-hide {
+        display: none;
+    }
+
+    .polaroid-container {
+        width: 18rem;
+        margin: 0.4rem;
+    }
+
     /*======= Page: Project =======*/
 
     .project {
@@ -1827,6 +1816,11 @@ input[type="date"] {
         display: flex;
         justify-content: space-between;
         margin-bottom: 5rem;
+    }
+
+    .footer-about {
+        align-items: start;
+        text-align: left;
     }
 
     .footer-description {
