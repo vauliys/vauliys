@@ -4,8 +4,9 @@
 
     /*========== Colors ==========*/
     --colour-black: #000000;
+    --colour-black-alt: #afafaf;
     --colour-white: #f4f2ed;
-    --colour-white-alt: #d7d2cb;
+    --colour-white-alt: #e0e0e0;
     --colour-yellow: #daa037;
     --colour-green: #a6c7a8;
     --colour-brown: #7c6445;
@@ -15,6 +16,7 @@
     --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --huge-font-size: 3rem;
     --big-font-size: 2.2rem;
     --header-font-size: 2rem;
     --subtitle-font-size: 1.2rem;
@@ -180,21 +182,20 @@ i {
 .nav-icons i {
     margin: 2rem 0;
     font-size: var(--standard-font-size);
-    color: var(--colour-black);
-    opacity: 0.5;
+    color: var(--colour-black-alt);
     transition: 0.5s;
 }
 
 .nav-icons i:hover {
-    opacity: 0.2;
+    color: var(--colour-black);
     transition: 0.5s;
 }
 
 /*=== Logo: Header ===*/
 .logo {
-    width: 1rem;
+    width: 5rem;
     transition: 0.5s;
-    filter: brightness(0) invert(0.85);
+    filter: brightness(0) invert(0.7);
 }
 
 .logo:hover {
@@ -203,20 +204,31 @@ i {
 }
 
 .logo-invert {
-    filter: brightness(0) invert(0);
+    filter: brightness(0) invert(0.6);
     transition: 1s;
 }
 
 /*==================== Buttons ====================*/
 button {
     border: none;
-    outline: none;
+    outline: solid;
+    outline-width: 1px;
+    padding: 0.8rem 2.5rem;
+    border-radius: 2rem;
+    background-color: black;
     cursor: pointer;
 
     display: inline-flex;
     align-items: center;
 
     color: var(--colour-white);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+button:hover {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 /*=== Button: Let's Explore (Home) ===*/
@@ -493,7 +505,7 @@ section {
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 10%;
+    padding: 2rem 5%;
     width: 100vw;
 
     z-index: 3;
@@ -532,15 +544,15 @@ section {
 
 #nav-link {
     font-size: var(--big-font-size);
-    color: var(--colour-black);
     font-weight: var(--font-bold);
 
+    color: var(--colour-black-alt);
     transition: 0.5s;
 }
 
 #nav-link:hover,
 #nav-icons a:hover {
-    color: var(--colour-white-alt);
+    color: var(--colour-black);
     transition: 0.5s;
 }
 
@@ -565,7 +577,7 @@ section {
 
 .hamburger-bar {
     border-radius: 2rem;
-    height: 3px;
+    height: 2px;
     margin: 2.5px 0;
 
     background: var(--colour-white-alt);
@@ -585,16 +597,17 @@ section {
     transform: rotate(-45deg);
     transition: 1s;
 
-    background: var(--colour-black);
+    background: var(--colour-black-alt);
 }
 
 .hamburger-menu.active .hamburger-bar:nth-of-type(2) {
     transform: translateY(-8px) rotate(45deg);
     transition: 0.5s;
+    margin-top: 3px;
 
-    width: 1.2rem;
+    width: 1.28rem;
 
-    background: var(--colour-black);
+    background: var(--colour-black-alt);
 }
 
 
@@ -622,12 +635,25 @@ section {
     background-image: url(assets/Content/Backgrounds/VLS_Placeholder.jpg);
 }
 
+.home-welcome img {
+    width: 300%;
+    max-width: none;
+}
+
 .welcome-header {
     font-size: var(--big-font-size);
+    letter-spacing: .2rem;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-subtitle {
+    font-size: var(--subtitle-font-size);
+    letter-spacing: .2rem;
 }
 
 .welcome-content {
     display: flex;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -639,14 +665,15 @@ section {
 }
 /*==================== Section ====================*/
 /*==== Section: Client Banner ====*/
+
 .client {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
 
-    background-color: var(--colour-black);
-    padding: 2rem 10%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
 }
 
 .client img {
@@ -656,25 +683,27 @@ section {
     cursor: pointer;
 
     transition: 0.5s;
+    opacity: 0.3;
 }
 
 .client img:hover {
-    filter: brightness(0) invert(0.5);
+    filter: brightness(0) invert(1);
+    opacity: 1;
 
     transition: 0.5s;
 
 }
 
 #logo-big {
-    width: 50px;
+    width: 40px;
 }
 
 #logo-wide {
-    width: 110px;
+    width: 100px;
 }
 
 #logo-small {
-    max-width: 10px;
+    max-width: 5px;
 }
 
 /*==================== Section ====================*/
@@ -686,11 +715,12 @@ section {
 .about-icons {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .about-icons i {
     font-size: var(--icon-size);
-    color: var(--colour-green);
+    color: var(--colour-black-alt);
 
     transition: 0.5s;
 }
@@ -706,6 +736,11 @@ section {
 
 .about-img img {
     border-radius: 25rem;
+}
+
+.signature {
+    width: 7rem;
+    padding-bottom: 1rem;
 }
 
 /*==================== Section ====================*/
@@ -1591,9 +1626,13 @@ input[type="date"] {
         max-width: 260px;
     }
 
+    .about-footer {
+        display: flex;
+    }
+
     .about-text {
         margin-left: 3rem;
-        max-width: 600px;
+        max-width: 500px;
     }
     .signature {
         width: 10rem;
@@ -1627,39 +1666,48 @@ input[type="date"] {
 
     .web-content-margin {
         margin: 0 15%;
+    }
 
+
+    .nav-menu-links {
+        padding-left: 5%;
     }
 
     .home-welcome img {
-
+        height: 100%;
+        max-width: 100%;
     }
 
     .welcome-content{
-        max-width: 30%;
-
+        max-width: 35%;
     }
 
     /*======= Section: Client =======*/
     .client {
         display: flex;
-        padding: 2rem 25%;
+        flex-wrap: wrap;
+        align-items: center;
+
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 5rem;
     }
+
 
     .desktop-hidden {
         display: flex;
     }
 
     .client img {
-
-        width: 40px;
+        width: 30px;
     }
 
     #logo-big {
-        width: 50px;
+        width: 40px;
     }
 
     #logo-wide {
-        width: 100px;
+        width: 90px;
     }
 
     #logo-small {
