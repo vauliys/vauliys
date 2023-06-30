@@ -1345,7 +1345,7 @@ input[type="date"] {
 /*==============================================================*/
 /*==================== Pages: links.html ====================*/
 .links {
-    margin: var(--header-height) 0;
+    margin: auto 0;
 }
 
 
@@ -1499,6 +1499,7 @@ input[type="date"] {
 .footer-links a {
     line-height: 1.5rem;
     font-weight: var(--font-normal);
+    color: var(--colour-black-alt);
 }
 
 .footer-icons i {
@@ -1728,6 +1729,7 @@ input[type="date"] {
 
 
     /*======= Page: Links =======*/
+
     .links-video-mobile {
         display: none;
     }
@@ -1751,7 +1753,7 @@ input[type="date"] {
         flex-direction: column;
         align-items: center;
 
-        margin: 5rem;
+        margin: auto 0;
     }
 
     .links-container {
