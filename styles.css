@@ -711,9 +711,18 @@ section {
 }
 
 .about-img {
+    cursor: pointer;
     border-radius: 1rem;
-    filter: saturate(0);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s;
     margin: 2rem 0rem;
+}
+
+.about-img:hover {
+    filter: none;
+    transition: 0.5s;
+    -webkit-filter: grayscale(0);
 }
 
 .signature {
