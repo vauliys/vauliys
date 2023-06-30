@@ -14,7 +14,7 @@
     --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --huge-font-size: 3rem;
+    --huge-font-size: 2.6rem;
     --big-font-size: 2.2rem;
     --header-font-size: 2rem;
     --subtitle-font-size: 1.2rem;
@@ -1345,8 +1345,9 @@ input[type="date"] {
 /*==============================================================*/
 /*==================== Pages: links.html ====================*/
 .links {
-    margin-bottom: 3rem;
+    margin: var(--header-height) 0;
 }
+
 
 .links-banner {
     text-align: center;
@@ -1370,33 +1371,6 @@ input[type="date"] {
     object-position: 100% 55%;
 }
 
-#verified {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    outline: solid;
-    outline-color: var(--colour-black);
-    outline-width: 1px;
-
-    width: 1rem;
-    height: 1rem;
-
-    border-radius: 2rem;
-    top: 0.5rem;
-    right: -6.5rem;
-
-    background-color: var(--colour-black);
-    transition: 0.5s;
-}
-
-#verified i {
-    padding: 0.5rem;
-
-    font-weight: var(--font-bold);
-    font-size: var(--small-font-size);
-    color: var(--colour-white);
-}
 
 .links-header {
     color: var(--colour-black);
@@ -1415,7 +1389,7 @@ input[type="date"] {
 .links-icons i {
     color: var(--colour-black);
     opacity: 0.5;
-    font-size: var(--standard-font-size);
+    font-size: var(--subtitle-font-size);
 }
 
 .links-icons i:hover {
