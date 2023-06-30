@@ -635,15 +635,18 @@ section {
 }
 
 .home-feature {
+    display: flex;
+
+    max-width: none;
+
     height: 100vh;
     width: 100%;
-    max-width: none;
-    display: flex;
 }
 
 .home-feature-desktop {
     display: none;
 }
+
 /*==================== Section ====================*/
 /*==== Section: Client Banner ====*/
 
@@ -661,18 +664,10 @@ section {
     margin: 0.5rem;
     width: 20px;
     filter: brightness(0) invert(1);
-    /* cursor: pointer; */
 
     transition: 0.5s;
     opacity: 0.3;
 }
-
-/* .client img:hover {
-    filter: brightness(0) invert(1);
-    opacity: 1;
-
-    transition: 0.5s;
-} */
 
 #logo-big {
     width: 40px;
@@ -712,15 +707,18 @@ section {
 
 .about-img {
     cursor: pointer;
+    margin: 2rem 0rem;
+
     border-radius: 1rem;
+
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     transition: 0.5s;
-    margin: 2rem 0rem;
 }
 
 .about-img:hover {
     filter: none;
+
     transition: 0.5s;
     -webkit-filter: grayscale(0);
 }
@@ -870,7 +868,9 @@ section {
 .service-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+
+    text-align: center;
 }
 
 
@@ -908,7 +908,7 @@ section {
     cursor: pointer;
 
     margin-bottom: 1.5rem;
-    padding: 1rem 1.5rem;
+    padding: 2rem;
     border-radius: 1rem;
 
     background-color: var(--colour-white-alt);
@@ -1610,7 +1610,6 @@ input[type="date"] {
 
     /*======= Section: Services =======*/
 
-
     .dropbox-img img {
         width: 100%;
         height: 15rem;
@@ -1707,17 +1706,9 @@ input[type="date"] {
     }
 
     /*======= Section: Services =======*/
-    .service-illustration {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #services {
-        width: 50%;
-    }
-
-    .dropbox {
-        width: 40%;
+    #service-illustration {
+        margin: 0 auto;
+        max-width: 30%;
     }
 
     /*======= Pages: FAQ =======*/
