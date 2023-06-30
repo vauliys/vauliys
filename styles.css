@@ -207,17 +207,6 @@ i {
 .logo {
     width: 5rem;
     transition: 0.5s;
-    filter: brightness(0) invert(0.7);
-}
-
-.logo:hover {
-    opacity: 0.5;
-    transition: 0.5s;
-}
-
-.logo-invert {
-    filter: brightness(0) invert(0.6);
-    transition: 1s;
 }
 
 /*==================== Buttons ====================*/
@@ -475,6 +464,8 @@ section {
     width: 100vw;
 
     z-index: 3;
+
+    mix-blend-mode: difference;
 }
 
 .nav-menu[data-visible='true'] {
@@ -543,6 +534,7 @@ section {
     cursor: pointer;
 
     z-index: 5;
+
 }
 
 .hamburger-menu:hover .hamburger-bar {
@@ -563,15 +555,16 @@ section {
 
 .hamburger-menu.active .hamburger-bar:nth-of-type(1) {
     transform: rotate(-45deg);
+    transform-origin: center;
     transition: 1s;
 
     background: var(--colour-black-alt);
 }
 
 .hamburger-menu.active .hamburger-bar:nth-of-type(2) {
-    transform: translateY(-8px) rotate(45deg);
+    transform: translateY(-7px) rotate(45deg);
+    transform-origin: center;
     transition: 0.5s;
-    margin-top: 3px;
 
     background: var(--colour-black-alt);
 }
