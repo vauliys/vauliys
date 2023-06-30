@@ -51,6 +51,22 @@
         --big-font-size: 3rem;
         --header-font-size: 2rem;
         --subtitle-font-size: 1.5rem;
+        --normal-font-size: 1.25rem;
+        --small-font-size: 1rem;
+        --smaller-font-size: 0.9rem;
+
+        --standard-font-size: 1rem;
+        --icon-size: 1.25rem;
+    }
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 1024px) {
+    :root {
+        --huge-font-size: 5rem;
+        --big-font-size: 3rem;
+        --header-font-size: 2rem;
+        --subtitle-font-size: 1.5rem;
         --normal-font-size: 0.9rem;
         --small-font-size: 0.75rem;
         --smaller-font-size: 0.7rem;
