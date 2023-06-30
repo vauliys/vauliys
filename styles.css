@@ -11,7 +11,8 @@
     --colour-white-alt-dark: #e0e0e0;
 
     /*========== Font and typography ==========*/
-    --body-font: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --body-font: 'Work Sans', sans-serif;
+
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --huge-font-size: 2.6rem;
