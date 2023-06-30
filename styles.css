@@ -140,25 +140,17 @@ i {
 a {
     text-decoration: none;
     font-weight: var(--font-bold);
-    color: var(--colour-black-alt);
+    color: var(--colour-black);
+}
+
+a:hover {
+    color: var(--colour-black-alt-dark);
+
+    transition: 0.5s;
 }
 
 p {
     line-height: 1.5rem;
-}
-
-.text-link {
-    font-weight: var(--font-medium);
-    color: var(--colour-yellow);
-
-    transition: 0.5s;
-}
-
-.text-link:hover {
-    font-weight: var(--font-medium);
-    color: var(--colour-green);
-
-    transition: 0.5s;
 }
 
 img {
@@ -1320,11 +1312,9 @@ input[type="date"] {
     margin-bottom: 4rem;
 }
 
-.project-information {
-    padding-bottom: 3rem;
-}
 
 .project-information-category {
+    padding-top: 10rem;
     padding-bottom: 0rem;
 }
 
