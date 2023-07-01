@@ -1459,6 +1459,10 @@ input[type="date"] {
     color: var(--colour-black-alt);
 }
 
+.footer-description a {
+    color: var(--colour-black-alt);
+}
+
 .footer-container {
     text-align: center;
     align-items: center;
@@ -1831,6 +1835,10 @@ input[type="date"] {
         padding: 3rem 5%;
     }
 
+    .footer-container {
+        text-align: left;
+    }
+
     .footer-about {
         margin-bottom: 0;
     }
@@ -1852,7 +1860,7 @@ input[type="date"] {
     }
 
     .footer-description {
-        width: 50%;
+        width: 60%;
     }
 
     .footer-pages {
