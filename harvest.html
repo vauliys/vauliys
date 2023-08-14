@@ -1,269 +1,300 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="styles.css">
-        <!--==================== ICONS ====================-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="styles.css">
+    <!--==================== ICONS ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>Vauliys</title>
-    </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logos/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <body class="fade-in">
-<!--==================== Fixed Header ====================-->
-<header class="header">
-    <a href="index.html">
-        <image class="logo" src="assets/Content/Logos/Vauliys Logo/Vauliys_Logo_White-v2.svg">
-    </a>
-    <div class="hamburger-menu">
-        <div class="hamburger-bar"></div>
-        <div class="hamburger-bar"></div>
-    </div>
-</header>
 
-<!--=== Navigation Menu ===-->
-<div class="nav-menu" data-visible="false">
-    <div class="nav-menu-content">
-        <ul class="nav-group">
-            <div class="nav-header">Home</div>
-            <div class="nav-link-group">
-                <a href="index.html">
-                    <li class="nav-link">Welcome</li>
-                </a>
-                <a href="index.html#about">
-                    <li class="nav-link">About</li>
-                </a>
-                <a href="index.html#projects">
-                    <li class="nav-link">Work</li>
-                </a>
-                <a href="index.html#service-illustration">
-                    <li class="nav-link">Prices</li>
-                </a>
-            </div>
-        </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
 
-        <ul class="nav-group">
-            <div class="nav-header">Information</div>
-            <div class="nav-link-group">
-                <a href="faq.html">
-                    <li class="nav-link">FAQ</li>
-                </a>
-                <!-- <a href="enquire.html">
-                    <li class="nav-link">Enquire Form</li>
-                </a> -->
-                <a href="links.html">
-                    <li class="nav-link">Social Links</li>
-                </a>
-            </div>
-        </ul>
+    <title>Vauliys</title>
+</head>
 
-        <ul class="nav-group">
-            <div class="nav-header">Outsource</div>
-            <div class="nav-link-group">
-                <a href="https://www.imdb.com/name/nm14674760/?ref_=fn_al_nm_3" target="_blank">
-                    <li class="nav-link">IMDB</li>
-                </a>
-                <a href="https://www.linkedin.com/in/vauliys" target="_blank">
-                    <li class="nav-link">LinkedIn</li>
-                </a>
-                <a href="https://www.toonboom.com/ambassador/victoria-pritchard"" target="_blank">
-                    <li class="nav-link">LinkedIn</li>
-                </a>
-            </div>
-        </ul>
+<body class="fade-in">
+    <!--==================== (Module) Fixed Header ====================-->
+    <header class="header-fixed" id="header">
+        <div class="banner" id="banner">
+            <image class="wordmark" src="assets/logos/vls_wordmark_black.svg">
+                <div class="banner_grid">
+                    <a class="banner_link" href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online
+                        Store</a>
+                    <div class="vert-div"></div>
+                    <a class="banner_link" href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
+                    <div class="vert-div"></div>
+                    <a class="banner_link" href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
+                    <i class="banner_i-close ri-close-line" id="banner_i-close"></i>
+                </div>
 
-        <ul class="nav-group">
-            <div class="nav-header">Projects</div>
-            <div class="nav-link-group">
-                <a href="chocolatebox.html">
-                    <li class="nav-link">Chocolate Box</li>
-                </a>
-                <a href="dunkso.html">
-                    <li class="nav-link">DUNKSO</li>
-                </a>
-                <a href="solar.html">
-                    <li class="nav-link">Solar Opposites</li>
-                </a>
-                <a href="harvest.html">
-                    <li class="nav-link">Harvest</li>
-                </a>
-                <a href="vfx.html">
-                    <li class="nav-link">VFX</li>
-                </a>
-            </div>
-        </ul>
-
-        <!--==== NAV ICONS ===-->
-        <div class="nav-icons">
-            <a href="https://www.instagram.com/vauliys/" target="_blank">
-                <i class="ri-instagram-line"></i></a>
-
-            <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
-                <i class="ri-github-line"></i></a>
-
-            <a href="https://store.vauliys.com/" target="_blank">
-                <i class="ri-shopping-bag-2-line"></i></a>
-
-            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                <i class="ri-linkedin-fill"></i></a>
         </div>
-    </div>
-</div>
+        <div class="navbar">
+            <a href="index.html">
+                <image class="logo" src="assets/logos/vls_sublogo_black.svg">
 
-<button id="scroll">
-    <i class="ri-arrow-down-line"></i>
-</button>
-
-        <div class="project">
-            <div class="web-content-margin" id="">
-                <section class="project-information">
-                    <div class="btn-alt">
-                        <a id="btn-alt" href="index.html#projects">
-                            <i class="ri-arrow-left-line"></i>
-                        </a>
-                    </div>
-                    <p class="section-header project-header">
-                        The Harvest Festival
-                    </p>
-
-                    <div class="section-details">
-                        <div class="keyword">
-                            <p>
-                                Academic </p>
+            </a>
+            <div class="hamburger-menu">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </div>
+        </div>
+        <div class="navbar_link-container">
+            <div class="mdl_navbar-column">
+                <div class="mdl_dropbox_navbar-home">
+                    <div class="mdl_dropbox">
+                        Home
+                        <div id="btn_dropbox_navbar-home">
+                            <i class="ri-arrow-down-s-line"></i>
                         </div>
-                        <p class="section-subheader">
-                            About the Project
-                        </p>
-                        <p class="project-description">
-                            A short animated film in pre-production created by myself including but not limited to storywriting, animation
-                            and character development. The story follows a Mushroom Princess named Juniper, neglects her
-                            royal duties in the annual Harvest Festival. Will she rise to the occasion?
-                        </p>
-                    </div>
-                </section>
-
-                <div class="project-content">
-                    <div class="project-item">
-                        <img src="assets/Content/Work/Motion/Harvest Fesitval/VLS_Harvest_Logo.png" alt="">
-                    </div>
-                    <div class="project-item">
-                        <img src="assets/Content/Work/Motion/Harvest Fesitval/VLS_Harvest_Sketch.jpg" alt="">
-                    </div>
-                    <div class="project-item">
-                        <img src="assets/Content/Work/Motion/Harvest Fesitval/VLS_Harvest_Sketch_v2.jpg" alt="">
                     </div>
 
+                    <div class="mdl_dropbox_navbar-home_links">
+                        <a href="index.html#about" id="mdl_nav-links_about">About Vauliys</a>
+                        <a href="index.html#projects" id="mdl_nav-links_projects">Project Gallery</a>
+                        <a href="index.html#clients" id="mdl_nav-links_clients">Previous Clients</a>
+                    </div>
                 </div>
             </div>
+
+            <div class="mdl_navbar-column">
+                <div class="mdl_dropbox_navbar-projects">
+                    <div class="mdl_dropbox">
+                        Projects
+                        <div id="btn_dropbox_navbar-projects">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+
+                    <div class="mdl_dropbox_navbar-projects_links">
+                        <div id="mdl_nav-links_social">Social</div>
+                        <div id="mdl_nav-links_motion">Motion</div>
+                        <div id="mdl_nav-links_design">Design</div>
+                        <div id="mdl_nav-links_art">Art</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdl_navbar-column">
+                <div class="mdl_dropbox_navbar-resources">
+                    <div class="mdl_dropbox">
+                        Resources
+                        <div id="btn_dropbox_navbar-resources">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+
+                    <div class="mdl_dropbox_navbar-resources_links">
+                        <a href="https://store.vauliys.com/" target="_blank"><div id="mdl_nav-links_social">Online Store</div></a>
+                        <a href="https://www.imdb.com/name/nm14674760/" target="_blank"><div id="mdl_nav-links_motion">IMDB</div></a>
+                    </div>
+                </div>
+            </div>
+
+    
         </div>
 
+    </header>
 
-<!--==================== FOOTER ====================-->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-column">
-                <div class="footer-about">
-                    <a class="footer-logo" href="#">
-                        <image class="logo footer-logo"
-                            src="assets/Content/Logos/Vauliys_Signature_White-alt.png">
-                    </a>
-                    <p class="footer-description">
-                        Also known as Victoria, providing a fresh burst of energy and colour to the creative
-                        scene. For business enquiries <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
-                    </p>
-                    <div class="footer-icons">
-                        <a href="https://www.instagram.com/vauliys/" target="_blank">
+    <div class="mdl_tab-slider_img">
+        <img src="assets/3.3_harvest/3.3_harvest_banner.png" alt="">
+    </div>
+
+    <div class="mdl_dual-column" id="indiv-project">
+        <div class="mdl_dual-column_l">
+            <div>
+                <h1 class="mdl_header_stnd">Harvest - an original Vauliys short film.</h1>
+            </div>
+        </div>
+
+        <div class="mdl_dual-column_r fade-in" id="mdl_tab-slider_sol-props-t">
+            <div class="mdl_dual-column_btns">
+                <button class="btn_outline-stat">
+                    Animation
+                </button>
+            </div>
+            <p class="mdl_text_mrg-top mdl_text_mrg-btm">
+                Harvest is a short animated film and webcomic that is currently in the pre-production phase. The story
+                follows the
+                daily routine of a young mushroom princess managing her kingdom and care-taking for the village. The
+                overall aesthetic of the film exudes wholesomeness, brightness, and an abundance of
+                colors. </p>
+
+        </div>
+    </div>
+
+    <div class="mdl_mosaic-gallery">
+        <div class="mdl_mosaic-gallery_content">
+            <div class="mdl_mosaic-gallery_column">
+                <img src="assets/3.3_harvest/3.3_harvest_castle.png" alt="">
+                <img src="assets/3.3_harvest/3.3_harvest_sketch-smith.png" alt="">
+                <img src="assets/3.3_harvest/3.3_harvest_corny-model.png" alt="">
+                <video autoplay muted loop src="assets/3.3_harvest/3.3_harvest_laugh.mp4"></video>
+                <img src="assets/3.3_harvest/3.3_harvest_sketch-castle.png" alt="">
+
+            </div>
+
+            <div class="mdl_mosaic-gallery_column">
+                <img src="assets/3.3_harvest/3.3_harvest_logo-image.png" alt="">
+                <video autoplay muted loop src="assets/3.3_harvest/3.3_harvest_orange.mp4"></video>
+                <img src="assets/3.3_harvest/3.3_harvest_sketch-bakery.png" alt="">
+                <img src="assets/3.3_harvest/3.3_harvest_logo-text.png" alt="">
+            </div>
+
+            <div class="mdl_mosaic-gallery_column">
+                <img src="assets/3.3_harvest/3.3_harvest_juniper-model.png" alt="">
+                <img src="assets/3.3_harvest/3.3_harvest_corny.png" alt="">
+                <img src="assets/3.3_harvest/3.3_harvest_illustration.jpg" alt="">
+                <video autoplay muted loop src="assets/3.3_harvest/3.3_harvest_juniper.mp4"></video>
+                <img src="assets/3.3_harvest/3.3_harvest_sketch-village.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--==================== (Module) Footer ====================-->
+    <footer class="footer">
+        <div class="mdl_footer">
+            <!--==================== Footer: Column ====================-->
+            <div class="mdl_footer-column">
+                <image class="logo" src="assets/logos/vls_logomark_white.jpg">
+                    <div class="mdl_text">
+                        For all business enquiries <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
+                    </div>
+                    <div class="icons">
+                        <a class="icon" href="https://www.instagram.com/vauliys/" target="_blank">
                             <i class="ri-instagram-line"></i></a>
 
-                        <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
+                        <a class="icon" href="https://github.com/vauliys" target="_blank">
                             <i class="ri-github-line"></i></a>
 
-                        <a href="https://store.vauliys.com/" target="_blank">
+                        <a class="icon" href="https://store.vauliys.com/" target="_blank">
                             <i class="ri-shopping-bag-2-line"></i></a>
 
-                        <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                        <a class="icon" href="https://www.linkedin.com/in/vauliys/" target="_blank">
                             <i class="ri-linkedin-fill"></i></a>
                     </div>
-                </div>
             </div>
-            <div class="footer-category">
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header">Home</div>
-                        <div class="footer-links">
-                            <a href="index.html">Welcome</a>
-                            <a href="index.html#about">About</a>
-                            <a href="index.html#projects">Projects</a>
-                            <a href="index.html#service-illustration">Services</a>
+
+            <!--==================== Footer: Column (Homepage) ====================-->
+            <div class="mdl_footer-column">
+                <!--======= Footer: Column - Mobile Version =========-->
+                <div class="mdl_dropbox_home desktop_hide">
+                    <div class="mdl_dropbox">
+                        Homepage
+                        <div id="btn_dropbox_home">
+                            <i class="ri-arrow-down-s-line"></i>
                         </div>
+                    </div>
+
+                    <div class="mdl_dropbox_home-links">
+                        <a href="index.html#about">About Vauliys</a>
+                        <a href="index.html#projects">Project Gallery</a>
+                        <a href="index.html#clients">Previous Clients</a>
                     </div>
                 </div>
 
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header">Information</div>
-                        <div class="footer-links">
-                            <a href="faq.html">FAQ</a>
-                            <!-- <a href="enquire.html" target="_blank">Enquire Form</a> -->
-                            <a href="links.html">Social Links</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header"> Outsource</div>
-                        <div class="footer-links">
-                            <a href="https://www.imdb.com/name/nm14674760/?ref_=fn_al_nm_3"
-                                target="_blank">IMDB</a>
-                            <a href="https://www.linkedin.com/in/vauliys" target="_blank">LinkedIn</a>
-                            <a href="https://www.toonboom.com/ambassador/victoria-pritchard"
-                                target="_blank">Toon
-                                Boom</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header">Design</div>
-                        <div class="footer-links">
-                            <a href="chocolatebox.html">Chocolate Box</a>
-                            <a href="dunkso.html">DUNKSO</a>
-                            <!-- <a href="lashesbyrhi.html">LashesbyRhi</a>
-                    <a href="tillpayments.html">Till Payments</a> -->
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <div class="footer-pages">
-                        <div class="footer-header">Motion</div>
-                        <div class="footer-links">
-                            <a href="solar.html">Solar Opposites</a>
-                            <a href="harvest.html">Harvest</a>
-                            <a href="vfx.html">VFX</a>
+                <!--======= Footer: Column - Desktop Version =========-->
+                <div class="mobile_hide">
+                    <div class="mdl_footer-column">
+                        <button class="btn_outline-stat btn_outline-stat-inv">
+                            Homepage
+                        </button>
+                        <div class="mdl_footer-links">
+                            <a href="index.html#about">About Vauliys</a>
+                            <a href="index.html#projects">Project Gallery</a>
+                            <a href="index.html#clients">Previous Clients</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!--==================== FOOTER: Column (Resources) ====================-->
+            <div class="mdl_footer-column">
+                <!--======= FOOTER: Column - Mobile Version =========-->
+                <div class="mdl_dropbox_resources desktop_hide">
+                    <div class="mdl_dropbox">
+                        Resources
+                        <div id="btn_dropbox_resources">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+
+                    <div class="mdl_dropbox_resources-links">
+                        <a href="https://store.vauliys.com" target="_blank">Online Store</a>
+                        <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
+                    </div>
+                </div>
+
+                <!--======= Foor: Column - Desktop Version =========-->
+                <div class="mobile_hide">
+                    <div class="mdl_footer-column">
+                        <button class="btn_outline-stat btn_outline-stat-inv">
+                            Resources
+                        </button>
+                        <div class="mdl_footer-links">
+                            <a href="https://store.vauliys.com" target="_blank">Online Store</a>
+                            <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== Footer: Column (Projects)====================-->
+            <div class="mdl_footer-column">
+                <!--======= Footer: Column - Mobile Version =========-->
+                <div class="mdl_dropbox_projects desktop_hide">
+                    <div class="mdl_dropbox">
+                        Projects
+                        <div id="btn_dropbox_projects">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+                    <div class="mdl_dropbox_projects-links">
+                        <div id="mdl_footer-links_m-social">Social</div>
+                        <div id="mdl_footer-links_m-motion">Motion</div>
+                        <div id="mdl_footer-links_m-design">Design</div>
+                        <div id="mdl_footer-links_m-art">Art</div>
+                    </div>
+                </div>
+
+                <!--======= Footer: Columnn - Desktop Version =========-->
+                <div class="mobile_hide">
+                    <div class="mdl_footer-column">
+                        <button class="btn_outline-stat btn_outline-stat-inv">
+                            Projects
+                        </button>
+                        <div class="mdl_footer-links">
+                            <div id="mdl_footer-links_d-social">Social</div>
+                            <div id="mdl_footer-links_d-motion">Motion</div>
+                            <div id="mdl_footer-links_d-design">Design</div>
+                            <div id="mdl_footer-links_d-art">Art</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <hr style="background-color: #eae6df">
-        <p class="copyright">© Vauliys. All Rights Reserved</p>
-    </div>
-</footer>
-        <!--==================== MAIN JS ====================-->
-        <script src="scripts.js" defer></script>
+        <div class="mdl_footer-copyright">
+            <p class="mdl_footer-copyright_text">©2023 Vauliys</p>
+            <p class="mdl_footer-copyright_text"><a href="https://github.com/vauliys/vauliys.github.io"
+                    target="_blank">Built by Vauliys</a></p>
+        </div>
+    </footer>
 
-    </body>
+</body>
+<script src="scripts.js" defer></script>
+<script src="mdl_tab-slider.js" defer></script>
+<script src="mdl_footer.js"></script>
+<script src="mdl_navbar.js"></script>
 </html>

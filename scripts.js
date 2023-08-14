@@ -1,81 +1,55 @@
-/*================ Body: Sroll / To Top - To About ================*/
-const scrolltotop = document.getElementById('scroll');
+/*================ Header appear and disappear on scroll ================*/
+var scrollPos = 0;
+const header = document.getElementById('header');
 
-if(scrolltotop) {
-scrolltotop.addEventListener("click", e => {
-    if (window.scrollY > 20) {
-        window.scrollTo({
-
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-        });
-    } else {
-        document.getElementById("about").scrollIntoView()
-    }
-});
-}
-
-/*=== Scroll Arrow (Rotates) ====*/
-
-if(scrolltotop) {
-window.addEventListener('scroll', e => {
-    if (window.scrollY > 20 && !scrolltotop.classList.contains('scroll-up')) {
-        scrolltotop.classList.add('scroll-up');
-    } else if (window.scrollY <= 20 && scrolltotop.classList.contains('scroll-up')) {
-        scrolltotop.classList.remove('scroll-up');
-    }
-});
-}
-
-
-/*================ Body: Sroll / To Top - To About ================*/
-const btnexplore = document.getElementById('btn-explore');
-if(btnexplore) {
-btnexplore.addEventListener("click", e => {
-    document.getElementById("about").scrollIntoView()
-});
-}
-
-/*================ Navigation Menu ================*/
-
-/* searching for item in html and giving it a Java name*/
-const hamburger = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('.nav-menu');
-const navLogo = document.querySelector('.logo');
-
-/* searching for multiple items in html*/
-const navItems = document.querySelectorAll(".nav-item");
-
-
-/* when hamburger (.humburger) is clicked perform code*/
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active'); /*toggles class*/
-    navLogo.classList.toggle('logo-invert');
-
-    const visibility = navMenu.getAttribute('data-visible');/*retrieves attribute from HTML*/
-    console.log(visibility);
-
-    if (visibility === 'false') {
-        navMenu.setAttribute('data-visible', true); /*set attribute from class*/
-
-    } else if (visibility === 'true') {
-        navMenu.setAttribute('data-visible', false); /*set attribute from HTML*/
-    }
-
-});
-
-navItems.forEach(item => { /*applying code to EACH item in List*/
-    item.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navLogo.classList.remove('logo-invert');
-        navMenu.setAttribute('data-visible', false);
+if(header) {
+    window.addEventListener('scroll', e => {
+        if ((document.body.getBoundingClientRect()).top > scrollPos) {
+            header.classList.remove('header_hide');
+        } else {
+            header.classList.add('header_hide');
+        }
+        scrollPos = (document.body.getBoundingClientRect()).top;
     });
-})
+    }
+
+/*================ Close Banner ================*/    
+    const banner = document.getElementById('banner');
+    const bannerclose = document.getElementById('banner_i-close');
+
+if (bannerclose) {
+        bannerclose.addEventListener('click', () => {
+            banner.classList.add('banner_hide'); /*toggles class*/
+        });
+    }
 
 
+/*================ Button Scroll To About ================*/
+const btnexplore = document.getElementById('btn_explore');
 
+if (btnexplore) {
+    btnexplore.addEventListener('click', () => {
+        document.getElementById("about").scrollIntoView()
+    });
+}
 
+const video = document.getElementById('video');
 
-/*================ Body: Home Scroll ================*/
-/*================ Home: Button (Explore) ================*/
+if (video) {
+let vid = document.getElementById("video");
+vid.volume = 0.05;
+}
+
+(function($){
+
+    
+	$('#video').hover(function toggleControls() {
+		if (this.hasAttribute("controls")) {
+			this.removeAttribute("controls")
+		} else {
+			this.setAttribute("controls", "controls")
+		}
+	});
+
+})(jQuery);
+
