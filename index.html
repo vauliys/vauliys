@@ -1,884 +1,650 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="styles.css">
-        <!--==================== ICONS ====================-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-            rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="styles.css">
+    <!--==================== ICONS ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>Vauliys</title>
-    </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logos/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <body class="fade-in">
-        <!--==================== Fixed Header ====================-->
-        <header class="header">
-            <a href="#">
-                <image class="logo" src="assets/Content/Logos/Vauliys Logo/Vauliys_Logo_White-v2.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <title>Vauliys</title>
+</head>
+
+<body class="fade-in">
+
+    <!--==================== (Module) Fixed Header ====================-->
+    <header class="header-fixed" id="header">
+        <div class="banner" id="banner">
+            <image class="wordmark" src="assets/logos/vls_wordmark_black.svg">
+                <div class="banner_grid">
+                    <a class="banner_link" href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online
+                        Store</a>
+                    <div class="vert-div"></div>
+                    <a class="banner_link" href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
+                    <div class="vert-div"></div>
+                    <a class="banner_link" href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
+                    <i class="banner_i-close ri-close-line" id="banner_i-close"></i>
+                </div>
+
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <image class="logo" src="assets/logos/vls_sublogo_black.svg">
+
             </a>
             <div class="hamburger-menu">
                 <div class="hamburger-bar"></div>
                 <div class="hamburger-bar"></div>
-            </div>
-        </header>
-
-        <!--=== Navigation Menu ===-->
-        <div class="nav-menu" data-visible="false">
-            <div class="nav-menu-content">
-                <ul class="nav-group">
-                    <div class="nav-header">Home</div>
-                    <div class="nav-link-group">
-                        <a href="#">
-                            <li class="nav-link">Welcome</li>
-                        </a>
-                        <a href="index.html#about">
-                            <li class="nav-link">About</li>
-                        </a>
-                        <a href="index.html#projects">
-                            <li class="nav-link">Work</li>
-                        </a>
-                        <a href="index.html#service-illustration">
-                            <li class="nav-link">Prices</li>
-                        </a>
-                    </div>
-                </ul>
-
-                <ul class="nav-group">
-                    <div class="nav-header">Information</div>
-                    <div class="nav-link-group">
-                        <a href="faq.html">
-                            <li class="nav-link">FAQ</li>
-                        </a>
-                        <!-- <a href="enquire.html">
-                            <li class="nav-link">Enquire Form</li>
-                        </a> -->
-                        <a href="links.html">
-                            <li class="nav-link">Social Links</li>
-                        </a>
-                    </div>
-                </ul>
-
-                <ul class="nav-group">
-                    <div class="nav-header">Outsource</div>
-                    <div class="nav-link-group">
-                        <a href="https://www.imdb.com/name/nm14674760/?ref_=fn_al_nm_3" target="_blank">
-                            <li class="nav-link">IMDB</li>
-                        </a>
-                        <a href="https://www.linkedin.com/in/vauliys" target="_blank">
-                            <li class="nav-link">LinkedIn</li>
-                        </a>
-                        <a href="https://www.toonboom.com/ambassador/victoria-pritchard"" target="_blank">
-                            <li class="nav-link">LinkedIn</li>
-                        </a>
-                    </div>
-                </ul>
-
-                <ul class="nav-group">
-                    <div class="nav-header">Projects</div>
-                    <div class="nav-link-group">
-                        <a href="chocolatebox.html">
-                            <li class="nav-link">Chocolate Box</li>
-                        </a>
-                        <a href="dunkso.html">
-                            <li class="nav-link">DUNKSO</li>
-                        </a>
-                        <a href="solar.html">
-                            <li class="nav-link">Solar Opposites</li>
-                        </a>
-                        <a href="harvest.html">
-                            <li class="nav-link">Harvest</li>
-                        </a>
-                        <a href="vfx.html">
-                            <li class="nav-link">VFX</li>
-                        </a>
-                    </div>
-                </ul>
-
-                <!--==== NAV ICONS ===-->
-                <div class="nav-icons">
-                    <a href="https://www.instagram.com/vauliys/" target="_blank">
-                        <i class="ri-instagram-line"></i></a>
-
-                    <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
-                        <i class="ri-github-line"></i></a>
-
-                    <a href="https://store.vauliys.com/" target="_blank">
-                        <i class="ri-shopping-bag-2-line"></i></a>
-
-                    <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                        <i class="ri-linkedin-fill"></i></a>
-                </div>
+                <div class="hamburger-bar"></div>
             </div>
         </div>
-
-        <button id="scroll">
-            <i class="ri-arrow-down-line"></i>
-        </button>
-        <!--==================== Page Feature===================-->
-        <div class="home-welcome">
-            <div class="welcome-content">
-                <div class="welcome-text">
-                    <h1 class="welcome-header" style="color: white;">
-                        VAULIYS
-                    </h1>
-                    <p class="welcome-subtitle" style="color: white;">
-                        DIGITAL DESIGNER
-                    </p>
-                    <p class="section-description" style="color: white;">
-                        A multi-talented artist, designer, and animator
-                        based in Australia. Providing a fresh burst of energy and
-                        colour to the creative scene.
-                    </p>
-                    <button id="btn-explore" class="btn-explore">Let's Explore</button>
-                </div>
-
-
-
-            </div>
-            <div class="client" id="client">
-                <image id="logo-big" src="assets/Content/Logos/Client Logos/Logo_Hulu.png">
-                    <image id="logo-big" src="assets/Content/Logos/Client Logos/Logo_Studio Moshi.png">
-                        <image src="assets/Content/Logos/Client Logos/Logo_XPPen.png">
-                            <image src="assets/Content/Logos/Client Logos/Logo_Till.png">
-                                <image id="logo-big" src="assets/Content/Logos/Client Logos/Logo_Logitech.png">
-                                    <image id="logo-wide" class="desktop-hidden"
-                                        src="assets/Content/Logos/Client Logos/Logo_FlyingArt.png">
-                                        <image id="logo-small" class="desktop-hidden"
-                                            src="assets/Content/Logos/Client Logos/Logo_Paperlike.png">
-                                            <image id="logo-wide" class="desktop-hidden"
-                                                src="assets/Content/Logos/Client Logos/Logo_Huion.png">
-            </div>
-
-            <img class="home-feature-desktop" src="assets/Content/Backgrounds/VLS_Placeholder-v2.jpg" alt="">
-            <img class="home-feature" src="assets/Content/Backgrounds/VLS_Portfolio_BG_Laptop_180deg.jpg" alt="">
-
-        </div>
-
-        <!--==================== Page: About  ====================-->
-        <div class="web-content-margin" id="about">
-            <section class="about">
-
-                <div class="about-text">
-                    <h1 class="section-header about-header">
-                        Nice to <br>meet you :)
-                    </h1>
-
-                    <p class="section-description about-description">
-                        Howdy hey, I'm Victoria, also known as Vauliys, a multi-talented artist, designer, and
-                        animator
-                        based in Australia. My love for technology and art provides a fresh burst of energy and
-                        colour to the creative scene.
-                    </p>
-
-                    <p class="section-description about-description">
-                        Starting my career freelancing for Logitech, Australian Redcross and Solar Opposites, I have
-                        transitioned to a full-time Digital Designer in the Fintech Industry under Till Payments,
-                        combining
-                        my passions of technology with art.</p>
-                    <p class="section-description about-description">
-                        Apart from creating amazing digital paintings,
-                        graphics, and animations, I enjoy
-                        sharing my insights into my creative process and collaborating with other artists. I
-                        consistently inspire and provide tips for other aspiring artists who seek to advance and
-                        hone
-                        their craft. My art has been featured in several publications, and my social media
-                        presence continues to grow, with over 40K+ collective fans following my journey. My works have
-                        also been featured
-                        in art shows, galleries, and exhibitions.
-                    </p>
-
-
-                    <div class="about-footer">
-                        <img class="signature" src="assets/Content/Logos/Vauliys_Signature.png">
-
-                        <div class="about-icons">
-                            <a href="https://www.instagram.com/vauliys/" target="_blank">
-                                <i class="ri-instagram-line"></i></a>
-
-                            <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
-                                <i class="ri-github-line"></i></a>
-
-                            <a href="https://store.vauliys.com/" target="_blank">
-                                <i class="ri-shopping-bag-2-line"></i></a>
-
-                            <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                                <i class="ri-linkedin-fill"></i></a>
+        <div class="navbar_link-container">
+            <div class="mdl_navbar-column">
+                <div class="mdl_dropbox_navbar-home">
+                    <div class="mdl_dropbox">
+                        Home
+                        <div id="btn_dropbox_navbar-home">
+                            <i class="ri-arrow-down-s-line"></i>
                         </div>
                     </div>
+
+                    <div class="mdl_dropbox_navbar-home_links">
+                        <a href="index.html#about" id="mdl_nav-links_about">About Vauliys</a>
+                        <a href="index.html#projects" id="mdl_nav-links_projects">Project Gallery</a>
+                        <a href="index.html#clients" id="mdl_nav-links_clients">Previous Clients</a>
+                    </div>
                 </div>
+            </div>
 
-                <img class="about-img" src="assets/Content/Home/VLS_About.jpg">
-                <!-- <div class="about-img">
+            <div class="mdl_navbar-column">
+                <div class="mdl_dropbox_navbar-projects">
+                    <div class="mdl_dropbox">
+                        Projects
+                        <div id="btn_dropbox_navbar-projects">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
 
-                </div> -->
+                    <div class="mdl_dropbox_navbar-projects_links">
+                        <div id="mdl_nav-links_social">Social</div>
+                        <div id="mdl_nav-links_motion">Motion</div>
+                        <div id="mdl_nav-links_design">Design</div>
+                        <div id="mdl_nav-links_art">Art</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdl_navbar-column">
+                <div class="mdl_dropbox_navbar-resources">
+                    <div class="mdl_dropbox">
+                        Resources
+                        <div id="btn_dropbox_navbar-resources">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+
+                    <div class="mdl_dropbox_navbar-resources_links">
+                        <a href="https://store.vauliys.com/" target="_blank"><div id="mdl_nav-links_social">Online Store</div></a>
+                        <a href="https://www.imdb.com/name/nm14674760/" target="_blank"><div id="mdl_nav-links_motion">IMDB</div></a>
+                    </div>
+                </div>
+            </div>
+
+    
         </div>
-        </section>
 
-        </section>
+    </header>
+
+    <!--==================== (Module) Full Page with Text Overlay (Bottom Left) ===================-->
+    <div class="mdl_fullpage-img">
+        <div class="mdl_fullpage-img_text-overlay">
+            <button class="btn_outline-stat-inv">
+                Digital Designer
+            </button>
+            <h1 class="mdl_header_lrg">Vauliys</h1>
+            <p class="mdl_text_mrg-btm">A multi-talented artist, designer, and animator
+                based in Australia. Providing a fresh burst of energy and
+                colour to the creative scene.</p>
+            <button class="btn_solid-inv" id="btn_explore">
+                Explore
+            </button>
+        </div>
+        <video autoplay loop muted src="assets/1.1_homepage/1.1_homepage_feature.mp4"></video>
+    </div>
+
+    <div class="mdl_dual-column" id="about">
+        <div class="mdl_dual-column_l">
+            <div>
+                <button class="btn_outline-stat">
+                    Who is Vauliys?
+                </button>
+                <h1 class="mdl_header_stnd">Nice to meet you :)</h1>
+                <p class="mdl_text">
+                    Howdy hey, I'm Victoria, also known as Vauliys, a multi-talented artist, designer, and
+                    animator based in Australia.
+                </p>
+                <p class="mdl_text">
+                    Starting my career freelancing for 
+                    <strong class="p_bold-green"> Logitech</strong>, Australian Redcross
+                    and <a href="solar.html">Solar
+                        Opposites</a>, I have
+                    transitioned to a full-time Digital Designer in the Fintech Industry under <strong class="p_bold-green"> Till Payments</strong>,
+                    combining
+                    my passions of technology with art.
+                </p>
+                <p class="mdl_text_mrg-btm">
+                    My art has been featured in several publications, and my social media presence continues to grow,
+                    with over 40K+ collective fans following my journey.
+                </p>
+                <a href="https://linkedin.com/in/vauliys/" target="_blank"><button class="btn_solid">
+                        Explore her LinkedIn
+                    </button></a>
+                <a href="https://instagram.com/vauliys" target="_blank"><button class="btn_plain">
+                        Check out her Instagram
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </a>
+            </div>
         </div>
 
-        <!--==================== Page: Projects ====================-->
+        <div class="mdl_dual-column_r" id="mdl_tab-slider_sol-props-t">
+            <img class="img_bw" src="assets/1.1_homepage/1.2_about_vauliys_2.png" alt="">
+        </div>
 
-        <section class="polaroids" id="projects">
-            <div class="polaroid-text">
-                <h1 class="section-header">
-                    Projects
+    </div>
+
+
+    <!--==================== (Module) Tab Slider Gallery ===================-->
+    <div class="mdl_tab-slider_gallery" id="projects">
+        <div class="mdl_tab-slider_header">
+            <h1 class="mdl_header_stnd">Projects</h1>
+
+            <div class="mdl_tab-slider_container">
+                <div class="mdl_tab-slider_item mdl_tab-slider_item_active" id="mdl_tab-slider_social">Social</div>
+                <div class="mdl_tab-slider_item" id="mdl_tab-slider_motion">Motion</div>
+                <div class="mdl_tab-slider_item" id="mdl_tab-slider_design">Design</div>
+                <div class="mdl_tab-slider_item" id="mdl_tab-slider_art">Art</div>
+            </div>
+        </div>
+
+        <div class="mdl_tab-slider_social fade-in">
+            <!--=== (Tab Slider: Block - Logitech) ===-->
+            <!-- <div class="mdl_tab-slider_block">
+                <a href="logitech-2023.html"><img src="assets/1.1_homepage/1.3_projects_logitech.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2023
+                    </button>
+                    <button class="btn_outline-stat">
+                        Brand Collab
+                    </button>
+                    <button class="btn_outline-stat">
+                        Product Feature
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Logitech - master your flow with MX Master Series.</h1>
+            </div> -->
+            <!--=== (Tab Slider: Block - Paperlike) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="paperlike.html"><img src="assets/1.1_homepage/1.3_projects_paperlike.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2023
+                    </button>
+                    <button class="btn_outline-stat">
+                        Ambassador Program
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Paperlike - fall in love with drawing on your iPad.</h1>
+            </div>
+            <!--=== (Tab Slider: Block - XPPEN ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="xppen.html"><img src="assets/1.1_homepage/1.3_projects_xppen.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2022
+                    </button>
+                    <button class="btn_outline-stat">
+                        Brand Collab
+                    </button>
+                    <button class="btn_outline-stat">
+                        Product Feature
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">XPPEN - Artist 16 (2nd Gen), spacious yet portable.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Huion) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="huion.html"><img src="assets/1.1_homepage/1.3_projects_huion.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2022
+                    </button>
+                    <button class="btn_outline-stat">
+                        Brand Collab
+                    </button>
+                    <button class="btn_outline-stat">
+                        Product Feature
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Huion - simple but powerful with Kamvas 22.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Logitech) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="logitech-2021.html"><img src="assets/1.1_homepage/1.3_projects_logitech_2.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2021
+                    </button>
+                    <button class="btn_outline-stat">
+                        Brand Collab
+                    </button>
+                    <button class="btn_outline-stat">
+                        Product Feature
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Logitech - MX Anywhere, master your next project.
                 </h1>
-
-
-                <div class="category-links category-slider">
-                    <div class="slider-item slider-item-active" id="category-featured">Featured</div>
-                    <div class="slider-item" id="category-design">Design</div>
-                    <div class="slider-item" id="category-motion">Motion</div>
-                    <div class="slider-item" id="category-gallery">Gallery</div>
-                </div>
-
             </div>
-
-            <div class="polaroid-grids">
-                <!--==== Category: Featured (must keep class for javascript)====-->
-                <div class="polaroid-featured">
-
-                    <!--==== Polaroid ====-->
-                    <a href="dunkso.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div>
-                                    <p class="polaroid-no">01</p>
-                                    <p class="polaroid-type">DUNKSO</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-edit-box-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_DUNKSO_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Branding
-                                </p>
-                                <p class="keyword">
-                                    Logo
-                                </p>
-
-                                <p class="keyword">
-                                    Adobe
-
-                            </div>
-                        </div>
-                    </a>
-
-                    <!--==== Polaroid ====-->
-                    <a href="solar.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div>
-                                    <p class="polaroid-no">02</p>
-                                    <p class="polaroid-type">Solar Opposites</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-movie-2-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_SolarOpposites_Square.jpg">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Hulu
-                                </p>
-                                <p class="keyword">
-                                    Toon Boom
-                                </p>
-
-                            </div>
-                        </div>
-                    </a>
-
-                    <!--==== Polaroid ====-->
-                    <a href="chocolatebox.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div class="polaroid-category">
-                                    <p class="polaroid-no">03</p>
-                                    <p class="polaroid-type">Chocolate Box</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-edit-box-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_TheChocolateBox_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Print
-                                </p>
-                                <p class="keyword">
-                                    Adobe
-                                </p>
-                                <p class="keyword">
-                                    Product
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
+            <!--===(Tab Slider: Block - Toon Boom) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="toon.html"><img src="assets/1.1_homepage/1.3_projects_toonboom.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2022
+                    </button>
+                    <button class="btn_outline-stat">
+                        Ambassador Program
+                    </button>
                 </div>
-
-
-                <!--==== Category: Motion ====-->
-                <div class="polaroid-motion polaroid-hide">
-                    <!--==== Polaroid ====-->
-                    <a href="vfx.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div>
-                                    <p class="polaroid-no">01</p>
-                                    <p class="polaroid-type">VFX</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-movie-2-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_Flame_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    2D
-                                </p>
-                                <p class="keyword">
-                                    VFX
-                                </p>
-                                <p class="keyword">
-                                    Toon Boom
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!--==== Polaroid ====-->
-                    <a href="harvest.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div class="polaroid-category">
-                                    <p class="polaroid-no">02</p>
-                                    <p class="polaroid-type">The Harvest Festival</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-movie-2-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_HarvestFestival_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    2D
-                                </p>
-                                <p class="keyword">
-                                    RMIT
-                                </p>
-                                <p class="keyword">
-                                    Toon Boom
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!--==== Polaroid ====-->
-                    <a href="solar.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div>
-                                    <p class="polaroid-no">03</p>
-                                    <p class="polaroid-type">Solar Opposites</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-movie-2-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_SolarOpposites_Square.jpg">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Hulu
-                                </p>
-                                <p class="keyword">
-                                    Toon Boom
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-
-
-
-
-                </div>
-
-                <!--==== Category: Design ====-->
-                <div class="polaroid-design polaroid-hide">
-                    <!--==== Polaroid ====-->
-                    <a href="chocolatebox.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div class="polaroid-category">
-                                    <p class="polaroid-no">01</p>
-                                    <p class="polaroid-type">Chocolate Box</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-edit-box-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_TheChocolateBox_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Print
-                                </p>
-                                <p class="keyword">
-                                    Adobe
-                                </p>
-                                <p class="keyword">
-                                    Product
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!--==== Polaroid ====-->
-                    <!-- <a href="rhirhibeauty.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div class="polaroid-category">
-                                    <p class="polaroid-no">02</p>
-                                    <p class="polaroid-type">Rhirhi Beauty</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-edit-box-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_LashesbyRhi_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Print
-                                </p>
-                                <p class="keyword">
-                                    Adobe
-                                </p>
-                                <p class="keyword">
-                                    Product
-                                </p>
-                            </div>
-                        </div>
-                    </a> -->
-
-                    <!--==== Polaroid ====-->
-                    <!-- <a href="">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div class="polaroid-category">
-                                    <p class="polaroid-no">03</p>
-                                    <p class="polaroid-type">Till Payments</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-edit-box-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_TillPayments_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Print
-                                </p>
-                                <p class="keyword">
-                                    Adobe
-                                </p>
-                                <p class="keyword">
-                                    Product
-                                </p>
-                            </div>
-                        </div>
-                    </a> -->
-
-                    <!--==== Polaroid ====-->
-                    <a href="dunkso.html">
-                        <div class="polaroid-container">
-                            <div class="polaroid-header">
-                                <div>
-                                    <p class="polaroid-no">02</p>
-                                    <p class="polaroid-type">DUNKSO</p>
-                                </div>
-                                <div class="polaroid-icon">
-                                    <i class="ri-edit-box-line"></i>
-                                </div>
-                            </div>
-
-                            <div class="polaroid-image">
-                                <img src="assets/Content/Home/VLS_DUNKSO_Square.png">
-                            </div>
-
-                            <div class="keyword-group">
-                                <p class="keyword">
-                                    Branding
-                                </p>
-                                <p class="keyword">
-                                    Logo
-                                </p>
-
-                                <p class="keyword">
-                                    Adobe
-                                </p>
-
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <!--==== Category: Gallery ====-->
-                <div class="gallery polaroid-hide">
-                    <div class="container">
-                        <div class="photo-gallery">
-                            <div class="column">
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Howl.png" alt="">
-                                </div>
-
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Grass.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Shoiab.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Potion.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_KeycapClose.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Lindsay.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Naomi_VolleyBall.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Ocean.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Lindsayflat.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Cloud.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_KeycapOpen.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Pippi.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Frankie.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Barbie.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_PinkHorns.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_NinaDobrev.png" alt="">
-                                </div>
-                                <div class="photo">
-                                    <img src="assets/Content/Work/Illustration/VLS_Fish.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="mdl_subheader">Toon Boom - advance the craft of animation.</h1>
             </div>
-        </section>
-
-
-        <!--==================== Page: Services / Illustration (DropBox) ====================-->
-        <div class="web-content-margin" id="service-illustration">
-            <section class="service-illustration">
-                <div id="services">
-                    <div class="service-header">
-                        <p class="keyword">
-                            Commissions
-                        </p>
-                        <h1 class="section-header" id="service-header">
-                            Let's Work <br>Together
-                        </h1>
-
-                        <p class="section-description">
-                            Work directly with me and discuss your vision, then watch as your one of a kind creation is
-                            brought to life. Perfect for gifts or for display in your own home.
-                        </p>
-                        <!--==== Hide if commission are open ====-->
-                        <p class="commission-closed"> Sorry, commission are currently closed :(</p>
-
-                        <div class="service-buttons">
-                            <!--==== Hide if commission are closed ====-->
-                            <!-- <div class="btn-alt-text"  id="btn-getstarted">
-                                <a id="btn-alt-text" href="enquire.html">
-                                  Get Started
-                                </a>
-                            </div> -->
-
-                            <a href="faq.html">
-                                <p class="btn-faq">
-                                    Frequently Asked Questions
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dropbox">
-                    <!--==== Dropbox: Hidden (Flat) ====-->
-                    <div class="dropbox-container01">
-                        <div class="dropbox-header">
-                            <div>
-                                <p class="dropbox-number">01</p>
-                                <p class="dropbox-category">Flat</p>
-                            </div>
-                            <div id="btn-flat">
-                                <i class="ri-arrow-down-s-line"></i>
-                            </div>
-                        </div>
-                        <div class="dropbox-flat">
-                            <div class="dropbox-img">
-                                <img src="assets/Content/Home/VLS_Howl.png">
-                            </div>
-
-                            <div class="dropbox-show">
-                                <div class="dropbox-text-left">
-                                    <p>Bust</p>
-                                    <p>Half Body</p>
-                                    <p>Full Body</p>
-                                </div>
-                                <div class="dropbox-text-right">
-                                    <p>US$45</p>
-                                    <p>US$55</p>
-                                    <p>US$65</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==== Dropbox: Hidden (Render) ====-->
-                    <div class="dropbox-container02">
-                        <div class="dropbox-header">
-                            <div>
-                                <p class="dropbox-number">02</p>
-                                <p class="dropbox-category">Render</p>
-                            </div>
-                            <div id="btn-render">
-                                <i class="ri-arrow-down-s-line"></i>
-                            </div>
-                        </div>
-                        <div class="dropbox-render">
-                            <div class="dropbox-img">
-                                <img src="assets/Content/Home/VLS_Jisoo_Square.png">
-                            </div>
-
-                            <div class="dropbox-show">
-                                <div class="dropbox-text-left">
-                                    <p>Bust</p>
-                                    <p>Half Body</p>
-                                    <p>Full Body</p>
-                                </div>
-                                <div class="dropbox-text-right">
-                                    <p>US$80</p>
-                                    <p>US$90</p>
-                                    <p>US$100</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==== Dropbox: Hidden (Backgrounds) ====-->
-                    <div class="dropbox-container03">
-                        <div class="dropbox-header">
-                            <div>
-                                <p class="dropbox-number">03</p>
-                                <p class="dropbox-category">Backgrounds</p>
-                            </div>
-                            <div id="btn-bg">
-                                <i class="ri-arrow-down-s-line"></i>
-                            </div>
-                        </div>
-                        <div class="dropbox-bg">
-                            <div class="dropbox-img">
-                                <img src="assets/Content/Home/VLS_GrassDay_Square.png">
-                            </div>
-
-                            <div class="dropbox-show">
-                                <div class="dropbox-text-left">
-                                    <p>Flat Colour</p>
-                                    <p>Simple</p>
-                                    <p>Detailed</p>
-                                </div>
-                                <div class="dropbox-text-right">
-                                    <p>-</p>
-                                    <p>US$45-$70</p>
-                                    <p>US$70+</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-column">
-                        <div class="footer-about">
-                            <a class="footer-logo" href="#">
-                                <image class="logo footer-logo"
-                                    src="assets/Content/Logos/Vauliys_Signature_White-alt.png">
-                            </a>
-                            <p class="footer-description">
-                                Also known as Victoria, providing a fresh burst of energy and colour to the creative
-                                scene. For business enquiries <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
-                            </p>
-                            <div class="footer-icons">
-                                <a href="https://www.instagram.com/vauliys/" target="_blank">
-                                    <i class="ri-instagram-line"></i></a>
+        <div class="mdl_tab-slider_motion fade-in mdl_tab-slider_hide">
+            <!--===(Tab Slider: Block - Bloomfest) ===-->
+            <!-- <div class="mdl_tab-slider_block">
+                <a href="bloomfest.html"><img src="assets/1.1_homepage/1.3_projects_bloomfest.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2023
+                    </button>
+                    <button class="btn_outline-stat">
+                        Animation
+                    </button>
+                    <button class="btn_outline-stat">
+                        Pre-Production
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Bloomfest - an original Vauliys short film.</h1>
+            </div> -->
+            <!--===(Tab Slider: Block - Solar Opposites) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="solar.html"><img src="assets/1.1_homepage/1.3_projects_solar.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2022
+                    </button>
+                    <button class="btn_outline-stat">
+                        Animation
+                    </button>
+                    <button class="btn_outline-stat">
+                        Hulu
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Solar Opposites - adult animated sitcom for Hulu.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Harvest Festival) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="harvest.html"><img src="assets/1.1_homepage/1.3_projects_harvest.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2021
+                    </button>
+                    <button class="btn_outline-stat">
+                        Animation
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Harvest - an original Vauliys short film and webcomic.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Melbourne Museum) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="topdesigns.html"><img src="assets/1.1_homepage/1.3_projects_topdesigns.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2018
+                    </button>
+                    <button class="btn_outline-stat">
+                        Animation
+                    </button>
+                    <button class="btn_outline-stat">
+                        Internship
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Top Designs- held @ the Melbourne Museum.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Till Payments) ===-->
+            <!-- <div class="mdl_tab-slider_block">
+                <a href="tillmotion.html"><img src="assets/1.1_homepage/1.3_projects_tillpayments_2.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        Animation
+                    </button>
+                    <button class="btn_outline-stat">
+                        3D
+                    </button>
+                    <button class="btn_outline-stat">
+                        Motion Graphics
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Till Payments - combining design with motion.</h1>
+            </div> -->
+        </div>
 
-                                <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">
-                                    <i class="ri-github-line"></i></a>
+        <div class="mdl_tab-slider_design fade-in mdl_tab-slider_hide">
+            <!--===(Tab Slider: Block - Till Payments) ===-->
+            <!-- <div class="mdl_tab-slider_block">
+                <img src="assets/1.1_homepage/1.3_projects_tillpayments.png" alt="">
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        Digital Designer
+                    </button>
+                    <button class="btn_outline-stat">
+                        Print Material
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Till Payments - making every payments possible.</h1>
+            </div> -->
+            <!--===(Tab Slider: Block - DUNKSO) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="dunkso.html"><img src="assets/1.1_homepage/1.3_projects_dunkso.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2023
+                    </button>
+                    <button class="btn_outline-stat">
+                        Brand Identity
+                    </button>
+                    <button class="btn_outline-stat">
+                        Logo Design
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Dunkso - balling in style, dunking the competition.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Vauliys) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="vauliys.html"><img src="assets/1.1_homepage/1.3_projects_vauliys-2.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2023
+                    </button>
+                    <button class="btn_outline-stat">
+                        Brand Identity
+                    </button>
+                    <button class="btn_outline-stat">
+                        Logo Design
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Vauliys - a personal branding identity.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Chocolate Box) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="chocolate.html"><img src="assets/1.1_homepage/1.3_projects_chocolatebox.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2022
+                    </button>
+                    <button class="btn_outline-stat">
+                        Product Packaging
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">The Chocolate Box - Melbourne's favourite chocolatier.</h1>
+            </div>
+            <!--===(Tab Slider: Block - IDOBAO) ===-->
+            <!-- <div class="mdl_tab-slider_block">
+                <img src="assets/1.1_homepage/1.3_projects_idobao.png" alt="">
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        2022
+                    </button>
+                    <button class="btn_outline-stat">
+                        Keyboard
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">IDOBAO - Customisationable keycaps.</h1>
+            </div> -->
+        </div>
 
-                                <a href="https://store.vauliys.com/" target="_blank">
-                                    <i class="ri-shopping-bag-2-line"></i></a>
+        <div class="mdl_tab-slider_art dual-column mdl_tab-slider_hide">
+            <!--===(Tab Slider: Block - Sketchbook) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="sketchbook.html"><img src="assets/1.1_homepage/1.3_projects_sketchbook.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        Sketching
+                    </button>
+                    <button class="btn_outline-stat">
+                        Art Studies
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Digital Sketchbook - a collection of Vauliys sketches.</h1>
+            </div>
+            <!--===(Tab Slider: Block - Art) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="art.html"><img src="assets/1.1_homepage/1.3_projects_illustration.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        Characters
+                    </button>
+                    <button class="btn_outline-stat">
+                        Props
+                    </button>
+                    <button class="btn_outline-stat">
+                        Environmental
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Illustrative pieces - personal Vauliys artworks.</h1>
+            </div>
+            <!--===(Tab Slider: Block - blank) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="https://store.vauliys.com" target="_blank"><img
+                        src="assets/1.1_homepage/1.3_projects_store.png" alt=""></a>
+                <div class="mdl_tab-slider_btns">
+                    <button class="btn_outline-stat">
+                        Brushes
+                    </button>
+                    <button class="btn_outline-stat">
+                        Online Store
+                    </button>
+                </div>
+                <h1 class="mdl_subheader">Digital Brush Sets available for download. </h1>
+            </div>
+        </div>
+    </div>
 
-                                <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                                    <i class="ri-linkedin-fill"></i></a>
-                            </div>
+
+    <!--==================== (Module) Small Icon Grid ===================-->
+    <div class="mdl_icon-grid" id="clients">
+        <div class="mdl_icon-grid_text">
+            <button class="btn_outline-stat">
+                Who I've worked with
+            </button>
+            <h1 class="mdl_header_stnd">Collaborative relationships established with brands.</h1>
+        </div>
+        <div class="mdl_icon-grid_icons">
+            <a href="solar.html">
+                <image id="logo_hulu" src="assets/logos/logo_hulu.svg">
+            </a>
+
+            <a href="tillmotion.html">
+                <image src="assets/logos/logo_till.svg">
+            </a>
+            <a href="huion.html">
+                <image src="assets/logos/logo_huion.svg">
+            </a>
+            <a href="solar.html">
+                <image src="assets/logos/logo_studiomoshi.svg">
+            </a>
+            <a href="logitech-2021.html">
+                <image id="logo_logitech" src="assets/logos/logo_logitech.svg">
+            </a>
+            <a href="paperlike.html">
+                <image src="assets/logos/logo_paperlike.svg">
+            </a>
+            <a href="xppen.html">
+                <image src="assets/logos/logo_xppen.svg">
+            </a>
+            <a href="vauliys.html">
+                <image src="assets/logos/vls_logomark_black.svg">
+            </a>
+        </div>
+    </div>
+
+    <!--==================== (Module) Footer ====================-->
+    <footer class="footer">
+        <div class="mdl_footer">
+            <!--==================== (Footer: Column ====================-->
+            <div class="mdl_footer-column">
+                <image class="logo" src="assets/logos/vls_logomark_white.jpg">
+                    <div class="mdl_text">
+                        For all business enquiries <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
+                    </div>
+                    <div class="icons">
+                        <a class="icon" href="https://www.instagram.com/vauliys/" target="_blank">
+                            <i class="ri-instagram-line"></i></a>
+
+                        <a class="icon" href="https://github.com/vauliys" target="_blank">
+                            <i class="ri-github-line"></i></a>
+
+                        <a class="icon" href="https://store.vauliys.com/" target="_blank">
+                            <i class="ri-shopping-bag-2-line"></i></a>
+
+                        <a class="icon" href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                            <i class="ri-linkedin-fill"></i></a>
+                    </div>
+            </div>
+
+            <!--==================== Footer: Column (Homepage) ====================-->
+            <div class="mdl_footer-column">
+                <!--======= Footer: Column - Mobile Version =========-->
+                <div class="mdl_dropbox_home desktop_hide">
+                    <div class="mdl_dropbox">
+                        Homepage
+                        <div id="btn_dropbox_home">
+                            <i class="ri-arrow-down-s-line"></i>
                         </div>
                     </div>
-                    <div class="footer-category">
-                        <div class="footer-column">
-                            <div class="footer-pages">
-                                <div class="footer-header">Home</div>
-                                <div class="footer-links">
-                                    <a href="#">Welcome</a>
-                                    <a href="index.html#about">About</a>
-                                    <a href="index.html#projects">Projects</a>
-                                    <a href="index.html#service-illustration">Services</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="footer-column">
-                            <div class="footer-pages">
-                                <div class="footer-header">Information</div>
-                                <div class="footer-links">
-                                    <a href="faq.html">FAQ</a>
-                                    <!-- <a href="enquire.html" target="_blank">Enquire Form</a> -->
-                                    <a href="links.html">Social Links</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="footer-column">
-                            <div class="footer-pages">
-                                <div class="footer-header"> Outsource</div>
-                                <div class="footer-links">
-                                    <a href="https://www.imdb.com/name/nm14674760/?ref_=fn_al_nm_3"
-                                        target="_blank">IMDB</a>
-                                    <a href="https://www.linkedin.com/in/vauliys" target="_blank">LinkedIn</a>
-                                    <a href="https://www.toonboom.com/ambassador/victoria-pritchard"
-                                        target="_blank">Toon
-                                        Boom</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="footer-column">
-                            <div class="footer-pages">
-                                <div class="footer-header">Design</div>
-                                <div class="footer-links">
-                                    <a href="chocolatebox.html">Chocolate Box</a>
-                                    <a href="dunkso.html">DUNKSO</a>
-                                    <!-- <a href="lashesbyrhi.html">LashesbyRhi</a>
-                                    <a href="tillpayments.html">Till Payments</a> -->
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="footer-column">
-                            <div class="footer-pages">
-                                <div class="footer-header">Motion</div>
-                                <div class="footer-links">
-                                    <a href="solar.html">Solar Opposites</a>
-                                    <a href="harvest.html">Harvest</a>
-                                    <a href="vfx.html">VFX</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mdl_dropbox_home-links">
+                        <a href="index.html#about">About Vauliys</a>
+                        <a href="index.html#projects">Project Gallery</a>
+                        <a href="index.html#clients">Previous Clients</a>
                     </div>
-
                 </div>
 
-                <hr style="background-color: #eae6df">
-                <p class="copyright">© Vauliys. All Rights Reserved</p>
+                <!--======= Footer: Column - Desktop Version =========-->
+                <div class="mobile_hide">
+                    <div class="mdl_footer-column">
+                        <button class="btn_outline-stat btn_outline-stat-inv">
+                            Homepage
+                        </button>
+                        <div class="mdl_footer-links">
+                            <a href="index.html#about">About Vauliys</a>
+                            <a href="index.html#projects">Project Gallery</a>
+                            <a href="index.html#clients">Previous Clients</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="scripts.js" defer></script>
-        <script src="dropbox-scripts.js" defer></script>
-        <script src="polaroid-scripts.js" defer></script>
+            <!--==================== FOOTER: Column (Resources) ====================-->
+            <div class="mdl_footer-column">
+                <!--======= FOOTER: Column - Mobile Version =========-->
+                <div class="mdl_dropbox_resources desktop_hide">
+                    <div class="mdl_dropbox">
+                        Resources
+                        <div id="btn_dropbox_resources">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
 
-    </body>
+                    <div class="mdl_dropbox_resources-links">
+                        <a href="https://store.vauliys.com" target="_blank">Online Store</a>
+                        <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
+                    </div>
+                </div>
+
+                <!--======= Foor: Column - Desktop Version =========-->
+                <div class="mobile_hide">
+                    <div class="mdl_footer-column">
+                        <button class="btn_outline-stat btn_outline-stat-inv">
+                            Resources
+                        </button>
+                        <div class="mdl_footer-links">
+                            <a href="https://store.vauliys.com" target="_blank">Online Store</a>
+                            <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== Footer: Column (Projects)====================-->
+            <div class="mdl_footer-column">
+                <!--======= Footer: Column - Mobile Version =========-->
+                <div class="mdl_dropbox_projects desktop_hide">
+                    <div class="mdl_dropbox">
+                        Projects
+                        <div id="btn_dropbox_projects">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+                    <div class="mdl_dropbox_projects-links">
+                        <div id="mdl_footer-links_m-social">Social</div>
+                        <div id="mdl_footer-links_m-motion">Motion</div>
+                        <div id="mdl_footer-links_m-design">Design</div>
+                        <div id="mdl_footer-links_m-art">Art</div>
+                    </div>
+                </div>
+
+                <!--======= Footer: Columnn - Desktop Version =========-->
+                <div class="mobile_hide">
+                    <div class="mdl_footer-column">
+                        <button class="btn_outline-stat btn_outline-stat-inv">
+                            Projects
+                        </button>
+                        <div class="mdl_footer-links">
+                            <div id="mdl_footer-links_d-social">Social</div>
+                            <div id="mdl_footer-links_d-motion">Motion</div>
+                            <div id="mdl_footer-links_d-design">Design</div>
+                            <div id="mdl_footer-links_d-art">Art</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mdl_footer-copyright">
+            <p class="mdl_footer-copyright_text">©2023 Vauliys</p>
+            <p class="mdl_footer-copyright_text"><a href="https://github.com/vauliys/vauliys.github.io"
+                    target="_blank">Built by Vauliys</a></p>
+        </div>
+    </footer>
+
+</body>
+<script src="scripts.js" defer></script>
+<script src="mdl_tab-slider.js" defer></script>
+<script src="mdl_footer.js"></script>
+<script src="mdl_navbar.js"></script>
 </html>
