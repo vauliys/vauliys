@@ -1,6 +1,6 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 5rem;
+    --header-height: 7rem;
 
     /*========== Colors ==========*/
     --colour-white: #ffffff;
@@ -230,13 +230,8 @@ video {
 /* Icons - Socials */
 .icon {
     margin: 0 0.5rem;
-    font-size: var(--body);
+    font-size: var(--h4);
     transition: 0.5s;
-}
-
-/* first icon in line has no margin */
-.icon:nth-child(1) {
-    margin: 0;
 }
 
 /*========== END: Icons and Logos==========*/
@@ -277,6 +272,38 @@ video {
 .btn_outline-stat-inv {
     color: var(--colour-white);
 }
+
+
+/* description: Outlined button with link */
+.btn_outline,
+.btn_outline-inv {
+    border: none;
+    outline: solid;
+    outline-color: var(--colour-grey02);
+    outline-width: 1px;
+
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+
+    cursor: pointer;
+
+    font-size: var(--caption);
+    color: var(--colour-black);
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.btn_outline-inv {
+    color: var(--colour-white);
+}
+
+.btn_outline:hover,
+.btn_outline-inv:hover {
+    outline-color: var(--colour-black);
+    color: var(--colour-white);
+    background-color: var(--colour-black);
+}
+
 
 /*========== Buttons (Plain) ==========*/
 /* description: plain text with link */
@@ -892,6 +919,10 @@ footer .logo {
     width: 2rem;
 }
 
+footer .icon:nth-child(1) {
+    margin: 0;
+}
+
 .mdl_footer-column {
     width: 100%;
     margin-bottom: var(--medium);
@@ -925,6 +956,38 @@ footer .logo {
 
 .mobile_hide {
     display: none;
+}
+
+.mdl_narrow-column {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.mdl_narrow-column img {
+    width: 100px;
+}
+
+.mdl_narrow-column .icons {
+    margin: var(--medium) 0;
+}
+
+.mdl_narrow-column .icons i {
+    font-size: var(--h3);
+    color: var(--colour-grey04);
+}
+
+.mdl_narrow-column_link-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+}
+
+.mdl_narrow-column_link-container .btn_outline {
+    font-size: 1rem;
 }
 
 /*========== MEDIA ENQUIRY ==========*/
@@ -1105,6 +1168,17 @@ footer .logo {
         padding: 0rem;
     }
 
+    .mdl_narrow-column {
+        margin-top: 2rem;
+    }
+
+    .mdl_narrow-column .icons i {
+        font-size: var(--h4);
+    }
+
+    .mdl_narrow-column_link-container .btn_outline {
+        font-size: var(--caption);
+    }
 }
 
 @media screen and (min-width: 1600px) {
