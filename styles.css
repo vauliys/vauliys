@@ -988,6 +988,7 @@ footer .icon:nth-child(1) {
 
 .mdl_narrow-column_link-container .btn_outline {
     font-size: 1rem;
+    width: 100%;
 }
 
 /*========== MEDIA ENQUIRY ==========*/
