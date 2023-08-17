@@ -61,7 +61,7 @@ if (navlinksocial) {
     navlinksocial.addEventListener('click', () => {
         navBar.classList.toggle('navbar-show'); /*toggles class*/
 
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabSocial.classList.toggle('mdl_tab-slider_item_active'); /*toggles class*/
         tabMotion.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -79,7 +79,7 @@ if (navlinkmotion) {
     navlinkmotion.addEventListener('click', () => {
         navBar.classList.toggle('navbar-show'); /*toggles class*/
 
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabMotion.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -97,7 +97,7 @@ if (navlinkdesign) {
     navlinkdesign.addEventListener('click', () => {
         navBar.classList.toggle('navbar-show'); /*toggles class*/
 
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabMotion.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -116,7 +116,7 @@ if (navlinkart) {
     navlinkart.addEventListener('click', () => {
         navBar.classList.toggle('navbar-show'); /*toggles class*/
 
-        document.location.href = 'index#projects';
+        document.location.href = '#art';
 
         tabArt.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -141,7 +141,7 @@ if (navlinkabout) {
     navlinkabout.addEventListener('click', () => {
         navBar.classList.toggle('navbar-show'); /*toggles class*/
 
-        document.location.href = 'index#about';
+        document.location.href = '#about';
     });
 }
 
@@ -149,7 +149,7 @@ if (navlinkprojects) {
     navlinkprojects.addEventListener('click', () => {
         navBar.classList.toggle('navbar-show'); /*toggles class*/
 
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
     });
 }
 
@@ -157,7 +157,7 @@ if (navlinkclients) {
     navlinkclients.addEventListener('click', () => {
         navBar.classList.toggle('navbar-show'); /*toggles class*/
 
-        document.location.href = 'index#clients';
+        document.location.href = '#clients';
     });
 }
 
