@@ -56,7 +56,7 @@ if (footerresources) {
 
 if (footerlinkdsocial) {
     footerlinkdsocial.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabSocial.classList.toggle('mdl_tab-slider_item_active'); /*toggles class*/
         tabMotion.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -72,7 +72,7 @@ if (footerlinkdsocial) {
 
 if (footerlinkmsocial) {
     footerlinkmsocial.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabSocial.classList.toggle('mdl_tab-slider_item_active'); /*toggles class*/
         tabMotion.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -89,7 +89,7 @@ if (footerlinkmsocial) {
 
 if (footerlinkdmotion) {
     footerlinkdmotion.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabMotion.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -105,7 +105,7 @@ if (footerlinkdmotion) {
 
 if (footerlinkmmotion) {
     footerlinkmmotion.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabMotion.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -122,7 +122,7 @@ if (footerlinkmmotion) {
 
 if (footerlinkddesign) {
     footerlinkddesign.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabMotion.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -138,7 +138,7 @@ if (footerlinkddesign) {
 
 if (footerlinkmdesign) {
     footerlinkmdesign.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabMotion.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -154,7 +154,7 @@ if (footerlinkmdesign) {
 
 if (footerlinkdart) {
     footerlinkdart.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabArt.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -170,7 +170,7 @@ if (footerlinkdart) {
 
 if (footerlinkmart) {
     footerlinkmart.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabArt.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
