@@ -779,14 +779,14 @@ html {
     gap: 0.5rem;
 }
 
-index#about {
+#about {
     text-align: center;
     padding-bottom: 0;
     padding: 0 10%;
     padding-top: var(--xxlarge);
 }
 
-index#about-more {
+#about-more {
     text-align: center;
 }
 
@@ -1037,7 +1037,7 @@ footer .icon:nth-child(1) {
     }
 
     /*========== START (DESKTOP )mdl_dual-col_text-img ==========*/
-    index#about {
+    #about {
         display: grid;
         grid-template-columns: 60% 40%;
         grid-gap: 5rem;
@@ -1048,7 +1048,7 @@ footer .icon:nth-child(1) {
         align-items: center;
     }
 
-    index#about-more {
+    #about-more {
         display: grid;
         grid-template-columns: 60% 40%;
         grid-gap: 5rem;
