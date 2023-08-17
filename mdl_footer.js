@@ -30,7 +30,7 @@ const btnfooterprojects = document.querySelector("#btn_dropbox_projects");
 const btnChevronUp = document.querySelector(".btn-chevron-up");
 
 
-
+/*==*/
 
 /*======*/
 if (footerhome) {
