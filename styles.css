@@ -986,9 +986,15 @@ footer .icon:nth-child(1) {
     grid-gap: 1rem;
 }
 
-.mdl_narrow-column_link-container .btn_outline {
+.mdl_narrow-column_link-container .btn_outline, .btn_solid{
     font-size: 1rem;
     width: 100%;
+}
+
+.mdl_narrow-column_link-container h4 {
+    font-size: var(--caption);
+    color: var(--colour-grey04);
+    font-weight: var(--regular);
 }
 
 /*========== MEDIA ENQUIRY ==========*/
@@ -1162,7 +1168,6 @@ footer .icon:nth-child(1) {
 
     .mdl_footer-copyright-text {
         padding: 0 0 0 1rem;
-
     }
 
     .mdl_footer-copyright-text:nth-of-type(1) {
@@ -1170,14 +1175,14 @@ footer .icon:nth-child(1) {
     }
 
     .mdl_narrow-column {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .mdl_narrow-column .icons i {
         font-size: var(--h4);
     }
 
-    .mdl_narrow-column_link-container .btn_outline {
+    .mdl_narrow-column_link-container .btn_outline, .btn_solid{
         font-size: var(--caption);
     }
 }
