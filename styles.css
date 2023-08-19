@@ -327,6 +327,11 @@ video {
     color: var(--colour-grey05);
 }
 
+#btn_affiliate .mdl_caption {
+    margin-top: 0.5rem;
+    line-height: 1rem;
+}
+
 /*========== Buttons (Solid) ==========*/
 /* description: solid button with link */
 .btn_solid,
@@ -962,7 +967,7 @@ footer .icon:nth-child(1) {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
@@ -970,6 +975,7 @@ footer .icon:nth-child(1) {
     font-weight: var(--regular);
     color: var(--colour-grey04);
 }
+
 .mdl_narrow-column img {
     width: 100px;
 }
@@ -993,7 +999,8 @@ footer .icon:nth-child(1) {
     display: grid;
 }
 
-.mdl_narrow-column_link-container .btn_outline, .btn_solid{
+.mdl_narrow-column_link-container .btn_outline,
+.mdl_narrow-column_link-container .btn_solid {
     font-size: 1rem;
     width: 100%;
     margin-bottom: 0.75rem;
@@ -1195,7 +1202,8 @@ footer .icon:nth-child(1) {
         font-size: var(--h4);
     }
 
-    .mdl_narrow-column_link-container .btn_outline, .btn_solid{
+    .mdl_narrow-column_link-container .btn_outline,
+    .btn_solid {
         font-size: var(--caption);
     }
 
