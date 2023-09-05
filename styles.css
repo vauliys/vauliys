@@ -964,7 +964,7 @@ footer .icon:nth-child(1) {
 }
 
 .mdl_narrow-column {
-    margin-top: 2rem;
+    margin-top: 10%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1192,7 +1192,7 @@ footer .icon:nth-child(1) {
     }
 
     .mdl_narrow-column {
-        margin-top: 3rem;
+        margin-top: 5%;
     }
 
     .mdl_narrow-column .btn_plain {
