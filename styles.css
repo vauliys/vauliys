@@ -1106,7 +1106,7 @@ footer .icon:nth-child(1) {
 
     .mdl_dual-column {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 5rem 10rem;
     }
 
