@@ -964,7 +964,7 @@ footer .icon:nth-child(1) {
 }
 
 .mdl_narrow-column {
-    margin-top: 1rem;
+    margin-top: 2rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
