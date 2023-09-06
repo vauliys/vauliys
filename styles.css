@@ -1,6 +1,6 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 5rem;
+    --header-height: 6.5rem;
 
     /*========== Colors ==========*/
     --colour-white: #ffffff;
@@ -187,6 +187,14 @@ video {
     width: 100%;
 }
 
+hr {
+    border-width: 0.1px;
+    border-color: var(--colour-grey01);
+    opacity: 0.2;
+    width: 100%;
+    margin: 10%;
+}
+
 
 /*========== Img: Black and White ==========*/
 .img_bw {
@@ -332,6 +340,9 @@ video {
     line-height: 1rem;
 }
 
+#btn_affiliate {
+    margin-bottom: 0;
+}
 /*========== Buttons (Solid) ==========*/
 /* description: solid button with link */
 .btn_solid,
@@ -412,7 +423,8 @@ html {
     display: none;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 10%;
+    padding: 0 10%;
+    height: 2.5rem;
 
     background-color: var(--colour-grey01);
 }
@@ -477,7 +489,8 @@ html {
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 10%;
+    padding: 0 10%;
+    height: 4rem;
 
     border-bottom: solid;
     border-width: 1px;
@@ -964,7 +977,8 @@ footer .icon:nth-child(1) {
 }
 
 .mdl_narrow-column {
-    margin-top: 10%;
+    margin: calc(var(--header-height) + 5%) 0;
+    padding: 10%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -991,7 +1005,6 @@ footer .icon:nth-child(1) {
 }
 
 .mdl_narrow-column_link-container {
-    margin: 0 auto;
     display: grid;
     flex-direction: column;
 }
@@ -1191,8 +1204,12 @@ footer .icon:nth-child(1) {
         padding: 0rem;
     }
 
+    hr {
+        margin: 5%;
+    }
+
     .mdl_narrow-column {
-        margin-top: 5%;
+        margin: calc(var(--header-height) + 5%) 0 calc(var(--header-height)) 0 ;
     }
 
     .mdl_narrow-column .btn_plain {
