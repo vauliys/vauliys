@@ -977,7 +977,7 @@ footer .icon:nth-child(1) {
 }
 
 .mdl_narrow-column {
-    margin: calc(var(--header-height) + 5%) 0;
+    margin: calc(var(--header-height) + 5%) 0 calc(var(--header-height)) 0 ;
     padding: 10%;
     height: 100vh;
     display: flex;
@@ -1206,10 +1206,6 @@ footer .icon:nth-child(1) {
 
     hr {
         margin: 5%;
-    }
-
-    .mdl_narrow-column {
-        margin: calc(var(--header-height) + 5%) 0 calc(var(--header-height)) 0 ;
     }
 
     .mdl_narrow-column .btn_plain {
