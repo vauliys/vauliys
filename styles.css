@@ -95,7 +95,7 @@ body {
     font-size: var(--body);
 
     background-color: var(--colour-white);
-    color: var(--colour-black);
+    color: var(--colour-grey05);
 }
 
 ::selection {
