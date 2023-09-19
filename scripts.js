@@ -65,4 +65,4 @@ setTimeout(() => {
 setTimeout(() => {
     loadingIcon.classList.add('hide');
     loader.classList.add('hide');
-}, 5990);
+}, 6000);
