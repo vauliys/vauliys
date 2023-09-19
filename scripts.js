@@ -33,23 +33,36 @@ if (btnexplore) {
     });
 }
 
+
+
+
 const video = document.getElementById('video');
 
 if (video) {
-let vid = document.getElementById("video");
-vid.volume = 0.05;
+    let vid = document.getElementById("video");
+    vid.volume = 0.05;
 }
 
-(function($){
+// (function($){
+// 	$('video').hover(function toggleControls() {
+// 		if (this.hasAttribute("controls")) {
+// 			this.removeAttribute("controls")
+// 		} else {
+// 			this.setAttribute("controls", "controls")
+// 		}
+// 	});
 
-    
-	$('#video').hover(function toggleControls() {
-		if (this.hasAttribute("controls")) {
-			this.removeAttribute("controls")
-		} else {
-			this.setAttribute("controls", "controls")
-		}
-	});
+// })(jQuery);
 
-})(jQuery);
 
+/*================ Loading icon ================*/    
+const loader = document.getElementById('loader');
+const loadingIcon = document.getElementById('loader-video');
+setTimeout(() => {
+    loader.classList.add('fade-out');
+    loadingIcon.classList.add('fade-out');
+}, 5000);
+setTimeout(() => {
+    loadingIcon.classList.add('hide');
+    loader.classList.add('hide');
+}, 6000);

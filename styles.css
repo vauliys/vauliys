@@ -55,6 +55,24 @@
 }
 
 /*========== START: Aniamtions ==========*/
+#loader {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colour-white);
+}
+
+#loader-video {
+    height: 25%;
+}
+
+
 @keyframes fade-in {
     from {
         opacity: 0%;
@@ -65,10 +83,33 @@
     }
 }
 
+@keyframes fade-out {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
 .fade-in {
     animation: fade-in 1s;
 }
 
+.fade-out {
+    animation: fade-out 1s;
+}
+
+
+.hide {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+  
 /*========== END: Aniamtions ==========*/
 
 
