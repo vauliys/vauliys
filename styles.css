@@ -636,11 +636,9 @@ html {
 }
 
 .mdl_fullpage-img video {
-    height: 100vh;
+    width:max-content;
     padding-bottom: 10em;
 }
-
-
 
 
 .mdl_fullpage-img_text-overlay {
