@@ -1013,7 +1013,7 @@ footer .icon:nth-child(1) {
 }
 
 
-.mobile_hide {
+.show {
     display: none;
 }
 
@@ -1071,7 +1071,7 @@ footer .icon:nth-child(1) {
 
 
 
-.hide {
+.hide, .desktop {
     display: none;
     opacity: 0;
     visibility: hidden;
@@ -1081,18 +1081,17 @@ footer .icon:nth-child(1) {
     display: flex;
 }
 
+
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 1024px) {
 
-    .mobile_hide {
+    .show, .banner, .desktop {
         display: flex;
+        opacity: 1;
+        visibility: visible;
     }
 
-    .banner {
-        display: flex;
-    }
-
-    .hide {
+    .hide, .mobile {
         display: none;
     }
 
