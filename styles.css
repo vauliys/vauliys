@@ -110,6 +110,10 @@
     margin-bottom: var(--small);
 }
 
+.mrg-btm_med {
+    margin-bottom: var(--medium);
+}
+
 .mrg-top_small {
     margin-top: var(--small);
 }
@@ -149,32 +153,33 @@ body {
 /*==================== END HTML BASE ====================*/
 
 /*========== START: Text Attributes ==========*/
-/*========== Headers and Paragraph Text ==========*/
-.mdl_header_lrg {
+/*========== Headers ==========*/
+h1 {
     font-size: var(--h1);
-    font-weight: var(--regular);
-    margin: var(--small) auto;
 }
 
-.mdl_header_stnd {
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
     font-size: var(--h3);
+} 
+
+h4 {
+font-size: var(--h4);
+}
+
+h1, h2, h3, h4 {
     font-weight: var(--regular);
     margin: var(--small) auto;
 }
 
-.mdl_subheader {
-    font-size: var(--h4);
-    font-weight: var(--regular);
-    margin: var(--small) auto;
-}
-
-.mdl_caption {
-    font-size: var(--caption);
-}
-
+/*========== Body Text ==========*/
 
 p {
     line-height: 1.5rem;
+    color: var(--colour-grey05);
 }
 
 p a {
@@ -190,13 +195,19 @@ p a {
 a {
     cursor: pointer;
     text-decoration: none;
-    font-weight: var(--medium);
+    font-weight: var(--regular);
     transition: 0.5s;
 }
 
 a:hover {
     color: var(--colour-grey04);
     transition: 0.5s;
+}
+
+/*========== Small Caption Text ==========*/
+
+.caption {
+    font-size: var(--caption);
 }
 
 
@@ -214,7 +225,7 @@ img {
 
 video {
     border-radius: 1rem;
-    width: 100%;
+    width: 100vw;
 }
 
 hr {
@@ -356,7 +367,6 @@ hr {
     cursor: pointer;
 
     color: var(--colour-black);
-    font-weight: 900;
     background-color: transparent;
     transition: 0.5s;
 }
@@ -365,7 +375,7 @@ hr {
     color: var(--colour-grey05);
 }
 
-#btn_affiliate .mdl_caption {
+#btn_affiliate .caption {
     margin-top: 0.5rem;
     line-height: 1rem;
 }
@@ -610,12 +620,12 @@ header {
     align-items: center;
     padding-bottom: 0;
     height: 100vh;
-    background-color: #210101;
+    background-color: var(--colour-white);
     overflow: hidden;
 }
 
 .mdl_fullpage-img video {
-    width:max-content;
+    width: 100vw;
     padding-bottom: 10em;
 }
 
@@ -1021,7 +1031,7 @@ footer .icon:nth-child(1) {
     justify-content: center;
 }
 
-.mdl_narrow-column .mdl_caption {
+.mdl_narrow-column .caption {
     font-weight: var(--regular);
     color: var(--colour-grey04);
 }
@@ -1108,7 +1118,7 @@ footer .icon:nth-child(1) {
 
     .mdl_fullpage-img_text-overlay {
         margin-top: var(--xxxxlarge);
-        padding-bottom: var(--xxxxlarge);
+        padding-bottom: var(--large);
         position: absolute;
         text-align: left;
         left: 0;
