@@ -103,13 +103,6 @@
 }
 
 
-.hide {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-}
-
-
   
 /*========== END: Aniamtions ==========*/
 
@@ -1078,8 +1071,10 @@ footer .icon:nth-child(1) {
 
 
 
-.banner_hide {
+.hide {
     display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .show {
@@ -1088,9 +1083,6 @@ footer .icon:nth-child(1) {
 
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 1024px) {
-    .desktop_hide {
-        display: none;
-    }
 
     .mobile_hide {
         display: flex;
@@ -1100,7 +1092,7 @@ footer .icon:nth-child(1) {
         display: flex;
     }
 
-    .banner_hide {
+    .hide {
         display: none;
     }
 
