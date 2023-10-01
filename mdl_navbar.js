@@ -3,7 +3,7 @@ const navBar = document.querySelector(".navbar_link-container");
 
 if (burgerMenu) {
     burgerMenu.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
     });
 }
 
@@ -27,21 +27,21 @@ const btnProjects = document.querySelector("#btn_dropbox_navbar-projects");
 
 if (navHome) {
     navHome.addEventListener('click', () => {
-        homeLinks.classList.toggle('navbar-show'); /*toggles class*/
+        homeLinks.classList.toggle('show'); /*toggles class*/
         btnHome.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 
 if (navResource) {
     navResource.addEventListener('click', () => {
-        resourceLinks.classList.toggle('navbar-show'); /*toggles class*/
+        resourceLinks.classList.toggle('show'); /*toggles class*/
         btnResource.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 
 if (navProjects) {
     navProjects.addEventListener('click', () => {
-        projectLinks.classList.toggle('navbar-show'); /*toggles class*/
+        projectLinks.classList.toggle('show'); /*toggles class*/
         btnProjects.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
@@ -59,7 +59,7 @@ const navlinkart = document.querySelector('#mdl_nav-links_art');
 
 if (navlinksocial) {
     navlinksocial.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
 
         document.location.href = 'index#projects';
 
@@ -77,7 +77,7 @@ if (navlinksocial) {
 
 if (navlinkmotion) {
     navlinkmotion.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
 
         document.location.href = 'index#projects';
 
@@ -95,7 +95,7 @@ if (navlinkmotion) {
 
 if (navlinkdesign) {
     navlinkdesign.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
 
         document.location.href = 'index#projects';
 
@@ -114,7 +114,7 @@ if (navlinkdesign) {
 
 if (navlinkart) {
     navlinkart.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
 
         document.location.href = '#art';
 
@@ -139,7 +139,7 @@ const navlinkclients = document.querySelector('#mdl_nav-links_clients');
 
 if (navlinkabout) {
     navlinkabout.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
 
         document.location.href = 'index#about';
     });
@@ -147,7 +147,7 @@ if (navlinkabout) {
 
 if (navlinkprojects) {
     navlinkprojects.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
 
         document.location.href = 'index#projects';
     });
@@ -155,7 +155,7 @@ if (navlinkprojects) {
 
 if (navlinkclients) {
     navlinkclients.addEventListener('click', () => {
-        navBar.classList.toggle('navbar-show'); /*toggles class*/
+        navBar.classList.toggle('show'); /*toggles class*/
 
         document.location.href = 'index#clients';
     });

@@ -451,7 +451,7 @@ html {
 /*========== START: (MOBILE) Fixed Header ==========*/
 /* description: fixed header with Information Banner */
 
-.header-fixed {
+header {
     width: 100vw;
     position: fixed;
     z-index: 3;
@@ -460,26 +460,31 @@ html {
     transform: translateY(0rem);
 }
 
-/*========== Information banner ==========*/
+.header_hide {
+    transform: translateY(-7rem);
+    transition: 0.5s ease-in-out;
+}
+
+/*========== START: Information Banner ==========*/
+/*========== Closeable banner with links ==========*/
 .banner {
     display: none;
     align-items: center;
     justify-content: space-between;
+
     padding: 0 10%;
     height: 2.5rem;
-
     background-color: var(--colour-grey01);
 }
 
 .banner_grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: repeat(7,auto);
     white-space: nowrap;
     align-items: center;
 }
 
-/* Last link in banner grid has no grid-gap to be aligned with right padding */
-.banner_grid:last-child {
+.banner_grid:last-child { /* Last link in banner grid has no grid-gap to be aligned with right padding */
     grid-gap: 0rem;
 }
 
@@ -487,30 +492,22 @@ html {
     font-weight: var(--regular);
     font-size: var(--caption);
     color: var(--colour-black);
+
     transition: 0.5s;
 }
 
 .banner_grid a:hover {
     color: var(--colour-grey04);
+
     transition: 0.5s;
 }
 
-
-.banner_i-close {
+#banner_i-close {
     margin-left: var(--small);
     cursor: pointer;
+
     transition: 0.5s;
-
-}
-
-.banner-i-close:hover {
-    color: var(--colour-grey04);
-    transition: 0.5s;
-}
-
-.banner_hide {
-    display: none;
-}
+} 
 
 .vert-div {
     height: 80%;
@@ -518,13 +515,8 @@ html {
     border-right: 1px solid #babbc9;
 }
 
-.header_hide {
-    transform: translateY(-7rem);
-    transition: 0.5s ease-in-out;
-}
 
-
-/*========== START: MOBILE: Navbar (Hamburger Menu + Links) ==========*/
+/*========== START: Navbar (Hamburger Menu + Links) ==========*/
 /* description: Inside header click the hamburger menu to reveal navigation links*/
 .navbar {
     display: flex;
@@ -551,7 +543,6 @@ html {
 
     background-color: var(--colour-white);
     font-weight: var(--regular);
-    color: var(--colour-black);
     padding: var(--xlarge) 10%;
     transition: opacity 0.5s, height 1s;
 
@@ -567,13 +558,15 @@ html {
 .mdl_dropbox_navbar-projects_links,
 .mdl_dropbox_navbar-resources_links {
     display: none;
-    line-height: 3rem;
-    transition: 1s;
     text-align: start;
+    flex-direction: column;
+    transition: 1s;
+
+    line-height: 3rem;
     color: var(--colour-grey04);
+
+    transition: 1s;
 }
-
-
 
 .mdl_navbar-column {
     width: 100%;
@@ -582,14 +575,6 @@ html {
 
 .mdl_navbar-column a {
     color: var(--colour-grey04);
-}
-
-
-
-.navbar-show {
-    display: flex;
-    flex-direction: column;
-    transition: 1s;
 }
 
 .hamburger-menu:hover {
@@ -1081,6 +1066,18 @@ footer .icon:nth-child(1) {
     font-size: var(--caption);
     color: var(--colour-grey04);
     font-weight: var(--regular);
+}
+
+
+
+
+
+.banner_hide {
+    display: none;
+}
+
+.show {
+    display: flex;
 }
 
 /*========== MEDIA ENQUIRY ==========*/
