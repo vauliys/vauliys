@@ -236,18 +236,6 @@ hr {
     margin: 10%;
 }
 
-
-/*========== Img: Black and White ==========*/
-.img_bw {
-    filter: grayscale(0);
-    transition: 0.5s;
-}
-
-.img_bw:hover {
-    filter: grayscale(1);
-    transition: 0.5s;
-}
-
 /*========== END: Text Attributes ==========*/
 
 /*========== START: Icons and Logos==========*/
