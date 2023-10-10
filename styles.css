@@ -172,7 +172,7 @@ font-size: var(--h4);
 
 h1, h2, h3, h4 {
     font-weight: var(--regular);
-    margin: var(--small) auto;
+    margin: var(--small) 0;
 }
 
 /*========== Body Text ==========*/
