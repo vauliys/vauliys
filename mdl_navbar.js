@@ -116,7 +116,7 @@ if (navlinkart) {
     navlinkart.addEventListener('click', () => {
         navBar.classList.toggle('show'); /*toggles class*/
 
-        document.location.href = 'index#art';
+        document.location.href = '#art';
 
         tabArt.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
