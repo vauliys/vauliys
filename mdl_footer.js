@@ -184,20 +184,3 @@ if (footerlinkmart) {
         gridMotion.classList.add('mdl_tab-slider_hide'); /*toggles class*/
     });
 }
-
-
-if (index) {
-    footerlinkmart.addEventListener('click', () => {
-        document.location.href = '#projects';
-
-        tabArt.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
-        tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
-        tabDesign.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
-        tabMotion.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
-
-        gridArt.classList.remove('mdl_tab-slider_hide'); /*toggles class*/
-        gridSocial.classList.add('mdl_tab-slider_hide'); /*toggles class*/
-        gridDesign.classList.add('mdl_tab-slider_hide'); /*toggles class*/
-        gridMotion.classList.add('mdl_tab-slider_hide'); /*toggles class*/
-    });
-}
