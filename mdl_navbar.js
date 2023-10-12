@@ -148,8 +148,9 @@ if (navlinkabout) {
 if (navlinkprojects) {
     navlinkprojects.addEventListener('click', () => {
         navBar.classList.toggle('show'); /*toggles class*/
-
+        
         document.location.href = '#projects';
+        document.location.href = 'index#projects';
     });
 }
 
