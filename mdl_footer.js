@@ -188,7 +188,7 @@ if (footerlinkmart) {
 
 if (index) {
     footerlinkdart.addEventListener('click', () => {
-        document.location.href = 'index#projects';
+        document.location.href = '#projects';
 
         tabArt.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
@@ -200,7 +200,7 @@ if (index) {
         gridDesign.classList.add('mdl_tab-slider_hide'); /*toggles class*/
         gridMotion.classList.add('mdl_tab-slider_hide'); /*toggles class*/
     });
-    
+
     footerlinkmart.addEventListener('click', () => {
         document.location.href = '#projects';
 
