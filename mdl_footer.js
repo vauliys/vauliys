@@ -31,7 +31,6 @@ const btnChevronUp = document.querySelector(".btn-chevron-up");
 
 
 /*==*/
-const index =document.getElementById("#index")
 
 /*======*/
 if (footerhome) {
