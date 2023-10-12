@@ -749,6 +749,10 @@ header {
     height: 1.25rem;
 }
 
+#error {
+    background-color: transparent;
+}
+
 /*========== START (MOBILE) mdl_dual-column ==========*/
 .mdl_single-column {
     display: flex;
@@ -778,6 +782,7 @@ header {
 
 #indiv-project {
     padding: var(--large) 15%;
+    align-items: flex-start;
 }
 
 #indiv-project .mdl_header_stnd {
@@ -788,7 +793,7 @@ header {
 .mdl_tab-slider_sol-props,
 .mdl_tab-slider_sol-char,
 .indiv-project_content {
-    padding: var(--large) 15%;
+    padding: 5%;
     background-color: var(--colour-grey01);
     display: grid;
 
@@ -796,7 +801,10 @@ header {
     grid-gap: 1rem;
 }
 
-
+.mdl_tab-slider_sol-props video,
+.mdl_tab-slider_sol-char video {
+    width: 100%;
+}
 
 .mdl_tab-slider_hide {
     display: none;
@@ -814,6 +822,7 @@ header {
 .mdl_dropbox_projects-links,
 .mdl_dropbox_resources-links {
     display: none;
+    flex-direction: column;
     line-height: 2.5rem;
     transition: 1s;
     text-align: start;
@@ -827,20 +836,10 @@ header {
 
 .mdl_dropbox {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     margin-bottom: var(--medium);
-}
-
-.mdl_fullpage-gallery {
-    display: grid;
-    grid-gap: 1rem;
-    padding: var(--medium) 10% 0 10%;
-}
-
-
-.mdl_fullpage-gallery img {
-    height: 100%;
+    width: 100%;
 }
 
 #logitech-21 {
@@ -853,6 +852,7 @@ header {
 
 .mdl_mosaic-gallery video {
     width: 100%;
+    height: 100%;
 }
 
 
@@ -880,6 +880,9 @@ header {
 }
 
 /*========== START (MOBILE) Footer ==========*/
+#footer-solar {
+    margin-top: 0;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -1000,6 +1003,7 @@ footer .icon:nth-child(1) {
 
 .show, .mobile {
     display: flex;
+    flex-direction: column;
 }
 
 
@@ -1107,6 +1111,7 @@ footer .icon:nth-child(1) {
     .mdl_tab-slider_sol-props,
     .mdl_tab-slider_sol-char {
         display: grid;
+        padding: 5% 15%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
