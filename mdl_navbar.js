@@ -141,7 +141,7 @@ if (navlinkabout) {
     navlinkabout.addEventListener('click', () => {
         navBar.classList.toggle('show'); /*toggles class*/
 
-        document.location.href = 'index#about';
+        document.location.href = '/#about';
     });
 }
 
@@ -149,7 +149,7 @@ if (navlinkprojects) {
     navlinkprojects.addEventListener('click', () => {
         navBar.classList.toggle('show'); /*toggles class*/
 
-        document.location.href = 'index#projects';
+        document.location.href = '/#projects';
     });
 }
 
@@ -157,7 +157,7 @@ if (navlinkclients) {
     navlinkclients.addEventListener('click', () => {
         navBar.classList.toggle('show'); /*toggles class*/
 
-        document.location.href = 'index#clients';
+        document.location.href = '/#clients';
     });
 }
 
