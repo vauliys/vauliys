@@ -47,7 +47,7 @@ if (tabMotion) {
 if (tabDesign) {
     /* when Slider item (Motion) is clicked perform code*/
     tabDesign.addEventListener('click', () => {
-        tabMotion.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
+        tabDesign.classList.add('mdl_tab-slider_item_active'); /*toggles class*/
         tabSocial.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
         tabMotion.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
         tabArt.classList.remove('mdl_tab-slider_item_active'); /*removes class*/
