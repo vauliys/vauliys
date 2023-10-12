@@ -27,27 +27,25 @@ favicon-16x16.png">
 </head>
 
 <body class="fade-in">
-    <!-- <div id="loader">
-        <video id="loader-video" loop autoplay muted src="assets/0.0_loader-animation.mp4"></video></div> -->
     <!--==================== (Module) Fixed Header ====================-->
     <header id="header">
         <div class="banner" id="banner">
             <image class="wordmark" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Wordmark_Black.svg">
-                <div class="banner_grid">
-                    <a class="banner_link" href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online
-                        Store</a>
-                    <div class="vert-div"></div>
-                    <a class="banner_link" href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
-                    <div class="vert-div"></div>
-                    <a class="banner_link" href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
-                    <i class="ri-close-line" id="banner_i-close"></i>
-                </div>
-
+                <a class="banner_link" href="https://store.vauliys.com/" target="_blank">Code VAL05 for 5% off brushes!</a>
+                <i class="ri-close-line" id="banner_i-close"></i>
         </div>
         <div class="navbar">
             <a href="#">
                 <image class="logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
             </a>
+            <div class="header_grid desktop">
+                <a class="header_link" href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online
+                    Store</a>
+                <div class="vert-div"></div>
+                <a class="header_link" href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
+                <div class="vert-div"></div>
+                <a class="header_link" href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
+            </div>
             <div class="hamburger-menu">
                 <div class="hamburger-bar"></div>
                 <div class="hamburger-bar"></div>
@@ -106,63 +104,37 @@ favicon-16x16.png">
                     </div>
                 </div>
             </div>
-
-
         </div>
-
     </header>
 
-    <!--===================== (Module) Full Page with Text Overlay (Bottom Left) ===================-->
-    <div class="mdl_fullpage-img">
-        <div class="mdl_fullpage-img_text-overlay">
-            <!-- <button class="btn_outline-stat">
-                Digital Designer
-            </button> -->
-            <h2>Vauliys</h2>
-            <p class="mrg-btm_med" style="color: white;">A multi-talented artist, designer, and animator
-                based in Australia. Providing a fresh burst of energy and
-                colour to the creative scene.</p>
-            <button class="btn_solid-inv" id="btn_explore">
+    <!--===================== (Module) Fullbleed Video with Text Overlay ===================-->
+    <div class="mdl_fullbleed">
+        <div class="mdl_fullbleed_text">
+            <h1><strong>Vauliys</strong></h1>
+            <p class="mrg-btm_med" style="color: black;">A multi-talented digital content creator
+                based in Australia. </p>
+            <button class="btn_outline" id="btn_explore">
                 Explore
-            </button>
+            
         </div>
-        <video autoplay loop muted src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Animation_Flame-Loop.mp4"
-            alt="Animation_Flame-Loop.mp4"></video>
-
+        <video class="desktop"autoplay loop muted src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Till_Portable_Desktop.mp4" alt=""></video>
+        <video class="mobile"autoplay loop muted src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Till_Portable_Mobile.mp4" alt=""></video>
 
     </div>
 
+    <!--===================== (Module) Dual Column ===================-->
     <div class="mdl_dual-column" id="about">
         <div class="mdl_dual-column_l">
             <div>
-                <button class="btn_outline-stat">
-                    Who is Vauliys?
-                </button>
-                <h3>Nice to meet you :)</h3>
+                <h3><strong>Howdy hey, nice to meet you.</strong></h3>
                 <p class="mrg-btm_small">
-                    Victoria, also known as Vauliys <i>(ˈvæl-ɪs or ˈvɔl-ɪs)</i>, is a multi-talented artist, designer,
-                    and
-                    animator based in Australia.
+                    Victoria / Vauliys <i>(ˈvæl-ɪs or ˈvɔl-ɪs)</i>, is known for her work on Hulu adult animated series
+                    Solar Opposites and illustrative content featured on her social media platforms of 40K+ global
+                    followers.
                 </p>
-                <p class="mrg-btm_small">
-                    Starting her career freelancing for
-                    Logitech, Australian Redcross
-                    and Solar Opposites, Victoria has
-                    transitioned to a full-time Digital Designer in the Fintech Industry under Till Payments,
-                    while balancing freelance opportunities on the side.
-                </p>
-                <p class="mrg-btm_small">
-                    Her artwork has been featured in several publications, and her social media presence continues to
-                    grow,
-                    with over 40K+ collective fans following her journey.
-                </p>
-                <a href="https://instagram.com/vauliys" target="_blank"><button class="btn_solid">
-                        Explore her Instagram
-                    </button></a>
-                <a href="https://linkedin.com/in/vauliys/" target="_blank"><button class="btn_plain">
-                        Check out her Linkedin
-                        <i class="ri-arrow-right-line"></i>
-                    </button>
+
+                <a href="" target="_blank">
+                    <p class="btn_plain">Learn more<i class="ri-arrow-right-line"></i>
                 </a>
             </div>
         </div>
@@ -176,7 +148,8 @@ favicon-16x16.png">
     <!--==================== (Module) Tab Slider Gallery ===================-->
     <div class="mdl_tab-slider_gallery" id="projects">
         <div class="mdl_tab-slider_header">
-            <h3>Projects</h3>
+            <h3 class="mrg-btm_med"><strong>Project Gallery</strong></h3>
+
             <div class="mdl_tab-slider_container">
                 <div class="mdl_tab-slider_item mdl_tab-slider_item_active" id="mdl_tab-slider_art">Art</div>
                 <div class="mdl_tab-slider_item" id="mdl_tab-slider_design">Design</div>
@@ -192,62 +165,62 @@ favicon-16x16.png">
                         src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX3S.jpg"
                         alt="Thumbnail_Logitech-MX3S"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2023
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Collab
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Product Feature
                     </button>
                 </div>
-                <h4>Logitech - Master your flow with MX Master Series.</h3>
+                <h4>Logitech - Master your flow with MX Master Series.</h4>
             </div>
             <!--=== (Tab Slider: Block - Paperlike) ===-->
             <div class="mdl_tab-slider_block">
                 <a href="paperlike"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Paperlike.jpg"
                         alt="Thumbnail_Paperlike"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2023
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Ambassador
                     </button>
                 </div>
-                <h4>Paperlike - Fall in love with drawing on your iPad.</h3>
+                <h4>Paperlike - Fall in love with drawing on your iPad.</h4>
             </div>
             <!--=== (Tab Slider: Block - XPPEN ===-->
             <div class="mdl_tab-slider_block">
                 <a href="xppen"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN.jpg"
                         alt="Thumbnail_XPPEN"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2022
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Ambassador
                     </button>
                 </div>
-                <h4>XPPEN - Dream. Brave. True.</h3>
+                <h4>XPPEN - Dream. Brave. True.</h4>
             </div>
             <!--===(Tab Slider: Block - Huion) ===-->
             <div class="mdl_tab-slider_block">
                 <a href="huion"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Kamvas-22.jpg"
                         alt="Thumbnail_Kamvas-22.jpg"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2022
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Collab
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Product Feature
                     </button>
                 </div>
-                <h4>Huion - Simple but powerful with Kamvas 22.</h3>
+                <h4>Huion - Simple but powerful with Kamvas 22.</h4>
             </div>
             <!--===(Tab Slider: Block - Logitech) ===-->
             <div class="mdl_tab-slider_block">
@@ -255,13 +228,13 @@ favicon-16x16.png">
                         src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX.jpg"
                         alt="Thumbnail_Logitech-MX.jpg"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2021
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Collab
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Product Feature
                     </button>
                 </div>
@@ -274,14 +247,14 @@ favicon-16x16.png">
                         src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Toon-Boom.jpg"
                         alt="Thumbnail_Toon-Boom"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2022
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Ambassador
                     </button>
                 </div>
-                <h4>Toon Boom - Advance the craft of animation.</h3>
+                <h4>Toon Boom - Advance the craft of animation.</h4>
             </div>
         </div>
         <div class="mdl_tab-slider_motion fade-in mdl_tab-slider_hide">
@@ -292,17 +265,17 @@ favicon-16x16.png">
                         alt="Thumbnail_Solar-Opposites.jpg">
                 </a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2022
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Animation
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Hulu
                     </button>
                 </div>
-                <h4>Solar Opposites - adult animated sitcom for Hulu.</h3>
+                <h4>Solar Opposites - adult animated sitcom for Hulu.</h4>
             </div>
             <!--===(Tab Slider: Block - Harvest Festival) ===-->
             <div class="mdl_tab-slider_block">
@@ -311,14 +284,14 @@ favicon-16x16.png">
                         alt="Thumbnail_Harvest-Festival.jpg">
                 </a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2021
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Animation
                     </button>
                 </div>
-                <h4>Harvest - an original Vauliys short film and webcomic.</h3>
+                <h4>Harvest - an original Vauliys short film and webcomic.</h4>
             </div>
             <!--===(Tab Slider: Block - Melbourne Museum) ===-->
             <div class="mdl_tab-slider_block">
@@ -327,13 +300,13 @@ favicon-16x16.png">
                         alt="Thumbnail_Top-Designs.jpg">
                 </a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2018
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Animation
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Internship
                     </button>
                 </div>
@@ -349,17 +322,17 @@ favicon-16x16.png">
                         alt="Thumbnail_Dunkso.jpg">
                 </a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2023
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Identity
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Logo Design
                     </button>
                 </div>
-                <h4>Dunkso - balling in style, dunking the competition.</h3>
+                <h4>Dunkso - balling in style, dunking the competition.</h4>
             </div>
             <!--===(Tab Slider: Block - Vauliys) ===-->
             <div class="mdl_tab-slider_block">
@@ -368,17 +341,17 @@ favicon-16x16.png">
                         alt="Thumbnail_Vauliys.jpg">
                 </a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2023
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brand Identity
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Logo Design
                     </button>
                 </div>
-                <h4>Vauliys - a personal branding identity.</h3>
+                <h4>Vauliys - a personal branding identity.</h4>
             </div>
             <!--===(Tab Slider: Block - Chocolate Box) ===-->
             <div class="mdl_tab-slider_block">
@@ -387,17 +360,17 @@ favicon-16x16.png">
                         alt="Thumbnail_Chocolate-Box.jpg">
                 </a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2022
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         2023
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Product Packaging
                     </button>
                 </div>
-                <h4>The Chocolate Box - Melbourne's favourite chocolatier.</h3>
+                <h4>The Chocolate Box - Melbourne's favourite chocolatier.</h4>
             </div>
 
         </div>
@@ -407,17 +380,17 @@ favicon-16x16.png">
                 <a href="locked"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Neyomi.jpg"
                         alt="Thumbnail_Neyomi.jpg"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Artbook
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Novella
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Locked
                     </button>
                 </div>
-                <h4>Althea's Loom - Threads of Fate by Vauliys.</h3>
+                <h4>Althea's Loom - Threads of Fate by Vauliys.</h4>
             </div>
 
             <!--===(Tab Slider: Block - Art) ===-->
@@ -425,17 +398,17 @@ favicon-16x16.png">
                 <a href="art"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg"
                         alt="Thumbnail_Grass.jpg"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Characters
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Props
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Environmental
                     </button>
                 </div>
-                <h4>Illustrative pieces - personal Vauliys artworks.</h3>
+                <h4>Illustrative pieces - personal Vauliys artworks.</h4>
             </div>
             <!--===(Tab Slider: Block - blank) ===-->
             <div class="mdl_tab-slider_block">
@@ -443,14 +416,14 @@ favicon-16x16.png">
                         src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Ocean.jpg"
                         alt="Thumbnail_Ocean.jpg"></a>
                 <div class="mdl_tab-slider_btns">
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Brushes
                     </button>
-                    <button class="btn_outline-stat">
+                    <button class="keyword_outline-stat">
                         Online Store
                     </button>
                 </div>
-                <h4>Digital Brush Sets available for download. </h3>
+                <h4>Digital Brush Sets available for download. </h4>
             </div>
         </div>
     </div>
@@ -458,174 +431,178 @@ favicon-16x16.png">
     <!--==================== (Module) Small Icon Grid ===================-->
     <div class="mdl_icon-grid" id="clients">
         <div class="mdl_icon-grid_text">
-            <button class="btn_outline-stat">
-                Who I've worked with
-            </button>
-            <h3>Collaborative relationships established with brands.</h3>
+            <h3 class="mrg-btm_med"><strong>Collaborative relationships established with brands.</strong></h3>
+            <p class="mrg-btm_small">
+                Working with a variety of brands, Victoria has a wide suite of skills to fit all kinds of briefs
+                including animation, social media and graphic design.
+            </p>
         </div>
         <div class="mdl_icon-grid_icons">
-            <a href="solar">
+            <image id="logo_logitech" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg" alt="Logo_Logitech.svg">
+
                 <image id="logo_hulu" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Hulu.svg"
                     alt="Logo_Hulu.svg">
-            </a>
-            <a href="tillmotion">
-                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Till.svg" alt="Logo_Till.svg">
-            </a>
-            <a href="huion">
-                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Huion.svg" alt="Logo_Huion.svg">
-            </a>
-            <a href="solar">
-                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Studio-Moshi.svg"
-                    alt="Logo_Studio-Moshi.svg">
-            </a>
-            <a href="logitech-mx3s">
-                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg" alt="Logo_Logitech.svg">
-            </a>
-            <a href="paperlike">
-                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Paperlike.svg" alt="Logo_Paperlike.svg">
-            </a>
-            <a href="xppen">
-                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_XPPEN.svg" alt="Logo_XPPEN.svg">
-            </a>
+
+                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Till.svg" alt="Logo_Till.svg">
+
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Huion.svg" alt="Logo_Huion.svg">
+
+                            <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Studio-Moshi.svg"
+                                alt="Logo_Studio-Moshi.svg">
+
+                                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Paperlike.svg"
+                                    alt="Logo_Paperlike.svg">
+
+                                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_XPPEN.svg"
+                                        alt="Logo_XPPEN.svg">
+
+                                        <image class="desktop"
+                                            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Xencelabs.svg"
+                                            alt="Logo_Xenecelabs.svg">
+                                            <image class="mobile"
+                                                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Xencelabs.svg"
+                                                alt="Logomark_Xenecelabs.svg"></image>
         </div>
     </div>
 
-    <!--==================== (Module) Footer ====================-->
-    <footer class="footer">
-        <div class="mdl_footer">
-            <!--==================== (Footer: Column ====================-->
-            <div class="mdl_footer-column">
-                <a href="#">
-                    <image class="logo"
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Logomark_White.jpg"
-                        alt="Logo_Vauliys_Logomark_White.jpg">
-                </a>
-                <div class="mrg-btm_small">
-                    For all business enquiries <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
+<!--==================== (Module) Footer ====================-->
+<footer class="footer">
+    <div class="mdl_footer">
+        <!--==================== (Footer: Column ====================-->
+        <div class="mdl_footer-column">
+            <a href="#">
+                <image class="logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/
+Logo_Vauliys_Logomark_White.jpg">
+            </a>
+            <div class="mrg-btm_small">
+                For all business enquiries <a href="mailto:hello@vauliys.com">hello@vauliys.com</a>
+            </div>
+            <div class="icons">
+                <a class="icon" href="https://www.instagram.com/vauliys/" target="_blank">
+                    <i class="ri-instagram-line"></i></a>
+
+                <a class="icon" href="https://github.com/vauliys" target="_blank">
+                    <i class="ri-github-line"></i></a>
+
+                <a class="icon" href="https://store.vauliys.com/" target="_blank">
+                    <i class="ri-shopping-bag-2-line"></i></a>
+
+                <a class="icon" href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                    <i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+
+        <!--==================== Footer: Column (Homepage) ====================-->
+        <div class="mdl_footer-column">
+            <!--======= Footer: Column - Mobile Version =========-->
+            <div class="mdl_dropbox_home mobile">
+                <div class="mdl_dropbox">
+                    Homepage
+                    <div id="btn_dropbox_home">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
                 </div>
-                <div class="icons">
-                    <a class="icon" href="https://www.instagram.com/vauliys/" target="_blank">
-                        <i class="ri-instagram-line"></i></a>
 
-                    <a class="icon" href="https://github.com/vauliys" target="_blank">
-                        <i class="ri-github-line"></i></a>
-
-                    <a class="icon" href="https://store.vauliys.com/" target="_blank">
-                        <i class="ri-shopping-bag-2-line"></i></a>
-
-                    <a class="icon" href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                        <i class="ri-linkedin-fill"></i></a>
+                <div class="mdl_dropbox_home-links">
+                    <a href="#about">About Vauliys</a>
+                    <a href="#projects">Project Gallery</a>
+                    <a href="#clients">Previous Clients</a>
                 </div>
             </div>
 
-            <!--==================== Footer: Column (Homepage) ====================-->
-            <div class="mdl_footer-column">
-                <!--======= Footer: Column - Mobile Version =========-->
-                <div class="mdl_dropbox_home mobile">
-                    <div class="mdl_dropbox">
-                        Homepage
-                        <div id="btn_dropbox_home">
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                    </div>
+            <!--======= Footer: Column - Desktop Version =========-->
 
-                    <div class="mdl_dropbox_home-links">
+            <div class="desktop">
+                <div class="mdl_footer-column">
+                    <button class="keyword_outline-stat keyword_outline-stat-inv">
+                        Homepage</button>
+
+                    <div class="mdl_footer-links">
                         <a href="#about">About Vauliys</a>
                         <a href="#projects">Project Gallery</a>
                         <a href="#clients">Previous Clients</a>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!--======= Footer: Column - Desktop Version =========-->
-                <div class="desktop">
-                    <div class="mdl_footer-column">
-                        <button class="btn_outline-stat btn_outline-stat-inv">
-                            Homepage
-                        </button>
-                        <div class="mdl_footer-links">
-                            <a href="#about">About Vauliys</a>
-                            <a href="#projects">Project Gallery</a>
-                            <a href="#clients">Previous Clients</a>
-                        </div>
+        <!--==================== FOOTER: Column (Resources) ====================-->
+        <div class="mdl_footer-column">
+            <!--======= FOOTER: Column - Mobile Version =========-->
+            <div class="mdl_dropbox_resources mobile">
+                <div class="mdl_dropbox">
+                    Resources
+                    <div id="btn_dropbox_resources">
+                        <i class="ri-arrow-down-s-line"></i>
                     </div>
+                </div>
+
+                <div class="mdl_dropbox_resources-links">
+                    <a href="https://store.vauliys.com" target="_blank">Online Store</a>
+                    <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
+                    <a href="links">Link Directory</a>
+
                 </div>
             </div>
 
-            <!--==================== FOOTER: Column (Resources) ====================-->
-            <div class="mdl_footer-column">
-                <!--======= FOOTER: Column - Mobile Version =========-->
-                <div class="mdl_dropbox_resources mobile">
-                    <div class="mdl_dropbox">
-                        Resources
-                        <div id="btn_dropbox_resources">
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                    </div>
+            <!--======= Foor: Column - Desktop Version =========-->
 
-                    <div class="mdl_dropbox_resources-links">
+            <div class="desktop">
+                <div class="mdl_footer-column">
+                    <button class="keyword_outline-stat keyword_outline-stat-inv">
+                        Resources</button>
+
+                    <div class="mdl_footer-links">
                         <a href="https://store.vauliys.com" target="_blank">Online Store</a>
                         <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
                         <a href="links">Link Directory</a>
-
-                    </div>
-                </div>
-
-                <!--======= Foor: Column - Desktop Version =========-->
-                <div class="desktop">
-                    <div class="mdl_footer-column">
-                        <button class="btn_outline-stat btn_outline-stat-inv">
-                            Resources
-                        </button>
-                        <div class="mdl_footer-links">
-                            <a href="https://store.vauliys.com" target="_blank">Online Store</a>
-                            <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
-                            <a href="links">Link Directory</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--==================== Footer: Column (Projects)====================-->
-            <div class="mdl_footer-column">
-                <!--======= Footer: Column - Mobile Version =========-->
-                <div class="mdl_dropbox_projects mobile">
-                    <div class="mdl_dropbox">
-                        Projects
-                        <div id="btn_dropbox_projects">
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                    </div>
-                    <div class="mdl_dropbox_projects-links">
-                        <div id="mdl_footer-links_m-social">Social</div>
-                        <div id="mdl_footer-links_m-motion">Motion</div>
-                        <div id="mdl_footer-links_m-design">Design</div>
-                        <div id="mdl_footer-links_m-art">Art</div>
-                    </div>
-                </div>
-
-                <!--======= Footer: Columnn - Desktop Version =========-->
-                <div class="desktop">
-                    <div class="mdl_footer-column">
-                        <button class="btn_outline-stat btn_outline-stat-inv">
-                            Projects
-                        </button>
-                        <div class="mdl_footer-links">
-                            <div id="mdl_footer-links_d-social">Social</div>
-                            <div id="mdl_footer-links_d-motion">Motion</div>
-                            <div id="mdl_footer-links_d-design">Design</div>
-                            <div id="mdl_footer-links_d-art">Art</div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="mdl_footer-copyright">
-            <p class="mdl_footer-copyright_text">©2023 Vauliys</p>
-            <p class="mdl_footer-copyright_text"><a href="https://github.com/vauliys/vauliys.github.io"
-                    target="_blank">Built by Vauliys</a></p>
+        <!--==================== Footer: Column (Projects)====================-->
+        <div class="mdl_footer-column">
+            <!--======= Footer: Column - Mobile Version =========-->
+            <div class="mdl_dropbox_projects mobile">
+                <div class="mdl_dropbox">
+                    Projects
+                    <div id="btn_dropbox_projects">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                </div>
+                <div class="mdl_dropbox_projects-links">
+                    <div id="mdl_footer-links_m-social">Social</div>
+                    <div id="mdl_footer-links_m-motion">Motion</div>
+                    <div id="mdl_footer-links_m-design">Design</div>
+                    <div id="mdl_footer-links_m-art">Art</div>
+                </div>
+            </div>
+
+            <!--======= Footer: Columnn - Desktop Version =========-->
+
+            <div class="desktop">
+                <div class="mdl_footer-column">
+                    <button class="keyword_outline-stat keyword_outline-stat-inv">
+                        Projects</button>
+
+                    <div class="mdl_footer-links">
+                        <div id="mdl_footer-links_d-social">Social</div>
+                        <div id="mdl_footer-links_d-motion">Motion</div>
+                        <div id="mdl_footer-links_d-design">Design</div>
+                        <div id="mdl_footer-links_d-art">Art</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <div class="mdl_footer-copyright">
+        <p class="mdl_footer-copyright_text">©2023 Vauliys</p>
+        <p class="mdl_footer-copyright_text"><a href="https://github.com/vauliys/vauliys.github.io"
+                target="_blank">Built by Vauliys</a></p>
+    </div>
+</footer>
 </body>
 <!-- <script src="scripts.js" defer></script> -->
 <script src="mdl_tab-slider.js" defer></script>
