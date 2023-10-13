@@ -750,6 +750,7 @@ header {
 }
 
 #error {
+    height: 100vh;
     background-color: transparent;
 }
 
