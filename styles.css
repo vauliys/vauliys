@@ -57,12 +57,16 @@
 
 @media screen and (min-width: 1600px) {
     :root {
-        --h1: 4rem;
-        --h2: 3.5rem;
-        --h3: 2.5rem;
-        --h4: 1.5rem;
-        --body: 1rem;
-        --caption: 0.9rem;
+        --h1: 6rem;
+        --h2: 4.5rem;
+        --h3: 3.5rem;
+        --h4: 2rem;
+        --body: 1.2rem;
+        --caption: 1rem;
+    }
+
+    p {
+        line-height: 5rem;
     }
 }
 
@@ -182,7 +186,7 @@ a {
     text-decoration: none;
     font-weight: var(--semi-bold);
     color: var(--colour-black);
-    
+
     transition: 0.5s;
 }
 
@@ -242,7 +246,9 @@ hr {
 
 /* Vauliys text logo */
 .wordmark {
-    width: 2.5rem;
+    margin: 0 0.5rem;
+    width: 1.2rem;
+    filter:invert(1);
 }
 
 /* Icons - Socials */
@@ -390,11 +396,19 @@ header {
 
     padding: 0 10%;
     height: 2.5rem;
-    background-color: var(--colour-grey01);
+    /* color: #cff9fe; */
+    /* background-color: #00359e; */
+    background-color: #009e79;
+    color: #d3fecf;
 }
 
 .banner_link {
     font-size: var(--caption);
+    color: #d3fecf;
+}
+
+.banner_link:hover {
+    color: #cff9fe;
 }
 
 .header_grid {
@@ -410,7 +424,7 @@ header {
 }
 
 .header_grid a {
-    font-weight: var(--regular);
+    font-weight: var(--medium);
     font-size: var(--caption);
     color: var(--colour-black);
 
@@ -537,25 +551,26 @@ header {
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
-    height: 100vh;
-    background-color: var(--colour-grey01);
+    background-color: #EBEFF1;
     overflow: hidden;
+    height: 100vh;
+    padding-bottom: var(--header-height);
 }
 
 .mdl_fullbleed video {
-    margin-top: var(--header-height);
+    margin-top: -1rem;
     border-radius: 0;
     height: 100vh;
     width: auto;
+    padding: 30%;
 }
 
 
 .mdl_fullbleed_text {
     position: absolute;
     text-align: center;
-    top: 0;
-    margin-top: 40%;
-    padding: 0 20% 20% 20%;
+    bottom: 0;
+    padding: 0 20% 10% 20%;
     color: var(--colour-black);
     z-index: 1;
 }
@@ -774,6 +789,10 @@ header {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+#about {
+
 }
 
 
@@ -1028,18 +1047,23 @@ footer .icon:nth-child(1) {
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        padding-bottom: 0;
+        height: auto;
     }
 
     .mdl_fullbleed video {
         margin-top: 0;
-        width: 100vw;
-        height: auto;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        object-fit: cover;
     }
 
     .mdl_fullbleed_text {
         position: absolute;
         text-align: left;
         top: auto;
+        bottom: auto;
         left: 0;
         margin-top: 0;
 
