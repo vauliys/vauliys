@@ -290,6 +290,11 @@ hr {
     background-color: transparent;
 }
 
+.keyword_outline-stat:hover {
+    outline-color: var(--colour-grey02);
+
+}
+
 .keyword_outline-stat-inv {
     /* color: var(--colour-white); */
     color: #d3fecf;
