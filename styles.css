@@ -56,21 +56,6 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
-    :root {
-        --h1: 6rem;
-        --h2: 4.5rem;
-        --h3: 3rem;
-        --h4: 2rem;
-        --body: 1.2rem;
-        --caption: 1rem;
-    }
-
-    p {
-        line-height: 5rem;
-    }
-}
-
 
 /*========== START: Aniamtions ==========*/
 @keyframes fade-in {
@@ -1293,25 +1278,5 @@ footer .icon:nth-child(1) {
     }
     #links-collabs .mdl_tab-slider_header {
         max-width: 70%;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    #indiv-project {
-        padding: var(--large) 20%
-    }
-
-    .mdl_mosaic-gallery {
-        padding: var(--medium) 20% var(--xxlarge) 20%;
-    }
-
-    .mdl_fullpage-gallery {
-        padding: var(--medium) 20% 0 20%;
-    }
-
-    .mdl_tab-slider_sol-props,
-    .mdl_tab-slider_sol-char,
-    .indiv-project_content {
-        padding: var(--large) 20%;
     }
 }
