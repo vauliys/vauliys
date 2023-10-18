@@ -239,11 +239,20 @@ hr {
     transition: 0.3s ease-in-out;
 }
 
+
 .logo:hover {
     opacity: 0.5;
     transition: 0.3s ease-in-out;
 }
 
+
+.logomark {
+    width: 1.5rem;
+}
+
+.logomark:hover {
+    opacity: 1;
+}
 
 /* Vauliys text logo */
 .wordmark {
@@ -282,7 +291,13 @@ hr {
 }
 
 .keyword_outline-stat-inv {
-    color: var(--colour-white);
+    /* color: var(--colour-white); */
+    color: #d3fecf;
+    outline-color: #d3fecf;
+}
+
+.keyword_outline-stat-inv:hover {
+    outline-color: #d3fecf;
 }
 /*========== Buttons ==========*/
 button {
@@ -587,7 +602,7 @@ header {
 /* tab slider */
 .mdl_tab-slider_gallery {
     text-align: center;
-    padding: var(--xxlarge) 10%;
+    padding: 0 10%;
     padding-bottom: 0;
 }
 
@@ -919,17 +934,22 @@ footer {
     margin-top: var(--xxxlarge);
 
     width: 100%;
-
-    background-color: var(--colour-grey06);
+    /* background-color: var(--colour-grey06); */
+    background-color: #009e79;
+    color: #d3fecf;
     font-weight: var(--regular);
-    color: var(--colour-white);
+    /* color: var(--colour-white); */
     padding: var(--xlarge) 10%;
 }
 
 footer a {
-    color: var(--colour-white);
+    /* color: var(--colour-white); */
+    color: #d3fecf;
 }
 
+footer a:hover {
+    color: #d3fecf;
+}
 
 footer .logo {
     margin-bottom: var(--large);
@@ -955,6 +975,7 @@ footer .icon:nth-child(1) {
     flex-direction: column;
     margin-bottom: var(--large);
     margin-top: var(--small);
+    font-weight: var(--semi-bold);
 }
 
 .mdl_footer-copyright {
@@ -967,7 +988,8 @@ footer .icon:nth-child(1) {
 
 
 .mdl_footer-copyright_text {
-    color: var(--colour-white);
+    /* color: var(--colour-white); */
+    color: #d3fecf;
     padding: var(--small) 0;
 }
 
@@ -1107,7 +1129,7 @@ footer .icon:nth-child(1) {
 
     /*========== START (DESKTOP) mdl_tab-slider_gallery ==========*/
     .mdl_tab-slider_gallery {
-        padding: var(--xxlarge) 20% 0 20%;
+        padding: 0 20% 0 20%;
     }
 
     .mdl_tab-slider_social,
@@ -1170,6 +1192,12 @@ footer .icon:nth-child(1) {
     }
 
     /*========== START (DESKTOP) Footer ==========*/
+    .icon {
+        margin: 0 0.5rem;
+        font-size: 1.25rem;
+        transition: 0.5s;
+    }
+
     footer {
         text-align: left;
         align-items: start;
