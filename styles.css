@@ -170,7 +170,7 @@ p {
 a {
     cursor: pointer;
     text-decoration: none;
-    font-weight: var(--semi-bold);
+
     color: var(--colour-black);
 
     transition: 0.5s;
@@ -348,7 +348,6 @@ button:hover {
 .btn_plain {
     outline: none;
     padding: 0;
-    font-weight: 900;
 }
 .btn_plain:hover {
     color: var(--colour-grey05);
