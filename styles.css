@@ -578,16 +578,15 @@ header {
     padding-bottom: 0;
     background-color: #EBEFF1;
     overflow: hidden;
-    height: 100vh;
-    padding-bottom: var(--header-height);
+    padding-bottom: 50%;
 }
 
 .mdl_fullbleed video,
 .mdl_fullbleed img {
-    margin-top: -1rem;
+    margin-top: -5rem;
     border-radius: 0;
-    height: 100%;
-    width: auto;;
+    height: auto;
+    width: 120%;
 }
 
 .mdl_fullbleed img {
@@ -598,7 +597,7 @@ header {
     position: absolute;
     text-align: center;
     bottom: 0;
-    padding: 0 20% 10% 20%;
+    padding: 50% 20% 10% 20%;
     color: var(--colour-black);
     z-index: 1;
 }
