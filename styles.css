@@ -377,7 +377,7 @@ button:hover {
 }
 
 #btn_explore {
-    z-index: 2;
+    z-index: 5;
 }
 /*========== END: Buttons ==========*/
 
