@@ -594,9 +594,9 @@ header {
     padding: 30%;
 }
 
-.mdl_fullbleed img {
+/* .mdl_fullbleed img {
     z-index: 1;
-}
+} */
 
 .mdl_fullbleed_text {
     position: absolute;
