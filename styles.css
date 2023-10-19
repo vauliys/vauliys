@@ -376,9 +376,6 @@ button:hover {
     transition: 0.5s;
 }
 
-#btn_explore {
-    z-index: 2;
-}
 /*========== END: Buttons ==========*/
 
 
@@ -605,6 +602,10 @@ header {
     padding: 0 20% 10% 20%;
     color: var(--colour-black);
     z-index: 1;
+}
+
+#btn_explore {
+    z-index: 5 !important;
 }
 
 /* tab slider */
