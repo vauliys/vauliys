@@ -1023,11 +1023,11 @@ footer .icon:nth-child(1) {
     width: 80px;
 }
 
-.mdl_narrow-column .Icons {
+.mdl_narrow-column .icons {
     margin: var(--small) 0;
 }
 
-.mdl_narrow-column .Icons i {
+.mdl_narrow-column .icons i {
     font-size: 1rem;
     color: var(--colour-grey05);
     padding: 0.8rem;
@@ -1253,7 +1253,7 @@ footer .icon:nth-child(1) {
         margin: 0;
     }
 
-    .mdl_narrow-column .Icons i {
+    .mdl_narrow-column .icons i {
         font-size: var(--h4);
     }
 
