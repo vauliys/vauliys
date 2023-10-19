@@ -377,7 +377,10 @@ button:hover {
 }
 
 #btn_explore {
+    position: absolute;
+    bottom: 0;
     z-index: 2;
+
 }
 /*========== END: Buttons ==========*/
 
@@ -581,13 +584,12 @@ header {
     padding-bottom: 0;
     background-color: #EBEFF1;
     overflow: hidden;
-    height: 100vh;
     padding-bottom: var(--header-height);
 }
 
 .mdl_fullbleed video,
 .mdl_fullbleed img {
-    margin-top: -1rem;
+    margin-top: -5rem;
     border-radius: 0;
     height: 100vh;
     width: auto;
@@ -599,7 +601,11 @@ header {
 }
 
 .mdl_fullbleed_text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     bottom: 0;
     padding: 0 20% 10% 20%;
