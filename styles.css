@@ -586,9 +586,8 @@ header {
 .mdl_fullbleed img {
     margin-top: -1rem;
     border-radius: 0;
-    height: 100vh;
-    width: auto;
-    padding: 10%;
+    height: 100%;
+    width: auto;;
 }
 
 .mdl_fullbleed img {
