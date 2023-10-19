@@ -377,8 +377,7 @@ button:hover {
 }
 
 #btn_explore {
-
-    z-index: 5;
+    z-index: 2;
 }
 /*========== END: Buttons ==========*/
 
@@ -577,7 +576,6 @@ header {
 
 .mdl_fullbleed {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
@@ -589,11 +587,11 @@ header {
 
 .mdl_fullbleed video,
 .mdl_fullbleed img {
-    margin-top: -3rem;
+    margin-top: -1rem;
     border-radius: 0;
     height: 100vh;
     width: auto;
-    padding: 10%;
+    padding: 30%;
 }
 
 .mdl_fullbleed img {
