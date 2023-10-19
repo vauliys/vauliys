@@ -1197,7 +1197,7 @@ footer .icon:nth-child(1) {
         font-size: 1.25rem;
         transition: 0.5s;
     }
-
+/* 
     footer {
         text-align: left;
         align-items: start;
@@ -1243,7 +1243,7 @@ footer .icon:nth-child(1) {
 
     .mdl_footer-copyright-text:nth-of-type(1) {
         padding: 0rem;
-    }
+    } */
 
     hr {
         margin: 5%;
