@@ -377,7 +377,8 @@ button:hover {
 }
 
 #btn_explore {
-    z-index: 5;
+    display: flex;
+    z-index: 2;
 }
 /*========== END: Buttons ==========*/
 
@@ -591,7 +592,7 @@ header {
     border-radius: 0;
     height: 100vh;
     width: auto;
-    padding: 30%;
+    padding: 10%;
 }
 
 .mdl_fullbleed img {
