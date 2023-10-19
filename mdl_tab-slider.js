@@ -1,4 +1,4 @@
-/*================ Module: Tabbed Slider (Homepage)================*/
+/*================ Module:: Tabbed Slider (Homepage)================*/
 const tabSocial = document.querySelector('#mdl_tab-slider_social');
 const gridSocial = document.querySelector('.mdl_tab-slider_social');
 
@@ -77,7 +77,7 @@ if (tabArt) {
 
 
 
-/*================ Module: Tabbed Slider (Solar Opposites)================*/
+/*================ Module:: Tabbed Slider (Solar Opposites)================*/
 const tabSOLProps = document.querySelector('#mdl_tab-slider_sol-props');
 const textSOLProps = document.querySelector('#mdl_tab-slider_sol-props-t'); 
 const gridSOLProps = document.querySelector('.mdl_tab-slider_sol-props');
@@ -118,7 +118,7 @@ if (tabSOLChar) {
 
 
 
-/*================ Module: Tabbed Slider (Solar Opposites)================*/
+/*================ Module:: Tabbed Slider (Solar Opposites)================*/
 const tabChocEaster = document.querySelector('#mdl_tab-slider_choc-easter');
 const textChocEaster = document.querySelector('#mdl_tab-slider_choc-easter-t'); 
 const gridChocEaster = document.querySelector('.mdl_tab-slider_choc-easter');

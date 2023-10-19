@@ -772,7 +772,7 @@ header {
     text-align: center;
 }
 
-.mdl_icon-grid_icons {
+.mdl_icon-grid_Icons {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -783,7 +783,7 @@ header {
 
 }
 
-.mdl_icon-grid_icons img {
+.mdl_icon-grid_Icons img {
     border-radius: 0;
     height: 1.5rem;
     transition: 0.5s;
@@ -1023,11 +1023,11 @@ footer .icon:nth-child(1) {
     width: 80px;
 }
 
-.mdl_narrow-column .icons {
+.mdl_narrow-column .Icons {
     margin: var(--small) 0;
 }
 
-.mdl_narrow-column .icons i {
+.mdl_narrow-column .Icons i {
     font-size: 1rem;
     color: var(--colour-grey05);
     padding: 0.8rem;
@@ -1186,7 +1186,7 @@ footer .icon:nth-child(1) {
         grid-template-columns: repeat(4, auto);
     }
 
-    .mdl_icon-grid_icons {
+    .mdl_icon-grid_Icons {
         grid-column-gap: 2rem;
         grid-template-columns: repeat(8, auto);
     }
@@ -1253,7 +1253,7 @@ footer .icon:nth-child(1) {
         margin: 0;
     }
 
-    .mdl_narrow-column .icons i {
+    .mdl_narrow-column .Icons i {
         font-size: var(--h4);
     }
 
@@ -1304,7 +1304,7 @@ footer .icon:nth-child(1) {
     }
 
 
-    .mdl_icon-grid_icons img {
+    .mdl_icon-grid_Icons img {
         height: 2rem;
 
     }

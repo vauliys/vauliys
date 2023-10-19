@@ -1,4 +1,4 @@
-/*================ Module: Dropbox ================*/
+/*================ Module:: Dropbox ================*/
 /*=== Automatically Showing ===*/
 const footerhome = document.querySelector(".mdl_dropbox_home");
 const footerprojects = document.querySelector(".mdl_dropbox_projects");
