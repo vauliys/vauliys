@@ -376,7 +376,9 @@ button:hover {
     transition: 0.5s;
 }
 
-
+#btn_explore {
+    z-index: 2;
+}
 /*========== END: Buttons ==========*/
 
 
@@ -585,11 +587,11 @@ header {
 
 .mdl_fullbleed video,
 .mdl_fullbleed img {
-    margin-top: 0;
+    margin-top: -1rem;
     border-radius: 0;
     height: 100vh;
     width: auto;
-    padding: 20%;
+    padding: 10%;
 }
 
 .mdl_fullbleed img {
