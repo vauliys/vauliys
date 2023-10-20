@@ -122,7 +122,7 @@ body {
 }
 
 /* Colours */
-.colour-accent, .colour-accent:hover, .colour-accent a, .colour-accent a:hover, footer .icon {
+.colour-accent, .colour-accent:hover, .colour-accent a, .colour-accent a:hover, footer .icon, footer .icon:hover{
     color: var(--colour-accent-100);
 }
 
