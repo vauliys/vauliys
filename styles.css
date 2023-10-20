@@ -390,11 +390,6 @@ button:hover {
 }
 
 
-.btn_chevron-up {
-    transform: rotate(180deg);
-    transition: 0.5s;
-}
-
 /*========== END: Buttons ==========*/
 
 

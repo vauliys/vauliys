@@ -23,21 +23,18 @@ const btnProjects = document.querySelector("#btn_dropbox_navbar-projects");
 if (navHome) {
     navHome.addEventListener('click', () => {
         homeLinks.classList.toggle('show'); /* toggles class */
-        btnHome.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 
 if (navResource) {
     navResource.addEventListener('click', () => {
         resourceLinks.classList.toggle('show'); /* toggles class */
-        btnResource.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 
 if (navProjects) {
     navProjects.addEventListener('click', () => {
         projectLinks.classList.toggle('show'); /* toggles class */
-        btnProjects.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 

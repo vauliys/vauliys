@@ -27,30 +27,24 @@ const btnfooterhome = document.querySelector("#btn_dropbox_home");
 const btnfooterresources = document.querySelector("#btn_dropbox_resources");
 const btnfooterprojects = document.querySelector("#btn_dropbox_projects");
 
-const btnChevronUp = document.querySelector(".btn-chevron-up");
-
-
 /*==*/
 
 /*======*/
 if (footerhome) {
     footerhome.addEventListener('click', () => {
         footerhomelinks.classList.toggle('show'); /* toggles class */
-        btnfooterhome.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 
 if (footerprojects) {
     footerprojects.addEventListener('click', () => {
         footerprojectslinks.classList.toggle('show'); /* toggles class */
-        btnfooterprojects.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 
 if (footerresources) {
     footerresources.addEventListener('click', () => {
         footerresourceslinks.classList.toggle('show'); /* toggles class */
-        btnfooterresources.classList.toggle('btn_chevron-up'); /* toggles arrow rotation */
     });
 }
 
