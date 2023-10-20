@@ -19,7 +19,7 @@ if(header) {
 
 if (bannerclose) {
         bannerclose.addEventListener('click', () => {
-            banner.classList.add('hide'); /*toggles class*/
+            banner.classList.add('hide'); /* toggles class */
         });
     }
 
