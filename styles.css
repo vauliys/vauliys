@@ -46,6 +46,7 @@
     --mrg-small: 0.8rem;
     --mrg-xsmall: 0.5rem;
     --mrg-x2-small: 0.25rem;
+    --mrg-none: 0;
 }
 
 /* Font size for large devices */
@@ -158,6 +159,9 @@ body {
 
 .mrg-top-large {
     margin-top: var(--mrg-large);
+}
+.mrg-none {
+    margin: var(--mrg-none) !important;
 }
 
 /* Font size*/
@@ -522,6 +526,10 @@ header {
     width: 100%;
 }
 
+.width-fit {
+    width: fit-content;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -584,6 +592,10 @@ header {
     border-radius: 2rem;
 }
 
+.grid-2 {
+    grid-template-columns: repeat(2, auto);
+}
+
 .mdl-tab-slider-nav :first-child {
     margin-left: var(--mrg-x2-small);
 }
@@ -610,28 +622,6 @@ header {
     transition: 0.5s;
 }
 
-/* 
-
-.mdl-tab-slider-item_inv {
-    cursor: pointer;
-    padding: 0.2rem 0.7rem;
-    border-radius: 1rem;
-    display: inline-flex;
-    justify-content: space-evenly;
-
-    font-size: var(--caption);
-    color: var(--colour-white);
-
-    transition: 0.5s;
-}
-
-.mdl-tab-slider-item_inv_active {
-    background-color: var(--colour-grey-100);
-    color: var(--colour-black);
-    font-weight: var(--font-semi-bold);
-
-    transition: 0.5s;
-} */
 
 /* -------------------*/
 .mdl-tab-slider-featured,
@@ -676,7 +666,7 @@ header {
     margin: 1rem 0;
 }
 
-*/ #links-collabs {
+#links-collabs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
@@ -775,8 +765,8 @@ header {
 }
 
 
-.mdl_tab-slider_sol-props,
-.mdl_tab-slider_sol-char,
+.sol-props-grid,
+.sol-char-grid,
 .indiv-project_content {
     padding: 5%;
     background-color: var(--colour-grey-100);
@@ -786,8 +776,8 @@ header {
     grid-gap: 1rem;
 }
 
-.mdl_tab-slider_sol-props video,
-.mdl_tab-slider_sol-char video {
+.sol-props-grid video,
+.sol-char-grid video {
     width: 100%;
 }
 
@@ -947,6 +937,7 @@ footer {
     .navbar {
         padding: 2% 10%;
     }
+
     .mdl-tab-slider-featured,
     .mdl-tab-slider-art,
     .mdl-tab-slider-design,
@@ -989,7 +980,7 @@ footer {
 
     /*========== START (DESKTOP )mdl_dual-col_text-img ==========*/
 
-    .mdl_dual-column_r {
+    .mdl_column {
         display: flex;
         flex-direction: column;
     }
@@ -1018,8 +1009,8 @@ footer {
         padding: 5% 20%;
     }
 
-    .mdl_tab-slider_sol-props,
-    .mdl_tab-slider_sol-char {
+    .sol-props-grid,
+    .sol-char-grid {
         display: grid;
         padding: 5% 15%;
         grid-template-columns: repeat(2, 1fr);

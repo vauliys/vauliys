@@ -104,41 +104,21 @@ if (tabArt) {
 
 
 /*================ Module::: Tabbed Slider (Solar Opposites)================*/
-const tabSOLProps = document.querySelector('#mdl_tab-slider_sol-props');
-const textSOLProps = document.querySelector('#mdl_tab-slider_sol-props-t'); 
-const gridSOLProps = document.querySelector('.mdl_tab-slider_sol-props');
+const SOLpropsTab = document.querySelector('#sol-props-tab');
+const SOLcharTab = document.querySelector('#sol-char-tab');
 
-const tabSOLChar = document.querySelector('#mdl_tab-slider_sol-char');
-const textSOLChar = document.querySelector('#mdl_tab-slider_sol-char-t'); 
-const gridSOLChar = document.querySelector('.mdl_tab-slider_sol-char');
-
-/* when Slider item (Art) is clicked perform code*/
-if (tabSOLProps) {
-    tabSOLProps.addEventListener('click', () => {
-        tabSOLProps.classList.add('mdl-tab-slider-item_inv_active'); /* toggles class */
-        tabSOLChar.classList.remove('mdl-tab-slider-item_inv_active'); /* removes class */
-
-        textSOLProps.classList.remove('hide'); /* toggles class */        
-        textSOLChar.classList.add('hide'); /* toggles class */
-
-        gridSOLProps.classList.remove('hide');
-        gridSOLChar.classList.toggle('hide');
+/* when Slider item (Props) is clicked perform code*/
+if (SOLpropsTab) {
+    SOLpropsTab.addEventListener('click', () => {
+        SOLpropsTab.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        SOLcharTab.classList.remove('mdl-tab-slider-item_active'); /* removes class */
     });
 }
-
-
-/* when Slider item (Art) is clicked perform code*/
-if (tabSOLChar) {
-    tabSOLChar.addEventListener('click', () => {
-        tabSOLChar.classList.add('mdl-tab-slider-item_inv_active'); /* toggles class */
-        tabSOLProps.classList.remove('mdl-tab-slider-item_inv_active'); /* removes class */
-
-        textSOLChar.classList.remove('hide'); /* toggles class */
-        textSOLProps.classList.add('hide'); /* toggles class */
-
-        gridSOLChar.classList.remove('hide');
-        gridSOLProps.classList.toggle('hide');
-
+/* when Slider item (Character) is clicked perform code*/
+if (SOLcharTab) {
+    SOLcharTab.addEventListener('click', () => {
+        SOLcharTab.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        SOLpropsTab.classList.remove('mdl-tab-slider-item_active'); /* removes class */
     });
 }
 
