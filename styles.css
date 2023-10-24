@@ -283,12 +283,10 @@ hr {
 /*========== END: Icons and Logos==========*/
 
 /*========== Keywords (Outline) ==========*/
-.keyword_outline-stat,
-.keyword_outline-black,
-.keyword_outline-stat-inv {
+.keyword_outline-stat {
     border: none;
     outline: solid;
-    outline-color: var(--colour-grey-200);
+    outline-color: var(--colour-grey-100);
     outline-width: 1px;
     cursor: default;
 
@@ -302,26 +300,12 @@ hr {
     background-color: transparent;
 }
 
-.keyword_outline-stat:hover {
-    outline-color: var(--colour-grey-200);
-
-}
-
-.keyword_outline-stat-inv {
-    /* color: var(--colour-white); */
-    color: var(--colour-main-100);
-    outline-color: var(--colour-main-100);
-}
-
-.keyword_outline-stat-inv:hover {
-    outline-color: var(--colour-main-100);
-}
 
 /*========== Buttons ==========*/
 button {
     border: none;
     outline: solid;
-    outline-color: var(--colour-grey-200);
+    outline-color: var(--colour-grey-100);
     outline-width: 1px;
 
     padding: 0.8rem 1.5rem;
@@ -330,45 +314,15 @@ button {
     cursor: pointer;
 
     color: var(--colour-black);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-medium);
     background-color: transparent;
     transition: 0.5s;
 }
 
 button:hover {
     outline-color: var(--colour-black);
-}
-
-.btn_outline_round {
-    border: none;
-    outline: solid;
-    outline-color: var(--colour-grey-200);
-    outline-width: 1px;
-
-    padding: 0.3rem 0.75rem;
-    border-radius: 2rem;
-
-    font-size: var(--font-regular);
-    font-weight: var(--font-regular);
-    color: var(--colour-black);
-    transition: 0.5s;
-    background-color: transparent;
-}
-
-.btn_outline-inv {
-    outline-color: var(--colour-white);
-    background-color: var(--colour-white);
-    color: var(--colour-black);
-}
-
-.btn_outline:hover {
     background-color: var(--colour-black);
     color: var(--colour-white);
-}
-
-.btn_outline-inv:hover {
-    background-color: var(--colour-white);
-    color: var(--colour-black);
 }
 
 /*========== END: Buttons (Solid) ==========*/
