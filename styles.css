@@ -557,9 +557,7 @@ header {
 /* ------------------- */
 /* Mdule: tab slider */
 .mdl-tab-slider {
-    margin: var(--mrg-large);
-    margin-top: var(--mrg-none);
-    margin-bottom: var(--mrg-none);
+    margin: 0 15%;
     text-align: center;
 }
 
@@ -952,6 +950,9 @@ footer {
     }
 
     /* Module: tab slider */
+    .mdl-tab-slider {
+        margin: var(--mrg-none);
+    }
     .mdl-tab-slider-nav {
         display: grid;
         grid-template-columns: repeat(5, auto);
