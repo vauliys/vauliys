@@ -222,6 +222,10 @@ p {
     font-weight: var(--font-semi-bold);
 }
 
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
 /* Font Colours */
 .colour-accent-100 .colour-accent-100:hover,
 footer a,
@@ -251,10 +255,11 @@ li {
 a {
     cursor: pointer;
     text-decoration: none;
-
     color: var(--colour-black);
-
     transition: 0.5s;
+}
+.cursor-pointer {
+    cursor: pointer;
 }
 
 /* Visual Content */
@@ -339,6 +344,13 @@ hr {
     background-color: transparent;
 }
 
+.mdl-keywords-grid {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
 /* Buttons */
 button {
     border: none;
@@ -373,6 +385,10 @@ button:hover {
 .btn_plain:hover,
 .btn_plain a:hover {
     color: var(--colour-grey-200);
+}
+
+#btn_explore {
+    z-index: 5 !important;
 }
 
 /* Scroll bar*/
@@ -521,6 +537,80 @@ header {
     transition: 1s;
 }
 
+/* module tab slider */
+.mdl-tab-slider {
+    margin: var(--mrg-medium);
+    margin-top: var(--mrg-none);
+    margin-bottom: var(--mrg-none);
+    text-align: center;
+}
+
+.mdl-tab-slider-nav { /* tab slider navigation bar */
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: var(--mrg-xsmall);
+    margin: 0 auto;
+
+    outline: solid;
+    outline-width: 1px;
+    outline-color: var(--colour-grey-100);
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.mdl-tab-slider-nav :first-child { /* first and last tab - no margins */
+    margin-left: var(--mrg-x2-small);
+}
+.mdl-tab-slider-nav :last-child {
+    margin-right: var(--mrg-x2-small);
+}
+
+.mdl-tab-slider-item { /* tab slider links */
+    font-size: var(--caption);
+    transition: 0.5s;
+    border-radius: 1rem;
+    padding: 0.2rem 0.7rem;
+
+    transition: 0.5s;
+}
+.mdl-tab-slider-item:hover {
+    background-color: var(--colour-grey-100);
+}
+.mdl-tab-slider-item_active {
+    background-color: var(--colour-grey-100);
+    transition: 0.5s;
+}
+
+/* ------------------- */
+.mdl-tab-slider-featured,
+.mdl-tab-slider-art,
+.mdl-tab-slider-design,
+.mdl-tab-slider-motion,
+.mdl-tab-slider-social {
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: var(--mrg-medium);
+    margin: var(--mrg-small);
+}
+
+.mdl_tab-slider_block {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.mdl_tab-slider_block img {
+    object-fit: cover;
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: 0.5s ease-in-out;
+}
+.mdl_tab-slider_block img:hover {
+    transform: translateY(-0.5rem);
+    transition: 0.5s ease-in-out;
+}
+
+
 /* ORGANISE*/
 .width-100 {
     width: 100%;
@@ -530,9 +620,6 @@ header {
     width: fit-content;
 }
 
-.cursor-pointer {
-    cursor: pointer;
-}
 
 
 .mdl_fullbleed {
@@ -568,103 +655,12 @@ header {
     z-index: 1;
 }
 
-#btn_explore {
-    z-index: 5 !important;
-}
-
-/* module tab slider */
-.mdl-tab-slider {
-    text-align: center;
-    padding: 0 10%;
-    padding-bottom: 0;
-}
-
-.mdl-tab-slider-nav {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: var(--mrg-xsmall);
-    margin: 0 auto;
-
-    outline: solid;
-    outline-width: 1px;
-    outline-color: var(--colour-grey-100);
-    padding: 0.5rem;
-    border-radius: 2rem;
-}
-
-.grid-2 {
-    grid-template-columns: repeat(2, auto);
-}
-
-.mdl-tab-slider-nav :first-child {
-    margin-left: var(--mrg-x2-small);
-}
-
-.mdl-tab-slider-nav :last-child {
-    margin-right: var(--mrg-x2-small);
-}
-
-.mdl-tab-slider-item {
-    font-size: var(--caption);
-    transition: 0.5s;
-    border-radius: 1rem;
-    padding: 0.2rem 0.7rem;
-
-    transition: 0.5s;
-}
-
-.mdl-tab-slider-item:hover {
-    background-color: var(--colour-grey-100);
-}
-
-.mdl-tab-slider-item_active {
-    background-color: var(--colour-grey-100);
-    transition: 0.5s;
-}
 
 
-/* -------------------*/
-.mdl-tab-slider-featured,
-.mdl-tab-slider-art,
-.mdl-tab-slider-design,
-.mdl-tab-slider-motion,
-.mdl-tab-slider-social {
-    display: grid;
-    grid-template-columns: 1;
-    grid-gap: var(--mrg-medium);
-}
 
 
-.mdl_tab-slider_block {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.mdl_tab-slider_block img {
-    object-fit: cover;
-    cursor: pointer;
-    overflow: hidden;
-
-    transition: 0.5s ease-in-out;
-}
 
 
-.mdl_tab-slider_block .mdl_subheader {
-    margin: 0;
-}
-
-.mdl_tab-slider_block img:hover {
-    transform: translateY(-0.5rem);
-    transition: 0.5s ease-in-out;
-}
-
-.mdl_tab-slider_btns {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
-}
 
 #links-collabs {
     display: grid;
@@ -692,8 +688,13 @@ header {
     position: absolute;
 }
 
+
+
+.grid-2 {
+    grid-template-columns: repeat(2, auto);
+}
 /*========== START (MOBILE) mdl_icon-grid ==========*/
-.mdl_icon-grid {
+.mdl-coloured-block {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -706,11 +707,7 @@ header {
     background-color: var(--colour-grey-100);
 }
 
-.mdl_icon-grid_text {
-    text-align: center;
-}
-
-.mdl_icon-grid_Icons {
+.icon-grid {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -718,19 +715,15 @@ header {
     column-gap: 1rem;
     row-gap: 1rem;
     margin-top: var(--mrg-medium);
-
 }
-
-.mdl_icon-grid_Icons img {
+.icon-grid img {
     border-radius: 0;
     height: 1.5rem;
     transition: 0.5s;
 }
-
 #logo_logitech {
     margin-top: 0.5rem;
 }
-
 #logo_hulu {
     height: 1.25rem;
 }
@@ -764,7 +757,7 @@ header {
     margin: 0;
 }
 
-
+/* Project Pages*/
 .sol-props-grid,
 .sol-char-grid,
 .indiv-project_content {
@@ -775,7 +768,6 @@ header {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
-
 .sol-props-grid video,
 .sol-char-grid video {
     width: 100%;
@@ -987,11 +979,11 @@ footer {
 
 
     /*========== START (DESKTOP) mdl_icon-grid ==========*/
-    .mdl_icon-grid {
+    .mdl-coloured-block {
         padding: 5%;
     }
 
-    .mdl_icon-grid_text {
+    .mdl_coloured-block-text {
         max-width: 50%;
     }
 
@@ -1033,7 +1025,7 @@ footer {
         grid-template-columns: repeat(4, auto);
     }
 
-    .mdl_icon-grid_Icons {
+    .icon-grid{
         grid-column-gap: 2rem;
         grid-template-columns: repeat(8, auto);
     }
@@ -1103,7 +1095,7 @@ footer {
     }
 
 
-    .mdl_icon-grid_Icons img {
+    .icon-grid img {
         height: 2rem;
 
     }
