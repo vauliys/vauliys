@@ -1,13 +1,13 @@
 /* Module: Dropbox */
 /* Automatically Showing */
-const footerhome = document.querySelector(".mdl_dropbox_home");
-const footerprojects = document.querySelector(".mdl_dropbox_projects");
-const footerresources = document.querySelector(".mdl_dropbox_resources");
+const footerhome = document.querySelector(".navbar-dropdown_home");
+const footerprojects = document.querySelector(".navbar-dropdown_projects");
+const footerresources = document.querySelector(".navbar-dropdown_resources");
 
 /* Hidden Links */
-const footerhomelinks = document.querySelector('.mdl_dropbox_home-links');
-const footerprojectslinks = document.querySelector('.mdl_dropbox_projects-links');
-const footerresourceslinks = document.querySelector('.mdl_dropbox_resources-links');
+const footerhomelinks = document.querySelector('.navbar-dropdown_home-links');
+const footerprojectslinks = document.querySelector('.navbar-dropdown_projects-links');
+const footerresourceslinks = document.querySelector('.navbar-dropdown_resources-links');
 
 /*== Footer Projects (Desktop) scroll to ==*/
 const footerlinkdsocial = document.querySelector('#mdl_footer-links_d-social');

@@ -1,5 +1,5 @@
 const burgerMenu = document.querySelector(".hamburger-menu");
-const navBar = document.querySelector(".navbar_link-container");
+const navBar = document.querySelector(".navbar");
 
 if (burgerMenu) {
     burgerMenu.addEventListener('click', () => {
@@ -7,24 +7,18 @@ if (burgerMenu) {
     });
 }
 
-const navHome = document.querySelector(".mdl_dropbox_navbar-home");
-const homeLinks = document.querySelector(".mdl_dropbox_navbar-home_links");
+const navHome = document.querySelector(".navbar-dropdown_navbar-home");
 
-const navResource = document.querySelector(".mdl_dropbox_navbar-resources");
-const resourceLinks = document.querySelector(".mdl_dropbox_navbar-resources_links");
+const navResource = document.querySelector(".navbar-dropdown_navbar-links-02");
+const resourceLinks = document.querySelector(".navbar-links-02");
 
-const navProjects = document.querySelector(".mdl_dropbox_navbar-projects");
-const projectLinks = document.querySelector(".mdl_dropbox_navbar-projects_links");
+const navProjects = document.querySelector(".navbar-dropdown_navbar-links-01");
+const projectLinks = document.querySelector(".navbar-links-01");
 
-const btnHome = document.querySelector("#btn_dropbox_navbar-home");
-const btnResource = document.querySelector("#btn_dropbox_navbar-resources");
-const btnProjects = document.querySelector("#btn_dropbox_navbar-projects");
 
-if (navHome) {
-    navHome.addEventListener('click', () => {
-        homeLinks.classList.toggle('show'); /* toggles class */
-    });
-}
+const btnResource = document.querySelector("#btn-navbar-links-02");
+const btnProjects = document.querySelector("#btn-navbar-links-01");
+
 
 if (navResource) {
     navResource.addEventListener('click', () => {
