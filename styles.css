@@ -92,8 +92,8 @@ body {
 }
 
 ::selection {
-    background-color: var(--colour-accent-100);
-    color: var(--colour-accent-400);
+    background-color: var(--colour-accent-100-100);
+    color: var(--colour-accent-100-400);
 }
 
 /* Animaiton */
@@ -121,13 +121,13 @@ body {
     animation: fade-out 1s;
 }
 
-/* Colours */
-.colour-accent, .colour-accent:hover, .colour-accent a, footer .icon {
-    color: var(--colour-accent-100);
-}
+a {
+    cursor: pointer;
+    text-decoration: none;
 
-.colour-main-light, .colour-main-light p {
-    color: var(--colour-main-100);
+    color: var(--colour-black);
+
+    transition: 0.5s;
 }
 
 /* Margins */
@@ -200,13 +200,21 @@ p {
     font-weight: var(--font-semi-bold);
 }
 
-a {
-    cursor: pointer;
-    text-decoration: none;
+/* Font Colours */
+.colour-accent-100 .colour-accent-100:hover, footer a, footer .icon {
+    color: var(--colour-accent-100);
+}
 
-    color: var(--colour-black);
+.colour-main-300, .colour-main-300 p {
+    color: var(--colour-main-100);
+}
 
-    transition: 0.5s;
+.colour-grey-300 {
+    color: var(--colour-grey-300);
+}
+
+.colour-grey-200 {
+    color: var(--colour-grey-200);
 }
 
 /*========== Small Caption Text ==========*/
@@ -236,7 +244,7 @@ video {
 
 hr {
     border-width: 0.1px;
-    border-color: var(--colour-grey-100);
+    border-color: var(--colour-main-100);
     opacity: 0.2;
     width: 100%;
     margin: 10%;
@@ -397,35 +405,17 @@ header {
     color: #cff9fe;
 }
 
-.header_grid {
-    display: grid;
-    grid-template-columns: repeat(7, auto);
-    white-space: nowrap;
-    align-items: center;
-}
-
-.header_grid:last-child {
-    /* Last link in banner grid has no grid-gap to be aligned with right padding */
-    grid-gap: 0rem;
-}
-
 .header_grid a {
-    font-weight: var(--font-medium);
     font-size: var(--caption);
-    color: var(--colour-black);
-
     transition: 0.5s;
 }
 
 .header_grid a:hover {
-    color: var(--colour-grey-200);
-
-    transition: 0.5s;
+    color: var(--colour-main-200);
 }
 
 #banner_i-close {
     cursor: pointer;
-
     transition: 0.5s;
 }
 
@@ -496,7 +486,7 @@ header {
 }
 
 .mdl_navbar-column a {
-    color: var(--colour-grey-300);
+    color: var(--colour-main-300);
 }
 
 /*========== START: Hamburger Menu ==========*/
