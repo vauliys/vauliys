@@ -555,7 +555,7 @@ header {
 }
 
 /* ------------------- */
-/* module tab slider */
+/* Mdule: tab slider */
 .mdl-tab-slider {
     margin: var(--mrg-medium);
     margin-top: var(--mrg-none);
@@ -564,17 +564,18 @@ header {
 }
 
 .mdl-tab-slider-nav {
-    /* tab slider navigation bar */
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: var(--mrg-x2-small);
-    margin: 0 auto;
-
-    outline: solid;
-    outline-width: 1px;
-    outline-color: var(--colour-grey-100);
-    padding: 0.5rem;
-    border-radius: 2rem;
+        /* tab slider navigation bar */
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    
+        outline: solid;
+        outline-width: 1px;
+        outline-color: var(--colour-grey-100);
+        padding: 0.5rem;
+        margin: 0 1.25rem;
+        border-radius: 2rem;
 }
 
 .mdl-tab-slider-item {
@@ -952,6 +953,12 @@ footer {
         padding: 2% 10%;
     }
 
+    /* Module: tab slider */
+    .mdl-tab-slider-nav {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        margin: 0 auto;
+    }
     .mdl-tab-slider-featured,
     .mdl-tab-slider-art,
     .mdl-tab-slider-design,
@@ -962,6 +969,7 @@ footer {
         grid-gap: var(--mrg-medium);
         padding: 0 25%;
     }
+
 
     .mdl_fullbleed {
         display: flex;
