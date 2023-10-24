@@ -40,7 +40,7 @@
     --mrg-x4-large: 7rem;
     --mrg-x3-large: 6rem;
     --mrg-x2-large: 5rem;
-    --mrg-x-large: 4rem;
+    --mrg-xlarge: 4rem;
     --mrg-large: 3rem;
     --mrg-medium: 1.5rem;
     --mrg-small: 0.8rem;
@@ -65,7 +65,7 @@
         --mrg-x4-large: 7.5rem;
         --mrg-x3-large: 6.5rem;
         --mrg-x2-large: 5.5rem;
-        --mrg-x-large: 4.5rem;
+        --mrg-xlarge: 4.5rem;
         --mrg-large: 3.5rem;
         --mrg-medium: 2rem;
         --mrg-small: 1rem;
@@ -567,7 +567,7 @@ header {
     /* tab slider navigation bar */
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: var(--mrg-xsmall);
+    grid-gap: var(--mrg-x2-small);
     margin: 0 auto;
 
     outline: solid;
@@ -575,15 +575,6 @@ header {
     outline-color: var(--colour-grey-100);
     padding: 0.5rem;
     border-radius: 2rem;
-}
-
-.mdl-tab-slider-nav :first-child {
-    /* first and last tab - no margins */
-    margin-left: var(--mrg-x2-small);
-}
-
-.mdl-tab-slider-nav :last-child {
-    margin-right: var(--mrg-x2-small);
 }
 
 .mdl-tab-slider-item {
@@ -863,7 +854,7 @@ footer {
     grid-gap: var(--mrg-small);
     text-align: center;
 
-    margin-top: var(--mrg-x-large);
+    margin-top: var(--mrg-xlarge);
     padding: var(--mrg-x2-large);
 
     width: 100%;
@@ -1103,7 +1094,7 @@ footer {
 }
 
 
-/* Font size for mrg-x-large devices */
+/* Font size for mrg-xlarge devices */
 @media screen and (min-width: 1920px) {
     :root {
         --h1: 5rem;
