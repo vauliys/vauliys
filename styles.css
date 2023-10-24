@@ -72,6 +72,19 @@
     }
 }
 
+/* Font size for large devices */
+@media screen and (min-width: 1920px) {
+    :root {
+        --h1: 4rem;
+        --h2: 3.25rem;
+        --h3: 2.5rem;
+        --h4: 1.5rem;
+        --h5: 1.25rem;
+        --body: 1rem;
+        --caption: 0.8rem;
+    }
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -131,6 +144,10 @@ body {
 
 /* ------------------- */
 /* Margins */
+.mrg-header-height {
+    margin-top: var(--header-height);
+}
+
 .mrg-btm-none {
     margin-bottom: 0;
 }
@@ -177,6 +194,7 @@ h1 {
 
 h2 {
     font-size: var(--h2);
+    font-weight: var(--font-medium);
 }
 
 h3 {
@@ -801,13 +819,6 @@ footer {
     gap: 0.5rem;
 }
 
-
-
-#indiv-project {
-    padding: var(--mrg-large) 15%;
-    align-items: flex-start;
-}
-
 #indiv-project .mdl_header_stnd {
     margin: 0;
 }
@@ -941,6 +952,10 @@ footer {
     display: grid;
 }
 
+.display-flex-reverse {
+    display: flex;
+}
+
 
 
 /*========== MEDIA ENQUIRY ==========*/
@@ -981,20 +996,6 @@ footer {
         padding: 5% 15%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.5rem;
-    }
-
-    /* ------------------- */
-    /* */
-    .show,
-    .desktop {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .hide,
-    .mobile {
-        display: none;
     }
 
     /* ------------------- */
@@ -1049,17 +1050,12 @@ footer {
     }
 
 
-    #about {
-        padding: 5% 25%;
-        grid-gap: 0 20%;
-    }
-
     .mdl_dual-column {
         display: grid;
         align-items: center;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5rem 5rem;
-        padding: 5% 20%;
+        grid-gap: 0 10%;
+        padding: 3% 30%;
     }
 
     #xppen {
@@ -1102,29 +1098,33 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         margin: var(--mrg-medium) 0;
     }
+
+
+    /* ------------------- */
+    /* */
+    .show,
+    .desktop {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .display-block {
+        display: block;
+    }
+
+    .hide,
+    .mobile {
+        display: none;
+    }
+
 }
 
 
 /* Font size for mrg-xlarge devices */
 @media screen and (min-width: 1920px) {
-    :root {
-        --h1: 5rem;
-        --h2: 3.5rem;
-        --h3: 2.75rem;
-        --h4: 1.75rem;
-        --h5: 1.25rem;
-        --body: 1.2rem;
-        --caption: 0.9rem;
-
-    }
-
     p {
-        line-height: 2rem;
-    }
-
-    #about {
-        grid-gap: 0 10%;
-        padding: 5% 30%;
+        line-height: 1.5rem;
     }
 
 
