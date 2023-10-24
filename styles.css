@@ -305,7 +305,7 @@ hr {
 button {
     border: none;
     outline: solid;
-    outline-color: var(--colour-grey-100);
+    outline-color: var(--colour-grey-200);
     outline-width: 1px;
 
     padding: 0.8rem 1.5rem;
@@ -332,8 +332,8 @@ button:hover {
     padding: 0;
 }
 
-.btn_plain:hover {
-    color: var(--colour-grey-300);
+.btn_plain:hover, .btn_plain a:hover {
+    color: var(--colour-grey-200);
     cursor: pointer;
 }
 
@@ -418,7 +418,7 @@ header {
 }
 
 .header_grid a:hover {
-    color: var(--colour-grey-300);
+    color: var(--colour-grey-200);
 
     transition: 0.5s;
 }
