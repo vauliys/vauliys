@@ -583,19 +583,19 @@ header {
 }
 
 @media screen and (min-width: 500px) {
-.mdl-tab-slider-nav {
-    all: unset;
-    /* tab slider navigation bar */
-    display: inline-flex;
-    justify-content: center;
-    margin: 0 auto;
+    .mdl-tab-slider-nav {
+        all: unset;
+        /* tab slider navigation bar */
+        display: inline-flex;
+        justify-content: center;
+        margin: 0 auto;
 
-    outline: solid;
-    outline-width: 1px;
-    outline-color: var(--colour-grey-100);
-    padding: 0.5rem;
-    border-radius: 2rem;
-}
+        outline: solid;
+        outline-width: 1px;
+        outline-color: var(--colour-grey-100);
+        padding: 0.5rem;
+        border-radius: 2rem;
+    }
 }
 
 .mdl-tab-slider-item {
@@ -648,6 +648,42 @@ header {
 }
 
 /* ------------------- */
+/* Module: Fullbleed Banner */
+.mdl-fullbleed-banner img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+    height: 50vh;
+}
+
+/* ------------------- */
+/* Footer styling */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: var(--mrg-small);
+    text-align: center;
+
+    margin-top: var(--mrg-xlarge);
+    padding: var(--mrg-x2-large);
+
+    width: 100%;
+
+    background-color: #009e79;
+    color: var(--colour-main-100);
+    font-weight: var(--font-regular);
+}
+
+.copyright,
+.copyright p {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    grid-gap: 0.5rem;
+    justify-content: center;
+}
+
+/* ------------------- */
 /* ORGANISE*/
 .width-100 {
     width: 100%;
@@ -656,8 +692,6 @@ header {
 .width-fit {
     width: fit-content;
 }
-
-
 
 .mdl_fullbleed {
     display: flex;
@@ -706,26 +740,6 @@ header {
     margin: var(--mrg-medium) 0;
 
 }
-
-/*========== START (MOBILE) mdl_tab-slider_overlay ==========*/
-.mdl_tab-slider_img {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.mdl_tab-slider_img img {
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0;
-    height: 25vh;
-}
-
-.mdl_tab-slider_overlay {
-    position: absolute;
-}
-
-
 
 .grid-2 {
     grid-template-columns: repeat(2, auto);
@@ -862,42 +876,6 @@ header {
     margin-bottom: var(--mrg-small);
 }
 
-/*========== START (MOBILE) Footer ==========*/
-
-
-
-/* Footer styling */
-/* Mobile Footer */
-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: var(--mrg-small);
-    text-align: center;
-
-    margin-top: var(--mrg-xlarge);
-    padding: var(--mrg-x2-large);
-
-    width: 100%;
-
-    background-color: #009e79;
-    color: var(--colour-main-100);
-    font-weight: var(--font-regular);
-}
-
-.copyright,
-.copyright p {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    align-items: center;
-    grid-gap: 0.5rem;
-    justify-content: center;
-}
-
-
-.show {
-    display: none;
-}
-
 .mdl_narrow-column {
     margin-top: calc(var(--header-height) + 5%);
     padding: 0 10%;
@@ -968,10 +946,19 @@ footer {
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 1024px) {
 
+    /* ------------------- */
+    /* Dividers */
+    hr {
+        margin: 5%;
+    }
+
+    /* ------------------- */
+    /* Module: Navbar */
     .navbar {
         padding: 2% 10%;
     }
 
+    /* ------------------- */
     /* Module: tab slider */
     .mdl-tab-slider {
         margin: var(--mrg-none);
@@ -987,6 +974,32 @@ footer {
         grid-gap: var(--mrg-medium);
         padding: 0 25%;
     }
+
+    .sol-props-grid,
+    .sol-char-grid {
+        display: grid;
+        padding: 5% 15%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    /* ------------------- */
+    /* */
+    .show,
+    .desktop {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hide,
+    .mobile {
+        display: none;
+    }
+
+    /* ------------------- */
+    /* ORANGISE */
+
 
 
     .mdl_fullbleed {
@@ -1049,24 +1062,12 @@ footer {
         padding: 5% 20%;
     }
 
-    .sol-props-grid,
-    .sol-char-grid {
-        display: grid;
-        padding: 5% 15%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.5rem;
-    }
-
     #xppen {
         padding: var(--mrg-large) 20%;
     }
 
     #huion {
         margin: 0 auto;
-    }
-
-    .hide {
-        display: none;
     }
 
     .mdl_mosaic-gallery_content {
@@ -1083,9 +1084,6 @@ footer {
         font-size: 1.25rem;
     }
 
-    hr {
-        margin: 5%;
-    }
 
 
     .mdl_narrow-column_link-container .btn_outline,
@@ -1103,19 +1101,6 @@ footer {
     #links-collabs {
         grid-template-columns: repeat(4, 1fr);
         margin: var(--mrg-medium) 0;
-    }
-
-    /* */
-    .show,
-    .desktop {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .hide,
-    .mobile {
-        display: none;
     }
 }
 
