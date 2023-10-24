@@ -557,7 +557,7 @@ header {
 /* ------------------- */
 /* Mdule: tab slider */
 .mdl-tab-slider {
-    margin: var(--mrg-medium);
+    margin: var(--mrg-large);
     margin-top: var(--mrg-none);
     margin-bottom: var(--mrg-none);
     text-align: center;
@@ -574,7 +574,6 @@ header {
         outline-width: 1px;
         outline-color: var(--colour-grey-100);
         padding: 0.5rem;
-        margin: 0 1.25rem;
         border-radius: 2rem;
 }
 
@@ -606,7 +605,6 @@ header {
     display: grid;
     grid-template-columns: 1;
     grid-gap: var(--mrg-medium);
-    margin: var(--mrg-small);
 }
 
 .mdl_tab-slider_block {
