@@ -99,6 +99,7 @@ body {
     color: var(--colour-accent-100-400);
 }
 
+/* ------------------- */
 /* Animaiton */
 @keyframes fade-in {
     from {
@@ -128,6 +129,7 @@ body {
     animation: fade-out 1s;
 }
 
+/* ------------------- */
 /* Margins */
 .mrg-btm-none {
     margin-bottom: 0;
@@ -160,10 +162,12 @@ body {
 .mrg-top-large {
     margin-top: var(--mrg-large);
 }
+
 .mrg-none {
     margin: var(--mrg-none) !important;
 }
 
+/* ------------------- */
 /* Font size*/
 h1 {
     font-size: var(--h1);
@@ -201,6 +205,7 @@ p {
     line-height: 1.25rem;
 }
 
+/* ------------------- */
 /* Font weight*/
 .font-light {
     font-weight: var(--font-light);
@@ -226,6 +231,7 @@ p {
     font-weight: var(--font-bold);
 }
 
+/* ------------------- */
 /* Font Colours */
 .colour-accent-100 .colour-accent-100:hover,
 footer a,
@@ -246,6 +252,7 @@ footer .icon {
     color: var(--colour-grey-200);
 }
 
+/* ------------------- */
 /* Lists and links */
 ul,
 li {
@@ -258,10 +265,12 @@ a {
     color: var(--colour-black);
     transition: 0.5s;
 }
+
 .cursor-pointer {
     cursor: pointer;
 }
 
+/* ------------------- */
 /* Visual Content */
 img {
     width: 100%;
@@ -288,6 +297,7 @@ hr {
     border-right: 1px solid black;
 }
 
+/* ------------------- */
 /* Logos */
 .banner-logo {
     /* Banner logo */
@@ -316,6 +326,7 @@ hr {
     opacity: 1;
 }
 
+/* ------------------- */
 /* Icons */
 .icon {
     margin: 0 var(--mrg-xsmall);
@@ -351,6 +362,7 @@ hr {
     margin: 1rem 0;
 }
 
+/* ------------------- */
 /* Buttons */
 button {
     border: none;
@@ -391,20 +403,21 @@ button:hover {
     z-index: 5 !important;
 }
 
+/* ------------------- */
 /* Scroll bar*/
 html::-webkit-scrollbar {
-    /* Chrome, Safari, Opera */
     display: none;
+    /* Chrome, Safari, Opera */
 }
 
 html {
-    /* Firefox, IE, Edge */
     -ms-overflow-style: none;
-    /* IE and Edge */
+    /* Firefox, IE, Edge */
     scrollbar-width: none;
     /* Firefox */
 }
 
+/* ------------------- */
 /* Fixed Header */
 header {
     width: 100vw;
@@ -420,6 +433,7 @@ header {
     transition: 0.5s ease-in-out;
 }
 
+/* ------------------- */
 /* Announcement Banner*/
 .banner {
     display: flex;
@@ -441,6 +455,7 @@ header {
     color: #cff9fe;
 }
 
+/* ------------------- */
 /* Header Bar */
 .header_grid a {
     /* Header links */
@@ -452,6 +467,7 @@ header {
     color: var(--colour-main-200);
 }
 
+/* ------------------- */
 /* Hamburger Menu */
 .hamburger-menu {
     display: flex;
@@ -484,6 +500,7 @@ header {
     width: 0.5rem;
 }
 
+/* ------------------- */
 /* Navigation Bar */
 .header {
     display: flex;
@@ -537,6 +554,7 @@ header {
     transition: 1s;
 }
 
+/* ------------------- */
 /* module tab slider */
 .mdl-tab-slider {
     margin: var(--mrg-medium);
@@ -545,7 +563,8 @@ header {
     text-align: center;
 }
 
-.mdl-tab-slider-nav { /* tab slider navigation bar */
+.mdl-tab-slider-nav {
+    /* tab slider navigation bar */
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: var(--mrg-xsmall);
@@ -558,14 +577,17 @@ header {
     border-radius: 2rem;
 }
 
-.mdl-tab-slider-nav :first-child { /* first and last tab - no margins */
+.mdl-tab-slider-nav :first-child {
+    /* first and last tab - no margins */
     margin-left: var(--mrg-x2-small);
 }
+
 .mdl-tab-slider-nav :last-child {
     margin-right: var(--mrg-x2-small);
 }
 
-.mdl-tab-slider-item { /* tab slider links */
+.mdl-tab-slider-item {
+    /* tab slider links */
     font-size: var(--caption);
     transition: 0.5s;
     border-radius: 1rem;
@@ -573,9 +595,11 @@ header {
 
     transition: 0.5s;
 }
+
 .mdl-tab-slider-item:hover {
     background-color: var(--colour-grey-100);
 }
+
 .mdl-tab-slider-item_active {
     background-color: var(--colour-grey-100);
     transition: 0.5s;
@@ -598,6 +622,7 @@ header {
     flex-direction: column;
     text-align: left;
 }
+
 .mdl_tab-slider_block img {
     object-fit: cover;
     cursor: pointer;
@@ -605,12 +630,13 @@ header {
 
     transition: 0.5s ease-in-out;
 }
+
 .mdl_tab-slider_block img:hover {
     transform: translateY(-0.5rem);
     transition: 0.5s ease-in-out;
 }
 
-
+/* ------------------- */
 /* ORGANISE*/
 .width-100 {
     width: 100%;
@@ -693,6 +719,7 @@ header {
 .grid-2 {
     grid-template-columns: repeat(2, auto);
 }
+
 /*========== START (MOBILE) mdl_icon-grid ==========*/
 .mdl-coloured-block {
     display: flex;
@@ -716,14 +743,17 @@ header {
     row-gap: 1rem;
     margin-top: var(--mrg-medium);
 }
+
 .icon-grid img {
     border-radius: 0;
     height: 1.5rem;
     transition: 0.5s;
 }
+
 #logo_logitech {
     margin-top: 0.5rem;
 }
+
 #logo_hulu {
     height: 1.25rem;
 }
@@ -768,6 +798,7 @@ header {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
+
 .sol-props-grid video,
 .sol-char-grid video {
     width: 100%;
@@ -1025,7 +1056,7 @@ footer {
         grid-template-columns: repeat(4, auto);
     }
 
-    .icon-grid{
+    .icon-grid {
         grid-column-gap: 2rem;
         grid-template-columns: repeat(8, auto);
     }
