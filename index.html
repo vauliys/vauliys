@@ -21,7 +21,7 @@
 </head>
 
 <body class="fade-in">
-    <!-- Module:: (Fixed Header) -->
+    <!-- Module: Fixed Header -->
     <header id="header">
         <!-- Module:: (Fixed Banner) -->
         <div class="banner" id="banner">
@@ -112,7 +112,7 @@
         </div>
     </header>
 
-    <!--===================== (Module::) Fullbleed Video with Text Overlay ===================-->
+    <!--===================== Module: Fullbleed Video with Text Overlay ===================-->
     <div class="mdl_fullbleed">
         <div class="mdl_fullbleed_text">
             <h1>Vauliys</h1>
@@ -128,7 +128,7 @@
 
     </div>
 
-    <!--===================== (Module::) Dual Column ===================-->
+    <!--===================== Module: Dual Column ===================-->
     <div class="mdl_dual-column" id="about">
         <div>
             <div>
@@ -151,20 +151,69 @@
         </div>
     </div>
 
-    <!--==================== (Module::) Tab Slider Gallery ===================-->
-    <div class="mdl_tab-slider_gallery" id="projects">
-        <div class="mdl_tab-slider_header">
+    <!--Module:Tab Slider Gallery -->
+    <div class="display-grid mdl-tab-slider">
+        <div class="mrg-btm-medium display-grid">
             <h3>Project Gallery</h3>
 
-            <div class="mdl_tab-slider_container">
-                <div class="mdl_tab-slider_item mdl_tab-slider_item_active" id="mdl_tab-slider_art">Art</div>
-                <div class="mdl_tab-slider_item" id="mdl_tab-slider_design">Design</div>
-                <div class="mdl_tab-slider_item" id="mdl_tab-slider_motion">Motion</div>
-                <div class="mdl_tab-slider_item" id="mdl_tab-slider_social">Social</div>
+            <div class="mdl-tab-slider-nav">
+                <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active" id="mdl-tab-slider-featured">Featured</div>
+                <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-art">Art</div>
+                <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-design">Design</div>
+                <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-motion">Motion</div>
+                <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-social">Social</div>
             </div>
         </div>
-
-        <div class="mdl_tab-slider_social fade-in mdl_tab-slider_hide">
+    </div>
+        <div class="mdl-tab-slider-featured fade-in">
+            <div class="mdl_tab-slider_block">
+                <a href="art"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg" alt="Thumbnail_Grass.jpg"></a>
+                <div class="mdl_tab-slider_btns">
+                    <span class="keyword-outline">
+                        Characters
+                    </span>
+                    <span class="keyword-outline">
+                        Props
+                    </span>
+                    <span class="keyword-outline">
+                        Environmental
+                    </span>
+                </div>
+                <h4>Illustrative pieces - personal Vauliys artworks.</h4>
+            </div>
+            <!--===(Tab Slider: Block - T360) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="locked">
+                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_T360.jpg" alt="Thumbnail_T360.jpg">
+                </a>
+                <div class="mdl_tab-slider_btns">
+                    <span class="keyword-outline">
+                        2023
+                    </span>
+                    <span class="keyword-outline">
+                        Motion Graphic
+                    </span>
+                </div>
+                <h4>Till Payments - Till Portal, your complete payments platform.</h4>
+            </div>
+            <!--=== (Tab Slider: Block - Logitech) ===-->
+        <div class="mdl_tab-slider_block">
+            <a href="logitech-mx3s"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX3S.jpg" alt="Thumbnail_Logitech-MX3S"></a>
+            <div class="mdl_tab-slider_btns">
+                <span class="keyword-outline">
+                    2023
+                </span>
+                <span class="keyword-outline">
+                    Brand Collab
+                </span>
+                <span class="keyword-outline">
+                    Product Feature
+                </span>
+            </div>
+            <h4>Logitech - Master your flow with MX Master Series.</h4>
+        </div>
+        </div>
+        <div class="mdl-tab-slider-social fade-in hide">
             <!--=== (Tab Slider: Block - Logitech) ===-->
             <div class="mdl_tab-slider_block">
                 <a href="logitech-mx3s"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX3S.jpg" alt="Thumbnail_Logitech-MX3S"></a>
@@ -256,7 +305,7 @@
                 <h4>Toon Boom - Advance the craft of animation.</h4>
             </div>
         </div>
-        <div class="mdl_tab-slider_motion fade-in mdl_tab-slider_hide">
+        <div class="mdl-tab-slider-motion fade-in hide">
             <!--===(Tab Slider: Block - Solar Opposites) ===-->
             <div class="mdl_tab-slider_block">
                 <a href="solar">
@@ -310,7 +359,52 @@
             </div>
 
         </div>
-        <div class="mdl_tab-slider_design fade-in mdl_tab-slider_hide">
+        <div class="mdl-tab-slider-design fade-in hide">
+            <!--===(Tab Slider: Block - PNWT) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="locked">
+                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_PNWT.jpg" alt="Thumbnail_PNWT.jpg">
+                </a>
+                <div class="mdl_tab-slider_btns">
+                    <span class="keyword-outline">
+                        2023
+                    </span>
+                    <span class="keyword-outline">
+                        Campaign
+                    </span>
+                </div>
+                <h4>Till Payments - Pay Nil with Till.</h4>
+            </div>
+            <!--===(Tab Slider: Block - T360) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="locked">
+                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_T360.jpg" alt="Thumbnail_T360.jpg">
+                </a>
+                <div class="mdl_tab-slider_btns">
+                    <span class="keyword-outline">
+                        2023
+                    </span>
+                    <span class="keyword-outline">
+                        Motion Graphic
+                    </span>
+                </div>
+                <h4>Till Payments - Till Portal, your complete payments platform.</h4>
+            </div>
+            <!--===(Tab Slider: Block - T360) ===-->
+            <div class="mdl_tab-slider_block">
+                <a href="locked">
+                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Till-Website.jpg" alt="Thumbnail_Till-Wesbite.jpg">
+                </a>
+                <div class="mdl_tab-slider_btns">
+                    <span class="keyword-outline">
+                        2023
+                    </span>
+                    <span class="keyword-outline">
+                        Brand Identity
+                    </span>
+                </div>
+                <h4>Till Payments - Brand 2.0 Refresh</h4>
+            </div>
             <!--===(Tab Slider: Block - DUNKSO) ===-->
             <div class="mdl_tab-slider_block">
                 <a href="dunkso">
@@ -365,9 +459,8 @@
                 </div>
                 <h4>The Chocolate Box - Melbourne's favourite chocolatier.</h4>
             </div>
-
         </div>
-        <div class="mdl_tab-slider_art dual-column fade-in">
+        <div class="mdl-tab-slider-art fade-in hide">
             <!--===(Tab Slider: Block - Althea's Loom) ===-->
             <div class="mdl_tab-slider_block">
                 <a href="locked"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Neyomi.jpg" alt="Thumbnail_Neyomi.jpg"></a>
@@ -415,10 +508,10 @@
                 <h4>Digital Brush Sets available for download. </h4>
             </div>
         </div>
-    </div>
+        </div>
 
-    <!--==================== (Module::) Small Icon Grid ===================-->
-    <div class="mdl_icon-grid" id="clients">
+    <!--==================== Module: Small Icon Grid ===================-->
+    <div class="mdl_icon-grid">
         <div class="mdl_icon-grid_text">
             <h3 class="mrg-btm-medium">Collaborative relationships established with brands.</h3>
             <p class="mrg-btm-small">
@@ -446,6 +539,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <a href="#">
             <image class="logomark" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Vauliys_YLW.svg">
