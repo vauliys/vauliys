@@ -143,40 +143,40 @@ if (SOLcharTab) {
 
 
 /*================ Module::: Tabbed Slider (Solar Opposites)================*/
-const tabChocEaster = document.querySelector('#mdl_tab-slider_choc-easter');
-const textChocEaster = document.querySelector('#mdl_tab-slider_choc-easter-t'); 
-const gridChocEaster = document.querySelector('.mdl_tab-slider_choc-easter');
+const cbEasterTab = document.querySelector('#cb-easter-tab');
+const cbXmasTab = document.querySelector('#cb-xmas-tab');
 
-const tabChocXmas = document.querySelector('#mdl_tab-slider_choc-xmas');
-const textChocXmas = document.querySelector('#mdl_tab-slider_choc-xmas-t'); 
-const gridChocXmas = document.querySelector('.mdl_tab-slider_choc-xmas');
+const cbEasterText = document.querySelector('#cb-easter-text');
+const cbXmasText = document.querySelector('#cb-xmas-text');
+
+const cbEasterGrid = document.querySelector('.cb-easter-grid');
+const cbXmasGrid = document.querySelector('.cb-xmas-grid');
 
 /* when Slider item (Art) is clicked perform code*/
-if (tabChocEaster) {
-    tabChocEaster.addEventListener('click', () => {
-        tabChocEaster.classList.add('mdl-tab-slider-item_inv_active'); /* toggles class */
-        tabChocXmas.classList.remove('mdl-tab-slider-item_inv_active'); /* removes class */
+if (cbEasterTab) {
+    cbEasterTab.addEventListener('click', () => {
+        cbEasterTab.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        cbXmasTab.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
-        textChocEaster.classList.remove('hide'); /* toggles class */        
-        textChocXmas.classList.add('hide'); /* toggles class */
+        cbXmasText.classList.add('hide'); /* toggles class */
+        cbEasterText.classList.remove('hide'); /* toggles class */
 
-        gridChocEaster.classList.remove('hide');
-        gridChocXmas.classList.toggle('hide');
+        cbXmasGrid.classList.add('hide'); /* toggles class */
+        cbEasterGrid.classList.remove('hide'); /* toggles class */
     });
 }
 
 
 /* when Slider item (Art) is clicked perform code*/
-if (tabChocXmas) {
-    tabChocXmas.addEventListener('click', () => {
-        tabChocXmas.classList.add('mdl-tab-slider-item_inv_active'); /* toggles class */
-        tabChocEaster.classList.remove('mdl-tab-slider-item_inv_active'); /* removes class */
+if (cbXmasTab) {
+    cbXmasTab.addEventListener('click', () => {
+        cbXmasTab.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        cbEasterTab.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
-        textChocXmas.classList.remove('hide'); /* toggles class */
-        textChocEaster.classList.add('hide'); /* toggles class */
+        cbXmasText.classList.remove('hide'); /* toggles class */
+        cbEasterText.classList.add('hide'); /* toggles class */
 
-        gridChocXmas.classList.remove('hide');
-        gridChocEaster.classList.toggle('hide');
-
+        cbXmasGrid.classList.remove('hide'); /* toggles class */
+        cbEasterGrid.classList.add('hide'); /* toggles class */
     });
 }
