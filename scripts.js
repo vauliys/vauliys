@@ -2,7 +2,7 @@
 var scrollPos = 0;
 const header = document.getElementById('header');
 
-if(header) {
+if (header) {
     window.addEventListener('scroll', e => {
         if ((document.body.getBoundingClientRect()).top > scrollPos) {
             header.classList.remove('header_hide');
@@ -11,17 +11,17 @@ if(header) {
         }
         scrollPos = (document.body.getBoundingClientRect()).top;
     });
-    }
+}
 
-/*================ Close Banner ================*/    
-    const banner = document.getElementById('banner');
-    const bannerclose = document.getElementById('banner_i-close');
+/*================ Close Banner ================*/
+const banner = document.getElementById('banner');
+const bannerclose = document.getElementById('banner_i-close');
 
 if (bannerclose) {
-        bannerclose.addEventListener('click', () => {
-            banner.classList.add('hide'); /* toggles class */
-        });
-    }
+    bannerclose.addEventListener('click', () => {
+        banner.classList.add('hide'); /* toggles class */
+    });
+}
 
 
 /*================ Button Scroll To About ================*/
@@ -55,7 +55,7 @@ if (video) {
 // })(jQuery);
 
 
-/*================ Loading icon ================*/    
+/*================ Loading icon ================*/
 const loader = document.getElementById('loader');
 const loadingIcon = document.getElementById('loader-video');
 setTimeout(() => {

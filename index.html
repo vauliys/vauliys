@@ -1,567 +1,616 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <script src="scripts.js" defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <title>Vauliys</title>
-</head>
+    <head>
+        <script src="scripts.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap"
+            rel="stylesheet">
+        <title>Vauliys</title>
+    </head>
 
-<body class="fade-in">
-    <!-- Module: Fixed Header -->
-    <header id="header">
-        <!-- Module:: (Fixed Banner) -->
-        <div class="banner" id="banner">
-            <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
-            <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Use code Vauliys30K for 30% off brushes!</a>
-            <i class="ri-close-line" id="banner_i-close"></i>
-        </div>
-        <!-- Navbar section -->
-        <div class="header">
-            <!-- Logo -->
-            <a href="#">
-                <image class="header-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
-            </a>
-            <!-- Header grid with links - only visible in desktop view -->
-            <div class="header_grid desktop">
-                <a href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online Store</a>
-                <div class="hr-vertical"></div> <!-- Vertical divider between links -->
-                <a href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
-                <div class="hr-vertical"></div> <!-- Vertical divider between links -->
-                <a href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
+    <body class="fade-in">
+        <!-- Module: Fixed Header -->
+        <header id="header">
+            <!-- Module:: (Fixed Banner) -->
+            <div class="banner" id="banner">
+                <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
+                <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Use code Vauliys30K
+                    for 30% off brushes!</a>
+                <i class="ri-close-line" id="banner_i-close"></i>
             </div>
-
-            <!-- Hamburger menu button -->
-            <div class="hamburger-menu">
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-            </div>
-        </div>
-
-        <!-- Links in navbar -->
-        <div class="navbar">
-            <!-- Column for 'Home' dropdown -->
-            <div class="width-100">
-                <div class="cursor-pointer">
-                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                        <a href="#">Home</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column for links 01 dropdown -->
-            <div class="width-100">
-                <div class="navbar-dropdown-links-01 cursor-pointer">
-                    <!-- Dropdown button for links 01 -->
-                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                        Projects
-                        <div id="btn-navbar-links-01">
-                            <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
-                        </div>
-                    </div>
-
-                    <!-- Links 01 dropdown -->
-                    <div class="navbar-links-01">
-                        <a href="chocolate" target="_blank">Chocolate</a>
-                        <a href="dunkso" target="_blank">Dunsko</a>
-                        <a href="harvest" target="_blank">Harvest</a>
-                        <a href="art" target="_blank">Illustrations</a>
-                        <a href="logitech-mx3s" target="_blank">Logitech MX3S</a>
-                        <a href="paperlike" target="_blank">Paperlike</a>
-                        <a href="solar" target="_blank">Solar Opposites</a>
-                        <a href="topdesigns" target="_blank">Top Designs</a>
-                        <a href="vauliys" target="_blank">Vauliys</a>
-                        <a class="mrg-btm-small" href="xppen" target="_blank">XPPEN</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column for links 02 dropdown -->
-            <div class="width-100">
-                <div class="navbar-dropdown-links-02 cursor-pointer">
-                    <!-- Dropdown button for links 02 -->
-                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                        Resources
-                        <div id="btn-navbar-links-02">
-                            <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
-                        </div>
-                    </div>
-
-                    <!-- Links 02 dropdown -->
-                    <div class="navbar-links-02">
-                        <a href="https://store.vauliys.com/" target="_blank">Online Store</a>
-                        <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
-                        <a href="links">Link Directory</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Module: Fullbleed-->
-    <div class="mdl-fullbleed">
-        <div class="mdl-fullbleed-text-btm">
-            <h1>Vauliys</h1>
-            <p class="mrg-btm-medium" style="color: black;">A multi-talented digital content creator
-                based in Australia. </p>
-            <button class="btn_outline" id="btn_explore">
-                Explore </button>
-        </div>
-        <video class="desktop" autoplay loop muted src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech_Artwork_Animation_Desktop.mp4" alt=""></video>
-        <img class="mobile" src="https://d22p4d1ezw7euj.cloudfront.net/Gifs/Logitech_MX3S_Animation.gif" alt="">
-    </div>
-    <!-- Modual: Dual Column-->
-    <div class="mdl-dual-column" id="about">
-        <div>
-            <div>
-                <h3>Howdy hey, nice to meet you.</h3>
-                <p class="mrg-btm-small">
-                    Victoria / Vauliys <i>(ˈvæl-ɪs or ˈvɔl-ɪs)</i>, is known for her work on Hulu adult animated series
-                    Solar Opposites and illustrative content featured on her social media platforms of 40K+ global
-                    followers.
-                </p>
-                <a href="about">
-                    <p class="btn_plain">Learn more<i class="ri-arrow-right-line"></i>
+            <!-- Navbar section -->
+            <div class="header">
+                <!-- Logo -->
+                <a href="#">
+                    <image class="header-logo"
+                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
                 </a>
+                <!-- Header grid with links - only visible in desktop view -->
+                <div class="header_grid desktop">
+                    <a href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online Store</a>
+                    <div class="hr-vertical"></div> <!-- Vertical divider between links -->
+                    <a href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
+                    <div class="hr-vertical"></div> <!-- Vertical divider between links -->
+                    <a href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
+                </div>
+
+                <!-- Hamburger menu button -->
+                <div class="hamburger-menu">
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                </div>
+            </div>
+
+            <!-- Links in navbar -->
+            <div class="navbar">
+                <!-- Column for 'Home' dropdown -->
+                <div class="width-100">
+                    <div class="cursor-pointer">
+                        <div class="cursor-pointer navbar-dropdown mrg-btm-small">
+                            <a href="#">Home</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column for links 01 dropdown -->
+                <div class="width-100">
+                    <div class="navbar-dropdown-links-01 cursor-pointer">
+                        <!-- Dropdown button for links 01 -->
+                        <div class="cursor-pointer navbar-dropdown mrg-btm-small">
+                            Projects
+                            <div id="btn-navbar-links-01">
+                                <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
+                            </div>
+                        </div>
+
+                        <!-- Links 01 dropdown -->
+                        <div class="navbar-links-01">
+                            <a href="chocolate" target="_blank">Chocolate</a>
+                            <a href="dunkso" target="_blank">Dunsko</a>
+                            <a href="harvest" target="_blank">Harvest</a>
+                            <a href="art" target="_blank">Illustrations</a>
+                            <a href="logitech-mx3s" target="_blank">Logitech MX3S</a>
+                            <a href="paperlike" target="_blank">Paperlike</a>
+                            <a href="solar" target="_blank">Solar Opposites</a>
+                            <a href="topdesigns" target="_blank">Top Designs</a>
+                            <a href="vauliys" target="_blank">Vauliys</a>
+                            <a class="mrg-btm-small" href="xppen" target="_blank">XPPEN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column for links 02 dropdown -->
+                <div class="width-100">
+                    <div class="navbar-dropdown-links-02 cursor-pointer">
+                        <!-- Dropdown button for links 02 -->
+                        <div class="cursor-pointer navbar-dropdown mrg-btm-small">
+                            Resources
+                            <div id="btn-navbar-links-02">
+                                <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
+                            </div>
+                        </div>
+
+                        <!-- Links 02 dropdown -->
+                        <div class="navbar-links-02">
+                            <a href="https://store.vauliys.com/" target="_blank">Online Store</a>
+                            <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
+                            <a href="links">Link Directory</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Module: Fullbleed-->
+        <div class="mdl-fullbleed">
+            <div class="mdl-fullbleed-text-btm">
+                <h1>Vauliys</h1>
+                <p class="mrg-btm-medium" style="color: black;">A multi-talented digital content creator
+                    based in Australia. </p>
+                <button class="btn_outline" id="btn_explore">
+                    Explore </button>
+            </div>
+            <video class="desktop" autoplay loop muted
+                src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech_Artwork_Animation_Desktop.mp4"
+                alt=""></video>
+            <img class="mobile" src="https://d22p4d1ezw7euj.cloudfront.net/Gifs/Logitech_MX3S_Animation.gif" alt="">
+        </div>
+        <!-- Modual: Dual Column-->
+        <div class="mdl-dual-column" id="about">
+            <div>
+                <div>
+                    <h3>Howdy hey, nice to meet you.</h3>
+                    <p class="mrg-btm-small">
+                        Victoria / Vauliys <i>(ˈvæl-ɪs or ˈvɔl-ɪs)</i>, is known for her work on Hulu adult animated
+                        series
+                        Solar Opposites and illustrative content featured on her social media platforms of 40K+ global
+                        followers.
+                    </p>
+                    <a href="about">
+                        <p class="btn_plain">Learn more<i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria_Portrait_2023.jpg"
+                    alt="Victoria_Portrait_2023.jpg">
+                <p class="caption mrg-top-small colour-grey-200">Nataliaa Na, Australia, 2023</p>
             </div>
         </div>
-        <div>
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria_Portrait_2023.jpg" alt="Victoria_Portrait_2023.jpg">
-            <p class="caption mrg-top-small colour-grey-200">Nataliaa Na, Australia, 2023</p>
-        </div>
-    </div>
-    <!--Module: Tab Slider -->
-    <div class="mdl-tab-slider">
+        <!--Module: Tab Slider -->
+        <div class="mdl-tab-slider">
             <div class="mrg-btm-medium">
                 <h3>Project Gallery</h3>
 
                 <div class="mdl-tab-slider-nav">
-                    <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active" id="mdl-tab-slider-featured">Featured</div>
+                    <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active"
+                        id="mdl-tab-slider-featured">Featured</div>
                     <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-art">Art</div>
                     <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-design">Design</div>
                     <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-motion">Motion</div>
                     <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-social">Social</div>
                 </div>
             </div>
-        <div class="mdl-tab-slider-featured fade-in">
-            <div class="mdl-tab-slider-block">
-                <a href="art"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg" alt="Thumbnail_Grass.jpg"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        Characters
-                    </span>
-                    <span class="keyword-outline">
-                        Props
-                    </span>
-                    <span class="keyword-outline">
-                        Environmental
-                    </span>
+            <div class="mdl-tab-slider-featured fade-in">
+                <div class="mdl-tab-slider-block">
+                    <a href="art"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg"
+                            alt="Thumbnail_Grass.jpg"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            Characters
+                        </span>
+                        <span class="keyword-outline">
+                            Props
+                        </span>
+                        <span class="keyword-outline">
+                            Environmental
+                        </span>
+                    </div>
+                    <h4>Illustrative pieces - personal Vauliys artworks.</h4>
                 </div>
-                <h4>Illustrative pieces - personal Vauliys artworks.</h4>
+                <!--===(Tab Slider: Block - T360) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="locked">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_T360.jpg"
+                            alt="Thumbnail_T360.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Motion Graphic
+                        </span>
+                    </div>
+                    <h4>Till Payments - Till Portal, your complete payments platform.</h4>
+                </div>
+                <!--=== (Tab Slider: Block - Logitech) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="logitech-mx3s"><img
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX3S.jpg"
+                            alt="Thumbnail_Logitech-MX3S"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Collab
+                        </span>
+                        <span class="keyword-outline">
+                            Product Feature
+                        </span>
+                    </div>
+                    <h4>Logitech - Master your flow with MX Master Series.</h4>
+                </div>
             </div>
-            <!--===(Tab Slider: Block - T360) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="locked">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_T360.jpg" alt="Thumbnail_T360.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Motion Graphic
-                    </span>
+            <div class="mdl-tab-slider-social fade-in hide">
+                <!--=== (Tab Slider: Block - Logitech) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="logitech-mx3s"><img
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX3S.jpg"
+                            alt="Thumbnail_Logitech-MX3S"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Collab
+                        </span>
+                        <span class="keyword-outline">
+                            Product Feature
+                        </span>
+                    </div>
+                    <h4>Logitech - Master your flow with MX Master Series.</h4>
                 </div>
-                <h4>Till Payments - Till Portal, your complete payments platform.</h4>
+                <!--=== (Tab Slider: Block - Paperlike) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="paperlike"><img
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Paperlike.jpg"
+                            alt="Thumbnail_Paperlike"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Ambassador
+                        </span>
+                    </div>
+                    <h4>Paperlike - Fall in love with drawing on your iPad.</h4>
+                </div>
+                <!--=== (Tab Slider: Block - XPPEN ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="xppen"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN.jpg"
+                            alt="Thumbnail_XPPEN"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2022
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Ambassador
+                        </span>
+                    </div>
+                    <h4>XPPEN - Dream. Brave. True.</h4>
+                </div>
+                <!--===(Tab Slider: Block - Huion) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="https://www.youtube.com/watch?v=lE7ftfitcvc&t=3s" target="_blank"><img
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Kamvas-22.jpg"
+                            alt="Thumbnail_Kamvas-22.jpg"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2022
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Collab
+                        </span>
+                        <span class="keyword-outline">
+                            Product Feature
+                        </span>
+                    </div>
+                    <h4>Huion - Simple but powerful with Kamvas 22.</h4>
+                </div>
+                <!--===(Tab Slider: Block - Logitech) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="logitech-mx"><img
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX.jpg"
+                            alt="Thumbnail_Logitech-MX.jpg"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2021
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Collab
+                        </span>
+                        <span class="keyword-outline">
+                            Product Feature
+                        </span>
+                    </div>
+                    <h4>Logitech - MX Anywhere, master your next project.
+                        </h3>
+                </div>
+                <!--===(Tab Slider: Block - Toon Boom) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="https://www.toonboom.com/ambassador/victoria-pritchard" target="_blank"><img
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Toon-Boom.jpg"
+                            alt="Thumbnail_Toon-Boom"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2022
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Ambassador
+                        </span>
+                    </div>
+                    <h4>Toon Boom - Advance the craft of animation.</h4>
+                </div>
             </div>
-            <!--=== (Tab Slider: Block - Logitech) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="logitech-mx3s"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX3S.jpg" alt="Thumbnail_Logitech-MX3S"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Collab
-                    </span>
-                    <span class="keyword-outline">
-                        Product Feature
-                    </span>
+            <div class="mdl-tab-slider-motion fade-in hide">
+                <!--===(Tab Slider: Block - Solar Opposites) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="solar">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Solar-Opposites.jpg"
+                            alt="Thumbnail_Solar-Opposites.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2022
+                        </span>
+                        <span class="keyword-outline">
+                            Animation
+                        </span>
+                        <span class="keyword-outline">
+                            Hulu
+                        </span>
+                    </div>
+                    <h4>Solar Opposites - adult animated sitcom for Hulu.</h4>
                 </div>
-                <h4>Logitech - Master your flow with MX Master Series.</h4>
+                <!--===(Tab Slider: Block - Harvest Festival) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="harvest">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Harvest-Festival.jpg"
+                            alt="Thumbnail_Harvest-Festival.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2021
+                        </span>
+                        <span class="keyword-outline">
+                            Animation
+                        </span>
+                    </div>
+                    <h4>Harvest - an original Vauliys short film and webcomic.</h4>
+                </div>
+                <!--===(Tab Slider: Block - Melbourne Museum) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="topdesigns">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Top-Designs.jpg"
+                            alt="Thumbnail_Top-Designs.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2018
+                        </span>
+                        <span class="keyword-outline">
+                            Animation
+                        </span>
+                        <span class="keyword-outline">
+                            Internship
+                        </span>
+                    </div>
+                    <h4>Top Designs- held @ the Melbourne Museum.</h3>
+                </div>
+
+            </div>
+            <div class="mdl-tab-slider-design fade-in hide">
+                <!--===(Tab Slider: Block - PNWT) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="locked">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_PNWT.jpg"
+                            alt="Thumbnail_PNWT.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Campaign
+                        </span>
+                    </div>
+                    <h4>Till Payments - Pay Nil with Till.</h4>
+                </div>
+                <!--===(Tab Slider: Block - T360) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="locked">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_T360.jpg"
+                            alt="Thumbnail_T360.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Motion Graphic
+                        </span>
+                    </div>
+                    <h4>Till Payments - Till Portal, your complete payments platform.</h4>
+                </div>
+                <!--===(Tab Slider: Block - T360) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="locked">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Till-Website.jpg"
+                            alt="Thumbnail_Till-Wesbite.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Identity
+                        </span>
+                    </div>
+                    <h4>Till Payments - Brand 2.0 Refresh</h4>
+                </div>
+                <!--===(Tab Slider: Block - DUNKSO) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="dunkso">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Dunkso.jpg"
+                            alt="Thumbnail_Dunkso.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Identity
+                        </span>
+                        <span class="keyword-outline">
+                            Logo Design
+                        </span>
+                    </div>
+                    <h4>Dunkso - balling in style, dunking the competition.</h4>
+                </div>
+                <!--===(Tab Slider: Block - Vauliys) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="vauliys">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Vauliys.jpg"
+                            alt="Thumbnail_Vauliys.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Identity
+                        </span>
+                        <span class="keyword-outline">
+                            Logo Design
+                        </span>
+                    </div>
+                    <h4>Vauliys - a personal branding identity.</h4>
+                </div>
+                <!--===(Tab Slider: Block - Chocolate Box) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="chocolate">
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Chocolate-Box.jpg"
+                            alt="Thumbnail_Chocolate-Box.jpg">
+                    </a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            2022
+                        </span>
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Product Packaging
+                        </span>
+                    </div>
+                    <h4>The Chocolate Box - Melbourne's favourite chocolatier.</h4>
+                </div>
+            </div>
+            <div class="mdl-tab-slider-art fade-in hide">
+                <!--===(Tab Slider: Block - Althea's Loom) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="locked"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Neyomi.jpg"
+                            alt="Thumbnail_Neyomi.jpg"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            Artbook
+                        </span>
+                        <span class="keyword-outline">
+                            Novella
+                        </span>
+                        <span class="keyword-outline">
+                            Locked
+                        </span>
+                    </div>
+                    <h4>Althea's Loom - Threads of Fate by Vauliys.</h4>
+                </div>
+
+                <!--===(Tab Slider: Block - Art) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="art"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg"
+                            alt="Thumbnail_Grass.jpg"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            Characters
+                        </span>
+                        <span class="keyword-outline">
+                            Props
+                        </span>
+                        <span class="keyword-outline">
+                            Environmental
+                        </span>
+                    </div>
+                    <h4>Illustrative pieces - personal Vauliys artworks.</h4>
+                </div>
+                <!--===(Tab Slider: Block - blank) ===-->
+                <div class="mdl-tab-slider-block">
+                    <a href="https://store.vauliys.com" target="_blank"><img
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Ocean.jpg"
+                            alt="Thumbnail_Ocean.jpg"></a>
+                    <div class="mdl-keywords-grid">
+                        <span class="keyword-outline">
+                            Brushes
+                        </span>
+                        <span class="keyword-outline">
+                            Online Store
+                        </span>
+                    </div>
+                    <h4>Digital Brush Sets available for download. </h4>
+                </div>
             </div>
         </div>
-        <div class="mdl-tab-slider-social fade-in hide">
-            <!--=== (Tab Slider: Block - Logitech) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="logitech-mx3s"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX3S.jpg" alt="Thumbnail_Logitech-MX3S"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Collab
-                    </span>
-                    <span class="keyword-outline">
-                        Product Feature
-                    </span>
-                </div>
-                <h4>Logitech - Master your flow with MX Master Series.</h4>
+        <!-- Module: Coloured Block -->
+        <div class="mdl-coloured-block">
+            <div class="mdl_coloured-block-text">
+                <h3 class="mrg-btm-medium">Collaborative relationships established with brands.</h3>
+                <p class="mrg-btm-small">
+                    Working with a variety of brands, Victoria has a wide suite of skills to fit all kinds of briefs
+                    including animation, social media and graphic design.
+                </p>
             </div>
-            <!--=== (Tab Slider: Block - Paperlike) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="paperlike"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Paperlike.jpg" alt="Thumbnail_Paperlike"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Ambassador
-                    </span>
-                </div>
-                <h4>Paperlike - Fall in love with drawing on your iPad.</h4>
-            </div>
-            <!--=== (Tab Slider: Block - XPPEN ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="xppen"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN.jpg" alt="Thumbnail_XPPEN"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2022
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Ambassador
-                    </span>
-                </div>
-                <h4>XPPEN - Dream. Brave. True.</h4>
-            </div>
-            <!--===(Tab Slider: Block - Huion) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.youtube.com/watch?v=lE7ftfitcvc&t=3s" target="_blank"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Kamvas-22.jpg"
-                        alt="Thumbnail_Kamvas-22.jpg"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2022
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Collab
-                    </span>
-                    <span class="keyword-outline">
-                        Product Feature
-                    </span>
-                </div>
-                <h4>Huion - Simple but powerful with Kamvas 22.</h4>
-            </div>
-            <!--===(Tab Slider: Block - Logitech) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="logitech-mx"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Logitech-MX.jpg" alt="Thumbnail_Logitech-MX.jpg"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2021
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Collab
-                    </span>
-                    <span class="keyword-outline">
-                        Product Feature
-                    </span>
-                </div>
-                <h4>Logitech - MX Anywhere, master your next project.
-                    </h3>
-            </div>
-            <!--===(Tab Slider: Block - Toon Boom) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.toonboom.com/ambassador/victoria-pritchard" target="_blank"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Toon-Boom.jpg"
-                        alt="Thumbnail_Toon-Boom"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2022
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Ambassador
-                    </span>
-                </div>
-                <h4>Toon Boom - Advance the craft of animation.</h4>
+            <div class="icon-grid">
+                <image id="logo_logitech" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg"
+                    alt="Logo_Logitech.svg">
+
+                    <image id="logo_hulu" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Hulu.svg"
+                        alt="Logo_Hulu.svg">
+
+                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Till.svg" alt="Logo_Till.svg">
+
+                            <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Huion.svg"
+                                alt="Logo_Huion.svg">
+
+                                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Studio-Moshi.svg"
+                                    alt="Logo_Studio-Moshi.svg">
+
+                                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Paperlike.svg"
+                                        alt="Logo_Paperlike.svg">
+
+                                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_XPPEN.svg"
+                                            alt="Logo_XPPEN.svg">
+
+                                            <image class="desktop"
+                                                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Xencelabs.svg"
+                                                alt="Logo_Xenecelabs.svg">
+                                                <image class="mobile"
+                                                    src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Xencelabs.svg"
+                                                    alt="Logomark_Xenecelabs.svg"></image>
             </div>
         </div>
-        <div class="mdl-tab-slider-motion fade-in hide">
-            <!--===(Tab Slider: Block - Solar Opposites) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="solar">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Solar-Opposites.jpg" alt="Thumbnail_Solar-Opposites.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2022
-                    </span>
-                    <span class="keyword-outline">
-                        Animation
-                    </span>
-                    <span class="keyword-outline">
-                        Hulu
-                    </span>
-                </div>
-                <h4>Solar Opposites - adult animated sitcom for Hulu.</h4>
-            </div>
-            <!--===(Tab Slider: Block - Harvest Festival) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="harvest">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Harvest-Festival.jpg" alt="Thumbnail_Harvest-Festival.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2021
-                    </span>
-                    <span class="keyword-outline">
-                        Animation
-                    </span>
-                </div>
-                <h4>Harvest - an original Vauliys short film and webcomic.</h4>
-            </div>
-            <!--===(Tab Slider: Block - Melbourne Museum) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="topdesigns">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Top-Designs.jpg" alt="Thumbnail_Top-Designs.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2018
-                    </span>
-                    <span class="keyword-outline">
-                        Animation
-                    </span>
-                    <span class="keyword-outline">
-                        Internship
-                    </span>
-                </div>
-                <h4>Top Designs- held @ the Melbourne Museum.</h3>
-            </div>
-
-        </div>
-        <div class="mdl-tab-slider-design fade-in hide">
-            <!--===(Tab Slider: Block - PNWT) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="locked">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_PNWT.jpg" alt="Thumbnail_PNWT.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Campaign
-                    </span>
-                </div>
-                <h4>Till Payments - Pay Nil with Till.</h4>
-            </div>
-            <!--===(Tab Slider: Block - T360) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="locked">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_T360.jpg" alt="Thumbnail_T360.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Motion Graphic
-                    </span>
-                </div>
-                <h4>Till Payments - Till Portal, your complete payments platform.</h4>
-            </div>
-            <!--===(Tab Slider: Block - T360) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="locked">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Till-Website.jpg" alt="Thumbnail_Till-Wesbite.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Identity
-                    </span>
-                </div>
-                <h4>Till Payments - Brand 2.0 Refresh</h4>
-            </div>
-            <!--===(Tab Slider: Block - DUNKSO) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="dunkso">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Dunkso.jpg" alt="Thumbnail_Dunkso.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Identity
-                    </span>
-                    <span class="keyword-outline">
-                        Logo Design
-                    </span>
-                </div>
-                <h4>Dunkso - balling in style, dunking the competition.</h4>
-            </div>
-            <!--===(Tab Slider: Block - Vauliys) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="vauliys">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Vauliys.jpg" alt="Thumbnail_Vauliys.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Identity
-                    </span>
-                    <span class="keyword-outline">
-                        Logo Design
-                    </span>
-                </div>
-                <h4>Vauliys - a personal branding identity.</h4>
-            </div>
-            <!--===(Tab Slider: Block - Chocolate Box) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="chocolate">
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Chocolate-Box.jpg" alt="Thumbnail_Chocolate-Box.jpg">
-                </a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        2022
-                    </span>
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Product Packaging
-                    </span>
-                </div>
-                <h4>The Chocolate Box - Melbourne's favourite chocolatier.</h4>
-            </div>
-        </div>
-        <div class="mdl-tab-slider-art fade-in hide">
-            <!--===(Tab Slider: Block - Althea's Loom) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="locked"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Neyomi.jpg" alt="Thumbnail_Neyomi.jpg"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        Artbook
-                    </span>
-                    <span class="keyword-outline">
-                        Novella
-                    </span>
-                    <span class="keyword-outline">
-                        Locked
-                    </span>
-                </div>
-                <h4>Althea's Loom - Threads of Fate by Vauliys.</h4>
-            </div>
-
-            <!--===(Tab Slider: Block - Art) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="art"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg" alt="Thumbnail_Grass.jpg"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        Characters
-                    </span>
-                    <span class="keyword-outline">
-                        Props
-                    </span>
-                    <span class="keyword-outline">
-                        Environmental
-                    </span>
-                </div>
-                <h4>Illustrative pieces - personal Vauliys artworks.</h4>
-            </div>
-            <!--===(Tab Slider: Block - blank) ===-->
-            <div class="mdl-tab-slider-block">
-                <a href="https://store.vauliys.com" target="_blank"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Ocean.jpg" alt="Thumbnail_Ocean.jpg"></a>
-                <div class="mdl-keywords-grid">
-                    <span class="keyword-outline">
-                        Brushes
-                    </span>
-                    <span class="keyword-outline">
-                        Online Store
-                    </span>
-                </div>
-                <h4>Digital Brush Sets available for download. </h4>
-            </div>
-        </div>
-    </div>
-    <!-- Module: Coloured Block -->
-    <div class="mdl-coloured-block">
-        <div class="mdl_coloured-block-text">
-            <h3 class="mrg-btm-medium">Collaborative relationships established with brands.</h3>
-            <p class="mrg-btm-small">
-                Working with a variety of brands, Victoria has a wide suite of skills to fit all kinds of briefs
-                including animation, social media and graphic design.
-            </p>
-        </div>
-        <div class="icon-grid">
-            <image id="logo_logitech" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg" alt="Logo_Logitech.svg">
-
-                <image id="logo_hulu" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Hulu.svg" alt="Logo_Hulu.svg">
-
-                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Till.svg" alt="Logo_Till.svg">
-
-                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Huion.svg" alt="Logo_Huion.svg">
-
-                            <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Studio-Moshi.svg" alt="Logo_Studio-Moshi.svg">
-
-                                <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Paperlike.svg" alt="Logo_Paperlike.svg">
-
-                                    <image src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_XPPEN.svg" alt="Logo_XPPEN.svg">
-
-                                        <image class="desktop" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Xencelabs.svg" alt="Logo_Xenecelabs.svg">
-                                            <image class="mobile" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Xencelabs.svg" alt="Logomark_Xenecelabs.svg"></image>
-        </div>
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <a href="#">
-            <image class="logomark" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Vauliys_YLW.svg">
-        </a>
-        <h5>For all business enquiries <a class="colour-accent-100 font-bold" href="mailto:hello@vauliys.com">hello@vauliys.com</a></h5>
-        <div>
-            <a class="icon" href="https://www.instagram.com/vauliys/" target="_blank">
-                <i class="ri-instagram-line"></i>
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="#">
+                <image class="logomark" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Vauliys_YLW.svg">
             </a>
+            <h5>For all business enquiries <a class="colour-accent-100 font-bold"
+                    href="mailto:hello@vauliys.com">hello@vauliys.com</a></h5>
+            <div>
+                <a class="icon" href="https://www.instagram.com/vauliys/" target="_blank">
+                    <i class="ri-instagram-line"></i>
+                </a>
 
-            <a class="icon" href="https://github.com/vauliys" target="_blank">
-                <i class="ri-github-line"></i>
-            </a>
+                <a class="icon" href="https://github.com/vauliys" target="_blank">
+                    <i class="ri-github-line"></i>
+                </a>
 
-            <a class="icon" href="https://store.vauliys.com/" target="_blank">
-                <i class="ri-shopping-bag-2-line"></i>
-            </a>
+                <a class="icon" href="https://store.vauliys.com/" target="_blank">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </a>
 
-            <a class="icon" href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                <i class="ri-linkedin-fill"></i>
-            </a>
-        </div>
-        <span class="copyright colour-main-300">
-            <p>©2023 Vauliys</p>
-            <a class="colour-accent-100" href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built by Vauliys</a>
-        </span>
-    </footer>
-</body>
+                <a class="icon" href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+            </div>
+            <span class="copyright colour-main-300">
+                <p>©2023 Vauliys</p>
+                <a class="colour-accent-100" href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
+                    by Vauliys</a>
+            </span>
+        </footer>
+    </body>
 
-<!-- JavaScript files -->
-<script src="scripts.js" defer></script> <!-- Main JavaScript file -->
-<script src="mdl_tab-slider.js" defer></script> <!-- Module:: Tab Slider component -->
-<script src="mdl_navbar.js"></script> <!-- Module:: Fixed Navbar component -->
+    <!-- JavaScript files -->
+    <script src="scripts.js" defer></script> <!-- Main JavaScript file -->
+    <script src="mdl_tab-slider.js" defer></script> <!-- Module:: Tab Slider component -->
+    <script src="mdl_navbar.js"></script> <!-- Module:: Fixed Navbar component -->
 
 </html>
