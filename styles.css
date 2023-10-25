@@ -297,6 +297,10 @@ footer .icon {
     color: var(--colour-grey-200);
 }
 
+.background-grey-100 {
+    background-color: var(--colour-grey-100);
+}
+
 /* ------------------- */
 /* Lists and links */
 ul,
@@ -694,6 +698,38 @@ header {
 }
 
 /* ------------------- */
+/* Module: Full Bleed */
+.mdl-fullbleed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEFF1;
+    overflow: hidden;
+    padding-bottom: 50%;
+}
+
+.mdl-fullbleed video,
+.mdl-fullbleed img {
+    margin-top: -5rem;
+    border-radius: 0;
+    height: auto;
+    width: 120%;
+}
+
+.mdl-fullbleed img {
+    z-index: 1;
+}
+
+.mdl-fullbleed-text-btm {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 50% 20% 10% 20%;
+    color: var(--colour-black);
+    z-index: 1;
+}
+
+/* ------------------- */
 /* Module: Fullbleed Banner */
 .mdl-fullbleed-banner img {
     object-fit: cover;
@@ -730,36 +766,37 @@ footer {
 }
 
 /* ------------------- */
-/* Module: Full Bleed */
-.mdl-fullbleed {
+/* Module: Mosaic Gallery */
+.mdl-mosaic-gallery {
+    padding: var(--mrg-medium) 15% var(--mrg-x2-large) 15%;
+}
+
+.mdl-mosaic-gallery video {
+    width: 100%;
+    height: 100%;
+}
+
+.mdl-mosaic-gallery-container {
+    display: grid;
+    border-radius: 1rem;
+    grid-gap: 0.5rem;
+}
+
+.mdl-mosaic-gallery-column img:last-child {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mdl-mosaic-gallery-column {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EBEFF1;
-    overflow: hidden;
-    padding-bottom: 50%;
-}
-
-.mdl-fullbleed video,
-.mdl-fullbleed img {
-    margin-top: -5rem;
-    border-radius: 0;
-    height: auto;
-    width: 120%;
-}
-
-.mdl-fullbleed img {
-    z-index: 1;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 
-.mdl-fullbleed-text-btm {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    padding: 50% 20% 10% 20%;
-    color: var(--colour-black);
-    z-index: 1;
+.mdl-mosaic-gallery button {
+    margin-bottom: var(--mrg-small);
 }
 
 #links-grid {
@@ -842,18 +879,6 @@ footer {
     margin: 0;
 }
 
-/* Project Pages*/
-.sol-props-grid,
-.sol-char-grid,
-.indiv-project_content {
-    padding: 5%;
-    background-color: var(--colour-grey-100);
-    display: grid;
-
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-}
-
 .sol-props-grid video,
 .sol-char-grid video {
     width: 100%;
@@ -871,39 +896,6 @@ footer {
 
 #logitech-21 {
     padding-top: 0.5rem;
-}
-
-.mdl-mosaic-gallery {
-    padding: var(--mrg-medium) 15% var(--mrg-x2-large) 15%;
-}
-
-.mdl-mosaic-gallery video {
-    width: 100%;
-    height: 100%;
-}
-
-
-.mdl-mosaic-gallery-container {
-    display: grid;
-    border-radius: 1rem;
-    grid-gap: 0.5rem;
-}
-
-.mdl-mosaic-gallery-column img:last-child {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.mdl-mosaic-gallery-column {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-
-.mdl-mosaic-gallery button {
-    margin-bottom: var(--mrg-small);
 }
 
 .mdl-narrow-column {
@@ -984,32 +976,8 @@ footer {
         padding: 0 20%;
     }
 
-    .sol-props-grid,
-    .sol-char-grid {
-        display: grid;
-        padding: 5% 15%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.5rem;
-    }
-
     /* ------------------- */
-    /* Module: Fullbleed Banner */
-    .mdl-fullbleed-banner img {
-        height: auto;
-        width: 100%;
-    }
-
-    /* ------------------- */
-    /* Links Grid */
-    #links-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    /* ------------------- */
-    /* ORANGISE */
-
-
-
+    /* Module: Fullbleed */
     .mdl-fullbleed {
         display: flex;
         justify-content: center;
@@ -1038,6 +1006,28 @@ footer {
         padding: 0 10%;
         z-index: 1;
     }
+
+    /* ------------------- */
+    /* Module: Fullbleed Banner */
+    .mdl-fullbleed-banner img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* ------------------- */
+    /* Mosaic Gallery */
+    .mdl-mosaic-gallery-container {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    /* ------------------- */
+    /* Links Grid */
+    #links-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ------------------- */
+    /* ORANGISE */
 
     /*========== START (DESKTOP )mdl_dual-col_text-img ==========*/
 
@@ -1070,10 +1060,6 @@ footer {
 
     #huion {
         margin: 0 auto;
-    }
-
-    .mdl-mosaic-gallery-container {
-        grid-template-columns: repeat(4, auto);
     }
 
     .icon-grid {
