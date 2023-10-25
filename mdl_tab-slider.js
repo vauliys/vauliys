@@ -1,4 +1,4 @@
-/*================ Module::: Tabbed Slider (Homepage)================*/
+/*================ Module: Tabbed Slider (Homepage)================*/
 const tabFeatured = document.querySelector('#mdl-tab-slider-featured');
 const gridFeatured = document.querySelector('.mdl-tab-slider-featured');
 
@@ -103,7 +103,7 @@ if (tabArt) {
 
 
 
-/*================ Module::: Tabbed Slider (Solar Opposites)================*/
+/*================ Module: Tabbed Slider (Solar Opposites)================*/
 const SOLpropsTab = document.querySelector('#sol-props-tab');
 const SOLcharTab = document.querySelector('#sol-char-tab');
 
@@ -178,5 +178,74 @@ if (cbXmasTab) {
 
         cbXmasGrid.classList.remove('hide'); /* toggles class */
         cbEasterGrid.classList.add('hide'); /* toggles class */
+    });
+}
+
+/*================ Tab Slider: Art.html ================*/
+const tab2023 = document.querySelector('#mdl-tab-slider-2023');
+const tab2022 = document.querySelector('#mdl-tab-slider-2022');
+const tab2021 = document.querySelector('#mdl-tab-slider-2021');
+const tab2020 = document.querySelector('#mdl-tab-slider-2020');
+
+const grid2023 = document.querySelector('.art-2023');
+const grid2022 = document.querySelector('.art-2022');
+const grid2021 = document.querySelector('.art-2021');
+const grid2020 = document.querySelector('.art-2020');
+
+
+/* when Slider item is clicked perform code*/
+if (tab2023) {
+    tab2023.addEventListener('click', () => {
+        tab2023.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tab2022.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2021.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2020.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        grid2023.classList.remove('hide'); /* toggles class */
+        grid2022.classList.add('hide'); /* toggles class */
+        grid2021.classList.add('hide'); /* toggles class */
+        grid2020.classList.add('hide'); /* toggles class */
+    });
+}
+/* when Slider item is clicked perform code*/
+if (tab2022) {
+    tab2022.addEventListener('click', () => {
+        tab2022.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tab2023.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2021.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2020.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        grid2022.classList.remove('hide'); /* toggles class */
+        grid2023.classList.add('hide'); /* toggles class */
+        grid2021.classList.add('hide'); /* toggles class */
+        grid2020.classList.add('hide'); /* toggles class */
+    });
+}
+/* when Slider item is clicked perform code*/
+if (tab2021) {
+    tab2021.addEventListener('click', () => {
+        tab2021.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tab2023.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2022.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2020.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        grid2021.classList.remove('hide'); /* toggles class */
+        grid2022.classList.add('hide'); /* toggles class */
+        grid2023.classList.add('hide'); /* toggles class */
+        grid2020.classList.add('hide'); /* toggles class */
+    });
+}
+/* when Slider item is clicked perform code*/
+if (tab2020) {
+    tab2020.addEventListener('click', () => {
+        tab2020.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tab2023.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2022.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tab2021.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        grid2020.classList.remove('hide'); /* toggles class */
+        grid2022.classList.add('hide'); /* toggles class */
+        grid2021.classList.add('hide'); /* toggles class */
+        grid2023.classList.add('hide'); /* toggles class */
     });
 }
