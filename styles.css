@@ -81,7 +81,7 @@
         --h4: 1.5rem;
         --h5: 1.25rem;
         --body: 1rem;
-        --caption: 0.8rem;
+        --caption: 0.9rem;
     }
 }
 
@@ -390,6 +390,7 @@ hr {
     outline-color: var(--colour-grey-100);
     outline-width: 1px;
     cursor: default;
+    width: fit-content;
 
     padding: 0.3rem 0.75rem;
     border-radius: 2rem;
@@ -823,10 +824,6 @@ footer {
     height: 1.25rem;
 }
 
-#error {
-    height: 100vh;
-    background-color: transparent;
-}
 
 /*========== START (MOBILE) mdl-dual-column==========*/
 .mdl_single-column {
@@ -876,36 +873,36 @@ footer {
     padding-top: 0.5rem;
 }
 
-.mdl_mosaic-gallery {
+.mdl-mosaic-gallery {
     padding: var(--mrg-medium) 15% var(--mrg-x2-large) 15%;
 }
 
-.mdl_mosaic-gallery video {
+.mdl-mosaic-gallery video {
     width: 100%;
     height: 100%;
 }
 
 
-.mdl_mosaic-gallery_content {
+.mdl-mosaic-gallery-container {
     display: grid;
     border-radius: 1rem;
     grid-gap: 0.5rem;
 }
 
-.mdl_mosaic-gallery_column img:last-child {
+.mdl-mosaic-gallery-column img:last-child {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.mdl_mosaic-gallery_column {
+.mdl-mosaic-gallery-column {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
 
-.mdl_mosaic-gallery button {
+.mdl-mosaic-gallery button {
     margin-bottom: var(--mrg-small);
 }
 
@@ -1075,7 +1072,7 @@ footer {
         margin: 0 auto;
     }
 
-    .mdl_mosaic-gallery_content {
+    .mdl-mosaic-gallery-container {
         grid-template-columns: repeat(4, auto);
     }
 
