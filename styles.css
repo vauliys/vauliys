@@ -794,11 +794,22 @@ footer {
     gap: 0.5rem;
 }
 
-
 .mdl-mosaic-gallery button {
     margin-bottom: var(--mrg-small);
 }
 
+
+.sol-props-grid video,
+.sol-char-grid video {
+    width: 100%;
+}
+
+.art-2023, .art-20222, .art-2021, .art-2022 {
+    padding: 0;
+}
+
+/* ------------------- */
+/* Link Page */
 #links-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -873,15 +884,6 @@ footer {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-}
-
-#indiv-project .mdl_header_stnd {
-    margin: 0;
-}
-
-.sol-props-grid video,
-.sol-char-grid video {
-    width: 100%;
 }
 
 /*========== END (MOBILE) mdl_icon-grid ==========*/
@@ -1016,6 +1018,10 @@ footer {
 
     /* ------------------- */
     /* Mosaic Gallery */
+    .art-2023, .art-20222, .art-2021, .art-2022 {
+        padding: var(--mrg-medium) 15% var(--mrg-x2-large) 15%;
+    }
+
     .mdl-mosaic-gallery-container {
         grid-template-columns: repeat(4, auto);
     }
