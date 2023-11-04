@@ -787,7 +787,9 @@ footer {
 .mdl-mosaic-gallery img {
     border-radius: 0.5rem;
 }
-.mdl-mosaic-gallery-sidebar img {
+
+.mdl-mosaic-gallery-sidebar img,
+.mdl-mosaic-gallery-sidebar video {
     border-radius: 0;
 }
 
