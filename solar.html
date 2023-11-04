@@ -118,47 +118,26 @@
             </div>
         </header>
 
-        <!--==================== Module: Full Page with Text Overlay (Bottom Left) ===================-->
-        <div class="mdl-fullbleed-banner">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Banners/Banner_Solar-Opposites.jpg"
-                alt="Banner_Solar-Opposites.jpg">
-        </div>
-        <!--==================== Module: Tab Slider Gallery ====================-->
-        <div class="mdl-dual-column">
+        <!-- Module: Fixed Sidebar -->
+        <div class="mdl-fixed-sidebar">
             <div>
-                <div>
-                    <h3>Solar Opposites, an American adult animated science fiction sitcom on Hulu.</h3>
-                </div>
+                <h3>Solar Opposites.</h3>
             </div>
-
-            <div class="mdl_column">
-                <div class="grid-2 mrg-none width-fit mdl-tab-slider-nav">
-                    <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active" id="sol-props-tab">Props
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <p class="mrg-btm-medium">
+                    Building and rigging props and characters for the animation team.</p>
+                    <div class="mdl-tab-slider">
+                        <div class="grid-2 mrg-none width-fit mdl-tab-slider-nav">
+                            <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active" id="sol-props-tab">Props
+                            </div>
+                            <div class="cursor-pointer mdl-tab-slider-item" id="sol-char-tab">Characters</div>
+                        </div>
                     </div>
-                    <div class="cursor-pointer mdl-tab-slider-item" id="sol-char-tab">Characters</div>
-                </div>
-                <p class="mrg-top-small" id="sol-props-text">
-                    Under contract with Studio Moshi, a collection of props were built
-                    and rigged in Toon Boom Harmony for Solar Opposites, featuring a variety of items that include
-                    handheld
-                    accessories and motor vehicles.
-                </p>
-
-                <p class="hide mrg-top-small" id="sol-char-text">
-                    Under contract with Studio Moshi, a collection of characters were
-                    built and rigged in Toon BoomHarmony for Solar Opposites, featuring a secondary characters including
-                    360
-                    turn around views and incrementals.
-                </p>
-                <a href="https://www.hulu.com/series/solar-opposites-f089664b-1a87-433b-86a5-24e7da5a246a"
-                    target="_blank">
-                    <p class="mrg-top-small btn_plain">
-                        Watch Solar Opposites <i class="ri-arrow-right-line"></i>
-                </a>
             </div>
         </div>
+        
 
-        <div class="sol-props-grid mdl-mosaic-gallery fade-in">
+        <div class="sol-props-grid mdl-mosaic-gallery-sidebar fade-in">
             <div class="mdl-mosaic-gallery-container">
                 <div class="mdl-mosaic-gallery-column">
                     <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/SO_PR_Piss.jpg" alt="SO_PR_Piss.jpg">
@@ -182,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <div class="sol-char-grid mdl-mosaic-gallery hide fade-in">
+        <div class="sol-char-grid mdl-mosaic-gallery-sidebar hide fade-in">
             <div class="mdl-mosaic-gallery-container">
                 <div class="mdl-mosaic-gallery-column">
                     <video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/SO_CH_Jeff.mp4"
@@ -201,7 +180,7 @@
 
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer mobile">
             <a href="/">
                 <image class="logomark" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Vauliys_YLW.svg">
             </a>

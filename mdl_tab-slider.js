@@ -107,8 +107,6 @@ if (tabArt) {
 const SOLpropsTab = document.querySelector('#sol-props-tab');
 const SOLcharTab = document.querySelector('#sol-char-tab');
 
-const SOLpropsText = document.querySelector('#sol-props-text');
-const SOLcharText = document.querySelector('#sol-char-text');
 
 const SOLpropsGrid = document.querySelector('.sol-props-grid');
 const SOLcharGrid = document.querySelector('.sol-char-grid ');
@@ -119,8 +117,6 @@ if (SOLpropsTab) {
         SOLpropsTab.classList.add('mdl-tab-slider-item_active'); /* toggles class */
         SOLcharTab.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
-        SOLcharText.classList.add('hide'); /* toggles class */
-        SOLpropsText.classList.remove('hide'); /* toggles class */
 
         SOLcharGrid.classList.add('hide'); /* toggles class */
         SOLpropsGrid.classList.remove('hide'); /* toggles class */
@@ -131,9 +127,6 @@ if (SOLcharTab) {
     SOLcharTab.addEventListener('click', () => {
         SOLcharTab.classList.add('mdl-tab-slider-item_active'); /* toggles class */
         SOLpropsTab.classList.remove('mdl-tab-slider-item_active'); /* removes class */
-
-        SOLcharText.classList.remove('hide'); /* toggles class */
-        SOLpropsText.classList.add('hide'); /* toggles class */
 
         SOLcharGrid.classList.remove('hide'); /* toggles class */
         SOLpropsGrid.classList.add('hide'); /* toggles class */
