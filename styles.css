@@ -787,6 +787,9 @@ footer {
 .mdl-mosaic-gallery img {
     border-radius: 0.5rem;
 }
+.mdl-mosaic-gallery-sidebar img {
+    border-radius: 0;
+}
 
 .mdl-mosaic-gallery video,
 .mdl-mosaic-gallery-sidebar video {
@@ -1053,8 +1056,6 @@ footer {
     .mdl-mosaic-gallery-sidebar {
         padding: 0;
         margin-left: 30%;
-        margin-top: var(--header-height);
-        margin-bottom: 3rem;
     }
 
     .mdl-mosaic-gallery-container {
