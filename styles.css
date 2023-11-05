@@ -387,8 +387,13 @@ i {
     font-size: 1rem;
     color: var(--colour-grey-300);
     padding: 0.8rem;
+}
+.spot-i {
+    font-size: 1rem;
+    color: var(--colour-grey-300);
+    padding: 0.8rem;
     background-color: var(--colour-grey-100);
-    border-radius: 5rem;
+    border-radius: 5rem;  
 }
 
 #banner_i-close {
@@ -396,8 +401,9 @@ i {
     transition: 0.5s;
     border-radius: 0;
     color: var(--colour-white);
-    background-color: transparent;
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Outline Pill */
@@ -499,11 +505,11 @@ header {
 /* ------------------- */
 /* Announcement Banner*/
 .banner {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    align-items: center;
     text-align: center;
-
 
     padding: 0 10%;
     height: fit-content;
@@ -563,7 +569,8 @@ header {
 /* ------------------- */
 /* Navigation Bar */
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
 
@@ -574,6 +581,11 @@ header {
     border-width: 1px;
     border-color: var(--colour-grey-100);
     background-color: var(--colour-white);
+}
+
+.header .icons {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar {
@@ -763,13 +775,16 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-footer a, footer p {
+
+footer a,
+footer p {
     font-size: var(--caption);
 }
 
 .footer-column .icons {
     margin-top: var(--mrg-medium);
 }
+
 /* ------------------- */
 /* Module: Fixed Sidebar */
 .mdl-fixed-sidebar {
@@ -860,21 +875,21 @@ footer a, footer p {
 }
 
 
-/*========== START (MOBILE) mdl_icon-grid ==========*/
+/*========== START (MOBILE) mdl_logo-grid ==========*/
 .mdl-coloured-block {
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10%;
-    margin: 0 15%;
-    margin-bottom: 15%;
-    border-radius: 1rem;
-    background-color: var(--colour-grey-100);
+    padding: 15%;
+    background-image: url("https://d22p4d1ezw7euj.cloudfront.net/Banners/Banner_Grey-Swirls.jpg");
+    background-size: cover;
+    background-position: 0 50%;
+    color: var(--colour-black);
 }
 
-.icon-grid {
+.logo-grid {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -884,9 +899,9 @@ footer a, footer p {
     margin-top: var(--mrg-medium);
 }
 
-.icon-grid img {
+.logo-grid img {
     border-radius: 0;
-    height: 1.5rem;
+    height: 2.5rem;
     transition: 0.5s;
 }
 
@@ -912,7 +927,7 @@ footer a, footer p {
     gap: 0.5rem;
 }
 
-/*========== END (MOBILE) mdl_icon-grid ==========*/
+/*========== END (MOBILE) mdl_logo-grid ==========*/
 
 
 .mdl-dual-column {
@@ -1076,7 +1091,7 @@ footer a, footer p {
     footer {
         display: flex;
         align-items: center;
-        padding: 3% 15%;
+        padding: 2% 15%;
         justify-content: space-between;
         font-size: var(--caption);
     }
@@ -1087,117 +1102,121 @@ footer a, footer p {
 
     .footer-column {
         display: grid;
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: repeat(3, auto);
         grid-gap: 1.5rem;
         width: fit-content;
         align-items: center;
     }
-    
-        /* ------------------- */
-        /* Links Grid */
-        #links-grid {
-            grid-template-columns: repeat(4, 1fr);
-        }
 
-        /* ------------------- */
-        /* ORANGISE */
+    /* ------------------- */
+    /* Links Grid */
+    #links-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
-        /*========== START (DESKTOP )mdl_dual-col_text-img ==========*/
+    /* ------------------- */
+    /* ORANGISE */
 
-        .mdl_column {
-            display: flex;
-            flex-direction: column;
-        }
+    /*========== START (DESKTOP )mdl_dual-col_text-img ==========*/
 
-
-        /*========== START (DESKTOP) mdl_icon-grid ==========*/
-        .mdl-coloured-block {
-            margin: 0 15%;
-            padding: 5%;
-        }
-
-        .mdl_coloured-block-text {
-            max-width: 50%;
-        }
-
-        .mdl-dual-column {
-            display: grid;
-            align-items: center;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 0 10%;
-        }
-
-        #xppen {
-            padding: var(--mrg-large) 20%;
-        }
-
-        #huion {
-            margin: 0 auto;
-        }
-
-        .icon-grid {
-            grid-column-gap: 2rem;
-            grid-template-columns: repeat(8, auto);
-        }
-
-        /*========== START (DESKTOP) Footer ==========*/
-        .icon {
-            font-size: 1.25rem;
-        }
+    .mdl_column {
+        display: flex;
+        flex-direction: column;
+    }
 
 
+    /*========== START (DESKTOP) mdl_logo-grid ==========*/
+    .mdl-coloured-block {
+        padding: 5%;
+    }
 
-        /* ------------------- */
-        /* */
+    .mdl_coloured-block-text {
+        max-width: 40%;
+    }
 
-        .show,
-        .desktop {
-            display: flex;
-            opacity: 1;
-            visibility: visible;
-        }
+    .mdl-dual-column {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 10%;
+    }
 
-        .display-block {
-            display: block;
-        }
+    #xppen {
+        padding: var(--mrg-large) 20%;
+    }
 
-        .hide,
-        .mobile {
-            display: none;
-        }
-    
+    #huion {
+        margin: 0 auto;
+    }
+
+    .logo-grid {
+        grid-column-gap: 3rem;
+        grid-template-columns: repeat(8, auto);
+    }
+
+    /*========== START (DESKTOP) Footer ==========*/
+    .icon {
+        font-size: 1.25rem;
+    }
+
+
+
+    /* ------------------- */
+    /* */
+
+    .show,
+    .desktop {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .display-block {
+        display: block;
+    }
+
+    .hide,
+    .mobile {
+        display: none;
+    }
+
+    /* Header Bar */
+    .header_grid {
+        justify-content: center;
+    }
+
+}
+
+/* Font size for mrg-xlarge devices */
+@media screen and (min-width: 1920px) {
+
+    /* ------------------- */
+    /* Font size */
+    p {
+        line-height: 1.5rem;
+    }
+
+    /* ------------------- */
+    /* Mdule: tab slider */
+    .mdl-tab-slider-featured,
+    .mdl-tab-slider-art,
+    .mdl-tab-slider-design,
+    .mdl-tab-slider-motion,
+    .mdl-tab-slider-social {
+        grid-gap: var(--mrg-medium);
+        padding: 0 25%;
+    }
+
+
+    /* ------------------- */
+    /* Mdule: logo-grid */
+    .logo-grid img {
+        height: 2rem;
 
     }
-    /* Font size for mrg-xlarge devices */
-    @media screen and (min-width: 1920px) {
 
-        /* ------------------- */
-        /* Font size */
-        p {
-            line-height: 1.5rem;
-        }
-
-        /* ------------------- */
-        /* Mdule: tab slider */
-        .mdl-tab-slider-featured,
-        .mdl-tab-slider-art,
-        .mdl-tab-slider-design,
-        .mdl-tab-slider-motion,
-        .mdl-tab-slider-social {
-            grid-gap: var(--mrg-medium);
-            padding: 0 25%;
-        }
-
-
-        /* ------------------- */
-        /* Mdule: icon-grid */
-        .icon-grid img {
-            height: 2rem;
-
-        }
-
-        .mdl-dual-column {
-            padding: 3% 30%;
-        }
-
+    .mdl-dual-column {
+        padding: 3% 30%;
     }
+
+}

@@ -1,184 +1,167 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <script src="scripts.js" defer></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-        <!-- CSS -->
-        <link rel="stylesheet" href="styles.css">
-        <!-- Icons -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180"
-            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32"
-            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16"
-            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap"
-            rel="stylesheet">
-        <title>Vauliys</title>
-    </head>
+<head>
+    <script src="scripts.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>Vauliys</title>
+</head>
 
-    <body class="fade-in">
-        <!-- Module: Fixed Header -->
-        <header id="header">
-            <!-- Module:: (Fixed Banner) -->
-            <div class="banner" id="banner">
-                <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
-                <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Use code Vauliys30K
-                    for 30% off brushes!</a>
-                <i class="ri-close-line" id="banner_i-close"></i>
-            </div>
-            <!-- Navbar section -->
-            <div class="header">
-                <!-- Logo -->
-                <a href="/">
-                    <image class="header-logo"
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
-                </a>
-                <!-- Header grid with links - only visible in desktop view -->
-                <div class="header_grid desktop">
-                    <a href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online Store</a>
-                    <div class="hr-vertical"></div> <!-- Vertical divider between links -->
-                    <a href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
-                    <div class="hr-vertical"></div> <!-- Vertical divider between links -->
-                    <a href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
-                </div>
-
-                <!-- Hamburger menu button -->
-                <div class="hamburger-menu">
-                    <div class="hamburger-bar"></div>
-                    <div class="hamburger-bar"></div>
-                    <div class="hamburger-bar"></div>
-                </div>
+<body class="fade-in">
+    <!-- Module: Fixed Header -->
+    <header id="header">
+        <!-- Module:: (Fixed Banner) -->
+        <div class="banner" id="banner">
+            <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
+            <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Vauliys05
+                for 5% off brushes!</a>
+            <i class="ri-close-line" id="banner_i-close"></i>
+        </div>
+        <!-- Navbar section -->
+        <div class="header">
+            <!-- Logo -->
+            <a href="/">
+                <image class="header-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
+            </a>
+            <!-- Header grid with links - only visible in desktop view -->
+            <div class="header_grid desktop">
+                <a href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online Store</a>
+                <div class="hr-vertical"></div> <!-- Vertical divider between links -->
+                <a href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
+                <div class="hr-vertical"></div> <!-- Vertical divider between links -->
+                <a href="mailto:hello@vauliys.com" target="_blank"> Business enquiries </a>
             </div>
 
-            <!-- Links in navbar -->
-            <div class="navbar">
-                <!-- Column for 'Home' dropdown -->
-                <div class="width-100">
-                    <div class="cursor-pointer">
-                        <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                            <a href="/">Home</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column for links 01 dropdown -->
-                <div class="width-100">
-                    <div class="navbar-dropdown-links-01 cursor-pointer">
-                        <!-- Dropdown button for links 01 -->
-                        <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                            Projects
-                            <div id="btn-navbar-links-01">
-                                <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
-                            </div>
-                        </div>
-
-                        <!-- Links 01 dropdown -->
-                        <div class="navbar-links-01">
-                            <a href="chocolate" target="_blank">Chocolate</a>
-                            <a href="dunkso" target="_blank">Dunsko</a>
-                            <a href="harvest" target="_blank">Harvest</a>
-                            <a href="art" target="_blank">Illustrations</a>
-                            <a href="logitech-mx3s" target="_blank">Logitech MX3S</a>
-                            <a href="paperlike" target="_blank">Paperlike</a>
-                            <a href="solar" target="_blank">Solar Opposites</a>
-                            <a href="topdesigns" target="_blank">Top Designs</a>
-                            <a href="vauliys" target="_blank">Vauliys</a>
-                            <a class="mrg-btm-small" href="xppen" target="_blank">XPPEN</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column for links 02 dropdown -->
-                <div class="width-100">
-                    <div class="navbar-dropdown-links-02 cursor-pointer">
-                        <!-- Dropdown button for links 02 -->
-                        <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                            Resources
-                            <div id="btn-navbar-links-02">
-                                <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
-                            </div>
-                        </div>
-
-                        <!-- Links 02 dropdown -->
-                        <div class="navbar-links-02">
-                            <a href="https://store.vauliys.com/" target="_blank">Online Store</a>
-                            <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
-                            <a href="links">Link Directory</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Module: Fixed Sidebar -->
-        <div class="mdl-fixed-sidebar">
-            <div>
-                <h3>Harvest.</h3>
-            </div>
-            <div>
-                <p class="mrg-btm-medium">
-                    Harvest is a short animated film and webcomic that is currently in the pre-production phase. The
-                    story
-                    follows the
-                    daily routine of a young mushroom princess managing her kingdom and care-taking for the village. The
-                    overall aesthetic of the film exudes wholesomeness, brightness, and an abundance of
-                    colors.</p>
-                    <div class="mdl-dual-column_btns">
-                        <span class="keyword-outline">
-                            Animation
-                        </span>
-                    </div>
+            <!-- Hamburger menu button -->
+            <div class="hamburger-menu">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
             </div>
         </div>
 
-        
-        <div class="mdl-mosaic-gallery-sidebar">
-            <div class="mdl-mosaic-gallery-container">
-                <div class="mdl-mosaic-gallery-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Castle.jpg"
-                        alt="Harvest_Castle.jpg">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Sketch_Smith.jpg"
-                        alt="Harvest_Sketch_Smith.jpg">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Corny-Model.jpg"
-                        alt="Harvest_Corny-Model.jpg">
-                    <video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Laugh-Test.mp4"
-                        alt="Harvest_Laugh-Test.mp4"></video>
-
+        <!-- Links in navbar -->
+        <div class="navbar">
+            <!-- Column for 'Home' dropdown -->
+            <div class="width-100">
+                <div class="cursor-pointer">
+                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
+                        <a href="/">Home</a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="mdl-mosaic-gallery-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Artwork.jpg"
-                        alt="Harvest_Artwork.jpg">
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Orange-Test.mp4"
-                        alt="Harvest_Orange-Test.mp4"></video>
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Logo.jpg" alt="Harvest_Logo.jpg">
+            <!-- Column for links 01 dropdown -->
+            <div class="width-100">
+                <div class="navbar-dropdown-links-01 cursor-pointer">
+                    <!-- Dropdown button for links 01 -->
+                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
+                        Projects
+                        <div id="btn-navbar-links-01">
+                            <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
+                        </div>
+                    </div>
+
+                    <!-- Links 01 dropdown -->
+                    <div class="navbar-links-01">
+                        <a href="chocolate" target="_blank">Chocolate</a>
+                        <a href="dunkso" target="_blank">Dunsko</a>
+                        <a href="harvest" target="_blank">Harvest</a>
+                        <a href="art" target="_blank">Illustrations</a>
+                        <a href="logitech-mx3s" target="_blank">Logitech MX3S</a>
+                        <a href="paperlike" target="_blank">Paperlike</a>
+                        <a href="solar" target="_blank">Solar Opposites</a>
+                        <a href="topdesigns" target="_blank">Top Designs</a>
+                        <a href="vauliys" target="_blank">Vauliys</a>
+                        <a class="mrg-btm-small" href="xppen" target="_blank">XPPEN</a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="mdl-mosaic-gallery-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Juniper-Model.jpg"
-                        alt="Harvest_Juniper-Model.jpg">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Corny.jpg"
-                        alt="Harvest_Juniper_Corny.jpg">
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Juniper-Test.mp4"
-                        alt="Harvest_Juniper-Test.mp4"></video>
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Sketch_Bakery.jpg"
-                        alt="Harvest_Sketch_Bakery.jpg">
+            <!-- Column for links 02 dropdown -->
+            <div class="width-100">
+                <div class="navbar-dropdown-links-02 cursor-pointer">
+                    <!-- Dropdown button for links 02 -->
+                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
+                        Resources
+                        <div id="btn-navbar-links-02">
+                            <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
+                        </div>
+                    </div>
 
+                    <!-- Links 02 dropdown -->
+                    <div class="navbar-links-02">
+                        <a href="https://store.vauliys.com/" target="_blank">Online Store</a>
+                        <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
+                        <a href="links">Link Directory</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </header>
 
-        <!-- Footer -->
+    <!-- Module: Fixed Sidebar -->
+    <div class="mdl-fixed-sidebar">
+        <div>
+            <h3>Harvest.</h3>
+        </div>
+        <div>
+            <p class="mrg-btm-medium">
+                Harvest is a short animated film and webcomic that is currently in the pre-production phase. The
+                story
+                follows the
+                daily routine of a young mushroom princess managing her kingdom and care-taking for the village. The
+                overall aesthetic of the film exudes wholesomeness, brightness, and an abundance of
+                colors.</p>
+            <div class="mdl-dual-column_btns">
+                <span class="keyword-outline">
+                    Animation
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mdl-mosaic-gallery-sidebar">
+        <div class="mdl-mosaic-gallery-container">
+            <div class="mdl-mosaic-gallery-column">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Castle.jpg" alt="Harvest_Castle.jpg">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Sketch_Smith.jpg" alt="Harvest_Sketch_Smith.jpg">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Corny-Model.jpg" alt="Harvest_Corny-Model.jpg">
+                <video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Laugh-Test.mp4" alt="Harvest_Laugh-Test.mp4"></video>
+
+            </div>
+
+            <div class="mdl-mosaic-gallery-column">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Artwork.jpg" alt="Harvest_Artwork.jpg">
+                <video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Orange-Test.mp4" alt="Harvest_Orange-Test.mp4"></video>
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Logo.jpg" alt="Harvest_Logo.jpg">
+            </div>
+
+            <div class="mdl-mosaic-gallery-column">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Juniper-Model.jpg" alt="Harvest_Juniper-Model.jpg">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Corny.jpg" alt="Harvest_Juniper_Corny.jpg">
+                <video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Juniper-Test.mp4" alt="Harvest_Juniper-Test.mp4"></video>
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Harvest_Sketch_Bakery.jpg" alt="Harvest_Sketch_Bakery.jpg">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-column">
             <a href="/">
@@ -192,23 +175,23 @@
                 by Vauliys</a>
             <div class="icons">
                 <a href="https://store.vauliys.com/" target="_blank">
-                    <i class="ri-store-line"></i> </a>
+                    <i class="ri-store-line spot-i"></i> </a>
                 <a href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line"></i></a>
+                    <i class="ri-instagram-line spot-i"></i></a>
                 <a href="https://github.com/vauliys" target="_blank">
-                    <i class="ri-github-line"></i>
+                    <i class="ri-github-line spot-i"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                    <i class="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill spot-i"></i>
                 </a>
             </div>
         </div>
     </footer>
-    </body>
+</body>
 
-    <!-- JavaScript files -->
-    <script src="scripts.js" defer></script> <!-- Main JavaScript file -->
-    <script src="mdl_tab-slider.js" defer></script> <!-- Module:: Tab Slider component -->
-    <script src="mdl_navbar.js"></script> <!-- Module:: Fixed Navbar component -->
+<!-- JavaScript files -->
+<script src="scripts.js" defer></script> <!-- Main JavaScript file -->
+<script src="mdl_tab-slider.js" defer></script> <!-- Module:: Tab Slider component -->
+<script src="mdl_navbar.js"></script> <!-- Module:: Fixed Navbar component -->
 
 </html>
