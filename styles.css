@@ -584,11 +584,6 @@ header {
     background-color: var(--colour-white);
 }
 
-.header .icons {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .navbar {
     display: none;
     flex-direction: column;
@@ -988,6 +983,11 @@ footer p {
 @media screen and (min-width: 1024px) {
     .header {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header .icons {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .body-padding {
