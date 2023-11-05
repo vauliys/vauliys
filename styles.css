@@ -408,9 +408,9 @@ i {
 /* Outline Pill */
 .keyword-outline {
     border: none;
-    outline: solid;
+    /* outline: solid;
     outline-color: var(--colour-grey-100);
-    outline-width: 1px;
+    outline-width: 1px; */
     cursor: default;
     width: fit-content;
 
@@ -420,7 +420,8 @@ i {
     font-size: var(--caption);
     font-weight: var(--font-regular);
     color: var(--colour-black);
-    background-color: transparent;
+    /* background-color: transparent; */
+    background: var(--colour-grey-100);
 }
 
 .mdl-keywords-grid {
@@ -464,7 +465,7 @@ button:hover {
 
 .btn_plain:hover,
 .btn_plain a:hover {
-    color: var(--colour-grey-200);
+    color: var(--colour-grey-300);
 }
 
 #btn_explore {
@@ -678,11 +679,8 @@ header {
     transition: 0.5s;
 }
 
-.mdl-tab-slider-item:hover {
-    background-color: var(--colour-grey-100);
-}
 
-.mdl-tab-slider-item_active {
+.mdl-tab-slider-item_active, .mdl-tab-slider-item:hover {
     background-color: var(--colour-grey-100);
     transition: 0.5s;
 }
