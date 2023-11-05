@@ -749,13 +749,22 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-
     background-color: var(--colour-white);
     font-size: var(--caption);
+    padding: 5%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer a, footer p {
     font-size: var(--caption);
+}
 
+.footer-column .icons {
+    margin-top: var(--mrg-medium);
 }
 /* ------------------- */
 /* Module: Fixed Sidebar */
@@ -1068,10 +1077,14 @@ footer a, footer p {
         font-size: var(--caption);
     }
 
+    .footer-column .icons {
+        margin-top: var(--mrg-none);
+    }
+
     .footer-column {
         display: grid;
         grid-template-columns: repeat(3,auto);
-        grid-gap: 2rem;
+        grid-gap: 1.5rem;
         width: fit-content;
         align-items: center;
     }
