@@ -384,14 +384,13 @@ hr {
 }
 
 i {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--colour-grey-300);
     padding: 0.8rem;
 }
 .spot-i {
-    font-size: 1rem;
     color: var(--colour-grey-300);
-    padding: 0.8rem;
+    padding: 0.5rem;
     background-color: var(--colour-grey-100);
     border-radius: 5rem;  
 }
