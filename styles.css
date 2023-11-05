@@ -394,6 +394,10 @@ i {
 #banner_i-close {
     cursor: pointer;
     transition: 0.5s;
+    border-radius: 0;
+    color: var(--colour-white);
+    background-color: transparent;
+    padding: 0;
 }
 
 /* Outline Pill */
