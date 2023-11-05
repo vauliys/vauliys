@@ -436,18 +436,18 @@ i {
 /* Buttons */
 button {
     border: none;
-    outline: solid;
+    /* outline: solid;
     outline-color: var(--colour-grey-200);
-    outline-width: 1px;
+    outline-width: 1px; */
 
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
 
     cursor: pointer;
 
-    color: var(--colour-black);
+    color: var(--colour-white);
     font-weight: var(--font-medium);
-    background-color: transparent;
+    background-color: var(--colour-black);
     transition: 0.5s;
 }
 
@@ -571,7 +571,7 @@ header {
 /* Navigation Bar */
 .header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
 
@@ -986,6 +986,9 @@ footer p {
 
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 1024px) {
+    .header {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .body-padding {
         padding: 5% 20%;
