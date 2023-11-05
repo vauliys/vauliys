@@ -5,14 +5,13 @@ const header = document.getElementById('header');
 if (header) {
     window.addEventListener('scroll', e => {
         if ((document.body.getBoundingClientRect()).top > scrollPos) {
-            header.classList.remove('header_hide');
+            header.classList.remove('header-hide');
         } else {
-            header.classList.add('header_hide');
+            header.classList.add('header-hide');
         }
         scrollPos = (document.body.getBoundingClientRect()).top;
     });
 }
-
 /*================ Close Banner ================*/
 const banner = document.getElementById('banner');
 const bannerclose = document.getElementById('banner_i-close');

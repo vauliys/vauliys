@@ -1,31 +1,37 @@
 const burgerMenu = document.querySelector(".hamburger-menu");
-const navBar = document.querySelector(".navbar");
+const nav = document.querySelector("nav");
 
 if (burgerMenu) {
     burgerMenu.addEventListener('click', () => {
-        navBar.classList.toggle('show'); /* toggles class */
+        nav.classList.toggle('nav-show'); /* toggles class */
+    });
+}
+const navProjects = document.getElementById("nav-projects");
+const navLinks01 = document.getElementById("nav-links01");
+
+const navResources = document.getElementById("nav-resources");
+const navLinks02 = document.getElementById("nav-links02");
+
+
+if (navProjects) {
+    navProjects.addEventListener('click', () => {
+        navLinks01.classList.toggle('nav-link-show'); /* toggles class */
+        navLinks02.classList.remove('nav-link-show'); /* toggles class */
+    });
+}
+if (navResources) {
+    navResources.addEventListener('click', () => {
+        navLinks02.classList.toggle('nav-link-show'); /* toggles class */
+        navLinks01.classList.remove('nav-link-show'); /* toggles class */
     });
 }
 
-const navLink02 = document.querySelector(".navbar-dropdown-links-02");
-const links02 = document.querySelector(".navbar-links-02");
+const navProjectsDesktop = document.getElementById("nav-projects-desktop");
+const navResourcesDesktop = document.getElementById("nav-resources-desktop");
 
-const navLink01 = document.querySelector(".navbar-dropdown-links-01");
-const links01 = document.querySelector(".navbar-links-01");
-
-
-const btnResource = document.querySelector("#btn-navbar-links-02");
-const btnProjects = document.querySelector("#btn-navbar-links-01");
-
-
-if (navLink02) {
-    navLink02.addEventListener('click', () => {
-        links02.classList.toggle('show'); /* toggles class */
-    });
-}
-
-if (navLink01) {
-    navLink01.addEventListener('click', () => {
-        links01.classList.toggle('show'); /* toggles class */
+if (navProjectsDesktop) {
+    navProjectsDesktop.addEventListener('click', () => {
+        navLinks01.classList.toggle('nav-show'); /* toggles class */
+        navLinks02.classList.remove('nav-show'); /* toggles class */
     });
 }

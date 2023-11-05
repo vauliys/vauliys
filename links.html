@@ -24,12 +24,12 @@
     <!-- Module: Fixed Header -->
     <header id="header">
         <!-- Module:: (Fixed Banner) -->
-        <div class="banner" id="banner">
+        <!-- <div class="banner" id="banner">
             <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
             <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Vauliys05
                 for 5% off brushes!</a>
             <i class="ri-close-line" id="banner_i-close"></i>
-        </div> 
+        </div> -->
         <!-- Navbar section -->
         <div class="header">
             <!-- Logo -->
@@ -39,24 +39,23 @@
                 </a>
             </div>
             <!-- Header grid with links - only visible in desktop view -->
-            <div class="header_grid desktop">
-                <a href="https://www.inprnt.com/gallery/vauliys/" target="_blank">Online Store </a>
-                <div class="hr-vertical"></div> <!-- Vertical divider between links -->
-                <a href="https://instagram.com/vauliys" target="_blank"> Instagram </a>
-                <div class="hr-vertical"></div> <!-- Vertical divider between links -->
-                <a href="mailto:hello@vauliys.com" target="_blank">Contact </a>
+            <div class="header-grid desktop">
+                <a href="https://store.vauliys.com" target="_blank">Online Store</a>
+                <a href="#">Home</a>
+                <a href="mailto:hello@vauliys.com">Contact</a>
             </div>
 
-            <!-- Hamburger menu button -->
+            <!-- Mobile Hamburger menu button -->
             <div class="hamburger-menu mobile">
                 <div class="hamburger-bar"></div>
                 <div class="hamburger-bar"></div>
                 <div class="hamburger-bar"></div>
             </div>
 
+            <!-- Desktop Icons -->
             <div class="icons desktop">
                 <a href="https://store.vauliys.com/" target="_blank">
-                    <i class="ri-store-line spot-i"></i> </a>
+                    <i class="ri-store-line spot-i"></i></a>
                 <a href="https://www.instagram.com/vauliys/" target="_blank">
                     <i class="ri-instagram-line spot-i"></i></a>
                 <a href="https://github.com/vauliys" target="_blank">
@@ -64,67 +63,45 @@
                 </a>
             </div>
         </div>
-
-        <!-- Links in navbar -->
-        <div class="navbar">
-            <!-- Column for 'Home' dropdown -->
-            <div class="width-100">
-                <div class="cursor-pointer">
-                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                        <a href="#">Home</a>
+        <nav id="navbar">
+            <div class="nav-container">
+                <ul>
+                    <ul><a href="#">Home</a></ul>
+                    <ul style="cursor: pointer;" id="nav-projects">Projects<i class="ri-arrow-down-s-line"></i></ul>
+                    <div id="nav-links01">
+                        <li><a href="art">Artwork</a></li>
+                        <li><a href="chocolate">Chocolate Box</a></li>
+                        <li><a href="dunkso">Dunkso</a></li>
+                        <li><a href="harvest">Harvest</a></li>
+                        <li><a href="huion">Huion</a></li>
+                        <li><a href="logitech-mx">Logitech MX</a></li>
+                        <li><a href="logitech-mx3s">Logitech MX3S</a></li>
+                        <li><a href="paperlike">Paperlike</a></li>
+                        <li><a href="locked">Till Portal</a></li>
+                        <li><a href="till-payments">Till Payments</a></li>
+                        <li><a href="topdesigns">Top Designs</a></li>
+                        <li><a href="solar">Solar Opposites</a></li>                        
+                        <li><a href="vauliys">Vauliys Brand Identity</a></li>
+                        <li><a href="xppen">XPPEN</a></li>
                     </div>
+                    <ul id="nav-resources">Resources <i class="ri-arrow-down-s-line"></i></ul>
+                    <div style="cursor: pointer;" id="nav-links02">
+                        <li><a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a></li>
+                        <li><a href="links">Social Links</a></li>
+                    </div>
+                </ul>
+                <div class="icons">
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-store-line spot-i"></i></a>
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line spot-i"></i></a>
+                    <a href="https://github.com/vauliys" target="_blank">
+                        <i class="ri-github-line spot-i"></i>
+                    </a>
                 </div>
             </div>
-
-            <!-- Column for links 01 dropdown -->
-            <div class="width-100">
-                <div class="navbar-dropdown-links-01 cursor-pointer">
-                    <!-- Dropdown button for links 01 -->
-                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                        Projects
-                        <div id="btn-navbar-links-01">
-                            <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
-                        </div>
-                    </div>
-
-                    <!-- Links 01 dropdown -->
-                    <div class="navbar-links-01">
-                        <a href="chocolate" target="_blank">Chocolate</a>
-                        <a href="dunkso" target="_blank">Dunsko</a>
-                        <a href="harvest" target="_blank">Harvest</a>
-                        <a href="art" target="_blank">Illustrations</a>
-                        <a href="logitech-mx3s" target="_blank">Logitech MX3S</a>
-                        <a href="paperlike" target="_blank">Paperlike</a>
-                        <a href="solar" target="_blank">Solar Opposites</a>
-                        <a href="topdesigns" target="_blank">Top Designs</a>
-                        <a href="vauliys" target="_blank">Vauliys</a>
-                        <a class="mrg-btm-small" href="xppen" target="_blank">XPPEN</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column for links 02 dropdown -->
-            <div class="width-100">
-                <div class="navbar-dropdown-links-02 cursor-pointer">
-                    <!-- Dropdown button for links 02 -->
-                    <div class="cursor-pointer navbar-dropdown mrg-btm-small">
-                        Resources
-                        <div id="btn-navbar-links-02">
-                            <i class="ri-add-line"></i> <!-- Arrow icon for dropdown -->
-                        </div>
-                    </div>
-
-                    <!-- Links 02 dropdown -->
-                    <div class="navbar-links-02">
-                        <a href="https://store.vauliys.com/" target="_blank">Online Store</a>
-                        <a href="https://www.imdb.com/name/nm14674760/" target="_blank">IMDB</a>
-                        <a href="links">Link Directory</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </nav>
     </header>
-
     <div class="mdl-narrow-column">
         <img class="mrg-btm-medium mrg-top-medium" src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Vauliys_Profile-Picture.png" alt="Vauliys_Profile-Picture.png">
         <h4>Vauliys</h4>

@@ -387,13 +387,13 @@ hr {
 i {
     font-size: 0.8rem;
     color: var(--colour-grey-300);
-    padding: 0.8rem;
 }
+
 .spot-i {
     color: var(--colour-grey-300);
     padding: 0.5rem;
     background-color: var(--colour-grey-100);
-    border-radius: 5rem;  
+    border-radius: 5rem;
 }
 
 #banner_i-close {
@@ -498,9 +498,19 @@ header {
     transform: translateY(0rem);
 }
 
-.header_hide {
+.header-hide {
     transform: translateY(-7rem);
     transition: 0.8s ease-in-out;
+}
+
+.nav-show {
+    transform: translateY(100%);
+    transition: 0.8s ease-in-out;
+}
+
+.nav-link-show {
+    display: flex !important;
+    flex-direction: column;
 }
 
 /* ------------------- */
@@ -523,15 +533,44 @@ header {
 }
 
 /* ------------------- */
-/* Header Bar */
-.header_grid a {
-    /* Header links */
-    font-size: var(--caption);
-    transition: 0.5s;
+/* Header and Navigation Bar */
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10%;
+    height: 4rem;
+
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--colour-grey-100);
+    background-color: var(--colour-white);
 }
 
-.header_grid a:hover {
-    color: var(--colour-main-200);
+nav {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    transition: 0.8s ease-in-out;
+    padding: 10% 10%;
+    background-color: var(--colour-white);
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--colour-grey-100);
+}
+
+.nav-container {
+    line-height: 3rem;
+    width: fit-content;
+}
+
+#nav-links01, #nav-links02 {
+    line-height: 2rem;
+    display: none;
+    opacity: 0.5;
 }
 
 /* ------------------- */
@@ -567,60 +606,6 @@ header {
     width: 0.5rem;
 }
 
-/* ------------------- */
-/* Navigation Bar */
-.header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 10%;
-    height: 4rem;
-
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: var(--colour-grey-100);
-    background-color: var(--colour-white);
-}
-
-.navbar {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    width: 100%;
-
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: var(--colour-grey-100);
-    background-color: var(--colour-white);
-    font-weight: var(--font-regular);
-    padding: 10%;
-    transition: opacity 0.5s, height 1s;
-}
-
-.navbar-dropdown {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
-    width: 100%;
-}
-
-.navbar-links-01,
-.navbar-links-02 {
-    display: none;
-    text-align: start;
-    flex-direction: column;
-    transition: 1s;
-
-    line-height: 1.5em;
-    color: var(--colour-grey-200);
-
-    transition: 1s;
-}
 
 /* ------------------- */
 /* Mdule: tab slider */
@@ -676,7 +661,8 @@ header {
 }
 
 
-.mdl-tab-slider-item_active, .mdl-tab-slider-item:hover {
+.mdl-tab-slider-item_active,
+.mdl-tab-slider-item:hover {
     background-color: var(--colour-grey-100);
     transition: 0.5s;
 }
@@ -725,7 +711,6 @@ header {
 .mdl-fullbleed img {
     border-radius: 0;
     height: auto;
-    width: 120%;
 }
 
 /* ------------------- */
@@ -959,11 +944,9 @@ footer p {
 
 .show,
 .mobile {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
 }
-
-
 
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 1024px) {
@@ -988,9 +971,7 @@ footer p {
 
     /* ------------------- */
     /* Module: Navbar */
-    .navbar {
-        padding: 2% 10%;
-    }
+
 
     /* ------------------- */
     /* Module: tab slider */
@@ -1155,9 +1136,20 @@ footer p {
         display: none;
     }
 
+    /* ------------------- */
     /* Header Bar */
-    .header_grid {
+    .header-grid {
+        grid-gap: 2rem;
         justify-content: center;
+    }
+    .header-grid a {
+        /* Header links */
+        font-size: var(--caption);
+        transition: 0.5s;
+    }
+
+    .header-grid a:hover {
+        color: var(--colour-main-200);
     }
 
 }
