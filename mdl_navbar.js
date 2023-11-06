@@ -1,3 +1,4 @@
+/* Mobile Nav */
 const burgerMenu = document.querySelector(".hamburger-menu");
 const nav = document.querySelector("nav");
 
@@ -26,12 +27,26 @@ if (navResources) {
     });
 }
 
+/* Desktop Nav */
+
 const navProjectsDesktop = document.getElementById("nav-projects-desktop");
 const navResourcesDesktop = document.getElementById("nav-resources-desktop");
 
+const navDesktop = document.getElementById("nav");
+
+const navLinks01Desktop = document.getElementById("nav-links01-desktop");
+const navLinks02Desktop = document.getElementById("nav-links02-desktop");
+
+
+
+
 if (navProjectsDesktop) {
     navProjectsDesktop.addEventListener('click', () => {
-        navLinks01.classList.toggle('nav-show'); /* toggles class */
-        navLinks02.classList.remove('nav-show'); /* toggles class */
+        navDesktop.classList.toggle('nav-show'); /* toggles class */
+        navLinks01Desktop.classList.add('show'); /* toggles class */
+        navLinks02Desktop.classList.add('hide'); /* toggles class */
+
     });
 }
+
+

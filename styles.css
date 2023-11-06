@@ -573,6 +573,8 @@ nav {
     opacity: 0.5;
 }
 
+
+
 /* ------------------- */
 /* Hamburger Menu */
 .hamburger-menu {
@@ -962,6 +964,38 @@ footer p {
     .body-padding {
         padding: 5% 20%;
     }
+
+
+.nav {
+    width: 100vw;
+    position: absolute;
+    z-index: -2;
+    transition: 0.8s ease-in-out;
+    padding: 3% 10%;
+    background-color: var(--colour-white);
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--colour-grey-100);
+    transform: translateY(-100%);
+
+}
+
+.nav-container-desktop {
+    display: grid !important;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 3rem;
+    line-height: 2rem;
+    justify-items: center;
+}
+
+.nav-show {
+    transform: translateY(0%);
+    transition: 0.8s ease-in-out;
+}
+
+.nav-column li a:hover {
+    color: var(--colour-main-200);
+}
 
     /* ------------------- */
     /* Dividers */
