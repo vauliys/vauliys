@@ -1081,7 +1081,7 @@ footer p {
     footer {
         display: flex;
         align-items: center;
-        padding: 2% 15%;
+        padding: 1% 15%;
         justify-content: space-between;
         font-size: var(--caption);
     }
@@ -1232,12 +1232,6 @@ footer p {
     .mdl-mosaic-gallery-sidebar {
         padding: 0;
         margin-left: 20%;
-    }
-
-    /* ------------------- */
-    /* Footer styling */
-    footer {
-        padding: 1% 25%;
     }
 
 }
