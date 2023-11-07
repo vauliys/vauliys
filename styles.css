@@ -1031,8 +1031,8 @@ footer p {
         align-items: center;
         overflow: hidden;
         padding-bottom: 0;
-        height: 100vh;
         padding: 0;
+        height: auto;
     }
 
     .mdl-fullbleed video {
