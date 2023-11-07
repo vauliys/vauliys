@@ -1193,6 +1193,7 @@ footer p {
 /* Font size for mrg-xlarge devices */
 @media screen and (min-width: 1920px) {
 
+
     /* ------------------- */
     /* Font size */
     p {
@@ -1232,6 +1233,12 @@ footer p {
     .mdl-mosaic-gallery-sidebar {
         padding: 0;
         margin-left: 20%;
+    }
+
+    /* ------------------- */
+    /* Footer styling */
+    footer {
+        padding: 1% 25%;
     }
 
 }
