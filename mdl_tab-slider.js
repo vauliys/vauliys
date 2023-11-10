@@ -220,3 +220,50 @@ if (tab2021) {
         grid2023.classList.add('hide'); /* toggles class */
     });
 }
+
+
+/*================ Tab Slider: Links.html ================*/
+const tabDiscounts = document.querySelector('#mdl-tab-slider-discounts');
+const tabAffiliates = document.querySelector('#mdl-tab-slider-affiliates');
+const tabProducts = document.querySelector('#mdl-tab-slider-products');
+
+const gridDiscounts = document.querySelector('.mdl-tab-slider-discounts ');
+const gridAffiliates = document.querySelector('.mdl-tab-slider-affiliates');
+const gridProducts = document.querySelector('.mdl-tab-slider-products');
+
+/* when Slider item is clicked perform code*/
+if (tabDiscounts) {
+    tabDiscounts.addEventListener('click', () => {
+        tabDiscounts.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabAffiliates.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabProducts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridDiscounts.classList.remove('hide'); /* toggles class */
+        gridAffiliates.classList.add('hide'); /* toggles class */
+        gridProducts.classList.add('hide'); /* toggles class */
+    });
+}
+/* when Slider item is clicked perform code*/
+if (tabAffiliates) {
+    tabAffiliates.addEventListener('click', () => {
+        tabAffiliates.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabDiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabProducts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridAffiliates.classList.remove('hide'); /* toggles class */
+        gridDiscounts.classList.add('hide'); /* toggles class */
+        gridProducts.classList.add('hide'); /* toggles class */
+    });
+}
+/* when Slider item is clicked perform code*/
+if (tabProducts) {
+    tabProducts.addEventListener('click', () => {
+        tabProducts.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabDiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabAffiliates.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridProducts.classList.remove('hide'); /* toggles class */
+        gridDiscounts.classList.add('hide'); /* toggles class */
+        gridAffiliates.classList.add('hide'); /* toggles class */
+    });
+}

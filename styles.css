@@ -673,6 +673,8 @@ nav {
 /* ------------------- */
 .mdl-tab-slider-featured,
 .mdl-tab-slider-art,
+.mdl-tab-slider-discounts,
+.mdl-tab-slider-affiliates,
 .mdl-tab-slider-design,
 .mdl-tab-slider-motion,
 .mdl-tab-slider-social {
@@ -906,8 +908,6 @@ footer p {
 }
 
 .mdl-narrow-column {
-    margin-top: calc(var(--header-height) + 5%);
-    padding: 0 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1018,15 +1018,29 @@ footer p {
 
     /* ------------------- */
     /* Module: tab slider */
-
     .mdl-tab-slider-featured,
     .mdl-tab-slider-art,
+    .mdl-tab-slider-discounts,
+    .mdl-tab-slider-affiliates,
+    .mdl-tab-slider-products,
     .mdl-tab-slider-design,
     .mdl-tab-slider-motion,
     .mdl-tab-slider-social {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: var(--mrg-small);
+    }
+
+    .mdl-tab-slider-discounts,
+    .mdl-tab-slider-affiliates,
+    .mdl-tab-slider-products {
+        width: 50vw;
+    }
+
+    .mdl-tab-slider-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* ------------------- */
@@ -1107,7 +1121,7 @@ footer p {
     /* ------------------- */
     /* Links Grid */
     #links-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     /* ------------------- */
