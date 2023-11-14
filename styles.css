@@ -112,8 +112,8 @@ body {
 }
 
 ::selection {
-    background-color: var(--colour-accent-100-100);
-    color: var(--colour-accent-100-400);
+    background-color: var(--colour-grey-100);
+    color: var(--colour-grey-300);
 }
 
 /* ------------------- */
