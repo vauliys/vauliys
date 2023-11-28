@@ -950,7 +950,7 @@ footer p {
 }
 
 /*========== MEDIA ENQUIRY ==========*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 824px) {
 
     i {
         font-size: 1rem;
