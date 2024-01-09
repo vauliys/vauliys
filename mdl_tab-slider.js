@@ -226,10 +226,13 @@ if (tab2021) {
 const tabDiscounts = document.querySelector('#mdl-tab-slider-discounts');
 const tabAffiliates = document.querySelector('#mdl-tab-slider-affiliates');
 const tabProducts = document.querySelector('#mdl-tab-slider-products');
+const tabCoding = document.querySelector('#mdl-tab-slider-coding');
 
 const gridDiscounts = document.querySelector('.mdl-tab-slider-discounts ');
 const gridAffiliates = document.querySelector('.mdl-tab-slider-affiliates');
 const gridProducts = document.querySelector('.mdl-tab-slider-products');
+const gridCoding = document.querySelector('.mdl-tab-slider-coding');
+
 
 /* when Slider item is clicked perform code*/
 if (tabDiscounts) {
@@ -237,10 +240,13 @@ if (tabDiscounts) {
         tabDiscounts.classList.add('mdl-tab-slider-item_active'); /* toggles class */
         tabAffiliates.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabProducts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabCoding.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
         gridDiscounts.classList.remove('hide'); /* toggles class */
         gridAffiliates.classList.add('hide'); /* toggles class */
         gridProducts.classList.add('hide'); /* toggles class */
+        gridCoding.classList.add('hide'); /* toggles class */
+
     });
 }
 /* when Slider item is clicked perform code*/
@@ -249,10 +255,12 @@ if (tabAffiliates) {
         tabAffiliates.classList.add('mdl-tab-slider-item_active'); /* toggles class */
         tabDiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabProducts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabCoding.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
         gridAffiliates.classList.remove('hide'); /* toggles class */
         gridDiscounts.classList.add('hide'); /* toggles class */
         gridProducts.classList.add('hide'); /* toggles class */
+        gridCoding.classList.add('hide'); /* toggles class */
     });
 }
 /* when Slider item is clicked perform code*/
@@ -261,9 +269,26 @@ if (tabProducts) {
         tabProducts.classList.add('mdl-tab-slider-item_active'); /* toggles class */
         tabDiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabAffiliates.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabCoding.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
         gridProducts.classList.remove('hide'); /* toggles class */
         gridDiscounts.classList.add('hide'); /* toggles class */
         gridAffiliates.classList.add('hide'); /* toggles class */
+        gridCoding.classList.add('hide'); /* toggles class */
+    });
+}
+
+/* when Slider item is clicked perform code*/
+if (tabCoding) {
+    tabCoding.addEventListener('click', () => {
+        tabCoding.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabAffiliates.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabProducts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabDiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridCoding.classList.remove('hide'); /* toggles class */
+        gridAffiliates.classList.add('hide'); /* toggles class */
+        gridProducts.classList.add('hide'); /* toggles class */
+        gridDiscounts.classList.add('hide'); /* toggles class */
     });
 }

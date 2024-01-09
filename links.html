@@ -1,381 +1,424 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <script src="scripts.js" defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <title>Vauliys Links</title>
-</head>
+    <head>
+        <script src="scripts.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap"
+            rel="stylesheet">
+        <title>Vauliys Links</title>
+    </head>
 
-<body class="fade-in">
-    <!-- Module: Fixed Header -->
-    <header id="header">
-        <!-- Module: (Fixed Banner) -->
-        <!-- <div class="banner" id="banner">
+    <body class="fade-in">
+        <!-- Module: Fixed Header -->
+        <header id="header">
+            <!-- Module: (Fixed Banner) -->
+            <!-- <div class="banner" id="banner">
             <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
             <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Vauliys05
                 for 5% off brushes!</a>
             <i class="ri-close-line" id="banner_i-close"></i>
         </div> -->
-        <!-- Module: Navbar Banner -->
-        <div class="header">
-            <!-- Logo -->
-            <div>
-                <a href="/">
-                    <image class="header-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
-                </a>
-            </div>
-            <!-- Header grid with links - only visible in desktop view -->
-            <div class="header-grid desktop">
-                <a id="nav-projects-desktop">Projects<i class="ri-arrow-down-s-line"></i></a>
-                <a href="/">Home</a>
-                <a href="mailto:hello@vauliys.com">Contact</a>
-            </div>
-            <!-- Mobile Hamburger menu button -->
-            <div class="hamburger-menu mobile">
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-            </div>
+            <!-- Module: Navbar Banner -->
+            <div class="header">
+                <!-- Logo -->
+                <div>
+                    <a href="/">
+                        <image class="header-logo"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
+                    </a>
+                </div>
+                <!-- Header grid with links - only visible in desktop view -->
+                <div class="header-grid desktop">
+                    <a id="nav-projects-desktop">Projects<i class="ri-arrow-down-s-line"></i></a>
+                    <a href="/">Home</a>
+                    <a href="mailto:hello@vauliys.com">Contact</a>
+                </div>
+                <!-- Mobile Hamburger menu button -->
+                <div class="hamburger-menu mobile">
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                </div>
 
-            <!-- Desktop Icons -->
-            <div class="icons desktop">
-                <a href="https://store.vauliys.com/" target="_blank">
-                    <i class="ri-store-line spot-i"></i></a>
-                <a href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line spot-i"></i></a>
-                <a href="https://github.com/vauliys" target="_blank">
-                    <i class="ri-github-line spot-i"></i>
-                </a>
-            </div>
-        </div>
-        <!-- Module: Navbar Dropdown -->
-        <div>
-            <!-- Desktop Nav -->
-            <div class="nav desktop" id="nav">
-                <div class="nav-container-desktop" id="nav-links01-desktop">
-                    <div class="nav-column">
-                        <li><a href="art">Artwork</a></li>
-                        <li><a href="chocolate">Chocolate Box</a></li>
-                        <li><a href="dunkso">Dunkso</a></li>
-                        <li><a href="harvest">Harvest</a></li>
-                    </div>
-                    <div class="nav-column">
-                        <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
-                        <li><a href="logitech-mx">Logitech MX</a></li>
-                        <li><a href="logitech-mx3s">Logitech MX3S</a></li>
-                        <li><a href="paperlike">Paperlike</a></li>
-                    </div>
-                    <div class="nav-column">
-                        <li><a href="till-payments">Till Payments</a></li>
-                        <li><a href="topdesigns">Top Designs</a></li>
-                        <li><a href="solar">Solar Opposites</a></li>
-                        <li><a href="vauliys">Vauliys Brand Identity</a></li>
-                    </div>
-                    <div class="nav-column">
-                        <li><a href="xppen">XPPEN</a></li>
-                    </div>
+                <!-- Desktop Icons -->
+                <div class="icons desktop">
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-store-line spot-i"></i></a>
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line spot-i"></i></a>
+                    <a href="https://github.com/vauliys" target="_blank">
+                        <i class="ri-github-line spot-i"></i>
+                    </a>
                 </div>
             </div>
-            <!-- Mobile Nav -->
-            <nav id="navbar">
-                <div class="nav-container">
-                    <ul>
-                        <ul><a href="#">Home</a></ul>
-                        <ul style="cursor: pointer;" id="nav-projects">Projects<i class="ri-arrow-down-s-line"></i></ul>
-                        <div id="nav-links01">
+            <!-- Module: Navbar Dropdown -->
+            <div>
+                <!-- Desktop Nav -->
+                <div class="nav desktop" id="nav">
+                    <div class="nav-container-desktop" id="nav-links01-desktop">
+                        <div class="nav-column">
                             <li><a href="art">Artwork</a></li>
                             <li><a href="chocolate">Chocolate Box</a></li>
                             <li><a href="dunkso">Dunkso</a></li>
                             <li><a href="harvest">Harvest</a></li>
+                        </div>
+                        <div class="nav-column">
                             <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
                             <li><a href="logitech-mx">Logitech MX</a></li>
                             <li><a href="logitech-mx3s">Logitech MX3S</a></li>
                             <li><a href="paperlike">Paperlike</a></li>
-                            <li><a href="locked">Till Portal</a></li>
+                        </div>
+                        <div class="nav-column">
                             <li><a href="till-payments">Till Payments</a></li>
                             <li><a href="topdesigns">Top Designs</a></li>
                             <li><a href="solar">Solar Opposites</a></li>
                             <li><a href="vauliys">Vauliys Brand Identity</a></li>
+                        </div>
+                        <div class="nav-column">
                             <li><a href="xppen">XPPEN</a></li>
                         </div>
-                        <ul><a href="mailto:hello@vauliys.com">Contact</a></ul>
-                    </ul>
-                    <div class="icons">
-                        <a href="https://store.vauliys.com/" target="_blank">
-                            <i class="ri-store-line spot-i"></i></a>
-                        <a href="https://www.instagram.com/vauliys/" target="_blank">
-                            <i class="ri-instagram-line spot-i"></i></a>
-                        <a href="https://github.com/vauliys" target="_blank">
-                            <i class="ri-github-line spot-i"></i>
+                    </div>
+                </div>
+                <!-- Mobile Nav -->
+                <nav id="navbar">
+                    <div class="nav-container">
+                        <ul>
+                            <ul><a href="#">Home</a></ul>
+                            <ul style="cursor: pointer;" id="nav-projects">Projects<i class="ri-arrow-down-s-line"></i>
+                            </ul>
+                            <div id="nav-links01">
+                                <li><a href="art">Artwork</a></li>
+                                <li><a href="chocolate">Chocolate Box</a></li>
+                                <li><a href="dunkso">Dunkso</a></li>
+                                <li><a href="harvest">Harvest</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
+                                <li><a href="logitech-mx">Logitech MX</a></li>
+                                <li><a href="logitech-mx3s">Logitech MX3S</a></li>
+                                <li><a href="paperlike">Paperlike</a></li>
+                                <li><a href="locked">Till Portal</a></li>
+                                <li><a href="till-payments">Till Payments</a></li>
+                                <li><a href="topdesigns">Top Designs</a></li>
+                                <li><a href="solar">Solar Opposites</a></li>
+                                <li><a href="vauliys">Vauliys Brand Identity</a></li>
+                                <li><a href="xppen">XPPEN</a></li>
+                            </div>
+                            <ul><a href="mailto:hello@vauliys.com">Contact</a></ul>
+                        </ul>
+                        <div class="icons">
+                            <a href="https://store.vauliys.com/" target="_blank">
+                                <i class="ri-store-line spot-i"></i></a>
+                            <a href="https://www.instagram.com/vauliys/" target="_blank">
+                                <i class="ri-instagram-line spot-i"></i></a>
+                            <a href="https://github.com/vauliys" target="_blank">
+                                <i class="ri-github-line spot-i"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="body-padding" style="padding-top:0; margin-top: 3rem;">
+
+            <div class="mdl-narrow-column">
+                <img class="mrg-btm-medium mrg-top-medium"
+                    src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Vauliys_Profile-Picture.png"
+                    alt="Vauliys_Profile-Picture.png">
+                <h3>Vauliys</h3>
+                <span style="display: flex; align-items: center;">
+                    <p>digital creator
+                    <h5 class="colour-grey-200 mrg-side-xsmall">|</h5> melb, aus</p>
+                </span>
+                <div class="icons">
+                    <a class="icon link-icons" href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line"></i></a>
+
+                    <a class="icon link-icons" href="https://www.tiktok.com/@vauliys" target="_blank">
+                        <i class="ri-tiktok-fill"></i></a>
+
+                    <a class="icon link-icons" href="https://youtube.com/@vauliys/featured" target="_blank">
+                        <i class="ri-youtube-fill"></i></a>
+                </div>
+                <!--=== Sqaure Grid ===-->
+                <div class="mrg-top-medium mrg-btm-medium" id="links-grid">
+                    <!--=== (Tab) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="/"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg"
+                                alt="Thumbnail_Logitech-MX3S"></a>
+                        <p class="caption">Portfolio</p>
+                    </div>
+                    <!--=== (Tab) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://store.vauliys.com/" target="_blank"><img
+                                src="https://www.edsys.in/wp-content/uploads/procreate-logo.jpg"
+                                alt="Thumbnail_Logitech-MX3S"></a>
+                        <p class="caption">Brush Sets</p>
+                    </div>
+                    <!--=== (Tab) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://www.patreon.com/vauliys" target="_blank"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Patreon.jpg"
+                                alt="Thumbnail_Patreon"></a>
+                        <p class="caption">Patreon</p>
+                    </div>
+                    <!--=== (Tab) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://www.inprnt.com/gallery/vauliys/" target="_blank"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Ocean.jpg"
+                                alt="Thumbnail_Logitech-MX3S"></a>
+                        <p class="caption">Print Shop</p>
+                    </div>
+                    <!--=== (Tab) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://links.vauliys.com/mediakit" target="_blank"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Neyomi.jpg"
+                                alt="Thumbnail_Logitech-MX3S"></a>
+                        <p class="caption">Media Kit</p>
+                    </div>
+                    <!--=== (Tab) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://amazon.com/shop/vauliys" target="_blank"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Amazon.jpg"
+                                alt="Thumbnail_Logitech-MX3S"></a>
+                        <p class="caption">Amazon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Module: Tab Slider -->
+            <div class="mdl-tab-slider mdl-tab-slider-links mrg-top-small">
+                <div class="mrg-btm-medium">
+                    <div class="mdl-tab-slider-nav" style="grid-template-columns: repeat(3,1fr); width: fit-content;">
+                        <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active"
+                            id="mdl-tab-slider-discounts">Discounts</div>
+                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-affiliates">Affiliates</div>
+                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-products">Products</div>
+                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-coding">Coding</div>
+
+                    </div>
+                </div>
+                <div class="mdl-tab-slider-discounts fade-in">
+                    <!--===(Tab Slider: Block - WACOM US) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://wacom.pxf.io/vauliysUS"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Wacom-02.jpg"
+                                alt="Thumbnail_Wacom-02.jpg"></a>
+                        <h4 class="mrg-top-small">Wacom US - For a creative world.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Vauliys-Wacom for 10% off
+                            </span>
+                            <span class="keyword-outline">
+                                US Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--===(Tab Slider: Block - XPPEN AUS) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://xppen.pxf.io/vauliysAUS">
+                            <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN.jpg"
+                                alt="Thumbnail_XPPEN.jpg">
                         </a>
+                        <h4 class="mrg-top-small">XPPEN Australia - Dream. Brave. True.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Vauliys05 for 5% off
+                            </span>
+                            <span class="keyword-outline">
+                                AUS Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--===(Tab Slider: Block - XPPEN Europe ) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://xppen.pxf.io/vauliysEUR">
+                            <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-03.jpg"
+                                alt="Thumbnail_XPPEN.jpg">
+                        </a>
+                        <h4 class="mrg-top-small">XPPEN Europe - Dream. Brave. True.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                AFFEUSW5 for 5% off
+                            </span>
+                            <span class="keyword-outline">
+                                EU Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--===(Tab Slider: Block - XPPEN US ) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://xppen.pxf.io/vauliysUS">
+                            <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-02.jpg"
+                                alt="Thumbnail_XPPEN.jpg">
+                        </a>
+                        <h4 class="mrg-top-small">XPPEN US - Dream. Brave. True.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                AFFUSSW5 for 5% off
+                            </span>
+                            <span class="keyword-outline">
+                                US Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--=== (Tab Slider: Block - XPPEN Canada) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://xppen.pxf.io/vauliysCA"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-07.jpg"
+                                alt="Thumbnail_XPPEN-07.jpg"></a>
+                        <h4 class="mrg-top-small">XPPEN Canada - Dream. Brave. True.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                AFFCASW5 for 5% off
+                            </span>
+                            <span class="keyword-outline">
+                                CA Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--===(Tab Slider: Block - Vauliys Brushes) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://store.vauliys.com"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Ocean.jpg"
+                                alt="Thumbnail_Ocean.jpg"></a>
+                        <h4 class="mrg-top-small">Vauliys - Where art and brushes collide.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Vauliys05 fo 5% off
+                            </span>
+                            <span class="keyword-outline">
+                                Global
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <div class="body-padding" style="padding-top:0; margin-top: 3rem;">
-
-        <div class="mdl-narrow-column">
-            <img class="mrg-btm-medium mrg-top-medium" src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Vauliys_Profile-Picture.png" alt="Vauliys_Profile-Picture.png">
-            <h3>Vauliys</h3>
-            <span style="display: flex; align-items: center;">
-                <p>digital creator
-                <h5 class="colour-grey-200 mrg-side-xsmall">|</h5> melb, aus</p>
-            </span>
-            <div class="icons">
-                <a class="icon link-icons" href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line"></i></a>
-
-                <a class="icon link-icons" href="https://www.tiktok.com/@vauliys" target="_blank">
-                    <i class="ri-tiktok-fill"></i></a>
-
-                <a class="icon link-icons" href="https://youtube.com/@vauliys/featured" target="_blank">
-                    <i class="ri-youtube-fill"></i></a>
-            </div>
-            <!--=== Sqaure Grid ===-->
-            <div class="mrg-top-medium mrg-btm-medium" id="links-grid">
-                <!--=== (Tab) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="/"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Grass.jpg" alt="Thumbnail_Logitech-MX3S"></a>
-                    <p class="caption">Portfolio</p>
-                </div>
-                <!--=== (Tab) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://store.vauliys.com/" target="_blank"><img src="https://www.edsys.in/wp-content/uploads/procreate-logo.jpg" alt="Thumbnail_Logitech-MX3S"></a>
-                    <p class="caption">Brush Sets</p>
-                </div>
-                <!--=== (Tab) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://www.patreon.com/vauliys" target="_blank"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Patreon.jpg" alt="Thumbnail_Patreon"></a>
-                    <p class="caption">Patreon</p>
-                </div>
-                <!--=== (Tab) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://www.inprnt.com/gallery/vauliys/" target="_blank"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Ocean.jpg" alt="Thumbnail_Logitech-MX3S"></a>
-                    <p class="caption">Print Shop</p>
-                </div>
-                <!--=== (Tab) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://links.vauliys.com/mediakit" target="_blank"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Neyomi.jpg" alt="Thumbnail_Logitech-MX3S"></a>
-                    <p class="caption">Media Kit</p>
-                </div>
-                <!--=== (Tab) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://amazon.com/shop/vauliys" target="_blank"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Amazon.jpg" alt="Thumbnail_Logitech-MX3S"></a>
-                    <p class="caption">Amazon</p>
-                </div>
-            </div>
-        </div>
-
-        <!--Module: Tab Slider -->
-        <div class="mdl-tab-slider mdl-tab-slider-links mrg-top-small">
-            <div class="mrg-btm-medium">
-                <div class="mdl-tab-slider-nav" style="grid-template-columns: repeat(3,1fr); width: fit-content;">
-                    <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active" id="mdl-tab-slider-discounts">Discounts</div>
-                    <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-affiliates">Affiliates</div>
-                    <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-products">Products</div>
-                </div>
-            </div>
-            <div class="mdl-tab-slider-discounts fade-in">
-                <!--===(Tab Slider: Block - WACOM US) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://wacom.pxf.io/vauliysUS"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Wacom-02.jpg" alt="Thumbnail_Wacom-02.jpg"></a>
-                    <h4 class="mrg-top-small">Wacom US - For a creative world.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Vauliys-Wacom for 10% off
-                        </span>
-                        <span class="keyword-outline">
-                            US Store
-                        </span>
+                <div class="mdl-tab-slider-affiliates fade-in hide">
+                    <!--===(Tab Slider: Block - WACOM AUS) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://wacom.pxf.io/vauliysAU"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Wacom.jpg"
+                                alt="Thumbnail_Wacom.jpg"></a>
+                        <h4 class="mrg-top-small">Wacom AUS - For a creative world.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Affiliate Link
+                            </span>
+                            <span class="keyword-outline">
+                                AUS Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--=== (Tab Slider: Block - Amazon) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://www.amazon.com/shop/vauliys"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Amazon.jpg"
+                                alt="Thumbnail_Amazon.jpg"></a>
+                        <h4 class="mrg-top-small"> Amazon - Vauliys Official Storefront.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Affiliate Link
+                            </span>
+                            <span class="keyword-outline">
+                                US Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--=== (Tab Slider: Block - Belkin) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://belkinau.evyy.net/vauliys"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Belkin.jpg"
+                                alt="Thumbnail_Belkin.jpg"></a>
+                        <h4 class="mrg-top-small">Belkin - Be global, be human.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Affiliate Link
+                            </span>
+                            <span class="keyword-outline">
+                                AUS Store
+                            </span>
+                        </div>
+                    </div>
+                    <!--=== (Tab Slider: Block - Paperlike) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://paperlike.com/vauliys"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Paperlike.jpg"
+                                alt="Thumbnail_Paperlike.jpg"></a>
+                        <h4 class="mrg-top-small">Paperlike - Fall inlove with drawing.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Affiliate Link
+                            </span>
+                            <span class="keyword-outline">
+                                Global
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <!--===(Tab Slider: Block - XPPEN AUS) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://xppen.pxf.io/vauliysAUS">
-                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN.jpg" alt="Thumbnail_XPPEN.jpg">
-                    </a>
-                    <h4 class="mrg-top-small">XPPEN Australia - Dream. Brave. True.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Vauliys05 for 5% off
-                        </span>
-                        <span class="keyword-outline">
-                            AUS Store
-                        </span>
+                <div class="mdl-tab-slider-products fade-in hide">
+                    <!--=== (Tab Slider: Block - 8Bitdo Micro (Green)) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a
+                            href="https://www.amazon.com/dp/B0CG5YCLJN?linkCode=ssc&amp;tag=onamzvict0cd4-20&amp;creativeASIN=B0CG5YCLJN&amp;asc_item-id=amzn1.ideas.2QES54XQXV6P4&amp;ref_=aip_sf_list_spv_ofs_mixed_d_asin&amp;th=1&_encoding=UTF8&tag=victoriapri0e-20&linkCode=ur2&linkId=7d37e9b30f331773dbfb929e05de1989&camp=1789&creative=9325"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Micro-Green.jpg"
+                                alt="Thumbnail_Micro-Green.jpg"></a>
+                        <h4 class="mrg-top-small"> 8Bitdo - Micro Bluetooth Controller.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Affiliate Link
+                            </span>
+                            <span class="keyword-outline">
+                                US Store
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <!--===(Tab Slider: Block - XPPEN Europe ) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://xppen.pxf.io/vauliysEUR">
-                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-03.jpg" alt="Thumbnail_XPPEN.jpg">
-                    </a>
-                    <h4 class="mrg-top-small">XPPEN Europe - Dream. Brave. True.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            AFFEUSW5 for 5% off
-                        </span>
-                        <span class="keyword-outline">
-                            EU Store
-                        </span>
+                    <!--=== (Tab Slider: Block - XPPEN LineDeco) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://xppen.pxf.io/VauliysUS-AT12"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-06.jpg"
+                                alt="Thumbnail_XPPEN-06.jpg"></a>
+                        <h4 class="mrg-top-small">XPPEN US - 20% off Deco Line Friends.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                LINEDECO for 20% off
+                            </span>
+                            <span class="keyword-outline">
+                                US Store
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <!--===(Tab Slider: Block - XPPEN US ) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://xppen.pxf.io/vauliysUS">
-                        <image src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-02.jpg" alt="Thumbnail_XPPEN.jpg">
-                    </a>
-                    <h4 class="mrg-top-small">XPPEN US - Dream. Brave. True.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            AFFUSSW5 for 5% off
-                        </span>
-                        <span class="keyword-outline">
-                            US Store
-                        </span>
+                    <!--=== (Tab Slider: Block - 8Bitdo Micro (Blue)) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a
+                            href="https://www.amazon.com/dp/B0CDG5HCCH?linkCode=ssc&amp;tag=onamzvict0cd4-20&amp;creativeASIN=B0CDG5HCCH&amp;asc_item-id=amzn1.ideas.2QES54XQXV6P4&amp;ref_=aip_sf_list_spv_ofs_mixed_d_asin&_encoding=UTF8&tag=victoriapri0e-20&linkCode=ur2&linkId=b51d1e22dddc0cad1bb6c39e229e1e83&camp=1789&creative=9325"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Micro-Blue.jpg"
+                                alt="Thumbnail_Mico-Blue.jpg"></a>
+                        <h4 class="mrg-top-small">8Bitdo - Micro Bluetooth Controller.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Affiliate Link
+                            </span>
+                            <span class="keyword-outline">
+                                US Store
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <!--=== (Tab Slider: Block - XPPEN Canada) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://xppen.pxf.io/vauliysCA"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-07.jpg" alt="Thumbnail_XPPEN-07.jpg"></a>
-                    <h4 class="mrg-top-small">XPPEN Canada - Dream. Brave. True.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            AFFCASW5 for 5% off
-                        </span>
-                        <span class="keyword-outline">
-                            CA Store
-                        </span>
-                    </div>
-                </div>
-                <!--===(Tab Slider: Block - Vauliys Brushes) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://store.vauliys.com"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Ocean.jpg" alt="Thumbnail_Ocean.jpg"></a>
-                    <h4 class="mrg-top-small">Vauliys - Where art and brushes collide.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Vauliys05 fo 5% off
-                        </span>
-                        <span class="keyword-outline">
-                            Global
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="mdl-tab-slider-affiliates fade-in hide">
-                <!--===(Tab Slider: Block - WACOM AUS) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://wacom.pxf.io/vauliysAU"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Wacom.jpg" alt="Thumbnail_Wacom.jpg"></a>
-                    <h4 class="mrg-top-small">Wacom AUS - For a creative world.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Affiliate Link
-                        </span>
-                        <span class="keyword-outline">
-                            AUS Store
-                        </span>
-                    </div>
-                </div>
-                <!--=== (Tab Slider: Block - Amazon) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://www.amazon.com/shop/vauliys"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Amazon.jpg" alt="Thumbnail_Amazon.jpg"></a>
-                    <h4 class="mrg-top-small"> Amazon - Vauliys Official Storefront.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Affiliate Link
-                        </span>
-                        <span class="keyword-outline">
-                            US Store
-                        </span>
-                    </div>
-                </div>
-                <!--=== (Tab Slider: Block - Belkin) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://belkinau.evyy.net/vauliys"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Belkin.jpg" alt="Thumbnail_Belkin.jpg"></a>
-                    <h4 class="mrg-top-small">Belkin - Be global, be human.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Affiliate Link
-                        </span>
-                        <span class="keyword-outline">
-                            AUS Store
-                        </span>
-                    </div>
-                </div>
-                <!--=== (Tab Slider: Block - Paperlike) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://paperlike.com/vauliys"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Paperlike.jpg" alt="Thumbnail_Paperlike.jpg"></a>
-                    <h4 class="mrg-top-small">Paperlike - Fall inlove with drawing.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Affiliate Link
-                        </span>
-                        <span class="keyword-outline">
-                            Global
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="mdl-tab-slider-products fade-in hide">
-                <!--=== (Tab Slider: Block - 8Bitdo Micro (Green)) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a
-                        href="https://www.amazon.com/dp/B0CG5YCLJN?linkCode=ssc&amp;tag=onamzvict0cd4-20&amp;creativeASIN=B0CG5YCLJN&amp;asc_item-id=amzn1.ideas.2QES54XQXV6P4&amp;ref_=aip_sf_list_spv_ofs_mixed_d_asin&amp;th=1&_encoding=UTF8&tag=victoriapri0e-20&linkCode=ur2&linkId=7d37e9b30f331773dbfb929e05de1989&camp=1789&creative=9325"><img
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Micro-Green.jpg" alt="Thumbnail_Micro-Green.jpg"></a>
-                    <h4 class="mrg-top-small"> 8Bitdo - Micro Bluetooth Controller.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Affiliate Link
-                        </span>
-                        <span class="keyword-outline">
-                            US Store
-                        </span>
-                    </div>
-                </div>
-                <!--=== (Tab Slider: Block - XPPEN LineDeco) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://xppen.pxf.io/VauliysUS-AT12"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-06.jpg" alt="Thumbnail_XPPEN-06.jpg"></a>
-                    <h4 class="mrg-top-small">XPPEN US - 20% off Deco Line Friends.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            LINEDECO for 20% off
-                        </span>
-                        <span class="keyword-outline">
-                            US Store
-                        </span>
-                    </div>
-                </div>
-                <!--=== (Tab Slider: Block - 8Bitdo Micro (Blue)) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a
-                        href="https://www.amazon.com/dp/B0CDG5HCCH?linkCode=ssc&amp;tag=onamzvict0cd4-20&amp;creativeASIN=B0CDG5HCCH&amp;asc_item-id=amzn1.ideas.2QES54XQXV6P4&amp;ref_=aip_sf_list_spv_ofs_mixed_d_asin&_encoding=UTF8&tag=victoriapri0e-20&linkCode=ur2&linkId=b51d1e22dddc0cad1bb6c39e229e1e83&camp=1789&creative=9325"><img
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_Micro-Blue.jpg" alt="Thumbnail_Mico-Blue.jpg"></a>
-                    <h4 class="mrg-top-small">8Bitdo - Micro Bluetooth Controller.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            Affiliate Link
-                        </span>
-                        <span class="keyword-outline">
-                            US Store
-                        </span>
-                    </div>
-                </div>
-                <!--=== (Tab Slider: Block - XPPEN Artist12) ===-->
-                <!-- <div class="mdl-tab-slider-block">
+                    <!--=== (Tab Slider: Block - XPPEN Artist12) ===-->
+                    <!-- <div class="mdl-tab-slider-block">
                     <a href="https://xppen.pxf.io/VauliysUS-AT12"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-05.jpg" alt="Thumbnail_XPPEN-05.jpg"></a>
                     <h4 class="mrg-top-small">XPPEN US - 20% off the Artist 12 Display.</h4>
                     <div class="mdl-keywords-grid">
@@ -387,54 +430,84 @@
                         </span>
                     </div>
                 </div> -->
-                <!--=== (Tab Slider: Block - XPPEN Star430S) ===-->
-                <div class="mdl-tab-slider-block">
-                    <a href="https://xppen.pxf.io/vauliysUS-G430s"><img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-07.jpg" alt="Thumbnail_XPPEN-07.jpg"></a>
-                    <h4 class="mrg-top-small">XPPEN US - 40% off the StarG430S.</h4>
-                    <div class="mdl-keywords-grid">
-                        <span class="keyword-outline">
-                            G430SUS for 40% off
-                        </span>
-                        <span class="keyword-outline">
-                            US Store
-                        </span>
+                    <!--=== (Tab Slider: Block - XPPEN Star430S) ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://xppen.pxf.io/vauliysUS-G430s"><img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnails/Thumbnail_XPPEN-07.jpg"
+                                alt="Thumbnail_XPPEN-07.jpg"></a>
+                        <h4 class="mrg-top-small">XPPEN US - 40% off the StarG430S.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                G430SUS for 40% off
+                            </span>
+                            <span class="keyword-outline">
+                                US Store
+                            </span>
+                        </div>
                     </div>
+                </div>
+                <div class="mdl-tab-slider-coding fade-in hide">
+                    <!--=== (Tab Slider: Block - Github ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://github.com/" target="_blank"><img
+                                src="E:\Vauliys\Workfiles\VLS01_VauliysPorfolio\01_Portfolio Mockup\vauliys.github.io/Thumbnail_GitHub.jpg"
+                                alt="Thumbnail_GitHub.jpg"></a>
+                        <h4 class="mrg-top-small"> Github - Website Hosting.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Coding Materials
+                            </span>
+                        </div>
+                    </div>
+                    <!--=== (Tab Slider: Block - Github ===-->
+                    <div class="mdl-tab-slider-block">
+                        <a href="https://porkbun.com/" target="_blank"><img
+                                src="E:\Vauliys\Workfiles\VLS01_VauliysPorfolio\01_Portfolio Mockup\vauliys.github.io/Thumbnail_Porkbun.jpg"
+                                alt="Thumbnail_Porkbun.jpg"></a>
+                        <h4 class="mrg-top-small"> Porkbun - Website Domains.</h4>
+                        <div class="mdl-keywords-grid">
+                            <span class="keyword-outline">
+                                Coding Materials
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-column">
-            <a href="#">
-                <image class="footer-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Wordmark_Black.svg">
-            </a>
-            <p>For all business enquiries <a href="" style="color: #009e79;">hello@vauliys.com</a></p>
-        </div>
-        <div class="footer-column">
-            <p>©2023 Vauliys</p>
-            <a style="color: #009e79" href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
-                by Vauliys</a>
-            <div class="icons">
-                <a href="https://store.vauliys.com/" target="_blank">
-                    <i class="ri-store-line spot-i"></i> </a>
-                <a href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line spot-i"></i></a>
-                <a href="https://github.com/vauliys" target="_blank">
-                    <i class="ri-github-line spot-i"></i>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-column">
+                <a href="#">
+                    <image class="footer-logo"
+                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Wordmark_Black.svg">
                 </a>
-                <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                    <i class="ri-linkedin-fill spot-i"></i>
-                </a>
+                <p>For all business enquiries <a href="" style="color: #009e79;">hello@vauliys.com</a></p>
             </div>
-        </div>
-    </footer>
-</body>
+            <div class="footer-column">
+                <p>©2023 Vauliys</p>
+                <a style="color: #009e79" href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
+                    by Vauliys</a>
+                <div class="icons">
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-store-line spot-i"></i> </a>
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line spot-i"></i></a>
+                    <a href="https://github.com/vauliys" target="_blank">
+                        <i class="ri-github-line spot-i"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                        <i class="ri-linkedin-fill spot-i"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
 
-<!-- JavaScript files -->
-<script src="scripts.js" defer></script> <!-- Main JavaScript file -->
-<script src="mdl_tab-slider.js" defer></script> <!-- Module: Tab Slider component -->
-<!-- Module: Footer  component -->
-<script src="mdl_navbar.js"></script> <!-- Module: Fixed Navbar component -->
+    <!-- JavaScript files -->
+    <script src="scripts.js" defer></script> <!-- Main JavaScript file -->
+    <script src="mdl_tab-slider.js" defer></script> <!-- Module: Tab Slider component -->
+    <!-- Module: Footer  component -->
+    <script src="mdl_navbar.js"></script> <!-- Module: Fixed Navbar component -->
 
 </html>
