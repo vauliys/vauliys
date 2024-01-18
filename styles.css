@@ -91,6 +91,10 @@
     margin: 0;
 }
 
+.overlay-kofi {
+    width: 2px;
+}
+
 html {
     scroll-behavior: smooth;
     height: 100%;
@@ -425,6 +429,16 @@ i {
     background: var(--colour-grey-100);
 }
 
+.keyword-button {
+    cursor: pointer !important;
+    transition: 0.5s ease-in-out;
+}
+
+.keyword-button:hover {
+    transform: translateY(-0.3rem);
+    transition: 0.5s ease-in-out;
+}
+
 .mdl-keywords-grid {
     display: inline-flex;
     flex-wrap: wrap;
@@ -625,6 +639,7 @@ nav {
         margin: 0 auto;
 
         outline: solid;
+        
         outline-width: 1px;
         outline-color: var(--colour-grey-100);
         padding: 0.5rem;
@@ -659,6 +674,7 @@ nav {
     transition: 0.5s;
     border-radius: 1rem;
     padding: 0.2rem 0.7rem;
+    width: max-content;
 
     transition: 0.5s;
 }
@@ -673,14 +689,14 @@ nav {
 /* ------------------- */
 .mdl-tab-slider-featured,
 .mdl-tab-slider-art,
-.mdl-tab-slider-discounts,
-.mdl-tab-slider-affiliates,
+.mdl-tab-slider-support,
+.mdl-tab-slider-shop,
 .mdl-tab-slider-design,
 .mdl-tab-slider-motion,
 .mdl-tab-slider-social {
     display: grid;
     grid-template-columns: 1;
-    grid-gap: var(--mrg-medium);
+    grid-gap: var(--mrg-small);
 }
 
 .mdl-tab-slider-block {
@@ -1019,10 +1035,8 @@ footer p {
     /* Module: tab slider */
     .mdl-tab-slider-featured,
     .mdl-tab-slider-art,
-    .mdl-tab-slider-discounts,
-    .mdl-tab-slider-affiliates,
-    .mdl-tab-slider-products,
-    .mdl-tab-slider-coding,
+    .mdl-tab-slider-support,
+    .mdl-tab-slider-shop,
     .mdl-tab-slider-design,
     .mdl-tab-slider-motion,
     .mdl-tab-slider-social {
@@ -1031,11 +1045,17 @@ footer p {
         grid-gap: var(--mrg-small);
     }
 
-    .mdl-tab-slider-discounts,
-    .mdl-tab-slider-affiliates,
-    .mdl-tab-slider-products,
-    .mdl-tab-slider-coding {
-        width: 50vw;
+    .mdl-tab-slider-assets {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--mrg-small);
+        width: 40vw;
+    }
+
+
+    .mdl-tab-slider-support,
+    .mdl-tab-slider-shop {
+        width: 60vw;
     }
 
     .mdl-tab-slider-links {
@@ -1122,7 +1142,7 @@ footer p {
     /* ------------------- */
     /* Links Grid */
     #links-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 
     /* ------------------- */
