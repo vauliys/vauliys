@@ -291,3 +291,49 @@ if (tabassets) {
         gridshop.classList.add('hide'); /* toggles class */
     });
 }
+
+/*================ Tab Slider: mediakit.html ================*/
+const tabinstagram = document.querySelector('#mdl-tab-slider-instagram');
+const tabtiktok = document.querySelector('#mdl-tab-slider-tiktok');
+const tabyoutube = document.querySelector('#mdl-tab-slider-youtube');
+
+const gridinstagram = document.querySelector('.mdl-tab-slider-instagram ');
+const gridtiktok = document.querySelector('.mdl-tab-slider-tiktok');
+const gridyoutube = document.querySelector('.mdl-tab-slider-youtube');
+
+/* when Slider item is clicked perform code*/
+if (tabinstagram) {
+    tabinstagram.addEventListener('click', () => {
+        tabinstagram.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabtiktok.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabyoutube.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridinstagram.classList.remove('hide'); /* toggles class */
+        gridtiktok.classList.add('hide'); /* toggles class */
+        gridyoutube.classList.add('hide'); /* toggles class */
+    });
+}
+/* when Slider item is clicked perform code*/
+if (tabtiktok) {
+    tabtiktok.addEventListener('click', () => {
+        tabtiktok.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabinstagram.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabyoutube.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridtiktok.classList.remove('hide'); /* toggles class */
+        gridinstagram.classList.add('hide'); /* toggles class */
+        gridyoutube.classList.add('hide'); /* toggles class */
+    });
+}
+/* when Slider item is clicked perform code*/
+if (tabyoutube) {
+    tabyoutube.addEventListener('click', () => {
+        tabyoutube.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabinstagram.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabtiktok.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridyoutube.classList.remove('hide'); /* toggles class */
+        gridinstagram.classList.add('hide'); /* toggles class */
+        gridtiktok.classList.add('hide'); /* toggles class */
+    });
+}

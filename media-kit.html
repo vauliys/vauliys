@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="scripts.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>Vauliys Links</title>
+</head>
+
+<body class="fade-in">
+    <!-- Module: Fixed Header -->
+    <header id="header">
+        <!-- Module: (Fixed Banner) -->
+        <!-- <div class="banner" id="banner">
+            <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
+            <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Vauliys05
+                for 5% off brushes!</a>
+            <i class="ri-close-line" id="banner_i-close"></i>
+        </div> -->
+        <!-- Module: Navbar Banner -->
+        <div class="header">
+            <!-- Logo -->
+            <div>
+                <a href="/">
+                    <image class="header-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
+                </a>
+            </div>
+            <!-- Header grid with links - only visible in desktop view -->
+            <div class="header-grid desktop">
+                <a id="nav-projects-desktop">Projects<i class="ri-arrow-down-s-line"></i></a>
+                <a href="/">Home</a>
+                <a href="mailto:hello@vauliys.com">Contact</a>
+            </div>
+            <!-- Mobile Hamburger menu button -->
+            <div class="hamburger-menu mobile">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </div>
+
+            <!-- Desktop Icons -->
+            <div class="icons desktop">
+                <a href="https://store.vauliys.com/" target="_blank">
+                    <i class="ri-store-line spot-i"></i></a>
+                <a href="https://www.instagram.com/vauliys/" target="_blank">
+                    <i class="ri-instagram-line spot-i"></i></a>
+                <a href="https://github.com/vauliys" target="_blank">
+                    <i class="ri-github-line spot-i"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Module: Navbar Dropdown -->
+        <div>
+            <!-- Desktop Nav -->
+            <div class="nav desktop" id="nav">
+                <div class="nav-container-desktop" id="nav-links01-desktop">
+                    <div class="nav-column">
+                        <li><a href="art">Artwork</a></li>
+                        <li><a href="chocolate">Chocolate Box</a></li>
+                        <li><a href="dunkso">Dunkso</a></li>
+                        <li><a href="harvest">Harvest</a></li>
+                    </div>
+                    <div class="nav-column">
+                        <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
+                        <li><a href="logitech-mx">Logitech MX</a></li>
+                        <li><a href="logitech-mx3s">Logitech MX3S</a></li>
+                        <li><a href="paperlike">Paperlike</a></li>
+                    </div>
+                    <div class="nav-column">
+                        <li><a href="till-payments">Till Payments</a></li>
+                        <li><a href="topdesigns">Top Designs</a></li>
+                        <li><a href="solar">Solar Opposites</a></li>
+                        <li><a href="vauliys">Vauliys Brand Identity</a></li>
+                    </div>
+                    <div class="nav-column">
+                        <li><a href="xppen">XPPEN</a></li>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Nav -->
+            <nav id="navbar">
+                <div class="nav-container">
+                    <ul>
+                        <ul><a href="#">Home</a></ul>
+                        <ul style="cursor: pointer;" id="nav-projects">Projects<i class="ri-arrow-down-s-line"></i>
+                        </ul>
+                        <div id="nav-links01">
+                            <li><a href="art">Artwork</a></li>
+                            <li><a href="chocolate">Chocolate Box</a></li>
+                            <li><a href="dunkso">Dunkso</a></li>
+                            <li><a href="harvest">Harvest</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
+                            <li><a href="logitech-mx">Logitech MX</a></li>
+                            <li><a href="logitech-mx3s">Logitech MX3S</a></li>
+                            <li><a href="paperlike">Paperlike</a></li>
+                            <li><a href="locked">Till Portal</a></li>
+                            <li><a href="till-payments">Till Payments</a></li>
+                            <li><a href="topdesigns">Top Designs</a></li>
+                            <li><a href="solar">Solar Opposites</a></li>
+                            <li><a href="vauliys">Vauliys Brand Identity</a></li>
+                            <li><a href="xppen">XPPEN</a></li>
+                        </div>
+                        <ul><a href="mailto:hello@vauliys.com">Contact</a></ul>
+                    </ul>
+                    <div class="icons">
+                        <a href="https://store.vauliys.com/" target="_blank">
+                            <i class="ri-store-line spot-i"></i></a>
+                        <a href="https://www.instagram.com/vauliys/" target="_blank">
+                            <i class="ri-instagram-line spot-i"></i></a>
+                        <a href="https://github.com/vauliys" target="_blank">
+                            <i class="ri-github-line spot-i"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="mk-body" style="margin-top: 4rem;">
+
+        <div class="mdl-narrow-column">
+            <img class="mrg-btm-medium mrg-top-medium" src="https://d22p4d1ezw7euj.cloudfront.net/Artwork/Vauliys_Profile-Picture.png" alt="Vauliys_Profile-Picture.png">
+            <h3>vauliys</h3>
+            <span style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                <p>digital creator
+                <h5 class="colour-grey-200 mrg-side-xsmall">|</h5> melb, aus</p>
+            </span>
+            <div class="icons">
+                <a class="icon link-icons" href="https://www.instagram.com/vauliys/" target="_blank">
+                    <i class="ri-instagram-line"></i></a>
+
+                <a class="icon link-icons" href="https://www.threads.net/@vauliys" target="_blank">
+                    <i class="ri-at-line"></i></a>
+
+                <a class="icon link-icons" href="https://www.tiktok.com/@vauliys" target="_blank">
+                    <i class="ri-tiktok-fill"></i></a>
+
+                <a class="icon link-icons" href="https://youtube.com/@vauliys/featured" target="_blank">
+                    <i class="ri-youtube-fill"></i></a>
+            </div>
+            <!--=== collab with me ===-->
+            <div style="max-width: 75%;">
+                <p class="mrg-top-medium caption" style="font-weight: 500;"> content creator </p>
+                <p class="caption"> with over 1M likes and 10M views,
+                    vauliys produces both viral and original
+                    content that reaches a wide audience.</p>
+                    <p class="caption" style="color: #6C737F;"> @vauliys • last updated jan 19, 2024</p>
+                <a href="mailto:hello@vauliys.com"><button class="mrg-top-small" style="font-size: 0.8rem;">work with me</button></a>
+            </div>
+            <!--=== instagram followers ===-->
+            <div id="mk-total-followers" class="mrg-top-medium">
+                <div>
+                    <p class="caption">total followers</p>
+                    <h5 style="font-weight: 600;">42.3K</h5>
+                </div>
+                <div>
+                    <div class="mk-total-followers-social">
+                        <i style="color: #f21f7b;" class="ri-instagram-line"></i>
+                        <p class="caption">39.2K</p>
+                    </div>
+                    <div class="mk-total-followers-social">
+                        <i style="color: black;" class="ri-at-line"></i>
+                        <p class="caption">4.5K</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="mk-total-followers-social">
+                        <i style="color: black;" class="ri-tiktok-fill"></i>
+                        <p class="caption">759</p>
+                    </div>
+                    <div class="mk-total-followers-social">
+                        <i style="color: red;" class="ri-youtube-fill"></i>
+                        <p class="caption">2.2K</p>
+                    </div>
+                </div>
+            </div>
+            <!--=== follower analtics ===-->
+            <div class="mdl-tab-slider mdl-tab-slider-links mrg-top-medium">
+                <div class="mrg-btm-small">
+                    <div class="mdl-tab-slider-nav" style="grid-template-columns: repeat(3, auto);grid-gap:0.5rem;width: fit-content;">
+                        <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active" id="mdl-tab-slider-instagram">instagram</div>
+                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-youtube">youtube</div>
+                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-tiktok">tiktok</div>
+                    </div>
+                </div>
+                <div class="mdl-tab-slider-instagram fade-in">
+                    <!--=== social notice ===-->
+                    <div id="mk-engagement">
+                        <p class="caption"> vauliys' engagement rate of <strong>8.28%</strong> is higher than the typical rate of <strong>5.0%</strong> of creators with similar reach. <strong><br> data authenticated
+                                by <a href="https://klear.com/p/#/instagram/vauliys/Overview" target="_blank">klear</a>.</p></strong>
+                    </div>
+                    <!--=== main analytics ===-->
+                    <div class="mk-analytics mrg-top-small">
+                        <div class="outline-box">
+                            <i class="ri-group-line"></i>
+                            <p class="caption">followers</p>
+                            <h5 style="font-weight: 600;">38.2K</h5>
+                        </div>
+                        <div class="outline-box">
+                            <i style="color: red;"class="ri-heart-3-line"></i>
+                            <p class="caption">engagment</p>
+                            <h5 style="font-weight: 600;">8.28%</h5>
+                        </div>
+                        <div class="outline-box">
+                            <i class="ri-eye-line"></i>
+                            <p class="caption">avg. reel</p>
+                            <h5 style="font-weight: 600;">15.5K</h5>
+                        </div>
+                    </div>
+                    <!--=== country and age ===-->
+                    <div class="mk-audience">
+                        <div class="outline-box">
+                            <i class="ri-group-line"></i>
+                            <p class="caption">top country</p>
+                            <h5 style="font-weight: 600;">USA</h5>
+                            <div class="mk-audience-data">
+                                <div>
+                                    <p class="caption">USA</p>
+                                    <p style="color: #6C737F;" class="caption">Brazil</p>
+                                    <p style="color: #6C737F;" class="caption">Mexico</p>
+                                    <p style="color: #6C737F; text-align: left;" class="caption">India</p>
+                                </div>
+                                <div id="mk-audience-country">
+                                    <div id="data-bar"></div>
+                                    <div id="data-bar"></div>
+                                    <div id="data-bar"></div>
+                                    <div id="data-bar"></div>
+                                </div>
+                                <div>
+                                    <p class="caption">26%</p>
+                                    <p style="color: #6C737F;" class="caption">8%</p>
+                                    <p style="color: #6C737F;" class="caption">4%</p>
+                                    <p style="color: #6C737F;" class="caption">3%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outline-box">
+                            <i class="ri-heart-3-line"></i>
+                            <p class="caption">avg. age</p>
+                            <h5 style="font-weight: 600;">24</h5>
+                            <div class="mk-audience-data">
+                                <div>
+                                    <p style="color: #6C737F;" class="caption">13+</p>
+                                    <p class="caption">18+</p>
+                                    <p style="color: #6C737F;" class="caption">25+</p>
+                                    <p style="color: #6C737F; text-align: left;" class="caption">35+</p>
+                                </div>
+                                <div id="mk-audience-age">
+                                    <div id="data-bar"></div>
+                                    <div id="data-bar"></div>
+                                    <div id="data-bar"></div>
+                                    <div id="data-bar"></div>
+                                </div>
+                                <div">
+                                    <p style="color: #6C737F;" class="caption">14%</p>
+                                    <p style="color: #6C737F;" class="caption">51%</p>
+                                    <p style="color: #6C737F;" class="caption">26%</p>
+                                    <p style="color: #6C737F;" class="caption">9%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=== gender ===-->
+                <div class="mk-gender mrg-top-small">
+                    <div class="outline-box">
+                        <i class="ri-group-line"></i>
+                        <p class="caption">gender</p>
+                        <h5 style="font-weight: 600;">women</h5>
+                        <div class="mk-gender-data">
+                            <div>
+                                <p class="caption"><i class="ri-women-line"></i></p>
+                                <p style="color: #6C737F; text-align: left;" class="caption"><i class="ri-men-line"></i></p>
+
+                            </div>
+                            <div id="mk-audience-gender">
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                            </div>
+                            <div>
+                                <p class="caption">75%</p>
+                                <p style="color: #6C737F;" class="caption">25%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=== pricing ===-->
+                <div class="mk-analytics mrg-top-small">
+                    <div class="outline-box">
+                        <i class="ri-account-circle-line"></i>
+                        <p class="caption">per story</p>
+                        <h5 style="font-weight: 600;">$50</h5>
+                    </div>
+                    <div class="outline-box">
+                        <i class="ri-image-line"></i>
+                        <p class="caption">per post</p>
+                        <h5 style="font-weight: 600;">$120</h5>
+                    </div>
+                    <div class="outline-box">
+                        <i class="ri-movie-2-line"></i>
+                        <p class="caption">per reel</p>
+                        <h5 style="font-weight: 600;">$1000</h5>
+                    </div>
+                </div>
+            </div>
+                </div>
+            <div class="mdl-tab-slider-tiktok hide fade-in">
+                <!--=== social notice ===-->
+                <div id="mk-engagement">
+                    <p class="caption"> vauliys' engagement rate of <strong>9.5%</strong> is higher than the typical rate of <strong>5.0%</strong> of creators with similar reach. <strong><br> data authenticated
+                            by <a href="https://klear.com/p/#/instagram/vauliys/Overview" target="_blank">klear</a>.</p></strong>
+                </div>
+                <!--=== main analytics ===-->
+                <div class="mk-analytics mrg-top-small">
+                    <div class="outline-box">
+                        <i class="ri-group-line"></i>
+                        <p class="caption">followers</p>
+                        <h5 style="font-weight: 600;">754</h5>
+                    </div>
+                    <div class="outline-box">
+                        <i style="color: red;" class="ri-heart-3-line"></i>
+                        <p class="caption">engagment</p>
+                        <h5 style="font-weight: 600;">9.5%</h5>
+                    </div>
+                    <div class="outline-box">
+                        <i class="ri-eye-line"></i>
+                        <p class="caption">avg. video</p>
+                        <h5 style="font-weight: 600;">1.8K</h5>
+                    </div>
+                </div>
+                <!--=== country and age ===-->
+                <div class="mk-audience">
+                    <div class="outline-box">
+                        <i class="ri-group-line"></i>
+                        <p class="caption">top country</p>
+                        <h5 style="font-weight: 600;">Australia</h5>
+                        <div class="mk-audience-data">
+                            <div>
+                                <p class="caption">Australia</p>
+                                <p style="color: #6C737F;" class="caption">Canada</p>
+                                <p style="color: #6C737F;" class="caption">UK</p>
+                                <p style="color: #6C737F; text-align: left;" class="caption">USA</p>
+                            </div>
+                            <div id="mk-audience-country">
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                            </div>
+                            <div>
+                                <p class="caption">31%</p>
+                                <p style="color: #6C737F;" class="caption">19%</p>
+                                <p style="color: #6C737F;" class="caption">16%</p>
+                                <p style="color: #6C737F;" class="caption">9%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outline-box">
+                        <i class="ri-heart-3-line"></i>
+                        <p class="caption">avg. age</p>
+                        <h5 style="font-weight: 600;">17</h5>
+                        <div class="mk-audience-data">
+                            <div>
+                                <p style="color: #6C737F;" class="caption">13+</p>
+                                <p class="caption">18+</p>
+                                <p style="color: #6C737F;" class="caption">25+</p>
+                                <p style="color: #6C737F; text-align: left;" class="caption">35+</p>
+                            </div>
+                            <div id="mk-audience-age">
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                            </div>
+                            <div">
+                                <p style="color: #6C737F;" class="caption">59%</p>
+                                <p style="color: #6C737F;" class="caption">34%</p>
+                                <p style="color: #6C737F;" class="caption">5%</p>
+                                <p style="color: #6C737F;" class="caption">2%</p>
+                        </div>
+                    </div>
+                </div>
+                           <!--=== gender ===-->
+            <div class="mk-gender mrg-top-small">
+                <div class="outline-box">
+                    <i class="ri-group-line"></i>
+                    <p class="caption">gender</p>
+                    <h5 style="font-weight: 600;">women</h5>
+                    <div class="mk-gender-data">
+                        <div>
+                            <p class="caption"><i class="ri-women-line"></i></p>
+                            <p style="color: #6C737F; text-align: left;" class="caption"><i class="ri-men-line"></i></p>
+
+                        </div>
+                        <div id="mk-audience-gender">
+                            <div id="data-bar"></div>
+                            <div id="data-bar"></div>
+                        </div>
+                        <div>
+                            <p class="caption">84%</p>
+                            <p style="color: #6C737F;" class="caption">16%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== pricing ===-->
+            <div class="mk-analytics mrg-top-small">
+                <div class="outline-box">
+                    <i class="ri-account-circle-line"></i>
+                    <p class="caption">per story</p>
+                    <h5 style="font-weight: 600;">$20</h5>
+                </div>
+                <div class="outline-box">
+                    <i class="ri-image-line"></i>
+                    <p class="caption">per post</p>
+                    <h5 style="font-weight: 600;">$50</h5>
+                </div>
+                <div class="outline-box">
+                    <i class="ri-movie-2-line"></i>
+                    <p class="caption">per reel</p>
+                    <h5 style="font-weight: 600;">$100</h5>
+                </div>
+            </div>
+            </div>
+ 
+            </div>
+            <div class="mdl-tab-slider-youtube hide fade-in">
+                <!--=== social notice ===-->
+                <div id="mk-engagement">
+                    <p class="caption" style="text-align: center;"> vauliys' engagement rate of <strong>4.3%</strong> is higher than the typical rate of <strong>2.0%</strong> of creators with similar reach. <strong><br> data authenticated
+                            by <a href="https://klear.com/p/#/instagram/vauliys/Overview" target="_blank">klear</a>.</p></strong>
+                </div>
+                <!--=== main analytics ===-->
+                <div class="mk-analytics mrg-top-small">
+                    <div class="outline-box">
+                        <i class="ri-group-line"></i>
+                        <p class="caption">followers</p>
+                        <h5 style="font-weight: 600;">2,210</h5>
+                    </div>
+                    <div class="outline-box">
+                        <i style="color: red;" class="ri-heart-3-line"></i>
+                        <p class="caption">engagment</p>
+                        <h5 style="font-weight: 600;">9.5%</h5>
+                    </div>
+                    <div class="outline-box">
+                        <i class="ri-eye-line"></i>
+                        <p class="caption">avg. video</p>
+                        <h5 style="font-weight: 600;">2K</h5>
+                    </div>
+                </div>
+                <!--=== country and age ===-->
+                <div class="mk-audience">
+                    <div class="outline-box">
+                        <i class="ri-group-line"></i>
+                        <p class="caption">top country</p>
+                        <h5 style="font-weight: 600;">Australia</h5>
+                        <div class="mk-audience-data">
+                            <div>
+                                <p class="caption">Australia</p>
+                                <p style="color: #6C737F;" class="caption">USA</p>
+                                <p style="color: #6C737F;" class="caption">UK</p>
+                                <p style="color: #6C737F; text-align: left;" class="caption">Philippines</p>
+                            </div>
+                            <div id="mk-audience-country">
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                            </div>
+                            <div>
+                                <p class="caption">27%</p>
+                                <p style="color: #6C737F;" class="caption">18%</p>
+                                <p style="color: #6C737F;" class="caption">5%</p>
+                                <p style="color: #6C737F;" class="caption">3%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outline-box">
+                        <i class="ri-heart-3-line"></i>
+                        <p class="caption">avg. age</p>
+                        <h5 style="font-weight: 600;">24</h5>
+                        <div class="mk-audience-data">
+                            <div>
+                                <p style="color: #6C737F;" class="caption">13+</p>
+                                <p class="caption">18+</p>
+                                <p style="color: #6C737F;" class="caption">25+</p>
+                                <p style="color: #6C737F; text-align: left;" class="caption">35+</p>
+                            </div>
+                            <div id="mk-audience-age">
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                                <div id="data-bar"></div>
+                            </div>
+                            <div">
+                                <p style="color: #6C737F;" class="caption">12%</p>
+                                <p style="color: #6C737F;" class="caption">34%</p>
+                                <p style="color: #6C737F;" class="caption">17%</p>
+                                <p style="color: #6C737F;" class="caption">37%</p>
+                        </div>
+                    </div>
+                </div>
+                           <!--=== gender ===-->
+            <div class="mk-gender mrg-top-small">
+                <div class="outline-box">
+                    <i class="ri-group-line"></i>
+                    <p class="caption">gender</p>
+                    <h5 style="font-weight: 600;">women</h5>
+                    <div class="mk-gender-data">
+                        <div>
+                            <p class="caption"><i class="ri-women-line"></i></p>
+                            <p style="color: #6C737F; text-align: left;" class="caption"><i class="ri-men-line"></i></p>
+
+                        </div>
+                        <div id="mk-audience-gender">
+                            <div id="data-bar"></div>
+                            <div id="data-bar"></div>
+                        </div>
+                        <div>
+                            <p class="caption">60.9%</p>
+                            <p style="color: #6C737F;" class="caption">39.1%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== pricing ===-->
+            <div class="mk-analytics mrg-top-small" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="outline-box">
+                    <i class="ri-image-line"></i>
+                    <p class="caption">per video (30-60s)</p>
+                    <h5 style="font-weight: 600;">$70</h5>
+                </div>
+                <div class="outline-box">
+                    <i class="ri-movie-2-line"></i>
+                    <p class="caption">per short</p>
+                    <h5 style="font-weight: 600;">$100</h5>
+                </div>
+            </div>
+ 
+            </div>
+    <!--== created content==-->
+    <div class="mk-content-block" style="margin: 1rem 0">
+        <!--== content item ==-->
+        <div class="mk-content-item">
+            <a href="https://www.instagram.com/reel/CxllwjDhT11/" target="_blank"><video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/reel_neyomi.mp4" alt=""></video></a>
+            <div id="mk-content-keyword" class="mdl-keywords-grid" style="margin-bottom: 0;">
+                <span class="keyword-outline">
+                    <i class="ri-instagram-line"></i>
+                </span>
+                <span class="keyword-outline">
+                    <i class="ri-eye-line"></i>
+                    129K+
+                </span>
+            </div>
+        </div>
+        <!--== content item ==-->
+        <div class="mk-content-item">
+            <a href="" target="_blank"><video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/reel-xppen.mp4" alt=""></video></a>
+            <div id="mk-content-keyword" class="mdl-keywords-grid" style="margin-bottom: 0;">
+                <span class="keyword-outline">
+                    <i class="ri-instagram-line"></i>
+                </span>
+                <span class="keyword-outline">
+                    <i class="ri-eye-line"></i>
+                    74.9K+
+                </span>
+            </div>
+        </div>
+        <!--== content item ==-->
+        <div class="mk-content-item">
+            <a href="https://www.instagram.com/reel/Cx6vLM8vEJC/" target="_blank"><video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/reel-wingspan.mp4" alt=""></video></a>
+            <div id="mk-content-keyword" class="mdl-keywords-grid" style="margin-bottom: 0;">
+                <span class="keyword-outline">
+                    <i class="ri-instagram-line"></i>
+                </span>
+                <span class="keyword-outline">
+                    <i class="ri-eye-line"></i>
+                    1M+
+                </span>
+            </div>
+        </div>
+        <!--== content item ==-->
+        <div class="mk-content-item">
+            <a href="https://www.instagram.com/reel/CxOlSg2BjKJ/" target="_blank"><video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/reel-logitech.mp4" alt=""></video></a>
+            <div id="mk-content-keyword" class="mdl-keywords-grid" style="margin-bottom: 0;">
+                <span class="keyword-outline">
+                    <i class="ri-instagram-line"></i>
+                </span>
+                <span class="keyword-outline">
+                    <i class="ri-eye-line"></i>
+                    11.8K+
+                </span>
+            </div>
+        </div>
+        <!--== content item ==-->
+        <div class="mk-content-item">
+            <a href="https://www.instagram.com/reel/C1f7sB4vmHJ/" target="_blank"><video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/reel-30k.mp4" alt=""></video></a>
+            <div id="mk-content-keyword" class="mdl-keywords-grid" style="margin-bottom: 0;">
+                <span class="keyword-outline">
+                    <i class="ri-instagram-line"></i>
+                </span>
+                <span class="keyword-outline">
+                    <i class="ri-eye-line"></i>
+                    656K+
+                </span>
+            </div>
+        </div>
+        <!--== content item ==-->
+        <div class="mk-content-item">
+            <a href="https://www.instagram.com/reel/Cy9fW4eBkUU/" target="_blank"><video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/reel-xencelabs.mp4" alt=""></video></a>
+            <div id="mk-content-keyword" class="mdl-keywords-grid" style="margin-bottom: 0;">
+                <span class="keyword-outline">
+                    <i class="ri-instagram-line"></i>
+                </span>
+                <span class="keyword-outline">
+                    <i class="ri-eye-line"></i>
+                    10K+
+                </span>
+            </div>
+        </div>
+        <!--== content item ==-->
+        <div class="mk-content-item">
+            <a href="https://www.instagram.com/reel/CxpOVG0P4i5/" target="_blank"><video autoplay muted loop src="https://d22p4d1ezw7euj.cloudfront.net/Videos/reel-desky.mp4" alt=""></video></a>
+            <div id="mk-content-keyword" class="mdl-keywords-grid" style="margin-bottom: 0;">
+                <span class="keyword-outline">
+                    <i class="ri-instagram-line"></i>
+                </span>
+                <span class="keyword-outline">
+                    <i class="ri-eye-line"></i>
+                    13.7K+
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <a href="#">
+                <image class="footer-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Wordmark_Black.svg">
+            </a>
+            <p>For all business enquiries <a href="" style="color: #009e79;">hello@vauliys.com</a></p>
+        </div>
+        <div class="footer-column">
+            <p>©2023 Vauliys</p>
+            <a style="color: #009e79" href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
+                by Vauliys</a>
+            <div class="icons">
+                <a href="https://store.vauliys.com/" target="_blank">
+                    <i class="ri-store-line spot-i"></i> </a>
+                <a href="https://www.instagram.com/vauliys/" target="_blank">
+                    <i class="ri-instagram-line spot-i"></i></a>
+                <a href="https://github.com/vauliys" target="_blank">
+                    <i class="ri-github-line spot-i"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                    <i class="ri-linkedin-fill spot-i"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- JavaScript files -->
+<script src="scripts.js" defer></script> <!-- Main JavaScript file -->
+<script src="mdl_tab-slider.js" defer></script> <!-- Module: Tab Slider component -->
+<!-- Module: Footer  component -->
+<script src="mdl_navbar.js"></script> <!-- Module: Fixed Navbar component -->
+
+</html>
