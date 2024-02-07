@@ -699,6 +699,7 @@ nav {
 .mdl-tab-slider-art,
 .mdl-tab-slider-support,
 .mdl-tab-slider-shop,
+.mdl-tab-slider-assets,
 .mdl-tab-slider-design,
 .mdl-tab-slider-motion,
 .mdl-tab-slider-social {
@@ -706,6 +707,7 @@ nav {
     grid-template-columns: 1;
     grid-gap: var(--mrg-small);
 }
+
 
 .mdl-tab-slider-block {
     display: flex;
@@ -842,14 +844,33 @@ footer p {
 
 /* ------------------- */
 /* Link Page */
-#links-grid {
+
+#link-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 0.5rem;
+    width: 100%;
 }
 
-#links-grid p {
-    text-align: center;
+#link-grid img {
+    height: 55px;
+    border-radius: 0.7rem;
+    width: auto;
+}
+
+.mdl-tab-slider-shop .mdl-tab-slider-block,
+.mdl-tab-slider-support .mdl-tab-slider-block,
+.mdl-tab-slider-assets .mdl-tab-slider-block {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--colour-grey-100);
+}
+
+.mdl-tab-slider-shop .keyword-outline,
+.mdl-tab-slider-support .keyword-outline,
+.mdl-tab-slider-assets .keyword-outline {
+    margin-top: 0.5rem;
+    background-color: var(--colour-grey-150);
 }
 
 .mk-body {
@@ -1118,10 +1139,12 @@ footer p {
 
 .mdl-narrow-column {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: fit-content;
+    margin-top: 4rem;
 }
 
 .mdl-narrow-column .caption {
@@ -1227,11 +1250,17 @@ footer p {
 
 
     /* ------------------- */
+
+    .mdl-narrow-column {
+        margin-top: var(--header-height);
+    }
+
+    #link-grid {
+        width: auto;
+    }
     /* Module: tab slider */
     .mdl-tab-slider-featured,
     .mdl-tab-slider-art,
-    .mdl-tab-slider-support,
-    .mdl-tab-slider-shop,
     .mdl-tab-slider-design,
     .mdl-tab-slider-motion,
     .mdl-tab-slider-social {
@@ -1240,23 +1269,18 @@ footer p {
         grid-gap: var(--mrg-small);
     }
 
-    .mdl-tab-slider-assets {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: var(--mrg-small);
-        width: 40vw;
-    }
-
-
+    .mdl-tab-slider-assets,
     .mdl-tab-slider-support,
     .mdl-tab-slider-shop {
-        width: 60vw;
+        width: 100%;
     }
+
 
     .mdl-tab-slider-links {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: fit-content;
     }
 
     /* ------------------- */
