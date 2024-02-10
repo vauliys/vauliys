@@ -1069,21 +1069,28 @@ footer p {
     color: var(--colour-main-200);
 }
 
-.link-grid a {
+.link-grid a,
+.text-block {
     cursor: pointer;
     font-size: 0.7rem;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     background-color: #e1eddf;
     color: var(--colour-main-300);
+    width: 100%;
 }
 
+
+
 .link-grid a:hover,
-.mdl-narrow-column .icons i:hover{
+.mdl-narrow-column .icons i:hover,
+.text-block:hover {
     background-color: #efe6b6;
     color: #9e5710;
     transition: 0.5s;
 }
+
+
 
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 824px) {
