@@ -686,7 +686,9 @@ nav {
 
 .mdl-tab-slider-item_active,
 .mdl-tab-slider-item:hover {
-    background-color: var(--colour-grey-100);
+    background-color: var(--colour-main-100);
+    color: var(--colour-main-200);
+    font-weight: 600;
     transition: 0.5s;
 }
 
@@ -699,15 +701,21 @@ nav {
 
 .mdl-tab-slider-featured,
 .mdl-tab-slider-art,
-.mdl-tab-slider-support,
-.mdl-tab-slider-shop,
-.mdl-tab-slider-assets,
 .mdl-tab-slider-design,
 .mdl-tab-slider-motion,
-.mdl-tab-slider-social {
+.mdl-tab-slider-social,
+.mdl-tab-slider-discounts,
+.mdl-tab-slider-shop,
+.mdl-tab-slider-freebies {
     display: grid;
     grid-template-columns: 1;
     grid-gap: var(--mrg-small);
+}
+
+.mdl-tab-slider-discounts,
+.mdl-tab-slider-shop,
+.mdl-tab-slider-freebies {
+    width: 100%;
 }
 
 
@@ -1017,7 +1025,7 @@ footer p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: fit-content;
+    width: min-content;
 }
 
 .mdl-narrow-column .caption {
@@ -1070,7 +1078,8 @@ footer p {
 }
 
 .link-grid a,
-.text-block {
+.text-block,
+.link-item {
     cursor: pointer;
     font-size: 0.7rem;
     padding: 0.75rem 1rem;
@@ -1080,15 +1089,39 @@ footer p {
     width: 100%;
 }
 
+.link-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 0rem 2rem;
+    padding-left: 0;
+    align-items: center;
+    width: 100%;
+    text-wrap: wrap;
+}
 
+.link-item img {
+    height: 100px;
+    width: auto;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.link-item img:hover {
+    transform: translateY(0);
+}
 
 .link-grid a:hover,
 .mdl-narrow-column .icons i:hover,
-.text-block:hover {
+.text-block:hover,
+.link-item:hover {
     background-color: #efe6b6;
     color: #9e5710;
     transition: 0.5s;
 }
+
+
 
 
 
@@ -1179,8 +1212,8 @@ footer p {
         grid-gap: var(--mrg-small);
     }
 
-    .mdl-tab-slider-assets,
-    .mdl-tab-slider-support,
+    .mdl-tab-slider-freebies,
+    .mdl-tab-slider-discounts,
     .mdl-tab-slider-shop {
         width: 100%;
     }

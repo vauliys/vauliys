@@ -247,47 +247,47 @@ if (tab2021) {
 
 
 /*================ Tab Slider: Links.html ================*/
-const tabsupport = document.querySelector('#mdl-tab-slider-support');
+const tabdiscounts = document.querySelector('#mdl-tab-slider-discounts');
 const tabshop = document.querySelector('#mdl-tab-slider-shop');
-const tabassets = document.querySelector('#mdl-tab-slider-assets');
+const tabfreebies = document.querySelector('#mdl-tab-slider-freebies');
 
-const gridsupport = document.querySelector('.mdl-tab-slider-support ');
+const griddiscounts = document.querySelector('.mdl-tab-slider-discounts ');
 const gridshop = document.querySelector('.mdl-tab-slider-shop');
-const gridassets = document.querySelector('.mdl-tab-slider-assets');
+const gridfreebies = document.querySelector('.mdl-tab-slider-freebies');
 
 /* when Slider item is clicked perform code*/
-if (tabsupport) {
-    tabsupport.addEventListener('click', () => {
-        tabsupport.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+if (tabdiscounts) {
+    tabdiscounts.addEventListener('click', () => {
+        tabdiscounts.classList.add('mdl-tab-slider-item_active'); /* toggles class */
         tabshop.classList.remove('mdl-tab-slider-item_active'); /* removes class */
-        tabassets.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabfreebies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
-        gridsupport.classList.remove('hide'); /* toggles class */
+        griddiscounts.classList.remove('hide'); /* toggles class */
         gridshop.classList.add('hide'); /* toggles class */
-        gridassets.classList.add('hide'); /* toggles class */
+        gridfreebies.classList.add('hide'); /* toggles class */
     });
 }
 /* when Slider item is clicked perform code*/
 if (tabshop) {
     tabshop.addEventListener('click', () => {
         tabshop.classList.add('mdl-tab-slider-item_active'); /* toggles class */
-        tabsupport.classList.remove('mdl-tab-slider-item_active'); /* removes class */
-        tabassets.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabdiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabfreebies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
         gridshop.classList.remove('hide'); /* toggles class */
-        gridsupport.classList.add('hide'); /* toggles class */
-        gridassets.classList.add('hide'); /* toggles class */
+        griddiscounts.classList.add('hide'); /* toggles class */
+        gridfreebies.classList.add('hide'); /* toggles class */
     });
 }
 /* when Slider item is clicked perform code*/
-if (tabassets) {
-    tabassets.addEventListener('click', () => {
-        tabassets.classList.add('mdl-tab-slider-item_active'); /* toggles class */
-        tabsupport.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+if (tabfreebies) {
+    tabfreebies.addEventListener('click', () => {
+        tabfreebies.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabdiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabshop.classList.remove('mdl-tab-slider-item_active'); /* removes class */
 
-        gridassets.classList.remove('hide'); /* toggles class */
-        gridsupport.classList.add('hide'); /* toggles class */
+        gridfreebies.classList.remove('hide'); /* toggles class */
+        griddiscounts.classList.add('hide'); /* toggles class */
         gridshop.classList.add('hide'); /* toggles class */
     });
 }
