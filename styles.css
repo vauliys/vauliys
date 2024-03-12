@@ -688,7 +688,7 @@ nav {
 .mdl-tab-slider-item:hover {
     background-color: var(--colour-main-100);
     color: var(--colour-main-200);
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.5s;
 }
 
@@ -905,6 +905,16 @@ footer p {
     justify-content: center;
     width: 100%;
 }
+
+.mk-packages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+}
+
 
 
 .outline-box {
