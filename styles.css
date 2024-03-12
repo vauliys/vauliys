@@ -1142,7 +1142,7 @@ footer p {
     }
 
     .body-padding {
-        padding: 5% 20%;
+        padding: 5% 40%;
     }
 
 
@@ -1430,5 +1430,7 @@ footer p {
         padding: 0;
         margin-left: 20%;
     }
+
+
 
 }
