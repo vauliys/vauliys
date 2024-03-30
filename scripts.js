@@ -54,14 +54,14 @@ if (video) {
 // })(jQuery);
 
 
-/*================ Loading icon ================*/
-const loader = document.getElementById('loader');
-const loadingIcon = document.getElementById('loader-video');
-setTimeout(() => {
-    loader.classList.add('fade-out');
-    loadingIcon.classList.add('fade-out');
-}, 5000);
-setTimeout(() => {
-    loadingIcon.classList.add('hide');
-    loader.classList.add('hide');
-}, 6000);
+/*================ (links.html load more) ================*/
+
+const btnload = document.querySelector('#btn-load');
+const gridload = document.querySelector('.mdl-load-more');
+
+if (btnload) {
+    /* when Slider item (Social) is clicked perform code*/
+    btnload.addEventListener('click', () => {
+        gridload.classList.toggle('hide'); /* toggles class */
+    });
+}

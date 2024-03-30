@@ -1,224 +1,225 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <script src="scripts.js" defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <title>Dunkso</title>
-</head>
+    <head>
+        <script src="scripts.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap"
+            rel="stylesheet">
+        <title>Dunkso</title>
+    </head>
 
-<body class="fade-in">
-    <!-- Module: Fixed Header -->
-    <header id="header">
-        <!-- Module: (Fixed Banner) -->
-        <!-- <div class="banner" id="banner">
-            <img class="banner-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logomark_Gumroad.svg">
-            <a class="caption colour-main-300" href="https://store.vauliys.com/" target="_blank">Vauliys05
-                for 5% off brushes!</a>
-            <i class="ri-close-line" id="banner_i-close"></i>
-        </div> -->
-        <!-- Module: Navbar Banner -->
-        <div class="header">
-            <!-- Logo -->
-            <div>
-                <a href="/">
-                    <image class="header-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
-                </a>
-            </div>
-            <!-- Header grid with links - only visible in desktop view -->
-            <div class="header-grid desktop">
-                <a id="nav-projects-desktop">Projects<i class="ri-arrow-down-s-line"></i></a>
-                <a href="/">Home</a>
-                <a href="mailto:hello@vauliys.com">Contact</a>
-            </div>
-            <!-- Mobile Hamburger menu button -->
-            <div class="hamburger-menu mobile">
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-            </div>
+    <body class="fade-in">
+        <!-- Module: Fixed Header -->
+        <header id="header">
+            <!-- Module: Navbar Banner -->
+            <div class="header">
+                <!-- Logo -->
+                <div>
+                    <a href="/">
+                        <image class="header-logo"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Sublogo_Black.svg">
+                    </a>
+                </div>
+                <!-- Header grid with links - only visible in desktop view -->
+                <div class="header-grid desktop">
+                    <a href="/">Home</a>
+                    <a id="nav-projects-desktop">Projects</a>
+                    <a href="mailto:hello@vauliys.com">Contact</a>
+                </div>
+                <!-- Mobile Hamburger menu button -->
+                <div class="hamburger-menu mobile">
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                </div>
 
-            <!-- Desktop Icons -->
-            <div class="icons desktop">
-                <a href="https://store.vauliys.com/" target="_blank">
-                    <i class="ri-store-line spot-i"></i></a>
-                <a href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line spot-i"></i></a>
-                <a href="https://github.com/vauliys" target="_blank">
-                    <i class="ri-github-line spot-i"></i>
-                </a>
-            </div>
-        </div>
-        <!-- Module: Navbar Dropdown -->
-        <div>
-            <!-- Desktop Nav -->
-            <div class="nav desktop" id="nav">
-                <div class="nav-container-desktop" id="nav-links01-desktop">
-                    <div class="nav-column">
-                        <li><a href="art">Artwork</a></li>
-                        <li><a href="chocolate">Chocolate Box</a></li>
-                        <li><a href="dunkso">Dunkso</a></li>
-                        <li><a href="harvest">Harvest</a></li>
-                    </div>
-                    <div class="nav-column">
-                        <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
-                        <li><a href="logitech-mx">Logitech MX</a></li>
-                        <li><a href="logitech-mx3s">Logitech MX3S</a></li>
-                        <li><a href="paperlike">Paperlike</a></li>
-                    </div>
-                    <div class="nav-column">
-                        <li><a href="till-payments">Till Payments</a></li>
-                        <li><a href="topdesigns">Top Designs</a></li>
-                        <li><a href="solar">Solar Opposites</a></li>
-                        <li><a href="vauliys">Vauliys Brand Identity</a></li>
-                    </div>
-                    <div class="nav-column">
-                        <li><a href="xppen">XPPEN</a></li>
-                    </div>
+                <!-- Desktop Icons -->
+                <div class="icons desktop">
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-store-line spot-i"></i></a>
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line spot-i"></i></a>
+                    <a href="https://github.com/vauliys" target="_blank">
+                        <i class="ri-github-line spot-i"></i>
+                    </a>
                 </div>
             </div>
-            <!-- Mobile Nav -->
-            <nav id="navbar">
-                <div class="nav-container">
-                    <ul>
-                        <ul><a href="#">Home</a></ul>
-                        <ul style="cursor: pointer;" id="nav-projects">Projects<i class="ri-arrow-down-s-line"></i></ul>
-                        <div id="nav-links01">
+            <!-- Module: Navbar Dropdown -->
+            <div>
+                <!-- Desktop Nav -->
+                <div class="nav desktop" id="nav">
+                    <div class="nav-container-desktop" id="nav-links01-desktop">
+                        <div class="nav-column">
                             <li><a href="art">Artwork</a></li>
                             <li><a href="chocolate">Chocolate Box</a></li>
                             <li><a href="dunkso">Dunkso</a></li>
                             <li><a href="harvest">Harvest</a></li>
+                        </div>
+                        <div class="nav-column">
                             <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
                             <li><a href="logitech-mx">Logitech MX</a></li>
                             <li><a href="logitech-mx3s">Logitech MX3S</a></li>
                             <li><a href="paperlike">Paperlike</a></li>
-                            <li><a href="locked">Till Portal</a></li>
+                        </div>
+                        <div class="nav-column">
                             <li><a href="till-payments">Till Payments</a></li>
                             <li><a href="topdesigns">Top Designs</a></li>
                             <li><a href="solar">Solar Opposites</a></li>
                             <li><a href="vauliys">Vauliys Brand Identity</a></li>
+                        </div>
+                        <div class="nav-column">
                             <li><a href="xppen">XPPEN</a></li>
                         </div>
-                        <ul><a href="mailto:hello@vauliys.com">Contact</a></ul>
-                    </ul>
-                    <div class="icons">
-                        <a href="https://store.vauliys.com/" target="_blank">
-                            <i class="ri-store-line spot-i"></i></a>
-                        <a href="https://www.instagram.com/vauliys/" target="_blank">
-                            <i class="ri-instagram-line spot-i"></i></a>
-                        <a href="https://github.com/vauliys" target="_blank">
-                            <i class="ri-github-line spot-i"></i>
-                        </a>
                     </div>
                 </div>
-            </nav>
+                <!-- Mobile Nav -->
+                <nav id="navbar">
+                    <div class="nav-container">
+                        <ul>
+                            <ul><a href="#">Home</a></ul>
+                            <ul style="cursor: pointer;" id="nav-projects">Projects<i class="ri-arrow-down-s-line"></i>
+                            </ul>
+                            <div id="nav-links01">
+                                <li><a href="art">Artwork</a></li>
+                                <li><a href="chocolate">Chocolate Box</a></li>
+                                <li><a href="dunkso">Dunkso</a></li>
+                                <li><a href="harvest">Harvest</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=lE7ftfitcvc" target="_blank">Huion</a></li>
+                                <li><a href="logitech-mx">Logitech MX</a></li>
+                                <li><a href="logitech-mx3s">Logitech MX3S</a></li>
+                                <li><a href="paperlike">Paperlike</a></li>
+                                <li><a href="locked">Till Portal</a></li>
+                                <li><a href="till-payments">Till Payments</a></li>
+                                <li><a href="topdesigns">Top Designs</a></li>
+                                <li><a href="solar">Solar Opposites</a></li>
+                                <li><a href="vauliys">Vauliys Brand Identity</a></li>
+                                <li><a href="xppen">XPPEN</a></li>
+                            </div>
+                            <ul><a href="mailto:hello@vauliys.com">Contact</a></ul>
+                        </ul>
+                        <div class="icons">
+                            <a href="https://store.vauliys.com/" target="_blank">
+                                <i class="ri-store-line spot-i"></i></a>
+                            <a href="https://www.instagram.com/vauliys/" target="_blank">
+                                <i class="ri-instagram-line spot-i"></i></a>
+                            <a href="https://github.com/vauliys" target="_blank">
+                                <i class="ri-github-line spot-i"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Module: Fullbleed Banner -->
+        <div class="mdl-fullbleed-banner">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Banners/Banner_Dunkso.jpg" alt="Banner_Dunkso.jpg">
         </div>
-    </header>
-    <!-- Module: Fullbleed Banner -->
-    <div class="mdl-fullbleed-banner">
-        <img src="https://d22p4d1ezw7euj.cloudfront.net/Banners/Banner_Dunkso.jpg" alt="Banner_Dunkso.jpg">
-    </div>
-    <div class="body-padding">
-        <!-- Module: Dual Column -->
-        <div class="mdl-dual-column">
-            <div>
+        <div class="body-container">
+            <!-- Module: Dual Column -->
+            <div class="mdl-dual-column">
                 <div>
-                    <h3>Dunkso - balling in style, dunking the competition.</h3>
+                    <div>
+                        <h3>Dunkso - balling in style, dunking the competition.</h3>
+                    </div>
+                </div>
+
+                <div class="mdl-dual-column_r fade-in" id="sol-props-column">
+                    <div class="mdl-dual-column_btns">
+                        <span class="keyword-outline">
+                            2023
+                        </span>
+                        <span class="keyword-outline">
+                            Brand Identity
+                        </span>
+                        <span class="keyword-outline">
+                            Logo Design
+                        </span>
+                    </div>
+                    <p class="mrg-top-small">
+                        A personal project to redesign the branding and logo for Dunkso, a sports apparel brand based on
+                        the
+                        Basketall culture.
+                        The inspiration for the logo design stemmed from the sport itself, with a focus on the action of
+                        dunking. The ultimate objective was to produce a trendy and
+                        sophisticated apparel
+                        brand.
+                    </p>
                 </div>
             </div>
-
-            <div class="mdl-dual-column_r fade-in" id="sol-props-column">
-                <div class="mdl-dual-column_btns">
-                    <span class="keyword-outline">
-                        2023
-                    </span>
-                    <span class="keyword-outline">
-                        Brand Identity
-                    </span>
-                    <span class="keyword-outline">
-                        Logo Design
-                    </span>
+        </div>
+        <!-- Module: Mosaic Gallery -->
+        <div class="mdl-mosaic-gallery mdl-mosaic-gallery background-grey-100 ">
+            <div class="mdl-mosaic-gallery-container">
+                <div class="mdl-mosaic-gallery-column">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_01.jpg" alt="Dunkso_PDF_01.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_03.jpg" alt="Dunkso_PDF_03.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_05.jpg" alt="Dunkso_PDF_05.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_07.jpg" alt="Dunkso_PDF_07.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_09.jpg" alt="Dunkso_PDF_09.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_11.jpg" alt="Dunkso_PDF_11.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_13.jpg" alt="Dunkso_PDF_13.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_15.jpg" alt="Dunkso_PDF_15.jpg">
                 </div>
-                <p class="mrg-top-small">
-                    A personal project to redesign the branding and logo for Dunkso, a sports apparel brand based on the
-                    Basketall culture.
-                    The inspiration for the logo design stemmed from the sport itself, with a focus on the action of
-                    dunking. The ultimate objective was to produce a trendy and
-                    sophisticated apparel
-                    brand.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Module: Mosaic Gallery -->
-    <div class="mdl-mosaic-gallery mdl-mosaic-gallery background-grey-100 ">
-        <div class="mdl-mosaic-gallery-container">
-            <div class="mdl-mosaic-gallery-column">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_01.jpg" alt="Dunkso_PDF_01.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_03.jpg" alt="Dunkso_PDF_03.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_05.jpg" alt="Dunkso_PDF_05.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_07.jpg" alt="Dunkso_PDF_07.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_09.jpg" alt="Dunkso_PDF_09.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_11.jpg" alt="Dunkso_PDF_11.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_13.jpg" alt="Dunkso_PDF_13.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_15.jpg" alt="Dunkso_PDF_15.jpg">
-            </div>
 
-            <div class="mdl-mosaic-gallery-column">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_02.jpg" alt="Dunkso_PDF_02.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_04.jpg" alt="Dunkso_PDF_04.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_06.jpg" alt="Dunkso_PDF_06.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_08.jpg" alt="Dunkso_PDF_08.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_10.jpg" alt="Dunkso_PDF_10.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_12.jpg" alt="Dunkso_PDF_12.jpg">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_14.jpg" alt="Dunkso_PDF_14.jpg">
+                <div class="mdl-mosaic-gallery-column">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_02.jpg" alt="Dunkso_PDF_02.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_04.jpg" alt="Dunkso_PDF_04.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_06.jpg" alt="Dunkso_PDF_06.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_08.jpg" alt="Dunkso_PDF_08.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_10.jpg" alt="Dunkso_PDF_10.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_12.jpg" alt="Dunkso_PDF_12.jpg">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Dunkso_PDF_14.jpg" alt="Dunkso_PDF_14.jpg">
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-column">
-            <a href="/">
-                <image class="footer-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Wordmark_Black.svg">
-            </a>
-            <p>For all business enquiries <a href="" style="color: #009e79;">hello@vauliys.com</a></p>
-        </div>
-        <div class="footer-column">
-            <p>©2023 Vauliys</p>
-            <a style="color: #009e79" href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
-                by Vauliys</a>
-            <div class="icons">
-                <a href="https://store.vauliys.com/" target="_blank">
-                    <i class="ri-store-line spot-i"></i> </a>
-                <a href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line spot-i"></i></a>
-                <a href="https://github.com/vauliys" target="_blank">
-                    <i class="ri-github-line spot-i"></i>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-column">
+                <a href="/">
+                    <image class="footer-logo"
+                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Vauliys_Wordmark_Black.svg">
                 </a>
-                <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                    <i class="ri-linkedin-fill spot-i"></i>
-                </a>
+                <p>For all business enquiries <a href="" style="color: #009e79;">hello@vauliys.com</a></p>
             </div>
-        </div>
-    </footer>
-</body>
+            <div class="footer-column">
+                <p>©2023 Vauliys</p>
+                <a style="color: #009e79" href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
+                    by Vauliys</a>
+                <div class="icons">
+                    <a href="https://store.vauliys.com/" target="_blank">
+                        <i class="ri-store-line spot-i"></i> </a>
+                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                        <i class="ri-instagram-line spot-i"></i></a>
+                    <a href="https://github.com/vauliys" target="_blank">
+                        <i class="ri-github-line spot-i"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
+                        <i class="ri-linkedin-fill spot-i"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
 
-<!-- JavaScript files -->
-<script src="scripts.js" defer></script> <!-- Main JavaScript file -->
-<script src="mdl_tab-slider.js" defer></script> <!-- Module:: Tab Slider component -->
-<script src="mdl_navbar.js"></script> <!-- Module:: Fixed Navbar component -->
+    <!-- JavaScript files -->
+    <script src="scripts.js" defer></script> <!-- Main JavaScript file -->
+    <script src="mdl_tab-slider.js" defer></script> <!-- Module:: Tab Slider component -->
+    <script src="mdl_navbar.js"></script> <!-- Module:: Fixed Navbar component -->
 
 </html>
