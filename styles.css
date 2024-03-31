@@ -11,7 +11,8 @@
   --colour-main-100: #c8e5c6;
   --colour-main-200: #019e79;
   --colour-main-300: #036b6b;
-  --colour-accent-100: #fcf2b9;
+  --colour-accent-100: #fbecb6;
+  --colour-accent-200: #9e5710;
   --colour-accent-400: #4b3720;
 
   /* Font */
@@ -548,6 +549,7 @@ nav {
   padding: 0.2rem 0.7rem;
   width: fit-content;
   margin-bottom: var(--mrg-small);
+  color: var(--colour-grey-200);
 }
 
 .mdl-tab-slider-item {
@@ -889,7 +891,7 @@ footer p {
 }
 
 .mdl-narrow-column img {
-  width: 200px;
+  width: 180px;
 }
 
 .mdl-narrow-column .icons {
@@ -926,8 +928,8 @@ footer p {
 }
 
 .link-grid :first-child {
-  background-color: var(--colour-main-100);
-  color: var(--colour-main-200);
+  background-color: var(--colour-accent-100);
+  color: var(--colour-accent-200);
 }
 
 .link-grid a,
@@ -967,8 +969,8 @@ footer p {
 .mdl-narrow-column .icons i:hover,
 .text-block:hover,
 .link-item:hover {
-  background-color: #efe6b6;
-  color: #9e5710;
+  background-color: var(--colour-accent-100);
+  color: var(--colour-accent-200);
   transition: 0.5s;
 }
 
