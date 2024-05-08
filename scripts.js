@@ -24,19 +24,17 @@ if (bannerclose) {
 
 
 /*================ Button Scroll To About ================*/
-const btnexplore = document.getElementById('btn_explore');
+const btnTop = document.getElementById('btn_top');
 
-if (btnexplore) {
-    btnexplore.addEventListener('click', () => {
-        document.getElementById("about").scrollIntoView()
+if (btnTop) {
+    btnTop.addEventListener('click', () => {
+        document.getElementById("project-gallery").scrollIntoView()
     });
 }
 
 
 
-
 const video = document.getElementById('video');
-
 if (video) {
     let vid = document.getElementById("video");
     vid.volume = 0.05;
