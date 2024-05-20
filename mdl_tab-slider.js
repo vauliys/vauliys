@@ -145,50 +145,137 @@ if (tab2021) {
 
 
 /*================ Tab Slider: Links.html ================*/
-const tabdiscounts = document.querySelector('#mdl-tab-slider-discounts');
-const tabshop = document.querySelector('#mdl-tab-slider-shop');
-const tabfreebies = document.querySelector('#mdl-tab-slider-freebies');
+const tabPC = document.querySelector('#mdl-tab-slider-pc');
+const tabLighting = document.querySelector('#mdl-tab-slider-lighting');
+const tabDecor = document.querySelector('#mdl-tab-slider-decor');
+const tabArtSupplies = document.querySelector('#mdl-tab-slider-artsupplies');
+const tabPeripherals = document.querySelector('#mdl-tab-slider-peripherals');
+const tabFilming = document.querySelector('#mdl-tab-slider-filming');
 
-const griddiscounts = document.querySelector('.mdl-tab-slider-discounts ');
-const gridshop = document.querySelector('.mdl-tab-slider-shop');
-const gridfreebies = document.querySelector('.mdl-tab-slider-freebies');
+
+const gridPC = document.querySelector('.mdl-tab-slider-pc');
+const gridLighting = document.querySelector('.mdl-tab-slider-lighting ');
+const gridDecor = document.querySelector('.mdl-tab-slider-decor ');
+const gridArtSupplies = document.querySelector('.mdl-tab-slider-artsupplies ');
+const gridPeripherals = document.querySelector('.mdl-tab-slider-peripherals ');
+const gridFilming = document.querySelector('.mdl-tab-slider-filming ');
+
+
 
 /* when Slider item is clicked perform code*/
-if (tabdiscounts) {
-    tabdiscounts.addEventListener('click', () => {
-        tabdiscounts.classList.add('mdl-tab-slider-item_active'); /* toggles class */
-        tabshop.classList.remove('mdl-tab-slider-item_active'); /* removes class */
-        tabfreebies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+if (tabPC) {
+    tabPC.addEventListener('click', () => {
+        tabPC.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabLighting.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
-        griddiscounts.classList.remove('hide'); /* toggles class */
-        gridshop.classList.add('hide'); /* toggles class */
-        gridfreebies.classList.add('hide'); /* toggles class */
+        gridPC.classList.remove('hide'); /* toggles class */
+        gridDecor.classList.add('hide'); /* toggles class */
+        gridLighting.classList.add('hide'); /* toggles class */
+        gridArtSupplies.classList.add('hide'); /* toggles class */
+        gridFilming.classList.add('hide'); /* toggles class */
+        gridPeripherals.classList.add('hide'); /* toggles class */
     });
 }
+
 /* when Slider item is clicked perform code*/
-if (tabshop) {
-    tabshop.addEventListener('click', () => {
-        tabshop.classList.add('mdl-tab-slider-item_active'); /* toggles class */
-        tabdiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
-        tabfreebies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+if (tabLighting) {
+    tabLighting.addEventListener('click', () => {
+        tabLighting.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabPC.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
-        gridshop.classList.remove('hide'); /* toggles class */
-        griddiscounts.classList.add('hide'); /* toggles class */
-        gridfreebies.classList.add('hide'); /* toggles class */
+        gridLighting.classList.remove('hide'); /* toggles class */
+        gridDecor.classList.add('hide'); /* toggles class */
+        gridPC.classList.add('hide'); /* toggles class */
+        gridArtSupplies.classList.add('hide'); /* toggles class */
+        gridFilming.classList.add('hide'); /* toggles class */
+        gridPeripherals.classList.add('hide'); /* toggles class */
     });
 }
+
 /* when Slider item is clicked perform code*/
-if (tabfreebies) {
-    tabfreebies.addEventListener('click', () => {
-        tabfreebies.classList.add('mdl-tab-slider-item_active'); /* toggles class */
-        tabdiscounts.classList.remove('mdl-tab-slider-item_active'); /* removes class */
-        tabshop.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+if (tabDecor) {
+    tabDecor.addEventListener('click', () => {
+        tabDecor.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabPC.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabLighting.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
-        gridfreebies.classList.remove('hide'); /* toggles class */
-        griddiscounts.classList.add('hide'); /* toggles class */
-        gridshop.classList.add('hide'); /* toggles class */
+        gridDecor.classList.remove('hide'); /* toggles class */
+        gridLighting.classList.add('hide'); /* toggles class */
+        gridPC.classList.add('hide'); /* toggles class */
+        gridArtSupplies.classList.add('hide'); /* toggles class */
+        gridFilming.classList.add('hide'); /* toggles class */
+        gridPeripherals.classList.add('hide'); /* toggles class */
     });
 }
+
+/* when Slider item is clicked perform code*/
+if (tabArtSupplies) {
+    tabArtSupplies.addEventListener('click', () => {
+        tabArtSupplies.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabPC.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabLighting.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+
+        gridArtSupplies.classList.remove('hide'); /* toggles class */
+        gridDecor.classList.add('hide'); /* toggles class */
+        gridPC.classList.add('hide'); /* toggles class */
+        gridLighting.classList.add('hide'); /* toggles class */
+        gridFilming.classList.add('hide'); /* toggles class */
+        gridPeripherals.classList.add('hide'); /* toggles class */
+    });
+}
+
+/* when Slider item is clicked perform code*/
+if (tabPeripherals) {
+    tabPeripherals.addEventListener('click', () => {
+        tabPeripherals.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabPC.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabLighting.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+
+        gridPeripherals.classList.remove('hide'); /* toggles class */
+        gridDecor.classList.add('hide'); /* toggles class */
+        gridPC.classList.add('hide'); /* toggles class */
+        gridLighting.classList.add('hide'); /* toggles class */
+        gridArtSupplies.classList.add('hide'); /* toggles class */
+        gridFilming.classList.add('hide'); /* toggles class */
+    });
+}
+
+/* when Slider item is clicked perform code*/
+if (tabFilming) {
+    tabFilming.addEventListener('click', () => {
+        tabFilming.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabPC.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabLighting.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+
+        gridFilming.classList.remove('hide'); /* toggles class */
+        gridDecor.classList.add('hide'); /* toggles class */
+        gridPC.classList.add('hide'); /* toggles class */
+        gridLighting.classList.add('hide'); /* toggles class */
+        gridArtSupplies.classList.add('hide'); /* toggles class */
+        gridPeripherals.classList.add('hide'); /* toggles class */
+    });
+}
+
 
 /*================ Tab Slider: mediakit.html ================*/
 const tabinstagram = document.querySelector('#mdl-tab-slider-instagram');

@@ -494,11 +494,11 @@ nav {
   text-align: center;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 2500px) {
   .mdl-tab-slider-nav {
     /* tab slider navigation bar */
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     overflow-x: auto;
     margin: 0 auto;
 
@@ -517,7 +517,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 2500px) {
   .mdl-tab-slider-nav {
     all: unset;
     /* tab slider navigation bar */
@@ -576,10 +576,17 @@ margin: 0.5rem 0;
 }
 
 
-.mdl-tab-slider-discounts,
-.mdl-tab-slider-shop,
-.mdl-tab-slider-freebies {
+.mdl-tab-slider-pc,
+.mdl-tab-slider-lighting,
+.mdl-tab-slider-artsupplies,
+.mdl-tab-slider-decor, 
+.mdl-tab-slider-peripherals,
+.mdl-tab-slider-filming {
   width: 100%;
+}
+
+.mdl-tab-slider-block {
+  margin: 0.5rem 0;
 }
 
 .mdl-tab-slider img,
@@ -785,7 +792,6 @@ footer p {
   margin: var(--mrg-large) 0;
   margin-bottom: var(--mrg-medium);
   flex-direction: column;
-  width: max-content;
   align-items: center;
 }
 
@@ -846,6 +852,31 @@ textarea:focus {
 #logitech-21 {
   padding-top: 0.5rem;
 }
+
+.link-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-page img {
+  width: 180px !important;
+}
+
+.link-page .icons {
+  margin: var(--mrg-small) 0;
+}
+
+.link-page .icons i {
+  font-size: 0.8rem;
+  color: var(--colour-main-200);
+  padding: 0.8rem;
+  background-color: var(--colour-main-100);
+  border-radius: 2rem;
+}
+
+
 
 .mdl-narrow-column {
   display: flex;
@@ -908,11 +939,12 @@ textarea:focus {
 .link-item {
   cursor: pointer;
   font-size: var(--caption);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: #e1eddf;
   color: var(--colour-main-300);
   width: 100%;
+  text-align: center;
 }
 
 .link-item {
@@ -948,6 +980,9 @@ textarea:focus {
 
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 824px) {
+  #links-body {
+    padding: 5% 40%;
+  }
   i {
     font-size: 1rem;
   }
@@ -1022,9 +1057,12 @@ textarea:focus {
   }
 
   /* Module: tab slider */
-  .mdl-tab-slider-freebies,
-  .mdl-tab-slider-discounts,
-  .mdl-tab-slider-shop {
+  .mdl-tab-slider-pc,
+  .mdl-tab-slider-lighting,
+  .mdl-tab-slider-artsupplies,
+  .mdl-tab-slider-decor, 
+  .mdl-tab-slider-peripherals,
+  .mdl-tab-slider-filming  {
     width: 100%;
   }
 
