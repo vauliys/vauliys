@@ -145,6 +145,7 @@ if (tab2021) {
 
 
 /*================ Tab Slider: Links.html ================*/
+const tabFreebies = document.querySelector('#mdl-tab-slider-freebies');
 const tabPC = document.querySelector('#mdl-tab-slider-pc');
 const tabLighting = document.querySelector('#mdl-tab-slider-lighting');
 const tabDecor = document.querySelector('#mdl-tab-slider-decor');
@@ -152,7 +153,7 @@ const tabArtSupplies = document.querySelector('#mdl-tab-slider-artsupplies');
 const tabPeripherals = document.querySelector('#mdl-tab-slider-peripherals');
 const tabFilming = document.querySelector('#mdl-tab-slider-filming');
 
-
+const gridFreebies = document.querySelector('.mdl-tab-slider-freebies');
 const gridPC = document.querySelector('.mdl-tab-slider-pc');
 const gridLighting = document.querySelector('.mdl-tab-slider-lighting ');
 const gridDecor = document.querySelector('.mdl-tab-slider-decor ');
@@ -161,6 +162,26 @@ const gridPeripherals = document.querySelector('.mdl-tab-slider-peripherals ');
 const gridFilming = document.querySelector('.mdl-tab-slider-filming ');
 
 
+/* when Slider item is clicked perform code*/
+if (tabFreebies) {
+    tabFreebies.addEventListener('click', () => {
+        tabFreebies.classList.add('mdl-tab-slider-item_active'); /* toggles class */
+        tabPC.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+        tabLighting.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+
+        gridFreebies.classList.remove('hide'); /* toggles class */
+        gridPC.classList.add('hide'); /* toggles class */
+        gridDecor.classList.add('hide'); /* toggles class */
+        gridLighting.classList.add('hide'); /* toggles class */
+        gridArtSupplies.classList.add('hide'); /* toggles class */
+        gridFilming.classList.add('hide'); /* toggles class */
+        gridPeripherals.classList.add('hide'); /* toggles class */
+    });
+}
 
 /* when Slider item is clicked perform code*/
 if (tabPC) {
@@ -171,6 +192,7 @@ if (tabPC) {
         tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+        tabFreebies.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
         gridPC.classList.remove('hide'); /* toggles class */
         gridDecor.classList.add('hide'); /* toggles class */
@@ -178,6 +200,7 @@ if (tabPC) {
         gridArtSupplies.classList.add('hide'); /* toggles class */
         gridFilming.classList.add('hide'); /* toggles class */
         gridPeripherals.classList.add('hide'); /* toggles class */
+        gridFreebies.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -190,6 +213,7 @@ if (tabLighting) {
         tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+        tabFreebies.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
         gridLighting.classList.remove('hide'); /* toggles class */
         gridDecor.classList.add('hide'); /* toggles class */
@@ -197,6 +221,7 @@ if (tabLighting) {
         gridArtSupplies.classList.add('hide'); /* toggles class */
         gridFilming.classList.add('hide'); /* toggles class */
         gridPeripherals.classList.add('hide'); /* toggles class */
+        gridFreebies.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -209,6 +234,7 @@ if (tabDecor) {
         tabLighting.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+        tabFreebies.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
         gridDecor.classList.remove('hide'); /* toggles class */
         gridLighting.classList.add('hide'); /* toggles class */
@@ -216,6 +242,7 @@ if (tabDecor) {
         gridArtSupplies.classList.add('hide'); /* toggles class */
         gridFilming.classList.add('hide'); /* toggles class */
         gridPeripherals.classList.add('hide'); /* toggles class */
+        gridFreebies.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -228,6 +255,7 @@ if (tabArtSupplies) {
         tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+        tabFreebies.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
         gridArtSupplies.classList.remove('hide'); /* toggles class */
         gridDecor.classList.add('hide'); /* toggles class */
@@ -235,6 +263,7 @@ if (tabArtSupplies) {
         gridLighting.classList.add('hide'); /* toggles class */
         gridFilming.classList.add('hide'); /* toggles class */
         gridPeripherals.classList.add('hide'); /* toggles class */
+        gridFreebies.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -247,6 +276,7 @@ if (tabPeripherals) {
         tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabFilming.classList.remove('mdl-tab-slider-item_active'); /* removes class */
+        tabFreebies.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
         gridPeripherals.classList.remove('hide'); /* toggles class */
         gridDecor.classList.add('hide'); /* toggles class */
@@ -254,6 +284,7 @@ if (tabPeripherals) {
         gridLighting.classList.add('hide'); /* toggles class */
         gridArtSupplies.classList.add('hide'); /* toggles class */
         gridFilming.classList.add('hide'); /* toggles class */
+        gridFreebies.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -266,6 +297,7 @@ if (tabFilming) {
         tabDecor.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabArtSupplies.classList.remove('mdl-tab-slider-item_active'); /* removes class */
         tabPeripherals.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
+        tabFreebies.classList.remove('mdl-tab-slider-item_active'); /* toggles class */
 
         gridFilming.classList.remove('hide'); /* toggles class */
         gridDecor.classList.add('hide'); /* toggles class */
@@ -273,6 +305,7 @@ if (tabFilming) {
         gridLighting.classList.add('hide'); /* toggles class */
         gridArtSupplies.classList.add('hide'); /* toggles class */
         gridPeripherals.classList.add('hide'); /* toggles class */
+        gridFreebies.classList.add('hide'); /* toggles class */
     });
 }
 
