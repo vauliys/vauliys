@@ -874,6 +874,7 @@ textarea:focus {
   padding: 0.8rem;
   background-color: var(--colour-main-100);
   border-radius: 2rem;
+  transition: 0.5s;
 }
 
 
@@ -970,6 +971,7 @@ textarea:focus {
 
 
 .link-grid a:hover,
+.link-icons i:hover,
 .mdl-narrow-column .icons i:hover,
 .text-block:hover,
 .link-item:hover {
