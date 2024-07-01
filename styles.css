@@ -510,6 +510,12 @@ nav {
     border-radius: 2rem;
   }
 
+  #mdl-tab-slider-nav {
+    /* tab slider navigation bar */
+    grid-template-columns: repeat(4, 1fr) !important;
+    width: min-content !important;
+  }
+
   .mdl-tab-slider-nav::-webkit-scrollbar,
   .mk-content-block::-webkit-scrollbar {
     width: 0;
@@ -625,7 +631,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  background-color: var(--colour-main-100);
+  background-color: var(--colour-white);
   font-size: var(--caption);
   padding: 5%;
 }
