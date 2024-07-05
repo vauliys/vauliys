@@ -1,0 +1,143 @@
+.container {
+    padding: 5%;
+    margin-top: 20%;
+    padding-bottom: 1rem;
+}
+
+#collab-header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+#collab-header img {
+    height: auto;
+}
+
+#collab-user {
+    display: flex;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+#collab-userdetails {
+    display: flex;
+    grid-gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.categories {
+    display: inline-flex;
+    flex-wrap: wrap;
+    grid-gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.categories p {
+    font-size: 0.7rem;
+    outline: solid;
+    outline-width: 1px;
+    outline-color: #dbdddf;
+    width: fit-content;
+    border-radius: 6rem;
+    padding: 0.25rem 0.5rem;
+}
+
+#total-followers {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.25rem;
+}
+
+.video-grid video {
+    width: 100%;
+    border-radius: 0;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.15rem;
+}
+
+.img-grid img {
+    border-radius: 0 ;
+    height: 100%;
+}
+
+
+.img-block {
+    margin-bottom: 1rem;
+}
+
+#img {
+    border-radius: 0 !important;
+    margin-bottom: 0.25rem;
+}
+
+.img-bottom {
+    padding: 0% 5%;
+}
+
+.img-caption {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.img-grid .icon-grid {
+    display: flex;
+    grid-gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+.img-grid .icon-grid i,
+.img-caption i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.ri-heart-fill,
+.ri-chat-1-line,
+.ri-send-plane-line,
+.ri-bookmark-line {
+    cursor: pointer;
+}
+
+
+.dot-grid {
+    display: flex;
+    grid-gap: 0.25rem;
+    align-items: center;
+}
+
+#dot:last-of-type {
+    background-color: #efefef ;
+}
+
+#dot {
+    width: 5px;
+    height: 5px;
+    background-color: #dbdddf;
+    border-radius: 6rem;
+}
+.dot-active {
+    width: 7px !important;
+    height: 7px !important;
+    background-color: #5ea2e6 !important;
+}
