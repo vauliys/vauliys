@@ -19,3 +19,4 @@ const hideMetrics = () => {
 
 overlay.addEventListener('click', hideMetrics);
 arrow.addEventListener('click', hideMetrics);
+metricstab.addEventListener('click', hideMetrics);
