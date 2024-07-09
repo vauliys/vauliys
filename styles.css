@@ -498,7 +498,7 @@ nav {
   .mdl-tab-slider-nav {
     /* tab slider navigation bar */
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     overflow-x: auto;
     margin: 0 auto;
 
@@ -585,7 +585,7 @@ margin: 0.5rem 0;
 .mdl-tab-slider-pc,
 .mdl-tab-slider-lighting,
 .mdl-tab-slider-artsupplies,
-.mdl-tab-slider-decor, 
+.mdl-tab-slider-decor,
 .mdl-tab-slider-peripherals,
 .mdl-tab-slider-filming {
   width: 100%;
@@ -823,7 +823,7 @@ textarea {
   font-size: var(--caption);
 }
 
-textarea:focus { 
+textarea:focus {
   outline: none !important;
   border-color: var(--colour-main-200);
 }
@@ -1068,7 +1068,7 @@ textarea:focus {
   .mdl-tab-slider-pc,
   .mdl-tab-slider-lighting,
   .mdl-tab-slider-artsupplies,
-  .mdl-tab-slider-decor, 
+  .mdl-tab-slider-decor,
   .mdl-tab-slider-peripherals,
   .mdl-tab-slider-filming  {
     width: 100%;
