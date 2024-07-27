@@ -148,7 +148,7 @@ body {
 /* Margins and padding */
 .body-container {
   padding: 15%;
-  padding-top: var(--header-height);
+  padding-top: 7rem;
 }
 
 .mrg-btm-small {
@@ -867,7 +867,7 @@ textarea:focus {
 }
 
 .link-page img {
-  width: 180px !important;
+  width: 120px !important;
 }
 
 .link-page .icons {
