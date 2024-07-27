@@ -513,7 +513,6 @@ nav {
   #mdl-tab-slider-nav {
     /* tab slider navigation bar */
     grid-template-columns: repeat(4, 1fr) !important;
-    width: min-content !important;
   }
 
   .mdl-tab-slider-nav::-webkit-scrollbar,
@@ -1025,6 +1024,10 @@ textarea:focus {
     border-width: 1px;
     border-color: var(--colour-grey-100);
     transform: translateY(-100%);
+  }
+
+  #mdl-tab-slider-nav{
+    width: min-content !important;  
   }
 
   .nav-container-desktop {
