@@ -494,7 +494,7 @@ nav {
   text-align: center;
 }
 
-@media screen and (max-width: 2500px) {
+@media screen and (min-width: 0px) {
   .mdl-tab-slider-nav {
     /* tab slider navigation bar */
     display: grid;
@@ -522,21 +522,6 @@ nav {
   }
 }
 
-@media screen and (min-width: 2500px) {
-  .mdl-tab-slider-nav {
-    all: unset;
-    /* tab slider navigation bar */
-    display: inline-flex;
-    justify-content: center;
-    margin: 0 auto;
-
-    outline: solid;
-    outline-width: 1px;
-    outline-color: var(--colour-grey-100);
-    padding: 0.5rem;
-    border-radius: 2rem;
-  }
-}
 
 .btn-load {
   font-size: var(--caption);
