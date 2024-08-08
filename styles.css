@@ -635,8 +635,8 @@ footer p {
   margin-top: var(--mrg-medium);
 }
 .footer-column .icons i {
-  background-color: var(--colour-accent-100);
-  color: var(--colour-accent-200);
+  background-color: var(--colour-grey-100);
+  color: var(--colour-grey-300);
 }
 
 .footer-logo {
