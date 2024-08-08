@@ -421,7 +421,7 @@ header {
 
 .header-logo {
   /* Header logo*/
-  width: 2rem;
+  width: 2.5rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -641,7 +641,7 @@ footer p {
 
 .footer-logo {
   /* Footer logo*/
-  width: 4rem;
+  width: 2.5rem;
   border-radius: 0;
 }
 
@@ -1012,7 +1012,7 @@ textarea:focus {
   }
 
   #mdl-tab-slider-nav{
-    width: min-content !important;  
+    width: min-content !important;
   }
 
   .nav-container-desktop {
