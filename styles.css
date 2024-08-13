@@ -951,8 +951,6 @@ textarea:focus {
 }
 
 .link-item img {
-  height: 80px;
-  width: auto;
   object-fit: fill;
   border-radius: 0.5rem;
   border-top-right-radius: 0;
