@@ -283,6 +283,10 @@ hr {
     .container-full {
         padding: 0 30%;
     }
+
+    #categories-brands {
+        margin-left: 0.25rem;
+    }
 }
 
 
