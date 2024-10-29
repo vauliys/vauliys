@@ -514,6 +514,12 @@ nav {
 /* Mdule: tab slider */
 .mdl-tab-slider {
   text-align: center;
+  padding: 10% 0;
+  /* padding: 5% 10%; */
+}
+
+#mdl-tab-slider-links {
+  text-align: center;
   padding: 5% 10%;
 }
 
@@ -1148,8 +1154,16 @@ textarea:focus {
 
 
   .mdl-tab-slider {
-    padding: 0 30%;
+    padding: 5rem 0;
+    padding-bottom: 0;
   }
+
+  #mdl-tab-slider-links {
+    padding: 3rem 30%;
+    padding-bottom: 0;
+  }
+  
+  
   /* Module: tab slider */
   .mdl-tab-slider-pc,
   .mdl-tab-slider-lighting,
