@@ -1,6 +1,7 @@
+
 .container {
     padding: 5%;
-    margin-top: 20%;
+    margin-top: 40%;
     padding-bottom: 1rem;
 }
 
@@ -64,6 +65,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.25rem;
 }
+#total-followers i {
+    color: #17AAE2;
+}
+
 
 .follower-block {
     display: flex;
@@ -256,7 +261,7 @@ hr {
 @media screen and (min-width: 824px) {
     .container {
         padding: 5% 20%;
-        margin-top: 0;
+        margin-top: 5%;
         padding-bottom: 2rem;
     }
 

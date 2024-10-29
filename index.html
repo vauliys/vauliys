@@ -10,11 +10,11 @@
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/apple-touch-icon.png">
+        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-32x32.png">
+        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/favicon-16x16.png">
+        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,21 +26,26 @@
 <body class="fade-in">
     <!-- Module: Fixed Header -->
     <header id="header">
+        <div class="announcement-banner">
+            <i class="ri-arrow-left-s-line"></i>
+            <a href=""><p>Sign up to shop updates for stars like you</p></a>
+            <i class="ri-arrow-right-s-line"></i>
+        </div>
         <!-- Module: Navbar Banner -->
         <div class="header">
             <!-- Logo -->
-            <div>
+            <div style="display: flex; align-items: center;">
                 <a href="#">
                     <image class="header-logo"
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Vauliys_Logomark_RGB_Black.svg ">
+                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Vauliys Sub Logo_Horizontal_RGB_Colour.png">
                 </a>
-            </div>
-            <!-- Header grid with links - only visible in desktop view -->
-            <div class="header-grid desktop">
-                <a href="#project-gallery">Art</a>
-                <a href="#project-gallery">Design</a>
-                <a href='#project-gallery'>Motion</a>
-                <a href="#project-gallery">Animation</a>
+                <!-- Header grid with links - only visible in desktop view -->
+                <div class="header-grid desktop">
+                    <a style="text-decoration: underline; text-underline-offset: 3px;color:#17AAE2;" href="#">Home</a>
+                    <a href="https://shop.vauliys.com" target="_blank">Shop</a>
+                    <a href='links'>Links</a>
+                    <a href="faqs">FAQs</a>
+                </div>
             </div>
             <!-- Mobile Hamburger menu button -->
             <div class="hamburger-menu mobile">
@@ -51,25 +56,30 @@
 
             <!-- Desktop Icons -->
             <div class="icons desktop">
-                <a href="https://store.vauliys.com/" target="_blank"><button style="margin: 0;"
-                        class="mrg-top-small">Shop</button></a>
                 <a href="https://www.instagram.com/vauliys/" target="_blank">
                     <i class="ri-instagram-line spot-i"></i></a>
+                <a href="https://www.tiktok.com/@vauliys" target="_blank">
+                    <i class="ri-tiktok-fill spot-i"></i></a>
+                <a href="https://www.threads.net/@vauliys" target="_blank">
+                    <i class="ri-at-line spot-i"></i></a>
             </div>
         </div>
         <!-- Mobile Nav -->
         <nav id="nav">
             <div class="nav-container mobile">
                 <ul style="line-height: 3rem;">
-                    <ul><a href="#project-gallery">Art</a></ul>
-                    <ul><a href="#project-gallery">Design</a></ul>
-                    <ul><a href="#project-gallery">Motion</a></ul>
-                    <ul><a href="#project-gallery">Animation</a></ul>
+                    <ul><a style="text-decoration: underline; text-underline-offset: 3px;color:#17AAE2;" href="#">Home</a></ul>
+                    <ul><a href="https://shop.vauliys.com" target="_blank">Shop</a></ul>
+                    <ul><a href="links">Links</a></ul>
+                    <ul><a href="faqs">FAQs</a></ul>
                 </ul>
                 <div class="icons">
-                    <button style="margin: 0;" class="mrg-top-small">Shop</button>
                     <a href="https://www.instagram.com/vauliys/" target="_blank">
                         <i class="ri-instagram-line spot-i"></i></a>
+                    <a href="https://www.tiktok.com/@vauliys" target="_blank">
+                        <i class="ri-tiktok-fill spot-i"></i></a>
+                    <a href="https://www.threads.net/@vauliys" target="_blank">
+                        <i class="ri-at-line spot-i"></i></a>
                 </div>
             </div>
         </nav>
@@ -85,7 +95,7 @@
 
     <div class="body-container">
         <!-- Modual: Dual Column (About Vauliys) -->
-        <div class="mdl-dual-column" style="margin-bottom: 5rem;">
+        <div class="mdl-dual-column">
             <div>
                 <div>
                     <h3 id="about">Howdy hey 👋 <br>nice to meet you!</h3>
@@ -95,12 +105,12 @@
                         100K+ global
                         followers.
                     </p>
-                    <p><strong style="color: #019e79;">hello@vauliys.com</strong></p>
+                    <p><strong style="color: #17AAE2;">hello@vauliys.com</strong></p>
 
                     <a href="https://d22p4d1ezw7euj.cloudfront.net/Victoria Pritchard_CV-2024_No-mobile.pdf"
                         target="_blank"><button class="mrg-top-small btn_invert">Resume</button></a>
                     <a href="collabs"><button class="mrg-top-small">Media Kit</button></a>
-                    <a href="https://www.instagram.com/vauliys/" target="_blank">
+                    <a style="margin-left:0.5rem;" href="https://www.instagram.com/vauliys/" target="_blank">
                         <i class="ri-instagram-line spot-i"></i></a>
                     <a href="https://www.linkedin.com/in/vauliys/" target="_blank" id="project-gallery">
                         <i class="ri-linkedin-fill spot-i"></i>
@@ -257,19 +267,23 @@
         </div>
     </div>
 
+    <div class="mdl-fullbleed-banner">
+        <!-- <h1>Shop Launch</h1> -->
+        <img src="https://d22p4d1ezw7euj.cloudfront.net/Banners/Banner_Shop-Launch-04.jpg">
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-column">
             <a href="#">
                 <image class="footer-logo"
-                    src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Vauliys_Logomark_RGB_Black.svg ">
+                    src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Vauliys Sub Logo_Horizontal_RGB_Colour.png  ">
             </a>
-            <p>For all business enquiries <a href="" style="color: #009e79; font-weight: 500;">hello@vauliys.com</a></p>
+            <p>For all business enquiries <a href="">hello@vauliys.com</a></p>
         </div>
         <div class="footer-column">
             <p>©2024 Vauliys</p>
-            <a style="color: #009e79; font-weight: 500;" href="https://github.com/vauliys/vauliys.github.io"
-                target="_blank">Built
+            <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
                 by Vauliys</a>
             <div class="icons">
                 <a href="https://store.vauliys.com/" target="_blank">
