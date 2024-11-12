@@ -443,7 +443,7 @@ header {
 
 .header-logo {
   /* Header logo*/
-  width: 7rem;
+  width: 10rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -699,7 +699,7 @@ footer p {
 
 .footer-logo {
   /* Footer logo*/
-  width: 7rem;
+  width: 10rem;
   border-radius: 0;
 }
 
