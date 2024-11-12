@@ -1043,7 +1043,11 @@ textarea:focus {
 
 /*========== START (MOBILE) FAQ Container ==========*/
 #faq-page {
-  padding: 5rem 10% 5rem 10%
+  padding: 10rem 10% 2rem 10%;
+}
+
+.faq-left{
+  text-align: center;
 }
 
 .faq-container {
@@ -1058,6 +1062,7 @@ textarea:focus {
   display: flex;
   grid-gap: 0.5rem;
   font-size: 0.7rem;
+  justify-content: center;
 }
 
 .faq-categories div {
@@ -1090,6 +1095,7 @@ textarea:focus {
 
 .faq-item h5 {
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .faq-item i {
@@ -1110,7 +1116,7 @@ cursor: pointer;
 }
 
 .ff-67332efd9df1b861db50fc82__button {
-  padding: 1rem 1.5rem !important;
+  padding: 0.75rem 1rem !important;
   font-size: 0.8rem !important;
 }
 
@@ -1360,8 +1366,18 @@ cursor: pointer;
 
   /* ORANGISE */
   #faq-page {
-    padding: 10% 20% 10% 20%;
+    padding: 20% 20% 15% 20%;
+
   }
+
+  .faq-categories {
+    justify-content: left;
+  }
+  
+ .faq-left{
+    text-align: left;
+  }
+  
 
   #faq {
     grid-template-columns: 1fr 1fr;
