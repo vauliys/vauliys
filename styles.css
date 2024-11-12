@@ -146,6 +146,12 @@ body {
   color: var(--colour-main-02);
 }
 
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #D0ECFB;
+}
+
 /*=====================*/
 
 /*=====================*/
@@ -154,8 +160,8 @@ body {
   padding: 5rem 10% 5% 10%;
 }
 
-#links-body{
-  padding:10rem 10% 5%;
+#links-body {
+  padding: 10rem 10% 5%;
 }
 
 .mrg-btm-small {
@@ -425,7 +431,7 @@ header {
   color: var(--colour-main-01);
 }
 
-.announcement-banner a:hover{
+.announcement-banner a:hover {
   text-decoration: underline;
 }
 
@@ -466,7 +472,7 @@ nav {
   width: fit-content;
 }
 
-.nav-container ul a{
+.nav-container ul a {
   text-transform: uppercase;
 }
 
@@ -653,11 +659,11 @@ nav {
 
 
 /* Module: Fullbleed Banner */
-.mdl-fullbleed-banner h1{
-display:block;
-position: absolute;
-color: var(--colour-white);
-text-transform: uppercase;
+.mdl-fullbleed-banner h1 {
+  display: block;
+  position: absolute;
+  color: var(--colour-white);
+  text-transform: uppercase;
 }
 
 
@@ -1035,6 +1041,101 @@ textarea:focus {
   transition: 0.5s;
 }
 
+/*========== START (MOBILE) FAQ Container ==========*/
+#faq-page {
+  padding: 5rem 10% 5rem 10%
+}
+
+.faq-container {
+  margin-top: 2rem;
+}
+
+.faq-categories {
+  margin-bottom: 2rem;
+}
+
+.faq-categories {
+  display: flex;
+  grid-gap: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.faq-categories div {
+  background-color: #e9f8ff;
+  color: var(--colour-main-02);
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.faq-category-active {
+  background-color: var(--colour-main-03) !important;
+  color: var(--colour-main-01) !important;
+}
+
+/* .faq-category-active{
+  background-color: #e9f8ff;
+} */
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.faq-item hr {
+  margin: 5% 0;
+}
+
+.faq-item h5 {
+  font-weight: 500;
+}
+
+.faq-item i {
+  color: var(--colour-main-02);
+  cursor: pointer;
+}
+
+.faq-description {
+  margin-bottom: 1rem;
+}
+
+.faq-description a {
+  color: var(--colour-main-02);
+}
+
+#faq-general-01b span {
+cursor: pointer;
+}
+
+.ff-67332efd9df1b861db50fc82__button {
+  padding: 1rem 1.5rem !important;
+  font-size: 0.8rem !important;
+}
+
+.viral-footer {
+  display: none !important;
+}
+
+.newsletter {
+  padding: 3rem 0;
+  padding-bottom: 0;
+}
+
+.ff-67332efd9df1b861db50fc82__form {
+  padding-bottom: 0 !important;
+}
+
+.ff-67332efd9df1b861db50fc82__title {
+  font-size: var(--h3)!important;
+  color: var(--colour-main-03)!important;
+}
+
+.ff-67332efd9df1b861db50fc82__subtitle {
+  font-size: var(--body) !important;
+}
+
 /*========== MEDIA ENQUIRY ==========*/
 @media screen and (min-width: 824px) {
   #links-body {
@@ -1070,17 +1171,17 @@ textarea:focus {
   .mdl-tab-slider-freebies {
     display: grid;
     grid-gap: 0 1rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  #links-body{
+  #links-body {
     padding-top: 10%;
   }
 
   .link-item {
     grid-template-columns: none;
-    grid-gap:1rem;
-    padding:0;
+    grid-gap: 1rem;
+    padding: 0;
   }
 
   .link-item div {
@@ -1089,8 +1190,8 @@ textarea:focus {
   }
 
   .link-item img {
-    width:100%;
-    border-radius:0.5rem 0.5rem 0 0;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
 
   .media-kit {
@@ -1162,8 +1263,8 @@ textarea:focus {
     padding: 3rem 30%;
     padding-bottom: 0;
   }
-  
-  
+
+
   /* Module: tab slider */
   .mdl-tab-slider-pc,
   .mdl-tab-slider-lighting,
@@ -1258,7 +1359,31 @@ textarea:focus {
 
 
   /* ORANGISE */
+  #faq-page {
+    padding: 10% 20% 10% 20%;
+  }
 
+  #faq {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    grid-gap: 0 10%;
+  }
+
+  .faq-container hr {
+    margin: 5% 0;
+  }
+
+  .faq-container {
+    margin-top: 0;
+  }
+
+  #newsletter {
+      padding: 0;    
+  }
+
+  [data-ff-el="root"].ff-67332efd9df1b861db50fc82 .ff-67332efd9df1b861db50fc82__form {
+    padding-top: 0rem !important;
+  }
 
   /*========== Module: Textblock (index.html - companies) ==========*/
 
