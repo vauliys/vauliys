@@ -1218,7 +1218,7 @@ cursor: pointer;
     transform: translateY(-100%);
   }
 
-  #mdl-tab-slider-nav {
+  #mdl-tab-slider-nav:first-child {
     width: min-content !important;
   }
 
