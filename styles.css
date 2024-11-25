@@ -548,6 +548,7 @@ nav {
   #mdl-tab-slider-nav {
     /* tab slider navigation bar */
     grid-template-columns: repeat(4, 1fr) !important;
+    width: min-content;
   }
 
   .mdl-tab-slider-nav::-webkit-scrollbar,
@@ -1008,7 +1009,6 @@ textarea:focus {
   width: 100%;
   text-align: center;
   /* text-transform: uppercase; */
-  font-weight: 600;
 }
 
 .link-item {
