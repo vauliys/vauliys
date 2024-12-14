@@ -79,6 +79,9 @@ const faq02b = document.querySelector('#faq-shipping-02b');
 const faq03 = document.querySelector('#faq-shipping-03');
 const faq03b = document.querySelector('#faq-shipping-03b');
 
+const faq04 = document.querySelector('#faq-shipping-04');
+const faq04b = document.querySelector('#faq-shipping-04b');
+
 if (faq01) {
     /* when Slider item (Social) is clicked perform code*/
     faq01.addEventListener('click', () => {
@@ -86,7 +89,7 @@ if (faq01) {
 
         faq02b.classList.add('hide'); /* toggles class */
         faq03b.classList.add('hide'); /* toggles class */
-
+        faq04b.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -97,6 +100,7 @@ if (faq02) {
 
         faq01b.classList.add('hide'); /* toggles class */
         faq03b.classList.add('hide'); /* toggles class */
+        faq04b.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -107,8 +111,21 @@ if (faq03) {
 
         faq01b.classList.add('hide'); /* toggles class */
         faq02b.classList.add('hide'); /* toggles class */
+        faq04b.classList.add('hide'); /* toggles class */
     });
 }
+
+if (faq04) {
+    /* when Slider item (Social) is clicked perform code*/
+    faq04.addEventListener('click', () => {
+        faq04b.classList.toggle('hide'); /* toggles class */
+
+        faq01b.classList.add('hide'); /* toggles class */
+        faq02b.classList.add('hide'); /* toggles class */
+        faq03b.classList.add('hide'); /* toggles class */
+    });
+}
+
 
 /*================ FAQ dropdown - General ================*/
 const general01 = document.querySelector('#faq-general-01');
@@ -120,6 +137,9 @@ const general02b = document.querySelector('#faq-general-02b');
 const general03 = document.querySelector('#faq-general-03');
 const general03b = document.querySelector('#faq-general-03b');
 
+const general04 = document.querySelector('#faq-general-04');
+const general04b = document.querySelector('#faq-general-04b');
+
 if (general01) {
     /* when Slider item (Social) is clicked perform code*/
     general01.addEventListener('click', () => {
@@ -127,6 +147,7 @@ if (general01) {
 
         general02b.classList.add('hide'); /* toggles class */
         general03b.classList.add('hide'); /* toggles class */
+        general04b.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -137,6 +158,7 @@ if (general02) {
 
         general01b.classList.add('hide'); /* toggles class */        
         general03b.classList.add('hide'); /* toggles class */
+        general04b.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -147,6 +169,18 @@ if (general03) {
 
         general01b.classList.add('hide'); /* toggles class */        
         general02b.classList.add('hide'); /* toggles class */
+        general04b.classList.add('hide'); /* toggles class */
+    });
+}
+
+if (general04) {
+    /* when Slider item (Social) is clicked perform code*/
+    general04.addEventListener('click', () => {
+        general04b.classList.toggle('hide'); /* toggles class */
+
+        general01b.classList.add('hide'); /* toggles class */        
+        general02b.classList.add('hide'); /* toggles class */
+        general03b.classList.add('hide'); /* toggles class */
     });
 }
 
