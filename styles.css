@@ -548,7 +548,7 @@ nav {
   #mdl-tab-slider-nav {
     /* tab slider navigation bar */
     grid-template-columns: repeat(4, 1fr) !important;
-    width: min-content;
+    /* width: min-content; */
   }
 
   .mdl-tab-slider-nav::-webkit-scrollbar,
