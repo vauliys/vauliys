@@ -1223,6 +1223,8 @@ cursor: pointer;
   }
 
   #mdl-tab-slider-nav {
+    /* tab slider navigation bar */
+    grid-template-columns: repeat(4, 1fr) !important;
     width: min-content;
   }
 
@@ -1445,6 +1447,7 @@ cursor: pointer;
     grid-gap: 2rem;
     margin-left: 2rem;
     justify-content: center;
+    width: max-content;
   }
 
   .header-grid a {
