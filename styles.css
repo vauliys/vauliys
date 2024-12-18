@@ -1222,6 +1222,10 @@ cursor: pointer;
     width: min-content !important;
   }
 
+  #mdl-tab-slider-nav {
+    width: min-content;
+  }
+
   .nav-container-desktop {
     display: grid !important;
     grid-template-columns: repeat(4, auto);
