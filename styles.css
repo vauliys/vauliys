@@ -534,7 +534,7 @@ nav {
     /* tab slider navigation bar */
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    overflow-x: auto;
+    overflow-x:auto;
     margin: 0 auto;
 
     outline: solid;
