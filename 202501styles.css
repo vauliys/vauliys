@@ -327,6 +327,7 @@ nav a {
     color: #C18A00;
     text-align: center;
     padding: 50px;
+
 }
 
 #newsletter i {
@@ -349,6 +350,17 @@ nav a {
 .ff-67ae87d3c0de5959c3012bdd .ff-67ae87d3c0de5959c3012bdd__button {
     width: fit-content !important;
     font-weight: 500 !important;
+}
+
+.ff-67ae87d3c0de5959c3012bdd__success .fd-form-success {
+    display: flex;
+    justify-content: center;
+}
+
+[data-ff-el="root"].ff-67ae87d3c0de5959c3012bdd .fd-form-success>*:last-child{
+    color: #C18A00;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 
 /* Footer */
