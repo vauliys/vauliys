@@ -11,11 +11,32 @@
 
         gtag('config', 'G-8VK8V51MNZ');
     </script>
+    <script>
+        (function (w, d, t, h, s, n) {
+            w.FlodeskObject = n;
+            var fn = function () {
+                (w[n].q = w[n].q || []).push(arguments);
+            };
+            w[n] = w[n] || fn;
+            var f = d.getElementsByTagName(t)[0];
+            var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+            var sm = d.createElement(t);
+            sm.async = true;
+            sm.type = 'module';
+            sm.src = h + s + '.mjs' + v;
+            f.parentNode.insertBefore(sm, f);
+            var sn = d.createElement(t);
+            sn.async = true;
+            sn.noModule = true;
+            sn.src = h + s + '.js' + v;
+            f.parentNode.insertBefore(sn, f);
+        })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+    </script>
     <script src="scripts.js" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="202501styles.css">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180"
@@ -29,515 +50,147 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <title>Vauliys | Digital Designer, Content Creator, and Artist based in Australia </title>
+    <title>Vauliys | Digital Creator based in Australia </title>
 </head>
 
-<body class="fade-in">
-    <!-- Module: Fixed Header -->
-    <header id="header">
-        <div class="announcement-banner">
-            <i class="ri-arrow-left-s-line"></i>
-            <a href="subscribe"><p>Sign up to shop updates for stars like you</p></a>            <i class="ri-arrow-right-s-line"></i>
+<body class="fade-in" id="page-hub">
+    <div id="header">
+        <div id="announcement-banner">
+            <p><a href="https://shop.vauliys.com/" class="highlight">shop launch:</a> Mar 2nd 10AM AEDT</p>
         </div>
-        <!-- Module: Navbar Banner -->
         <div class="header">
-            <!-- Logo -->
-            <div style="display: flex; align-items: center;">
-                <a href="index">
-                    <image class="header-logo"
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Vauliys_Logo_Horizontal_Colour_RGB.png">
-                </a>
-                <!-- Header grid with links - only visible in desktop view -->
-                <div class="header-grid desktop">
-                    <a href="index">Home</a>
-                    <a href="https://shop.vauliys.com" target="_blank">Shop</a>
-                    <a style="text-decoration: underline; text-underline-offset: 3px;color:#17AAE2;" href='links'>Links</a>
-                    <a href="locked">FAQs</a>
-                </div>
+            <a class="mobile"href="#"><i class="ri-shining-2-fill"></i></a>
+            <div class="desktop">
+                <a href="#"><i class="ri-shining-2-fill"></i></a>
+                <a href="https://vauliys.com">home</a>
+                <a href="https://shop.vauliys.com/">shop</a>
+                <a class="active" href="#">hub</a>
             </div>
-            <!-- Mobile Hamburger menu button -->
-            <div class="hamburger-menu mobile">
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-            </div>
-
-            <!-- Desktop Icons -->
-            <div class="icons desktop">
-                <a href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line spot-i"></i></a>
-                <a href="https://www.tiktok.com/@vauliys" target="_blank">
-                    <i class="ri-tiktok-fill spot-i"></i></a>
-                <a href="https://www.threads.net/@vauliys" target="_blank">
-                    <i class="ri-at-line spot-i"></i></a>
-            </div>
+            <i class="ri-menu-3-line menu mobile"></i>
         </div>
-        <!-- Mobile Nav -->
-        <nav id="nav">
-            <div class="nav-container mobile">
-                <ul style="line-height: 3rem;">
-                    <ul><a href="#">Home</a></ul>
-                    <ul><a href="https://shop.vauliys.com" target="_blank">Shop</a></ul>
-                    <ul><a style="text-decoration: underline; text-underline-offset: 3px;color:#17AAE2;" href="links">Links</a></ul>
-                    <ul><a href="locked">FAQs</a></ul>
-                </ul>
-                <div class="icons">
-                    <a href="https://www.instagram.com/vauliys/" target="_blank">
-                        <i class="ri-instagram-line spot-i"></i></a>
-                    <a href="https://www.tiktok.com/@vauliys" target="_blank">
-                        <i class="ri-tiktok-fill spot-i"></i></a>
-                    <a href="https://www.threads.net/@vauliys" target="_blank">
-                        <i class="ri-at-line spot-i"></i></a>
-                </div>
-            </div>
-        </nav>
-        </div>
-    </header>
-    <div class="body-container" id="links-body">
-        <div class="link-page">
-            <!-- Modual: Dual Column (About Vauliys) -->
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/Victoria-VAU01.png">
-            <div style="margin: 1rem 0;">
-                <h4 style="margin-bottom: 0.25rem; font-weight: 500;">howdy i'm <span
-                        style="color: #17AAE2;">vauliys</span>
-                    <h4>
-                        <p class="caption" style="font-weight: 300;">a digital creator and artist from australia.
-                            <br>business enquiries; <strong style="font-weight: 400;">hello@vauliys.com</strong>
-                        </p>
-            </div>
-            <div id="link-icons" class="icons">
-                <a class="icon link-icons" href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line"></i></a>
-
-                <a class="icon link-icons" href="https://www.tiktok.com/@vauliys" target="_blank">
-                    <i class="ri-tiktok-fill"></i></a>
-
-                <a class="icon link-icons" href="https://youtube.com/@vauliys/featured" target="_blank">
-                    <i class="ri-youtube-fill"></i></a>
-
-                <a class="icon link-icons" href="https://www.pinterest.com.au/vauliys/" target="_blank">
-                    <i class="ri-pinterest-line"></i></a>
-
-                <a class="icon link-icons" href="https://www.twitch.tv/vauliys" target="_blank">
-                    <i class="ri-twitch-fill"></i></a>
-            </div>
-            <div class="link-grid mrg-top-medium" style="text-align: center;">
-                <a href="https://munbyn.biz/vauliys" target="_blank">Munbyn 941B thermal printer (US)</a>
-                <a href="https://www.amazon.com.au/dp/B0C5ZR17S9?th=1" target="_blank">Munbyn 941B thermal printer (AUS)</a>
-
-                <a href="https://www.amazon.com.au/stores/page/A079DCC0-28E3-44E0-9B8E-306985BE64B8" target="_blank">munbyn labels</a>
-
-                <a href="https://shop.vauliys.com" target="_blank">digital brushes</a>
-                <a href="https://shop.vauliys.com" target="_blank">shop</a>
-                <a href="https://www.youtube.com/watch?v=o8DnBoTx9ts" target="_blank">latest youtube video</a>
-                <!-- <a href="https://forms.gle/X7xT9RsuJrVWbPKMA" target="_blank">shop product enquiry</a> -->
-                <a href="collabs">collabs: closed</a>
-                <a href="https://vgen.co/vauliys" target="_blank">commissions: closed</a>
-                <!-- <a href="https://ko-fi.com/vauliys" target="_blank">Ko-fi</a> -->
-                <!-- <a href="https://vauliys.notion.site/Tips-from-META-f4e4370027ad422d94e0feb8a30f5496?pvs=4"
-                    target="_blank">tips from meta</a> -->
-                <!-- <a href="#form">request a tutorial</a> -->
-                <!-- <a href="#palestine">palestine</a> -->
-            </div>
-        </div>
-        <!--Module: Tab Slider (palestine) -->
-        <!-- <div class="link-page" style="padding-top: 3rem;">
-            <h5 style="font-weight: 500;" id="palestine">palestine donations</h5>
-            <div class="link-grid mrg-top-medium" style="grid-template-columns: 1fr;">
-                <a href="https://store.vauliys.com/?query=brushes" target="_blank">@vauliys procreate brushes</a>
-                <p class="caption" style="margin-top: 1rem; color: #6c737f;">
-                            all proceeds will be donated monthly to Palestine foundations.
-                        </p>
-            </div>
-
-        </div> -->
-        <!-- request form-->
-        <!-- <form id="form" action="https://api.web3forms.com/submit" method="POST" class="request-container">
-            <h5 style="font-weight: 500;margin-bottom: 1rem;">leave a suggestion 👇</h5>
-            <input type="hidden" name="access_key" value="19247639-e525-40e5-9588-887e5b497ef8">
-            <textarea name="request" class="request-input"
-                placeholder="let me know what content you'd like to see. Examples: tutorials, how to draw, how i became a professional."></textarea>
-            <button type="submit">submit</button>
-        </form> -->
     </div>
-    <!--Module: Tab Slider (shop my desk) -->
-    <div class="mdl-tab-slider" id="mdl-tab-slider-links">
-        <div class="mrg-btm-small">
-            <h5 style="margin-bottom: 1rem; font-weight: 500;">view my <span style="color: #17AAE2;">desk</span>
-                <h5>
-                    <p class="caption" style="margin: 1rem 0; color: #6c737f;">
-                        slide along the tab to view more ->
-                    </p>
-                    <div class="mdl-tab-slider-nav">
-                        <div class="cursor-pointer mdl-tab-slider-item mdl-tab-slider-item_active"
-                            id="mdl-tab-slider-collabs">collabs</div>
-                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-freebies">freebies
-                        </div>
-                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-pc">pc build</div>
-                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-artsupplies">art
-                            supplies</div>
-                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-lighting">lighting
-                        </div>
-                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-decor">decor</div>
-                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-peripherals">
-                            peripherals</div>
-                        <div class="cursor-pointer mdl-tab-slider-item" id="mdl-tab-slider-filming">filming
-                        </div>
+
+    <!-- Nav: Mobile -->
+    <nav class="nav-show mobile">
+        <ul>
+            <li><a href="https://vauliys.com/">home</a></li>
+            <li><a href="https://shop.vauliys.com/">shop</a></li>
+            <li><a class="active" href="#">hub</a></li>
+        </ul>
+    </nav>
+    <!-- Profile + links -->
+    <div class="body">
+        <div class="pill-container">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Vauliys_Logomark.png">
+            <h4>howdy, i'm <span class="highlight">vauliys</span> </h4>
+            <p>digital creator from melb, aus <br>
+                business enquiries: <span class="highlight">fully booked for 2025</span>
+            </p>
+            <div class="icon-grid">
+                <a href="https://www.instagram.com/vauliys"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill"></i></a>
+                <a href="https://www.threads.net/@vauliys"><i class="ri-at-line"></i></a>
+                <a href="https://www.youtube.com/@vauliys"><i class="ri-youtube-line"></i></a>
+            </div>
+            <div class="link-grid">
+                <a href="https://shop.vauliys.com/">brushes + shop</a>
+                <a href="#newsletter">newsletter sign up</a>
+                <a href="collabs">collaboration gallery</a>
+                <a href="https://vauliys.com">art portfolio</a>
+            </div>
+            <div id="divider">
+                <i class="ri-shining-2-fill"></i> <i class="ri-shining-2-fill"></i> <i class="ri-shining-2-fill"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Form -->
+    <div id="newsletter">
+        <i class="ri-shining-2-fill"></i>
+        <h4>join my <span class="highlight-02">mailing list</span> </h4>
+        <p>for shop updates, giveaways
+            and discounts for <span class="highlight-02">stars like you</span>
+        </p>
+        <div id="fd-form-67ae87d3c0de5959c3012bdd"></div>
+        <script>
+            window.fd('form', {
+                formId: '67ae87d3c0de5959c3012bdd',
+                containerEl: '#fd-form-67ae87d3c0de5959c3012bdd'
+            });
+        </script>
+    </div>
+    <!-- Desk links -->
+    <div class="body-btm">
+        <div class="pill-container">
+            <i class="ri-shining-2-fill"></i>
+            <h4>stars of <span class="highlight">my desk</span> </h4>
+            <p>swipe left to view more
+            </p>
+
+            <div id="slider-tab">
+                <div class="slider-tab">
+                    <div>
+                        <p class="tab-active" id="tab-feature">featured</p>
                     </div>
-        </div>
-        <div class="mdl-tab-slider-collabs fade-in">
-            <div class="mdl-tab-slider-block">
-                <a href="https://au.munbyn.com/products/bluetooth-thermal-label-printer-p941b?option1=Type%207" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Munbyn_RW941-01.jpg">
-                    <div><strong>munbyn</strong><br>941 thermal printer</div>
-                </a>
+                    <div>
+                        <p id="tab-shop">shop setup</p>
+                    </div>
+                    <div>
+                        <p id="tab-art">art supplies</p>
+                    </div>
+                    <div>
+                        <p id="tab-content">content</p>
+                    </div>
+                </div>
             </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://bit.ly/3LXlI51" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Logitech_MXConsole.jpg">
-                    <div><strong>logitech</strong><br>mx creative console</div>
-                </a>
+            <div id="featured" class="link-grid tab-feature fade-in">
+                <a href="https://www.amazon.com.au/dp/B0C5ZR17S9?th=1">941b munbyn thermal printer</a>
+                <a href="https://paperlike.com">paperlike screen protector</a>
+                <a
+                    href="https://www.moft.us/products/invisible-phone-tripod-stand?utm_source=Instagram&utm_medium=Instagram_Victoria_Pritchard&utm_campaign=Instagram&utm_id=Instagram_Victoria_Pritchard&utm_term=Instagram_Victoria_Pritchard&utm_content=Instagram">moft
+                    origiami tripod</a>
             </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://bit.ly/3YD7mhN" target="_blank" class="link-item">
-                    <img src="https://www.moft.us/cdn/shop/files/Group_633252.png?v=1722484954&width=1200">
-                    <div><strong>MOFT</strong><br>"VAULIYS10" for 10% off</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://bit.ly/3LXlI51" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/GS-JJ_NeonSign.jpg">
-                    <div><strong>GS-JJ</strong><br>neon signs</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://bit.ly/3YzaI5D" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/GS-JJ_EnamelPin.jpg">
-                    <div><strong>GS-JJ</strong><br>enamel pins</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://go.nanoleaf.me/vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://au-cdn.nanoleaf.me/assets/img/products/elements/owl/smk/7pk/2-nanoleaf-wood-hexagons-light-panels-smarter-starter-kit-7-nook@2x.webp">
-                    <div><strong>nanoleaf</strong><br>"VAULIYS10" for 10% off</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://uneede.cc/?ref=vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://uneede.cc/cdn/shop/files/1_06212099-acaf-404b-8f1c-98b1cf165733-393791.jpg?v=1721065378&width=800">
-                    <div><strong>uneede</strong><br>"VAULIYS10" for 10% off</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.ea.com/games/the-sims/the-sims-4/store/browse" target="_blank" class="link-item">
-                    <img
-                        src="https://image.api.playstation.com/vulcan/img/rnd/202111/3019/oXPtJkwSeNlYon2MqTX9K4sQ.png">
-                    <div><strong>electronic arts</strong><br>"VAULIYS" creator code</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://divoom.com/en-au/products/divoom-pro?variant=32038376374390" target="_blank"
-                    class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Divoom_DitoomPro.jpg">
-                    <div><strong>divoom</strong><br>dito pro</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.logitechg.com/en-au/products/streaming-gear/yeti-premium-usb-microphone.988-000449.html"
-                    target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Logitech_YETI.jpg">
-                    <div><strong>logitech</strong><br>yeti blue mic</div>
-                </a>
-            </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://paperlike.com/vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://paperlike.com/cdn/shop/files/new_da6b4a68-96df-4a64-a27e-0dc73ee5034d.jpg?v=1691760529">
-                    <div><strong>paperlike</strong><br>ipad screen protector</div>
-                </a>
-            </div>
-        </div>
 
-        <div class="mdl-tab-slider-freebies fade-in hide">
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://d22p4d1ezw7euj.cloudfront.net/Imagery/PC Wallpaper_Horizontal.jpg" target="_blank"
-                    class="link-item">
-                    <img
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Thumbnail_Wallpaper_Horizontal.jpg">
-                    <div><strong>howl's moving castle</strong> Wallpaper</div>
-                </a>
+            <div id="tab-shop" class="link-grid hide tab-shop fade-in">
+                <a href="https://www.amazon.com.au/dp/B0C5ZR17S9?th=1">941b munbyn thermal printer</a>
+                <a
+                    href="https://www.amazon.com.au/MUNBYN-Holographic-Stickers-Printable-Self-Adhesive/dp/B0CP24PWJB?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ASFDYQKJJQDLX&gQT=1">munbyn
+                    holographic thermal labels</a>
+                <a
+                    href="https://www.amazon.com.au/MUNBYN-Thermal-Direct-Shipping-Labels/dp/B0897SGV9L?crid=YGKE0QPV9JL7&dib=eyJ2IjoiMSJ9.BjdlULPelrdNWXzsweoSL2VTDBoMpdhUWfbApSy1QpvWGnOW2hbYX7yT-ODXUmVjAjsCkYVAFH9EqVNdLGDAoXiIGbJmX9cluxd6CW-enLPSAvdsegceiA5I8QgZsklXvUC0B_80aQsmECZZOzu8g9SWuRlt2Q3HQyDNVciKhxGpEh5_PbLf9q0_3t0giETb6J8YP2sH5uEIXWQeAc2eifrjo9tfm2PcvTVlMLT4JSI0N9_GRjrcx91LTtw1jGe1LVIbdVZF9TzrGifKT8RN9FGwwi-GSs0U8K7gmBpfeZzZMGYdBv6VhAmyHWhgOzBbHktOCho_c1FkryLbRTfDko4EOsSRbBr9PrixS9jiBc4.IYTMGa_DMql2bI6ghmAAoj47THveylrWQGJiyULcaQ8&dib_tag=se&keywords=munbyn+thermal+label&qid=1739507815&s=office-products&sprefix=munbyn+thermal+label%2Coffice-products%2C268&sr=1-4">munbyn
+                    thermal shipping labels</a>
+                <a href="https://www.epson.com.au/products/ecotank/ET-2850.asp">epson ET2580</a>
+                <a href="https://squareup.com/au/en/hardware/reader">square card reader</a>
             </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://d22p4d1ezw7euj.cloudfront.net/Imagery/PC Wallpaper_Vertical.jpg" target="_blank"
-                    class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Thumbnail_Wallpaper_Vertical.jpg">
-                    <div><strong>howl's moving castle</strong> wallpaper</div>
-                </a>
-            </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://www.dafont.com/bohemian-soul.font" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Thumbnail_Bohemian-Soul.jpg">
-                    <div>font: <strong>bohemian soul</strong></div>
-                </a>
-            </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://www.dafont.com/oliver-3.font" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Thumbnail_Oliver.jpg">
-                    <div>font: <strong>Oliver</strong><br></div>
-                </a>
-            </div>
-        </div>
 
-        <div class="mdl-tab-slider-pc fade-in hide">
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://lian-li.com/product/o11d-evo-rgb/" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Thumbnail_o11d.jpg">
-                    <div><strong>lian li</strong><br>o11d evo rgb (white)</div>
-                </a>
+            <div id="tab-art" class="link-grid hide tab-art fade-in">
+                <a href="https://shop.vauliys.com/">digital brushes</a>
+                <a href="https://procreate.com/">procreate</a>
+                <a href="https://paperlike.com">paperlike screen protector</a>
+                <a href="https://www.apple.com/au/ipad-pro/">ipad pro 11"</a>
             </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://lian-li.com/product/uni-fan-sl-infinity-reverse-blade/" target="_blank"
-                    class="link-item">
-                    <img style="filter: brightness(0.95);" src="https://lian-li.com/wp-content/uploads/2023/06/006.jpg">
-                    <div><strong>lian li</strong><br>UNI FAN SL-INF</div>
-                </a>
-            </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://www.gigabyte.com/Monitor/G27Q" target="_blank" class="link-item">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRerdbZPe3MmH8ZG0KT2LRViN6lHlH2LdTnJKYgCUkLTQ&s">
-                    <div><strong>gigabyte</strong><br>G27Q monitor</div>
-                </a>
-            </div>
-        </div>
 
-        <div class="mdl-tab-slider-lighting fade-in hide">
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://uneede.cc/?ref=vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://uneede.cc/cdn/shop/products/O1CN012hmaqz1CEwcSbqnaN__2342940050-310900.png?v=1683404483&width=700">
-                    <div><strong>unedee</strong><br>benson night light</div>
-                </a>
+            <div id="tab-content" class="link-grid hide tab-content fade-in">
+                <a href="https://www.samsung.com/au/smartphones/galaxy-s24">samsung s24</a>
+                <a href="https://www.sony.com.au/interchangeable-lens-cameras/products/zv-e10">sony zv-e10</a>
+                <a
+                    href="https://www.moft.us/products/invisible-phone-tripod-stand?utm_source=Instagram&utm_medium=Instagram_Victoria_Pritchard&utm_campaign=Instagram&utm_id=Instagram_Victoria_Pritchard&utm_term=Instagram_Victoria_Pritchard&utm_content=Instagram">moft
+                    origiami tripod</a>
+                <a href="">capcut (apk premium unlocked)</a>
             </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://desky.com.au/products/monitor-light-bar" target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Product_Desky.jpg">
-                    <div><strong>desky</strong><br>monitor light bar</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.ikea.com/au/en/p/tvaerhand-table-lamp-black-bamboo-00518408/" target="_blank"
-                    class="link-item">
-                    <img
-                        src="https://www.ikea.com/au/en/images/products/tvaerhand-table-lamp-black-bamboo__1013687_pe829293_s5.jpg?f=m">
-                    <div><strong>ikea</strong><br>TVÄRHAND table lamp</div>
-                </a>
-            </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://uneede.cc/?ref=vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://uneede.cc/cdn/shop/files/2_bb44b585-7933-4302-8bb7-5d73a8a26a15-629436.png?v=1712779466&width=700">
-                    <div><strong>unedee</strong><br>why? duck night light</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://go.nanoleaf.me/vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://au-cdn.nanoleaf.me/assets/img/products/elements/owl/smk/7pk/2-nanoleaf-wood-hexagons-light-panels-smarter-starter-kit-7-nook@2x.webp">
-                    <div><strong>nanoleaf</strong><br>"VAULIYS10" for 10% off</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://uneede.cc/?ref=vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://uneede.cc/cdn/shop/files/1_06212099-acaf-404b-8f1c-98b1cf165733-393791.jpg?v=1721065378&width=800">
-                    <div><strong>uneede</strong><br>"VAULIYS10" for 10% off</div>
-                </a>
-            </div>
-        </div>
 
-        <div class="mdl-tab-slider-artsupplies fade-in hide">
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://paperlike.com/vauliys" target="_blank" class="link-item">
-                    <img
-                        src="https://paperlike.com/cdn/shop/files/new_da6b4a68-96df-4a64-a27e-0dc73ee5034d.jpg?v=1691760529">
-                    <div><strong>paperlike</strong><br>ipad screen protector</div>
-                </a>
-            </div>
-            <div style="margin-top: 0.5rem;" class="mdl-tab-slider-block">
-                <a href="https://www.eckersleys.com.au/milini-premium-hardbound-journal" target="_blank"
-                    class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Product-Sketchbook.jpg">
-                    <div><strong>milini</strong><br>sketchbook</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.amazon.com.au/elago-Compatible-Generation-Silicone-Magnetic/dp/B08YQMZKJT/ref=sr_1_2?crid=216BM5O1JSL33&amp;keywords=elago+pencil+case&amp;qid=1707627653&amp;sprefix=elago+pencil+cas%252Caps%252C258&amp;sr=8-2&_encoding=UTF8&tag=vauliys05-22&linkCode=ur2&linkId=6525a8ab8ec6905f1239d0ee4bf471df&camp=247&creative=1211"
-                    target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/elago.jpeg">
-                    <div><strong>elago</strong><br>apple pencil case</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://au.ohuhu.com/collections/alcohol-based-markers/products/ohuhu-120-colors-dual-tips-alcohol-art-markers-brush-chisel"
-                    target="_blank" class="link-item">
-                    <img src="https://au.ohuhu.com/cdn/shop/files/5..jpg?v=1694138403&width=850">
-                    <div><strong>ohuhu</strong><br>120 alchohol marker set</div>
-                </a>
-            </div>
-        </div>
+            <i class="ri-shining-2-fill"></i>
 
-        <div class="mdl-tab-slider-decor fade-in hide">
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.ikea.com/au/en/p/lanespelare-accessories-stand-00504067/" target="_blank"
-                    class="link-item">
-                    <img
-                        src="https://www.ikea.com/au/en/images/products/lanespelare-accessories-stand__0984809_pe816415_s5.jpg?f=xl">
-                    <div><strong>ikea</strong><br>headphone stand</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.ikea.com/au/en/p/foersegla-coaster-bamboo-00468111/" target="_blank"
-                    class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Product_Coaster.avif">
-                    <div><strong> ikea</strong><br>coaster</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://shop.minimaldesksetups.com/products/candela" target="_blank" class="link-item">
-                    <img src="https://shop.minimaldesksetups.com/cdn/shop/files/Studio_Session-012-1.jpg?v=1695795826">
-                    <div><strong> minimal desk setups</strong><br>candela humidifer</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://au.ohuhu.com/products/ohuhu-bamboo-marker-organizer" target="_blank" class="link-item">
-                    <img src="https://au.ohuhu.com/cdn/shop/files/7..jpg?v=1694138403&width=850">
-                    <div><strong>ohuhu</strong><br>bamboo marker organiser</div>
-                </a>
-            </div>
-        </div>
-
-        <div class="mdl-tab-slider-peripherals fade-in hide">
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.logitechg.com/en-au/products/streaming-gear/yeti-premium-usb-microphone.988-000449.html"
-                    target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Logitech_YETI.jpg">
-                    <div><strong>logitech</strong><br>yeti blue mic</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://divoom.com/en-au/products/divoom-pro?variant=32038376374390" target="_blank"
-                    class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Thumbnail-Square/Divoom_DitoomPro.jpg">
-                    <div><strong>divoom</strong><br>dito pro</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://au.creative.com/p/speakers/creative-pebble-x#buy-menu" target="_blank"
-                    class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Product_Pebble-x.jpg">
-                    <div><strong>creativelabs</strong><br>pebble x</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.logitechg.com/en-au/products/gaming-mice/g703-hero-wireless-gaming-mouse.910-005642.html"
-                    target="_blank" class="link-item">
-                    <img src="https://m.media-amazon.com/images/I/61Df8HOPQ-L._AC_UF894,1000_QL80_.jpg">
-                    <div><strong>logitech</strong><br>g703</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.logitech.com/en-au/products/webcams/mx-brio.html" target="_blank"
-                    class="link-item">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReR2AItlYM88hVUY1XbcSZoRc8-tr3wk4kDpTh7_vSUg&s">
-                    <div><strong>logitech</strong><br>mx brio webcam</div>
-                </a>
-            </div>
-        </div>
-
-        <div class="mdl-tab-slider-filming fade-in hide">
-            <div class="mdl-tab-slider-block">
-                <a href="https://bit.ly/3YD7mhN" target="_blank" class="link-item">
-                    <img src="https://www.moft.us/cdn/shop/files/Group_633252.png?v=1722484954&width=1200">
-                    <div><strong>MOFT</strong><br>"VAULIYS10" for 10% off</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.sony.com.au/interchangeable-lens-cameras/products/zv-e10" target="_blank"
-                    class="link-item">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxJ-LQG1J65P5DTmufGLmz1PUx0RCs4kbkA&s">
-                    <div><strong>sony</strong><br>zv-e10</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.amazon.com.au/Flexible-Overhead-Adjustable-Headboard-Compatible/dp/B0BKQ5TZCW/ref=sr_1_7?crid=2MF578M5SMXHN&amp;keywords=viozon+phone+holder&amp;qid=1707627301&amp;sprefix=viozon+phone+holde%252Caps%252C265&amp;sr=8-7&_encoding=UTF8&tag=vauliys05-22&linkCode=ur2&linkId=0a4701902640a646dcacf9a209936787&camp=247&creative=1211"
-                    target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Product-Viozon.jpg">
-                    <div><strong>viozon</strong><br>phone desk clamp</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.ikea.com/au/en/p/bergenes-holder-for-mobile-phone-tablet-bamboo-70458000/"
-                    target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Product_Phone-Holder.avif">
-                    <div><strong>ikea</strong><br>phone holder</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.amazon.com.au/JOBY-Advanced-Universal-Mirrorless-JB01763-BWW/dp/B09HKZYSL5/ref=sr_1_5?crid=3G4DY0TMGSCOD&amp;keywords=joby%252Bcompact%252Badvanced%252Btripod&amp;qid=1707627550&amp;sprefix=joby%252Bcompac%252Caps%252C255&amp;sr=8-5&amp;th=1&_encoding=UTF8&tag=vauliys05-22&linkCode=ur2&linkId=6a20adfce8a34efc1c50cfaa9e917029&camp=247&creative=1211"
-                    target="_blank" class="link-item">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Product_Joby.jpg">
-                    <div><strong>joby</strong><br>compact tripod</div>
-                </a>
-            </div>
-            <div class="mdl-tab-slider-block">
-                <a href="https://www.samsung.com/au/smartphones/galaxy-s24/" target="_blank" class="link-item">
-                    <img
-                        src="https://images.samsung.com/au/smartphones/galaxy-s24/images/galaxy-s24-highlights-color-cobalt-violet-back.jpg?imbypass=true">
-                    <div><strong>samsung</strong><br>galaxy s24 + 24ultra</div>
-                </a>
-            </div>
         </div>
     </div>
-
-
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-column">
-            <a href="index">
-                <image class="footer-logo"
-                    src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Vauliys_Logo_Horizontal_Colour_RGB.png  ">
-            </a>
-            <p>For all business enquiries <a href="">hello@vauliys.com</a></p>
-        </div>
-        <div class="footer-column">
-            <p>©2024 Vauliys</p>
-            <a href="https://github.com/vauliys/vauliys.github.io" target="_blank">Built
-                by Vauliys</a>
-            <div class="icons">
-                <a href="https://store.vauliys.com/" target="_blank">
-                    <i class="ri-store-line spot-i"></i> </a>
-                <a href="https://www.instagram.com/vauliys/" target="_blank">
-                    <i class="ri-instagram-line spot-i"></i></a>
-                <a href="https://github.com/vauliys" target="_blank">
-                    <i class="ri-github-line spot-i"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/vauliys/" target="_blank">
-                    <i class="ri-linkedin-fill spot-i"></i>
-                </a>
-            </div>
-        </div>
+    <footer>
+        <a href="#"><img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Vauliys_Logomark_RGB_White.png"></a>
     </footer>
-
 </body>
 
 <!-- JavaScript files -->
-<script src="scripts.js" defer></script> <!-- Main JavaScript file -->
-<script src="mdl_tab-slider.js" defer></script> <!-- Module:: Tab Slider component -->
-<script src="mdl_navbar.js"></script> <!-- Module:: Fixed Navbar component -->
+<script src="202501_scripts.js" defer></script> <!-- Main JavaScript file -->
+<script src="202501_nav.js" defer></script> <!-- Main JavaScript file -->
+<script src="202501_slider-tab.js"></script> <!-- Module:: Fixed Navbar component -->
 
 </html>
