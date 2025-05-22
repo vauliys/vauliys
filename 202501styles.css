@@ -192,6 +192,7 @@ i {
 .right {
     display: flex;
     justify-content: end;
+    grid-gap:10px;
 }
 
 .right>a {
@@ -244,6 +245,8 @@ nav {
 
 .active {
     color: var(--highlight) !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 nav a {
@@ -763,10 +766,11 @@ footer img {
     .desktop {
         display: flex;
         align-items: center;
+        width: max-content;
     }
 
     .desktop a {
-        margin-right: 50px;
+        margin-right: 40px;
         color: var(--white);
         font-size: 0.8rem;
     }
