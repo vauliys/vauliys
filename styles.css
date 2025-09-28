@@ -9,16 +9,19 @@
     --white: white;
 
     /* font */
-    --body-font: "Manrope", "sans-serif";
+    --body-font: "BrittiSans", "sans-serif";
 }
 
 @font-face {
-    font-family: "Advercase";
-    src: url('https://d22p4d1ezw7euj.cloudfront.net/Fonts/Advercase-Regular.ttf'),
-        url('https://d22p4d1ezw7euj.cloudfront.net/Fonts/Advercase-Regular.woff') format('woff'),
-        url('https://d22p4d1ezw7euj.cloudfront.net/Fonts/Advercase-Regular.otf') format('otf');
-
+    font-family: 'Advercase';
+    src: url('/Users/victoria/Documents/vauliys/fonts/Advercase.ttf');
 }
+
+@font-face {
+    font-family: 'BrittiSans';
+    src: url('/Users/victoria/Documents/vauliys/fonts/BrittiSans-Regular.otf');
+}
+
 
 /*=====================*/
 /* font size for large devices */
@@ -115,15 +118,17 @@ li {
 .hover-selection-overlay::before {
     content: "";
     position: absolute;
-    top: -1px; /* match border width */
+    top: -1px;
+    /* match border width */
     left: -1px;
     right: -1px;
     bottom: -1px;
     border-radius: 2px;
-    padding: 1px; /* match original border thickness */
+    padding: 1px;
+    /* match original border thickness */
     background: linear-gradient(to right, #33a1db, #c5be4c 100%);
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -167,21 +172,21 @@ li {
 .handle.br {
     left: 100%;
     top: 100%;
-     background: #c5be4c;
+    background: #c5be4c;
 }
 
 /* new mid-edge handles */
 .handle.tm {
     left: 50%;
     top: 0;
-     background: #74af9a;
+    background: #74af9a;
 }
 
 /* top middle */
 .handle.bm {
     left: 50%;
     top: 100%;
-      background: #74af9a;
+    background: #74af9a;
 }
 
 /* bottom middle */
@@ -195,7 +200,7 @@ li {
 .handle.mr {
     left: 100%;
     top: 50%;
-     background: #c5be4c;
+    background: #c5be4c;
 }
 
 /* middle right */
@@ -207,7 +212,7 @@ li {
     text-align: center;
     padding: 15px;
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 500;
 }
 
@@ -265,7 +270,7 @@ li {
 }
 
 .header p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: var(--colour-light);
 }
 
@@ -305,7 +310,7 @@ nav {
 }
 
 nav a {
-   color: #071549;
+    color: #071549;
     line-height: 4rem;
 }
 
@@ -324,7 +329,6 @@ nav a {
 
 
 .body {
-    height: 100vh;
     background: conic-gradient(from 0deg, rgb(156, 216, 189, 10%) 0%, rgb(58, 56, 57, 10%) 25%, rgb(136, 161, 147, 10%) 50%, rgb(196, 196, 108, 10%) 75%, rgb(156, 216, 189, 10%) 100%);
 }
 
@@ -334,11 +338,15 @@ nav a {
     flex-direction: column;
     text-align: center;
     letter-spacing: 1px;
-    padding: 13rem 5%;
+    padding: 10rem 5%;
+    background-image: url('https://d22p4d1ezw7euj.cloudfront.net/Imagery/Graphic-Circles.png');
+    background-size: contain;
+    background-position: 250px -80px;
+    background-repeat: no-repeat;
 }
 
 .landing-module {
-    height: 100%;
+    padding-bottom: 50px;
 }
 
 
@@ -346,16 +354,18 @@ nav a {
     display: flex;
     flex-direction: column;
     grid-gap: 10px;
-    margin-bottom:30px;
+    margin-bottom: 10px;
 }
 
 #landing-text p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 #landing-text h1 {
     padding: 0;
     font-family: 'Advercase';
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .landing-module img {
@@ -377,12 +387,12 @@ nav a {
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     justify-content: center;
 }
 
 .folder-grid img {
-    width: 75px;
+    width: 60px;
 }
 
 .folder a,
@@ -393,10 +403,11 @@ nav a {
     color: var(--colour-dark);
     width: min-content;
     margin-top: 20px;
+    font-weight: 500;
 }
 
 #client-grid {
-    background-color: var(--colour-light);
+    background-color: #f4efc9;
     padding: 20px 8%;
     display: flex;
     align-items: center;
@@ -407,6 +418,83 @@ nav a {
 #client-grid img {
     width: 70px;
     max-height: 20px;
+}
+
+.form {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.form-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    justify-content: end;
+}
+
+.form-button p {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      border-radius: 10px; /* ✅ now works */
+      background: white; /* inner background */
+      z-index: 1;
+      font-size: 0.8rem;
+
+      /* Gradient text */
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, #33a1db, #babc55);
+    }
+
+    /* Pseudo-element for gradient border */
+   .form-button p::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1.8px; /* thickness of border */
+      background: linear-gradient(to right, #33a1db, #babc55);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+
+
+.form img {
+    width: 70px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   background: white;
+   padding:10px;
+   border-radius: 10px;
+   grid-gap: 5px;
+   margin-bottom: 20px;
+}
+
+input, textarea {
+    padding: 3px;
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+
+form h1 {
+    font-family: 'Advercase' !important;
+    padding-bottom: 10px;
 }
 
 /* Slider Tab */
