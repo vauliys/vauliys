@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'BrittiSans';
-    src: url('/Users/victoria/Documents/vauliys/fonts/BrittiSans-Regular.otf');
+    src: url('https://d22p4d1ezw7euj.cloudfront.net/Fonts/BrittiSans-Regular.otf');
 }
 
 
@@ -116,7 +116,7 @@ li {
     position: absolute;
     pointer-events: none;
     box-sizing: content-box;
-    z-index: 999999;
+    z-index: 3;
     border-radius: 2px;
     transition: opacity .12s ease, transform .12s ease;
     opacity: 0;
@@ -257,7 +257,7 @@ li {
 .right {
     display: flex;
     justify-content: end;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .right>a {
@@ -269,8 +269,8 @@ li {
 }
 
 .right a i {
-    font-size: 2rem;
-    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #4a80ce;
 }
 
 .header i {
@@ -281,6 +281,11 @@ li {
 .header p {
     font-size: 0.6rem;
     color: var(--colour-light);
+}
+
+.header a {
+    font-size: 0.6rem;
+    color: #25270b;
 }
 
 #primary-logo {
@@ -366,17 +371,20 @@ nav a {
     flex-direction: column;
     grid-gap: 10px;
     margin-bottom: 10px;
+    margin: auto;
 }
 
-#landing-text p {
+#landing-text p,
+#project-gallery p {
     font-size: 0.6rem;
 }
 
-#landing-text h1 {
+#landing-text h1,
+#project-gallery h1 {
     padding: 0;
     font-family: 'Advercase';
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .landing-module img {
@@ -393,13 +401,14 @@ nav a {
 }
 
 .folder {
-    display: flex;
+    display: block;
     flex-direction: column;
     text-transform: uppercase;
-    text-align: center;
+    text-align: -moz-center !important;
     font-weight: 500;
     font-size: 0.6rem;
     justify-content: center;
+    cursor: pointer;
 }
 
 .folder-grid img {
@@ -565,6 +574,105 @@ form h1 {
     max-height: 20px;
 }
 
+.project-gallery {
+    padding: 5rem 5%;
+    align-items: center;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10rem 5%;
+    padding-top: 5rem;
+    background-image: url('https://d22p4d1ezw7euj.cloudfront.net/Imagery/Graphic-Circles.png');
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#project-gallery {
+    margin-bottom: 20px;
+}
+
+#logomark-gold {
+    width: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-category {
+    width: 100%;
+    text-align: left;
+    font-size: 0.6rem;
+    padding: 5%;
+    line-height: 0.8rem;
+
+    outline: 1.8px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    grid-gap: 8px
+}
+
+.project-images img,
+.project-images video {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.project-images video {
+    margin-bottom: 30px;
+}
+
+.image-carousel {
+    width: 100%;
+    display: flex;
+    grid-gap: 5px;
+    margin-bottom: 30px;
+}
+
+.image-carousel img {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#reveal-more {
+    display: flex;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.column {
+    display: grid;
+    grid-gap: 5px;
+}
+
+#sketch img {
+    width: 100%;
+    border-radius: 8px;
+    outline: 1.8px solid white;
+}
+
+#wiggle video {
+    width: 100%;
+    border-radius: 8px;
+    outline: 1.8px solid white;
+}
+
+.hide {
+    display: none;
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+#gradient-line {
+    margin-right: 35px;
+}
+
 /* Slider Tab */
 @media screen and (min-width: 0px) {
 
@@ -580,12 +688,98 @@ form h1 {
 }
 
 @media screen and (min-width: 750px) {
+    body {
+
+        background-position: -600px 350px;
+    }
+
+    #gradient-line {
+        margin-right: 18%;
+    }
+
+    #gradient-line img {
+        width: 70px;
+    }
+
+
+    /* .body-content {
+        padding: 10rem 8%;
+        padding-bottom: 3rem;
+        background-position: 500px -100px;
+        grid-gap: 15px;
+    } */
 
     .landing-module {
-        margin: 10rem 30%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10rem 8%;
+        padding-bottom: 3rem;
+        background-position: 500px -150px;
+        grid-gap: 15px;
+    }
+
+    #landing-text h1,
+    #project-gallery h1 {
+        font-size: 2rem;
+    }
+
+    #landing-text {
+        text-align: left;
+        margin: 0;
+    }
+
+    .landing-module .right img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .folder-grid {
+        justify-content: start;
+    }
+
+    .project-gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 8%;
+  background-image: none;
+    }
+
+    #project-gallery {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        grid-gap: 20px;
+    }
+
+    #logomark-gold {
         margin-bottom: 0;
     }
 
+    .project-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 8px;
+    }
+
+    .column :last-child {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
     .mobile {
         display: none;
