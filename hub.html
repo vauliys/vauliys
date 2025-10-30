@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -11,32 +11,11 @@
 
         gtag('config', 'G-8VK8V51MNZ');
     </script>
-    <script>
-        (function (w, d, t, h, s, n) {
-            w.FlodeskObject = n;
-            var fn = function () {
-                (w[n].q = w[n].q || []).push(arguments);
-            };
-            w[n] = w[n] || fn;
-            var f = d.getElementsByTagName(t)[0];
-            var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
-            var sm = d.createElement(t);
-            sm.async = true;
-            sm.type = 'module';
-            sm.src = h + s + '.mjs' + v;
-            f.parentNode.insertBefore(sm, f);
-            var sn = d.createElement(t);
-            sn.async = true;
-            sn.noModule = true;
-            sn.src = h + s + '.js' + v;
-            f.parentNode.insertBefore(sn, f);
-        })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
-    </script>
     <script src="scripts.js" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <!-- CSS -->
-    <link rel="stylesheet" href="202501styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180"
@@ -49,6 +28,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="AdvercaseDemo-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
     <title>Vauliys | Digital Creator based in Australia </title>
 </head>
@@ -56,162 +36,102 @@
 <body class="fade-in" id="page-hub">
     <div id="header">
         <div id="announcement-banner">
-            <a style="color:white;"href="https://shop.vauliys.com/collections/bookish-merch"><p>Booking projects:  <span class="highlight">Closed until Feb 2026 :(</span></p></a>
+            <a style="color:white;" href="https://shop.vauliys.com/collections/bookish-merch">
+                <p>Booked (Heh) & Busy: Available for work Feb 2026.</p>
+            </a>
         </div>
         <div class="header">
             <div class="left">
-                <a class="mobile" href="#"><img style="width:30px;"
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Yellow.png"></a>
-                <div class="desktop">
-                    <a href="#"><img style="width:30px;"
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Yellow.png"></a>
-                    <a href="https://vauliys.com">home</a>
-                    <a href="#client-grid">project gallery</a>
-
-                    <a href="https://shop.vauliys.com/">shop</a>
-                    <a class="active" href="hub">hub</a>
+                <div class="mobile" style="display: flex;grid-gap: 20px;align-items: center;letter-spacing: 1px;">
+                    <a href="#"><img style="width:50px;"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Header-Icon.png"></a>
+                    <p style="display: flex;"><span style="color:#33a1db">hel</span><span
+                            style="color:#79adad">lo</span>
+                        <span style="color:#79af94;">@vau</span><span style="color:#8fb756;">liy</span>
+                        <span style="color:#babc55;">s.c</span><span style="color:#c4be4c;">om</span>
+                    </p>
+                    <a class="desktop" href="index">Hompage</a>
+                    <a class="desktop" href="https://shop.vauliys.com">Shop</a>
+                    <a class="desktop" href="">UGC</a>
+                    <a class="desktop" href="">Creator Hub</a>
                 </div>
             </div>
 
-            <!-- <img id="primary-logo"
-                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/VLY_Primary Logo_RGB-White.png"> -->
-
             <div class="right">
-                <i class="ri-menu-3-line menu mobile"></i>
+                <i id="hover" class="ri-menu-line menu mobile"></i>
                 <a class="desktop" href="https://www.instagram.com/vauliys"><i class="ri-instagram-line"></i></a>
                 <a class="desktop" href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill"></i></a>
             </div>
 
         </div>
     </div>
-
     <!-- Nav: Mobile -->
     <nav class="nav-show mobile">
         <ul>
-            <li><a href="https://vauliys.com/">home</a></li>
-            <a href="#client-grid">project gallery</a>
-
-            <li><a href="https://shop.vauliys.com/">shop</a></li>
-            <li><a href="hub">hub</a></li>
+            <li><a id="hover" href="index">Homepage</a></li>
+            <li><a id="hover" href="https://shop.vauliys.com/">Shop</a></li>
+            <li><a id="hover" href="">UGC</a></li>
+            <li><a id="hover" href="">Creator Hub</a></li>
         </ul>
-        <a href="https://www.instagram.com/vauliys"><i class="ri-instagram-line" style="font-size: 1.3rem;"></i></a>
-        <a href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill" style="font-size: 1.3rem;"></i></a>
+        <a href="https://www.instagram.com/vauliys"><i id="hover" class="ri-instagram-line"
+                style="font-size: 1.2rem;color:#4a80ce;"></i></a>
+        <a href="https://www.tiktok.com/@vauliys"><i id="hover" class="ri-tiktok-fill"
+                style="font-size: 1.2rem;color:#4a80ce;margin-left:5px"></i></a>
     </nav>
-    <!-- Profile + links -->
-    <div class="body">
-        <div class="pill-container">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/VLY_Portrait_2025.png">
-            <h4>howdy, i'm <span class="highlight">vauliys</span> </h4>
-            <p>digital creator from melb, aus <br>
-                business enquiries: <span class="highlight">hello@vauliys.com</span>
-            </p>
-            <div class="icon-grid">
-                <a href="https://www.instagram.com/vauliys"><i class="ri-instagram-line"></i></a>
-                <a href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill"></i></a>
-                <a href="https://www.threads.net/@vauliys"><i class="ri-at-line"></i></a>
-                <a href="https://www.youtube.com/@vauliys"><i class="ri-youtube-line"></i></a>
-            </div>
-            <div class="link-grid">
-                <a href="https://shop.vauliys.com/collections/bookish-merch">"How F*cking Far?" Bookmarks</a>
-                <a href="https://shop.vauliys.com/collections/digital-downloads">shop my brushes</a>
-                <a href="https://shop.vauliys.com/">online shop</a>
-                <!-- <a href="collabs">collaboration gallery</a> -->
-                <a href="https://vauliys.com">portfolio</a>
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter Form -->
-    <div id="module-yellow">
-        <img style="width:30px;"
-            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Brown.png">
-        <h4>join my <span class="highlight-02">mailing list</span> </h4>
-        <p>shop updates, giveaways
-            and discounts for <span class="highlight-02">stars like you</span>
-        </p>
-        <div id="fd-form-67ae87d3c0de5959c3012bdd"></div>
-        <script>
-            window.fd('form', {
-                formId: '67ae87d3c0de5959c3012bdd',
-                containerEl: '#fd-form-67ae87d3c0de5959c3012bdd'
-            });
-        </script>
-    </div>
-    <!-- Desk links -->
-    <div class="body-btm">
-        <div class="pill-container">
-            <img style="width:30px;border:none;border-radius: 0;"
-                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Yellow.png">
-            <h4>stars of <span class="highlight">my desk</span> </h4>
-            <p>swipe left to view more
-            </p>
 
-            <div id="slider-tab">
-                <div class="slider-tab">
+    <div class="body">
+        <div class="landing-module body-content hub">
+            <div class="left">
+                <div id="landing-text" style="width: fit-content;">
+                    <p style="text-transform: uppercase;margin-top:2px;font-size:1.5rem;">🎨</p>
+                    <p style="text-transform: uppercase;">
+                        Design. Animation. Art. Content.</p>
                     <div>
-                        <p class="tab-active" id="tab-feature">featured</p>
+                        <h1>An artist who reads<br><span>between the lines. 📖</span></h1>
+                        <img id="gradient-line" style="width:60px;height: auto;float: right;"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Underline-gradient.png">
                     </div>
-                    <div>
-                        <p id="tab-shop">shop setup</p>
+                    <p>Stress is my medium — reading with the koalas.</p>
+                </div>
+                <div class="folder-grid">
+                    <div class="folder">
+                        <a href="https://shop.vauliys.com/">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Beige.png">
+                            <p id="hover">Shop</p>
+                        </a>
                     </div>
-                    <div>
-                        <p id="tab-art">art supplies</p>
+                    <div class="folder">
+                        <a href="index.html">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
+                            <p id="hover">Portfolio</p>
+                        </a>
                     </div>
-                    <div>
-                        <p id="tab-content">content</p>
+                    <div class="folder">
+                        <a href="https://shop.vauliys.com/collections/digital-downloads">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                            <p id="hover">Brushes</p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div id="featured" class="link-grid tab-feature fade-in">
-                <a href="https://vograce.com/">create and sell custom merch with Vograce!</a>
-                <a href="https://www.amazon.com.au/dp/B0C5ZR17S9?th=1">941b munbyn thermal printer</a>
-                <a href="https://paperlike.com">paperlike screen protector</a>
-                <a
-                    href="https://www.moft.us/products/invisible-phone-tripod-stand?utm_source=Instagram&utm_medium=Instagram_Victoria_Pritchard&utm_campaign=Instagram&utm_id=Instagram_Victoria_Pritchard&utm_term=Instagram_Victoria_Pritchard&utm_content=Instagram">moft
-                    origiami tripod</a>
-
+            <div class="right">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Landing-Image.png">
             </div>
-
-            <div id="tab-shop" class="link-grid hide tab-shop fade-in">
-                <a href="https://vograce.com/">create and sell custom merch with Vograce!</a>
-                <a href="https://www.amazon.com.au/dp/B0C5ZR17S9?th=1">941b munbyn thermal printer</a>
-                <a
-                    href="https://www.amazon.com.au/MUNBYN-Holographic-Stickers-Printable-Self-Adhesive/dp/B0CP24PWJB?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ASFDYQKJJQDLX&gQT=1">munbyn
-                    holographic thermal labels</a>
-                <a
-                    href="https://www.amazon.com.au/MUNBYN-Thermal-Direct-Shipping-Labels/dp/B0897SGV9L?crid=YGKE0QPV9JL7&dib=eyJ2IjoiMSJ9.BjdlULPelrdNWXzsweoSL2VTDBoMpdhUWfbApSy1QpvWGnOW2hbYX7yT-ODXUmVjAjsCkYVAFH9EqVNdLGDAoXiIGbJmX9cluxd6CW-enLPSAvdsegceiA5I8QgZsklXvUC0B_80aQsmECZZOzu8g9SWuRlt2Q3HQyDNVciKhxGpEh5_PbLf9q0_3t0giETb6J8YP2sH5uEIXWQeAc2eifrjo9tfm2PcvTVlMLT4JSI0N9_GRjrcx91LTtw1jGe1LVIbdVZF9TzrGifKT8RN9FGwwi-GSs0U8K7gmBpfeZzZMGYdBv6VhAmyHWhgOzBbHktOCho_c1FkryLbRTfDko4EOsSRbBr9PrixS9jiBc4.IYTMGa_DMql2bI6ghmAAoj47THveylrWQGJiyULcaQ8&dib_tag=se&keywords=munbyn+thermal+label&qid=1739507815&s=office-products&sprefix=munbyn+thermal+label%2Coffice-products%2C268&sr=1-4">munbyn
-                    thermal shipping labels</a>
-                <a href="https://www.epson.com.au/products/ecotank/ET-2850.asp">epson ET2580</a>
-                <a href="https://squareup.com/au/en/hardware/reader">square card reader</a>
-
-            </div>
-
-            <div id="tab-art" class="link-grid hide tab-art fade-in">
-                <a href="https://shop.vauliys.com/">digital brushes</a>
-                <a href="https://procreate.com/">procreate</a>
-                <a href="https://paperlike.com">paperlike screen protector</a>
-                <a href="https://www.apple.com/au/ipad-pro/">ipad pro 11"</a>
-            </div>
-
-            <div id="tab-content" class="link-grid hide tab-content fade-in">
-                <a href="https://www.samsung.com/au/smartphones/galaxy-s24">samsung s24</a>
-                <a href="https://www.sony.com.au/interchangeable-lens-cameras/products/zv-e10">sony zv-e10</a>
-                <a
-                    href="https://www.moft.us/products/invisible-phone-tripod-stand?utm_source=Instagram&utm_medium=Instagram_Victoria_Pritchard&utm_campaign=Instagram&utm_id=Instagram_Victoria_Pritchard&utm_term=Instagram_Victoria_Pritchard&utm_content=Instagram">moft
-                    origiami tripod</a>
-                <a href="">capcut (apk premium unlocked)</a>
-            </div>
+        </div>
+        <div id="client-grid" class="client-grid">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_BookishSpice.svg">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Procreate.svg">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_CSP.svg">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg">
 
         </div>
     </div>
-    <!-- Footer -->
-    <footer>
-        <!-- <a href="#"><img style="width:30px;" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Yellow.png"></a> -->
-    </footer>
 </body>
 
-<!-- JavaScript files -->
-<script src="202501_scripts.js" defer></script> <!-- Main JavaScript file -->
-<script src="202501_nav.js" defer></script> <!-- Main JavaScript file -->
-<script src="202501_slider-tab.js"></script> <!-- Module:: Fixed Navbar component -->
+<script src="z_nav-mobile.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_header.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_tab-slider.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_hover-effect.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_click-effect.js" defer></script> <!-- Main JavaScript file -->
 
 </html>

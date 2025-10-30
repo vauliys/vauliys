@@ -688,7 +688,11 @@ form h1 {
 }
 
 @media screen and (min-width: 750px) {
-    body {
+    .hub {
+        padding:14rem 8% !important;
+        padding-bottom:6rem !important;
+    }
+    body .hub {
 
         background-position: -600px 350px;
     }
