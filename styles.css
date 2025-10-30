@@ -529,6 +529,10 @@ form h1 {
     line-height: 0.8rem;
 }
 
+.bio-text {
+    padding-bottom:30px
+}
+
 .bio-content {
     outline: 1.8px solid white;
     background-color: rgba(255, 255, 255, 0.5);
@@ -612,17 +616,18 @@ form h1 {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .project-images img,
-.project-images video {
+#social video {
     width: 100%;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 2px;
 }
 
-.project-images video {
+#social video {
     margin-bottom: 30px;
 }
 
@@ -641,7 +646,9 @@ form h1 {
 #reveal-more {
     display: flex;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .column {
@@ -659,6 +666,11 @@ form h1 {
     width: 100%;
     border-radius: 8px;
     outline: 1.8px solid white;
+}
+
+#social video {
+        width: 100%;
+    border-radius: 8px;
 }
 
 .hide {
