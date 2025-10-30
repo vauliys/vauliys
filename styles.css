@@ -553,6 +553,7 @@ form h1 {
 
 #bio-location img {
     width: 25px;
+    border-radius: 0;
 }
 
 .bio-header {
@@ -633,7 +634,8 @@ form h1 {
 
 .image-carousel {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
     margin-bottom: 30px;
 }
