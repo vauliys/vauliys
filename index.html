@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -11,32 +11,11 @@
 
         gtag('config', 'G-8VK8V51MNZ');
     </script>
-    <script>
-        (function (w, d, t, h, s, n) {
-            w.FlodeskObject = n;
-            var fn = function () {
-                (w[n].q = w[n].q || []).push(arguments);
-            };
-            w[n] = w[n] || fn;
-            var f = d.getElementsByTagName(t)[0];
-            var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
-            var sm = d.createElement(t);
-            sm.async = true;
-            sm.type = 'module';
-            sm.src = h + s + '.mjs' + v;
-            f.parentNode.insertBefore(sm, f);
-            var sn = d.createElement(t);
-            sn.async = true;
-            sn.noModule = true;
-            sn.src = h + s + '.js' + v;
-            f.parentNode.insertBefore(sn, f);
-        })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
-    </script>
     <script src="scripts.js" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <!-- CSS -->
-    <link rel="stylesheet" href="202501styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180"
@@ -49,246 +28,527 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="AdvercaseDemo-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
     <title>Vauliys | Digital Creator based in Australia </title>
 </head>
 
-<body class="fade-in" id="page-index">
+<body class="fade-in" id="page-hub">
     <div id="header">
         <div id="announcement-banner">
-            <a style="color:white;"href="https://shop.vauliys.com/collections/bookish-merch"><p>Booking projects:  <span class="highlight">Closed until Feb 2026 :(</span></p></a>
+            <a style="color:white;" href="https://shop.vauliys.com/collections/bookish-merch">
+                <p>Booked (Heh) & Busy: Available for work Feb 2026.</p>
+            </a>
         </div>
         <div class="header">
             <div class="left">
-                <a class="mobile" href=""><img id="primary-logo"
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Primary_Coloured.png"></a>
-
-                <!-- <a class="mobile" href="#"><i class="ri-shining-2-fill"></i></a> -->
-                <div class="desktop">
-                    <a href=""><img id="primary-logo"
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Primary_Coloured.png"></a>
-                    <!-- <a href="#"><i class="ri-shining-2-fill"></i></a> -->
-                    <a class="active" href="https://vauliys.com">home</a>
-                    <a href="#client-grid">project gallery</a>
-                    <a href="https://shop.vauliys.com/">shop</a>
-                    <a href="hub">social hub</a>
+                <div class="mobile" style="display: flex;grid-gap: 20px;align-items: center;letter-spacing: 1px;">
+                    <a href="#"><img style="width:50px;"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Header-Icon.png"></a>
+                    <p style="display: flex;"><span style="color:#33a1db">hel</span><span
+                            style="color:#79adad">lo</span>
+                        <span style="color:#79af94;">@vau</span><span style="color:#8fb756;">liy</span>
+                        <span style="color:#babc55;">s.c</span><span style="color:#c4be4c;">om</span>
+                    </p>
+                    <a class="desktop" href="#">Hompage</a>
+                    <a class="desktop" href="https://shop.vauliys.com">Shop</a>
+                    <a class="desktop" href="#">UGC</a>
+                    <a class="desktop" href="hub">Creator Hub</a>
                 </div>
             </div>
 
-            <!-- <img id="primary-logo"
-                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/VLY_Primary Logo_RGB-White.png"> -->
-
             <div class="right">
-                <i class="ri-menu-3-line menu mobile"></i>
+                <i id="hover" class="ri-menu-line menu mobile"></i>
                 <a class="desktop" href="https://www.instagram.com/vauliys"><i class="ri-instagram-line"></i></a>
                 <a class="desktop" href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill"></i></a>
             </div>
 
         </div>
     </div>
-
     <!-- Nav: Mobile -->
     <nav class="nav-show mobile">
         <ul>
-            <li><a href="https://vauliys.com/">home</a></li>
-            <a href="#client-grid">project gallery</a>
-
-            <li><a href="https://shop.vauliys.com/">shop</a></li>
-            <li><a href="hub">social hub</a></li>
+            <li><a id="hover" href="#">Homepage</a></li>
+            <li><a id="hover" href="https://shop.vauliys.com/">Shop</a></li>
+            <li><a id="hover" href="">UGC</a></li>
+            <li><a id="hover" href="hub">Creator Hub</a></li>
         </ul>
-        <a href="https://www.instagram.com/vauliys"><i class="ri-instagram-line" style="font-size: 1.3rem;"></i></a>
-        <a href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill" style="font-size: 1.3rem;"></i></a>
+        <a href="https://www.instagram.com/vauliys"><i id="hover" class="ri-instagram-line"
+                style="font-size: 1.2rem;color:#4a80ce;"></i></a>
+        <a href="https://www.tiktok.com/@vauliys"><i id="hover" class="ri-tiktok-fill"
+                style="font-size: 1.2rem;color:#4a80ce;margin-left:5px"></i></a>
     </nav>
 
-    <!-- Fullbleed -->
-    <!-- <div id="home-feature">
-        <video class="desktop" autoplay loop muted
-            src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech_Artwork_Desktop.mp4" alt=""></video>
-        <video class="mobile" autoplay loop muted
-            src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-MX3S_Artwork.mp4" alt=""></video>
-    </div> -->
+    <div class="body">
+        <!-- <div class="form">
 
-    <!-- Dual Column -->
-    <!-- Profile + links -->
-    <div id="about" style="display:flex;background-color: #081959;justify-content: center;">
-        <div class="about" class="body">
-            <div class="pill-container">
-                <div>
-                    <img style="width:30px;border:0;border-radius: 0;"
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Yellow.png">
-                    <h4>howdy, i'm <span class="highlight">victoria</span> </h4>
-                    <p>a digital creator from melb australia creating 2d and 3d motion animation, graphic design &
-                        illustration featured in novels.
-                    </p>
-                    <p style="margin:5px 0;">until next time,<br>
-                        victoria
-                    </p>
-                    <p class="highlight">hello@vauliys.com
-                    </p>
-                    <div class="link-grid" id="about-link">
-                        <a href="https://d22p4d1ezw7euj.cloudfront.net/VictoriaPritchard_CV-2025_No-mobile.pdf">cv</a>
-                        <a href="https://www.linkedin.com/in/vauliys/">linkedin</a>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value=" bda30962-2211-49a3-a285-0bea210ffd9e">
+                <input type="text" name="name" placeholder="name" required>
+                <input type="email" name="email" placeholder="email" required>
+                <textarea name="message" placeholder="write your message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit">Submit Form</button>
+
+            </form>
+            <div class="form-button">
+                <p>Say howdy</p>
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Chat-Icon.png">
+            </div>
+
+        </div> -->
+        <div class="landing-module body-content">
+            <div class="left">
+                <div id="landing-text" style="width: fit-content;">
+                    <p style="text-transform: uppercase;margin-top:2px;font-size:1.5rem;">🎨</p>
+                    <p style="text-transform: uppercase;">
+                        Design. Animation. Art. Content.</p>
+                    <div>
+                        <h1>An artist who reads<br><span>between the lines. 📖</span></h1>
+                        <img id="gradient-line" style="width:60px;height: auto;float: right;"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Underline-gradient.png">
+                    </div>
+                    <p>Stress is my medium — reading with the koalas.</p>
+                </div>
+                <div class="folder-grid">
+                    <div class="folder">
+                        <a href="">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Beige.png">
+                            <p id="hover">Design</p>
+                        </a>
+                    </div>
+                    <div class="folder">
+                        <a href="">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
+                            <p id="hover">Wiggle</p>
+                        </a>
+                    </div>
+                    <div class="folder">
+                        <a href="">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                            <p id="hover">Sketch</p>
+                        </a>
+                    </div>
+                    <div class="folder">
+                        <a href="">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Brown.png">
+                            <p id="hover">Pages</p>
+                        </a>
+                    </div>
+                    <div class="folder">
+                        <a href="">
+                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Sand.png">
+                            <p id="hover">Feeds</p>
+                        </a>
                     </div>
                 </div>
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/VLY_Portrait_2025.png">
+            </div>
+            <div class="right">
+                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Landing-Image.png">
+            </div>
+        </div>
+        <div id="client-grid" class="client-grid">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_BookishSpice.svg">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Procreate.svg">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_CSP.svg">
+            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg">
 
+        </div>
+        <div class="bio" id="bio">
+            <div class="bio-left">
+                <!-- Who is Victoria-->
+                <div class="bio-content">
+                    <div id="bio-location">
+                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                        <p>vauliys.com > bio</p>
+                    </div>
+                    <p class="bio-header">Who is victoria.txt</p>
+                    <p>Howdy hey, I’m Victoria! I’m a Melbourne-based creator with an appreciation for reading & the
+                        creative space starting as
+                        young as four. What started as doodling on the walls of my bedroom wall (sorry mum) and reading
+                        books about
+                        faeries, quickly became a dear love for art and literature, which in turn lead to the motion,
+                        design
+                        and publishing space.</p>
+                    <div class="bio-images">
+                        <img style="width:70%;"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/Bio-Whamen.png">
+                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/Bio-Selfie.png">
+                    </div>
+                </div>
+                <!-- Dual Column-->
+                <div style="display: flex; grid-gap:10px;">
+                    <div class="bio-content">
+                        <div id="bio-location">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
+                            <p>bio > work</p>
+                        </div>
+                        <p class="bio-header">Where is she.txt</p>
+                        <p>I’m a Freelancer and full-time Digital Designer at Nuvei, a Canadian Fintech Company. My
+                            design
+                            role
+                            includes the creation of web, email, social and mobile collateral but also UI, branding and
+                            print.
+                        </p>
+                        <div class="bio-images">
+                            <img style="width: 40px;" id="bio-logo"
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Nuvei.svg">
+                            <img id="bio-logo"
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys.svg">
+                        </div>
+                    </div>
+                    <div class="bio-content">
+                        <div id="bio-location">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
+                            <p>bio > vauliys</p>
+                        </div>
+                        <p class="bio-header">Who is vauliys.txt</p>
+                        <p>Vauliys is my brand name & online persona for my socials & shop. Vauliys was established in
+                            Sept
+                            2022
+                            but I’ve been freelancing since 2020, working with companies including Logitech,
+                            Bookish&Spice,
+                            Samsung and more.
+                        </p>
+                        <div class="bio-images">
+                            <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_BookishSpice.svg">
+                            <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_CSP.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scholar -->
+            <div class="bio-content">
+                <div style="margin-bottom:20px;margin-top:0;" class="bio-images">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/Bio-Selfie-02.png">
+
+                </div>
+                <div id="bio-location">
+                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Brown.png">
+                    <p>bio > scholar</p>
+                </div>
+                <p class="bio-header">Scholar Background.txt</p>
+                <p>My highschool schedule was filled with creative classes and english, I completed mathmatics a year
+                    earlier than my peers, going as far as completing 5 portfolio subjects in my final year of VCE. This
+                    was unheard of, not reccomended, but worth it.<br><br></p>
+                <p>
+                    One of the creative classes was a Certificate III in Screen & Media held by Kangan Institue for the
+                    VET Program held at my school. Following graduation, I completed an Internship with the Melbourne
+                    Museume Creative Program, had my final film exhibited in the Top Designs 2018 Exhibition and studied
+                    a Bachelors of Design specialising in Animation & Interactive Media.
+                </p>
+                <div class="bio-images">
+                    <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Kangan.png">
+                    <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_RMIT.png">
+                    <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_MuseumsVictoria.png">
+
+                </div>
+            </div>
+        </div>
+        <div class="project-gallery">
+            <div class="project-header">
+                <div id="project-gallery">
+                    <img id="logomark-gold"
+                        src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logomark_Vauliys.png">
+                    <h1>Project Gallery</h1>
+                </div>
+                <div class="folder-grid" style="margin-top:20px;">
+                    <div class="folder" id="tab-design">
+                        <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Beige.png">
+                        <p id="hover">Design</p>
+                    </div>
+                    <div class="folder" id="tab-wiggle">
+                        <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
+                        <p id="hover">Wiggle</p>
+                    </div>
+                    <div class="folder" id="tab-sketch">
+                        <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                        <p id="hover">Sketch</p>
+                    </div>
+                    <div class="folder" id="tab-pages">
+                        <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Brown.png">
+                        <p id="hover">Pages</p>
+                    </div>
+                    <div class="folder">
+                        <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Sand.png">
+                        <p id="hover">Feeds</p>
+                    </div>
+                </div>
+            </div>
+            <div id="project-content">
+                <div class="hide" id="sketch" style="width: 100%;">
+                    <div class="project-container">
+                        <div class="column">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_FeedUsBitch.jpg">
+
+                            <img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Locker-room.jpg">
+
+
+                            <img
+                                src="https://scontent.cdninstagram.com/v/t51.82787-15/557754766_17990554001845694_5405310736434869463_n.webp?_nc_cat=104&ig_cache_key=MzczMzM1NzkzNDMxMjM3NTQzMA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=w9gQlslZ97kQ7kNvwFc4fjq&_nc_oc=Adl2RTW_snsDEKv6kpe54BATyPVAhBTgjDyngACMclnGh_HoezaSkt7Q57v4OKdBqWE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=usJd3TKR8od5o94FYltrFg&oh=00_AfcfrC01NIYWot8jvoOc183AX-jXcI0SoPH54Qr4jKX9vA&oe=69011DC1">
+
+                        </div>
+                        <div class="column">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2023_Goose.jpg">
+
+
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Kitchen.jpg">
+
+
+                        </div>
+                        <div class="column">
+                            <img
+                                src="https://scontent.cdninstagram.com/v/t51.75761-15/488253721_17970704912845694_935072761928703175_n.webp?_nc_cat=108&ig_cache_key=MzYwMTQ3OTQ4MzAzNzM0NDIyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTc4NS5zZHIuQzMifQ%3D%3D&_nc_ohc=lEI5UYPw3LgQ7kNvwF3QHel&_nc_oc=AdlO5J4Pdy_TEAUDaAisejNnN99sHu5X0PUJDeY66R6-z631klShzohLVH9KvkcBjaA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=_uAMhXv8r_hwn8kUdEkWNg&oh=00_AfeWPy8HvC40YSF046fmsaNn_sWBDapLdjGpEP-getAsjg&oe=6901189C">
+
+                            <img
+                                src="https://scontent.cdninstagram.com/v/t51.82787-15/554325421_17989566671845694_7536785862757520914_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=MzcyOTA3Mjg1NjMyOTU5MzE1MjE3OTg5NTY2NjY4ODQ1Njk0.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjU0MHg5NjAuc2RyLkMzIn0%3D&_nc_ohc=gxTUh94Mm-YQ7kNvwGKjGWJ&_nc_oc=AdnYKPfJu3EWArJ2aaGCUMcKnlnFz1fvLA2Cpe-jjghcWgY0iWmscJ5DsPDhpkRQy5M&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=usJd3TKR8od5o94FYltrFg&oh=00_Afe919yn1H-W4tmpuYrUpZzRssU-vIYSn7HHhpXS56Capw&oe=69010421">
+
+
+
+
+
+                        </div>
+                        <div class="column">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_KDH_Zoey.jpg">
+
+
+                            <img
+                                src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Movie-Crop.jpg">
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hide" id="pages" style="width: 100%;">
+                    <div class="project-container">
+                        <!-- Bookish&Spice -->
+                        <div class="project-category">
+                            <div class="project-images">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookishandspice.com.au%2Fcdn%2Fshop%2Farticles%2FSleet_Series_S_J_Tilly_Announcement_Special_Edition_31a1b3c6-8014-4f83-86c2-c703c3577dcf.jpg%3Fv%3D1755480338%26width%3D1200&f=1&ipt=8178d8c7a134484a3a997f4117ce0c0e4b38935234caa1f382985077ccd9f80b">
+                                <div class="image-carousel">
+                                    <img
+                                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookishandspice.com.au%2Fcdn%2Fshop%2Farticles%2FSleet_Series_S_J_Tilly_Announcement_Special_Edition_31a1b3c6-8014-4f83-86c2-c703c3577dcf.jpg%3Fv%3D1755480338%26width%3D1200&f=1&ipt=8178d8c7a134484a3a997f4117ce0c0e4b38935234caa1f382985077ccd9f80b">
+                                    <img
+                                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookishandspice.com.au%2Fcdn%2Fshop%2Farticles%2FSleet_Series_S_J_Tilly_Announcement_Special_Edition_31a1b3c6-8014-4f83-86c2-c703c3577dcf.jpg%3Fv%3D1755480338%26width%3D1200&f=1&ipt=8178d8c7a134484a3a997f4117ce0c0e4b38935234caa1f382985077ccd9f80b">
+                                    <img
+                                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookishandspice.com.au%2Fcdn%2Fshop%2Farticles%2FSleet_Series_S_J_Tilly_Announcement_Special_Edition_31a1b3c6-8014-4f83-86c2-c703c3577dcf.jpg%3Fv%3D1755480338%26width%3D1200&f=1&ipt=8178d8c7a134484a3a997f4117ce0c0e4b38935234caa1f382985077ccd9f80b">
+
+                                </div>
+                            </div>
+                            <div id="bio-location">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                                <p>pages > bookish&spice</p>
+                            </div>
+                            <p class="bio-header">sleet series</p>
+                            <p>In collaboration with Bookish&Spice to create the official special edition box set for SJ
+                                Tilly's
+                                Sleet Series.</p>
+
+                            <p id="reveal-more"><span style="color:#33a1db">re</span><span
+                                    style="color:#79adad">ve</span>
+                                <span style="color:#79af94;">al</span><span
+                                    style="color:#8fb756;margin-left:3px;">m</span>
+                                <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="" id="design" style="width: 100%;">
+                    <div class="project-container">
+                        <!-- Prythianopoly -->
+                        <div class="project-category">
+                            <div class="project-images">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_01.jpg">
+                                <div class="image-carousel">
+                                    <img id="hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_05.jpg">
+                                    <img id="hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_04.jpg">
+                                    <img id="hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_03.jpg">
+                                </div>
+                            </div>
+                            <div id="bio-location">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                                <p>designs > prythianopoly</p>
+                            </div>
+                            <p class="bio-header">custom monopoly boardgame</p>
+                            <p>Inspired by Sarah J Maas' ACOTAR romantasy series.
+                                In celebration of my 25th birthday, I hosted a book themed party including custom games
+                                designed
+                                by myself.</p>
+                            <p id="reveal-more"><span style="color:#33a1db">re</span><span
+                                    style="color:#79adad">ve</span>
+                                <span style="color:#79af94;">al</span><span
+                                    style="color:#8fb756;margin-left:3px;">m</span>
+                                <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
+                            </p>
+                        </div>
+
+                        <!-- Fantasy Heads -->
+                        <div class="project-category">
+                            <div class="project-images">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                <div class="image-carousel">
+                                    <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                    <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                    <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                </div>
+                            </div>
+                            <div id="bio-location">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                                <p>designs > fantasy heads</p>
+                            </div>
+                            <p class="bio-header">custom card guessing game</p>
+                            <p>Inspired by Sarah J Maas' ACOTAR romantasy series.
+                                In celebration of my 25th birthday, I hosted a book themed party including custom games
+                                designed
+                                by myself.</p>
+                            <p id="reveal-more"><span style="color:#33a1db">re</span><span
+                                    style="color:#79adad">ve</span>
+                                <span style="color:#79af94;">al</span><span
+                                    style="color:#8fb756;margin-left:3px;">m</span>
+                                <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
+                            </p>
+                        </div>
+
+                        <!-- Personal Branding-->
+                        <div class="project-category">
+                            <div class="project-images">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                <div class="image-carousel">
+                                    <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                    <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                    <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/">
+                                </div>
+                            </div>
+                            <div id="bio-location">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                                <p>designs > vauliys</p>
+                            </div>
+                            <p class="bio-header">personal brand identity</p>
+                            <p>The creation behind the visual identity of vauliys.</p>
+                            <p id="reveal-more"><span style="color:#33a1db">re</span><span
+                                    style="color:#79adad">ve</span>
+                                <span style="color:#79af94;">al</span><span
+                                    style="color:#8fb756;margin-left:3px;">m</span>
+                                <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
+                            </p>
+                        </div>
+
+                        <!-- Nuvei -->
+                        <div class="project-category">
+                            <div class="project-images">
+                                <img
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Paynamics_Flyer_Omni%20Channel%20Flyer.jpg">
+                                <div class="image-carousel">
+                                    <img id="hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Whitepaper_02.jpg">
+                                    <img id="hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Envelope%20Mockup-Dark.jpg">
+                                    <img id="hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Brand%20Ads_Static_Oct%202024_V1-01.jpg">
+                                </div>
+                            </div>
+                            <div id="bio-location">
+                                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                                <p>designs > nuvei</p>
+                            </div>
+                            <p class="bio-header">financial tech marketing</p>
+                            <p>Creation of digital and print assets for merchants and
+                                partners (ISO, ISV, Payfac). Enabling the sales team while
+                                enhancing brand identity and engage audiences.
+                                Assets include: Pitch Decks, Flyers, eDMs, Social
+                                Assets, Templates, Motion Graphics, HTML & CSS.</p>
+                            <p id="reveal-more"><span style="color:#33a1db">re</span><span
+                                    style="color:#79adad">ve</span>
+                                <span style="color:#79af94;">al</span><span
+                                    style="color:#8fb756;margin-left:3px;">m</span>
+                                <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide" id="wiggle" style="width: 100%;">
+                    <div class="project-container">
+                        <div class="column">
+                            <video muted autoplay loop
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-MX3S_Artwork.mp4"></video>
+
+                            <video muted autoplay loop
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2023_TKD-Kick.mp4"></video>
+                        </div>
+                        <div class="column">
+
+                            <video muted autoplay loop
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Orange-Test.mp4"></video>
+
+                        </div>
+                        <div class="column">
+
+                            <video muted autoplay loop
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2025_Nuvei_Cardinal%20Connector.mp4"></video>
+
+                        </div>
+                        <div class="column">
+
+                            <video muted autoplay loop
+                                src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Vauliys_Rebrand_07.mp4"></video>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hide" id="feeds" style="width: 100%;">
+
+                    <!-- MX Brio -->
+                    <div class="project-category">
+                        <div class="project-images">
+                            <video muted loop autoplay
+                                src="https://v19-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/owOnQLGoGRGP3INdf8IQJ7FA8b3AiU9KfieezV/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=844&bt=422&cs=2&ds=4&ft=I~da4ojBD12Nvx56KWIxROq_blBF-UjNSaopiX&mime_type=video_mp4&qs=15&rc=Njw5NDw5OThlMzo7Zzw1NkBpanZkdm85cnU6NTMzODczNEAxXy01NGJjXjUxNC9jYmE1YSNzb2YxMmRrYnNhLS1kMTFzcw%3D%3D&btag=e000b8000&expire=1761476076&l=20251024185420181E0CF61C5D1921E2CC&ply_type=2&policy=2&signature=702ca3f4be402bf4856445abded7a1f8&tk=tt_chain_token"></video>
+                        </div>
+                        <div id="bio-location">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                            <p>feeds > logitech</p>
+                        </div>
+                        <p class="bio-header">mx brio</p>
+                        <p>Lorem ipsum</p>
+                        <p id="reveal-more"><span style="color:#33a1db">re</span><span style="color:#79adad">ve</span>
+                            <span style="color:#79af94;">al</span><span style="color:#8fb756;margin-left:3px;">m</span>
+                            <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
+                        </p>
+                    </div>
+
+                    <!-- MX Brio -->
+                    <div class="project-category">
+                        <div class="project-images">
+                            <video muted loop autoplay
+                                src="https://v19-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/owOnQLGoGRGP3INdf8IQJ7FA8b3AiU9KfieezV/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=844&bt=422&cs=2&ds=4&ft=I~da4ojBD12Nvx56KWIxROq_blBF-UjNSaopiX&mime_type=video_mp4&qs=15&rc=Njw5NDw5OThlMzo7Zzw1NkBpanZkdm85cnU6NTMzODczNEAxXy01NGJjXjUxNC9jYmE1YSNzb2YxMmRrYnNhLS1kMTFzcw%3D%3D&btag=e000b8000&expire=1761476076&l=20251024185420181E0CF61C5D1921E2CC&ply_type=2&policy=2&signature=702ca3f4be402bf4856445abded7a1f8&tk=tt_chain_token"></video>
+                        </div>
+                        <div id="bio-location">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
+                            <p>feeds > logitech</p>
+                        </div>
+                        <p class="bio-header">mx brio</p>
+                        <p>Lorem ipsum</p>
+                        <p id="reveal-more"><span style="color:#33a1db">re</span><span style="color:#79adad">ve</span>
+                            <span style="color:#79af94;">al</span><span style="color:#8fb756;margin-left:3px;">m</span>
+                            <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- Clients -->
-    <div id="client-grid" class="client-grid">
-        <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_BookishSpice.svg">
-        <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg">
-        <img style="max-height: 15px;" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Samsung.svg">
-        <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_CSP.svg">
-        <img style="max-height: 15px;" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Hulu.svg">
-        <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Studio-Moshi.svg">
-        <img style="max-height: 15px;" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Munbyn.png">
-        <img style="max-height: 15px;" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Ohuhu.svg">
-        <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_XPPEN.svg">
-    </div>
-
-    <!-- Projects -->
-    <div class="project-category">
-
-        <img style="width:30px;"
-            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Brown.png">
-
-        <h4>project <span class="highlight">gallery</span> </h4>
-        <!-- <p class="mobile"><span class="highlight">swipe left</span> to view more</p> -->
-        <div id="slider-tab">
-            <div class="slider-tab slider-tab-inverted">
-                <div>
-                    <p class="tab-active" id="tab-art">illustrations</p>
-                </div>
-                <div>
-                    <p id="tab-design">design</p>
-                </div>
-                <div>
-                    <p id="tab-motion">motion</p>
-                </div>
-            </div>
-        </div>
-        <!--Module: Tab Slider (Art) -->
-        <div class="projects-art fade-in">
-            <div class="project-container">
-                <div class="project-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2024_OC.jpeg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Movie-Crop.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2023_Howls-Moving-Castle_Howl.jpg"
-                        alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_Reena.jpg" alt="">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_OHSHC.jpg" alt="">
-
-
-                </div>
-                <div class="project-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2023_Logitech-MX3S.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2024_DO.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Locker-room.jpg"
-                        alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/Neyomi-Noru_Daisy.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2024_Italy-Pinup.jpg" alt="">
-
-
-
-                </div>
-                <div class="project-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2023_Goose.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_FeedUsBitch.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Kitchen.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/Neyomi-Noru_Darkblue.jpg" alt="">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_KDH_Zoey.jpg" alt="">
-
-
-
-                </div>
-            </div>
-        </div>
-        <!--Module: Tab Slider (Design) -->
-        <div class="projects-design fade-in  hide">
-            <div class="project-container">
-                <div class="project-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_01.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_05.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Envelope Mockup-Dark.jpg"
-                        alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Whitepaper_02.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Chocolate_Christmas_01.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Chocolate_Christmas_03.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Chocolate_Christmas_04.jpg" alt="">
-
-                </div>
-                <div class="project-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_02.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Paynamics_Flyer_Omni Channel Flyer.jpg"
-                        alt="">
-
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Ethan-EDM-01.jpg" alt="">
-
-                </div>
-                <div class="project-column">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_03.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Prythianopoly_04.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Nuvei_Brand Ads_Static_Oct 2024_V1-01.jpg"
-                        alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Dunkso_PDF_08.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Dunkso_PDF_01.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Vauliys_Rebrand_03.jpg" alt="">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design-Imagery/Vauliys_Rebrand_02.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <!--Module: Tab Slider (Motion) -->
-        <div class="projects-motion fade-in hide">
-            <div class="project-container">
-                <div class="project-column">
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-MX3S_Artwork.mp4"></video>
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2025_Nuvei_How to_Payment Links.mp4"></video>
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Animation_Flame-Loop.mp4"></video>
-
-                </div>
-                <div class="project-column">
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Orange-Test.mp4"></video>
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/SO_CH_Jeff.mp4"></video>
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/SO_PR_Train_03.jpg">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/SO_PR_Train_04.jpg">
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Nuvei_MetaAds_03.mp4"></video>
-                </div>
-                <div class="project-column">
-                    <video style="padding:50px;background-color: black;" autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Vauliys_Rebrand_07.mp4"></video>
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2023_TKD-Kick.mp4"></video>
-
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2025_Nuvei_Cardinal Connector.mp4"></video>
-                    <video autoplay muted loop
-                        src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Till-Portable_PAXA920_Product.mp4"></video>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Footer -->
-    <footer>
-        <a href="#"><img style="width:30px;"
-                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys_Submark_Brown.png"></a>
-    </footer>
 </body>
 
-<!-- JavaScript files -->
-<script src="202501_scripts.js" defer></script> <!-- Main JavaScript file -->
-<script src="202501_nav.js" defer></script> <!-- Main JavaScript file -->
-<script src="202503_slider-tab.js"></script> <!-- Module:: Fixed Navbar component -->
+<script src="z_nav-mobile.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_header.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_tab-slider.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_hover-effect.js" defer></script> <!-- Main JavaScript file -->
+<script src="z_click-effect.js" defer></script> <!-- Main JavaScript file -->
 
 </html>
