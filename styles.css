@@ -530,7 +530,8 @@ form h1 {
 }
 
 .bio-text {
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    padding-top:20px;
 }
 
 .bio-content {
@@ -632,18 +633,6 @@ form h1 {
     margin-bottom: 30px;
 }
 
-.image-carousel {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
-    margin-bottom: 30px;
-}
-
-.image-carousel img {
-    border-radius: 8px;
-    cursor: pointer;
-}
 
 #reveal-more {
     display: flex;
