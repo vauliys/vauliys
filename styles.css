@@ -531,7 +531,7 @@ form h1 {
 
 .bio-text {
     padding-bottom: 30px;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 .bio-content {
@@ -588,8 +588,8 @@ form h1 {
     flex-direction: column;
     text-align: center;
     letter-spacing: 1px;
-    padding: 10rem 5%;
-    padding-top: 5rem;
+    padding: 5rem 5%;
+    padding-bottom: 5%;
     background-image: url('https://d22p4d1ezw7euj.cloudfront.net/Imagery/Graphic-Circles.png');
     background-size: 100%;
     background-position: top;
@@ -625,7 +625,6 @@ form h1 {
 #social video {
     width: 100%;
     border-radius: 8px;
-    cursor: pointer;
     margin-bottom: 2px;
 }
 
@@ -634,12 +633,13 @@ form h1 {
 }
 
 
-#reveal-more {
+.reveal-more {
     display: flex;
     text-transform: uppercase;
     margin: 20px 0;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
 }
 
 .column {
@@ -832,5 +832,4 @@ form h1 {
     .bio-images {
         justify-content: center;
     }
-
 }
