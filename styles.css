@@ -562,6 +562,7 @@ form h1 {
     margin-bottom: 10px;
 }
 
+
 .bio-images {
     margin-top: 20px;
     display: flex;
@@ -781,7 +782,7 @@ form h1 {
         margin-bottom: 0;
     }
 
-    .project-header {
+    .bio-header {
         display: flex;
         width: 100%;
         justify-content: space-between;
