@@ -74,3 +74,27 @@ if (tabSocial) {
         Wiggle.classList.add('hide'); /* toggles class */
     });
 }
+
+
+const images = document.querySelectorAll('.project-images img');
+const dots = document.querySelectorAll('.carousel-dot');
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  const offset = -index * 100;
+  document.querySelector('.project-images').style.transform = `translateX(${offset}%)`;
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+}
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index;
+    showSlide(currentIndex);
+  });
+});
+
+// Initialize
+showSlide(0);
+

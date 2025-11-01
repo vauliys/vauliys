@@ -530,7 +530,6 @@ form h1 {
 }
 
 .bio-text {
-    padding-bottom: 30px;
     padding-top: 20px;
 }
 
@@ -641,6 +640,7 @@ form h1 {
     bottom: 0;
     cursor: pointer;
 }
+
 
 .column {
     display: grid;
