@@ -8,6 +8,11 @@ const morechoc = document.querySelector('#more-chocolate');
 const nuvei = document.querySelector('#nuvei');
 const morenuvei = document.querySelector('#more-nuvei');
 
+const sleet = document.querySelector('#sleet');
+const moresleet = document.querySelector('#more-sleet');
+
+const hff = document.querySelector('#hff');
+const morehff = document.querySelector('#more-hff');
 
 
 if (pryth) {
@@ -37,5 +42,29 @@ if (nuvei) {
         morenuvei.classList.toggle('hide'); /* toggles class */
         morechoc.classList.add('hide'); /* toggles class */
         morepryth.classList.add('hide'); /* toggles class */
+    });
+}
+
+if (sleet) {
+    /* when Slider item (Social) is clicked perform code*/
+    sleet.addEventListener('click', () => {
+
+        moresleet.classList.toggle('hide'); /* toggles class */
+        morepryth.classList.add('hide'); /* toggles class */
+        morechoc.classList.add('hide'); /* toggles class */
+        morenuvei.classList.add('hide'); /* toggles class */
+    });
+}
+
+
+if (hff) {
+    /* when Slider item (Social) is clicked perform code*/
+    hff.addEventListener('click', () => {
+
+        morehff.classList.toggle('hide'); /* toggles class */
+        moresleet.classList.add('hide'); /* toggles class */
+        morepryth.classList.add('hide'); /* toggles class */
+        morechoc.classList.add('hide'); /* toggles class */
+        morenuvei.classList.add('hide'); /* toggles class */
     });
 }
