@@ -276,7 +276,7 @@ li {
 .header i {
     color: #4a80ce;
     font-size: 1.5rem;
-   -webkit-text-stroke: 0.3px #4a80ce;
+    -webkit-text-stroke: 0.3px #4a80ce;
 }
 
 .header p {
@@ -609,13 +609,13 @@ form h1 {
 
 .online-shop {
     padding: 10rem 5%;
-     align-items: center;
+    align-items: center;
     display: flex;
     justify-self: center;
     flex-direction: column;
     text-align: center;
     display: grid;
-      padding-bottom: 5%;
+    padding-bottom: 5%;
 }
 
 .shop-container {
@@ -634,7 +634,8 @@ form h1 {
     margin-bottom: 20px;
 }
 
-.project-category, .shop-category {
+.project-category,
+.shop-category {
     width: 100%;
     text-align: left;
     font-size: 0.6rem;
@@ -647,12 +648,13 @@ form h1 {
     border-radius: 10px;
     margin-bottom: 10px;
     position: relative;
-     transition: transform 1s ease;
+    transition: transform 1s ease;
 }
 
-.project-category:hover, .shop-category:hover {
+.project-category:hover,
+.shop-category:hover {
     transform: translatey(-10px);
-     transition: transform 1s ease;
+    transition: transform 1s ease;
 }
 
 .project-images img,
@@ -724,7 +726,7 @@ form h1 {
     margin-right: 35px;
 }
 
-.shopify-buy-frame img{
+.shopify-buy-frame img {
     border-radius: 10rem !important;
 }
 
@@ -847,7 +849,7 @@ form h1 {
         grid-gap: 10px;
     }
 
-     .shop-container {
+    .shop-container {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 10px;
@@ -892,7 +894,8 @@ form h1 {
         justify-content: center;
         display: flex;
     }
-        .bio-images img:first-child {
-            width: 70%;
-        }
+
+    #whale {
+        width: 70%;
+    }
 }
