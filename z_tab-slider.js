@@ -41,9 +41,9 @@ if (tabSketch2) {
         Pages.classList.add('hide'); /* toggles class */
         Wiggle.classList.add('hide'); /* toggles class */
         Social.classList.add('hide'); /* toggles class */
-
     });
 }
+
 
 if (tabDesign) {
     /* when Slider item (Social) is clicked perform code*/
