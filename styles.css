@@ -39,6 +39,10 @@
     :root {}
 }
 
+.logo-backs2 {
+   opacity: 0;
+}
+
 /*=====================*/
 /* (every page) */
 * {
@@ -528,11 +532,6 @@ form h1 {
     padding-bottom: 10px;
 }
 
-.online-shop {
-    padding: 8%;
-    text-align: left;
-    line-height: 0.8rem;
-}
 
 .bio {
     background-color: #dce7f4;
@@ -607,22 +606,6 @@ form h1 {
     background-repeat: no-repeat;
 }
 
-.online-shop {
-    padding: 10rem 5%;
-    align-items: center;
-    display: flex;
-    justify-self: center;
-    flex-direction: column;
-    text-align: center;
-    display: grid;
-    padding-bottom: 5%;
-}
-
-.shop-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
 
 #project-gallery {
     padding-bottom: 20px;
@@ -634,8 +617,7 @@ form h1 {
     margin-bottom: 20px;
 }
 
-.project-category,
-.shop-category {
+.project-category {
     width: 100%;
     text-align: left;
     font-size: 0.6rem;
@@ -651,23 +633,18 @@ form h1 {
     transition: transform 1s ease;
 }
 
-.project-category:hover,
-.shop-category:hover {
+.project-category:hover {
     transform: translatey(-10px);
     transition: transform 1s ease;
 }
 
 .project-images img,
-.shop-images img,
 #social video {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 2px;
 }
 
-#social video {
-    margin-bottom: 30px;
-}
 
 
 .reveal-more {
@@ -709,10 +686,6 @@ form h1 {
     outline: 1.8px solid white;
 }
 
-#social video {
-    width: 100%;
-    border-radius: 8px;
-}
 
 .hide {
     display: none;
@@ -726,9 +699,6 @@ form h1 {
     margin-right: 35px;
 }
 
-.shopify-buy-frame img {
-    border-radius: 10rem !important;
-}
 
 /* Slider Tab */
 @media screen and (min-width: 0px) {
@@ -745,6 +715,10 @@ form h1 {
 }
 
 @media screen and (min-width: 750px) {
+
+    .header {
+        padding:10px 20%;
+    }
     body .hub {
         background-position: 1000px -350px;
     }
@@ -774,7 +748,7 @@ form h1 {
         grid-template-columns: 55% 45%;
         align-items: center;
         justify-content: space-between;
-        padding: 10rem 8%;
+        padding: 10rem 20%;
         padding-bottom: 3rem;
         background-position: 500px -150px;
         grid-gap: 15px;
@@ -822,7 +796,7 @@ form h1 {
     .project-gallery {
         display: flex;
         flex-direction: column;
-        padding: 4rem 8%;
+        padding: 4rem 20%;
         background-image: none;
     }
 
@@ -846,12 +820,6 @@ form h1 {
     .project-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-    }
-
-    .shop-container {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
         grid-gap: 10px;
     }
 

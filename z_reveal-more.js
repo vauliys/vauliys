@@ -14,6 +14,9 @@ const moresleet = document.querySelector('#more-sleet');
 const hff = document.querySelector('#hff');
 const morehff = document.querySelector('#more-hff');
 
+const pbtbr = document.querySelector('#pbtbr');
+const morepbtbr = document.querySelector('#more-pbtbr');
+
 
 if (pryth) {
     /* when Slider item (Social) is clicked perform code*/
@@ -22,6 +25,7 @@ if (pryth) {
         morepryth.classList.toggle('hide'); /* toggles class */
         morechoc.classList.add('hide'); /* toggles class */
         morenuvei.classList.add('hide'); /* toggles class */
+        morepbtbr.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -32,6 +36,7 @@ if (choc) {
         morechoc.classList.toggle('hide'); /* toggles class */
         morenuvei.classList.add('hide'); /* toggles class */
         morepryth.classList.add('hide'); /* toggles class */
+        morepbtbr.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -42,6 +47,7 @@ if (nuvei) {
         morenuvei.classList.toggle('hide'); /* toggles class */
         morechoc.classList.add('hide'); /* toggles class */
         morepryth.classList.add('hide'); /* toggles class */
+        morepbtbr.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -53,6 +59,7 @@ if (sleet) {
         morepryth.classList.add('hide'); /* toggles class */
         morechoc.classList.add('hide'); /* toggles class */
         morenuvei.classList.add('hide'); /* toggles class */
+        morepbtbr.classList.add('hide'); /* toggles class */
     });
 }
 
@@ -66,5 +73,19 @@ if (hff) {
         morepryth.classList.add('hide'); /* toggles class */
         morechoc.classList.add('hide'); /* toggles class */
         morenuvei.classList.add('hide'); /* toggles class */
+        morepbtbr.classList.add('hide'); /* toggles class */
+    });
+}
+
+if (pbtbr) {
+    /* when Slider item (Social) is clicked perform code*/
+    pbtbr.addEventListener('click', () => {
+
+        morepbtbr.classList.toggle('hide'); /* toggles class */
+        moresleet.classList.add('hide'); /* toggles class */
+        morepryth.classList.add('hide'); /* toggles class */
+        morechoc.classList.add('hide'); /* toggles class */
+        morenuvei.classList.add('hide'); /* toggles class */
+        morehff.classList.add('hide'); /* toggles class */
     });
 }
