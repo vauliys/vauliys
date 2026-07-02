@@ -15,640 +15,394 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="AdvercaseDemo-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <title>Vauliys | Digital Creator based in Australia </title>
+    <link rel="stylesheet" href="styles-new.css">
+
+    <title>Vauliys</title>
 </head>
 
 <body class="fade-in" id="page-hub">
-    <div id="header">
-        <div id="announcement-banner">
-            <p>say hi :) hello@vauliys.com</p>
+    <div id="fixed-header">
+        <div id="announcement">
+            <p>Accepting bookmarks, not bookings</p>
         </div>
-        <div class="header">
-            <div class="left">
-                <div class="mobile" style="display: flex;grid-gap: 20px;align-items: center;letter-spacing: 1px;">
-                    <a href="#"><img style="width:50px;"
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Header-Icon.png"></a>
-                    <p style="display: flex;"><span style="color:#33a1db">hel</span><span
-                            style="color:#79adad">lo</span>
-                        <span style="color:#79af94;">@vau</span><span style="color:#8fb756;">liy</span>
-                        <span style="color:#babc55;">s.c</span><span style="color:#c4be4c;">om</span>
-                    </p>
-                    <a class="desktop" href="#">Homepage</a>
-                    <a class="desktop" href="https://shop.vauliys.com">Shop</a>
-                    <!-- <a class="desktop" href="#">UGC</a> -->
-                    <a class="desktop" href="hub">Creator Hub</a>
+
+        <div id="header" class="grid-container page-width">
+            <div class="row-1 row-2">
+                <div class="column between">
+                    <a id="primary-logo" href="#"><img class="hover" src="./asset-suite/logo-primary.svg"
+                            alt="[vauliys.com]"></a>
+                    <div class="hover" id="menu">
+                        <i class="desktop fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <ul id="nav" class="mobile">
+                        <li><a href="#work">My work</a></li>
+                        <li><a href="#bio">About</a></li>
+                        <li><a href="hub">Creator Hub</a></li>
+                        <li><button id="btn-howdy" class="hover" onclick="window.location.href='#footer'"><img
+                                    id="i-star" src="./asset-suite/icon-star.svg">Say howdy hey</button></li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="nav-mobile" class="desktop">
+        <ul>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#bio">About</a></li>
+            <li><a href="">Creator Hub</a></li>
+            <li><button id="btn-howdy" class="hover" onclick="window.location.href='mailto:hello@vauliys.com'"><img
+                        id="i-star" src="./asset-suite/icon-star.svg">Say howdy hey</button></li>
+            <li>
+                <div id="socials">
+                    <a href="https://instagram.com/vauliys"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@vauliys"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="storygraph.html"><img id="i-storygraph" src="./asset-suite/icon-storygraph.svg"></a>
+                </div>
+        </ul>
+    </div>
+    <div id="page-content">
+        <div id="welcome">
+            <div class="grid-container page-width">
+                <div class="row-1">
+                    <div class="column">
+                        <h1>Reading for the details, doodling in the margins.</h1>
+                        <!-- <marquee>jamie is a sex god. </marquee> -->
+                        <div id="welcome-socials">
+                            <button id="btn-email" class="hover"
+                                onclick="window.location.href='mailto:hello@vauliys.com'"><img id="i-star"
+                                    src="./asset-suite/icon-star.svg">hello@vauliys.com</button>
+                            <div class="mobile"><a href="https://instagram.com/vauliys"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@vauliys"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="storygraph.html"><img src="./asset-suite/icon-storygraph.svg"></a>
+                            </div>
+                        </div>
+                        <p class="italic">"Your professionalism and
+                            creativity have been top-tier." <br>Aria, Creator Partnership Manager, xTool</p>
+                        <img id="client-logo-sm" src="./asset-suite/client-logo-sm.svg" alt="[client logos]">
+                    </div>
+                    <div class="column right">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/sketch-timelapse.png"
+                                alt="Sketch">
+                            <img class="image overlay" id="sketchlapse"
+                                src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/sketch-timelapse.gif"
+                                alt="Sketch Timelapse">
+                        </div>
+                    </div>
 
-            <div class="right">
-                <i id="hover" class="ri-menu-line menu mobile"></i>
-                <a class="desktop" href="https://www.instagram.com/vauliys"><i class="ri-instagram-line"></i></a>
-                <a class="desktop" href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill"></i></a>
+                </div>
             </div>
+        </div>
+        <div id="bio">
+            <div class="grid-container page-width">
+                <div class="row-1 row-3">
+                    <div class="column">
+                        <img class="image" id="artist"
+                            src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/artist-portrait.png"
+                            alt="[pic of me]">
+                    </div>
+                    <div class="column">
+         
+                            <p class="caption bio-caption"><img class="hover" id="logomark" src="./asset-suite/logo-mark.svg"
+                                    alt="[vauliys.com]">Designer</p>
+         
+                        <p>I’m Victoria. A Melbourne based creator working across motion, design, publishing, and social
+                            media. I tend to collect ideas the way readers collect bookmarks.</p><br>
+                        <p class="italic">“Libraries were full of ideas—perhaps the most dangerous and powerful of all
+                            weapons.” Sarah J.
+                            Mass, Throne of Glass</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="marquee">
+            <div class="marquee-track">
+                <img src="./asset-suite/client-logo-marquee.svg" alt="Client logos">
+                <img src="./asset-suite/client-logo-marquee.svg" alt="Client logos">
+            </div>
+        </div>
+        <div id="work">
+            <div class="grid-container page-width-sm ">
+                <div id="work-home">
+                    <img id="flower" src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/flower-fy.png">
+                    <h2>My work</h2>
+                    <div id="folder-grid" class="column">
+                        <div id="fld-design" class="folder">
+                            <img class="hover"
+                                src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/folder-beige.png">
+                            <p class="hover">Design</p>
+                        </div>
+                        <div id="fld-art" class="folder">
+                            <img class="hover"
+                                src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/folder-green.png">
+                            <p class="hover">Art</p>
+                        </div>
 
+                        <div id="fld-content" class="folder">
+                            <img class="hover"
+                                src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/folder-brown.png">
+                            <p class="hover">Content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container mb2">
+                    <div id="content" class="row row-4 mt5 hide">
+                        <div class="column">
+                            <div class="video-player-01 video-player">
+                                <video class="video-01"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/content-ghibli.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-01 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="video-player-02 video-player">
+                                <video class="video-02"
+                                    poster="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/Logitech-MX3S.jpg"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/Logitech-MX3S.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-02 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="video-player-03 video-player">
+                                <video class="video-03"
+                                    poster="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/Finding-my-art.jpg"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/Finding-my-art-02.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-03 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="video-player-04 video-player">
+                                <video class="video-04"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/content-cross-stitch.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-04 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="column">
+                            <div class="video-player-05 video-player">
+                                <video class="video-05"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/content-tbr.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-05 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="video-player-06 video-player">
+                                <video class="video-06"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/Draw-with-me.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-06 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="column">
+                            <div class="video-player-07 video-player">
+                                <video class="video-07"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/content-ouabh.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-07 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="video-player-08 video-player">
+                                <video class="video-08"
+                                    poster="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/Logitech-mxbrio.jpg"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/content/Logitech-mx-brio.mp4"></video>
+                                <div class="video-controls">
+                                    <button class="btn-play play-08 hover" style="font-size: 0.5rem;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="art" class="row row-4 mt5 ">
+                        <div class="column">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2025-feedusbitch.jpg">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2025-flash.jpg">
+
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2025-bs-locker.jpg">
+
+                        </div>
+                        <div class="column">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2023-goose.jpg">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2025-neyomi-hop.jpg">
+                        </div>
+                        <div class="column">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2025-bs-movie.jpg">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2025-bs-kitchen.jpg">
+
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2026-kdh-mira.jpg">
+                        </div>
+                        <div class="column">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2026-kdh-zoey.jpg">
+                            <img src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/art/2025-reena.jpg">
+
+                        </div>
+                    </div>
+                    <div id="design" class="row mt5 hide">
+                        <div id="design-books" class="row-4">
+                            <div class="book-cover mb2">
+                                <img class="mb05 hover"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-ouabh.jpg">
+                                <h4 class="hover">Once Upon a Broken Heart</h4>
+                                <p class="caption text-sm mb05 black">Stephanie Garber </p>
+                                <div class="star-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <div class="book-cover mb2">
+                                <img class="mb05 hover"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-thedeal.jpg">
+                                <h4 class="hover">The Deal, Off Campus</h4>
+                                <p class="caption text-sm mb05">Elle Kennedy </p>
+                                <div class="star-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <div class="book-cover mb2">
+                                <img class="mb05 hover"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-sleet.jpg">
+                                <h4 class="hover">Sleet Kitten, Sleet Series</h4>
+                                <p class="caption text-sm mb05">Bookish&Spice</p>
+                                <div class="star-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <div class="book-cover mb2">
+                                <img class="mb05"
+                                    src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-soon.jpg">
+                                <h4>The Spellshop <span style="text-transform: uppercase;font-size:0.6rem">Coming
+                                        soon</span></h4>
+                                <p class="caption text-sm mb05">Sarah Beth Durst </p>
+                                <div class="star-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" mt5>
+                            <div class="row-1">
+                                <div class="design-cover">
+                                    <img class="mb1 hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-jv.jpg">
+
+                                    <p class="caption text-sm mb02">JV <span>| Brand Identity</span></p>
+                                    <h4 class="hover">The Wedding of Jamie & Victoria</h4>
+
+                                </div>
+                                <div class="design-cover">
+                                    <img class="mb1 hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-nuvei.jpg">
+
+                                    <p class="caption text-sm mb02">Nuvei <span>| Design & Motion</span></p>
+                                    <h4 class="hover">Every payment, everywhere</h4>
+                                </div>
+
+                            </div>
+                            <div class="row-1">
+                                <div class="design-cover">
+                                    <img class="mb1 hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-penguin.jpg">
+
+                                    <p class="caption text-sm mb02">PenguinBooks | Product Design</p>
+                                    <h4 class="hover">TBR Ticket Booth</h4>
+
+                                </div>
+                                <div class="design-cover">
+                                    <img class="mb1 hover"
+                                        src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/work/design/cover-vauliys.jpg">
+
+                                    <p class="caption text-sm mb02">Vauliys <span>| Brand Identity</span></p>
+                                    <h4 class="hover">Artistically overwhelmed</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn-howdy" class="hover" onclick="window.location.href='#work'"><img id="i-star"
+                        src="./asset-suite/icon-star.svg">Back to top</button>
+            </div>
         </div>
     </div>
-    <!-- Nav: Mobile -->
-    <nav class="nav-show mobile">
-        <ul>
-            <li><a id="hover" href="#">Homepage</a></li>
-            <li><a id="hover" href="https://shop.vauliys.com/">Shop</a></li>
-            <!-- <li><a id="hover" href="">UGC</a></li> -->
-            <li><a id="hover" href="hub">Creator Hub</a></li>
-        </ul>
-        <a href="https://www.instagram.com/vauliys"><i id="hover" class="ri-instagram-line"
-                style="font-size: 1.2rem;color:#4a80ce;"></i></a>
-        <a href="https://www.tiktok.com/@vauliys"><i id="hover" class="ri-tiktok-fill"
-                style="font-size: 1.2rem;color:#4a80ce;margin-left:5px"></i></a>
-    </nav>
-
-    <div class="body">
-        <!-- <div class="form">
-
-            <form action="https://api.web3forms.com/submit" method="POST">
-
-                <input type="hidden" name="access_key" value=" bda30962-2211-49a3-a285-0bea210ffd9e">
-                <input type="text" name="name" placeholder="name" required>
-                <input type="email" name="email" placeholder="email" required>
-                <textarea name="message" placeholder="write your message" required></textarea>
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <button type="submit">Submit Form</button>
-
-            </form>
-            <div class="form-button">
-                <p>Say howdy</p>
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Chat-Icon.png">
-            </div>
-
-        </div> -->
-        <div class="landing-module body-content">
-            <div class="left">
-                <div id="landing-text" style="width: fit-content;">
-                    <p style="text-transform: uppercase;margin-top:2px;font-size:1.5rem;">🎨</p>
-                    <p style="text-transform: uppercase;">
-                        Design. Animation. Art. Content.</p>
-                    <div>
-                        <h1>An artist who reads<br><span>between the lines. 📖</span></h1>
-                        <img id="gradient-line" style="width:60px;height: auto;float: right;"
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Underline-gradient.png">
-                    </div>
-                    <p>Stress is my medium — reading with the koalas.</p>
-                </div>
-                <div class="folder-grid">
-                    <div class="folder" id="tab-design2">
-                        <a href="#project-gallery">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Beige.png">
-                            <p id="hover">Design</p>
-                        </a>
-                    </div>
-                    <div class="folder" id="tab-sketch2">
-                        <a href="#project-gallery">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
-                            <p id="hover">Sketch</p>
-                        </a>
-                    </div>
-                    <div class="folder" id="tab-pages2">
-                        <a href="#project-gallery">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                            <p id="hover">Books</p>
-                        </a>
-                    </div>
-                    <div class="folder" id="tab-wiggle2">
-                        <a href="#project-gallery">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Brown.png">
-                            <p id="hover">Wiggle</p>
-                        </a>
-                    </div>
-                    <div class="folder" id="tab-social2">
-                        <a href="#project-gallery">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Sand.png">
-                            <p id="hover">Content</p>
-                        </a>
+    <div id="footer">
+        <div class="grid-container page-width">
+            <div class="row-1">
+                <div class="column">
+                    <h3>Send a letter</h3>
+                    <p>If you liked what you read and want to enquire about working with me, send me a letter and
+                        let's
+                        see where the story takes us.</p>
+                    <div id="footer-socials"><a href="https://instagram.com/vauliys"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@vauliys"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="storygraph.html"><img src="./asset-suite/icon-storygraph.svg"></a>
+                        <p>hello@vauliys.com</p>
                     </div>
                 </div>
-            </div>
-            <div class="right">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Landing-Image.png">
-            </div>
-        </div>
-        <div id="client-grid" class="client-grid">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_BookishSpice.svg">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Procreate.svg">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_CSP.svg">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg">
+                <div class="column">
+                    <!--Form Code-->
+                    <form action=”mailto:hello@vauliys.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
 
-        </div>
-        <div class="bio" id="bio">
-            <div class="bio-left">
-                <!-- Who is Victoria-->
-                <div class="bio-content">
-                    <div id="bio-location">
-                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                        <p>vauliys.com > bio</p>
-                    </div>
-                    <p class="bio-header">Who-is-Victoria.txt</p>
-                    <p>Howdy hey, I’m Victoria! I’m a Melbourne-based creator with an appreciation for reading & the
-                        creative space starting as
-                        young as four. What started as doodling on the walls of my bedroom wall (sorry mum) and reading
-                        books about
-                        faeries, quickly became a dear love for art and literature, which in turn lead to the motion,
-                        design
-                        and publishing space.</p>
-                    <div class="bio-images">
-                        <img id="whale" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/Bio-Whamen.png">
-                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/Bio-Selfie.png">
-                    </div>
-                </div>
-                <!-- Dual Column-->
-                <div style="display: flex; grid-gap:10px;">
-                    <div class="bio-content">
-                        <div id="bio-location">
-                            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
-                            <p>bio > work</p>
+
+                        <div id="frm-contact">
+                            <input type="text" id="frm-name" name="name" placeholder="name">
+                            <input type="text" required id="frm-email" name="email" placeholder="email">
                         </div>
-                        <p class="bio-header">Where-is-she.txt</p>
-                        <p>I’m a Freelancer and full-time Digital Designer at Nuvei, a Canadian Fintech Company. My
-                            design
-                            role
-                            includes the creation of web, email, social and mobile collateral but also UI, branding and
-                            print.
-                        </p>
-                        <div class="bio-images">
-                            <img style="width: 40px;" id="bio-logo"
-                                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Nuvei.svg">
-                            <img id="bio-logo"
-                                src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logo_Vauliys.svg">
-                        </div>
-                    </div>
-                    <div class="bio-content">
-                        <div id="bio-location">
-                            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
-                            <p>bio > vauliys</p>
-                        </div>
-                        <p class="bio-header">Who-is-Vauliys.txt</p>
-                        <p>Vauliys is my brand name & online persona for my socials & shop. Vauliys was established in
-                            Sept
-                            2022
-                            but I’ve been freelancing since 2020, working with companies including Logitech,
-                            Bookish&Spice,
-                            Samsung and more.
-                        </p>
-                        <div class="bio-images">
-                            <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_BookishSpice.svg">
-                            <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_CSP.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Scholar -->
-            <div class="bio-content">
-                <div style="margin-bottom:20px;margin-top:0;" class="bio-images">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Victoria/Bio-Selfie-02.png">
+                        <textarea id=”frm-message” required rows=”6″ cols=”20
+                            placeholder="write your letter"></textarea>
 
-                </div>
-                <div id="bio-location">
-                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Brown.png">
-                    <p>bio > scholar</p>
-                </div>
-                <p class="bio-header">Scholar-Background.txt</p>
-                <p>My highschool schedule was filled with creative classes and english, I completed mathmatics a year
-                    earlier than my peers, going as far as completing 5 portfolio subjects in my final year of VCE. This
-                    was unheard of, not reccomended, but worth it.<br><br></p>
-                <p>
-                    One of the creative classes was a Certificate III in Screen & Media held by Kangan Institue for the
-                    VET Program held at my school. Following graduation, I completed an Internship with the Melbourne
-                    Museume Creative Program, had my final film exhibited in the Top Designs 2018 Exhibition and studied
-                    a Bachelors of Design specialising in Animation & Interactive Media.
-                </p>
-                <div class="bio-images">
-                    <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Kangan.png">
-                    <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_RMIT.png">
-                    <img id="bio-logo" src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_MuseumsVictoria.png">
-
+                        <button id="btn-submit" class="hover" type="submit">
+                            <img id="i-star" src="./asset-suite/icon-star.svg">Post</button>
+                    </form>
                 </div>
             </div>
         </div>
-
-        <div>
-            <div class="project-gallery" id="#project-gallery">
-                <div class="project-header">
-                    <div id="project-gallery">
-                        <img id="logomark-gold"
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Vauliys/Logomark_Vauliys.png">
-                        <h1>Project Gallery</h1>
-                    </div>
-                    <div class="folder-grid" style="margin-top:20px;">
-                        <div class="folder" id="tab-design">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Beige.png">
-                            <p id="hover">Design</p>
-                        </div>
-                        <div class="folder" id="tab-sketch">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
-                            <p id="hover">Sketch</p>
-                        </div>
-
-                        <div class="folder" id="tab-pages">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                            <p id="hover">Books</p>
-                        </div>
-                        <div class="folder" id="tab-wiggle">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Brown.png">
-                            <p id="hover">Wiggle</p>
-                        </div>
-
-
-                        <div class="folder" id="tab-social">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Sand.png">
-                            <p id="hover">Content</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="project-content">
-                    <div class="" id="sketch" style="width: 100%;">
-                        <div class="project-container">
-                            <div class="column">
-                                <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_FeedUsBitch.jpg">
-
-                                <img
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Locker-room.jpg">
-
-                                <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_Reena.jpg">
-
-                            </div>
-                            <div class="column">
-                                <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2023_Goose.jpg">
-                                <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2023_Logitech-MX3S.jpg">
-
-                            </div>
-                            <div class="column">
-                                <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/Neyomi-Noru_Daisy.jpg">
-                                <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_Neyomi_Hopper.jpg">
-                                <img
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Kitchen.jpg">
-
-                            </div>
-                            <div class="column">
-                                <img src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_KDH_Zoey.jpg">
-
-
-                                <img
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/ArtGallery/2025_BookishSpice_Movie-Crop.jpg">
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="hide" id="wiggle" style="width: 100%;">
-                        <div class="project-container">
-                            <div class="column">
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-MX3S_Artwork.mp4"></video>
-
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2023_TKD-Kick.mp4"></video>
-                                <video controls loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Munbyn-Printer.mp4"></video>
-                            </div>
-                            <div class="column">
-
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Harvest_Orange-Test.mp4"></video>
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Nuvei_MetaAds_03.mp4"></video>
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2025_Nuvei_How to_Payment Links.mp4"></video>
-                                <video controls loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Nanoleaf-Elements.mp4"></video>
-
-                            </div>
-                            <div class="column">
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/2025_Nuvei_Cardinal%20Connector.mp4"></video>
-
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Animation_Flame-Loop.mp4"></video>
-                            </div>
-                            <div class="column">
-
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Vauliys_Rebrand_07.mp4"></video>
-                                <video muted autoplay loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Till-Portable_PAXA920_Product.mp4"></video>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hide" id="design" style="width: 100%;">
-
-                        <div class="project-container">
-                            <!-- Prythianopoly -->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Prythianopoly-04.png">
-                                    <div id="more-prythian" class="hide">
-                                        <img
-                                            src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Prythianopoly-01.png">
-                                        <img
-                                            src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Prythianopoly-02.png">
-                                        <img
-                                            src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Prythianopoly-03.png">
-                                    </div>
-                                </div>
-
-                                <div class="bio-text">
-                                    <div id="bio-location">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                        <p>designs > prythianopoly</p>
-                                    </div>
-                                    <p class="bio-header">Custom Monopoly Boardgame</p>
-                                    <p class="project-description">Inspired by Sarah J Maas' ACOTAR romantasy series.
-                                        In celebration of my 25th birthday, I hosted a book themed party including
-                                        custom
-                                        games
-                                        designed
-                                        by myself.</p>
-                                    <p class="reveal-more" id="prythian"><span style="color:#33a1db">re</span><span
-                                            style="color:#79adad">ve</span>
-                                        <span style="color:#79af94;">al</span><span
-                                            style="color:#8fb756;margin-left:3px;">m</span>
-                                        <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Chocolate box -->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_ChocolateBox-01.png">
-                                    <div id="more-chocolate" class="hide">
-                                        <img
-                                            src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_ChocolateBox-02.png">
-                                    </div>
-                                </div>
-                                <div class="bio-text">
-                                    <div id="bio-location">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                        <p>designs > chocolate box</p>
-                                    </div>
-                                    <p class="bio-header">Christmas Packaging</p>
-                                    <p class="project-description">Creating the feature illustraion featuring Australian
-                                        themes for the Chocolate Box
-                                        Christmas packaging.</p>
-                                    <p class="reveal-more" id="chocolate"><span style="color:#33a1db">re</span><span
-                                            style="color:#79adad">ve</span>
-                                        <span style="color:#79af94;">al</span><span
-                                            style="color:#8fb756;margin-left:3px;">m</span>
-                                        <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Personal Branding-->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Vauliys-01.png">
-                                </div>
-                                <div class="bio-text">
-                                    <div id="bio-location">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                        <p>designs > vauliys</p>
-                                    </div>
-                                    <p class="bio-header">Personal Brand Identity</p>
-                                    <p class="project-description">The creation behind the visual identity of vauliys.
-                                    </p>
-                                    <p class="reveal-more"><span style="color:#33a1db">re</span><span
-                                            style="color:#79adad">ve</span>
-                                        <span style="color:#79af94;">al</span><span
-                                            style="color:#8fb756;margin-left:3px;">m</span>
-                                        <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Nuvei -->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Nuvei-01.png">
-                                    <div id="more-nuvei" class="hide">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Nuvei-02.png">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Nuvei-03.png">
-                                    </div>
-                                    <div class="bio-text">
-                                        <div id="bio-location">
-                                            <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                            <p>designs > nuvei</p>
-                                        </div>
-                                        <p class="bio-header">Financial Tech Marketing</p>
-                                        <p class="project-description">Creation of digital and print assets for
-                                            merchants
-                                            and
-                                            partners.
-                                            Assets include: Pitch Decks, Flyers, eDMs, Templates, Motion Graphics, HTML
-                                            &
-                                            CSS.</p>
-                                        <p class="reveal-more" id="nuvei"><span style="color:#33a1db">re</span><span
-                                                style="color:#79adad">ve</span>
-                                            <span style="color:#79af94;">al</span><span
-                                                style="color:#8fb756;margin-left:3px;">m</span>
-                                            <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Coming soon-->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design-PBTBR-01.jpg">
-                                    <div class="hide" id="more-pbtbr">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design-PBTBR-02.jpg">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design-PBTBR-03.jpg">
-                                    </div>
-                                </div>
-                                <div class="bio-text">
-                                    <div id="bio-location">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                        <p>designs > vauliys</p>
-                                    </div>
-                                    <p class="bio-header">PenguinBooks TBR Ticket Booth</p>
-                                    <p class="project-description">Every reader shares a common enemy, the TBR pile. It
-                                        looms. It grows. It judges. Some surrender and let the pages drown them while
-                                        others pick up a book and read. I choose the latter. 📖</p>
-                                    <p class="reveal-more" id="pbtbr"><span style="color:#33a1db">re</span><span
-                                            style="color:#79adad">ve</span>
-                                        <span style="color:#79af94;">al</span><span
-                                            style="color:#8fb756;margin-left:3px;">m</span>
-                                        <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- HFF Bookmarks -->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_HFF-02.png">
-                                    <div class="hide" id="more-hff">
-                                        <img
-                                            src="https://incube.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2025/08/12090223/BOOKMRK_HFF_BND_05.jpg">
-                                        <img
-                                            src="https://incube.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2025/08/12090227/BOOKMRK_HFF_PNK-06.jpg">
-                                    </div>
-                                </div>
-                                <div class="bio-text">
-                                    <div id="bio-location">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                        <p>design > vauliys</p>
-                                    </div>
-                                    <p class="bio-header">"How Fucking Far?" Bookmarks</p>
-                                    <p class="project-description">The first-of-its-kind imperial to metric bookmarks,
-                                        designed for readers to stay in
-                                        the story and never get lost in miles again.</p>
-                                    <p class="reveal-more" id="hff"><span style="color:#33a1db">re</span><span
-                                            style="color:#79adad">ve</span>
-                                        <span style="color:#79af94;">al</span><span
-                                            style="color:#8fb756;margin-left:3px;">m</span>
-                                        <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hide" id="pages" style="width: 100%;">
-                        <div class="project-container">
-                            <!-- Bookish&Spice -->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Sleet-01.png">
-                                    <div class="hide" id="more-sleet">
-                                        <img
-                                            src="https://scontent.cdninstagram.com/v/t51.82787-15/524378377_17982837506845694_2535931659524653414_n.webp?_nc_cat=107&ig_cache_key=MzY4Mzc4MjEwMjgzMTg3MDE5MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTE1Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=OqwwJOj2_5cQ7kNvwHVGbuk&_nc_oc=AdlW2LQxDLQKtisx_WsB99_Y-GQ5M11lqBN4MmEADTSUQ3ZKpq9C3KZ6gEIJ_5HsB98&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=3_HDB0_IDCey0oa_pNg4EQ&oh=00_AfhMXcUJ_ODyrKf-bBjR1vfDBFWHnfNnMzMudYbZICAcyg&oe=691D6DF3">
-                                        <img
-                                            src="https://scontent.cdninstagram.com/v/t51.82787-15/522994338_17982837515845694_4513871368942730328_n.webp?_nc_cat=107&ig_cache_key=MzY4Mzc4MjEwMjg0ODY0NTg3MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTE1Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=VsuYL_8wn8UQ7kNvwFClQWp&_nc_oc=AdlYrcY3Bau1_aO5gwI_vhgIkSBtn2Zz-qdK3UQc9zv2wDuAnxN78DoM5enerbz3wxY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=3_HDB0_IDCey0oa_pNg4EQ&oh=00_AfjUrvArLDZghCiMvSOyEbmdIF5L3LYRIcVrYNUYdjCbPw&oe=691D8D47">
-                                        <img
-                                            src="https://scontent.cdninstagram.com/v/t51.82787-15/522713580_17982837524845694_8932768273973385674_n.webp?_nc_cat=103&ig_cache_key=MzY4Mzc4MjEwMjg1NzE0Njg0Nw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTE1Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=qY_JHFhzYRIQ7kNvwFF13Wo&_nc_oc=AdmW0zQshvy3CQeGmXi8M3_2hbAUUoAAxz5jHvjyeM_GxDqofNP33bo33sypkjxpaik&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=iFtv5GOxBAUM1yFbj4hjqA&oh=00_AfgZ2R5cWvHPBUeaaqM9-mKMz2SdknLmqidHVM1jguGHmw&oe=691D7153">
-                                        <img
-                                            src="https://scontent.cdninstagram.com/v/t51.82787-15/522708212_17982837533845694_2524217502051663479_n.webp?_nc_cat=108&ig_cache_key=MzY4Mzc4MjEwMjg0ODg1NTY4OQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTE1Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=QFuBtks7z8wQ7kNvwFSwL60&_nc_oc=AdkFujkvxt1FF6LznoLFy5CgniCGMrH3ikHuHWTqFwdSPKCzLhith_cKFbz9_oZd8DA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=iFtv5GOxBAUM1yFbj4hjqA&oh=00_AfjdJHflUU7LUaG6NQ4-EFVTc_qRhOpbVq9Jbp5qMpRUjw&oe=691D766A">
-                                        <img
-                                            src="https://scontent.cdninstagram.com/v/t51.82787-15/522664370_17982837542845694_9102111645312100465_n.webp?_nc_cat=106&ig_cache_key=MzY4Mzc4MjEwMjcwNjE5MjQ5Mw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTE1Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=8bZJZy9dSrEQ7kNvwFZVmG1&_nc_oc=Adn9t9tUvJK_MdNbCFtKKtPaPwlc5tggCs3qbeEobSvuhUWpFRr9wLR9EyRy5N92Y0M&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=iFtv5GOxBAUM1yFbj4hjqA&oh=00_AfjWRbvO8lLMjWcoVNvzKBDAW9t3Yz-yuqwgf04tPy9smw&oe=691D87E4">
-                                        <img
-                                            src="https://scontent.cdninstagram.com/v/t51.82787-15/522318733_17982837560845694_9032266799532993940_n.webp?_nc_cat=109&ig_cache_key=MzY4Mzc4MjEwMjcxNDQ1MTU2Mg%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTE1Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=2ZpEtpy0ipMQ7kNvwHAKBmo&_nc_oc=AdlhpVMlk3_nxQf35ZjoGuk7LYXgTqdBiGTvhda2YM8-Femgb4szL9apyWKhO0Kx5OM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=iFtv5GOxBAUM1yFbj4hjqA&oh=00_AfihsZNQJguriBAH1GT2AHgXXOVVyzeDablotQMiiK8IqA&oe=691D82C3">
-                                    </div>
-
-                                </div>
-                                <div class="bio-text">
-                                    <div id="bio-location">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                        <p>books > bookish&spice</p>
-                                    </div>
-                                    <p class="bio-header">Sleet Series</p>
-                                    <p class="project-description">In collaboration with Bookish&Spice to create the
-                                        official special edition box set
-                                        for SJ Tilly's Sleet Series. The 4 book series includes 8 full spread end pages
-                                        and
-                                        4 reversable dust jackets.</p>
-                                </div>
-                                <p class="reveal-more" id="sleet"><span style="color:#33a1db">re</span><span
-                                        style="color:#79adad">ve</span>
-                                    <span style="color:#79af94;">al</span><span
-                                        style="color:#8fb756;margin-left:3px;">m</span>
-                                    <span style="color:#babc55;">o</span><span style="color:#c4be4c;">re</span>
-                                </p>
-                            </div>
-
-                            <!-- Bookish&Spice -->
-                            <div class="project-category">
-                                <div class="project-images">
-                                    <img src="https://d22p4d1ezw7euj.cloudfront.net/Design/Design_Placeholder-01.png">
-                                </div>
-                                <div class="bio-text">
-                                    <div id="bio-location">
-                                        <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                                        <p>books > bookish&spice</p>
-                                    </div>
-                                    <p class="bio-header">Coming 2026</p>
-                                    <p>In collaboration with Bookish&Spice.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hide" id="social" style="width: 100%;">
-                        <div class="project-container">
-
-                            <div class="column">
-
-                                <video controls loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Draw-with-me.mp4"></video>
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-MX3S.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-MX3S.mp4"></video>
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-mxbrio.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-mx-brio.mp4"></video>
-
-
-                            </div>
-                            <div class="column">
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/Finding-my-art.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Finding-my-art-02.mp4"></video>
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-Creative-Console.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Logitech-Creative-Console.mp4"></video>
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/Nanoleaf-Elements.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Nanoleaf-Elements.mp4"></video>
-                            </div>
-                            <div class="column">
-                                <video controls loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Punch-cards.mp4"></video>
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/BookBoxAU-Dark.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/BookBoxAU-Dark.mp4"></video>
-                                <video controls loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Munbyn-Printer.mp4"></video>
-
-                            </div>
-
-
-                            <div class="column">
-                                <video controls loop
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/Penguin-booth.mp4"></video>
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/BookBoxAU-Romantasy.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/BookBoxAU-Romantasy.mp4"></video>
-                                <video controls loop
-                                    poster="https://d22p4d1ezw7euj.cloudfront.net/Videos/FantasyHeads.jpg"
-                                    src="https://d22p4d1ezw7euj.cloudfront.net/Videos/FantasyHeads.mp4"></video>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+    </div>
 </body>
-
-<script src="z_nav-mobile.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_header.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_tab-slider.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_hover-effect.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_click-effect.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_reveal-more.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/nav.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/header-reveal.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/hover.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/video.js" defer></script>
+<script src="./js/folders.js" defer></script>
+<script src="https://kit.fontawesome.com/7f6e51348d.js" crossorigin="anonymous"></script>
 
 </html>

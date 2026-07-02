@@ -15,128 +15,130 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://d22p4d1ezw7euj.cloudfront.net/Logos/FavIcon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="AdvercaseDemo-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <title>Vauliys | Digital Creator based in Australia </title>
+    <link rel="stylesheet" href="styles-new.css">
+
+    <title>Vauliys</title>
 </head>
 
 <body class="fade-in" id="page-hub">
-    <div id="header">
-         <div id="announcement-banner">
-                <p>say hi :) hello@vauliys.com</p>
+    <div id="fixed-header">
+        <div id="announcement">
+            <p>Accepting bookmarks, not bookings</p>
         </div>
-        <div class="header">
-            <div class="left">
-                <div class="mobile" style="display: flex;grid-gap: 20px;align-items: center;letter-spacing: 1px;">
-                    <a href="vauliys.com"><img style="width:50px;"
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Header-Icon.png"></a>
-                    <p style="display: flex;"><span style="color:#33a1db">hel</span><span
-                            style="color:#79adad">lo</span>
-                        <span style="color:#79af94;">@vau</span><span style="color:#8fb756;">liy</span>
-                        <span style="color:#babc55;">s.c</span><span style="color:#c4be4c;">om</span>
-                    </p>
-                    <a class="desktop" href="index">Homepage</a>
-                    <a class="desktop" href="https://shop.vauliys.com">Shop</a>
-                    <!-- <a class="desktop" href="">UGC</a> -->
-                    <a class="desktop" href="">Creator Hub</a>
+
+        <div id="header" class="grid-container page-width">
+            <div class="row-1 row-2">
+                <div class="column between">
+                    <a id="primary-logo" href="index"><img class="hover"  src="./asset-suite/logo-primary.svg" alt="[vauliys.com]"></a>
+                    <div class="hover" id="menu">
+                        <i class="desktop fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <ul id="nav" class="mobile">
+                        <li><a href="vauliys.com/#work">My work</a></li>
+                        <li><a href="vauliys.com/#bio">About</a></li>
+                        <li><a href="#">Creator Hub</a></li>
+                        <li><button id="btn-howdy" class="hover" onclick="window.location.href='#footer'"><img
+                                    id="i-star" src="./asset-suite/icon-star.svg">Say howdy hey</button></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="right">
-                <i id="hover" class="ri-menu-line menu mobile"></i>
-                <a class="desktop" href="https://www.instagram.com/vauliys"><i class="ri-instagram-line"></i></a>
-                <a class="desktop" href="https://www.tiktok.com/@vauliys"><i class="ri-tiktok-fill"></i></a>
-            </div>
-
         </div>
     </div>
-    <!-- Nav: Mobile -->
-    <nav class="nav-show mobile">
+    <div id="nav-mobile" class="desktop">
         <ul>
-            <li><a id="hover" href="index">Homepage</a></li>
-            <li><a id="hover" href="https://shop.vauliys.com/">Shop</a></li>
-            <!-- <li><a id="hover" href="">UGC</a></li> -->
-            <li><a id="hover" href="">Creator Hub</a></li>
+            <li><a href="vauliys.com#work">My work</a></li>
+            <li><a href="vauliys.com#bio">About</a></li>
+            <li><a href="#">Creator Hub</a></li>
+            <li><button id="btn-howdy" class="hover" onclick="window.location.href='mailto:hello@vauliys.com'"><img
+                        id="i-star" src="./asset-suite/icon-star.svg">Say howdy hey</button></li>
+            <li>
+                <div id="socials">
+                    <a href="https://instagram.com/vauliys"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@vauliys"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="storygraph.html"><img id="i-storygraph" src="./asset-suite/icon-storygraph.svg"></a>
+                </div>
         </ul>
-        <a href="https://www.instagram.com/vauliys"><i id="hover" class="ri-instagram-line"
-                style="font-size: 1.2rem;color:#4a80ce;"></i></a>
-        <a href="https://www.tiktok.com/@vauliys"><i id="hover" class="ri-tiktok-fill"
-                style="font-size: 1.2rem;color:#4a80ce;margin-left:5px"></i></a>
-    </nav>
+    </div>
+    <div id="page-content">
+        <div id="hub">
+            <div class="grid-container page-width">
+                <div class="row-1">
+                    <div class="column">
+                        <h1>Reading for the details, doodling in the margins.</h1>
+                        <div id="socials" class="hub-socials">
+                            <a href="https://instagram.com/vauliys"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@vauliys"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="storygraph.html"><img id="i-storygraph"
+                                    src="./asset-suite/icon-storygraph.svg"></a>
+                        </div>
+                        <div id="hub-links">
+                            <button class="hover"
+                                onclick="window.location.href='mailto:hello@vauliys.com'"><img id="i-star"
+                                    src="./asset-suite/icon-star.svg">hello@vauliys.com</button>
 
-    <div class="body">
-        <div class="landing-module body-content hub">
-            <div class="left">
-                <div id="landing-text" style="width: fit-content;">
-                    <p style="text-transform: uppercase;margin-top:2px;font-size:1.5rem;">🎨</p>
-                    <p style="text-transform: uppercase;">
-                        Design. Animation. Art. Content.</p>
-                    <div>
-                        <h1>An artist who reads<br><span>between the lines. 📖</span></h1>
-                        <img id="gradient-line" style="width:60px;height: auto;float: right;"
-                            src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Underline-gradient.png">
+                            <a href="https://shop.vauliys.com"><button id="" class="hover"><img id="i-star"
+                                        src="./asset-suite/icon-star.svg">Shop my brushes</button></a>
+                            <a href="index-new.html"><button id="" class="hover"><img id="i-star"
+                                        src="./asset-suite/icon-star.svg">View my work</button></a>
+                            <a href="#footer"><button id="" class="hover"><img id="i-star"
+                                        src="./asset-suite/icon-star.svg">Commissions closed</button></a>
+
+                        </div>
                     </div>
-                    <p>Stress is my medium — reading with the koalas.</p>
-                </div>
-                <div class="folder-grid">
-                    <div class="folder">
-                        <a href="https://shop.vauliys.com/">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Beige.png">
-                            <p id="hover">Shop</p>
-                        </a>
+                    <div class="column right">
+                        <div class="image-container">
+                           <img class="image" src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/sketch-timelapse.png" alt="Sketch">
+                            <img class="image overlay" id="sketchlapse" src="https://d22p4d1ezw7euj.cloudfront.net/asset-suite/imagery/sketch-timelapse.gif"
+                                alt="Sketch Timelapse">
+                        </div>
                     </div>
-                    <div class="folder">
-                        <a href="index.html">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Green.png">
-                            <p id="hover">Portfolio</p>
-                        </a>
-                    </div>
-                    <div class="folder">
-                        <a href="https://shop.vauliys.com/collections/digital-downloads">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Blue.png">
-                            <p id="hover">Brushes</p>
-                        </a>
-                    </div>
-                      <!-- <div class="folder">
-                        <a href="https://xtool.pxf.io/OYRgmz">
-                            <img id="hover" src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Folder-Brown.png">
-                            <p id="hover">xtool</p>
-                        </a>
-                    </div> -->
                 </div>
             </div>
-            <div class="right">
-                <img src="https://d22p4d1ezw7euj.cloudfront.net/Imagery/Landing-Image.png">
+        </div>
+
+        <div id="footer">
+            <div class="grid-container page-width">
+                <div class="row-1">
+                    <div class="column">
+                        <h3>Send a letter</h3>
+                        <p>If you liked what you read and want to enquire about working with me, send me a letter and
+                            let's
+                            see where the story takes us.</p>
+                        <div id="footer-socials"><a href="https://instagram.com/vauliys"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@vauliys"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="storygraph.html"><img src="./asset-suite/icon-storygraph.svg"></a>
+                            <p>hello@vauliys.com</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <!--Form Code-->
+                        <form action=”mailto:hello@vauliys.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
+
+
+                            <div id="frm-contact">
+                                <input type="text" id="frm-name" name="name" placeholder="name">
+                                <input type="text" required id="frm-email" name="email" placeholder="email">
+                            </div>
+                            <textarea id=”frm-message” required rows=”6″ cols=”20
+                                placeholder="write your letter"></textarea>
+
+                            <button id="btn-submit" class="hover" type="submit">
+                                <img id="i-star" src="./asset-suite/icon-star.svg">Post</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="client-grid" class="client-grid">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_BookishSpice.svg">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Procreate.svg">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_CSP.svg">
-            <img src="https://d22p4d1ezw7euj.cloudfront.net/Logos/Logo_Logitech.svg">
-
-        </div>
-
     </div>
 </body>
-
-<script src="z_nav-mobile.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_header.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_tab-slider.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_hover-effect.js" defer></script> <!-- Main JavaScript file -->
-<script src="z_click-effect.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/nav.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/header-reveal.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/hover.js" defer></script> <!-- Main JavaScript file -->
+<script src="./js/video.js" defer></script>
+<script src="./js/folders.js" defer></script>
+<script src="https://kit.fontawesome.com/7f6e51348d.js" crossorigin="anonymous"></script>
 
 </html>
