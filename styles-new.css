@@ -301,7 +301,7 @@ a:hover {
 .page-width,
 .page-width-sm {
     margin: 0 auto;
-    padding: 0 20%;
+    padding: 0 10%;
 }
 
 
@@ -348,7 +348,7 @@ a:hover {
     padding-top: 12rem;
     transform: translateX(-100%);
     transition: 0.5s;
-    padding-left: 20%;
+    padding-left: 10%;
     z-index: 1;
 }
 
@@ -436,6 +436,10 @@ textarea {
 #i-star {
     margin-right: 0.5rem;
     width: 0.7rem;
+}
+
+#i-storygraph{
+    width:1rem;
 }
 
 img,
