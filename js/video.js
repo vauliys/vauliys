@@ -7,6 +7,7 @@ const player6 = document.querySelector(".video-player-06");
 const player7 = document.querySelector(".video-player-07");
 const player8 = document.querySelector(".video-player-08");
 
+
 const play1 = player1.querySelector(".play-01");
 const play2 = player2.querySelector(".play-02");
 const play3 = player3.querySelector(".play-03");
@@ -15,6 +16,7 @@ const play5 = player5.querySelector(".play-05");
 const play6 = player6.querySelector(".play-06");
 const play7 = player7.querySelector(".play-07");
 const play8 = player8.querySelector(".play-08");
+
 
 const video1 = player1.querySelector(".video-01");
 const video2 = player2.querySelector(".video-02");
@@ -25,6 +27,7 @@ const video6 = player6.querySelector(".video-06");
 const video7 = player7.querySelector(".video-07");
 const video8 = player8.querySelector(".video-08");
 
+
 play1.addEventListener("click", () => {
     if (video1.paused) {
         video1.play();
@@ -33,6 +36,11 @@ play1.addEventListener("click", () => {
         video1.pause();
         play1.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
+
+});
+video1.addEventListener("ended", () => {
+    play1.innerHTML = '<i class="fa-solid fa-play"></i>';
+    video1.currentTime = 0;
 });
 
 play2.addEventListener("click", () => {
@@ -44,6 +52,10 @@ play2.addEventListener("click", () => {
         play2.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 });
+video2.addEventListener("ended", () => {
+    video2.innerHTML = '<i class="fa-solid fa-play"></i>';
+    video1.currentTime = 0;
+});
 
 play3.addEventListener("click", () => {
     if (video3.paused) {
@@ -54,7 +66,10 @@ play3.addEventListener("click", () => {
         play3.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 });
-
+video3.addEventListener("ended", () => {
+    play3.innerHTML = '<i class="fa-solid fa-play"></i>';
+    video3.currentTime = 0;
+});
 
 play4.addEventListener("click", () => {
     if (video4.paused) {
@@ -64,6 +79,10 @@ play4.addEventListener("click", () => {
         video4.pause();
         play4.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
+});
+video4.addEventListener("ended", () => {
+    play4.innerHTML = '<i class="fa-solid fa-play"></i>';
+    video4.currentTime = 0;
 });
 
 play5.addEventListener("click", () => {
@@ -75,6 +94,10 @@ play5.addEventListener("click", () => {
         play5.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 });
+video5.addEventListener("ended", () => {
+    play5.innerHTML = '<i class="fa-solid fa-play"></i>';
+    video5.currentTime = 0;
+});
 
 play6.addEventListener("click", () => {
     if (video6.paused) {
@@ -84,6 +107,10 @@ play6.addEventListener("click", () => {
         video6.pause();
         play6.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
+});
+video6.addEventListener("ended", () => {
+    play6.innerHTML = '<i class="fa-solid fa-play"></i>';
+    video6.currentTime = 0;
 });
 
 play7.addEventListener("click", () => {
@@ -95,6 +122,10 @@ play7.addEventListener("click", () => {
         play7.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 });
+video7.addEventListener("ended", () => {
+    play7.innerHTML = '<i class="fa-solid fa-play"></i>';
+    video7.currentTime = 0;
+});
 
 play8.addEventListener("click", () => {
     if (video8.paused) {
@@ -103,5 +134,6 @@ play8.addEventListener("click", () => {
     } else {
         video8.pause();
         play8.innerHTML = '<i class="fa-solid fa-play"></i>';
+
     }
 });
