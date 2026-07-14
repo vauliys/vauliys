@@ -686,7 +686,8 @@ padding:2rem;
 #art .column img,
 #design .book-cover img,
 #design .design-cover img,
-video, .img, #design-content img {
+video, .img, #design-content img,
+ .row img{
     border-radius: 0.5rem;
     outline: 1px solid var(--black);
 }
