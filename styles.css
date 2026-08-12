@@ -57,6 +57,7 @@ h4 {
 .opacity100 {
     opacity: 100% !important;
 }
+
 .opacity50 {
     opacity: 50% !important;
 }
@@ -439,8 +440,8 @@ textarea {
     width: 0.7rem;
 }
 
-#i-storygraph{
-    width:0.9rem;
+#i-storygraph {
+    width: 0.9rem;
 }
 
 img,
@@ -542,11 +543,11 @@ video {
 }
 
 .m1 {
-margin:1rem;
+    margin: 1rem;
 }
 
 .m2 {
-padding:2rem;
+    padding: 2rem;
 }
 
 
@@ -608,7 +609,8 @@ padding:2rem;
     padding: 5rem 0;
 }
 
-#work, #work-focus {
+#work,
+#work-focus {
     display: flex !important;
     padding: 5rem 0;
     text-align: center;
@@ -628,7 +630,7 @@ padding:2rem;
 }
 
 .hero-text {
-        display: flex !important;
+    display: flex !important;
     flex-direction: column-reverse !important;
     background-color: var(--beige);
     padding: 3rem 0;
@@ -640,13 +642,13 @@ padding:2rem;
     align-items: center;
     width: min-content;
     margin: 1rem auto;
-    margin-top:0;
+    margin-top: 0;
     text-align: center;
 }
 
 #logomark {
-   width: min-content;
-   margin-right:0.5rem;
+    width: min-content;
+    margin-right: 0.5rem;
 }
 
 #bio .grid-container .row-1 {
@@ -686,8 +688,10 @@ padding:2rem;
 #art .column img,
 #design .book-cover img,
 #design .design-cover img,
-video, .img, #design-content img,
- .row img{
+video,
+.img,
+#design-content img,
+.row img {
     border-radius: 0.5rem;
     outline: 1px solid var(--black);
 }
@@ -740,16 +744,17 @@ video, .img, #design-content img,
         height: auto;
         flex-shrink: 0;
     }
-    #i-storygraph{
-    width:0.8rem;
-}
+
+    #i-storygraph {
+        width: 0.8rem;
+    }
 
 }
 
 @media screen and (min-width: 750px) {
-        #i-storygraph{
-    width:0.8rem;
-}
+    #i-storygraph {
+        width: 0.8rem;
+    }
 
     .marquee-track img {
         width: 150vw;
@@ -829,7 +834,7 @@ video, .img, #design-content img,
     }
 
     .row-2 {
-             display: grid;
+        display: grid;
         grid-template-columns: 20% 80%;
     }
 
@@ -917,8 +922,8 @@ video, .img, #design-content img,
 
     .bio-caption {
         text-align: left;
-        margin:0;
-        margin-bottom:1rem;
+        margin: 0;
+        margin-bottom: 1rem;
     }
 
     #bio .grid-container .row-1 {
@@ -948,7 +953,8 @@ video, .img, #design-content img,
     }
 
 
-    #art .column :last-child, #design-content .column :last-child {
+    #art .column :last-child,
+    #design-content .column :last-child {
         width: 100%;
         height: 100%;
         object-fit: cover
@@ -972,8 +978,13 @@ video, .img, #design-content img,
     }
 
     .hero-image {
-        width:80%;
-        margin:0 auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .design-image {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
