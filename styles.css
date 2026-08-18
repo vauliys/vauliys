@@ -71,6 +71,9 @@ h4 {
 }
 
 .star-rating {
+    display: flex;
+    grid-gap:0.25rem;
+    align-items: center;
     color: var(--gold);
     margin-top: 1rem;
     font-size: 0.8rem;
@@ -694,6 +697,13 @@ video,
 .row img {
     border-radius: 0.5rem;
     outline: 1px solid var(--black);
+}
+
+.goodreads {
+      border-radius: 0 !important;
+    outline: none !important;
+    width: min-content;
+    margin-right: 0.25rem;
 }
 
 #design-books {
