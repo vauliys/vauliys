@@ -168,31 +168,66 @@
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@vauliys"><i class="fa-brands fa-tiktok"></i></a>
                         <a href="storygraph.html"><img id="i-storygraph" src="./asset-suite/icon-storygraph.svg"></a>
-                        <p>hello@vauliys.com</p><br>
+                        <p>hello@vauliys.com</p>
                     </div>
                     <p class="text-sm mt1 mb1 opacity50">Website designed and coded by Vauliys.</p>
-
                 </div>
                 <div class="column">
                     <!--Form Code-->
-                    <form action=”mailto:hello@vauliys.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
-
-
+                    <form id="form">
                         <div id="frm-contact">
                             <input type="text" id="frm-name" name="name" placeholder="name">
-                            <input type="text" required id="frm-email" name="email" placeholder="email">
+                            <input type="text" required id="frm-email" name="email" placeholder="email" required>
                         </div>
-                        <textarea id=”frm-message” required rows=”6″ cols=”20
+                        <textarea id=”frm-message” required rows=”6″ cols=”20 name="message" required
                             placeholder="write your letter"></textarea>
 
-                        <button id="btn-submit" class="hover" type="submit">
-                            <img id="i-star" src="./asset-suite/icon-star.svg">Post</button>
+                        <div id="frm-submit"><button id="btn-submit" class="hover" type="submit">
+                                <img id="i-star" src="./asset-suite/icon-star.svg">Post</button>
+                            <input type="hidden" name="access_key" value="6f0e453c-83f0-47f1-b3e6-b1773f276811">
+                            <div id="success-message" style="display:none;" class="mt1">
+                                Thank you! Your letter has been sent by pigeon.</div>
+                        </div>
                     </form>
+
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <script>
+const form = document.getElementById("form");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: json
+    })
+    .then(async (response) => {
+        const result = await response.json();
+
+        if (response.status === 200) {
+            document.getElementById("success-message").style.display = "block";
+            form.reset();
+        } else {
+            console.log(result);
+        }
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+});
+</script>
 </body>
 <script src="./js/nav.js" defer></script> <!-- Main JavaScript file -->
 <script src="./js/header-reveal.js" defer></script> <!-- Main JavaScript file -->
