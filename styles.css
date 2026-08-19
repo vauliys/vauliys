@@ -72,7 +72,7 @@ h4 {
 
 .star-rating {
     display: flex;
-    grid-gap:0.25rem;
+    grid-gap: 0.25rem;
     align-items: center;
     color: var(--gold);
     margin-top: 1rem;
@@ -382,6 +382,16 @@ form,
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.5rem;
+}
+
+#frm-submit {
+    align-items: center;
+    display: flex;
+}
+
+#success-message {
+    margin-left: 1rem;
+    margin-top:0;
 }
 
 input[type=submit] {
@@ -700,7 +710,7 @@ video,
 }
 
 .goodreads {
-      border-radius: 0 !important;
+    border-radius: 0 !important;
     outline: none !important;
     width: min-content;
     margin-right: 0.25rem;
@@ -829,7 +839,7 @@ video,
         margin-bottom: 0rem;
     }
 
-    #btn-submit {
+    #frm-submit {
         margin-top: 0.5rem;
     }
 
@@ -944,6 +954,10 @@ video,
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0.5rem;
+    }
+
+    #success-message {
+        font-size: 0.9rem;
     }
 
     #footer p {
